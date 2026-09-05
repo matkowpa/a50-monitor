@@ -15,7 +15,7 @@ oraz dłuższe analizy eksperckie z folderu [`analizy/`](analizy/).
 ## Jak to działa
 
 ```
-GitHub Actions (cron 6:30 PL) 
+GitHub Actions (cron 6:30 PL) lub lokalnie z Cline (/a50-daily)
   → scripts/research.py      # silnik last30days (Reddit, YouTube, HN, web)
   → scripts/fetch_feeds.py   # fallback RSS: Google News, GDDKiA
   → scripts/assess.py        # rubryka PL → OpenRouter → 2 score (północ/południe) + dowody
@@ -35,6 +35,17 @@ GitHub Actions (cron 6:30 PL)
   ogólnopolskie > media lokalne > social media.
 - **Brak nowych dowodów danego dnia** → oba score pozostają bez zmian,
   confidence spada do „niska”.
+
+**Skrypty vs model — gdzie co działa.** Pipeline uruchamia się na dwa
+sposoby: automatycznie na **GitHub Actions** (cron powyżej lub ręczne
+„Run workflow” w zakładce Actions) albo **lokalnie z Cline**
+(`/a50-daily`, sekcja niżej) — kod jest identyczny, bo silnik
+last30days jest zwendoryzowany w repo. Sam model LLM **nigdy nie działa
+ani lokalnie, ani na runnerze GitHuba**: skrypty wysyłają prompt przez
+HTTPS do API OpenRouter (`openrouter.ai`) i otrzymują ocenę jako JSON.
+„Lokalnie” oznacza wyłącznie to, że skrypt wywołujący działa na Twojej
+maszynie (z lokalną zmienną `OPENROUTER_API_KEY`); oceniający model
+zawsze jest w chmurze — nie ma tu żadnego lokalnego LLM.
 
 ## Struktura repo
 
@@ -58,9 +69,17 @@ Wymagane: Python 3.12+, `OPENROUTER_API_KEY` w środowisku.
 ```powershell
 python scripts/research.py       # silnik last30days (kilka minut)
 python scripts/fetch_feeds.py    # RSS fallback
-python scripts/assess.py         # score + zapis do data/
+python scripts/assess.py         # dwa score (północ/południe) + zapis do data/
 python scripts/build_site.py     # strona w site/ (podgląd lokalny)
 ```
+
+Po lokalnym runie: wyniki lądują w `data/` — historię commitujesz
+i wypychasz ręcznie (`git add data && git commit -m "daily data" &&
+git push`), a strona w `site/` służy tylko do podglądu (katalog jest
+w `.gitignore` i nie jest commitowany). Publikację na GitHub Pages robi
+wyłącznie workflow `daily-monitor` — ręcznie (Actions → Run workflow)
+albo czekając na cron. Klucz API: lokalnie ze zmiennej środowiskowej,
+na GitHubie z secretu repo.
 
 ## Setup GitHub (jednorazowo)
 
