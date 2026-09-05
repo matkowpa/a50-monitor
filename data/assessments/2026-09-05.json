@@ -1,44 +1,34 @@
 {
   "date": "2026-09-05",
-  "score": 75,
-  "confidence": "wysoka",
-  "summary": "Istnieje wysokie prawdopodobieństwo, że finalny przebieg autostrady A50 przetnie teren gminy Sobienie-Jeziory, co potwierdzają liczne protesty mieszkańców i samorządów z okolicznych gmin.",
-  "rationale": "Wiele dowodów wskazuje na to, że gmina Sobienie-Jeziory jest aktywnie zaangażowana w dyskusje i protesty dotyczące przebiegu A50, co sugeruje, że jest ona brana pod uwagę w co najmniej jednym z rozważanych wariantów. Artykuły z ostatnich 30 dni, a także starsze, bezpośrednio wspominają o sprzeciwie gminy Sobienie-Jeziory wobec planowanego przebiegu A50, co świadczy o realnym zagrożeniu przecięcia jej terenu. Brak jest jednak oficjalnych komunikatów GDDKiA wskazujących konkretny, finalny wariant, co utrzymuje pewien poziom niepewności.",
+  "score": 65,
+  "confidence": "średnia",
+  "summary": "Prawdopodobieństwo przecięcia gminy Sobienie-Jeziory przez A50 jest umiarkowanie wysokie, ze względu na trwające dyskusje o wariantach i protesty, które nie wykluczają tej gminy z rozważanych opcji.",
+  "rationale": "Wiele artykułów wskazuje na to, że gmina Sobienie-Jeziory jest aktywnie zaangażowana w dyskusje dotyczące przebiegu A50, zarówno poprzez protesty, jak i wyrażanie sprzeciwu wobec konkretnych wariantów. Chociaż nie ma ostatecznej decyzji, to gmina jest często wymieniana w kontekście potencjalnych tras. Brak jest jednak oficjalnego potwierdzenia, że którykolwiek z rozważanych wariantów definitywnie omija gminę, co utrzymuje prawdopodobieństwo przecięcia na średnim poziomie. Warianty są nadal przedmiotem konsultacji i sporów, co sugeruje, że ostateczny przebieg nie jest jeszcze ustalony.",
   "key_findings": [
     {
-      "claim": "Gmina Sobienie-Jeziory aktywnie sprzeciwia się planowanemu przebiegowi A50.",
+      "claim": "Gmina Sobienie-Jeziory aktywnie protestuje przeciwko planowanemu przebiegowi A50, co sugeruje, że jest brana pod uwagę w wariantach trasy.",
       "evidence_urls": [
         "https://news.google.com/rss/articles/CBMiakFVX3lxTFBrREtaSXhRVXNvMVBCdWpCcFJ0Vm1sTHZLQ09vYVhfRHdwVGNiLUZmRmhFTkR0ejdkbXJPSlo3aENhNGFFbnhFdG9vZmVkdzE4YTJBTVFRWExfYVFjTUdCVlRpbEtUVG9aNXc?oc=5",
-        "https://news.google.com/rss/articles/CBMinwFBVV95cUxPWFY4aHJrVlcxV3d5Mlp3eEs1TVlvamJ4OEtKLUFfZFpEa3l1WTZSU0x6a0VuYkluMUluOVctS2NjRUR0SUxhUmJGZDVqWTZMZ2NLRTQ1MVdGZ3hVcWg0WUROVlV6V2ZrNjVGR1d2OH",
-        "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNbWtVeS1JTVlGSEcwTmxVdFVLdndTWFJoT3JUMUc0TFlCTFd2Uy1SUlFYZXpsdk1Vc0hYRWFoRG9VS3hhT0tnNll2X1NlelNQdUlYVklkQWhHajJoUWw0NmlQYXJBbE92YWFtNjhsUm"
+        "https://news.google.com/rss/articles/CBMinwFBVV95cUxPWFY4aHJrVlcxV3d5Mlp3eEs1TVlvamJ4OEtKLUFfZFpEa3l1WTZSU0x6a0VuYkluMUluOVctS2NjRUR0SUxhUmJGZDVqWTZMZ2NLRTQ1MVdGZ3hVcWg0WUROVlV6V2ZrNjVGR1d2OHRjcHlqdVVpYnRINFh4Yy12Rk1OTjVma0k2b3V2UDZyckNoYWdvQkNRRmpNTy1ERVE?oc=5"
       ]
     },
     {
-      "claim": "Jeden z rozważanych wariantów A50, tzw. 'czerwony korytarz', był uznany za najkorzystniejszy i przebiegał przez Mazowiecki Park Krajobrazowy, co implikuje bliskość do gminy Sobienie-Jeziory.",
+      "claim": "Warianty przebiegu A50 są nadal przedmiotem sporów i protestów w wielu gminach, w tym w powiecie otwockim, co wskazuje na brak ostatecznej decyzji.",
       "evidence_urls": [
-        "https://news.google.com/rss/articles/CBMidEFVX3lxTFNNQ0tJejZBQ3FpSmhTMkFMQjAyLW8zeEFNejUyTDJnamltckdNQVhPZFhsZW9nWno4U21RVkhoeGgzVlREZ3BYYkx4ZGhhaGJybk1VWkx2U1VLVW9HY1VwYVNBMDJnb2JGOVk2d05CSkpxVEZv?oc=5",
+        "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNbWtVeS1JTVlGSEcwTmxVdFVLdndTWFJoT3JUMUc0TFlCTFd2Uy1SUlFYZXpsdk1Vc0hYRWFoRG9VS3hhT0tnNll2X1NlelNQdUlYVklkQWhHajJoUWw0NmlQYXJBbE92YWFtNjhsUmdaMUV2MVc3dFFnVGZKT2ttWnlZbV8wMkJEMHVtSnRyMndMUVdfUW9TbGlrXzJRaEhaUGwzOEE4R0JDN3dqV1J6SjUxTmFsUTRhWUdud2hjR3B1RDg?oc=5",
+        "https://news.google.com/rss/articles/CBMivwFBVV95cUxNRkRvQjlHLUFJX25UUUdwYkJSbVR3MG1tandkS2VkQUtvXzNIM24yTDN6U1ppRVI5Z3lWSlk5dEFWQnNRWFI5MWZmM2FrVVMtZktSVHVtbmtoSTRDVEI5Qk1iQktIeWFrQ0dQS043WnA1aFRYU0ZlNG1QOEtoM2IwWmFMdDRFd0FmV1ludDk1NTVqMWhINDlvUnNWeExqRXN6aWlRaXBlX1I1RnFSSTdacFh6cERnd2ZRNGNUc2RIbw?oc=5"
+      ]
+    },
+    {
+      "claim": "W przeszłości rozważano warianty przebiegu A50, które mogłyby przecinać gminę Sobienie-Jeziory, np. 'czerwony korytarz' uznany za najkorzystniejszy w 2021 roku.",
+      "evidence_urls": [
+        "https://news.google.com/rss/articles/CBMidEFVX3lxTE1LSkl6X0FDcWlKaFMyQUxiYjAyLW8zeEFNejUyTDJnamltckdNQVhPZFhsZW9nWno4U21RVkhoeGgzVlREZ3BYYkx4ZGhhaGJybk1VWkx2U1VLVW9HY1VwYVNBMDJnb2JGOVk2d05CSkpxVEZv?oc=5",
         "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBuOTdHVkY0TG4wOWRqRWdoVF9aYmZKWEJpVVhkcGJETUNHOTZScjltSzRmd2t3RXM1bWhnYzZlaXlWX0Fzb21Kemh5b1BwUTJLem9uUzlLUzlCVmtsUndZTFluME5IdEZK?oc=5"
       ]
     },
     {
-      "claim": "Wiązowna, sąsiadująca gmina, chce przesunięcia trasy bliżej '50', co może wpływać na przebieg w kierunku Sobienie-Jeziory.",
-      "evidence_urls": [
-        "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNbWtVeS1JTVlGSEcwTmxVdFVLdndTWFJoT3JUMUc0TFlCTFd2Uy1SUlFYZXpsdk1Vc0hYRWFoRG9VS3hhT0tnNll2X1NlelNQdUlYVklkQWhHajJoUWw0NmlQYXJBbE92YWFtNjhsUm"
-      ]
-    },
-    {
-      "claim": "Liczne protesty mieszkańców i samorządów z powiatów otwockiego i grójeckiego wskazują na to, że trasa A50 jest planowana przez tereny zamieszkałe i rolnicze w tym regionie.",
-      "evidence_urls": [
-        "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQYWRUYnIwUlZoTXVQRjVZTGFFSFY4cWZnX041eE05TmlaNGl2emJERUNZbmFOT25mSTlVUXBVZVh6QTBTdU9DMko4M0VPQnlVTWp5VDlwc3hCa0hMUUoxUXRkeVJKa3JTV1BOWjFVLVY4WXFzMG5EdXNleDhLOG5DUEJqTnFqcGNuTURwellVVXRuRW5xZFNHamo3cnF2SUt2SWxjNlctM0tieWhCSHZoOThsNlBnUFBN?oc=5",
-        "https://news.google.com/rss/articles/CBMipgFBVV95cUxNaXhnT0dVZmJEa1kxQjFlT19JLVl2TUdWMHdnaDdLNmFBcEJCMWJod0dvMjBQSTNkeEt3bnBvUU94S1FOZWZ5TW1wZ0hFT3FQUDJjclk3WVUwc1JlREVFaXRTd1J0Z3ZvWE0xMlpVbX",
-        "https://news.google.com/rss/articles/CBMimwFBVV95cUxPOW9rUnlzMlM3cV9qWWpvMjRUam5IMy1TVlVJU05KZnJUQ0FjeEJOMkhSMVlQVV9kYjVXZHJJT1lOcEFodkY0N3RVbXpQUUduLVM5ODBtS3Nib204cVJtalV2TWV4ZHBEZTNQNmlRRk"
-      ]
-    },
-    {
-      "claim": "GDDKiA poszukuje wykonawców dla A50, co wskazuje na zaawansowany etap planowania, jednak brak jest ostatecznej decyzji o przebiegu.",
-      "evidence_urls": [
-        "https://news.google.com/rss/articles/CBMisAFBVV95cUxQQnZzU3NSdDVNY2JDX3VvSXRrZFc5LTRhS21YYjZiQnA3a1JjNHZqT2tmVFR6bUNucFRsUWo2NXVCc1pnUk1lQ3pFUGhQWWdWZ3hUSEs2WWVna09PRjdLazU5T2NFTDV0MnVmTk5xVk"
-      ]
+      "claim": "Brak jest jednoznacznych, oficjalnych komunikatów GDDKiA z ostatnich 30 dni, które definitywnie wykluczałyby lub potwierdzały przebieg A50 przez gminę Sobienie-Jeziory.",
+      "evidence_urls": []
     }
   ],
   "trend_vs_prev": 0,
@@ -65,14 +55,6 @@
       "source": "Google News: A50 przebieg",
       "published": "2026-08-25",
       "snippet": "<a href=\"https://news.google.com/rss/articles/CBMipgFBVV95cUxNaXhnT0dVZmJEa1kxQjFlT19JLVl2TUdWMHdnaDdLNmFBcEJCMWJod0dvMjBQSTNkeEt3bnBvUU94S1FOZWZ5TW1wZ0hFT3FQUDJjclk3WVUwc1JlREVFaXRTd1J0Z3ZvWE0xMlpVbXFYQ1AtWWoxQ1IxYWNhdXE1LTN5MWE2bUdxVXg4M3V1NU5Eb2FkSGhTdXRvQ1JFd3VRU0lrQVV3?oc=5\" target=\"_blank\">Sadownicy nie chcą A50 przez swoje gospodarstwa. Spór w Górze Kalwarii</a>&nbsp;&nbsp;<font color=\"#6f6",
-      "stance": "neutral"
-    },
-    {
-      "title": "Czy w Polsce powstaną jeszcze nowe autostrady? W planach jest m.in. A50 - auto-swiat.pl",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOQzQzaWoxSi13UUhHMkp5SGJBVHhiekg0d2VQM0VRV3U4YXhmTkl0NGU5MUJ5OGxGUHc0NWdBX3NhQUdSeHM0YXdPOEZzZ0tnSWhDNnhzM1VuLVM2aVdrRWJ5M1gtRTg3MzZGdVJIY1dkUFJuTmdVMTBTbWwwT3dYWURfV3dKdmFoV1ZOdTdCSTVCZF8ydldNMlRTRkNEUEtqRl9pdkZJR0JueDE2dTJ6MjlPc3I1STdRbEVPOGtiNndORFBn?oc=5",
-      "source": "Google News: A50 przebieg",
-      "published": "2026-08-07",
-      "snippet": "<a href=\"https://news.google.com/rss/articles/CBMixAFBVV95cUxOQzQzaWoxSi13UUhHMkp5SGJBVHhiekg0d2VQM0VRV3U4YXhmTkl0NGU5MUJ5OGxGUHc0NWdBX3NhQUdSeHM0YXdPOEZzZ0tnSWhDNnhzM1VuLVM2aVdrRWJ5M1gtRTg3MzZGdVJIY1dkUFJuTmdVMTBTbWwwT3dYWURfV3dKdmFoV1ZOdTdCSTVCZF8ydldNMlRTRkNEUEtqRl9pdkZJR0JueDE2dTJ6MjlPc3I1STdRbEVPOGtiNndORFBn?oc=5\" target=\"_blank\">Czy w Polsce powstaną jeszcze nowe autostrady? W planach jest m",
       "stance": "neutral"
     },
     {
@@ -108,15 +90,7 @@
       "stance": "neutral"
     },
     {
-      "title": "Nie chcą A50 przez Tarczyn i Prażmów. Protest przy Wroniej - Miejski Reporter",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNYVhweFVMWU1faHd2d2VTTUdnbjhoUE9vbmNLUGsybHZyQmExVlQ4eEswcGo0OFFxVVBwVXdiUG5pUkt2WnNPcE5PMU9iQndXV3hkTjVxS3k4Q2drSjExNHRJcGRvM3Z3enJneTNaUmk3UGtSQk80SEVrTTBiNFRtZmkwQm5pTHZmZXJsYnNn?oc=5",
-      "source": "Google News: A50 przebieg",
-      "published": "2026-04-24",
-      "snippet": "<a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxNYVhweFVMWU1faHd2d2VTTUdnbjhoUE9vbmNLUGsybHZyQmExVlQ4eEswcGo0OFFxVVBwVXdiUG5pUkt2WnNPcE5PMU9iQndXV3hkTjVxS3k4Q2drSjExNHRJcGRvM3Z3enJneTNaUmk3UGtSQk80SEVrTTBiNFRtZmkwQm5pTHZmZXJsYnNn?oc=5\" target=\"_blank\">Nie chcą A50 przez Tarczyn i Prażmów. Protest przy Wroniej</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Miejski Reporter</font>",
-      "stance": "neutral"
-    },
-    {
-      "title": "Napięcia wokół A50 przez powiat grójecki rosną. Pojawiają się zarzuty o brak przejrzystości i polityczne naciski. Będą kolejne protesty - Echo Dnia",
+      "title": "Napięcia wokół A50 przez powiat grójecki rosną. Pojawiają się zarzuty o brak przejrzystości i polityczne naciski. Będą kolejne protesty - echodnia.eu",
       "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxQSGtsVVdRLXZzc1M2Q056UWtnc1VBMk03NVRGSWJneG1SY0dTbkoyRl9oRzUxRkQ0Z1JxenlnOFFISWoyRzBkREdVVXk1OVAtY2dCdTI5UHJ3TnZQNm9ESkp0M2tzMWN0QUhzOTV6cGkyeS04Q0RLd0FvNTlyS0xMTG5DY1VpUXhiQXJFc0tvS2N6UFBaS2YtaFgtNnBPdjJpY3VjY09Yb0FfVHJPckEzMkhLOFlrN1FMRHNlaHBhbEtOZWNMSzRHYmY2Nk9NQ3VmQ2duZG0yRDRhSFRIa3Z1XzZ1dTMtUnJSVkM4dWJkZGFTdmhrZzRwYUlaVEpQU1d3bUI1Q3o4RXBtcElf?oc=5",
       "source": "Google News: A50 przebieg",
       "published": "2026-04-24",
@@ -124,7 +98,15 @@
       "stance": "neutral"
     },
     {
-      "title": "Kolejny protest w sprawie przebiegu autostrady A50. Mieszkańcy powiatu grójeckiego wyjdą na ulice. Sprawdź szczegóły - Echo Dnia",
+      "title": "Kolejny protest przeciw A50. Mieszkańcy jadą do Warszawy - Przegląd Piaseczyński",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQcmFCcnlkdEtFOWRrN3haS1lwNmpoWE0yUmR4cy14NVp0TXNfX1JVaEJKbUtzS0w0X3BVeUdNb3BfNGh3RGpzRWs0eDJjM3A1NDJ1T2NSRkJpZThQdmJGQXFUdHpqNTl4ZXFIV3Zzd2FwXzNkZnU5bWxsLXliRkp3RWlxeU1TRG9JUzNKS2lUSmFXRHExdzJZcEluRVoyZm1iaWRocXFoUFA?oc=5",
+      "source": "Google News: A50 przebieg",
+      "published": "2026-04-20",
+      "snippet": "<a href=\"https://news.google.com/rss/articles/CBMiqAFBVV95cUxQcmFCcnlkdEtFOWRrN3haS1lwNmpoWE0yUmR4cy14NVp0TXNfX1JVaEJKbUtzS0w0X3BVeUdNb3BfNGh3RGpzRWs0eDJjM3A1NDJ1T2NSRkJpZThQdmJGQXFUdHpqNTl4ZXFIV3Zzd2FwXzNkZnU5bWxsLXliRkp3RWlxeU1TRG9JUzNKS2lUSmFXRHExdzJZcEluRVoyZm1iaWRocXFoUFA?oc=5\" target=\"_blank\">Kolejny protest przeciw A50. Mieszkańcy jadą do Warszawy</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Przegl",
+      "stance": "neutral"
+    },
+    {
+      "title": "Kolejny protest w sprawie przebiegu autostrady A50. Mieszkańcy powiatu grójeckiego wyjdą na ulice. Sprawdź szczegóły - echodnia.eu",
       "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNY3NFVGZXMkVjcUxFNHJ1ejBwVkJUVnVTOUNpTE5KZFJlcUN1bkpCWU1HOG4zZmxGTjZXMWdla0hMTnk4dGFGYWs2MjdZbi15SkhTR1pQZmg3RGR3VUdHVFp6QVo3eURxNl9lMDZaZWNPakpHWkpFUnZiU1RMS2FEa1N4WWFiMEtIcHY2X01mYzVEWDlxRHI3RldHSDdYbzBpeUlaTWhFUTF1UHIwVUdXT0g0NXpBQWlyUWpIUVhreXg5YkhyZFhITUEzT0JVRC1vU2taSUw0YUJBOUZ2UlFLbFBZeWE4SFpxY1dOMUluMEdETlk?oc=5",
       "source": "Google News: A50 przebieg",
       "published": "2026-04-01",
@@ -140,7 +122,7 @@
       "stance": "neutral"
     },
     {
-      "title": "Spotkanie w sprawie przebiegu Autostradowej Obwodnicy Warszawy. Mieszkańcy Prażmowa nie chcą A50 - przegladpiaseczynski.pl",
+      "title": "Spotkanie w sprawie przebiegu Autostradowej Obwodnicy Warszawy. Mieszkańcy Prażmowa nie chcą A50 - Przegląd Piaseczyński",
       "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxObGJzakRxYkxNNTFIYl94YXhfRURCckhyckdIZVEyLWRIaklwVVFoQ2Q4X2J1VDl6cF9zN0ZXWjZScUpKTVVNS1JRaS14ZURIblRGWVBsLXYzM3VxbTlyZmZEOXBlNVRtbXBMc1pIaVRkcFYwbndPSEpCd3RldC1FdTE4NXAtWG5lMEdaMHM4ck9sZXg1aW0takJxbW1OeEtrR3p1aXdOWGpia283UUI5eHZpS2M2ank0RDROWDJXUHV0Q1p1RTl3azdOLTBROHlaZnBjaEVJOTJMUElISWc?oc=5",
       "source": "Google News: A50 przebieg",
       "published": "2026-03-28",
@@ -148,7 +130,7 @@
       "stance": "neutral"
     },
     {
-      "title": "A50 coraz bliżej Prażmowa? Wójt zaprasza mieszkańców na spotkanie w sprawie protestu - przegladpiaseczynski.pl",
+      "title": "A50 coraz bliżej Prażmowa? Wójt zaprasza mieszkańców na spotkanie w sprawie protestu - Przegląd Piaseczyński",
       "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQdUx3SjFzSjhwenhmVTZCZWplN2NaVVAyUjVHVFN4Y3JEVXFMSFBaekM5RGFCY1JXOE9fbzU1cnpQbVpVZVRlSHlEMW1GNlFPVU5SUy1ldExOaDl5ekh0aHJVbnRjaXM0SDNfX1ByR1libW1GS0Q3aFBkZHhQTmN0UktpaDBoWm0zblVjbmY1Ql9UNGRzQlBoaU9YNmVoVzhuZ1hlZDdlZXQ0anBwUGsxOFVMQWxfVmVNMk9RQ2tUMWpkRnZYd25YREh5YV9JQQ?oc=5",
       "source": "Google News: A50 przebieg",
       "published": "2026-03-24",
@@ -156,11 +138,11 @@
       "stance": "neutral"
     },
     {
-      "title": "Wójt Prażmowa o planach budowy autostrady A50 - przegladpiaseczynski.pl",
+      "title": "Wójt Prażmowa o planach budowy autostrady A50 - Przegląd Piaseczyński",
       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNNWhmWnpfYW9rU1VUZzlndjhWeThfQnpjWHp6M3JWb2xSc3dGYlFvY1FLV282XzVzbjBoTDJpMmZhN2VuMHJUTzZIZFh3dnV6T3duVG5TazB2dkNTLXY3MUZkQkZyT3NxRV93eXM5MndlU2E0Z2F1VnJrX3RJUWFTZjVKMkJrT2J2X2tJcHJSdmVhSGdpdlExeERHMA?oc=5",
       "source": "Google News: A50 przebieg",
       "published": "2026-03-17",
-      "snippet": "<a href=\"https://news.google.com/rss/articles/CBMimwFBVV95cUxNNWhmWnpfYW9rU1VUZzlndjhWeThfQnpjWHp6M3JWb2xSc3dGYlFvY1FLV282XzVzbjBoTDJpMmZhN2VuMHJUTzZIZFh3dnV6T3duVG5TazB2dkNTLXY3MUZkQkZyT3NxRV93eXM5MndlU2E0Z2F1VnJrX3RJUWFTZjVKMkJrT2J2X2tJcHJSdmVhSGdpdlExeERHMA?oc=5\" target=\"_blank\">Wójt Prażmowa o planach budowy autostrady A50</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">przegladpiaseczynski.pl</font>",
+      "snippet": "<a href=\"https://news.google.com/rss/articles/CBMimwFBVV95cUxNNWhmWnpfYW9rU1VUZzlndjhWeThfQnpjWHp6M3JWb2xSc3dGYlFvY1FLV282XzVzbjBoTDJpMmZhN2VuMHJUTzZIZFh3dnV6T3duVG5TazB2dkNTLXY3MUZkQkZyT3NxRV93eXM5MndlU2E0Z2F1VnJrX3RJUWFTZjVKMkJrT2J2X2tJcHJSdmVhSGdpdlExeERHMA?oc=5\" target=\"_blank\">Wójt Prażmowa o planach budowy autostrady A50</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Przegląd Piaseczyński</font>",
       "stance": "neutral"
     },
     {
@@ -180,6 +162,22 @@
       "stance": "neutral"
     },
     {
+      "title": "Tak się bawiły Sobienie-Jeziory na dożynkach! GALERIA [74] - Przegląd Otwocki",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNODkxQS05ZDVzc24yTG0wVWR2RURhM01PSFoyVmxBT1BaQUVWaTNod25GM2oxZVQ2TTRTTWx5TmQ5WkJFTnMzb1BFZ1FQV3hRMVVFeUNLM3ZBUHVxZzVoS3BBbHF3TzB4UjU2czc3dWVmUndidW5pd1M2aEJ3YUNqQzJwbDM5NHN5a1FubmhRRlIwQlVZaC1pWElzNFZQZTA?oc=5",
+      "source": "Google News: Sobienie-Jeziory A50",
+      "published": "2025-09-02",
+      "snippet": "<a href=\"https://news.google.com/rss/articles/CBMinwFBVV95cUxNODkxQS05ZDVzc24yTG0wVWR2RURhM01PSFoyVmxBT1BaQUVWaTNod25GM2oxZVQ2TTRTTWx5TmQ5WkJFTnMzb1BFZ1FQV3hRMVVFeUNLM3ZBUHVxZzVoS3BBbHF3TzB4UjU2czc3dWVmUndidW5pd1M2aEJ3YUNqQzJwbDM5NHN5a1FubmhRRlIwQlVZaC1pWElzNFZQZTA?oc=5\" target=\"_blank\">Tak się bawiły Sobienie-Jeziory na dożynkach! GALERIA [74]</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Przegląd Otwocki",
+      "stance": "neutral"
+    },
+    {
+      "title": "Sobienie-Jeziory pod okiem kamer - Przegląd Otwocki",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQOVJ0VExwMmJGaGpteWtIdzdHWVh2QlpIX0F1NHR4eG9vMDlsTU5EZWEzdzdTSm5KWjIxUkR4WEc2cmllb2RMM2VqQzhaNUZLZFBaaDk3ajVDZWVHV212WkFKWS1WVWFxWFZObTBieU9XdHZILTJSM09Ic1FwWnIyc1NR?oc=5",
+      "source": "Google News: Sobienie-Jeziory A50",
+      "published": "2024-09-30",
+      "snippet": "<a href=\"https://news.google.com/rss/articles/CBMiggFBVV95cUxQOVJ0VExwMmJGaGpteWtIdzdHWVh2QlpIX0F1NHR4eG9vMDlsTU5EZWEzdzdTSm5KWjIxUkR4WEc2cmllb2RMM2VqQzhaNUZLZFBaaDk3ajVDZWVHV212WkFKWS1WVWFxWFZObTBieU9XdHZILTJSM09Ic1FwWnIyc1NR?oc=5\" target=\"_blank\">Sobienie-Jeziory pod okiem kamer</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Przegląd Otwocki</font>",
+      "stance": "neutral"
+    },
+    {
       "title": "Gmina Sobienie-Jeziory z dotacją na usuwanie azbestu i nowy wóz strażacki - Przegląd Otwocki",
       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNWG5fSW5tUS1MeWNKVWl0TGJ1SUpCS251d2tsUWc2MmYzV0F6U0lwdDl4RnFZcFpqNXZmMGdaUlRBdDJ6YUlUU3Z4bjMtWURCa3JmRVJ3OHNRZHRZOGxBSl8zMTNJUUxNQy13NlZIOFplakhfRWsxcFpNSEVpYjZLUUs0RDdrRXlZTDd3ZDB3dmd1WjN1ZGVYMHQ5TUMxZ0RsTmZlTzZ6YWN1bV9XZXhTUUtNSEJydmwz?oc=5",
       "source": "Google News: Sobienie-Jeziory A50",
@@ -196,14 +194,6 @@
       "stance": "neutral"
     },
     {
-      "title": "Sobienie-Jeziory. Trwają przygotowania funduszu dla sołectw - Przegląd Otwocki",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPenhGM1dHVDduekN1bUpRdlFKNnkyUFdCelpsSTZMRk5GTjMxY1p4T0lvdzAwZ01DaVdMZVM2cF9zclhzV0dmclhoblJLUTZiaWNCSXJOTHBHNVAweFJNc0xWY1QwcmNMZEFmLWUzdGpqLURTUlUyQjVOeTlqMjZjMElJanh6UzlLUVJJcExPeHRKV2lwLWVja3ZjamxfVHhuWGR3OA?oc=5",
-      "source": "Google News: Sobienie-Jeziory A50",
-      "published": "2023-09-30",
-      "snippet": "<a href=\"https://news.google.com/rss/articles/CBMipAFBVV95cUxPenhGM1dHVDduekN1bUpRdlFKNnkyUFdCelpsSTZMRk5GTjMxY1p4T0lvdzAwZ01DaVdMZVM2cF9zclhzV0dmclhoblJLUTZiaWNCSXJOTHBHNVAweFJNc0xWY1QwcmNMZEFmLWUzdGpqLURTUlUyQjVOeTlqMjZjMElJanh6UzlLUVJJcExPeHRKV2lwLWVja3ZjamxfVHhuWGR3OA?oc=5\" target=\"_blank\">Sobienie-Jeziory. Trwają przygotowania funduszu dla sołectw</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Przegląd",
-      "stance": "neutral"
-    },
-    {
       "title": "Sobienie Jeziory. Miasteczka rowerowe w trzech podstawówkach - Przegląd Otwocki",
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPY04wRWhkRC1GYm5jVXExcEllMFA4VGI3X1U1anJOTzF3WFhPbTZDNjhZMTV1ejZaZHIzNFp5WXlWWEdFNXZmRDRuSTRLcWg0Y1NVVTFCSDBuRGJFQVRya2tad01uYzV4TXhVczBoSW51N0RySmtIanJyRXFxYUdnUUlfME1SNVJNV1N1Ml9TQkw0MzJkb2xsWE96UElyOEx2MG42U3JR?oc=5",
       "source": "Google News: Sobienie-Jeziory A50",
@@ -217,6 +207,14 @@
       "source": "Google News: Sobienie-Jeziory A50",
       "published": "2023-01-07",
       "snippet": "<a href=\"https://news.google.com/rss/articles/CBMikwFBVV95cUxOeklSWmstTXFwbXd2Q19nQzg2UTJNRE1vTTdqWEF1OWdtai1uTDBrNW1DMDBXdmM0NWprdUYwVmFjVWhQQkpzamtwaXJlSEZodGhhYzREX1VLazc0SER6akxNYnMxQTdoQXMteVNoUXpKUWU0RUpaVnlWMnROdVd1Wm12RURxZUljM1d6ZWNzOGZ2b3M?oc=5\" target=\"_blank\">[FOTO] Uliczne jasełka w gminie Sobienie Jeziory</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Przegląd Otwocki</font>",
+      "stance": "neutral"
+    },
+    {
+      "title": "Obwodnica aglomeracji warszawskiej. Wiemy, kto wytyczy pierwszy odcinek autostrady A50 - Warszawa.Wyborcza.pl",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQb1VydVJkR3JwLVBxZFFsSEt0QUNjSUdlS2ZEejI0X2NYYlprbHlFSVZScUp1TTdxWFVmdTZVUWxBeW9BQW53ZFlMMk9HTGpzN1A4NjRKRER6cFIwRndQY3pCZ0NUX2gyOXRzVDM3VlJDRmVUWkFIVlNvZHNxdDU3QURPWkhCQ2R2cEFjYzcwQWY2NVdjNC1kaFNSR0VITkZobWVDMmU5Ny1saktQWjRYZW1SZG5QM19NZGhCNjJB?oc=5",
+      "source": "Google News: A50 przebieg",
+      "published": "2022-06-02",
+      "snippet": "<a href=\"https://news.google.com/rss/articles/CBMivgFBVV95cUxQb1VydVJkR3JwLVBxZFFsSEt0QUNjSUdlS2ZEejI0X2NYYlprbHlFSVZScUp1TTdxWFVmdTZVUWxBeW9BQW53ZFlMMk9HTGpzN1A4NjRKRER6cFIwRndQY3pCZ0NUX2gyOXRzVDM3VlJDRmVUWkFIVlNvZHNxdDU3QURPWkhCQ2R2cEFjYzcwQWY2NVdjNC1kaFNSR0VITkZobWVDMmU5Ny1saktQWjRYZW1SZG5QM19NZGhCNjJB?oc=5\" target=\"_blank\">Obwodnica aglomeracji warszawskiej. Wiemy, kto wytyczy pierwszy odcinek",
       "stance": "neutral"
     },
     {
@@ -292,7 +290,7 @@
       "stance": "neutral"
     }
   ],
-  "sources_found": 31,
+  "sources_found": 32,
   "engine_status": "ok",
   "assessment_path": "data/assessments/2026-09-05.json"
 }

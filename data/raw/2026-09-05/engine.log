@@ -1,495 +1,105 @@
-             "excerpt": "Nawet gdyby to nie by\u0142 ich b\u0142\u0105d, to istnieje jeszcze co\u015b takiego jak upad\u0142o\u015b\u0107 konsumencka, nawet je\u015bli kto\u015b nie prowadzi firmy. Nie oznacza to jednak, \u017ce d\u0142ug automatycznie przestaje istnie\u0107 albo \u017ce nie trzeba go sp\u0142aca\u0107. W ramach post\u0119powania s\u0105d mo\u017ce ustali\u0107 plan sp\u0142aty, a w okre\u015blonych sytuacjach",
-                "score": 25,
-                "url": "https://reddit.com/r/PolskaNaLuzie/comments/1w5h34e/comment/p7f6yvq/"
-              },
-              {
-                "author": "michal-rd",
-                "date": "2026-09-02",
-                "excerpt": "https://www.infoq.com/news/2026/07/aws-billing-estimates-incident/\n\n \u201eThe company has not published a detailed postmortem beyond the Health Dashboard timeline, and has not said whether the alarm-to-action gap, the failed rollback, or the decision to disable budget alerts platform-wide will produce c",
-                "score": 17,
-                "url": "https://reddit.com/r/PolskaNaLuzie/comments/1w5h34e/comment/p7f6fkq/"
-              },
-              {
-                "author": "Adamexxx",
-                "date": "2026-09-02",
-                "excerpt": "Z ciekawo\u015bci, korzystasz z jakichkolwiek specyficznych us\u0142ug na AWS czy po prostu VPS? Z mojego do\u015bwiadczenia prawie zawsze lepiej wychodzi zamiana managed us\u0142ug na zwyk\u0142y VPS na kt\u00f3rym sami hostujemy baz\u0119, aplikacj\u0119 czy inne niezb\u0119dne komponenty. Jasne, nie skaluje si\u0119 to tak automagicznie, ale $/h",
-                "score": 10,
-                "url": "https://reddit.com/r/PolskaNaLuzie/comments/1w5h34e/comment/p7fsr8o/"
-              },
-              {
-                "author": "MysteriousAd530",
-                "date": "2026-09-02",
-                "excerpt": "Ej super apka, my\u015bla\u0142am, \u017ce dosy\u0107 dobrze znam Krak\u00f3w, a widz\u0119 wiele miejsc, o kt\u00f3rych nie mia\u0142am poj\u0119cia!",
-                "score": 5,
-                "url": "https://reddit.com/r/PolskaNaLuzie/comments/1w5h34e/comment/p7frka1/"
-              },
-              {
-                "author": "alkatraz445",
-                "date": "2026-09-02",
-                "excerpt": "Czapki z g\u0142\u00f3w za design appki. Mi\u00f3d!",
-                "score": 4,
-                "url": "https://reddit.com/r/PolskaNaLuzie/comments/1w5h34e/comment/p7guico/"
-              },
-              {
-                "author": "mayoxox",
-                "date": "2026-09-03",
-                "excerpt": "Tak w kwestii samej apki - super pomys\u0142 i z wielk\u0105 ch\u0119ci\u0105 z niej skorzystam, ale nie obawiacie si\u0119 czasem potencjalnego zniszczenia tych ukrytych miejsc? Nie chodzi mi nawet o zalanie ich t\u0142umami, ale sama patrz\u0105c chocia\u017cby po tym, jak niekt\u00f3rzy ludzie potrafi\u0105 traktowa\u0107 pi\u0119kne miejsca, ba\u0142abym si\u0119,",
-                "score": 3,
-                "url": "https://reddit.com/r/PolskaNaLuzie/comments/1w5h34e/comment/p7jt5sp/"
-              }
-            ]
-          },
-          "published_at": "2026-09-02",
-          "relevance_hint": 0.0,
-          "snippet": "Urz\u0105d Skarbowy: \"Pomy\u0142ka - nie pomy\u0142ka. Prosz\u0119 zap\u0142aci\u0107 VAT.\" Poblokowa\u0142 karty p\u0142atnicze \u017ceby Amazon nie zd\u0105\u017cy\u0142 mu pobra\u0107 45 mln z\u0142. Pogratulowa\u0107 limit\u00f3w, kurde! Na pewno co najmniej dwucyfrowa liczba dev\u00f3w i account manager\u00f3w dosta\u0142a ataku serca. Nieironicznie przewiduj\u0119 pozwy.",
-          "source": "reddit",
-          "source_quality": 0.6,
-          "title": "Chcia\u0142em zrobi\u0107 map\u0119 niszowych miejsc w Polsce. 3 dni po wrzuceniu na AppStore AWS wystawi\u0142 mi rachunek na 11 mln $",
-          "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1w5h34e/chcia\u0142em_zrobi\u0107_map\u0119_niszowych_miejsc_w_polsce_3/",
-          "why_relevant": "Reddit global search"
-        }
-      ],
-      "source_quality": 0.6,
-      "sources": [
-        "reddit"
-      ],
-      "subquery_labels": [
-        "Trasa A50"
-      ],
-      "title": "Chcia\u0142em zrobi\u0107 map\u0119 niszowych miejsc w Polsce. 3 dni po wrzuceniu na AppStore AWS wystawi\u0142 mi rachunek na 11 mln $",
-      "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1w5h34e/chcia\u0142em_zrobi\u0107_map\u0119_niszowych_miejsc_w_polsce_3/"
-    },
-    {
-      "candidate_id": "https://reddit.com/r/polskanaluzie/comments/1w6y3xp/auto_w_automacie",
-      "cluster_id": "cluster-5",
-      "engagement": 15,
-      "explanation": "The candidate does not mention the entity 'A50' or 'Sobienie-Jeziory' in the title or snippet.",
-      "final_score": 5.050588235294118,
-      "freshness": 86,
-      "fun_explanation": "Too vague to evaluate.",
-      "fun_score": 5.0,
-      "item_id": "R11",
-      "local_relevance": 0.0,
-      "metadata": {
-        "provenance": [
-          {
-            "item_id": "R11",
-            "native_rank": 8,
-            "source": "reddit",
-            "subquery_label": "Trasa A50"
-          }
-        ],
-        "range_from": "2026-08-06",
-        "range_to": "2026-09-05"
-      },
-      "native_ranks": {
-        "Trasa A50:reddit": 8
-      },
-      "rerank_score": 0.0,
-      "rrf_score": 0.0029411764705882353,
-      "snippet": "None",
-      "source": "reddit",
-      "source_items": [
-        {
-          "body": "Auto w automacie?\nNone",
-          "container": "PolskaNaLuzie",
-          "date_confidence": "high",
-          "engagement": {
-            "num_comments": 50,
-            "score": 1
-          },
-          "engagement_score": 15,
-          "freshness": 86,
-          "item_id": "R11",
-          "local_rank_score": 0.22999999999999998,
-          "local_relevance": 0.0,
-          "metadata": {
-            "comment_insights": [],
-            "top_comments": []
-          },
-          "published_at": "2026-09-04",
-          "relevance_hint": 0.0,
-          "snippet": "None",
-          "source": "reddit",
-          "source_quality": 0.6,
-          "title": "Auto w automacie?",
-          "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1w6y3xp/auto_w_automacie/",
-          "why_relevant": "Reddit r/PolskaNaLuzie search"
-        }
-      ],
-      "source_quality": 0.6,
-      "sources": [
-        "reddit"
-      ],
-      "subquery_labels": [
-        "Trasa A50"
-      ],
-      "title": "Auto w automacie?",
-      "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1w6y3xp/auto_w_automacie/"
-    },
-    {
-      "candidate_id": "https://reddit.com/r/polska/comments/1w45jqq/tragedia_na_autostradzie_a1_nie_\u017cyje_pi\u0119\u0107_os\u00f3b",
-      "cluster_id": "cluster-6",
-      "engagement": 61,
-      "explanation": "The candidate refers to A1, not the requested A50 entity.",
-      "final_score": 4.970769230769231,
-      "freshness": 78,
-      "fun_explanation": "Tragic news event; inappropriate for humor.",
-      "fun_score": 0.0,
-      "item_id": "R5",
-      "local_relevance": 0.0,
-      "metadata": {
-        "provenance": [
-          {
-            "item_id": "R5",
-            "native_rank": 5,
-            "source": "reddit",
-            "subquery_label": "Trasa A50"
-          }
-        ],
-        "range_from": "2026-08-06",
-        "range_to": "2026-09-05"
-      },
-      "native_ranks": {
-        "Trasa A50:reddit": 5
-      },
-      "rerank_score": 0.0,
-      "rrf_score": 0.003076923076923077,
-      "snippet": "None",
-      "source": "reddit",
-      "source_items": [
-        {
-          "body": "Tragedia na autostradzie A1. Nie \u017cyje pi\u0119\u0107 os\u00f3b, trasa zablokowana\nNone",
-          "container": "Polska",
-          "date_confidence": "high",
-          "engagement": {
-            "num_comments": 63,
-            "score": 126
-          },
-          "engagement_score": 61,
-          "freshness": 78,
-          "item_id": "R5",
-          "local_rank_score": 0.256,
-          "local_relevance": 0.0,
-          "metadata": {
-            "comment_insights": [],
-            "top_comments": []
-          },
-          "published_at": "2026-09-01",
-          "relevance_hint": 0.0,
-          "snippet": "None",
-          "source": "reddit",
-          "source_quality": 0.6,
-          "title": "Tragedia na autostradzie A1. Nie \u017cyje pi\u0119\u0107 os\u00f3b, trasa zablokowana",
-          "url": "https://www.reddit.com/r/Polska/comments/1w45jqq/tragedia_na_autostradzie_a1_nie_\u017cyje_pi\u0119\u0107_os\u00f3b/",
-          "why_relevant": "Reddit global search"
-        }
-      ],
-      "source_quality": 0.6,
-      "sources": [
-        "reddit"
-      ],
-      "subquery_labels": [
-        "Trasa A50"
-      ],
-      "title": "Tragedia na autostradzie A1. Nie \u017cyje pi\u0119\u0107 os\u00f3b, trasa zablokowana",
-      "url": "https://www.reddit.com/r/Polska/comments/1w45jqq/tragedia_na_autostradzie_a1_nie_\u017cyje_pi\u0119\u0107_os\u00f3b/"
-    },
-    {
-      "candidate_id": "https://reddit.com/r/polskanaluzie/comments/1w48ygo/du\u017ca_dop\u0142ata_za_energi\u0119_ciepln\u0105_w_bloku",
-      "cluster_id": "cluster-7",
-      "engagement": 28,
-      "explanation": "The candidate does not mention the entity 'A50' or 'Sobienie-Jeziory' in the title or snippet.",
-      "final_score": 4.954285714285714,
-      "freshness": 78,
-      "fun_explanation": "Dry administrative complaint.",
-      "fun_score": 5.0,
-      "item_id": "R10",
-      "local_relevance": 0.0,
-      "metadata": {
-        "provenance": [
-          {
-            "item_id": "R10",
-            "native_rank": 10,
-            "source": "reddit",
-            "subquery_label": "Trasa A50"
-          }
-        ],
-        "range_from": "2026-08-06",
-        "range_to": "2026-09-05"
-      },
-      "native_ranks": {
-        "Trasa A50:reddit": 10
-      },
-      "rerank_score": 0.0,
-      "rrf_score": 0.002857142857142857,
-      "snippet": "None",
-      "source": "reddit",
-      "source_items": [
-        {
-          "body": "Du\u017ca dop\u0142ata za energi\u0119 ciepln\u0105 w bloku.\nNone",
-          "container": "PolskaNaLuzie",
-          "date_confidence": "high",
-          "engagement": {
-            "num_comments": 60,
-            "score": 5
-          },
-          "engagement_score": 28,
-          "freshness": 78,
-          "item_id": "R10",
-          "local_rank_score": 0.223,
-          "local_relevance": 0.0,
-          "metadata": {
-            "comment_insights": [],
-            "top_comments": []
-          },
-          "published_at": "2026-09-01",
-          "relevance_hint": 0.0,
-          "snippet": "None",
-          "source": "reddit",
-          "source_quality": 0.6,
-          "title": "Du\u017ca dop\u0142ata za energi\u0119 ciepln\u0105 w bloku.",
-          "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1w48ygo/du\u017ca_dop\u0142ata_za_energi\u0119_ciepln\u0105_w_bloku/",
-          "why_relevant": "Reddit r/PolskaNaLuzie search"
-        }
-      ],
-      "source_quality": 0.6,
-      "sources": [
-        "reddit"
-      ],
-      "subquery_labels": [
-        "Trasa A50"
-      ],
-      "title": "Du\u017ca dop\u0142ata za energi\u0119 ciepln\u0105 w bloku.",
-      "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1w48ygo/du\u017ca_dop\u0142ata_za_energi\u0119_ciepln\u0105_w_bloku/"
-    },
-    {
-      "candidate_id": "https://reddit.com/r/polska/comments/1w3szc6/co_powstrzymuje_mnie_przed_sprowadzeniem_nowego",
-      "cluster_id": "cluster-8",
-      "engagement": 62,
-      "explanation": "The candidate does not mention the entity 'A50' or 'Sobienie-Jeziory' in the title or snippet.",
-      "final_score": 4.921935483870968,
-      "freshness": 76,
-      "fun_explanation": "Straightforward financial inquiry about car imports.",
-      "fun_score": 20.0,
-      "item_id": "R4",
-      "local_relevance": 0.07,
-      "metadata": {
-        "provenance": [
-          {
-            "item_id": "R4",
-            "native_rank": 2,
-            "source": "reddit",
-            "subquery_label": "Trasa A50"
-          }
-        ],
-        "range_from": "2026-08-06",
-        "range_to": "2026-09-05"
-      },
-      "native_ranks": {
-        "Trasa A50:reddit": 2
-      },
-      "rerank_score": 0.0,
-      "rrf_score": 0.0032258064516129032,
-      "snippet": "Znacznie taniej jest polecie\u0107 do Korei. Z powrotem samochodem albo z dostaw\u0105. Co wi\u0119c mia\u0142oby mnie powstrzyma\u0107 przed zrobieniem tego? Ten samoch\u00f3d ju\u017c jest sprzedawany w Polsce. 138,500.00 - 94,987.33 = 43,512.67 z\u0142oty :0 Samoch\u00f3d jest tak samo wyposa\u017cony, ma takie same kolory i funkcje",
-      "source": "reddit",
-      "source_items": [
-        {
-          "body": "Co powstrzymuje mnie przed sprowadzeniem nowego samochodu taniej z innego kraju?\nZnacznie taniej jest polecie\u0107 do Korei. Z powrotem samochodem albo z dostaw\u0105. Co wi\u0119c mia\u0142oby mnie powstrzyma\u0107 przed zrobieniem tego? Ten samoch\u00f3d ju\u017c jest sprzedawany w Polsce. 138,500.00 - 94,987.33 = 43,512.67 z\u0142oty :0 Samoch\u00f3d jest tak samo wyposa\u017cony, ma takie same kolory i funkcje",
-          "container": "Polska",
-          "date_confidence": "high",
-          "engagement": {
-            "num_comments": 138,
-            "score": 80
-          },
-          "engagement_score": 62,
-          "freshness": 76,
-          "item_id": "R4",
-          "local_rank_score": 0.2975,
-          "local_relevance": 0.07,
-          "metadata": {
-            "comment_insights": [],
-            "top_comments": []
-          },
-          "published_at": "2026-08-31",
-          "relevance_hint": 0.0,
-          "snippet": "Znacznie taniej jest polecie\u0107 do Korei. Z powrotem samochodem albo z dostaw\u0105. Co wi\u0119c mia\u0142oby mnie powstrzyma\u0107 przed zrobieniem tego? Ten samoch\u00f3d ju\u017c jest sprzedawany w Polsce. 138,500.00 - 94,987.33 = 43,512.67 z\u0142oty :0 Samoch\u00f3d jest tak samo wyposa\u017cony, ma takie same kolory i funkcje",
-          "source": "reddit",
-          "source_quality": 0.6,
-          "title": "Co powstrzymuje mnie przed sprowadzeniem nowego samochodu taniej z innego kraju?",
-          "url": "https://www.reddit.com/r/Polska/comments/1w3szc6/co_powstrzymuje_mnie_przed_sprowadzeniem_nowego/",
-          "why_relevant": "Reddit global search"
-        }
-      ],
-      "source_quality": 0.6,
-      "sources": [
-        "reddit"
-      ],
-      "subquery_labels": [
-        "Trasa A50"
-      ],
-      "title": "Co powstrzymuje mnie przed sprowadzeniem nowego samochodu taniej z innego kraju?",
-      "url": "https://www.reddit.com/r/Polska/comments/1w3szc6/co_powstrzymuje_mnie_przed_sprowadzeniem_nowego/"
-    },
-    {
-      "candidate_id": "https://reddit.com/r/polska/comments/1w35yk4/spacery_intensywne_marsze_dzienna_liczba_krok\u00f3w",
-      "cluster_id": "cluster-9",
-      "engagement": 50,
-      "explanation": "The candidate does not mention the entity 'A50' or 'Sobienie-Jeziory' in the title or snippet.",
-      "final_score": 4.9038805970149255,
-      "freshness": 76,
-      "fun_explanation": "Dry fitness discussion.",
-      "fun_score": 5.0,
-      "item_id": "R7",
-      "local_relevance": 0.0,
-      "metadata": {
-        "provenance": [
-          {
-            "item_id": "R7",
-            "native_rank": 7,
-            "source": "reddit",
-            "subquery_label": "Trasa A50"
-          }
-        ],
-        "range_from": "2026-08-06",
-        "range_to": "2026-09-05"
-      },
-      "native_ranks": {
-        "Trasa A50:reddit": 7
-      },
-      "rerank_score": 0.0,
-      "rrf_score": 0.0029850746268656717,
-      "snippet": "None",
-      "source": "reddit",
-      "source_items": [
-        {
-          "body": "Spacery / intensywne marsze / dzienna liczba krok\u00f3w\nNone",
-          "container": "Polska",
-          "date_confidence": "high",
-          "engagement": {
-            "num_comments": 86,
-            "score": 37
-          },
-          "engagement_score": 50,
-          "freshness": 76,
-          "item_id": "R7",
-          "local_rank_score": 0.24,
-          "local_relevance": 0.0,
-          "metadata": {
-            "comment_insights": [],
-            "top_comments": []
-          },
-          "published_at": "2026-08-31",
-          "relevance_hint": 0.0,
-          "snippet": "None",
-          "source": "reddit",
-          "source_quality": 0.6,
-          "title": "Spacery / intensywne marsze / dzienna liczba krok\u00f3w",
-          "url": "https://www.reddit.com/r/Polska/comments/1w35yk4/spacery_intensywne_marsze_dzienna_liczba_krok\u00f3w/",
-          "why_relevant": "Reddit r/Polska search"
-        }
-      ],
-      "source_quality": 0.6,
-      "sources": [
-        "reddit"
-      ],
-      "subquery_labels": [
-        "Trasa A50"
-      ],
-      "title": "Spacery / intensywne marsze / dzienna liczba krok\u00f3w",
-      "url": "https://www.reddit.com/r/Polska/comments/1w35yk4/spacery_intensywne_marsze_dzienna_liczba_krok\u00f3w/"
-    },
-    {
-      "candidate_id": "https://reddit.com/r/polskanaluzie/comments/1w1sxqm/mini_makieta_warsztatu_samochodowego_na_p\u00f3\u0142ce",
-      "cluster_id": "cluster-10",
-      "engagement": 49,
-      "explanation": "The candidate does not mention the entity 'A50' or 'Sobienie-Jeziory' in the title or snippet.",
-      "final_score": 4.717391304347826,
-      "freshness": 70,
-      "fun_explanation": "Purely descriptive hobby post.",
-      "fun_score": 10.0,
-      "item_id": "R6",
-      "local_relevance": 0.0,
-      "metadata": {
-        "provenance": [
-          {
-            "item_id": "R6",
-            "native_rank": 9,
-            "source": "reddit",
-            "subquery_label": "Trasa A50"
-          }
-        ],
-        "range_from": "2026-08-06",
-        "range_to": "2026-09-05"
-      },
-      "native_ranks": {
-        "Trasa A50:reddit": 9
-      },
-      "rerank_score": 0.0,
-      "rrf_score": 0.002898550724637681,
-      "snippet": "None",
-      "source": "reddit",
-      "source_items": [
-        {
-          "body": "Mini makieta warsztatu samochodowego na p\u00f3\u0142ce\nNone",
-          "container": "PolskaNaLuzie",
-          "date_confidence": "high",
-          "engagement": {
-            "num_comments": 11,
-            "score": 134
-          },
-          "engagement_score": 49,
-          "freshness": 70,
-          "item_id": "R6",
-          "local_rank_score": 0.22399999999999998,
-          "local_relevance": 0.0,
-          "metadata": {
-            "comment_insights": [],
-            "top_comments": []
-          },
-          "published_at": "2026-08-29",
-          "relevance_hint": 0.0,
-          "snippet": "None",
-          "source": "reddit",
-          "source_quality": 0.6,
-          "title": "Mini makieta warsztatu samochodowego na p\u00f3\u0142ce",
-          "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1w1sxqm/mini_makieta_warsztatu_samochodowego_na_p\u00f3\u0142ce/",
-          "why_relevant": "Reddit r/PolskaNaLuzie search"
-        }
-      ],
-      "source_quality": 0.6,
-      "sources": [
-        "reddit"
-      ],
-      "subquery_labels": [
-        "Trasa A50"
-      ],
-      "title": "Mini makieta warsztatu samochodowego na p\u00f3\u0142ce",
-      "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1w1sxqm/mini_makieta_warsztatu_samochodowego_na_p\u00f3\u0142ce/"
+{
+  "artifacts": {
+    "corpus_in_export": false,
+    "grounding": [
+      {
+        "keyless_backend": "ddg",
+        "label": "keyless",
+        "resultCount": 5,
+        "webSearchQueries": [
+          "obwodnica autostradowa Warszawy A50 przebieg Sobienie-Jeziory"
+        ]
+      }
+    ],
+    "hiring_signals_mode": false,
+    "plan_source": "llm",
+    "pre_research_flags_present": false,
+    "resolved": {
+      "context": "",
+      "entity": "obwodnica autostradowa Warszawy A50 przebieg trasy Sobienie-Jeziory",
+      "github_repos": [],
+      "github_user": "",
+      "subreddits": [],
+      "trustpilot_domain": "",
+      "x_handle": ""
     }
-  ],
+  },
+  "clusters": [],
+  "errors_by_source": {
+    "youtube": "Source was requested but is not configured for this run."
+  },
+  "freshness_verdicts": [],
+  "generated_at": "2026-09-05T13:27:47.380745+00:00",
+  "items_by_source": {
+    "grounding": [],
+    "reddit": []
+  },
+  "library_context": [],
+  "provider_runtime": {
+    "planner_model": "google/gemini-3.1-flash-lite-preview",
+    "reasoning_provider": "openrouter",
+    "rerank_model": "google/gemini-3.1-flash-lite-preview"
+  },
+  "query_plan": {
+    "cluster_mode": "none",
+    "freshness_mode": "balanced_recent",
+    "intent": "factual",
+    "notes": [
+      "Hackernews excluded as it is not relevant for Polish infrastructure planning.",
+      "Focus on official GDDKiA/CPK documentation and local community discussions."
+    ],
+    "raw_topic": "obwodnica autostradowa Warszawy A50 przebieg trasy Sobienie-Jeziory",
+    "source_weights": {
+      "grounding": 0.625,
+      "hackernews": 0.0,
+      "reddit": 0.37499999999999994
+    },
+    "subqueries": [
+      {
+        "label": "Trasa A50 Sobienie-Jeziory",
+        "ranking_query": "Jaki jest aktualny planowany przebieg autostrady A50 w okolicach miejscowo\u015bci Sobienie-Jeziory?",
+        "search_query": "obwodnica autostradowa Warszawy A50 przebieg Sobienie-Jeziory",
+        "sources": [
+          "grounding",
+          "reddit"
+        ],
+        "weight": 1.0
+      }
+    ]
+  },
+  "range_from": "2026-08-06",
+  "range_to": "2026-09-05",
+  "ranked_candidates": [],
   "source_status": {
     "grounding": {
-      "at": "2026-09-05T12:57:08.643603Z",
+      "at": "2026-09-05T13:27:47.378222Z",
       "attempted": true,
-      "detail": "Keyless web search unavailable",
-      "fix_hint": "doctor",
       "items_returned": 0,
       "source": "grounding",
-      "state": "unreachable"
+      "state": "no-results"
     },
     "reddit": {
-      "at": "2026-09-05T12:57:21.702152Z",
+      "at": "2026-09-05T13:27:46.911997Z",
       "attempted": true,
-      "items_returned": 10,
+      "items_returned": 0,
       "source": "reddit",
-      "state": "ok"
+      "state": "no-results"
+    },
+    "youtube": {
+      "at": "2026-09-05T13:27:46.637119Z",
+      "attempted": false,
+      "detail": "Source was requested but is not configured for this run.",
+      "fix_hint": "doctor",
+      "items_returned": 0,
+      "source": "youtube",
+      "state": "skipped-unconfigured"
     }
   },
   "topic": "obwodnica autostradowa Warszawy A50 przebieg trasy Sobienie-Jeziory",
   "warnings": [
-    "Top evidence is highly concentrated in one source.",
-    "Some sources failed: grounding"
+    "No candidates survived retrieval and ranking.",
+    "Evidence is thin for this topic.",
+    "Some sources failed: youtube"
   ]
 }
 
@@ -497,31 +107,18 @@
 /last30days · researching: obwodnica autostradowa Warszawy A50 przebieg trasy Sobienie-Jeziory
 ⏳ [95mProcessing[0m Scoring and ranking...
 [Planner] Plan: intent=factual, freshness=balanced_recent, cluster_mode=none, subqueries=1, source=llm
-[Planner]   sq1 label=Trasa A50 search="obwodnica autostradowa Warszawy A50 przebieg" sources=[grounding,reddit]
+[Planner]   sq1 label=Trasa A50 Sobienie-Jeziory search="obwodnica autostradowa Warszawy A50 przebieg Sobienie-Jeziory" sources=[grounding,reddit]
 [RedditKeyless] Tier 1 (RSS) 0 posts; score-only; 0 scored cards
-[Reddit] Expanded 'obwodnica autostradowa Warszawy A50 przebieg trasy Sobienie-Jeziory' into 1 queries: ['obwodnica autostradowa warszawy a50 przebieg trasy sobienie-jeziory']
-[Reddit] Global search 1/1: 'obwodnica autostradowa warszawy a50 przebieg trasy sobienie-jeziory' (sort=relevance)
-[Reddit]   -> 7 results for 'obwodnica autostradowa warszawy a50 przebieg trasy sobienie-jeziory'
-[Reddit] Discovered subreddits: ['Polska', 'PolskaNaLuzie']
-[Reddit] Subreddit search: r/Polska for 'obwodnica autostradowa warszawy a50 przebieg trasy sobienie-jeziory'
-[Reddit] Subreddit search: r/PolskaNaLuzie for 'obwodnica autostradowa warszawy a50 przebieg trasy sobienie-jeziory'
-[Reddit]   -> 7 results from r/Polska
-[Reddit]   -> 7 results from r/PolskaNaLuzie
-[Reddit] After dedup: 18 unique posts
-[Reddit] Final: 18 Reddit posts
-[Reddit] Enriching comments for 3 posts (by total engagement)
-[Reddit] Enriched 3/3 posts in 5.8s
-✓ Research complete (24.4s) - Reddit: 10 threads, YouTube: 0 videos, HN: 0 stories, Web: 0 results
+✓ Research complete (2.4s) - Reddit: 0 threads, YouTube: 0 videos, HN: 0 stories, Web: 0 results
 
 💡 You can unlock native grounded web search with BRAVE_API_KEY or SERPER_API_KEY.
 
-Research quality: 4/4 core sources.
-Bonus source silent: Instagram.
+Research quality: 3/4 core sources.
+Missing: YouTube.
 
 Free fixes:
-  - Instagram returned 0 reels despite SC being configured. SC's v2 reels endpoint wraps Google Search and 500's frequently on multi-token queries. The skill now retries with hashtag-form automatically; if zero items still appear, the topic may have no reel coverage on Instagram. Try a single-word topic like the most distinctive noun in your query.
-  - Your SC key also powers Threads, Pinterest and YouTube comments. Add them to INCLUDE_SOURCES in your .env to enable.
+  - YouTube: video transcripts with key moments - often the deepest explanations on any topic. Install yt-dlp: brew install yt-dlp (free)
 
-last30days has no affiliation with any API provider.
-[last30days] Saved output to C:\Users\alusm\OneDrive\Dokumenty\Tata\projekty\a50-monitor\data\raw\2026-09-05\report.json
-[last30days] Saved output to C:\Users\alusm\OneDrive\Dokumenty\Tata\projekty\a50-monitor\data\raw\2026-09-05\obwodnica-autostradowa-warszawy-a50-przebieg-trasy-sobienie-jeziory-raw.json
+Bonus: TikTok and Instagram are available with a free ScrapeCreators key at scrapecreators.com (no affiliation).
+[last30days] Saved output to /home/runner/work/a50-monitor/a50-monitor/data/raw/2026-09-05/report.json
+[last30days] Saved output to /home/runner/work/a50-monitor/a50-monitor/data/raw/2026-09-05/obwodnica-autostradowa-warszawy-a50-przebieg-trasy-sobienie-jeziory-raw-2026-09-05.json
