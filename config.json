@@ -1,0 +1,21 @@
+{
+  "topic": "obwodnica autostradowa Warszawy A50 przebieg trasy Sobienie-Jeziory",
+  "focus": "gmina Sobienie-Jeziory",
+  "keywords": [
+    "a50",
+    "obwodnica autostradowa",
+    "obwodnica warszawy",
+    "sobienie-jeziory",
+    "sobienie jeziory",
+    "przebieg a50",
+    "wariant a50",
+    "autostrada a50",
+    "węzeł sobienie"
+  ],
+  "search_sources": "web,reddit,youtube,hackernews",
+  "lookback_days": 30,
+  "openrouter_model": "google/gemini-2.5-flash",
+  "max_results": 30,
+  "max_per_source": 10,
+  "max_evidence": 40
+}

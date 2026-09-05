@@ -1,0 +1,92 @@
+{
+  "topic": "obwodnica autostradowa Warszawy A50 Sobienie-Jeziory",
+  "generated_at": "2026-09-05T12:39:46Z",
+  "items_by_source": {
+    "reddit": [
+      {
+        "item_id": "R1",
+        "title": "A50 - co z przebiegiem przez Sobienie-Jeziory?",
+        "url": "https://www.reddit.com/r/Polska/comments/aaa/a50_przebieg/",
+        "published_at": "2026-09-01",
+        "body": "Kolejne doniesienia o wariancie A50 przez gminę Sobienie-Jeziory.",
+        "snippet": "None"
+      },
+      {
+        "item_id": "R2",
+        "title": "Śmiertelny wypadek na A1. Kierowca był pod wpływem",
+        "url": "https://www.reddit.com/r/Polska/comments/bbb/wypadek_a1/",
+        "published_at": "2026-09-04",
+        "body": "Wypadek na A1, kierowca zatrzymany.",
+        "snippet": "None"
+      }
+    ]
+  },
+  "ranked_candidates": [
+    {
+      "candidate_id": "https://www.reddit.com/r/Polska/comments/aaa/a50_przebieg/",
+      "title": "A50 - co z przebiegiem przez Sobienie-Jeziory?",
+      "url": "https://www.reddit.com/r/Polska/comments/aaa/a50_przebieg/",
+      "source": "reddit",
+      "sources": ["reddit"],
+      "snippet": "Kolejne doniesienia o wariancie A50 przez gminę Sobienie-Jeziory.",
+      "source_items": [
+        {"item_id": "R1", "title": "A50 - co z przebiegiem przez Sobienie-Jeziory?",
+         "url": "https://www.reddit.com/r/Polska/comments/aaa/a50_przebieg/",
+         "published_at": "2026-09-01", "body": "Kolejne doniesienia.",
+         "snippet": "None", "source": "reddit"}
+      ],
+      "final_score": 8.1,
+      "explanation": "Discusses the A50 variant near Sobienie-Jeziory."
+    },
+    {
+      "candidate_id": "https://www.reddit.com/r/Polska/comments/bbb/wypadek_a1/",
+      "title": "Śmiertelny wypadek na A1. Kierowca był pod wpływem",
+      "url": "https://www.reddit.com/r/Polska/comments/bbb/wypadek_a1/",
+      "source": "reddit",
+      "sources": ["reddit"],
+      "snippet": "Wypadek na A1, kierowca zatrzymany.",
+      "source_items": [
+        {"item_id": "R2", "title": "Śmiertelny wypadek na A1.",
+         "url": "https://www.reddit.com/r/Polska/comments/bbb/wypadek_a1/",
+         "published_at": "2026-09-04", "body": "Wypadek na A1.",
+         "snippet": "None", "source": "reddit"}
+      ],
+      "final_score": 5.6,
+      "explanation": "The candidate discusses the A1 motorway, not the A50."
+    },
+    {
+      "candidate_id": "dup-a",
+      "title": "Obwodnica: GDDKiA o wariancie A50",
+      "url": "https://example.com/wiadomosci?utm_source=x",
+      "source": "grounding",
+      "sources": ["grounding"],
+      "snippet": "GDDKiA opublikowała komunikat o wariancie A50.",
+      "source_items": [
+        {"item_id": "W1", "title": "GDDKiA o wariancie A50",
+         "url": "https://example.com/wiadomosci",
+         "published_at": "2026-08-28", "body": "Komunikat GDDKiA.",
+         "snippet": "GDDKiA opublikowała komunikat o wariancie A50.",
+         "source": "grounding"}
+      ],
+      "final_score": 9.0,
+      "explanation": "Official GDDKiA statement about the A50 variant."
+    },
+    {
+      "candidate_id": "dup-b",
+      "title": "Drugi link tej samej wiadomości",
+      "url": "https://example.com/wiadomosci/",
+      "source": "grounding",
+      "sources": ["grounding"],
+      "snippet": "Duplikat URL (po normalizacji) - powinien zostać odfiltrowany.",
+      "source_items": [],
+      "final_score": 1.0,
+      "explanation": "Duplicate."
+    }
+  ],
+  "source_status": {
+    "reddit": {"state": "ok", "items_returned": 2},
+    "grounding": {"state": "unreachable", "items_returned": 0,
+                  "detail": "Keyless web search unavailable"}
+  },
+  "warnings": ["Some sources failed: grounding"]
+}

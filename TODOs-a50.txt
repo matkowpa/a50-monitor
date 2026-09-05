@@ -1,0 +1,3 @@
+Chciałbym monitorować w mediach i wszystkich dostępnych źródłach w tym w social mediach aktualną sytuację dotyczącą decyzji o przebiegu obwodnicy autostradowej Warszawy na południe od miasta. Mieszkam w gminie Sobienie-Jeziory i ostatnio zaczęły pojawiać się informację że autostrada może zostać przeprowadzona przez naszą gmine. 
+Potrzebuje codziennego monitoringu źredł w tym przy użyciu skilla last30days do przeglądania wszelkich infromacji które pojawiają się na ten temnat. 
+Repo projektu ma być na githubie, informacje mają być publikowane w htmlu na stronie www wraz z linkami do źródeł, oraz  codziennym podsumowaniem sytuacji na temat ocenyt prawdopodobieństwa przebiegu autostrady przez gminę sobienie-jeziory (wyraźny score z prawdopodobieństwem)    

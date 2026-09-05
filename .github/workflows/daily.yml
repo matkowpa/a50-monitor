@@ -1,0 +1,63 @@
+name: daily-monitor
+
+on:
+  schedule:
+    - cron: "30 5 * * *"  # 06:30/07:30 czasu PL
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-monitor
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Research (silnik last30days)
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          TZ: Europe/Warsaw
+        run: python scripts/research.py
+
+      - name: Fallback RSS (Google News, GDDKiA)
+        env:
+          TZ: Europe/Warsaw
+        run: python scripts/fetch_feeds.py
+
+      - name: Assess (score przez OpenRouter)
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          TZ: Europe/Warsaw
+        run: python scripts/assess.py
+
+      - name: Build site
+        run: python scripts/build_site.py --out site
+
+      - name: Commit danych historycznych
+        run: |
+          git config user.name "a50-monitor bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then
+            echo "Brak zmian w data/"
+          else
+            git commit -m "daily data $(date -I)"
+            git push
+          fi
+
+      - name: Deploy na GitHub Pages (gh-pages)
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
+          force_orphan: true

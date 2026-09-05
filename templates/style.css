@@ -1,0 +1,46 @@
+:root {
+  --bg: #0f1420;
+  --panel: #171e2e;
+  --panel2: #1d2740;
+  --text: #e7ecf5;
+  --muted: #97a3b8;
+  --accent: #4da3ff;
+  --green: #2fbf71;
+  --yellow: #e6b93c;
+  --orange: #f08c3a;
+  --red: #e5484d;
+  --border: #2a3550;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+  line-height: 1.6;
+}
+.wrap { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+header { background: var(--panel); border-bottom: 1px solid var(--border); }
+header .wrap { display: flex; justify-content: space-between; align-items: center; padding: 14px 16px; }
+.brand { color: var(--text); font-weight: 700; text-decoration: none; font-size: 1.15rem; }
+nav a { color: var(--muted); text-decoration: none; margin-left: 18px; }
+nav a:hover { color: var(--accent); }
+main { padding: 24px 16px 40px; }
+h1, h2, h3 { line-height: 1.25; }
+a { color: var(--accent); }
+.panel { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin: 18px 0; }
+.score-big { font-size: 3.2rem; font-weight: 800; margin: 0; }
+.score-label { color: var(--muted); font-size: .95rem; }
+.meta { color: var(--muted); font-size: .9rem; }
+.badge { display: inline-block; padding: 2px 10px; border-radius: 999px; font-size: .82rem; font-weight: 600; color: #0c111c; }
+.badge.g { background: var(--green); } .badge.y { background: var(--yellow); }
+.badge.o { background: var(--orange); } .badge.r { background: var(--red); }
+.findings li { margin: 10px 0; }
+table { width: 100%; border-collapse: collapse; font-size: .92rem; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+th { color: var(--muted); font-weight: 600; }
+td .src { color: var(--muted); font-size: .82rem; }
+.archive li { margin: 6px 0; }
+.disclaimer { background: var(--panel2); border-left: 4px solid var(--yellow); padding: 12px 16px; border-radius: 8px; color: var(--muted); font-size: .92rem; }
+footer { border-top: 1px solid var(--border); color: var(--muted); font-size: .85rem; padding: 16px 0 32px; }
+@media (max-width: 640px) { .score-big { font-size: 2.4rem; } table { font-size: .84rem; } }

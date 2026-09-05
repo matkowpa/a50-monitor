@@ -1,0 +1,1639 @@
+{
+  "artifacts": {
+    "corpus_in_export": false,
+    "grounding": [
+      {
+        "keyless_backend": "startpage",
+        "label": "keyless",
+        "reason": "keyless-search-unavailable",
+        "resultCount": 0,
+        "webSearchQueries": [
+          "obwodnica autostradowa Warszawy A50 przebieg"
+        ]
+      }
+    ],
+    "hiring_signals_mode": false,
+    "plan_source": "llm",
+    "pre_research_flags_present": false,
+    "resolved": {
+      "context": "",
+      "entity": "obwodnica autostradowa Warszawy A50 przebieg trasy Sobienie-Jeziory",
+      "github_repos": [],
+      "github_user": "",
+      "subreddits": [],
+      "trustpilot_domain": "",
+      "x_handle": ""
+    }
+  },
+  "clusters": [
+    {
+      "candidate_ids": [
+        "https://reddit.com/r/polskanaluzie/comments/1w7z56y/plecaki_vs_pasa\u017cerowie"
+      ],
+      "cluster_id": "cluster-1",
+      "representative_ids": [
+        "https://reddit.com/r/polskanaluzie/comments/1w7z56y/plecaki_vs_pasa\u017cerowie"
+      ],
+      "score": 5.327272727272727,
+      "sources": [
+        "reddit"
+      ],
+      "title": "Plecaki vs pasa\u017cerowie"
+    },
+    {
+      "candidate_ids": [
+        "https://reddit.com/r/polska/comments/1w62wz2/gdyby_kto\u015b_znalaz\u0142_na_portalu_aukcyjnym_tabliczk\u0119"
+      ],
+      "cluster_id": "cluster-2",
+      "representative_ids": [
+        "https://reddit.com/r/polska/comments/1w62wz2/gdyby_kto\u015b_znalaz\u0142_na_portalu_aukcyjnym_tabliczk\u0119"
+      ],
+      "score": 5.158095238095239,
+      "sources": [
+        "reddit"
+      ],
+      "title": "Gdyby kto\u015b znalaz\u0142 na portalu aukcyjnym tabliczk\u0119 z SP32-148 to prosz\u0119 o info bo w mniej ni\u017c 12 godzin kto\u015b j\u0105 ukrad\u0142 spod szopy po pozyskaniu loka przez Klub Sympatyk\u00f3w Kolei we Wroc\u0142awiu"
+    },
+    {
+      "candidate_ids": [
+        "https://reddit.com/r/polska/comments/1w6ikw5/uke_wypo\u017cycza_nieodp\u0142atnie_mierniki_pr\u0119dko\u015bci"
+      ],
+      "cluster_id": "cluster-3",
+      "representative_ids": [
+        "https://reddit.com/r/polska/comments/1w6ikw5/uke_wypo\u017cycza_nieodp\u0142atnie_mierniki_pr\u0119dko\u015bci"
+      ],
+      "score": 5.154374999999999,
+      "sources": [
+        "reddit"
+      ],
+      "title": "UKE wypo\u017cycza nieodp\u0142atnie mierniki pr\u0119dko\u015bci po\u0142\u0105czenia internetowego"
+    },
+    {
+      "candidate_ids": [
+        "https://reddit.com/r/polskanaluzie/comments/1w5h34e/chcia\u0142em_zrobi\u0107_map\u0119_niszowych_miejsc_w_polsce_3"
+      ],
+      "cluster_id": "cluster-4",
+      "representative_ids": [
+        "https://reddit.com/r/polskanaluzie/comments/1w5h34e/chcia\u0142em_zrobi\u0107_map\u0119_niszowych_miejsc_w_polsce_3"
+      ],
+      "score": 5.105901639344263,
+      "sources": [
+        "reddit"
+      ],
+      "title": "Chcia\u0142em zrobi\u0107 map\u0119 niszowych miejsc w Polsce. 3 dni po wrzuceniu na AppStore AWS wystawi\u0142 mi rachunek na 11 mln $"
+    },
+    {
+      "candidate_ids": [
+        "https://reddit.com/r/polskanaluzie/comments/1w6y3xp/auto_w_automacie"
+      ],
+      "cluster_id": "cluster-5",
+      "representative_ids": [
+        "https://reddit.com/r/polskanaluzie/comments/1w6y3xp/auto_w_automacie"
+      ],
+      "score": 5.050588235294118,
+      "sources": [
+        "reddit"
+      ],
+      "title": "Auto w automacie?"
+    },
+    {
+      "candidate_ids": [
+        "https://reddit.com/r/polska/comments/1w45jqq/tragedia_na_autostradzie_a1_nie_\u017cyje_pi\u0119\u0107_os\u00f3b"
+      ],
+      "cluster_id": "cluster-6",
+      "representative_ids": [
+        "https://reddit.com/r/polska/comments/1w45jqq/tragedia_na_autostradzie_a1_nie_\u017cyje_pi\u0119\u0107_os\u00f3b"
+      ],
+      "score": 4.970769230769231,
+      "sources": [
+        "reddit"
+      ],
+      "title": "Tragedia na autostradzie A1. Nie \u017cyje pi\u0119\u0107 os\u00f3b, trasa zablokowana"
+    },
+    {
+      "candidate_ids": [
+        "https://reddit.com/r/polskanaluzie/comments/1w48ygo/du\u017ca_dop\u0142ata_za_energi\u0119_ciepln\u0105_w_bloku"
+      ],
+      "cluster_id": "cluster-7",
+      "representative_ids": [
+        "https://reddit.com/r/polskanaluzie/comments/1w48ygo/du\u017ca_dop\u0142ata_za_energi\u0119_ciepln\u0105_w_bloku"
+      ],
+      "score": 4.954285714285714,
+      "sources": [
+        "reddit"
+      ],
+      "title": "Du\u017ca dop\u0142ata za energi\u0119 ciepln\u0105 w bloku."
+    },
+    {
+      "candidate_ids": [
+        "https://reddit.com/r/polska/comments/1w3szc6/co_powstrzymuje_mnie_przed_sprowadzeniem_nowego"
+      ],
+      "cluster_id": "cluster-8",
+      "representative_ids": [
+        "https://reddit.com/r/polska/comments/1w3szc6/co_powstrzymuje_mnie_przed_sprowadzeniem_nowego"
+      ],
+      "score": 4.921935483870968,
+      "sources": [
+        "reddit"
+      ],
+      "title": "Co powstrzymuje mnie przed sprowadzeniem nowego samochodu taniej z innego kraju?"
+    },
+    {
+      "candidate_ids": [
+        "https://reddit.com/r/polska/comments/1w35yk4/spacery_intensywne_marsze_dzienna_liczba_krok\u00f3w"
+      ],
+      "cluster_id": "cluster-9",
+      "representative_ids": [
+        "https://reddit.com/r/polska/comments/1w35yk4/spacery_intensywne_marsze_dzienna_liczba_krok\u00f3w"
+      ],
+      "score": 4.9038805970149255,
+      "sources": [
+        "reddit"
+      ],
+      "title": "Spacery / intensywne marsze / dzienna liczba krok\u00f3w"
+    },
+    {
+      "candidate_ids": [
+        "https://reddit.com/r/polskanaluzie/comments/1w1sxqm/mini_makieta_warsztatu_samochodowego_na_p\u00f3\u0142ce"
+      ],
+      "cluster_id": "cluster-10",
+      "representative_ids": [
+        "https://reddit.com/r/polskanaluzie/comments/1w1sxqm/mini_makieta_warsztatu_samochodowego_na_p\u00f3\u0142ce"
+      ],
+      "score": 4.717391304347826,
+      "sources": [
+        "reddit"
+      ],
+      "title": "Mini makieta warsztatu samochodowego na p\u00f3\u0142ce"
+    }
+  ],
+  "errors_by_source": {
+    "grounding": "Keyless web search unavailable"
+  },
+  "freshness_verdicts": [],
+  "generated_at": "2026-09-05T12:57:27.509762+00:00",
+  "items_by_source": {
+    "grounding": [],
+    "reddit": [
+      {
+        "body": "Chcia\u0142em zrobi\u0107 map\u0119 niszowych miejsc w Polsce. 3 dni po wrzuceniu na AppStore AWS wystawi\u0142 mi rachunek na 11 mln $\nNone\nUrz\u0105d Skarbowy: \"Pomy\u0142ka - nie pomy\u0142ka. Prosz\u0119 zap\u0142aci\u0107 VAT.\" Poblokowa\u0142 karty p\u0142atnicze \u017ceby Amazon nie zd\u0105\u017cy\u0142 mu pobra\u0107 45 mln z\u0142. Pogratulowa\u0107 limit\u00f3w, kurde! Na pewno co najmniej dwucyfrowa liczba dev\u00f3w i account manager\u00f3w dosta\u0142a ataku serca. Nieironicznie przewiduj\u0119 pozwy.",
+        "container": "PolskaNaLuzie",
+        "date_confidence": "high",
+        "engagement": {
+          "num_comments": 110,
+          "score": 1046
+        },
+        "engagement_score": 100,
+        "freshness": 82,
+        "item_id": "R1",
+        "local_rank_score": 0.305,
+        "local_relevance": 0.0,
+        "metadata": {
+          "comment_insights": [
+            "Poblokowa\u0142 karty p\u0142atnicze \u017ceby Amazon nie zd\u0105\u017cy\u0142 mu pobra\u0107 45 mln z\u0142. Pogratulowa\u0107 limit\u00f3w, kurde!",
+            "Na pewno co najmniej dwucyfrowa liczba dev\u00f3w i account manager\u00f3w dosta\u0142a ataku serca. Nieironicznie przewiduj\u0119 pozwy.",
+            "napisz im teraz ze juz zaplaciles,\n\n moze Ci przez pomylke zwroca Twoje 40 milionow",
+            "Nawet gdyby to nie by\u0142 ich b\u0142\u0105d, to istnieje jeszcze co\u015b takiego jak upad\u0142o\u015b\u0107 konsumencka, nawet je\u015bli kto\u015b nie prowadzi firmy.",
+            "https://www.infoq.com/news/2026/07/aws-billing-estimates-incident/\n\n \u201eThe company has not published a detailed postmortem beyond the Health Dashboard...",
+            "Z ciekawo\u015bci, korzystasz z jakichkolwiek specyficznych us\u0142ug na AWS czy po prostu VPS?",
+            "Ej super apka, my\u015bla\u0142am, \u017ce dosy\u0107 dobrze znam Krak\u00f3w, a widz\u0119 wiele miejsc, o kt\u00f3rych nie mia\u0142am poj\u0119cia!",
+            "Czapki z g\u0142\u00f3w za design appki. Mi\u00f3d!",
+            "Tak w kwestii samej apki - super pomys\u0142 i z wielk\u0105 ch\u0119ci\u0105 z niej skorzystam, ale nie obawiacie si\u0119 czasem potencjalnego zniszczenia tych ukrytych miej...",
+            "Urz\u0105d Skarbowy: \"Pomy\u0142ka - nie pomy\u0142ka. Prosz\u0119 zap\u0142aci\u0107 VAT.\""
+          ],
+          "top_comments": [
+            {
+              "author": "orzelski",
+              "date": "2026-09-02",
+              "excerpt": "Urz\u0105d Skarbowy: \"Pomy\u0142ka - nie pomy\u0142ka. Prosz\u0119 zap\u0142aci\u0107 VAT.\"",
+              "score": 368,
+              "url": "https://reddit.com/r/PolskaNaLuzie/comments/1w5h34e/comment/p7f4j5a/"
+            },
+            {
+              "author": "Maysign",
+              "date": "2026-09-02",
+              "excerpt": "Poblokowa\u0142 karty p\u0142atnicze \u017ceby Amazon nie zd\u0105\u017cy\u0142 mu pobra\u0107 45 mln z\u0142. Pogratulowa\u0107 limit\u00f3w, kurde!",
+              "score": 227,
+              "url": "https://reddit.com/r/PolskaNaLuzie/comments/1w5h34e/comment/p7f8eha/"
+            },
+            {
+              "author": "neoqueto",
+              "date": "2026-09-02",
+              "excerpt": "Na pewno co najmniej dwucyfrowa liczba dev\u00f3w i account manager\u00f3w dosta\u0142a ataku serca. Nieironicznie przewiduj\u0119 pozwy.",
+              "score": 137,
+              "url": "https://reddit.com/r/PolskaNaLuzie/comments/1w5h34e/comment/p7f69a0/"
+            },
+            {
+              "author": "Jean_Jones_666",
+              "date": "2026-09-02",
+              "excerpt": "napisz im teraz ze juz zaplaciles,\n\n moze Ci przez pomylke zwroca Twoje 40 milionow",
+              "score": 44,
+              "url": "https://reddit.com/r/PolskaNaLuzie/comments/1w5h34e/comment/p7g9hgh/"
+            },
+            {
+              "author": "ProfessionalHelp5",
+              "date": "2026-09-02",
+              "excerpt": "Nawet gdyby to nie by\u0142 ich b\u0142\u0105d, to istnieje jeszcze co\u015b takiego jak upad\u0142o\u015b\u0107 konsumencka, nawet je\u015bli kto\u015b nie prowadzi firmy. Nie oznacza to jednak, \u017ce d\u0142ug automatycznie przestaje istnie\u0107 albo \u017ce nie trzeba go sp\u0142aca\u0107. W ramach post\u0119powania s\u0105d mo\u017ce ustali\u0107 plan sp\u0142aty, a w okre\u015blonych sytuacjach",
+              "score": 25,
+              "url": "https://reddit.com/r/PolskaNaLuzie/comments/1w5h34e/comment/p7f6yvq/"
+            },
+            {
+              "author": "michal-rd",
+              "date": "2026-09-02",
+              "excerpt": "https://www.infoq.com/news/2026/07/aws-billing-estimates-incident/\n\n \u201eThe company has not published a detailed postmortem beyond the Health Dashboard timeline, and has not said whether the alarm-to-action gap, the failed rollback, or the decision to disable budget alerts platform-wide will produce c",
+              "score": 17,
+              "url": "https://reddit.com/r/PolskaNaLuzie/comments/1w5h34e/comment/p7f6fkq/"
+            },
+            {
+              "author": "Adamexxx",
+              "date": "2026-09-02",
+              "excerpt": "Z ciekawo\u015bci, korzystasz z jakichkolwiek specyficznych us\u0142ug na AWS czy po prostu VPS? Z mojego do\u015bwiadczenia prawie zawsze lepiej wychodzi zamiana managed us\u0142ug na zwyk\u0142y VPS na kt\u00f3rym sami hostujemy baz\u0119, aplikacj\u0119 czy inne niezb\u0119dne komponenty. Jasne, nie skaluje si\u0119 to tak automagicznie, ale $/h",
+              "score": 10,
+              "url": "https://reddit.com/r/PolskaNaLuzie/comments/1w5h34e/comment/p7fsr8o/"
+            },
+            {
+              "author": "MysteriousAd530",
+              "date": "2026-09-02",
+              "excerpt": "Ej super apka, my\u015bla\u0142am, \u017ce dosy\u0107 dobrze znam Krak\u00f3w, a widz\u0119 wiele miejsc, o kt\u00f3rych nie mia\u0142am poj\u0119cia!",
+              "score": 5,
+              "url": "https://reddit.com/r/PolskaNaLuzie/comments/1w5h34e/comment/p7frka1/"
+            },
+            {
+              "author": "alkatraz445",
+              "date": "2026-09-02",
+              "excerpt": "Czapki z g\u0142\u00f3w za design appki. Mi\u00f3d!",
+              "score": 4,
+              "url": "https://reddit.com/r/PolskaNaLuzie/comments/1w5h34e/comment/p7guico/"
+            },
+            {
+              "author": "mayoxox",
+              "date": "2026-09-03",
+              "excerpt": "Tak w kwestii samej apki - super pomys\u0142 i z wielk\u0105 ch\u0119ci\u0105 z niej skorzystam, ale nie obawiacie si\u0119 czasem potencjalnego zniszczenia tych ukrytych miejsc? Nie chodzi mi nawet o zalanie ich t\u0142umami, ale sama patrz\u0105c chocia\u017cby po tym, jak niekt\u00f3rzy ludzie potrafi\u0105 traktowa\u0107 pi\u0119kne miejsca, ba\u0142abym si\u0119,",
+              "score": 3,
+              "url": "https://reddit.com/r/PolskaNaLuzie/comments/1w5h34e/comment/p7jt5sp/"
+            }
+          ]
+        },
+        "published_at": "2026-09-02",
+        "relevance_hint": 0.0,
+        "snippet": "Urz\u0105d Skarbowy: \"Pomy\u0142ka - nie pomy\u0142ka. Prosz\u0119 zap\u0142aci\u0107 VAT.\" Poblokowa\u0142 karty p\u0142atnicze \u017ceby Amazon nie zd\u0105\u017cy\u0142 mu pobra\u0107 45 mln z\u0142. Pogratulowa\u0107 limit\u00f3w, kurde! Na pewno co najmniej dwucyfrowa liczba dev\u00f3w i account manager\u00f3w dosta\u0142a ataku serca. Nieironicznie przewiduj\u0119 pozwy.",
+        "source": "reddit",
+        "source_quality": 0.6,
+        "title": "Chcia\u0142em zrobi\u0107 map\u0119 niszowych miejsc w Polsce. 3 dni po wrzuceniu na AppStore AWS wystawi\u0142 mi rachunek na 11 mln $",
+        "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1w5h34e/chcia\u0142em_zrobi\u0107_map\u0119_niszowych_miejsc_w_polsce_3/",
+        "why_relevant": "Reddit global search"
+      },
+      {
+        "body": "Co powstrzymuje mnie przed sprowadzeniem nowego samochodu taniej z innego kraju?\nZnacznie taniej jest polecie\u0107 do Korei. Z powrotem samochodem albo z dostaw\u0105. Co wi\u0119c mia\u0142oby mnie powstrzyma\u0107 przed zrobieniem tego? Ten samoch\u00f3d ju\u017c jest sprzedawany w Polsce. 138,500.00 - 94,987.33 = 43,512.67 z\u0142oty :0 Samoch\u00f3d jest tak samo wyposa\u017cony, ma takie same kolory i funkcje",
+        "container": "Polska",
+        "date_confidence": "high",
+        "engagement": {
+          "num_comments": 138,
+          "score": 80
+        },
+        "engagement_score": 62,
+        "freshness": 76,
+        "item_id": "R4",
+        "local_rank_score": 0.2975,
+        "local_relevance": 0.07,
+        "metadata": {
+          "comment_insights": [],
+          "top_comments": []
+        },
+        "published_at": "2026-08-31",
+        "relevance_hint": 0.0,
+        "snippet": "Znacznie taniej jest polecie\u0107 do Korei. Z powrotem samochodem albo z dostaw\u0105. Co wi\u0119c mia\u0142oby mnie powstrzyma\u0107 przed zrobieniem tego? Ten samoch\u00f3d ju\u017c jest sprzedawany w Polsce. 138,500.00 - 94,987.33 = 43,512.67 z\u0142oty :0 Samoch\u00f3d jest tak samo wyposa\u017cony, ma takie same kolory i funkcje",
+        "source": "reddit",
+        "source_quality": 0.6,
+        "title": "Co powstrzymuje mnie przed sprowadzeniem nowego samochodu taniej z innego kraju?",
+        "url": "https://www.reddit.com/r/Polska/comments/1w3szc6/co_powstrzymuje_mnie_przed_sprowadzeniem_nowego/",
+        "why_relevant": "Reddit global search"
+      },
+      {
+        "body": "Gdyby kto\u015b znalaz\u0142 na portalu aukcyjnym tabliczk\u0119 z SP32-148 to prosz\u0119 o info bo w mniej ni\u017c 12 godzin kto\u015b j\u0105 ukrad\u0142 spod szopy po pozyskaniu loka przez Klub Sympatyk\u00f3w Kolei we Wroc\u0142awiu\nNone\nJak by\u0142em ma\u0142y to si\u0119 zastanawia\u0142em jakim cudem \u201epomniki\u201d lokomotyw s\u0105 zawsze takie zaniedbane.\nObecnie si\u0119 zastanawiam jakim cudem w og\u00f3le do dzi\u015b dotrwa\u0142y >_>. Niekt\u00f3rzy ludzie to kurwy :/ pracowa\u0142em kiedy\u015b w zak\u0142adzie napraw wagon\u00f3w i jak mieli\u015bmy za du\u017co wagon\u00f3w by zmie\u015bci\u0107 je za bram\u0105, to cz\u0119\u015b\u0107 stawa\u0142a na przylegaj\u0105cych bocznicach\n\n wystarczy\u0142a czasami doba, by okoliczni amatorzy z\u0142omu odcinali wszystko co popadnie, drabinki, tabliczki, istna dzicz xD",
+        "container": "Polska",
+        "date_confidence": "high",
+        "engagement": {
+          "num_comments": 39,
+          "score": 624
+        },
+        "engagement_score": 86,
+        "freshness": 84,
+        "item_id": "R2",
+        "local_rank_score": 0.296,
+        "local_relevance": 0.0,
+        "metadata": {
+          "comment_insights": [
+            "OPie, a co by\u0142o napisane na tabliczce? \"SP32-148\" czy co\u015b innego?",
+            "Jak by\u0142em ma\u0142y to si\u0119 zastanawia\u0142em jakim cudem \u201epomniki\u201d lokomotyw s\u0105 zawsze takie zaniedbane.",
+            "pracowa\u0142em kiedy\u015b w zak\u0142adzie napraw wagon\u00f3w i jak mieli\u015bmy za du\u017co wagon\u00f3w by zmie\u015bci\u0107 je za bram\u0105, to cz\u0119\u015b\u0107 stawa\u0142a na przylegaj\u0105cych bocznicach\n\n w...",
+            "Mikole kradn\u0105cy wszystko co kolejowe jak popadnie? Nowe, nie zna\u0142em.",
+            "Na chuj komus tabliczka z lokomotywy?",
+            "Mikole to teraz taka patologia, \u017ce szkoda gada\u0107... Oczywi\u015bcie nie wszyscy, ale jakie\u015b 99% dzieciarni...",
+            "\"Prosz\u0119 umie\u015bci\u0107 10z\u0142 w koszu na \u015bmieci przed dworcem je\u015bli kiedykolwiek chcecie zobaczy\u0107 wasz\u0105 tabliczk\u0119 \u017cyw\u0105. Bez \u017cadnych numer\u00f3w\"",
+            "Kolejo\u015bwiry czasem przesadzaj\u0105 jak z tym semaforem przejazdowym kt\u00f3ry 3 lata temu buchn\u0119li xP",
+            "Mo\u017ce na vinted zerknij? Jako\u015b w tym tygodniu trafi\u0142em na tabliczki z intercity."
+          ],
+          "top_comments": [
+            {
+              "author": "IbilisSLZ",
+              "date": "2026-09-03",
+              "excerpt": "Jak by\u0142em ma\u0142y to si\u0119 zastanawia\u0142em jakim cudem \u201epomniki\u201d lokomotyw s\u0105 zawsze takie zaniedbane.\nObecnie si\u0119 zastanawiam jakim cudem w og\u00f3le do dzi\u015b dotrwa\u0142y >_>.",
+              "score": 279,
+              "url": "https://reddit.com/r/Polska/comments/1w62wz2/comment/p7jpzpj/"
+            },
+            {
+              "author": "MagicTheHero",
+              "date": "2026-09-03",
+              "excerpt": "Niekt\u00f3rzy ludzie to kurwy :/",
+              "score": 196,
+              "url": "https://reddit.com/r/Polska/comments/1w62wz2/comment/p7jptuv/"
+            },
+            {
+              "author": "Faryzeusz1337",
+              "date": "2026-09-03",
+              "excerpt": "pracowa\u0142em kiedy\u015b w zak\u0142adzie napraw wagon\u00f3w i jak mieli\u015bmy za du\u017co wagon\u00f3w by zmie\u015bci\u0107 je za bram\u0105, to cz\u0119\u015b\u0107 stawa\u0142a na przylegaj\u0105cych bocznicach\n\n wystarczy\u0142a czasami doba, by okoliczni amatorzy z\u0142omu odcinali wszystko co popadnie, drabinki, tabliczki, istna dzicz xD",
+              "score": 146,
+              "url": "https://reddit.com/r/Polska/comments/1w62wz2/comment/p7jsden/"
+            },
+            {
+              "author": "otherdsc",
+              "date": "2026-09-03",
+              "excerpt": "Na chuj komus tabliczka z lokomotywy?",
+              "score": 74,
+              "url": "https://reddit.com/r/Polska/comments/1w62wz2/comment/p7jrmmp/"
+            },
+            {
+              "author": "pan_kura",
+              "date": "2026-09-03",
+              "excerpt": "Mikole kradn\u0105cy wszystko co kolejowe jak popadnie? Nowe, nie zna\u0142em.",
+              "score": 47,
+              "url": "https://reddit.com/r/Polska/comments/1w62wz2/comment/p7jw9yd/"
+            },
+            {
+              "author": "Holek",
+              "date": "2026-09-03",
+              "excerpt": "OPie, a co by\u0142o napisane na tabliczce? \"SP32-148\" czy co\u015b innego?",
+              "score": 29,
+              "url": "https://reddit.com/r/Polska/comments/1w62wz2/comment/p7jtuso/"
+            },
+            {
+              "author": "Katent1",
+              "date": "2026-09-03",
+              "excerpt": "Kolejo\u015bwiry czasem przesadzaj\u0105 jak z tym semaforem przejazdowym kt\u00f3ry 3 lata temu buchn\u0119li xP",
+              "score": 6,
+              "url": "https://reddit.com/r/Polska/comments/1w62wz2/comment/p7k1lbm/"
+            },
+            {
+              "author": "Easternredneck",
+              "date": "2026-09-03",
+              "excerpt": "Mikole to teraz taka patologia, \u017ce szkoda gada\u0107... Oczywi\u015bcie nie wszyscy, ale jakie\u015b 99% dzieciarni...",
+              "score": 5,
+              "url": "https://reddit.com/r/Polska/comments/1w62wz2/comment/p7kz52e/"
+            },
+            {
+              "author": "DonWojnar",
+              "date": "2026-09-04",
+              "excerpt": "\"Prosz\u0119 umie\u015bci\u0107 10z\u0142 w koszu na \u015bmieci przed dworcem je\u015bli kiedykolwiek chcecie zobaczy\u0107 wasz\u0105 tabliczk\u0119 \u017cyw\u0105. Bez \u017cadnych numer\u00f3w\"",
+              "score": 4,
+              "url": "https://reddit.com/r/Polska/comments/1w62wz2/comment/p7qcr80/"
+            },
+            {
+              "author": "ohgodwegonnadie",
+              "date": "2026-09-03",
+              "excerpt": "Mo\u017ce na vinted zerknij? Jako\u015b w tym tygodniu trafi\u0142em na tabliczki z intercity.",
+              "score": 3,
+              "url": "https://reddit.com/r/Polska/comments/1w62wz2/comment/p7lp5bx/"
+            }
+          ]
+        },
+        "published_at": "2026-09-03",
+        "relevance_hint": 0.0,
+        "snippet": "Jak by\u0142em ma\u0142y to si\u0119 zastanawia\u0142em jakim cudem \u201epomniki\u201d lokomotyw s\u0105 zawsze takie zaniedbane.\nObecnie si\u0119 zastanawiam jakim cudem w og\u00f3le do dzi\u015b dotrwa\u0142y >_>. Niekt\u00f3rzy ludzie to kurwy :/ pracowa\u0142em kiedy\u015b w zak\u0142adzie napraw wagon\u00f3w i jak mieli\u015bmy za du\u017co wagon\u00f3w by zmie\u015bci\u0107 je za bram\u0105, to cz\u0119\u015b\u0107 stawa\u0142a na przylegaj\u0105cych bocznicach\n\n wystarczy\u0142a czasami doba, by okoliczni amatorzy z\u0142omu odcinali wszystko co popadnie, drabinki, tabliczki, istna dzicz xD",
+        "source": "reddit",
+        "source_quality": 0.6,
+        "title": "Gdyby kto\u015b znalaz\u0142 na portalu aukcyjnym tabliczk\u0119 z SP32-148 to prosz\u0119 o info bo w mniej ni\u017c 12 godzin kto\u015b j\u0105 ukrad\u0142 spod szopy po pozyskaniu loka przez Klub Sympatyk\u00f3w Kolei we Wroc\u0142awiu",
+        "url": "https://www.reddit.com/r/Polska/comments/1w62wz2/gdyby_kto\u015b_znalaz\u0142_na_portalu_aukcyjnym_tabliczk\u0119/",
+        "why_relevant": "Reddit global search"
+      },
+      {
+        "body": "UKE wypo\u017cycza nieodp\u0142atnie mierniki pr\u0119dko\u015bci po\u0142\u0105czenia internetowego\nNone\nDobrze wiedzie\u0107, b\u0119d\u0119 musia\u0142 kiedy\u015b przetestowa\u0107. Pr\u00f3bowa\u0142em kiedy\u015b zrobi\u0107 co\u015b takiego na w\u0142asn\u0105 r\u0119k\u0119 u\u017cywaj\u0105c raspberry pi i smokeping, ale nie dzia\u0142a\u0142o to za dobrze. A mam wra\u017cenie \u017ce czasem mam spory packet loss przez chwil\u0119 ale ci\u0119\u017cko to sprawdzi\u0107. No i fajnie tylko \u017ce po\u0142\u0105czenia z serwerami testowymi si\u0119 nie przycina.\n\n Zreszt\u0105 pies z pr\u0119dko\u015bci\u0105, T-Mobile chamsko tnie torrenty, jak odpalisz torrent to upierdala po\u0142\u0105czenia UDP ICMP jak leci nie wa\u017cne czy torrent czy co\u015b innego. Na dodatek support w kulki leci bo nie ogarniaj\u0105 co si\u0119 dzieje a j Drobny pro-tip zanim zaczniecie masowo testowa\u0107. Routerki jakie daj\u0105 w pakiecie cz\u0119\u015bciej s\u0105 problemem ni\u017c samo \u0142\u0105cze... Jak przestawicie w tryb modemu i pod\u0142\u0105czycie w\u0142asny router to nagle wiele problem\u00f3w z \"\u0142\u0105czem\" znika. Nie staj\u0119 tu oczywi\u015bcie w obronie dostawc\u00f3w, kr\u0119tacze i ch*je z nich. I nie m\u00f3",
+        "container": "Polska",
+        "date_confidence": "high",
+        "engagement": {
+          "num_comments": 58,
+          "score": 177
+        },
+        "engagement_score": 71,
+        "freshness": 84,
+        "item_id": "R3",
+        "local_rank_score": 0.28099999999999997,
+        "local_relevance": 0.0,
+        "metadata": {
+          "comment_insights": [
+            "No ok, b\u0119d\u0119 mia\u0142 wyniki z urz\u0105dzenia z UKE. I co z nimi mam zrobi\u0107?",
+            "Dobrze wiedzie\u0107, b\u0119d\u0119 musia\u0142 kiedy\u015b przetestowa\u0107. Pr\u00f3bowa\u0142em kiedy\u015b zrobi\u0107 co\u015b takiego na w\u0142asn\u0105 r\u0119k\u0119 u\u017cywaj\u0105c raspberry pi i smokeping, ale nie dzia\u0142...",
+            "No i fajnie tylko \u017ce po\u0142\u0105czenia z serwerami testowymi si\u0119 nie przycina.",
+            "Drobny pro-tip zanim zaczniecie masowo testowa\u0107. Routerki jakie daj\u0105 w pakiecie cz\u0119\u015bciej s\u0105 problemem ni\u017c samo \u0142\u0105cze.",
+            "Fajnie, ale 200 KB up/down limitu gdy masz rodzin\u0119 w domu raczej nie ma szans na powodzenie.",
+            "Ciekawe ile trwa taki test bo nie tylko licza si\u0119 pr\u0119dko\u015bci ale te\u017c stabilno\u015b\u0107",
+            "Mo\u017cna te\u017c postawi\u0107 sobie speedtest-tracker kt\u00f3ry b\u0119dzie cyklicznie robi\u0142 testy i generowa\u0142 ci z tego raporty.",
+            "no i co, skoro umowy o internet to jest \"prr\u0119dko\u015b\u0107 DO X\", je\u015bli tam jest \"pr\u0119dko\u015b\u0107 do 500Mb/s\" to jedyne co jest gwarantowane, to \u017ce nie przekroczy 50..."
+          ],
+          "top_comments": [
+            {
+              "author": "Reavex",
+              "date": "2026-09-03",
+              "excerpt": "Dobrze wiedzie\u0107, b\u0119d\u0119 musia\u0142 kiedy\u015b przetestowa\u0107. Pr\u00f3bowa\u0142em kiedy\u015b zrobi\u0107 co\u015b takiego na w\u0142asn\u0105 r\u0119k\u0119 u\u017cywaj\u0105c raspberry pi i smokeping, ale nie dzia\u0142a\u0142o to za dobrze. A mam wra\u017cenie \u017ce czasem mam spory packet loss przez chwil\u0119 ale ci\u0119\u017cko to sprawdzi\u0107.",
+              "score": 37,
+              "url": "https://reddit.com/r/Polska/comments/1w6ikw5/comment/p7nhn9j/"
+            },
+            {
+              "author": "lorarc",
+              "date": "2026-09-03",
+              "excerpt": "No i fajnie tylko \u017ce po\u0142\u0105czenia z serwerami testowymi si\u0119 nie przycina.\n\n Zreszt\u0105 pies z pr\u0119dko\u015bci\u0105, T-Mobile chamsko tnie torrenty, jak odpalisz torrent to upierdala po\u0142\u0105czenia UDP ICMP jak leci nie wa\u017cne czy torrent czy co\u015b innego. Na dodatek support w kulki leci bo nie ogarniaj\u0105 co si\u0119 dzieje a j",
+              "score": 33,
+              "url": "https://reddit.com/r/Polska/comments/1w6ikw5/comment/p7o8tl2/"
+            },
+            {
+              "author": "thorax97",
+              "date": "2026-09-04",
+              "excerpt": "Drobny pro-tip zanim zaczniecie masowo testowa\u0107. Routerki jakie daj\u0105 w pakiecie cz\u0119\u015bciej s\u0105 problemem ni\u017c samo \u0142\u0105cze... Jak przestawicie w tryb modemu i pod\u0142\u0105czycie w\u0142asny router to nagle wiele problem\u00f3w z \"\u0142\u0105czem\" znika. Nie staj\u0119 tu oczywi\u015bcie w obronie dostawc\u00f3w, kr\u0119tacze i ch*je z nich. I nie m\u00f3",
+              "score": 14,
+              "url": "https://reddit.com/r/Polska/comments/1w6ikw5/comment/p7procn/"
+            },
+            {
+              "author": "_QLFON_",
+              "date": "2026-09-04",
+              "excerpt": "No ok, b\u0119d\u0119 mia\u0142 wyniki z urz\u0105dzenia z UKE. I co z nimi mam zrobi\u0107? ISP powie, \u017ce w umowie pr\u0119dko\u015bci s\u0105 \"do XX Mbps\" i tyle. CHyba \u017ce co\u015b si\u0119 zmieni\u0142o i przespa\u0142em fakt, \u017ce musz\u0105 podawa\u0107 minimaln\u0105.",
+              "score": 5,
+              "url": "https://reddit.com/r/Polska/comments/1w6ikw5/comment/p7q8pvl/"
+            },
+            {
+              "author": "qzyren",
+              "date": "2026-09-04",
+              "excerpt": "Ciekawe ile trwa taki test bo nie tylko licza si\u0119 pr\u0119dko\u015bci ale te\u017c stabilno\u015b\u0107",
+              "score": 2,
+              "url": "https://reddit.com/r/Polska/comments/1w6ikw5/comment/p7ugo9c/"
+            },
+            {
+              "author": "Angelthree95",
+              "date": "2026-09-03",
+              "excerpt": "Fajnie, ale 200 KB up/down limitu gdy masz rodzin\u0119 w domu raczej nie ma szans na powodzenie. Poza tym je\u015bli us\u0142ugodawca udost\u0119pnia jedynie modem (box z jednym portem RJ45) to troch\u0119 lipa, bo musia\u0142bym ca\u0142y internet odpi\u0105\u0107 sobie na 48h+",
+              "score": 1,
+              "url": "https://reddit.com/r/Polska/comments/1w6ikw5/comment/p7nwfg6/"
+            },
+            {
+              "author": "sonido_lover",
+              "date": "2026-09-04",
+              "excerpt": "Mo\u017cna te\u017c postawi\u0107 sobie speedtest-tracker kt\u00f3ry b\u0119dzie cyklicznie robi\u0142 testy i generowa\u0142 ci z tego raporty.",
+              "score": 1,
+              "url": "https://reddit.com/r/Polska/comments/1w6ikw5/comment/p7p1hns/"
+            },
+            {
+              "author": "duncr91",
+              "date": "2026-09-05",
+              "excerpt": "no i co, skoro umowy o internet to jest \"prr\u0119dko\u015b\u0107 DO X\", je\u015bli tam jest \"pr\u0119dko\u015b\u0107 do 500Mb/s\" to jedyne co jest gwarantowane, to \u017ce nie przekroczy 500Mb/s. Nie ma tam QoS, bo kosztowa\u0142oby o wiele, wiele wi\u0119cej",
+              "score": 1,
+              "url": "https://reddit.com/r/Polska/comments/1w6ikw5/comment/p7wg1ki/"
+            }
+          ]
+        },
+        "published_at": "2026-09-03",
+        "relevance_hint": 0.0,
+        "snippet": "Dobrze wiedzie\u0107, b\u0119d\u0119 musia\u0142 kiedy\u015b przetestowa\u0107. Pr\u00f3bowa\u0142em kiedy\u015b zrobi\u0107 co\u015b takiego na w\u0142asn\u0105 r\u0119k\u0119 u\u017cywaj\u0105c raspberry pi i smokeping, ale nie dzia\u0142a\u0142o to za dobrze. A mam wra\u017cenie \u017ce czasem mam spory packet loss przez chwil\u0119 ale ci\u0119\u017cko to sprawdzi\u0107. No i fajnie tylko \u017ce po\u0142\u0105czenia z serwerami testowymi si\u0119 nie przycina. Zreszt\u0105 pies z pr\u0119dko\u015bci\u0105, T-Mobile chamsko tnie torrenty, jak odpalisz torrent to upierdala po\u0142\u0105czenia UDP ICMP jak leci nie wa\u017cne czy torrent czy co\u015b innego. Na dodatek support w kulki leci bo nie ogarniaj\u0105 co si\u0119 dzieje a j Drobny pro-tip zanim zaczniecie masowo testowa\u0107. Routerki jakie daj\u0105 w pakiecie cz\u0119\u015bciej s\u0105 problemem ni\u017c samo \u0142\u0105cze... Jak przestawicie w tryb modemu i pod\u0142\u0105czycie w\u0142asny router to nagle wiele...",
+        "source": "reddit",
+        "source_quality": 0.6,
+        "title": "UKE wypo\u017cycza nieodp\u0142atnie mierniki pr\u0119dko\u015bci po\u0142\u0105czenia internetowego",
+        "url": "https://www.reddit.com/r/Polska/comments/1w6ikw5/uke_wypo\u017cycza_nieodp\u0142atnie_mierniki_pr\u0119dko\u015bci/",
+        "why_relevant": "Reddit r/Polska search"
+      },
+      {
+        "body": "Tragedia na autostradzie A1. Nie \u017cyje pi\u0119\u0107 os\u00f3b, trasa zablokowana\nNone",
+        "container": "Polska",
+        "date_confidence": "high",
+        "engagement": {
+          "num_comments": 63,
+          "score": 126
+        },
+        "engagement_score": 61,
+        "freshness": 78,
+        "item_id": "R5",
+        "local_rank_score": 0.256,
+        "local_relevance": 0.0,
+        "metadata": {
+          "comment_insights": [],
+          "top_comments": []
+        },
+        "published_at": "2026-09-01",
+        "relevance_hint": 0.0,
+        "snippet": "None",
+        "source": "reddit",
+        "source_quality": 0.6,
+        "title": "Tragedia na autostradzie A1. Nie \u017cyje pi\u0119\u0107 os\u00f3b, trasa zablokowana",
+        "url": "https://www.reddit.com/r/Polska/comments/1w45jqq/tragedia_na_autostradzie_a1_nie_\u017cyje_pi\u0119\u0107_os\u00f3b/",
+        "why_relevant": "Reddit global search"
+      },
+      {
+        "body": "Plecaki vs pasa\u017cerowie\nNone",
+        "container": "PolskaNaLuzie",
+        "date_confidence": "high",
+        "engagement": {
+          "num_comments": 12,
+          "score": 8
+        },
+        "engagement_score": 21,
+        "freshness": 90,
+        "item_id": "R15",
+        "local_rank_score": 0.246,
+        "local_relevance": 0.0,
+        "metadata": {
+          "comment_insights": [],
+          "top_comments": []
+        },
+        "published_at": "2026-09-05",
+        "relevance_hint": 0.0,
+        "snippet": "None",
+        "source": "reddit",
+        "source_quality": 0.6,
+        "title": "Plecaki vs pasa\u017cerowie",
+        "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1w7z56y/plecaki_vs_pasa\u017cerowie/",
+        "why_relevant": "Reddit r/PolskaNaLuzie search"
+      },
+      {
+        "body": "Spacery / intensywne marsze / dzienna liczba krok\u00f3w\nNone",
+        "container": "Polska",
+        "date_confidence": "high",
+        "engagement": {
+          "num_comments": 86,
+          "score": 37
+        },
+        "engagement_score": 50,
+        "freshness": 76,
+        "item_id": "R7",
+        "local_rank_score": 0.24,
+        "local_relevance": 0.0,
+        "metadata": {
+          "comment_insights": [],
+          "top_comments": []
+        },
+        "published_at": "2026-08-31",
+        "relevance_hint": 0.0,
+        "snippet": "None",
+        "source": "reddit",
+        "source_quality": 0.6,
+        "title": "Spacery / intensywne marsze / dzienna liczba krok\u00f3w",
+        "url": "https://www.reddit.com/r/Polska/comments/1w35yk4/spacery_intensywne_marsze_dzienna_liczba_krok\u00f3w/",
+        "why_relevant": "Reddit r/Polska search"
+      },
+      {
+        "body": "Auto w automacie?\nNone",
+        "container": "PolskaNaLuzie",
+        "date_confidence": "high",
+        "engagement": {
+          "num_comments": 50,
+          "score": 1
+        },
+        "engagement_score": 15,
+        "freshness": 86,
+        "item_id": "R11",
+        "local_rank_score": 0.22999999999999998,
+        "local_relevance": 0.0,
+        "metadata": {
+          "comment_insights": [],
+          "top_comments": []
+        },
+        "published_at": "2026-09-04",
+        "relevance_hint": 0.0,
+        "snippet": "None",
+        "source": "reddit",
+        "source_quality": 0.6,
+        "title": "Auto w automacie?",
+        "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1w6y3xp/auto_w_automacie/",
+        "why_relevant": "Reddit r/PolskaNaLuzie search"
+      },
+      {
+        "body": "Mini makieta warsztatu samochodowego na p\u00f3\u0142ce\nNone",
+        "container": "PolskaNaLuzie",
+        "date_confidence": "high",
+        "engagement": {
+          "num_comments": 11,
+          "score": 134
+        },
+        "engagement_score": 49,
+        "freshness": 70,
+        "item_id": "R6",
+        "local_rank_score": 0.22399999999999998,
+        "local_relevance": 0.0,
+        "metadata": {
+          "comment_insights": [],
+          "top_comments": []
+        },
+        "published_at": "2026-08-29",
+        "relevance_hint": 0.0,
+        "snippet": "None",
+        "source": "reddit",
+        "source_quality": 0.6,
+        "title": "Mini makieta warsztatu samochodowego na p\u00f3\u0142ce",
+        "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1w1sxqm/mini_makieta_warsztatu_samochodowego_na_p\u00f3\u0142ce/",
+        "why_relevant": "Reddit r/PolskaNaLuzie search"
+      },
+      {
+        "body": "Du\u017ca dop\u0142ata za energi\u0119 ciepln\u0105 w bloku.\nNone",
+        "container": "PolskaNaLuzie",
+        "date_confidence": "high",
+        "engagement": {
+          "num_comments": 60,
+          "score": 5
+        },
+        "engagement_score": 28,
+        "freshness": 78,
+        "item_id": "R10",
+        "local_rank_score": 0.223,
+        "local_relevance": 0.0,
+        "metadata": {
+          "comment_insights": [],
+          "top_comments": []
+        },
+        "published_at": "2026-09-01",
+        "relevance_hint": 0.0,
+        "snippet": "None",
+        "source": "reddit",
+        "source_quality": 0.6,
+        "title": "Du\u017ca dop\u0142ata za energi\u0119 ciepln\u0105 w bloku.",
+        "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1w48ygo/du\u017ca_dop\u0142ata_za_energi\u0119_ciepln\u0105_w_bloku/",
+        "why_relevant": "Reddit r/PolskaNaLuzie search"
+      }
+    ]
+  },
+  "library_context": [],
+  "provider_runtime": {
+    "planner_model": "google/gemini-3.1-flash-lite-preview",
+    "reasoning_provider": "openrouter",
+    "rerank_model": "google/gemini-3.1-flash-lite-preview"
+  },
+  "query_plan": {
+    "cluster_mode": "none",
+    "freshness_mode": "balanced_recent",
+    "intent": "factual",
+    "notes": [
+      "Skupiono si\u0119 na oficjalnych planach GDDKiA oraz dyskusjach lokalnych dotycz\u0105cych przebiegu A50.",
+      "Hackernews pomini\u0119to ze wzgl\u0119du na brak merytorycznego zwi\u0105zku z lokaln\u0105 infrastruktur\u0105 drogow\u0105 w Polsce."
+    ],
+    "raw_topic": "obwodnica autostradowa Warszawy A50 przebieg trasy Sobienie-Jeziory",
+    "source_weights": {
+      "grounding": 0.6,
+      "hackernews": 0.0,
+      "reddit": 0.2,
+      "youtube": 0.2
+    },
+    "subqueries": [
+      {
+        "label": "Trasa A50",
+        "ranking_query": "Jaki jest planowany przebieg autostrady A50 w okolicach Sobienie-Jeziory?",
+        "search_query": "obwodnica autostradowa Warszawy A50 przebieg",
+        "sources": [
+          "grounding",
+          "reddit"
+        ],
+        "weight": 1.0
+      }
+    ]
+  },
+  "range_from": "2026-08-06",
+  "range_to": "2026-09-05",
+  "ranked_candidates": [
+    {
+      "candidate_id": "https://reddit.com/r/polskanaluzie/comments/1w7z56y/plecaki_vs_pasa\u017cerowie",
+      "cluster_id": "cluster-1",
+      "engagement": 21,
+      "explanation": "The candidate does not mention the entity 'A50' or 'Sobienie-Jeziory' in the title or snippet.",
+      "final_score": 5.327272727272727,
+      "freshness": 90,
+      "fun_explanation": "Too vague to evaluate.",
+      "fun_score": 10.0,
+      "item_id": "R15",
+      "local_relevance": 0.0,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "R15",
+            "native_rank": 6,
+            "source": "reddit",
+            "subquery_label": "Trasa A50"
+          }
+        ],
+        "range_from": "2026-08-06",
+        "range_to": "2026-09-05"
+      },
+      "native_ranks": {
+        "Trasa A50:reddit": 6
+      },
+      "rerank_score": 0.0,
+      "rrf_score": 0.0030303030303030303,
+      "snippet": "None",
+      "source": "reddit",
+      "source_items": [
+        {
+          "body": "Plecaki vs pasa\u017cerowie\nNone",
+          "container": "PolskaNaLuzie",
+          "date_confidence": "high",
+          "engagement": {
+            "num_comments": 12,
+            "score": 8
+          },
+          "engagement_score": 21,
+          "freshness": 90,
+          "item_id": "R15",
+          "local_rank_score": 0.246,
+          "local_relevance": 0.0,
+          "metadata": {
+            "comment_insights": [],
+            "top_comments": []
+          },
+          "published_at": "2026-09-05",
+          "relevance_hint": 0.0,
+          "snippet": "None",
+          "source": "reddit",
+          "source_quality": 0.6,
+          "title": "Plecaki vs pasa\u017cerowie",
+          "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1w7z56y/plecaki_vs_pasa\u017cerowie/",
+          "why_relevant": "Reddit r/PolskaNaLuzie search"
+        }
+      ],
+      "source_quality": 0.6,
+      "sources": [
+        "reddit"
+      ],
+      "subquery_labels": [
+        "Trasa A50"
+      ],
+      "title": "Plecaki vs pasa\u017cerowie",
+      "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1w7z56y/plecaki_vs_pasa\u017cerowie/"
+    },
+    {
+      "candidate_id": "https://reddit.com/r/polska/comments/1w62wz2/gdyby_kto\u015b_znalaz\u0142_na_portalu_aukcyjnym_tabliczk\u0119",
+      "cluster_id": "cluster-2",
+      "engagement": 86,
+      "explanation": "The candidate does not mention the entity 'A50' or 'Sobienie-Jeziory' in the title or snippet.",
+      "final_score": 5.158095238095239,
+      "freshness": 84,
+      "fun_explanation": "A cynical but accurate observation about the 'scrap metal' reality of Polish railway history.",
+      "fun_score": 35.0,
+      "item_id": "R2",
+      "local_relevance": 0.0,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "R2",
+            "native_rank": 3,
+            "source": "reddit",
+            "subquery_label": "Trasa A50"
+          }
+        ],
+        "range_from": "2026-08-06",
+        "range_to": "2026-09-05"
+      },
+      "native_ranks": {
+        "Trasa A50:reddit": 3
+      },
+      "rerank_score": 0.0,
+      "rrf_score": 0.0031746031746031746,
+      "snippet": "Jak by\u0142em ma\u0142y to si\u0119 zastanawia\u0142em jakim cudem \u201epomniki\u201d lokomotyw s\u0105 zawsze takie zaniedbane.\nObecnie si\u0119 zastanawiam jakim cudem w og\u00f3le do dzi\u015b dotrwa\u0142y >_>. Niekt\u00f3rzy ludzie to kurwy :/ pracowa\u0142em kiedy\u015b w zak\u0142adzie napraw wagon\u00f3w i jak mieli\u015bmy za du\u017co wagon\u00f3w by zmie\u015bci\u0107 je za bram\u0105, to cz\u0119\u015b\u0107 stawa\u0142a na przylegaj\u0105cych bocznicach\n\n wystarczy\u0142a czasami doba, by okoliczni amatorzy z\u0142omu odcinali wszystko co popadnie, drabinki, tabliczki, istna dzicz xD",
+      "source": "reddit",
+      "source_items": [
+        {
+          "body": "Gdyby kto\u015b znalaz\u0142 na portalu aukcyjnym tabliczk\u0119 z SP32-148 to prosz\u0119 o info bo w mniej ni\u017c 12 godzin kto\u015b j\u0105 ukrad\u0142 spod szopy po pozyskaniu loka przez Klub Sympatyk\u00f3w Kolei we Wroc\u0142awiu\nNone\nJak by\u0142em ma\u0142y to si\u0119 zastanawia\u0142em jakim cudem \u201epomniki\u201d lokomotyw s\u0105 zawsze takie zaniedbane.\nObecnie si\u0119 zastanawiam jakim cudem w og\u00f3le do dzi\u015b dotrwa\u0142y >_>. Niekt\u00f3rzy ludzie to kurwy :/ pracowa\u0142em kiedy\u015b w zak\u0142adzie napraw wagon\u00f3w i jak mieli\u015bmy za du\u017co wagon\u00f3w by zmie\u015bci\u0107 je za bram\u0105, to cz\u0119\u015b\u0107 stawa\u0142a na przylegaj\u0105cych bocznicach\n\n wystarczy\u0142a czasami doba, by okoliczni amatorzy z\u0142omu odcinali wszystko co popadnie, drabinki, tabliczki, istna dzicz xD",
+          "container": "Polska",
+          "date_confidence": "high",
+          "engagement": {
+            "num_comments": 39,
+            "score": 624
+          },
+          "engagement_score": 86,
+          "freshness": 84,
+          "item_id": "R2",
+          "local_rank_score": 0.296,
+          "local_relevance": 0.0,
+          "metadata": {
+            "comment_insights": [
+              "OPie, a co by\u0142o napisane na tabliczce? \"SP32-148\" czy co\u015b innego?",
+              "Jak by\u0142em ma\u0142y to si\u0119 zastanawia\u0142em jakim cudem \u201epomniki\u201d lokomotyw s\u0105 zawsze takie zaniedbane.",
+              "pracowa\u0142em kiedy\u015b w zak\u0142adzie napraw wagon\u00f3w i jak mieli\u015bmy za du\u017co wagon\u00f3w by zmie\u015bci\u0107 je za bram\u0105, to cz\u0119\u015b\u0107 stawa\u0142a na przylegaj\u0105cych bocznicach\n\n w...",
+              "Mikole kradn\u0105cy wszystko co kolejowe jak popadnie? Nowe, nie zna\u0142em.",
+              "Na chuj komus tabliczka z lokomotywy?",
+              "Mikole to teraz taka patologia, \u017ce szkoda gada\u0107... Oczywi\u015bcie nie wszyscy, ale jakie\u015b 99% dzieciarni...",
+              "\"Prosz\u0119 umie\u015bci\u0107 10z\u0142 w koszu na \u015bmieci przed dworcem je\u015bli kiedykolwiek chcecie zobaczy\u0107 wasz\u0105 tabliczk\u0119 \u017cyw\u0105. Bez \u017cadnych numer\u00f3w\"",
+              "Kolejo\u015bwiry czasem przesadzaj\u0105 jak z tym semaforem przejazdowym kt\u00f3ry 3 lata temu buchn\u0119li xP",
+              "Mo\u017ce na vinted zerknij? Jako\u015b w tym tygodniu trafi\u0142em na tabliczki z intercity."
+            ],
+            "top_comments": [
+              {
+                "author": "IbilisSLZ",
+                "date": "2026-09-03",
+                "excerpt": "Jak by\u0142em ma\u0142y to si\u0119 zastanawia\u0142em jakim cudem \u201epomniki\u201d lokomotyw s\u0105 zawsze takie zaniedbane.\nObecnie si\u0119 zastanawiam jakim cudem w og\u00f3le do dzi\u015b dotrwa\u0142y >_>.",
+                "score": 279,
+                "url": "https://reddit.com/r/Polska/comments/1w62wz2/comment/p7jpzpj/"
+              },
+              {
+                "author": "MagicTheHero",
+                "date": "2026-09-03",
+                "excerpt": "Niekt\u00f3rzy ludzie to kurwy :/",
+                "score": 196,
+                "url": "https://reddit.com/r/Polska/comments/1w62wz2/comment/p7jptuv/"
+              },
+              {
+                "author": "Faryzeusz1337",
+                "date": "2026-09-03",
+                "excerpt": "pracowa\u0142em kiedy\u015b w zak\u0142adzie napraw wagon\u00f3w i jak mieli\u015bmy za du\u017co wagon\u00f3w by zmie\u015bci\u0107 je za bram\u0105, to cz\u0119\u015b\u0107 stawa\u0142a na przylegaj\u0105cych bocznicach\n\n wystarczy\u0142a czasami doba, by okoliczni amatorzy z\u0142omu odcinali wszystko co popadnie, drabinki, tabliczki, istna dzicz xD",
+                "score": 146,
+                "url": "https://reddit.com/r/Polska/comments/1w62wz2/comment/p7jsden/"
+              },
+              {
+                "author": "otherdsc",
+                "date": "2026-09-03",
+                "excerpt": "Na chuj komus tabliczka z lokomotywy?",
+                "score": 74,
+                "url": "https://reddit.com/r/Polska/comments/1w62wz2/comment/p7jrmmp/"
+              },
+              {
+                "author": "pan_kura",
+                "date": "2026-09-03",
+                "excerpt": "Mikole kradn\u0105cy wszystko co kolejowe jak popadnie? Nowe, nie zna\u0142em.",
+                "score": 47,
+                "url": "https://reddit.com/r/Polska/comments/1w62wz2/comment/p7jw9yd/"
+              },
+              {
+                "author": "Holek",
+                "date": "2026-09-03",
+                "excerpt": "OPie, a co by\u0142o napisane na tabliczce? \"SP32-148\" czy co\u015b innego?",
+                "score": 29,
+                "url": "https://reddit.com/r/Polska/comments/1w62wz2/comment/p7jtuso/"
+              },
+              {
+                "author": "Katent1",
+                "date": "2026-09-03",
+                "excerpt": "Kolejo\u015bwiry czasem przesadzaj\u0105 jak z tym semaforem przejazdowym kt\u00f3ry 3 lata temu buchn\u0119li xP",
+                "score": 6,
+                "url": "https://reddit.com/r/Polska/comments/1w62wz2/comment/p7k1lbm/"
+              },
+              {
+                "author": "Easternredneck",
+                "date": "2026-09-03",
+                "excerpt": "Mikole to teraz taka patologia, \u017ce szkoda gada\u0107... Oczywi\u015bcie nie wszyscy, ale jakie\u015b 99% dzieciarni...",
+                "score": 5,
+                "url": "https://reddit.com/r/Polska/comments/1w62wz2/comment/p7kz52e/"
+              },
+              {
+                "author": "DonWojnar",
+                "date": "2026-09-04",
+                "excerpt": "\"Prosz\u0119 umie\u015bci\u0107 10z\u0142 w koszu na \u015bmieci przed dworcem je\u015bli kiedykolwiek chcecie zobaczy\u0107 wasz\u0105 tabliczk\u0119 \u017cyw\u0105. Bez \u017cadnych numer\u00f3w\"",
+                "score": 4,
+                "url": "https://reddit.com/r/Polska/comments/1w62wz2/comment/p7qcr80/"
+              },
+              {
+                "author": "ohgodwegonnadie",
+                "date": "2026-09-03",
+                "excerpt": "Mo\u017ce na vinted zerknij? Jako\u015b w tym tygodniu trafi\u0142em na tabliczki z intercity.",
+                "score": 3,
+                "url": "https://reddit.com/r/Polska/comments/1w62wz2/comment/p7lp5bx/"
+              }
+            ]
+          },
+          "published_at": "2026-09-03",
+          "relevance_hint": 0.0,
+          "snippet": "Jak by\u0142em ma\u0142y to si\u0119 zastanawia\u0142em jakim cudem \u201epomniki\u201d lokomotyw s\u0105 zawsze takie zaniedbane.\nObecnie si\u0119 zastanawiam jakim cudem w og\u00f3le do dzi\u015b dotrwa\u0142y >_>. Niekt\u00f3rzy ludzie to kurwy :/ pracowa\u0142em kiedy\u015b w zak\u0142adzie napraw wagon\u00f3w i jak mieli\u015bmy za du\u017co wagon\u00f3w by zmie\u015bci\u0107 je za bram\u0105, to cz\u0119\u015b\u0107 stawa\u0142a na przylegaj\u0105cych bocznicach\n\n wystarczy\u0142a czasami doba, by okoliczni amatorzy z\u0142omu odcinali wszystko co popadnie, drabinki, tabliczki, istna dzicz xD",
+          "source": "reddit",
+          "source_quality": 0.6,
+          "title": "Gdyby kto\u015b znalaz\u0142 na portalu aukcyjnym tabliczk\u0119 z SP32-148 to prosz\u0119 o info bo w mniej ni\u017c 12 godzin kto\u015b j\u0105 ukrad\u0142 spod szopy po pozyskaniu loka przez Klub Sympatyk\u00f3w Kolei we Wroc\u0142awiu",
+          "url": "https://www.reddit.com/r/Polska/comments/1w62wz2/gdyby_kto\u015b_znalaz\u0142_na_portalu_aukcyjnym_tabliczk\u0119/",
+          "why_relevant": "Reddit global search"
+        }
+      ],
+      "source_quality": 0.6,
+      "sources": [
+        "reddit"
+      ],
+      "subquery_labels": [
+        "Trasa A50"
+      ],
+      "title": "Gdyby kto\u015b znalaz\u0142 na portalu aukcyjnym tabliczk\u0119 z SP32-148 to prosz\u0119 o info bo w mniej ni\u017c 12 godzin kto\u015b j\u0105 ukrad\u0142 spod szopy po pozyskaniu loka przez Klub Sympatyk\u00f3w Kolei we Wroc\u0142awiu",
+      "url": "https://www.reddit.com/r/Polska/comments/1w62wz2/gdyby_kto\u015b_znalaz\u0142_na_portalu_aukcyjnym_tabliczk\u0119/"
+    },
+    {
+      "candidate_id": "https://reddit.com/r/polska/comments/1w6ikw5/uke_wypo\u017cycza_nieodp\u0142atnie_mierniki_pr\u0119dko\u015bci",
+      "cluster_id": "cluster-3",
+      "engagement": 71,
+      "explanation": "The candidate does not mention the entity 'A50' or 'Sobienie-Jeziory' in the title or snippet.",
+      "final_score": 5.154374999999999,
+      "freshness": 84,
+      "fun_explanation": "Standard tech frustration; relatable but lacks a punchline.",
+      "fun_score": 25.0,
+      "item_id": "R3",
+      "local_relevance": 0.0,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "R3",
+            "native_rank": 4,
+            "source": "reddit",
+            "subquery_label": "Trasa A50"
+          }
+        ],
+        "range_from": "2026-08-06",
+        "range_to": "2026-09-05"
+      },
+      "native_ranks": {
+        "Trasa A50:reddit": 4
+      },
+      "rerank_score": 0.0,
+      "rrf_score": 0.003125,
+      "snippet": "Dobrze wiedzie\u0107, b\u0119d\u0119 musia\u0142 kiedy\u015b przetestowa\u0107. Pr\u00f3bowa\u0142em kiedy\u015b zrobi\u0107 co\u015b takiego na w\u0142asn\u0105 r\u0119k\u0119 u\u017cywaj\u0105c raspberry pi i smokeping, ale nie dzia\u0142a\u0142o to za dobrze. A mam wra\u017cenie \u017ce czasem mam spory packet loss przez chwil\u0119 ale ci\u0119\u017cko to sprawdzi\u0107. No i fajnie tylko \u017ce po\u0142\u0105czenia z serwerami testowymi si\u0119 nie przycina. Zreszt\u0105 pies z pr\u0119dko\u015bci\u0105, T-Mobile chamsko tnie torrenty, jak odpalisz torrent to upierdala po\u0142\u0105czenia UDP ICMP jak leci nie wa\u017cne czy torrent czy co\u015b innego. Na dodatek support w kulki leci bo nie ogarniaj\u0105 co si\u0119 dzieje a j Drobny pro-tip zanim zaczniecie masowo testowa\u0107. Routerki jakie daj\u0105 w pakiecie cz\u0119\u015bciej s\u0105 problemem ni\u017c samo \u0142\u0105cze... Jak przestawicie w tryb modemu i pod\u0142\u0105czycie w\u0142asny router to nagle wiele...",
+      "source": "reddit",
+      "source_items": [
+        {
+          "body": "UKE wypo\u017cycza nieodp\u0142atnie mierniki pr\u0119dko\u015bci po\u0142\u0105czenia internetowego\nNone\nDobrze wiedzie\u0107, b\u0119d\u0119 musia\u0142 kiedy\u015b przetestowa\u0107. Pr\u00f3bowa\u0142em kiedy\u015b zrobi\u0107 co\u015b takiego na w\u0142asn\u0105 r\u0119k\u0119 u\u017cywaj\u0105c raspberry pi i smokeping, ale nie dzia\u0142a\u0142o to za dobrze. A mam wra\u017cenie \u017ce czasem mam spory packet loss przez chwil\u0119 ale ci\u0119\u017cko to sprawdzi\u0107. No i fajnie tylko \u017ce po\u0142\u0105czenia z serwerami testowymi si\u0119 nie przycina.\n\n Zreszt\u0105 pies z pr\u0119dko\u015bci\u0105, T-Mobile chamsko tnie torrenty, jak odpalisz torrent to upierdala po\u0142\u0105czenia UDP ICMP jak leci nie wa\u017cne czy torrent czy co\u015b innego. Na dodatek support w kulki leci bo nie ogarniaj\u0105 co si\u0119 dzieje a j Drobny pro-tip zanim zaczniecie masowo testowa\u0107. Routerki jakie daj\u0105 w pakiecie cz\u0119\u015bciej s\u0105 problemem ni\u017c samo \u0142\u0105cze... Jak przestawicie w tryb modemu i pod\u0142\u0105czycie w\u0142asny router to nagle wiele problem\u00f3w z \"\u0142\u0105czem\" znika. Nie staj\u0119 tu oczywi\u015bcie w obronie dostawc\u00f3w, kr\u0119tacze i ch*je z nich. I nie m\u00f3",
+          "container": "Polska",
+          "date_confidence": "high",
+          "engagement": {
+            "num_comments": 58,
+            "score": 177
+          },
+          "engagement_score": 71,
+          "freshness": 84,
+          "item_id": "R3",
+          "local_rank_score": 0.28099999999999997,
+          "local_relevance": 0.0,
+          "metadata": {
+            "comment_insights": [
+              "No ok, b\u0119d\u0119 mia\u0142 wyniki z urz\u0105dzenia z UKE. I co z nimi mam zrobi\u0107?",
+              "Dobrze wiedzie\u0107, b\u0119d\u0119 musia\u0142 kiedy\u015b przetestowa\u0107. Pr\u00f3bowa\u0142em kiedy\u015b zrobi\u0107 co\u015b takiego na w\u0142asn\u0105 r\u0119k\u0119 u\u017cywaj\u0105c raspberry pi i smokeping, ale nie dzia\u0142...",
+              "No i fajnie tylko \u017ce po\u0142\u0105czenia z serwerami testowymi si\u0119 nie przycina.",
+              "Drobny pro-tip zanim zaczniecie masowo testowa\u0107. Routerki jakie daj\u0105 w pakiecie cz\u0119\u015bciej s\u0105 problemem ni\u017c samo \u0142\u0105cze.",
+              "Fajnie, ale 200 KB up/down limitu gdy masz rodzin\u0119 w domu raczej nie ma szans na powodzenie.",
+              "Ciekawe ile trwa taki test bo nie tylko licza si\u0119 pr\u0119dko\u015bci ale te\u017c stabilno\u015b\u0107",
+              "Mo\u017cna te\u017c postawi\u0107 sobie speedtest-tracker kt\u00f3ry b\u0119dzie cyklicznie robi\u0142 testy i generowa\u0142 ci z tego raporty.",
+              "no i co, skoro umowy o internet to jest \"prr\u0119dko\u015b\u0107 DO X\", je\u015bli tam jest \"pr\u0119dko\u015b\u0107 do 500Mb/s\" to jedyne co jest gwarantowane, to \u017ce nie przekroczy 50..."
+            ],
+            "top_comments": [
+              {
+                "author": "Reavex",
+                "date": "2026-09-03",
+                "excerpt": "Dobrze wiedzie\u0107, b\u0119d\u0119 musia\u0142 kiedy\u015b przetestowa\u0107. Pr\u00f3bowa\u0142em kiedy\u015b zrobi\u0107 co\u015b takiego na w\u0142asn\u0105 r\u0119k\u0119 u\u017cywaj\u0105c raspberry pi i smokeping, ale nie dzia\u0142a\u0142o to za dobrze. A mam wra\u017cenie \u017ce czasem mam spory packet loss przez chwil\u0119 ale ci\u0119\u017cko to sprawdzi\u0107.",
+                "score": 37,
+                "url": "https://reddit.com/r/Polska/comments/1w6ikw5/comment/p7nhn9j/"
+              },
+              {
+                "author": "lorarc",
+                "date": "2026-09-03",
+                "excerpt": "No i fajnie tylko \u017ce po\u0142\u0105czenia z serwerami testowymi si\u0119 nie przycina.\n\n Zreszt\u0105 pies z pr\u0119dko\u015bci\u0105, T-Mobile chamsko tnie torrenty, jak odpalisz torrent to upierdala po\u0142\u0105czenia UDP ICMP jak leci nie wa\u017cne czy torrent czy co\u015b innego. Na dodatek support w kulki leci bo nie ogarniaj\u0105 co si\u0119 dzieje a j",
+                "score": 33,
+                "url": "https://reddit.com/r/Polska/comments/1w6ikw5/comment/p7o8tl2/"
+              },
+              {
+                "author": "thorax97",
+                "date": "2026-09-04",
+                "excerpt": "Drobny pro-tip zanim zaczniecie masowo testowa\u0107. Routerki jakie daj\u0105 w pakiecie cz\u0119\u015bciej s\u0105 problemem ni\u017c samo \u0142\u0105cze... Jak przestawicie w tryb modemu i pod\u0142\u0105czycie w\u0142asny router to nagle wiele problem\u00f3w z \"\u0142\u0105czem\" znika. Nie staj\u0119 tu oczywi\u015bcie w obronie dostawc\u00f3w, kr\u0119tacze i ch*je z nich. I nie m\u00f3",
+                "score": 14,
+                "url": "https://reddit.com/r/Polska/comments/1w6ikw5/comment/p7procn/"
+              },
+              {
+                "author": "_QLFON_",
+                "date": "2026-09-04",
+                "excerpt": "No ok, b\u0119d\u0119 mia\u0142 wyniki z urz\u0105dzenia z UKE. I co z nimi mam zrobi\u0107? ISP powie, \u017ce w umowie pr\u0119dko\u015bci s\u0105 \"do XX Mbps\" i tyle. CHyba \u017ce co\u015b si\u0119 zmieni\u0142o i przespa\u0142em fakt, \u017ce musz\u0105 podawa\u0107 minimaln\u0105.",
+                "score": 5,
+                "url": "https://reddit.com/r/Polska/comments/1w6ikw5/comment/p7q8pvl/"
+              },
+              {
+                "author": "qzyren",
+                "date": "2026-09-04",
+                "excerpt": "Ciekawe ile trwa taki test bo nie tylko licza si\u0119 pr\u0119dko\u015bci ale te\u017c stabilno\u015b\u0107",
+                "score": 2,
+                "url": "https://reddit.com/r/Polska/comments/1w6ikw5/comment/p7ugo9c/"
+              },
+              {
+                "author": "Angelthree95",
+                "date": "2026-09-03",
+                "excerpt": "Fajnie, ale 200 KB up/down limitu gdy masz rodzin\u0119 w domu raczej nie ma szans na powodzenie. Poza tym je\u015bli us\u0142ugodawca udost\u0119pnia jedynie modem (box z jednym portem RJ45) to troch\u0119 lipa, bo musia\u0142bym ca\u0142y internet odpi\u0105\u0107 sobie na 48h+",
+                "score": 1,
+                "url": "https://reddit.com/r/Polska/comments/1w6ikw5/comment/p7nwfg6/"
+              },
+              {
+                "author": "sonido_lover",
+                "date": "2026-09-04",
+                "excerpt": "Mo\u017cna te\u017c postawi\u0107 sobie speedtest-tracker kt\u00f3ry b\u0119dzie cyklicznie robi\u0142 testy i generowa\u0142 ci z tego raporty.",
+                "score": 1,
+                "url": "https://reddit.com/r/Polska/comments/1w6ikw5/comment/p7p1hns/"
+              },
+              {
+                "author": "duncr91",
+                "date": "2026-09-05",
+                "excerpt": "no i co, skoro umowy o internet to jest \"prr\u0119dko\u015b\u0107 DO X\", je\u015bli tam jest \"pr\u0119dko\u015b\u0107 do 500Mb/s\" to jedyne co jest gwarantowane, to \u017ce nie przekroczy 500Mb/s. Nie ma tam QoS, bo kosztowa\u0142oby o wiele, wiele wi\u0119cej",
+                "score": 1,
+                "url": "https://reddit.com/r/Polska/comments/1w6ikw5/comment/p7wg1ki/"
+              }
+            ]
+          },
+          "published_at": "2026-09-03",
+          "relevance_hint": 0.0,
+          "snippet": "Dobrze wiedzie\u0107, b\u0119d\u0119 musia\u0142 kiedy\u015b przetestowa\u0107. Pr\u00f3bowa\u0142em kiedy\u015b zrobi\u0107 co\u015b takiego na w\u0142asn\u0105 r\u0119k\u0119 u\u017cywaj\u0105c raspberry pi i smokeping, ale nie dzia\u0142a\u0142o to za dobrze. A mam wra\u017cenie \u017ce czasem mam spory packet loss przez chwil\u0119 ale ci\u0119\u017cko to sprawdzi\u0107. No i fajnie tylko \u017ce po\u0142\u0105czenia z serwerami testowymi si\u0119 nie przycina. Zreszt\u0105 pies z pr\u0119dko\u015bci\u0105, T-Mobile chamsko tnie torrenty, jak odpalisz torrent to upierdala po\u0142\u0105czenia UDP ICMP jak leci nie wa\u017cne czy torrent czy co\u015b innego. Na dodatek support w kulki leci bo nie ogarniaj\u0105 co si\u0119 dzieje a j Drobny pro-tip zanim zaczniecie masowo testowa\u0107. Routerki jakie daj\u0105 w pakiecie cz\u0119\u015bciej s\u0105 problemem ni\u017c samo \u0142\u0105cze... Jak przestawicie w tryb modemu i pod\u0142\u0105czycie w\u0142asny router to nagle wiele...",
+          "source": "reddit",
+          "source_quality": 0.6,
+          "title": "UKE wypo\u017cycza nieodp\u0142atnie mierniki pr\u0119dko\u015bci po\u0142\u0105czenia internetowego",
+          "url": "https://www.reddit.com/r/Polska/comments/1w6ikw5/uke_wypo\u017cycza_nieodp\u0142atnie_mierniki_pr\u0119dko\u015bci/",
+          "why_relevant": "Reddit r/Polska search"
+        }
+      ],
+      "source_quality": 0.6,
+      "sources": [
+        "reddit"
+      ],
+      "subquery_labels": [
+        "Trasa A50"
+      ],
+      "title": "UKE wypo\u017cycza nieodp\u0142atnie mierniki pr\u0119dko\u015bci po\u0142\u0105czenia internetowego",
+      "url": "https://www.reddit.com/r/Polska/comments/1w6ikw5/uke_wypo\u017cycza_nieodp\u0142atnie_mierniki_pr\u0119dko\u015bci/"
+    },
+    {
+      "candidate_id": "https://reddit.com/r/polskanaluzie/comments/1w5h34e/chcia\u0142em_zrobi\u0107_map\u0119_niszowych_miejsc_w_polsce_3",
+      "cluster_id": "cluster-4",
+      "engagement": 100,
+      "explanation": "The candidate does not mention the entity 'A50' or 'Sobienie-Jeziory' in the title or snippet.",
+      "final_score": 5.105901639344263,
+      "freshness": 82,
+      "fun_explanation": "The absurdity of a hobby project triggering an 11 million dollar AWS bill is peak tech-tragedy humor.",
+      "fun_score": 65.0,
+      "item_id": "R1",
+      "local_relevance": 0.0,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "R1",
+            "native_rank": 1,
+            "source": "reddit",
+            "subquery_label": "Trasa A50"
+          }
+        ],
+        "range_from": "2026-08-06",
+        "range_to": "2026-09-05"
+      },
+      "native_ranks": {
+        "Trasa A50:reddit": 1
+      },
+      "rerank_score": 0.0,
+      "rrf_score": 0.003278688524590164,
+      "snippet": "Urz\u0105d Skarbowy: \"Pomy\u0142ka - nie pomy\u0142ka. Prosz\u0119 zap\u0142aci\u0107 VAT.\" Poblokowa\u0142 karty p\u0142atnicze \u017ceby Amazon nie zd\u0105\u017cy\u0142 mu pobra\u0107 45 mln z\u0142. Pogratulowa\u0107 limit\u00f3w, kurde! Na pewno co najmniej dwucyfrowa liczba dev\u00f3w i account manager\u00f3w dosta\u0142a ataku serca. Nieironicznie przewiduj\u0119 pozwy.",
+      "source": "reddit",
+      "source_items": [
+        {
+          "body": "Chcia\u0142em zrobi\u0107 map\u0119 niszowych miejsc w Polsce. 3 dni po wrzuceniu na AppStore AWS wystawi\u0142 mi rachunek na 11 mln $\nNone\nUrz\u0105d Skarbowy: \"Pomy\u0142ka - nie pomy\u0142ka. Prosz\u0119 zap\u0142aci\u0107 VAT.\" Poblokowa\u0142 karty p\u0142atnicze \u017ceby Amazon nie zd\u0105\u017cy\u0142 mu pobra\u0107 45 mln z\u0142. Pogratulowa\u0107 limit\u00f3w, kurde! Na pewno co najmniej dwucyfrowa liczba dev\u00f3w i account manager\u00f3w dosta\u0142a ataku serca. Nieironicznie przewiduj\u0119 pozwy.",
+          "container": "PolskaNaLuzie",
+          "date_confidence": "high",
+          "engagement": {
+            "num_comments": 110,
+            "score": 1046
+          },
+          "engagement_score": 100,
+          "freshness": 82,
+          "item_id": "R1",
+          "local_rank_score": 0.305,
+          "local_relevance": 0.0,
+          "metadata": {
+            "comment_insights": [
+              "Poblokowa\u0142 karty p\u0142atnicze \u017ceby Amazon nie zd\u0105\u017cy\u0142 mu pobra\u0107 45 mln z\u0142. Pogratulowa\u0107 limit\u00f3w, kurde!",
+              "Na pewno co najmniej dwucyfrowa liczba dev\u00f3w i account manager\u00f3w dosta\u0142a ataku serca. Nieironicznie przewiduj\u0119 pozwy.",
+              "napisz im teraz ze juz zaplaciles,\n\n moze Ci przez pomylke zwroca Twoje 40 milionow",
+              "Nawet gdyby to nie by\u0142 ich b\u0142\u0105d, to istnieje jeszcze co\u015b takiego jak upad\u0142o\u015b\u0107 konsumencka, nawet je\u015bli kto\u015b nie prowadzi firmy.",
+              "https://www.infoq.com/news/2026/07/aws-billing-estimates-incident/\n\n \u201eThe company has not published a detailed postmortem beyond the Health Dashboard...",
+              "Z ciekawo\u015bci, korzystasz z jakichkolwiek specyficznych us\u0142ug na AWS czy po prostu VPS?",
+              "Ej super apka, my\u015bla\u0142am, \u017ce dosy\u0107 dobrze znam Krak\u00f3w, a widz\u0119 wiele miejsc, o kt\u00f3rych nie mia\u0142am poj\u0119cia!",
+              "Czapki z g\u0142\u00f3w za design appki. Mi\u00f3d!",
+              "Tak w kwestii samej apki - super pomys\u0142 i z wielk\u0105 ch\u0119ci\u0105 z niej skorzystam, ale nie obawiacie si\u0119 czasem potencjalnego zniszczenia tych ukrytych miej...",
+              "Urz\u0105d Skarbowy: \"Pomy\u0142ka - nie pomy\u0142ka. Prosz\u0119 zap\u0142aci\u0107 VAT.\""
+            ],
+            "top_comments": [
+              {
+                "author": "orzelski",
+                "date": "2026-09-02",
+                "excerpt": "Urz\u0105d Skarbowy: \"Pomy\u0142ka - nie pomy\u0142ka. Prosz\u0119 zap\u0142aci\u0107 VAT.\"",
+                "score": 368,
+                "url": "https://reddit.com/r/PolskaNaLuzie/comments/1w5h34e/comment/p7f4j5a/"
+              },
+              {
+                "author": "Maysign",
+                "date": "2026-09-02",
+                "excerpt": "Poblokowa\u0142 karty p\u0142atnicze \u017ceby Amazon nie zd\u0105\u017cy\u0142 mu pobra\u0107 45 mln z\u0142. Pogratulowa\u0107 limit\u00f3w, kurde!",
+                "score": 227,
+                "url": "https://reddit.com/r/PolskaNaLuzie/comments/1w5h34e/comment/p7f8eha/"
+              },
+              {
+                "author": "neoqueto",
+                "date": "2026-09-02",
+                "excerpt": "Na pewno co najmniej dwucyfrowa liczba dev\u00f3w i account manager\u00f3w dosta\u0142a ataku serca. Nieironicznie przewiduj\u0119 pozwy.",
+                "score": 137,
+                "url": "https://reddit.com/r/PolskaNaLuzie/comments/1w5h34e/comment/p7f69a0/"
+              },
+              {
+                "author": "Jean_Jones_666",
+                "date": "2026-09-02",
+                "excerpt": "napisz im teraz ze juz zaplaciles,\n\n moze Ci przez pomylke zwroca Twoje 40 milionow",
+                "score": 44,
+                "url": "https://reddit.com/r/PolskaNaLuzie/comments/1w5h34e/comment/p7g9hgh/"
+              },
+              {
+                "author": "ProfessionalHelp5",
+                "date": "2026-09-02",
+                "excerpt": "Nawet gdyby to nie by\u0142 ich b\u0142\u0105d, to istnieje jeszcze co\u015b takiego jak upad\u0142o\u015b\u0107 konsumencka, nawet je\u015bli kto\u015b nie prowadzi firmy. Nie oznacza to jednak, \u017ce d\u0142ug automatycznie przestaje istnie\u0107 albo \u017ce nie trzeba go sp\u0142aca\u0107. W ramach post\u0119powania s\u0105d mo\u017ce ustali\u0107 plan sp\u0142aty, a w okre\u015blonych sytuacjach",
+                "score": 25,
+                "url": "https://reddit.com/r/PolskaNaLuzie/comments/1w5h34e/comment/p7f6yvq/"
+              },
+              {
+                "author": "michal-rd",
+                "date": "2026-09-02",
+                "excerpt": "https://www.infoq.com/news/2026/07/aws-billing-estimates-incident/\n\n \u201eThe company has not published a detailed postmortem beyond the Health Dashboard timeline, and has not said whether the alarm-to-action gap, the failed rollback, or the decision to disable budget alerts platform-wide will produce c",
+                "score": 17,
+                "url": "https://reddit.com/r/PolskaNaLuzie/comments/1w5h34e/comment/p7f6fkq/"
+              },
+              {
+                "author": "Adamexxx",
+                "date": "2026-09-02",
+                "excerpt": "Z ciekawo\u015bci, korzystasz z jakichkolwiek specyficznych us\u0142ug na AWS czy po prostu VPS? Z mojego do\u015bwiadczenia prawie zawsze lepiej wychodzi zamiana managed us\u0142ug na zwyk\u0142y VPS na kt\u00f3rym sami hostujemy baz\u0119, aplikacj\u0119 czy inne niezb\u0119dne komponenty. Jasne, nie skaluje si\u0119 to tak automagicznie, ale $/h",
+                "score": 10,
+                "url": "https://reddit.com/r/PolskaNaLuzie/comments/1w5h34e/comment/p7fsr8o/"
+              },
+              {
+                "author": "MysteriousAd530",
+                "date": "2026-09-02",
+                "excerpt": "Ej super apka, my\u015bla\u0142am, \u017ce dosy\u0107 dobrze znam Krak\u00f3w, a widz\u0119 wiele miejsc, o kt\u00f3rych nie mia\u0142am poj\u0119cia!",
+                "score": 5,
+                "url": "https://reddit.com/r/PolskaNaLuzie/comments/1w5h34e/comment/p7frka1/"
+              },
+              {
+                "author": "alkatraz445",
+                "date": "2026-09-02",
+                "excerpt": "Czapki z g\u0142\u00f3w za design appki. Mi\u00f3d!",
+                "score": 4,
+                "url": "https://reddit.com/r/PolskaNaLuzie/comments/1w5h34e/comment/p7guico/"
+              },
+              {
+                "author": "mayoxox",
+                "date": "2026-09-03",
+                "excerpt": "Tak w kwestii samej apki - super pomys\u0142 i z wielk\u0105 ch\u0119ci\u0105 z niej skorzystam, ale nie obawiacie si\u0119 czasem potencjalnego zniszczenia tych ukrytych miejsc? Nie chodzi mi nawet o zalanie ich t\u0142umami, ale sama patrz\u0105c chocia\u017cby po tym, jak niekt\u00f3rzy ludzie potrafi\u0105 traktowa\u0107 pi\u0119kne miejsca, ba\u0142abym si\u0119,",
+                "score": 3,
+                "url": "https://reddit.com/r/PolskaNaLuzie/comments/1w5h34e/comment/p7jt5sp/"
+              }
+            ]
+          },
+          "published_at": "2026-09-02",
+          "relevance_hint": 0.0,
+          "snippet": "Urz\u0105d Skarbowy: \"Pomy\u0142ka - nie pomy\u0142ka. Prosz\u0119 zap\u0142aci\u0107 VAT.\" Poblokowa\u0142 karty p\u0142atnicze \u017ceby Amazon nie zd\u0105\u017cy\u0142 mu pobra\u0107 45 mln z\u0142. Pogratulowa\u0107 limit\u00f3w, kurde! Na pewno co najmniej dwucyfrowa liczba dev\u00f3w i account manager\u00f3w dosta\u0142a ataku serca. Nieironicznie przewiduj\u0119 pozwy.",
+          "source": "reddit",
+          "source_quality": 0.6,
+          "title": "Chcia\u0142em zrobi\u0107 map\u0119 niszowych miejsc w Polsce. 3 dni po wrzuceniu na AppStore AWS wystawi\u0142 mi rachunek na 11 mln $",
+          "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1w5h34e/chcia\u0142em_zrobi\u0107_map\u0119_niszowych_miejsc_w_polsce_3/",
+          "why_relevant": "Reddit global search"
+        }
+      ],
+      "source_quality": 0.6,
+      "sources": [
+        "reddit"
+      ],
+      "subquery_labels": [
+        "Trasa A50"
+      ],
+      "title": "Chcia\u0142em zrobi\u0107 map\u0119 niszowych miejsc w Polsce. 3 dni po wrzuceniu na AppStore AWS wystawi\u0142 mi rachunek na 11 mln $",
+      "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1w5h34e/chcia\u0142em_zrobi\u0107_map\u0119_niszowych_miejsc_w_polsce_3/"
+    },
+    {
+      "candidate_id": "https://reddit.com/r/polskanaluzie/comments/1w6y3xp/auto_w_automacie",
+      "cluster_id": "cluster-5",
+      "engagement": 15,
+      "explanation": "The candidate does not mention the entity 'A50' or 'Sobienie-Jeziory' in the title or snippet.",
+      "final_score": 5.050588235294118,
+      "freshness": 86,
+      "fun_explanation": "Too vague to evaluate.",
+      "fun_score": 5.0,
+      "item_id": "R11",
+      "local_relevance": 0.0,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "R11",
+            "native_rank": 8,
+            "source": "reddit",
+            "subquery_label": "Trasa A50"
+          }
+        ],
+        "range_from": "2026-08-06",
+        "range_to": "2026-09-05"
+      },
+      "native_ranks": {
+        "Trasa A50:reddit": 8
+      },
+      "rerank_score": 0.0,
+      "rrf_score": 0.0029411764705882353,
+      "snippet": "None",
+      "source": "reddit",
+      "source_items": [
+        {
+          "body": "Auto w automacie?\nNone",
+          "container": "PolskaNaLuzie",
+          "date_confidence": "high",
+          "engagement": {
+            "num_comments": 50,
+            "score": 1
+          },
+          "engagement_score": 15,
+          "freshness": 86,
+          "item_id": "R11",
+          "local_rank_score": 0.22999999999999998,
+          "local_relevance": 0.0,
+          "metadata": {
+            "comment_insights": [],
+            "top_comments": []
+          },
+          "published_at": "2026-09-04",
+          "relevance_hint": 0.0,
+          "snippet": "None",
+          "source": "reddit",
+          "source_quality": 0.6,
+          "title": "Auto w automacie?",
+          "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1w6y3xp/auto_w_automacie/",
+          "why_relevant": "Reddit r/PolskaNaLuzie search"
+        }
+      ],
+      "source_quality": 0.6,
+      "sources": [
+        "reddit"
+      ],
+      "subquery_labels": [
+        "Trasa A50"
+      ],
+      "title": "Auto w automacie?",
+      "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1w6y3xp/auto_w_automacie/"
+    },
+    {
+      "candidate_id": "https://reddit.com/r/polska/comments/1w45jqq/tragedia_na_autostradzie_a1_nie_\u017cyje_pi\u0119\u0107_os\u00f3b",
+      "cluster_id": "cluster-6",
+      "engagement": 61,
+      "explanation": "The candidate refers to A1, not the requested A50 entity.",
+      "final_score": 4.970769230769231,
+      "freshness": 78,
+      "fun_explanation": "Tragic news event; inappropriate for humor.",
+      "fun_score": 0.0,
+      "item_id": "R5",
+      "local_relevance": 0.0,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "R5",
+            "native_rank": 5,
+            "source": "reddit",
+            "subquery_label": "Trasa A50"
+          }
+        ],
+        "range_from": "2026-08-06",
+        "range_to": "2026-09-05"
+      },
+      "native_ranks": {
+        "Trasa A50:reddit": 5
+      },
+      "rerank_score": 0.0,
+      "rrf_score": 0.003076923076923077,
+      "snippet": "None",
+      "source": "reddit",
+      "source_items": [
+        {
+          "body": "Tragedia na autostradzie A1. Nie \u017cyje pi\u0119\u0107 os\u00f3b, trasa zablokowana\nNone",
+          "container": "Polska",
+          "date_confidence": "high",
+          "engagement": {
+            "num_comments": 63,
+            "score": 126
+          },
+          "engagement_score": 61,
+          "freshness": 78,
+          "item_id": "R5",
+          "local_rank_score": 0.256,
+          "local_relevance": 0.0,
+          "metadata": {
+            "comment_insights": [],
+            "top_comments": []
+          },
+          "published_at": "2026-09-01",
+          "relevance_hint": 0.0,
+          "snippet": "None",
+          "source": "reddit",
+          "source_quality": 0.6,
+          "title": "Tragedia na autostradzie A1. Nie \u017cyje pi\u0119\u0107 os\u00f3b, trasa zablokowana",
+          "url": "https://www.reddit.com/r/Polska/comments/1w45jqq/tragedia_na_autostradzie_a1_nie_\u017cyje_pi\u0119\u0107_os\u00f3b/",
+          "why_relevant": "Reddit global search"
+        }
+      ],
+      "source_quality": 0.6,
+      "sources": [
+        "reddit"
+      ],
+      "subquery_labels": [
+        "Trasa A50"
+      ],
+      "title": "Tragedia na autostradzie A1. Nie \u017cyje pi\u0119\u0107 os\u00f3b, trasa zablokowana",
+      "url": "https://www.reddit.com/r/Polska/comments/1w45jqq/tragedia_na_autostradzie_a1_nie_\u017cyje_pi\u0119\u0107_os\u00f3b/"
+    },
+    {
+      "candidate_id": "https://reddit.com/r/polskanaluzie/comments/1w48ygo/du\u017ca_dop\u0142ata_za_energi\u0119_ciepln\u0105_w_bloku",
+      "cluster_id": "cluster-7",
+      "engagement": 28,
+      "explanation": "The candidate does not mention the entity 'A50' or 'Sobienie-Jeziory' in the title or snippet.",
+      "final_score": 4.954285714285714,
+      "freshness": 78,
+      "fun_explanation": "Dry administrative complaint.",
+      "fun_score": 5.0,
+      "item_id": "R10",
+      "local_relevance": 0.0,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "R10",
+            "native_rank": 10,
+            "source": "reddit",
+            "subquery_label": "Trasa A50"
+          }
+        ],
+        "range_from": "2026-08-06",
+        "range_to": "2026-09-05"
+      },
+      "native_ranks": {
+        "Trasa A50:reddit": 10
+      },
+      "rerank_score": 0.0,
+      "rrf_score": 0.002857142857142857,
+      "snippet": "None",
+      "source": "reddit",
+      "source_items": [
+        {
+          "body": "Du\u017ca dop\u0142ata za energi\u0119 ciepln\u0105 w bloku.\nNone",
+          "container": "PolskaNaLuzie",
+          "date_confidence": "high",
+          "engagement": {
+            "num_comments": 60,
+            "score": 5
+          },
+          "engagement_score": 28,
+          "freshness": 78,
+          "item_id": "R10",
+          "local_rank_score": 0.223,
+          "local_relevance": 0.0,
+          "metadata": {
+            "comment_insights": [],
+            "top_comments": []
+          },
+          "published_at": "2026-09-01",
+          "relevance_hint": 0.0,
+          "snippet": "None",
+          "source": "reddit",
+          "source_quality": 0.6,
+          "title": "Du\u017ca dop\u0142ata za energi\u0119 ciepln\u0105 w bloku.",
+          "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1w48ygo/du\u017ca_dop\u0142ata_za_energi\u0119_ciepln\u0105_w_bloku/",
+          "why_relevant": "Reddit r/PolskaNaLuzie search"
+        }
+      ],
+      "source_quality": 0.6,
+      "sources": [
+        "reddit"
+      ],
+      "subquery_labels": [
+        "Trasa A50"
+      ],
+      "title": "Du\u017ca dop\u0142ata za energi\u0119 ciepln\u0105 w bloku.",
+      "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1w48ygo/du\u017ca_dop\u0142ata_za_energi\u0119_ciepln\u0105_w_bloku/"
+    },
+    {
+      "candidate_id": "https://reddit.com/r/polska/comments/1w3szc6/co_powstrzymuje_mnie_przed_sprowadzeniem_nowego",
+      "cluster_id": "cluster-8",
+      "engagement": 62,
+      "explanation": "The candidate does not mention the entity 'A50' or 'Sobienie-Jeziory' in the title or snippet.",
+      "final_score": 4.921935483870968,
+      "freshness": 76,
+      "fun_explanation": "Straightforward financial inquiry about car imports.",
+      "fun_score": 20.0,
+      "item_id": "R4",
+      "local_relevance": 0.07,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "R4",
+            "native_rank": 2,
+            "source": "reddit",
+            "subquery_label": "Trasa A50"
+          }
+        ],
+        "range_from": "2026-08-06",
+        "range_to": "2026-09-05"
+      },
+      "native_ranks": {
+        "Trasa A50:reddit": 2
+      },
+      "rerank_score": 0.0,
+      "rrf_score": 0.0032258064516129032,
+      "snippet": "Znacznie taniej jest polecie\u0107 do Korei. Z powrotem samochodem albo z dostaw\u0105. Co wi\u0119c mia\u0142oby mnie powstrzyma\u0107 przed zrobieniem tego? Ten samoch\u00f3d ju\u017c jest sprzedawany w Polsce. 138,500.00 - 94,987.33 = 43,512.67 z\u0142oty :0 Samoch\u00f3d jest tak samo wyposa\u017cony, ma takie same kolory i funkcje",
+      "source": "reddit",
+      "source_items": [
+        {
+          "body": "Co powstrzymuje mnie przed sprowadzeniem nowego samochodu taniej z innego kraju?\nZnacznie taniej jest polecie\u0107 do Korei. Z powrotem samochodem albo z dostaw\u0105. Co wi\u0119c mia\u0142oby mnie powstrzyma\u0107 przed zrobieniem tego? Ten samoch\u00f3d ju\u017c jest sprzedawany w Polsce. 138,500.00 - 94,987.33 = 43,512.67 z\u0142oty :0 Samoch\u00f3d jest tak samo wyposa\u017cony, ma takie same kolory i funkcje",
+          "container": "Polska",
+          "date_confidence": "high",
+          "engagement": {
+            "num_comments": 138,
+            "score": 80
+          },
+          "engagement_score": 62,
+          "freshness": 76,
+          "item_id": "R4",
+          "local_rank_score": 0.2975,
+          "local_relevance": 0.07,
+          "metadata": {
+            "comment_insights": [],
+            "top_comments": []
+          },
+          "published_at": "2026-08-31",
+          "relevance_hint": 0.0,
+          "snippet": "Znacznie taniej jest polecie\u0107 do Korei. Z powrotem samochodem albo z dostaw\u0105. Co wi\u0119c mia\u0142oby mnie powstrzyma\u0107 przed zrobieniem tego? Ten samoch\u00f3d ju\u017c jest sprzedawany w Polsce. 138,500.00 - 94,987.33 = 43,512.67 z\u0142oty :0 Samoch\u00f3d jest tak samo wyposa\u017cony, ma takie same kolory i funkcje",
+          "source": "reddit",
+          "source_quality": 0.6,
+          "title": "Co powstrzymuje mnie przed sprowadzeniem nowego samochodu taniej z innego kraju?",
+          "url": "https://www.reddit.com/r/Polska/comments/1w3szc6/co_powstrzymuje_mnie_przed_sprowadzeniem_nowego/",
+          "why_relevant": "Reddit global search"
+        }
+      ],
+      "source_quality": 0.6,
+      "sources": [
+        "reddit"
+      ],
+      "subquery_labels": [
+        "Trasa A50"
+      ],
+      "title": "Co powstrzymuje mnie przed sprowadzeniem nowego samochodu taniej z innego kraju?",
+      "url": "https://www.reddit.com/r/Polska/comments/1w3szc6/co_powstrzymuje_mnie_przed_sprowadzeniem_nowego/"
+    },
+    {
+      "candidate_id": "https://reddit.com/r/polska/comments/1w35yk4/spacery_intensywne_marsze_dzienna_liczba_krok\u00f3w",
+      "cluster_id": "cluster-9",
+      "engagement": 50,
+      "explanation": "The candidate does not mention the entity 'A50' or 'Sobienie-Jeziory' in the title or snippet.",
+      "final_score": 4.9038805970149255,
+      "freshness": 76,
+      "fun_explanation": "Dry fitness discussion.",
+      "fun_score": 5.0,
+      "item_id": "R7",
+      "local_relevance": 0.0,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "R7",
+            "native_rank": 7,
+            "source": "reddit",
+            "subquery_label": "Trasa A50"
+          }
+        ],
+        "range_from": "2026-08-06",
+        "range_to": "2026-09-05"
+      },
+      "native_ranks": {
+        "Trasa A50:reddit": 7
+      },
+      "rerank_score": 0.0,
+      "rrf_score": 0.0029850746268656717,
+      "snippet": "None",
+      "source": "reddit",
+      "source_items": [
+        {
+          "body": "Spacery / intensywne marsze / dzienna liczba krok\u00f3w\nNone",
+          "container": "Polska",
+          "date_confidence": "high",
+          "engagement": {
+            "num_comments": 86,
+            "score": 37
+          },
+          "engagement_score": 50,
+          "freshness": 76,
+          "item_id": "R7",
+          "local_rank_score": 0.24,
+          "local_relevance": 0.0,
+          "metadata": {
+            "comment_insights": [],
+            "top_comments": []
+          },
+          "published_at": "2026-08-31",
+          "relevance_hint": 0.0,
+          "snippet": "None",
+          "source": "reddit",
+          "source_quality": 0.6,
+          "title": "Spacery / intensywne marsze / dzienna liczba krok\u00f3w",
+          "url": "https://www.reddit.com/r/Polska/comments/1w35yk4/spacery_intensywne_marsze_dzienna_liczba_krok\u00f3w/",
+          "why_relevant": "Reddit r/Polska search"
+        }
+      ],
+      "source_quality": 0.6,
+      "sources": [
+        "reddit"
+      ],
+      "subquery_labels": [
+        "Trasa A50"
+      ],
+      "title": "Spacery / intensywne marsze / dzienna liczba krok\u00f3w",
+      "url": "https://www.reddit.com/r/Polska/comments/1w35yk4/spacery_intensywne_marsze_dzienna_liczba_krok\u00f3w/"
+    },
+    {
+      "candidate_id": "https://reddit.com/r/polskanaluzie/comments/1w1sxqm/mini_makieta_warsztatu_samochodowego_na_p\u00f3\u0142ce",
+      "cluster_id": "cluster-10",
+      "engagement": 49,
+      "explanation": "The candidate does not mention the entity 'A50' or 'Sobienie-Jeziory' in the title or snippet.",
+      "final_score": 4.717391304347826,
+      "freshness": 70,
+      "fun_explanation": "Purely descriptive hobby post.",
+      "fun_score": 10.0,
+      "item_id": "R6",
+      "local_relevance": 0.0,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "R6",
+            "native_rank": 9,
+            "source": "reddit",
+            "subquery_label": "Trasa A50"
+          }
+        ],
+        "range_from": "2026-08-06",
+        "range_to": "2026-09-05"
+      },
+      "native_ranks": {
+        "Trasa A50:reddit": 9
+      },
+      "rerank_score": 0.0,
+      "rrf_score": 0.002898550724637681,
+      "snippet": "None",
+      "source": "reddit",
+      "source_items": [
+        {
+          "body": "Mini makieta warsztatu samochodowego na p\u00f3\u0142ce\nNone",
+          "container": "PolskaNaLuzie",
+          "date_confidence": "high",
+          "engagement": {
+            "num_comments": 11,
+            "score": 134
+          },
+          "engagement_score": 49,
+          "freshness": 70,
+          "item_id": "R6",
+          "local_rank_score": 0.22399999999999998,
+          "local_relevance": 0.0,
+          "metadata": {
+            "comment_insights": [],
+            "top_comments": []
+          },
+          "published_at": "2026-08-29",
+          "relevance_hint": 0.0,
+          "snippet": "None",
+          "source": "reddit",
+          "source_quality": 0.6,
+          "title": "Mini makieta warsztatu samochodowego na p\u00f3\u0142ce",
+          "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1w1sxqm/mini_makieta_warsztatu_samochodowego_na_p\u00f3\u0142ce/",
+          "why_relevant": "Reddit r/PolskaNaLuzie search"
+        }
+      ],
+      "source_quality": 0.6,
+      "sources": [
+        "reddit"
+      ],
+      "subquery_labels": [
+        "Trasa A50"
+      ],
+      "title": "Mini makieta warsztatu samochodowego na p\u00f3\u0142ce",
+      "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1w1sxqm/mini_makieta_warsztatu_samochodowego_na_p\u00f3\u0142ce/"
+    }
+  ],
+  "source_status": {
+    "grounding": {
+      "at": "2026-09-05T12:57:08.643603Z",
+      "attempted": true,
+      "detail": "Keyless web search unavailable",
+      "fix_hint": "doctor",
+      "items_returned": 0,
+      "source": "grounding",
+      "state": "unreachable"
+    },
+    "reddit": {
+      "at": "2026-09-05T12:57:21.702152Z",
+      "attempted": true,
+      "items_returned": 10,
+      "source": "reddit",
+      "state": "ok"
+    }
+  },
+  "topic": "obwodnica autostradowa Warszawy A50 przebieg trasy Sobienie-Jeziory",
+  "warnings": [
+    "Top evidence is highly concentrated in one source.",
+    "Some sources failed: grounding"
+  ]
+}
