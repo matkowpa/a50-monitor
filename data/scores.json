@@ -2,31 +2,44 @@
   "entries": [
     {
       "date": "2026-09-05",
-      "score": 65,
-      "confidence": "średnia",
-      "summary": "Istnieje umiarkowane prawdopodobieństwo, że finalny przebieg A50 przetnie gminę Sobienie-Jeziory, ponieważ gmina aktywnie protestuje przeciwko proponowanym wariantom, a jeden z nich, tzw. 'czerwony korytarz', był wcześniej uznawany za najkorzystniejszy i przebiega przez jej teren.",
-      "rationale": "Gmina Sobienie-Jeziory wyrażała stanowczy sprzeciw wobec planowanego przebiegu A50 przez jej teren, co jest odnotowane w wielu źródłach. Warianty przebiegu są nadal przedmiotem dyskusji i protestów w różnych gminach, co wskazuje na brak ostatecznej decyzji. Jednakże, w przeszłości 'czerwony korytarz', który obejmuje gminę Sobienie-Jeziory, był wskazywany jako najkorzystniejszy. Brak jest jednoznacznych, oficjalnych komunikatów GDDKiA z ostatnich 30 dni, które definitywnie wykluczałyby lub potwierdzały przebieg przez tę gminę, co utrzymuje poziom niepewności. Aktywne protesty lokalnych społeczności mogą wpływać na ostateczny wybór wariantu, ale nie gwarantują jego zmiany.",
+      "score": 75,
+      "confidence": "wysoka",
+      "summary": "Istnieje wysokie prawdopodobieństwo, że finalny przebieg autostrady A50 przetnie teren gminy Sobienie-Jeziory, co potwierdzają liczne protesty mieszkańców i samorządów z okolicznych gmin.",
+      "rationale": "Wiele dowodów wskazuje na to, że gmina Sobienie-Jeziory jest aktywnie zaangażowana w dyskusje i protesty dotyczące przebiegu A50, co sugeruje, że jest ona brana pod uwagę w co najmniej jednym z rozważanych wariantów. Artykuły z ostatnich 30 dni, a także starsze, bezpośrednio wspominają o sprzeciwie gminy Sobienie-Jeziory wobec planowanego przebiegu A50, co świadczy o realnym zagrożeniu przecięcia jej terenu. Brak jest jednak oficjalnych komunikatów GDDKiA wskazujących konkretny, finalny wariant, co utrzymuje pewien poziom niepewności.",
       "key_findings": [
         {
-          "claim": "Gmina Sobienie-Jeziory aktywnie protestuje przeciwko planowanemu przebiegowi A50 przez jej teren.",
+          "claim": "Gmina Sobienie-Jeziory aktywnie sprzeciwia się planowanemu przebiegowi A50.",
           "evidence_urls": [
             "https://news.google.com/rss/articles/CBMiakFVX3lxTFBrREtaSXhRVXNvMVBCdWpCcFJ0Vm1sTHZLQ09vYVhfRHdwVGNiLUZmRmhFTkR0ejdkbXJPSlo3aENhNGFFbnhFdG9vZmVkdzE4YTJBTVFRWExfYVFjTUdCVlRpbEtUVG9aNXc?oc=5",
-            "https://news.google.com/rss/articles/CBMinwFBVV95cUxPWFY4aHJrVlcxV3d5Mlp3eEs1TVlvamJ4OEtKLUFfZFpEa3l1WTZSU0x6a0VuYkluMUluOVctS2NjRUR0SUxhUmJGZDVqWTZMZ2NLRTQ1MVdGZ3hVcWg0WUROVlV6V2ZrNjVGR1d2OHRjcHlqdVVpYnRINFh4Yy12Rk1OTjVma0k2b3V2UDZyckNoYWdvQkNRRmpNTy1ERVE?oc=5"
+            "https://news.google.com/rss/articles/CBMinwFBVV95cUxPWFY4aHJrVlcxV3d5Mlp3eEs1TVlvamJ4OEtKLUFfZFpEa3l1WTZSU0x6a0VuYkluMUluOVctS2NjRUR0SUxhUmJGZDVqWTZMZ2NLRTQ1MVdGZ3hVcWg0WUROVlV6V2ZrNjVGR1d2OH",
+            "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNbWtVeS1JTVlGSEcwTmxVdFVLdndTWFJoT3JUMUc0TFlCTFd2Uy1SUlFYZXpsdk1Vc0hYRWFoRG9VS3hhT0tnNll2X1NlelNQdUlYVklkQWhHajJoUWw0NmlQYXJBbE92YWFtNjhsUm"
           ]
         },
         {
-          "claim": "Wariant 'czerwony korytarz', który przebiega przez gminę Sobienie-Jeziory, był wcześniej uznawany za najkorzystniejszy.",
+          "claim": "Jeden z rozważanych wariantów A50, tzw. 'czerwony korytarz', był uznany za najkorzystniejszy i przebiegał przez Mazowiecki Park Krajobrazowy, co implikuje bliskość do gminy Sobienie-Jeziory.",
           "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMidEFVX3lxTE1LSkl6X0FDcWlKaFMyQUxiYjAyLW8zeEFNejUyTDJnamltckdNQVhPZFhsZW9nWno4U21RVkhoeGgzVlREZ3BYYkx4ZGhhaGJybk1VWkx2U1VLVW9HY1VwYVNBMDJnb2JGOVk2d05CSkpxVEZv?oc=5"
+            "https://news.google.com/rss/articles/CBMidEFVX3lxTFNNQ0tJejZBQ3FpSmhTMkFMQjAyLW8zeEFNejUyTDJnamltckdNQVhPZFhsZW9nWno4U21RVkhoeGgzVlREZ3BYYkx4ZGhhaGJybk1VWkx2U1VLVW9HY1VwYVNBMDJnb2JGOVk2d05CSkpxVEZv?oc=5",
+            "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBuOTdHVkY0TG4wOWRqRWdoVF9aYmZKWEJpVVhkcGJETUNHOTZScjltSzRmd2t3RXM1bWhnYzZlaXlWX0Fzb21Kemh5b1BwUTJLem9uUzlLUzlCVmtsUndZTFluME5IdEZK?oc=5"
           ]
         },
         {
-          "claim": "Wiele gmin, w tym sąsiednie, protestuje przeciwko różnym wariantom przebiegu A50, co wskazuje na brak ostatecznej decyzji i trwające dyskusje.",
+          "claim": "Wiązowna, sąsiadująca gmina, chce przesunięcia trasy bliżej '50', co może wpływać na przebieg w kierunku Sobienie-Jeziory.",
           "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNbWtVeS1JTVlGSEcwTmxVdFVLdmdTWFJoT3JUMUc0TFlCTFd2Uy1SUlFYZXpsdk1Vc0hYRWFoRG9VS3hhT0tnNll2X1NlelNQdUlYVklkQWhHajJoUWw0NmlQYXJBbE92YWFtNjhsUmdaMUV2MVc3dFFnVGZKT2ttWnlZbV8wMkJEMHVtSnRyMndMUVdfUW9TbGlrXzJRaEhaUGwzOEE4R0JDN3dqV1J6SjUxTmFsUTRhWUdud2hjR3B1RDg?oc=5",
+            "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNbWtVeS1JTVlGSEcwTmxVdFVLdndTWFJoT3JUMUc0TFlCTFd2Uy1SUlFYZXpsdk1Vc0hYRWFoRG9VS3hhT0tnNll2X1NlelNQdUlYVklkQWhHajJoUWw0NmlQYXJBbE92YWFtNjhsUm"
+          ]
+        },
+        {
+          "claim": "Liczne protesty mieszkańców i samorządów z powiatów otwockiego i grójeckiego wskazują na to, że trasa A50 jest planowana przez tereny zamieszkałe i rolnicze w tym regionie.",
+          "evidence_urls": [
             "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQYWRUYnIwUlZoTXVQRjVZTGFFSFY4cWZnX041eE05TmlaNGl2emJERUNZbmFOT25mSTlVUXBVZVh6QTBTdU9DMko4M0VPQnlVTWp5VDlwc3hCa0hMUUoxUXRkeVJKa3JTV1BOWjFVLVY4WXFzMG5EdXNleDhLOG5DUEJqTnFqcGNuTURwellVVXRuRW5xZFNHamo3cnF2SUt2SWxjNlctM0tieWhCSHZoOThsNlBnUFBN?oc=5",
-            "https://news.google.com/rss/articles/CBMipgFBVV95cUxNaXhnT0dVZmJEa1kxQjFlT19JLVl2TUdWMHdnaDdLNmFBcEJCMWJod0dvMjBQSTNkeEt3bnBvUU94S1FOZWZ5TW1wZ0hFT3FQUDJjclk3WVUwc1JlREVFaXRTd1J0Z3ZvWE0xMlpVbXFYQ1AtWWoxQ1IxYWNhdXE1LTN5MWE2bUdxVXg4M3V1NU5Eb2FkSGhTdXRvQ1JFd3VRU0lrQVV3?oc=5",
-            "https://news.google.com/rss/articles/CBMimwFBVV95cUxPOW9rUnlzMlM3cV9qWWpvMjRUam5IMy1TVlVJU05KZnJUQ0FjeEJOMkhSMVlQVV9kYjVXZHJJT1lOcEFodkY0N3RVbXpQUUduLVM5ODBtS3Nib204cVJtalV2TWV4ZHBEZTNQNmlRRk5VblBZZzJwVkVZX3p0SmhIVFlhck9UbE1WRWxOMDR1Ny14YWxBRkxjeTZhUQ?oc=5"
+            "https://news.google.com/rss/articles/CBMipgFBVV95cUxNaXhnT0dVZmJEa1kxQjFlT19JLVl2TUdWMHdnaDdLNmFBcEJCMWJod0dvMjBQSTNkeEt3bnBvUU94S1FOZWZ5TW1wZ0hFT3FQUDJjclk3WVUwc1JlREVFaXRTd1J0Z3ZvWE0xMlpVbX",
+            "https://news.google.com/rss/articles/CBMimwFBVV95cUxPOW9rUnlzMlM3cV9qWWpvMjRUam5IMy1TVlVJU05KZnJUQ0FjeEJOMkhSMVlQVV9kYjVXZHJJT1lOcEFodkY0N3RVbXpQUUduLVM5ODBtS3Nib204cVJtalV2TWV4ZHBEZTNQNmlRRk"
+          ]
+        },
+        {
+          "claim": "GDDKiA poszukuje wykonawców dla A50, co wskazuje na zaawansowany etap planowania, jednak brak jest ostatecznej decyzji o przebiegu.",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMisAFBVV95cUxQQnZzU3NSdDVNY2JDX3VvSXRrZFc5LTRhS21YYjZiQnA3a1JjNHZqT2tmVFR6bUNucFRsUWo2NXVCc1pnUk1lQ3pFUGhQWWdWZ3hUSEs2WWVna09PRjdLazU5T2NFTDV0MnVmTk5xVk"
           ]
         }
       ],

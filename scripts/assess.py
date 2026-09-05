@@ -140,9 +140,19 @@ RUBRYKA:
 - KAŻDY claim w key_findings MUSI mieć evidence_urls wyłącznie z listy dowodów powyżej. Nie wymyślaj URL-i.
 - Pisz po polsku.
 
-ODPOWIEDŹ: wyłącznie JSON dokładnie wg schematu:
+ODPOWIEDŹ: wyłącznie JSON dokładnie wg schematu (bez ogrodzeń markdown; max 5 pozycji w key_findings; summary ≤ 2 zdania; rationale ≤ 4 zdania):
 {"score": <int 0-100>, "confidence": "<niska|średnia|wysoka>", "summary": "<1-2 zdania>", "rationale": "<pełne uzasadnienie, 3-6 zdań>", "key_findings": [{"claim": "<...>", "evidence_urls": ["<url z dowodów>"]}]}""")
     return "\n".join(lines)
+
+
+def extract_json(content: str) -> dict:
+    """Parsuje JSON z odpowiedzi LLM, tolerując ogrodzenia ```json."""
+    text = content.strip()
+    if text.startswith("```"):
+        text = text.strip("`")
+        if text.lower().startswith("json"):
+            text = text[4:]
+    return json.loads(text.strip())
 
 
 # --------------------------------------------------------------- OpenRouter
@@ -153,7 +163,7 @@ def call_openrouter(prompt: str, api_key: str, model: str, timeout: int = 180) -
         "messages": [{"role": "user", "content": prompt}],
         "response_format": {"type": "json_object"},
         "temperature": 0.2,
-        "max_tokens": 2000,
+        "max_tokens": 6000,
     }
     req = urllib.request.Request(
         os.environ.get("OPENROUTER_BASE_URL", OPENROUTER_URL),
@@ -268,8 +278,17 @@ def main() -> int:
             print("[assess] FAIL: brak OPENROUTER_API_KEY w środowisku", file=sys.stderr)
             return 2
         model = cfg.get("openrouter_model", "google/gemini-2.5-flash")
-        content = call_openrouter(prompt, api_key, model)
-        assessment = parse_assessment(json.loads(content), prev)
+        assessment = None
+        for attempt in (1, 2, 3):
+            content = call_openrouter(prompt, api_key, model)
+            try:
+                assessment = parse_assessment(extract_json(content), prev)
+                break
+            except json.JSONDecodeError as exc:
+                print(f"[assess] ostrzeżenie: JSON LLM niepoprawny "
+                      f"(próba {attempt}/3): {exc}", file=sys.stderr)
+        if assessment is None:
+            raise RuntimeError("OpenRouter: 3× niepoprawny JSON w odpowiedzi")
         entry = {
             "date": day, **assessment,
             "evidence": [e.to_dict() for e in evidence[:15]],
