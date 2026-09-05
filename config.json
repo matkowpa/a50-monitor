@@ -15,6 +15,7 @@
   "search_sources": "web,reddit,youtube,hackernews",
   "lookback_days": 30,
   "openrouter_model": "z-ai/glm-5.3-flash",
+  "baseline_scores": {"north": 45, "south": 28},
   "max_results": 30,
   "max_per_source": 10,
   "max_evidence": 40

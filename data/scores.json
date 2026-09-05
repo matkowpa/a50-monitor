@@ -4,63 +4,44 @@
       "date": "2026-09-05",
       "scores": {
         "north": {
-          "score": 10,
+          "score": 45,
           "confidence": "średnia",
-          "summary": "Północna część gminy (tereny zalewowe Wisły, Natura 2000 Dolina Środkowej Wisły) jest geometrycznie i środowiskowo wykluczona z korytarzy rozważanych dla A50. Żaden z dowodów nie wskazuje na wariant przy Wiśle.",
-          "rationale": "Brak jakichkolwiek dowodów wskazujących na korytarz północny wzdłuż Wisły — wszystkie debaty i protesty dotyczą wariantów na południe/środek gminy i dalej w stronę Wilgi/Osiecka. Tereny zalewowe i Natura 2000 Doliny Środkowej Wisły czynią ten wariant praktycznie niekwalifikowalnym w procesie środowiskowym. Geometrycznie trasa musi omijać Warszawę od południa i naturalnie prowadzi południowym płaskowyżem, nie doliną. Confidence umiarkowana, bo nie ma oficjalnej decyzji środowiskowej potwierdzającej ostateczny wariant.",
+          "summary": "Punkt wyjścia z analiz eksperckich (5.09.2026): łączne prawdopodobieństwo korytarza na północ od wsi Sobienie-Jeziory (obwodnica wsi po stronie północnej ~10–12% + nowy ślad między DK50 a Natura 2000 ~30–35%) szacowane na ~40–47%.",
+          "rationale": "Analiza nr 2 rozkłada scenariusze północne na dwa warianty: obwodnica wsi po stronie północnej w korytarzu DK50 (~10–12%) oraz nowy ślad przez środkowo-północny pas gminy między DK50 a terenami zalewowymi (~30–35%). Analiza nr 1 szacuje prawdopodobieństwo nowego śladu na północ od DK50 na ~35–40%, a łączne przecięcie gminy na ~75–85%. Geometrycznie trudno ominąć gminę, a nacisk na odsunięcie od Mazowieckiego Parku Krajobrazowego, Bagna Całowanie i NCBJ przesuwa korytarz na południe, ku DK50. Pierwsze rysunki wariantów pojawią się dopiero ok. 2027/2028 — score bazowy utrzymuje się do napływu oficjalnych komunikatów GDDKiA.",
           "key_findings": [
             {
-              "claim": "Trasa A50 omija Warszawę od południa, a rozważane korytarze na wschodzie odnoszą się do strefy DK50/Wilgi, nie doliny Wisły",
+              "claim": "Korytarz wschodni OAW jest przesuwany na południe — ku linii DK50 (opór Wiązowny/Otwocka, Natura 2000, Bagno Całowanie, NCBJ) — co obejmuje północną część gminy między DK50 a terenami zalewowymi.",
               "evidence_urls": [
-                "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPYlM2a1ZGdXRPcl9nQ0c2LUp6WXZJUE1uVnlZX0R1ZFRPY2Ziank4VmVXRzdRYmxpeFl2ODNXQXFuWEwyVzNUZk9GWGRpTlRaS3cxNzd1ak9OVWFHYW14UjB5TWVUc0VyX3NWQ2JYejZUSVNqQmtkTTJ5dzBDRkVCWllvRmZfWmdXT29nVGFsTWNOQVFGNjAxZXhFMUVudDFVRGJuS0MwdlU",
-                "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPOFVsOXZRX1NGTW9wM0M2Z3k4ZkxNU3E1X0RORXJSeENuRThDWUsxcl83bDd6Vm1JTjc3bFhUeVNGdUlLTlNqZXpXREFIR2xZT1prZUtWQXcxY0dwVTlILVBTQzhYdUwyLXA3YmhVVXV3MWI1SzJQaENhWlM0R0hoUm1MUTQ3YXRYeC02cDFweHZ6N1NNdWtVQ2kxakdBaG80MlpzQnFwdXhyS0x4OFhmZlNQQ0RsOUFpVExqMFczSlkwTld0bkZrS3AtM0lsOHVwS1FESlphajIydw"
+                "https://matkowpa.github.io/a50-monitor/2026-09-05_analiza-1-przebieg-A50-przez-gmine-Sobienie-Jeziory-vs-DK50.html",
+                "https://matkowpa.github.io/a50-monitor/2026-09-05_analiza-2-przeciecie-gminy-polac-trasa-poludnie-od-wsi.html"
               ]
             },
             {
-              "claim": "Mieszkańcy gminy protestują przeciwko proponowanemu przebiegowi, ale debata toczy się wzdłuż osi DK50/południe, nie przy Wiśle",
+              "claim": "Trzy z czterech analizowanych wariantów wschodniego odcinka to nowe ślady, geometrycznie najkrócej przez środkową/północną część gminy.",
               "evidence_urls": [
-                "https://news.google.com/rss/articles/CBMinwFBVV95cUxPWFY4aHJrVlcxV3d5Mlp3eEs1TVlvamJ4OEtKLUFfZFpEa3l1WTZSU0x6a0VuYkluMUluOVctS2NjRUR0SUxhUmJGZDVqWTZMZ2NLRTQ1MVdGZ3hVcWg0WUROVlV6V2ZrNjVGR1d2OHRjcHlqdVVpYnRINFh4Yy12Rk1OTjVma0k2b3V2UDZyckNoYWdvQkNRRmpNTy1ERVE",
-                "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNbWtVeS1JTVlGSEcwTmxVdFVLdndTWFJoT3JUMUc0TFlCTFd2Uy1SUlFYZXpsdk1Vc0hYRWFoRG9VS3hhT0tnNll2X1NlelNQdUlYVklkQWhHajJoUWw0NmlQYXJBbE92YWFtNjhsUmdaMUV2MVc3dFFnVGZKT2ttWnlZbV8wMkJEMHVtSnRyMndMUVdfUW9TbGlrXzJRaEhaUGwzOEE4R0JDN3dqV1J6SjUxTmFsUTRhWUdud2hjR3B1RDg"
+                "https://matkowpa.github.io/a50-monitor/2026-09-05_analiza-2-przeciecie-gminy-polac-trasa-poludnie-od-wsi.html"
               ]
             }
           ],
           "trend_vs_prev": 0
         },
         "south": {
-          "score": 55,
-          "confidence": "niska",
-          "summary": "Korytarze analizowane dla wschodniego odcinka A50 (powiat otwocki) omawiane są wzdłuż południowej części gminy, a protest mieszkańców Sobienie-Jezior z czerwca 2026 sugeruje, że proponowany wariant dotyka gminy. Brak jednak oficjalnej decyzji GDDKiA przesądzającej, przez którą stronę gminy trasa przejdzie.",
-          "rationale": "Media lokalne i regionalne wskazują, że korytarz dla A50 na wschodzie biegnie w rejonie DK50/Wilgi/Osiecka, czyli przez południową część gminy (m.in. argument o skróceniu dojazdów i sprzeciw mieszkańców). Protest w Sobienach-Jeziorach sugeruje realne zagrożenie przecięciem gminy, jednak nie jest jasne, czy chodzi o środek (wzdłuż DK50) czy południe. Ogólnopolskie spory dotyczą głównie odcinka zachodniego (Grójec, Piaseczno, Tarczyn), więc słabo przenoszą się na gminę otwocką. Brak komunikatów GDDKiA ani decyzji środowiskowej — stąd niska pewność i score blisko neutralno-pozytywnego, bez przesadnej pewności.",
+          "score": 28,
+          "confidence": "średnia",
+          "summary": "Punkt wyjścia z analiz eksperckich (5.09.2026): korytarz DK50 z obwodnicą wsi Sobienie-Jeziory po stronie południowej szacowany na ~25–30%.",
+          "rationale": "Analiza nr 2: scenariusz A (korytarz DK50, obwodnica wsi po stronie południowej) ~25–30%. Petycja z sierpnia 2026 lobbuje za wariantem w śladzie DK50 (standard S50), a silny opór Wiązowny i Otwocka wypycha korytarz w stronę gminy. Ominięcie od dalekiego południa przez Osieck/Wilgę jest mało prawdopodobne (<5%) i nie tnie gminy. Score bazowy utrzymuje się do napływu oficjalnych komunikatów GDDKiA (warianty wschodniego odcinka: ok. 2027/2028).",
           "key_findings": [
             {
-              "claim": "Mieszkańcy i władze Sobienie-Jezior protestują przeciwko planowanemu przebiegowi A50, co wskazuje, że rozważany wariant przetnia gminę",
+              "claim": "Korytarz DK50 przez gminę jest realnie rozważany: jeden z 4 wariantów; petycja z sierpnia 2026 wprost popiera wariant w śladzie DK50 (S50).",
               "evidence_urls": [
-                "https://news.google.com/rss/articles/CBMinwFBVV95cUxPWFY4aHJrVlcxV3d5Mlp3eEs1TVlvamJ4OEtKLUFfZFpEa3l1WTZSU0x6a0VuYkluMUluOVctS2NjRUR0SUxhUmJGZDVqWTZMZ2NLRTQ1MVdGZ3hVcWg0WUROVlV6V2ZrNjVGR1d2OHRjcHlqdVVpYnRINFh4Yy12Rk1OTjVma0k2b3V2UDZyckNoYWdvQkNRRmpNTy1ERVE"
+                "https://matkowpa.github.io/a50-monitor/2026-09-05_analiza-1-przebieg-A50-przez-gmine-Sobienie-Jeziory-vs-DK50.html",
+                "https://matkowpa.github.io/a50-monitor/2026-09-05_analiza-2-przeciecie-gminy-polac-trasa-poludnie-od-wsi.html"
               ]
             },
             {
-              "claim": "Wariant A50 przez powiat otwocki jest przedmiotem aktywnej debaty; Wiązowna lobbyje za trasą bliżej DK50, co implikuje korytarze w pobliżu osi DK50 w gminie Sobienie-Jeziory",
+              "claim": "Wariant „po śladzie DK50” (A+B ~35–40%) niemal na pewno przecina gminę w poprzek, bo DK50 biegnie środkiem gminy przez samą wieś.",
               "evidence_urls": [
-                "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNbWtVeS1JTVlGSEcwTmxVdFVLdndTWFJoT3JUMUc0TFlCTFd2Uy1SUlFYZXpsdk1Vc0hYRWFoRG9VS3hhT0tnNll2X1NlelNQdUlYVklkQWhHajJoUWw0NmlQYXJBbE92YWFtNjhsUmdaMUV2MVc3dFFnVGZKT2ttWnlZbV8wMkJEMHVtSnRyMndMUVdfUW9TbGlrXzJRaEhaUGwzOEE4R0JDN3dqV1J6SjUxTmFsUTRhWUdud2hjR3B1RDg"
-              ]
-            },
-            {
-              "claim": "Trasa przez rejon ma skrócić dojazdy dla mieszkańców, co sugeruje wariant w pobliżu DK50/Wilgi w południowej części gminy",
-              "evidence_urls": [
-                "https://news.google.com/rss/articles/CBMiakFVX3lxTFBrREtaSXhRVXNvMVBCdWpCcFJ0Vm1sTHZLQ09vYVhfRHdwVGNiLUZmRmhFTkR0ejdkbXJPSlo3aENhNGFFbnhFdG9vZmVkdzE4YTJBTVFRWExfYVFjTUdCVlRpbEtUVG9aNXc"
-              ]
-            },
-            {
-              "claim": "Historycznie wskazywano 'czerwony korytarz' jako najkorzystniejszy w rejonie powiatu otwockiego, co wspiera korytarz w śródlądowej/południowej części gminy, nie przy Wiśle",
-              "evidence_urls": [
-                "https://news.google.com/rss/articles/CBMidEFVX3lxTE1LSkl6X0FDcWlKaFMyQUxiYjAyLW8zeEFNejUyTDJnamltckdNQVhPZFhsZW9nWno4U21RVkhoeGgzVlREZ3BYYkx4ZGhhaGJybk1VWkx2U1VLVW9HY1VwYVNBMDJnb2JGOVk2d05CSkpxVEZv"
-              ]
-            },
-            {
-              "claim": "Ogólnokrajowe spory o warianty A50 (Grójec, Piaseczno, Wilga, Tarczyn) nie rozstrzygają kwestii gminy Sobienie-Jeziory — brak oficjalnej decyzji środowiskowej",
-              "evidence_urls": [
-                "https://news.google.com/rss/articles/CBMivwFBVV95cUxNRkRvQjlHLUFJX25UUUdwYkJSbVR3MG1tandkS2VkQUtvXzNIM24yTDN6U1ppRVI5Z3lWSlk5dEFWQnNRWFI5MWZmM2FrVVMtZktSVHVtbmtoSTRDVEI5Qk1iQktIeWFrQ0dQS043WnA1aFRYU0ZlNG1QOEtoM2IwWmFMdDRFd0FmV1ludDk1NTVqMWhINDlvUnNWeExqRXN6aWlRaXBlX1I1RnFSSTdacFh6cERnd2ZRNGNUc2RIbw",
-                "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQb0dfTWZUYWc1dTRweWdEaV9LVkRacXhrYVdwTl9WMmxZUXB4Q25fak1qQ2JDYTRRTWpOMUFOcnNjRlNnTVVXS0lQUnJDTTM2bjN4Rms0T1hPdkhmZHc4R3JGZGNCWmJjNEJiRi1DRDkwd2tWdkwtWTcwNEVxR2lXbENhNlowcHhBOGI4emxycE5uaGZibXg4VjBwNjJ4MjZKb0E0Um1mT1dsa1pNZ0U4S1o3X2Fzb0Z3Z0RycXRWQlIwMHpQeFJLeFlIWFh0N0kwTlVB"
+                "https://matkowpa.github.io/a50-monitor/2026-09-05_analiza-2-przeciecie-gminy-polac-trasa-poludnie-od-wsi.html"
               ]
             }
           ],
@@ -190,7 +171,7 @@
         }
       ],
       "sources_found": 32,
-      "engine_status": "ok",
+      "engine_status": "baseline-analizy",
       "assessment_path": "data/assessments/2026-09-05.json"
     }
   ]

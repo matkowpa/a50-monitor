@@ -26,6 +26,24 @@ from common import (CONFIDENCE_LEVELS, SCENARIOS, Evidence, assessments_dir,  # 
 
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 
+ANALIZY_DIR = Path(__file__).resolve().parent.parent / "analizy"
+ANALIZY_CAP = 8000
+
+
+def load_analyses() -> str:
+    """Tekst analiz eksperckich (analizy/*.md) — punkt wyjścia ocen.
+
+    Analizy żyją w repo, więc prompt zawsze ma ich aktualne ustalenia
+    (bez duplikowania treści w kodzie). Każdy plik skracany do ANALIZY_CAP.
+    """
+    parts = []
+    for md in sorted(ANALIZY_DIR.glob("*.md")):
+        text = md.read_text(encoding="utf-8-sig").strip()
+        if len(text) > ANALIZY_CAP:
+            text = text[:ANALIZY_CAP] + "\n…(skrócono)"
+        parts.append(f"### {md.stem}\n{text}")
+    return "\n\n".join(parts)
+
 
 # ---------------------------------------------------------------- ekstrakcja
 
@@ -111,7 +129,8 @@ def merge_evidence(*groups: list[Evidence], cap: int) -> list[Evidence]:
 
 # ------------------------------------------------------------------- prompt
 
-def build_prompt(evidence: list[Evidence], prev_entry: dict | None, cfg: dict) -> str:
+def build_prompt(evidence: list[Evidence], prev_entry: dict | None, cfg: dict,
+                 analyses: str = "") -> str:
     prev_scores = ""
     if prev_entry:
         prev_s = prev_entry.get("scores") or {}
@@ -128,8 +147,9 @@ def build_prompt(evidence: list[Evidence], prev_entry: dict | None, cfg: dict) -
         "(woj. mazowieckie, powiat otwocki). Ocenasz DWA niezależne "
         "scenariusze przebiegu:",
         "1) SCENARIUSZ PÓŁNOC: trasa prowadzi przez północną część gminy — "
-        "na północ od wsi Sobienie-Jeziory, w kierunku Wisły (Natura 2000 "
-        "Dolina Środkowej Wisły, tereny zalewowe).",
+        "na północ od wsi Sobienie-Jeziory (pas między DK50 a terenami "
+        "zalewowymi Wisły / Natura 2000 Dolina Środkowej Wisły), łącznie "
+        "z nowym śladem przez środkowo-północny pas gminy.",
         "2) SCENARIUSZ POŁUDNIE: trasa prowadzi przez południową część "
         "gminy — na południe od wsi Sobienie-Jeziory (otwarty płaskowyż "
         "rolniczy, w kierunku Osiecka/Wilgi).",
@@ -143,6 +163,18 @@ def build_prompt(evidence: list[Evidence], prev_entry: dict | None, cfg: dict) -
         lines.append(f"[{i}] {ev.title} | {ev.source} | {ev.published or 'b.d.'} | "
                      f"{ev.url} | {ev.snippet[:200]}")
     lines.append("")
+    baseline = cfg.get("baseline_scores") or {}
+    lines.append("PUNKT WYJŚCIA — ANALIZY EKSPERCKIE:")
+    lines.append(f"- Score bazowy PÓŁNOC: {baseline.get('north', '?')}% "
+                 "(analiza nr 2: obwodnica wsi po stronie północnej ~10–12% "
+                 "+ nowy ślad między DK50 a Natura 2000 ~30–35%).")
+    lines.append(f"- Score bazowy POŁUDNIE: {baseline.get('south', '?')}% "
+                 "(analiza nr 2: korytarz DK50 z obwodnicą wsi po stronie "
+                 "południowej ~25–30%).")
+    if analyses:
+        lines.append("- Pełne teksty analiz:")
+        lines.append(analyses)
+    lines.append("")
     if prev_entry:
         lines.append(f"POPRZEDNIA OCENA ({prev_entry.get('date')}): "
                      f"{prev_scores}. "
@@ -153,6 +185,7 @@ def build_prompt(evidence: list[Evidence], prev_entry: dict | None, cfg: dict) -
     lines.append("""
 RUBRYKA (osobno dla PÓŁNOC i POŁUDNIE):
 - score 0-100 = Twoja ocena prawdopodobieństwa (w %), że finalny przebieg A50 przetnie DANĄ stronę gminy Sobienie-Jeziory (północną lub południową względem wsi Sobienie-Jeziory).
+- Punktem wyjścia są score bazowe z analiz eksperckich (oraz poprzednia ocena). Codzienne dowody modyfikują score; wnioski obu analiz są kotwicą — wyraźne odstępstwo od nich wymaga mocnych, oficjalnych dowodów (komunikat GDDKiA, wskazanie wariantu, DŚU, przetarg). Brak nowych dowodów → utrzymanie poprzednich wartości.
 - Wagi dowodów (od najsilniejszych): oficjalne komunikaty GDDKiA / ministerstw / rządu > uchwały i stanowiska samorządów (gminnych, powiatowych, marszałkowskich) > główne media ogólnopolskie > media lokalne > social media / sentyment.
 - Kluczowe ogniwo: wariant przebiegu. Oficjalne potwierdzenie wariantu omijającego gminę albo prowadzącego przez jej środek/inną stronę => score danego scenariusza niski. Oficjalny proces wskazujący korytarz przez daną stronę gminy (studium, raport OOŚ, decyzja środowiskowa, przetarg) => score tego scenariusza wyższy.
 - Dowody mogą mówić o jednej stronie gminy i nic nie wnosić o drugiej — wtedy oceniaj samodzielnie geometrycznie (Wisła/Natura 2000 na północy, DK50 środkiem, otwarte tereny rolnicze na południu) i nisko ustaw confidence danej strony.
@@ -298,24 +331,22 @@ def prev_entry_before(entries: list[dict], day: str) -> dict | None:
     return earlier[-1] if earlier else None
 
 
-def no_evidence_entry(day: str, prev: dict | None, status: str) -> dict:
+def no_evidence_entry(day: str, prev: dict | None, status: str,
+                      cfg: dict | None = None) -> dict:
+    baseline = (cfg or {}).get("baseline_scores") or {}
     prev_scores = (prev.get("scores") or {}) if prev else {}
     scores = {}
     for key, _label in SCENARIOS:
         p = prev_scores.get(key) or {}
-        if prev:
-            if isinstance(p.get("score"), int):
-                score, confidence = p["score"], "niska"
-                summary = ("Brak nowych dowodów w podglądanych źródłach — "
-                           f"utrzymuję poprzednią ocenę ({p['score']}%).")
-            else:
-                score, confidence = 50, "niska"
-                summary = ("Brak nowych dowodów — ocena neutralna do czasu "
-                           "napływu dowodów.")
+        if isinstance(p.get("score"), int):
+            score, confidence = p["score"], "niska"
+            summary = ("Brak nowych dowodów w podglądanych źródłach — "
+                       f"utrzymuję poprzednią ocenę ({p['score']}%).")
         else:
-            score, confidence = 50, "niska"
-            summary = ("Brak danych w pierwszym uruchomieniu monitoringu. "
-                       "Ocena neutralna do czasu napływu dowodów.")
+            score = baseline.get(key) if isinstance(baseline.get(key), int) else 50
+            confidence = "niska"
+            summary = ("Brak nowych dowodów — utrzymuję score bazowy "
+                       f"z analiz eksperckich ({score}%).")
         prev_score = p.get("score")
         trend = (score - prev_score) if isinstance(prev_score, int) else 0
         scores[key] = {
@@ -357,7 +388,7 @@ def main() -> int:
     prev = prev_entry_before(load_scores()["entries"], day)
 
     if evidence:
-        prompt = build_prompt(evidence, prev, cfg)
+        prompt = build_prompt(evidence, prev, cfg, load_analyses())
         api_key = os.environ.get("OPENROUTER_API_KEY", "")
         if not api_key:
             print("[assess] FAIL: brak OPENROUTER_API_KEY w środowisku", file=sys.stderr)
@@ -382,7 +413,7 @@ def main() -> int:
         }
     else:
         status = "no-data" if not (raw_path.exists() or feeds_path.exists()) else "no-evidence"
-        entry = no_evidence_entry(day, prev, status)
+        entry = no_evidence_entry(day, prev, status, cfg)
 
     entry["assessment_path"] = f"data/assessments/{day}.json"
     upsert_entry(entry)

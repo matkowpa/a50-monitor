@@ -410,6 +410,11 @@ płaskowyż rolniczy, w kierunku Osiecka/Wilgi).</li>
 Sobienie-Jeziory. Wagi dowodów: oficjalne komunikaty
 GDDKiA/ministerstw &gt; uchwały samorządów &gt; media ogólnopolskie &gt;
 media lokalne &gt; social media.</p>
+<p>Punktem wyjścia obu score są <strong>analizy eksperckie</strong>
+(<a href="analizy.html">analizy/</a> — baza: północ 45%, południe 28%);
+codzienne dowody modyfikują je od tego poziomu, a wyraźne odstępstwa od
+wniosków analiz wymagają mocnych, oficjalnych dowodów (GDDKiA, warianty,
+DŚU, przetarg).</p>
 <h2>Zastrzeżenia</h2>
 <p class="disclaimer">Score <strong>nie jest</strong> informacją oficjalną ani
 prognozą ekspercką człowieka. Decyzje o przebiegu dróg podejmuje

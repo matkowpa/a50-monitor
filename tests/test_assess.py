@@ -13,6 +13,7 @@ CFG = {
     "focus": "Sobienie-Jeziory",
     "keywords": ["a50", "obwodnica autostradowa", "sobienie-jeziory"],
     "max_evidence": 10,
+    "baseline_scores": {"north": 45, "south": 28},
 }
 
 
@@ -146,7 +147,7 @@ class TestBuildPrompt(unittest.TestCase):
                                      "rationale": "r"},
                            "south": {"score": 25, "confidence": "niska",
                                      "rationale": "r"}}}
-        prompt = assess.build_prompt(ev, prev, CFG)
+        prompt = assess.build_prompt(ev, prev, CFG, "### analiza-1\nTreść analizy.")
         self.assertIn("Sobienie-Jeziory", prompt)
         self.assertIn("score północ=30", prompt)
         self.assertIn("południe=25", prompt)
@@ -154,10 +155,40 @@ class TestBuildPrompt(unittest.TestCase):
         self.assertIn("RUBRYKA", prompt)
         self.assertIn("SCENARIUSZ PÓŁNOC", prompt)
         self.assertIn("SCENARIUSZ POŁUDNIE", prompt)
+        self.assertIn("PUNKT WYJŚCIA — ANALIZY EKSPERCKIE", prompt)
+        self.assertIn("45%", prompt)
+        self.assertIn("28%", prompt)
+        self.assertIn("### analiza-1", prompt)
+        self.assertIn("Treść analizy.", prompt)
 
     def test_first_run_marker(self):
         prompt = assess.build_prompt([Evidence(title="t", url="u", source="s")], None, CFG)
         self.assertIn("pierwsza ocena", prompt)
+
+    def test_prompt_without_analyses_text(self):
+        prompt = assess.build_prompt([Evidence(title="t", url="u", source="s")], None, CFG)
+        self.assertIn("PUNKT WYJŚCIA", prompt)
+        self.assertNotIn("Pełne teksty analiz:", prompt)
+
+
+class TestLoadAnalyses(unittest.TestCase):
+    def test_loads_and_caps(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as tmp:
+            d = Path(tmp)
+            (d / "b_analiza.md").write_text("B" * 30, encoding="utf-8")
+            (d / "a_analiza.md").write_text("A" * 30, encoding="utf-8")
+            assess.ANALIZY_DIR = d
+            assess.ANALIZY_CAP = 10
+            out = assess.load_analyses()
+            self.assertIn("### a_analiza", out)
+            self.assertIn("### b_analiza", out)
+            self.assertLess(len(out), 80)  # cap zadziałał
+            self.assertIn("…(skrócono)", out)
+            # restore
+            assess.ANALIZY_DIR = (Path(assess.__file__).resolve().parent.parent
+                                  / "analizy")
+            assess.ANALIZY_CAP = 8000
 
 
 class TestPrevAndNoEvidence(unittest.TestCase):
@@ -175,11 +206,16 @@ class TestPrevAndNoEvidence(unittest.TestCase):
         self.assertEqual(entry["scores"]["north"]["confidence"], "niska")
         self.assertEqual(entry["engine_status"], "no-evidence")
 
-    def test_no_evidence_first_run_neutral(self):
-        entry = assess.no_evidence_entry("2026-09-05", None, "no-data")
+    def test_no_evidence_first_run_uses_baseline(self):
+        entry = assess.no_evidence_entry("2026-09-05", None, "no-data", CFG)
+        self.assertEqual(entry["scores"]["north"]["score"], 45)
+        self.assertEqual(entry["scores"]["south"]["score"], 28)
+        self.assertEqual(entry["engine_status"], "no-data")
+
+    def test_no_evidence_without_cfg_falls_back_neutral(self):
+        entry = assess.no_evidence_entry("2026-09-05", None, "no-data", None)
         self.assertEqual(entry["scores"]["north"]["score"], 50)
         self.assertEqual(entry["scores"]["south"]["score"], 50)
-        self.assertEqual(entry["engine_status"], "no-data")
 
 
 if __name__ == "__main__":
