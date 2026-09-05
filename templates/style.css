@@ -40,6 +40,10 @@ table { width: 100%; border-collapse: collapse; font-size: .92rem; }
 th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
 th { color: var(--muted); font-weight: 600; }
 td .src { color: var(--muted); font-size: .82rem; }
+/* Tabela dowodów: stały układ + łamanie długich URL-i w komórkach
+   (bez tego tabela rozpycha panele na wąskich ekranach). */
+.evidence { table-layout: fixed; }
+.evidence td { overflow-wrap: anywhere; word-break: break-word; }
 .archive li { margin: 6px 0; }
 .disclaimer { background: var(--panel2); border-left: 4px solid var(--yellow); padding: 12px 16px; border-radius: 8px; color: var(--muted); font-size: .92rem; }
 footer { border-top: 1px solid var(--border); color: var(--muted); font-size: .85rem; padding: 16px 0 32px; }

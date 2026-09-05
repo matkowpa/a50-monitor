@@ -244,7 +244,7 @@ def evidence_table_html(evidence: list[dict]) -> str:
             + "</td></tr>")
     if not rows:
         return '<p class="meta">Brak dowodów.</p>'
-    return ("<table><thead><tr><th>Dowody (linki do źródeł)</th></tr></thead>"
+    return ("<table class=\"evidence\"><thead><tr><th>Dowody (linki do źródeł)</th></tr></thead>"
             "<tbody>" + "".join(rows) + "</tbody></table>")
 
 

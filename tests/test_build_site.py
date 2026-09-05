@@ -96,6 +96,8 @@ class TestBuild(unittest.TestCase):
             self.assertNotIn("<script>alert(1)</script>", day2)
             self.assertIn("&lt;script&gt;", day2)
             self.assertNotIn("<tu>", day2)
+            # tabela dowodów ma klasę evidence (mobile: table-layout fixed)
+            self.assertIn('<table class="evidence">', day2)
             # trend używa 2 linii (po jednej na scenariusz)
             self.assertEqual(idx.count("<polyline"), 2)
 
