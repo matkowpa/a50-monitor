@@ -5,8 +5,9 @@ o przebiegu **południowej obwodnicy autostradowej Warszawy (A50)** — ze
 szczególnym uwzględnieniem ryzyka, że finalna trasa przetnie teren
 **gminy Sobienie-Jeziory** (powiat otwocki, woj. mazowieckie).
 
-Strona z raportami (GitHub Pages) publikuje dzienny **score
-prawdopodobieństwa 0–100%** wraz z uzasadnieniem i linkami do wszystkich źródeł.
+Strona z raportami (GitHub Pages) publikuje **dwa dzienne, niezależne score
+prawdopodobieństwa 0–100%** — dla północnej i południowej strony gminy
+względem wsi Sobienie-Jeziory — wraz z uzasadnieniem i linkami do wszystkich źródeł.
 
 🌐 **Strona:** <https://matkowpa.github.io/a50-monitor/> — codzienne raporty
 oraz dłuższe analizy eksperckie z folderu [`analizy/`](analizy/).
@@ -17,7 +18,7 @@ oraz dłuższe analizy eksperckie z folderu [`analizy/`](analizy/).
 GitHub Actions (cron 6:30 PL) 
   → scripts/research.py      # silnik last30days (Reddit, YouTube, HN, web)
   → scripts/fetch_feeds.py   # fallback RSS: Google News, GDDKiA
-  → scripts/assess.py        # rubryka PL → OpenRouter → score + dowody
+  → scripts/assess.py        # rubryka PL → OpenRouter → 2 score (północ/południe) + dowody
   → scripts/build_site.py    # statyczny HTML (zero JS, czyste SVG)
   → deploy na gh-pages + commit data/ (historia w repo)
 ```
@@ -26,10 +27,13 @@ GitHub Actions (cron 6:30 PL)
   zwendoryzowany w `skill/last30days/` — działa w trybie headless/cron,
   planowanie zapytań przez OpenRouter.
 - **Ocena**: model wskazany w `config.json` (`openrouter_model`,
-  domyślnie `google/gemini-2.5-flash`) ocenia dowody wg sztywnej rubryki:
+  obecnie `z-ai/glm-5.3-flash`) ocenia dowody wg sztywnej rubryki,
+  **osobno dla dwóch scenariuszy** — trasa przez północną część gminy
+  (na północ od wsi, kierunek Wisły/Natura 2000) lub przez południową
+  (na południe od wsi, kierunek Osieck/Wilga). Wagi dowodów:
   oficjalne komunikaty GDDKiA/ministerstw > uchwały samorządów > media
   ogólnopolskie > media lokalne > social media.
-- **Brak nowych dowodów danego dnia** → score pozostaje bez zmian,
+- **Brak nowych dowodów danego dnia** → oba score pozostają bez zmian,
   confidence spada do „niska”.
 
 ## Struktura repo
