@@ -30,9 +30,11 @@ GitHub Actions (cron 6:30 PL) lub lokalnie z Cline (/a50-daily)
   obecnie `z-ai/glm-5.3-flash`) ocenia dowody wg sztywnej rubryki,
   **osobno dla dwóch scenariuszy** — trasa przez północną część gminy
   (na północ od wsi, kierunek Wisły/Natura 2000) lub przez południową
-  (na południe od wsi, kierunek Osieck/Wilga). Wagi dowodów:
+  (na południe od wsi, rejon Śniadków). Wagi dowodów:
   oficjalne komunikaty GDDKiA/ministerstw > uchwały samorządów > media
-  ogólnopolskie > media lokalne > social media.
+  ogólnopolskie > media lokalne > social media. Faktograficznie: wieś
+  Sobienie-Jeziory leży na DW801/DW739, a DK50 biegnie na północ od
+  gminy (przez Karczew/Celestynów do Kołbiela) i jej nie przecina.
 - **Brak nowych dowodów danego dnia** → oba score pozostają bez zmian,
   confidence spada do „niska”.
 

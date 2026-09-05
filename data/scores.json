@@ -6,11 +6,11 @@
         "north": {
           "score": 45,
           "confidence": "średnia",
-          "summary": "Punkt wyjścia z analiz eksperckich (5.09.2026): łączne prawdopodobieństwo korytarza na północ od wsi Sobienie-Jeziory (obwodnica wsi po stronie północnej ~10–12% + nowy ślad między DK50 a Natura 2000 ~30–35%) szacowane na ~40–47%.",
-          "rationale": "Analiza nr 2 rozkłada scenariusze północne na dwa warianty: obwodnica wsi po stronie północnej w korytarzu DK50 (~10–12%) oraz nowy ślad przez środkowo-północny pas gminy między DK50 a terenami zalewowymi (~30–35%). Analiza nr 1 szacuje prawdopodobieństwo nowego śladu na północ od DK50 na ~35–40%, a łączne przecięcie gminy na ~75–85%. Geometrycznie trudno ominąć gminę, a nacisk na odsunięcie od Mazowieckiego Parku Krajobrazowego, Bagna Całowanie i NCBJ przesuwa korytarz na południe, ku DK50. Pierwsze rysunki wariantów pojawią się dopiero ok. 2027/2028 — score bazowy utrzymuje się do napływu oficjalnych komunikatów GDDKiA.",
+          "summary": "Punkt wyjścia z analiz eksperckich (5.09.2026): łączne prawdopodobieństwo korytarza na północ od wsi Sobienie-Jeziory (obwodnica wsi po stronie północnej ~10–12% + nowy ślad przez środkowo-północny pas gminy ~30–35%) szacowane na ~40–47%.",
+          "rationale": "Analiza nr 2 rozkłada scenariusze północne na dwa warianty: obwodnica wsi po stronie północnej w korytarzu DK50 (~10–12%) oraz nowy ślad przez środkowo-północny pas gminy, między wsią a doliną Wisły (~30–35%). Analiza nr 1 szacuje prawdopodobieństwo nowego śladu na północ od DK50 na ~35–40%, a łączne przecięcie gminy na ~75–85%. Geometrycznie trudno ominąć gminę, a nacisk na odsunięcie od Mazowieckiego Parku Krajobrazowego, Bagna Całowanie i NCBJ przesuwa korytarz na południe, ku linii DK50 biegnącej na północ od gminy. Pierwsze rysunki wariantów pojawią się dopiero ok. 2027/2028 — score bazowy utrzymuje się do napływu oficjalnych komunikatów GDDKiA.",
           "key_findings": [
             {
-              "claim": "Korytarz wschodni OAW jest przesuwany na południe — ku linii DK50 (opór Wiązowny/Otwocka, Natura 2000, Bagno Całowanie, NCBJ) — co obejmuje północną część gminy między DK50 a terenami zalewowymi.",
+              "claim": "Korytarz wschodni OAW jest przesuwany na południe — ku linii DK50 (opór Wiązowny/Otwocka, Natura 2000, Bagno Całowanie, NCBJ) — co obejmuje północną część gminy (pas między wsią a doliną Wisły).",
               "evidence_urls": [
                 "https://matkowpa.github.io/a50-monitor/2026-09-05_analiza-1-przebieg-A50-przez-gmine-Sobienie-Jeziory-vs-DK50.html",
                 "https://matkowpa.github.io/a50-monitor/2026-09-05_analiza-2-przeciecie-gminy-polac-trasa-poludnie-od-wsi.html"
@@ -28,8 +28,8 @@
         "south": {
           "score": 28,
           "confidence": "średnia",
-          "summary": "Punkt wyjścia z analiz eksperckich (5.09.2026): korytarz DK50 z obwodnicą wsi Sobienie-Jeziory po stronie południowej szacowany na ~25–30%.",
-          "rationale": "Analiza nr 2: scenariusz A (korytarz DK50, obwodnica wsi po stronie południowej) ~25–30%. Petycja z sierpnia 2026 lobbuje za wariantem w śladzie DK50 (standard S50), a silny opór Wiązowny i Otwocka wypycha korytarz w stronę gminy. Ominięcie od dalekiego południa przez Osieck/Wilgę jest mało prawdopodobne (<5%) i nie tnie gminy. Score bazowy utrzymuje się do napływu oficjalnych komunikatów GDDKiA (warianty wschodniego odcinka: ok. 2027/2028).",
+          "summary": "Punkt wyjścia z analiz eksperckich (5.09.2026): korytarz DK50 (przesunięty do wnętrza gminy) z obwodnicą wsi Sobienie-Jeziory po stronie południowej szacowany na ~25–30%.",
+          "rationale": "Analiza nr 2: scenariusz A (korytarz DK50 przesunięty do wnętrza gminy — obwodnica wsi po stronie południowej) ~25–30%. Petycja z sierpnia 2026 lobbuje za wariantem w śladzie DK50 (standard S50), a silny opór Wiązowny i Otwocka wypycha korytarz w stronę gminy. Ominięcie od dalekiego południa przez Osieck/Wilgę jest mało prawdopodobne (<5%) i nie tnie gminy. Score bazowy utrzymuje się do napływu oficjalnych komunikatów GDDKiA (warianty wschodniego odcinka: ok. 2027/2028).",
           "key_findings": [
             {
               "claim": "Korytarz DK50 przez gminę jest realnie rozważany: jeden z 4 wariantów; petycja z sierpnia 2026 wprost popiera wariant w śladzie DK50 (S50).",
@@ -39,7 +39,7 @@
               ]
             },
             {
-              "claim": "Wariant „po śladzie DK50” (A+B ~35–40%) niemal na pewno przecina gminę w poprzek, bo DK50 biegnie środkiem gminy przez samą wieś.",
+              "claim": "Wariant „po śladzie DK50” (A+B ~35–40%) dotyczy korytarza wzdłuż linii DK50 — dziś biegnącej na północ od gminy; przecięcie południowej części gminy wymagałoby przesunięcia korytarza na południe od DK50.",
               "evidence_urls": [
                 "https://matkowpa.github.io/a50-monitor/2026-09-05_analiza-2-przeciecie-gminy-polac-trasa-poludnie-od-wsi.html"
               ]

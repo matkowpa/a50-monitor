@@ -109,6 +109,12 @@ class TestBuild(unittest.TestCase):
             self.assertIn("nie są</strong> informacją oficjalną ani opinią", about)
             self.assertNotIn("prognozą ekspercką człowieka", about)
             self.assertIn("standardzie S50", about)
+            # geografia wg stanu faktycznego (DK50 na północ od gminy)
+            self.assertIn("drogach wojewódzkich 801 i 739", about)
+            self.assertIn("DK50 biegnie na północ od gminy", about)
+            self.assertIn("nie przecina gminy", about)
+            self.assertNotIn("środkiem gminy przez samą wieś", about)
+            self.assertNotIn("kierunku Osiecka/Wilgi", about)
 
     def test_status_note_baseline_vs_no_data(self):
         with tempfile.TemporaryDirectory() as tmp:

@@ -147,15 +147,23 @@ def build_prompt(evidence: list[Evidence], prev_entry: dict | None, cfg: dict,
         "(woj. mazowieckie, powiat otwocki). Ocenasz DWA niezależne "
         "scenariusze przebiegu:",
         "1) SCENARIUSZ PÓŁNOC: trasa prowadzi przez północną część gminy — "
-        "na północ od wsi Sobienie-Jeziory (pas między DK50 a terenami "
-        "zalewowymi Wisły / Natura 2000 Dolina Środkowej Wisły), łącznie "
+        "na północ od wsi Sobienie-Jeziory (pas między wsią a doliną Wisły: "
+        "tereny zalewowe, Natura 2000 Dolina Środkowej Wisły), łącznie "
         "z nowym śladem przez środkowo-północny pas gminy.",
         "2) SCENARIUSZ POŁUDNIE: trasa prowadzi przez południową część "
-        "gminy — na południe od wsi Sobienie-Jeziory (otwarty płaskowyż "
-        "rolniczy, w kierunku Osiecka/Wilgi).",
-        "Kontekst geograficzny: DK50 biegnie mniej więcej środkiem gminy "
-        "przez samą wieś Sobienie-Jeziory; gmina rozciągnięta jest wzdłuż "
-        "Wisły — od rzeki na północy po Osieck/Wilgę na południu.",
+        "gminy — na południe od wsi Sobienie-Jeziory (rejon m.in. "
+        "Śniadkowa Dolnego i Górnego; otwarty płaskowyż rolniczy ku "
+        "południowej granicy gminy).",
+        "Kontekst geograficzny: wieś Sobienie-Jeziory leży na drogach "
+        "wojewódzkich 801 i 739, w środkowej części gminy. DK50 biegnie "
+        "NA PÓŁNOC od gminy — od Góry Kalwarii (nowy most Nadwiślańskiego "
+        "Urzecza) przez Ostrówek i Piotrowice (gmina Karczew) oraz Tabor "
+        "i Regut (gmina Celestynów) do Kołbiela — i nie przecina gminy. "
+        "Północną granicę gminy wyznacza dolina Wisły (tereny zalewowe, "
+        "Natura 2000); na południe od wsi leżą m.in. Śniadków Dolny "
+        "i Górny. UWAGA: teksty analiz eksperckich poniżej zakładają "
+        "starszy, nieaktualny przebieg DK50 przez gminę — w razie "
+        "sprzeczności stosuj niniejszy kontekst.",
         "",
         "DOWODY z ostatnich 30 dni (media, Reddit, YouTube, RSS):",
     ]
@@ -167,7 +175,7 @@ def build_prompt(evidence: list[Evidence], prev_entry: dict | None, cfg: dict,
     lines.append("PUNKT WYJŚCIA — ANALIZY EKSPERCKIE:")
     lines.append(f"- Score bazowy PÓŁNOC: {baseline.get('north', '?')}% "
                  "(analiza nr 2: obwodnica wsi po stronie północnej ~10–12% "
-                 "+ nowy ślad między DK50 a Natura 2000 ~30–35%).")
+                 "+ nowy ślad przez środkowo-północny pas gminy ~30–35%).")
     lines.append(f"- Score bazowy POŁUDNIE: {baseline.get('south', '?')}% "
                  "(analiza nr 2: korytarz DK50 z obwodnicą wsi po stronie "
                  "południowej ~25–30%).")

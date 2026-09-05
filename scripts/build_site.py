@@ -414,19 +414,24 @@ przez analizy eksperckie oraz oceny z dnia poprzedniego.</p>
 <ul>
 <li><strong>Północ gminy</strong> — prawdopodobieństwo, że finalny przebieg
 autostrady przetnie północną część gminy, na północ od wsi
-Sobienie-Jeziory — pas między DK50 a terenami zalewowymi Wisły
-(Natura 2000 Dolina Środkowej Wisły), łącznie ze śladem nowej trasy
-przez środkowo-północną część gminy;</li>
+Sobienie-Jeziory — pas między wsią a doliną Wisły (tereny zalewowe,
+Natura 2000 Dolina Środkowej Wisły), obejmujący środkowo-północną
+część gminy; korytarz DK50 biegnie dalej na północ, za granicą gminy;</li>
 <li><strong>Południe gminy</strong> — prawdopodobieństwo, że trasa przetnie
-południową część gminy, na południe od wsi Sobienie-Jeziory (otwarty
-płaskowyż rolniczy, w kierunku Osiecka/Wilgi).</li>
+południową część gminy, na południe od wsi Sobienie-Jeziory (rejon
+m.in. Śniadkowa Dolnego i Górnego) — otwarty płaskowyż rolniczy ku
+południowej granicy gminy.</li>
 </ul>
-<p>DK50 biegnie mniej więcej środkiem gminy przez samą wieś
-Sobienie-Jeziory. Wagi dowodów: oficjalne komunikaty
+<p>Wieś Sobienie-Jeziory leży na drogach wojewódzkich 801 i 739, w
+środkowej części gminy. <strong>DK50 biegnie na północ od gminy</strong> —
+od Góry Kalwarii (nowy most Nadwiślańskiego Urzecza) przez Ostrówek
+i Piotrowice (gmina Karczew) oraz Tabor i Regut (gmina Celestynów)
+do Kołbiela — i nie przecina gminy. Wagi dowodów: oficjalne komunikaty
 GDDKiA/ministerstw &gt; uchwały samorządów &gt; media ogólnopolskie &gt;
-media lokalne &gt; social media. Niuans: wariant w korytarzu DK50 może
-zostać zrealizowany w standardzie S50, a nie A50 — dla score nie ma to
-znaczenia, liczy się przebieg przez daną stronę gminy.</p>
+media lokalne &gt; social media. Niuans: wariant w korytarzu DK50 (za
+północną granicą gminy) może zostać zrealizowany w standardzie S50,
+a nie A50 — dla score nie ma to znaczenia, liczy się przebieg przez
+daną stronę gminy.</p>
 <p>Punktem wyjścia obu score'y są <strong>analizy eksperckie</strong>
 (<a href="analizy.html">analizy/</a> — baza: północ {b_north}%, południe
 {b_south}%); codzienne dowody modyfikują je od tego poziomu, a wyraźne

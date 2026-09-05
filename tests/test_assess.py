@@ -160,6 +160,12 @@ class TestBuildPrompt(unittest.TestCase):
         self.assertIn("28%", prompt)
         self.assertIn("### analiza-1", prompt)
         self.assertIn("Treść analizy.", prompt)
+        # geografia wg stanu faktycznego: DK50 na północ od gminy
+        self.assertIn("DK50 biegnie", prompt)
+        self.assertIn("nie przecina gminy", prompt)
+        self.assertIn("starszy, nieaktualny przebieg DK50", prompt)
+        self.assertNotIn("mniej więcej środkiem gminy", prompt)
+        self.assertNotIn("kierunku Osiecka/Wilgi", prompt)
 
     def test_first_run_marker(self):
         prompt = assess.build_prompt([Evidence(title="t", url="u", source="s")], None, CFG)
