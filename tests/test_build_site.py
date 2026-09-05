@@ -78,5 +78,67 @@ class TestBuild(unittest.TestCase):
             self.assertIn("<polyline", idx)
 
 
+class TestMdToHtml(unittest.TestCase):
+    def test_inline_formatting(self):
+        self.assertEqual(build_site.md_inline("**b** i *k*"),
+                         "<strong>b</strong> i <em>k</em>")
+
+    def test_inline_escapes_html(self):
+        self.assertEqual(build_site.md_inline("<x> & y"),
+                         "&lt;x&gt; &amp; y")
+
+    def test_blocks(self):
+        html = build_site.md_to_html(
+            "# Nagłówek\n\nAkapit z **bold**.\n\n- p1\n- p2\n\n"
+            "1. k1\n2. k2\n\n| A | B |\n|---|---|\n| 1 | **2** |\n\n---\n")
+        self.assertIn("<h1>Nagłówek</h1>", html)
+        self.assertIn("<p>Akapit z <strong>bold</strong>.</p>", html)
+        self.assertIn("<ul><li>p1</li><li>p2</li></ul>", html)
+        self.assertIn("<ol><li>k1</li><li>k2</li></ol>", html)
+        self.assertIn("<th>A</th>", html)
+        self.assertIn("<td><strong>2</strong></td>", html)
+        self.assertIn("<hr>", html)
+
+    def test_title(self):
+        self.assertEqual(build_site.md_title("# Tytuł\n\ntreść"), "Tytuł")
+
+
+class TestAnalizyPages(unittest.TestCase):
+    def _scores(self, tmp: Path) -> Path:
+        p = tmp / "scores.json"
+        p.write_text(json.dumps({"entries": [
+            {"date": "2026-09-01", "score": 30, "confidence": "niska",
+             "summary": "s", "trend_vs_prev": 0, "rationale": "r",
+             "key_findings": [], "evidence": [], "sources_found": 0,
+             "engine_status": "ok", "assessment_path": ""}]},
+            ensure_ascii=False), encoding="utf-8")
+        return p
+
+    def test_build_generates_analizy_pages(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp = Path(tmp)
+            analizy = tmp / "analizy"
+            analizy.mkdir()
+            (analizy / "2026-09-05_test.md").write_text(
+                "# Test analiza\n\nSekcja z **wytłuszczeniem**.\n",
+                encoding="utf-8")
+            out = tmp / "site"
+            build_site.build(self._scores(tmp), out, analizy_dir=analizy)
+            page = (out / "2026-09-05_test.html").read_text(encoding="utf-8")
+            self.assertIn("<h1>Test analiza</h1>", page)
+            self.assertIn("<strong>wytłuszczeniem</strong>", page)
+            listing = (out / "analizy.html").read_text(encoding="utf-8")
+            self.assertIn('href="2026-09-05_test.html"', listing)
+            idx = (out / "index.html").read_text(encoding="utf-8")
+            self.assertIn("2026-09-05_test.html", idx)
+
+    def test_no_analizy_dir(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp = Path(tmp)
+            out = tmp / "site"
+            build_site.build(self._scores(tmp), out, analizy_dir=tmp / "brak")
+            self.assertFalse((out / "analizy.html").exists())
+
+
 if __name__ == "__main__":
     unittest.main()

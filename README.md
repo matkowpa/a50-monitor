@@ -8,6 +8,9 @@ szczególnym uwzględnieniem ryzyka, że finalna trasa przetnie teren
 Strona z raportami (GitHub Pages) publikuje dzienny **score
 prawdopodobieństwa 0–100%** wraz z uzasadnieniem i linkami do wszystkich źródeł.
 
+🌐 **Strona:** <https://matkowpa.github.io/a50-monitor/> — codzienne raporty
+oraz dłuższe analizy eksperckie z folderu [`analizy/`](analizy/).
+
 ## Jak to działa
 
 ```
@@ -39,6 +42,7 @@ GitHub Actions (cron 6:30 PL)
 | `data/scores.json` | historia score'ów (committowana) |
 | `data/assessments/` | pełne dzienne oceny z dowodami |
 | `data/raw/` | surowe raporty silnika + RSS (audyt) |
+| `analizy/` | analizy eksperckie (markdown), publikowane na stronie |
 | `feeds.txt` | kanały RSS fallback (dodaj własne liniami `URL\|Etykieta`) |
 | `config.json` | temat, słowa kluczowe, źródła, model |
 | `tests/` | testy jednostkowe (`python -m unittest discover -s tests`) |
