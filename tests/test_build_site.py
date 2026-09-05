@@ -100,6 +100,35 @@ class TestBuild(unittest.TestCase):
             self.assertIn('<table class="evidence">', day2)
             # trend używa 2 linii (po jednej na scenariusz)
             self.assertEqual(idx.count("<polyline"), 2)
+            # etykieta pochodzenia oceny (nie „status silnika")
+            self.assertIn("źródło oceny:", day2)
+            # metodologia: punkt wyjścia + zastrzeżenia bez sprzeczności
+            about = (out / "about.html").read_text(encoding="utf-8")
+            self.assertIn("Punktem wyjścia obu score'y", about)
+            self.assertIn("baza: północ 45%", about)
+            self.assertIn("nie są</strong> informacją oficjalną ani opinią", about)
+            self.assertNotIn("prognozą ekspercką człowieka", about)
+            self.assertIn("standardzie S50", about)
+
+    def test_status_note_baseline_vs_no_data(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            out = Path(tmp) / "site"
+            p = Path(tmp) / "scores.json"
+            p.write_text(json.dumps({"entries": [
+                _entry("2026-09-01", 45, 28,
+                       engine_status="baseline-analizy")]},
+                ensure_ascii=False), encoding="utf-8")
+            build_site.build(p, out)
+            idx = (out / "index.html").read_text(encoding="utf-8")
+            self.assertIn("Punkt wyjścia — ocena bazowa", idx)
+            self.assertNotIn("nie ma nowych dowodów", idx)
+            p.write_text(json.dumps({"entries": [
+                _entry("2026-09-01", 45, 28, engine_status="no-data")]},
+                ensure_ascii=False), encoding="utf-8")
+            build_site.build(p, out)
+            idx = (out / "index.html").read_text(encoding="utf-8")
+            self.assertIn("nie ma nowych dowodów", idx)
+            self.assertNotIn("Punkt wyjścia — ocena bazowa", idx)
 
 
 class TestMdToHtml(unittest.TestCase):

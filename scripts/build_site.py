@@ -18,7 +18,8 @@ from pathlib import Path
 from string import Template
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from common import REPO_ROOT, SCENARIOS, load_scores, scores_path  # noqa: E402
+from common import (REPO_ROOT, SCENARIOS, load_config, load_scores,  # noqa: E402
+                    scores_path)
 
 # Kolory linii trendu per scenariusz (zmienna CSS musi istnieć w style.css).
 SCENARIO_COLORS = {"north": "var(--accent)", "south": "var(--orange)"}
@@ -327,7 +328,7 @@ def build(scores_file: Path, out_dir: Path,
   <p class="score-label">Prawdopodobieństwo, że przebieg A50 przetnie teren
      gminy Sobienie-Jeziory:</p>
   <p class="meta">Dowody: {e.get('sources_found', 0)} ·
-     status silnika: {esc(e.get('engine_status'))}</p>
+     źródło oceny: {esc(e.get('engine_status'))}</p>
 </div>
 <div class="panel">{blocks}</div>
 <div class="panel">{evidence_table_html(e.get('evidence') or [])}</div>
@@ -354,16 +355,24 @@ def build(scores_file: Path, out_dir: Path,
        trend: {s.get('trend_vs_prev', 0):+d} p.p.</p>
   </div>""")
         trend = render_trend_svg(entries)
-        status_note = "" if latest.get("engine_status") == "ok" else (
-            '<p class="disclaimer">Uwaga: najnowszy raport nie ma nowych '
-            "dowodów — ocena utrzymana z poprzedniego dnia.</p>")
+        status = latest.get("engine_status")
+        if status == "ok":
+            status_note = ""
+        elif status == "baseline-analizy":
+            status_note = ('<p class="disclaimer">Punkt wyjścia — ocena bazowa '
+                           "z analiz eksperckich; codzienne oceny będą ją "
+                           "modyfikować na podstawie napływających dowodów.</p>")
+        else:
+            status_note = ('<p class="disclaimer">Uwaga: najnowszy raport nie ma '
+                           "nowych dowodów — ocena utrzymana z poprzedniego "
+                           "dnia.</p>")
         summaries = "".join(
             f"<h3>{esc(label)}</h3><p>{esc(sc(latest, key).get('summary'))}</p>"
             + f"<h4>Kluczowe ustalenia</h4>{findings_html(sc(latest, key))}"
             for key, label in SCENARIOS)
         content = f"""
-<h1>Aktualne score: przebieg A50 przez gminę Sobienie-Jeziory</h1>
-<p class="meta">Dwa niezależne score — północna i południowa strona gminy
+<h1>Aktualne score'y: przebieg A50 przez gminę Sobienie-Jeziory</h1>
+<p class="meta">Dwa niezależne score'y — północna i południowa strona gminy
    względem wsi Sobienie-Jeziory.</p>
 {status_note}
 <div class="panel" style="display:flex;gap:24px;align-items:flex-start;flex-wrap:wrap">
@@ -382,10 +391,14 @@ def build(scores_file: Path, out_dir: Path,
                    '<div class="panel"><p>Brak danych — uruchom pipeline '
                    "(research → fetch_feeds → assess → build_site).</p></div>")
     (out_dir / "index.html").write_text(
-        render_page("index.html", "Aktualny score", content), encoding="utf-8")
+        render_page("index.html", "Aktualne score'y", content), encoding="utf-8")
 
     # --- about ---
-    about_content = """
+    cfg = load_config()
+    baseline = cfg.get("baseline_scores") or {}
+    b_north = baseline.get("north", "?")
+    b_south = baseline.get("south", "?")
+    about_content = f"""
 <h1>Metodologia i zastrzeżenia</h1>
 <div class="panel">
 <h2>Jak to działa</h2>
@@ -393,15 +406,17 @@ def build(scores_file: Path, out_dir: Path,
 <a href="https://github.com/mvanhorn/last30days-skill" rel="noopener" target="_blank">last30days</a>
 (Reddit, YouTube, Hacker News, web) uzupełniony o kanały RSS mediów
 polskich (Google News, GDDKiA). Zebrane dowody są oceniane przez model
-językowy (OpenRouter), który dzień po dniu przydziela dwa niezależne
-score prawdopodobieństwa.</p>
-<h2>Co oznaczają score</h2>
-<p>Score 0–100% to ocena ekspercka LLM — są dwa niezależne scenariusze:</p>
+językowy (OpenRouter), który dzień po dniu <strong>modyfikuje</strong>
+dwa niezależne score'y prawdopodobieństwa — od punktu wyjścia ustalonego
+przez analizy eksperckie oraz oceny z dnia poprzedniego.</p>
+<h2>Co oznaczają score'y</h2>
+<p>Są dwa niezależne scenariusze, każdy z osobnym score 0–100%:</p>
 <ul>
 <li><strong>Północ gminy</strong> — prawdopodobieństwo, że finalny przebieg
-A50 przetnie północną część gminy Sobienie-Jeziory, na północ od wsi
-Sobienie-Jeziory (w kierunku Wisły: Natura 2000 Dolina Środkowej Wisły,
-tereny zalewowe);</li>
+autostrady przetnie północną część gminy, na północ od wsi
+Sobienie-Jeziory — pas między DK50 a terenami zalewowymi Wisły
+(Natura 2000 Dolina Środkowej Wisły), łącznie ze śladem nowej trasy
+przez środkowo-północną część gminy;</li>
 <li><strong>Południe gminy</strong> — prawdopodobieństwo, że trasa przetnie
 południową część gminy, na południe od wsi Sobienie-Jeziory (otwarty
 płaskowyż rolniczy, w kierunku Osiecka/Wilgi).</li>
@@ -409,21 +424,25 @@ płaskowyż rolniczy, w kierunku Osiecka/Wilgi).</li>
 <p>DK50 biegnie mniej więcej środkiem gminy przez samą wieś
 Sobienie-Jeziory. Wagi dowodów: oficjalne komunikaty
 GDDKiA/ministerstw &gt; uchwały samorządów &gt; media ogólnopolskie &gt;
-media lokalne &gt; social media.</p>
-<p>Punktem wyjścia obu score są <strong>analizy eksperckie</strong>
-(<a href="analizy.html">analizy/</a> — baza: północ 45%, południe 28%);
-codzienne dowody modyfikują je od tego poziomu, a wyraźne odstępstwa od
-wniosków analiz wymagają mocnych, oficjalnych dowodów (GDDKiA, warianty,
-DŚU, przetarg).</p>
+media lokalne &gt; social media. Niuans: wariant w korytarzu DK50 może
+zostać zrealizowany w standardzie S50, a nie A50 — dla score nie ma to
+znaczenia, liczy się przebieg przez daną stronę gminy.</p>
+<p>Punktem wyjścia obu score'y są <strong>analizy eksperckie</strong>
+(<a href="analizy.html">analizy/</a> — baza: północ {b_north}%, południe
+{b_south}%); codzienne dowody modyfikują je od tego poziomu, a wyraźne
+odstępstwa od wniosków analiz wymagają mocnych, oficjalnych dowodów
+(GDDKiA, warianty, DŚU, przetarg).</p>
 <h2>Zastrzeżenia</h2>
-<p class="disclaimer">Score <strong>nie jest</strong> informacją oficjalną ani
-prognozą ekspercką człowieka. Decyzje o przebiegu dróg podejmuje
-GDDKiA i administracja publiczna — źródłem prawdy są zawsze ich
-oficjalne komunikaty. Model może się mylić; linki do źródeł są
+<p class="disclaimer">Zarówno codzienne score'y, jak i analizy eksperckie,
+na których bazują, <strong>nie są</strong> informacją oficjalną ani opinią
+ludzkiego eksperta — to oceny wygenerowane przez AI (model językowy),
+oparte na publicznie dostępnych źródłach. Decyzje o przebiegu dróg
+podejmuje GDDKiA i administracja publiczna — źródłem prawdy są zawsze
+ich oficjalne komunikaty. Model może się mylić; linki do źródeł są
 udostępnione, by każdy mógł zweryfikować dowody samodzielnie.</p>
 <h2>Brak nowych dowodów</h2>
-<p>Gdy danego dnia nie ma nowych, istotnych dowodów, oba score pozostają
-bez zmian, a pewność oceny spada do poziomu „niska”.</p>
+<p>Gdy danego dnia nie ma nowych, istotnych dowodów, oba score'y
+pozostają bez zmian, a pewność oceny spada do poziomu „niska”.</p>
 </div>
 """
     (out_dir / "about.html").write_text(
