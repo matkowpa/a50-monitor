@@ -14,7 +14,7 @@
   ],
   "search_sources": "web,reddit,youtube,hackernews",
   "lookback_days": 30,
-  "openrouter_model": "google/gemini-2.5-flash",
+  "openrouter_model": "z-ai/glm-5.3-flash",
   "max_results": 30,
   "max_per_source": 10,
   "max_evidence": 40

@@ -13,6 +13,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import re
 import sys
 import time
 import urllib.error
@@ -20,8 +21,8 @@ import urllib.request
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from common import (CONFIDENCE_LEVELS, Evidence, assessments_dir, load_config,  # noqa: E402
-                    load_scores, raw_dir, resolve_date, upsert_entry)
+from common import (CONFIDENCE_LEVELS, SCENARIOS, Evidence, assessments_dir,  # noqa: E402
+                    load_config, load_scores, raw_dir, resolve_date, upsert_entry)
 
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 
@@ -111,11 +112,30 @@ def merge_evidence(*groups: list[Evidence], cap: int) -> list[Evidence]:
 # ------------------------------------------------------------------- prompt
 
 def build_prompt(evidence: list[Evidence], prev_entry: dict | None, cfg: dict) -> str:
+    prev_scores = ""
+    if prev_entry:
+        prev_s = prev_entry.get("scores") or {}
+        prev_scores = (
+            f"score północ={prev_s.get('north', {}).get('score')}, "
+            f"południe={prev_s.get('south', {}).get('score')}, "
+            f"confidence północ={prev_s.get('north', {}).get('confidence')}, "
+            f"południe={prev_s.get('south', {}).get('confidence')}"
+        )
     lines = [
-        "Jesteś analitykiem oceniającym prawdopodobieństwo, że finalny przebieg "
-        "planowanej południowej obwodnicy autostradowej Warszawy (A50) przetnie "
-        f"teren gminy {cfg.get('focus', 'Sobienie-Jeziory')} "
-        "(woj. mazowieckie, powiat otwocki).",
+        "Jesteś analitykiem oceniającym planowaną południową obwodnicę "
+        "autostradową Warszawy (A50/OAW) i szansę, że jej finalny przebieg "
+        f"przetnie teren gminy {cfg.get('focus', 'Sobienie-Jeziory')} "
+        "(woj. mazowieckie, powiat otwocki). Ocenasz DWA niezależne "
+        "scenariusze przebiegu:",
+        "1) SCENARIUSZ PÓŁNOC: trasa prowadzi przez północną część gminy — "
+        "na północ od wsi Sobienie-Jeziory, w kierunku Wisły (Natura 2000 "
+        "Dolina Środkowej Wisły, tereny zalewowe).",
+        "2) SCENARIUSZ POŁUDNIE: trasa prowadzi przez południową część "
+        "gminy — na południe od wsi Sobienie-Jeziory (otwarty płaskowyż "
+        "rolniczy, w kierunku Osiecka/Wilgi).",
+        "Kontekst geograficzny: DK50 biegnie mniej więcej środkiem gminy "
+        "przez samą wieś Sobienie-Jeziory; gmina rozciągnięta jest wzdłuż "
+        "Wisły — od rzeki na północy po Osieck/Wilgę na południu.",
         "",
         "DOWODY z ostatnich 30 dni (media, Reddit, YouTube, RSS):",
     ]
@@ -125,34 +145,75 @@ def build_prompt(evidence: list[Evidence], prev_entry: dict | None, cfg: dict) -
     lines.append("")
     if prev_entry:
         lines.append(f"POPRZEDNIA OCENA ({prev_entry.get('date')}): "
-                     f"score={prev_entry.get('score')}, "
-                     f"confidence={prev_entry.get('confidence')}. "
-                     f"Uzasadnienie: {prev_entry.get('rationale', '')[:600]}")
+                     f"{prev_scores}. "
+                     f"Uzasadnienie północ: {(prev_s.get('north') or {}).get('rationale', '')[:400]}. "
+                     f"Uzasadnienie południe: {(prev_s.get('south') or {}).get('rationale', '')[:400]}")
     else:
         lines.append("POPRZEDNIA OCENA: brak (pierwsza ocena).")
     lines.append("""
-RUBRYKA:
-- score 0-100 = Twoja ocena prawdopodobieństwa (w %), że finalny przebieg A50 przetnie teren gminy Sobienie-Jeziory.
+RUBRYKA (osobno dla PÓŁNOC i POŁUDNIE):
+- score 0-100 = Twoja ocena prawdopodobieństwa (w %), że finalny przebieg A50 przetnie DANĄ stronę gminy Sobienie-Jeziory (północną lub południową względem wsi Sobienie-Jeziory).
 - Wagi dowodów (od najsilniejszych): oficjalne komunikaty GDDKiA / ministerstw / rządu > uchwały i stanowiska samorządów (gminnych, powiatowych, marszałkowskich) > główne media ogólnopolskie > media lokalne > social media / sentyment.
-- Kluczowe ogniwo: wariant przebiegu. Oficjalne potwierdzenie wariantu omijającego gminę => score niski. Oficjalny proces wskazujący wariant przez gminę (studium, raport OOŚ, decyzja środowiskowa, przetarg) => score wyższy.
+- Kluczowe ogniwo: wariant przebiegu. Oficjalne potwierdzenie wariantu omijającego gminę albo prowadzącego przez jej środek/inną stronę => score danego scenariusza niski. Oficjalny proces wskazujący korytarz przez daną stronę gminy (studium, raport OOŚ, decyzja środowiskowa, przetarg) => score tego scenariusza wyższy.
+- Dowody mogą mówić o jednej stronie gminy i nic nie wnosić o drugiej — wtedy oceniaj samodzielnie geometrycznie (Wisła/Natura 2000 na północy, DK50 środkiem, otwarte tereny rolnicze na południu) i nisko ustaw confidence danej strony.
 - Dowody sprzeczne lub nieliczne => obniż confidence i trzymaj score blisko poprzedniego.
-- Brak nowych, istotnych dowodów => score = poprzedni, confidence = "niska", wyraźnie zaznacz brak nowych sygnałów.
+- Brak nowych, istotnych dowodów => score = poprzedni (osobno dla północy i południa), confidence = "niska", wyraźnie zaznacz brak nowych sygnałów.
 - KAŻDY claim w key_findings MUSI mieć evidence_urls wyłącznie z listy dowodów powyżej. Nie wymyślaj URL-i.
 - Pisz po polsku.
 
-ODPOWIEDŹ: wyłącznie JSON dokładnie wg schematu (bez ogrodzeń markdown; max 5 pozycji w key_findings; summary ≤ 2 zdania; rationale ≤ 4 zdania):
-{"score": <int 0-100>, "confidence": "<niska|średnia|wysoka>", "summary": "<1-2 zdania>", "rationale": "<pełne uzasadnienie, 3-6 zdań>", "key_findings": [{"claim": "<...>", "evidence_urls": ["<url z dowodów>"]}]}""")
+ODPOWIEDŹ: wyłącznie JSON dokładnie wg schematu (bez ogrodzeń markdown; max 5 pozycji w key_findings per scenariusz; summary ≤ 2 zdania; rationale ≤ 4 zdania):
+{"scores": {"north": {"score": <int 0-100>, "confidence": "<niska|średnia|wysoka>", "summary": "<1-2 zdania>", "rationale": "<pełne uzasadnienie, 3-6 zdań>", "key_findings": [{"claim": "<...>", "evidence_urls": ["<url z dowodów>"]}]}, "south": {...analogicznie...}}}""")
     return "\n".join(lines)
 
 
+def _repair_json(text: str) -> str:
+    """Naprawia typowe błędy LLM w JSON: nieescapowane cudzysłowy wewnątrz
+    wartości, surowe znaki nowej linii w stringach, przecinki wiszące."""
+    out: list[str] = []
+    i, n = 0, len(text)
+    in_str = False
+    while i < n:
+        ch = text[i]
+        if in_str:
+            if ch == "\\" and i + 1 < n:
+                out.append(ch)
+                out.append(text[i + 1])
+                i += 2
+                continue
+            if ch == '"':
+                j = i + 1
+                while j < n and text[j] in " \t\r\n":
+                    j += 1
+                nxt = text[j] if j < n else ""
+                if nxt in ",:}]":
+                    in_str = False
+                    out.append(ch)
+                else:
+                    out.append('\\"')  # cudzysłów w środku wartości
+            elif ch in "\r\n":
+                out.append("\\n")
+            else:
+                out.append(ch)
+        else:
+            if ch == '"':
+                in_str = True
+            out.append(ch)
+        i += 1
+    return re.sub(r",\s*([}\]])", r"\1", "".join(out))
+
+
 def extract_json(content: str) -> dict:
-    """Parsuje JSON z odpowiedzi LLM, tolerując ogrodzenia ```json."""
+    """Parsuje JSON z odpowiedzi LLM, tolerując ogrodzenia ```json
+    i drobne błędy składni (naprawiane heurystycznie)."""
     text = content.strip()
     if text.startswith("```"):
         text = text.strip("`")
         if text.lower().startswith("json"):
             text = text[4:]
-    return json.loads(text.strip())
+    try:
+        return json.loads(text.strip())
+    except json.JSONDecodeError:
+        return json.loads(_repair_json(text.strip()))
 
 
 # --------------------------------------------------------------- OpenRouter
@@ -163,7 +224,10 @@ def call_openrouter(prompt: str, api_key: str, model: str, timeout: int = 180) -
         "messages": [{"role": "user", "content": prompt}],
         "response_format": {"type": "json_object"},
         "temperature": 0.2,
-        "max_tokens": 6000,
+        # Modele reasoningowe (np. GLM) zużywają budżet na rozumowanie —
+        # za mały limit skutkuje pustym content (finish_reason=length).
+        "max_tokens": 20000,
+        "reasoning": {"effort": "low", "exclude": True},
     }
     req = urllib.request.Request(
         os.environ.get("OPENROUTER_BASE_URL", OPENROUTER_URL),
@@ -200,26 +264,33 @@ def call_openrouter(prompt: str, api_key: str, model: str, timeout: int = 180) -
 # --------------------------------------------------------------- parsowanie
 
 def parse_assessment(data: dict, prev_entry: dict | None) -> dict:
-    score = int(round(float(data.get("score", 0))))
-    score = max(0, min(100, score))
-    confidence = data.get("confidence") or "niska"
-    if confidence not in CONFIDENCE_LEVELS:
-        confidence = "niska"
-    prev_score = prev_entry.get("score") if prev_entry else None
-    trend = (score - prev_score) if isinstance(prev_score, int) else 0
-    findings = []
-    for f in data.get("key_findings") or []:
-        if isinstance(f, dict) and _clean(f.get("claim")):
-            urls = [u for u in (f.get("evidence_urls") or []) if _clean(u)]
-            findings.append({"claim": _clean(f["claim"]), "evidence_urls": urls})
-    return {
-        "score": score,
-        "confidence": confidence,
-        "summary": _clean(data.get("summary")) or "Brak opisu.",
-        "rationale": _clean(data.get("rationale")) or "Brak uzasadnienia.",
-        "key_findings": findings,
-        "trend_vs_prev": trend,
-    }
+    prev_scores = (prev_entry.get("scores") or {}) if prev_entry else {}
+    out = {}
+    for key, _label in SCENARIOS:
+        data_sc = data.get("scores", {}).get(key)
+        if not isinstance(data_sc, dict):
+            raise ValueError(f"brak sekcji scores.{key} w odpowiedzi LLM")
+        score = int(round(float(data_sc.get("score", 0))))
+        score = max(0, min(100, score))
+        confidence = data_sc.get("confidence") or "niska"
+        if confidence not in CONFIDENCE_LEVELS:
+            confidence = "niska"
+        prev_score = (prev_scores.get(key) or {}).get("score")
+        trend = (score - prev_score) if isinstance(prev_score, int) else 0
+        findings = []
+        for f in data_sc.get("key_findings") or []:
+            if isinstance(f, dict) and _clean(f.get("claim")):
+                urls = [u for u in (f.get("evidence_urls") or []) if _clean(u)]
+                findings.append({"claim": _clean(f["claim"]), "evidence_urls": urls})
+        out[key] = {
+            "score": score,
+            "confidence": confidence,
+            "summary": _clean(data_sc.get("summary")) or "Brak opisu.",
+            "rationale": _clean(data_sc.get("rationale")) or "Brak uzasadnienia.",
+            "key_findings": findings,
+            "trend_vs_prev": trend,
+        }
+    return {"scores": out}
 
 
 def prev_entry_before(entries: list[dict], day: str) -> dict | None:
@@ -228,20 +299,34 @@ def prev_entry_before(entries: list[dict], day: str) -> dict | None:
 
 
 def no_evidence_entry(day: str, prev: dict | None, status: str) -> dict:
-    if prev:
-        summary = ("Brak nowych dowodów w podglądanych źródłach — utrzymuję "
-                   f"poprzednią ocenę ({prev.get('score')}%).")
-        score, confidence = prev.get("score"), "niska"
-    else:
-        summary = ("Brak danych w pierwszym uruchomieniu monitoringu. "
-                   "Ocena neutralna do czasu napływu dowodów.")
-        score, confidence = 50, "niska"
-    trend = (score - prev.get("score")) if prev and isinstance(prev.get("score"), int) else 0
+    prev_scores = (prev.get("scores") or {}) if prev else {}
+    scores = {}
+    for key, _label in SCENARIOS:
+        p = prev_scores.get(key) or {}
+        if prev:
+            if isinstance(p.get("score"), int):
+                score, confidence = p["score"], "niska"
+                summary = ("Brak nowych dowodów w podglądanych źródłach — "
+                           f"utrzymuję poprzednią ocenę ({p['score']}%).")
+            else:
+                score, confidence = 50, "niska"
+                summary = ("Brak nowych dowodów — ocena neutralna do czasu "
+                           "napływu dowodów.")
+        else:
+            score, confidence = 50, "niska"
+            summary = ("Brak danych w pierwszym uruchomieniu monitoringu. "
+                       "Ocena neutralna do czasu napływu dowodów.")
+        prev_score = p.get("score")
+        trend = (score - prev_score) if isinstance(prev_score, int) else 0
+        scores[key] = {
+            "score": score, "confidence": confidence,
+            "summary": summary, "trend_vs_prev": trend,
+            "rationale": summary,
+            "key_findings": [],
+        }
     return {
-        "date": day, "score": score, "confidence": confidence,
-        "summary": summary, "trend_vs_prev": trend,
-        "rationale": summary,
-        "key_findings": [], "evidence": [], "sources_found": 0,
+        "date": day, "scores": scores,
+        "sources_found": 0,
         "engine_status": status, "assessment_path": "",
     }
 
@@ -308,7 +393,10 @@ def main() -> int:
     (assessments_dir() / f"{day}.json").write_text(
         json.dumps(full, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
-    print(f"[assess] {day}: score={entry['score']}% ({entry['confidence']}), "
+    print(f"[assess] {day}: score północ={entry['scores']['north']['score']}% "
+          f"({entry['scores']['north']['confidence']}), "
+          f"południe={entry['scores']['south']['score']}% "
+          f"({entry['scores']['south']['confidence']}), "
           f"dowody={entry['sources_found']}, status={entry['engine_status']}")
     return 0
 

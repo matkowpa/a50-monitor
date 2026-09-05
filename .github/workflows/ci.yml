@@ -28,9 +28,15 @@ jobs:
           import json, os
           dst = os.path.join(os.environ["RUNNER_TEMP"], "a50-fixture")
           os.makedirs(dst, exist_ok=True)
-          entries = [{"date": "2026-09-01", "score": 30, "confidence": "niska",
-                      "summary": "fixture", "trend_vs_prev": 0, "rationale": "r",
-                      "key_findings": [], "evidence": [], "sources_found": 0,
+          entries = [{"date": "2026-09-01",
+                      "scores": {
+                          "north": {"score": 30, "confidence": "niska",
+                                    "summary": "fixture", "trend_vs_prev": 0,
+                                    "rationale": "r", "key_findings": []},
+                          "south": {"score": 20, "confidence": "niska",
+                                    "summary": "fixture", "trend_vs_prev": 0,
+                                    "rationale": "r", "key_findings": []}},
+                      "evidence": [], "sources_found": 0,
                       "engine_status": "no-data", "assessment_path": ""}]
           with open(os.path.join(dst, "scores.json"), "w", encoding="utf-8") as f:
               json.dump({"entries": entries}, f, ensure_ascii=False)

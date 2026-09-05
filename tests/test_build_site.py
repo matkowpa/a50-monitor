@@ -31,31 +31,50 @@ class TestSvg(unittest.TestCase):
         self.assertIn("100%", svg100)
 
     def test_trend_needs_two_points(self):
-        self.assertIn("pojawi się", build_site.render_trend_svg([{"score": 10}]))
-        svg = build_site.render_trend_svg([{"date": "2026-09-01", "score": 10},
-                                           {"date": "2026-09-02", "score": 20}])
-        self.assertIn("<polyline", svg)
+        self.assertIn("pojawi się", build_site.render_trend_svg([{"scores": {"north": {"score": 10}, "south": {"score": 10}}}]))
+        svg = build_site.render_trend_svg([
+            {"date": "2026-09-01", "scores": {"north": {"score": 10}, "south": {"score": 20}}},
+            {"date": "2026-09-02", "scores": {"north": {"score": 20}, "south": {"score": 30}}}])
+        self.assertEqual(svg.count("<polyline"), 2)
+        self.assertIn("var(--accent)", svg)
+        self.assertIn("var(--orange)", svg)
+
+
+def _entry(date, north, south, **kw):
+    base = {"date": date,
+            "scores": {
+                "north": {"score": north, "confidence": "niska", "summary": "s",
+                          "trend_vs_prev": 0, "rationale": "r", "key_findings": []},
+                "south": {"score": south, "confidence": "średnia", "summary": "s",
+                          "trend_vs_prev": 0, "rationale": "r", "key_findings": []}},
+            "evidence": [], "sources_found": 0, "engine_status": "ok",
+            "assessment_path": ""}
+    base.update(kw)
+    return base
 
 
 class TestBuild(unittest.TestCase):
     def _scores(self, tmp: Path):
         p = tmp / "scores.json"
         p.write_text(json.dumps({"entries": [
-            {"date": "2026-09-01", "score": 30, "confidence": "niska",
-             "summary": "Podsum <b>x</b>", "trend_vs_prev": 0,
-             "rationale": "r", "key_findings": [], "evidence": [],
-             "sources_found": 0, "engine_status": "no-data",
-             "assessment_path": ""},
-            {"date": "2026-09-02", "score": 45, "confidence": "średnia",
-             "summary": "Nowe dowody", "trend_vs_prev": 15,
-             "rationale": "r", "key_findings": [
-                 {"claim": "Claim <script>alert(1)</script>",
-                  "evidence_urls": ["https://a.pl/1"]}],
-             "evidence": [{"title": "Ty <tu>ł</tu>", "url": "https://a.pl/1",
-                           "source": "web", "published": "2026-09-02",
-                           "snippet": "s", "stance": "neutral"}],
-             "sources_found": 1, "engine_status": "ok",
-             "assessment_path": "data/assessments/2026-09-02.json"},
+            _entry("2026-09-01", 30, 15, engine_status="no-data"),
+            _entry("2026-09-02", 45, 35,
+                   summary="Nowe dowody",
+                   scores={
+                       "north": {"score": 45, "confidence": "średnia",
+                                 "summary": "Nowe dowody północ", "trend_vs_prev": 15,
+                                 "rationale": "r",
+                                 "key_findings": [
+                                     {"claim": "Claim <script>alert(1)</script>",
+                                      "evidence_urls": ["https://a.pl/1"]}]},
+                       "south": {"score": 35, "confidence": "średnia",
+                                 "summary": "Nowe dowody południe", "trend_vs_prev": 20,
+                                 "rationale": "r", "key_findings": []}},
+                   evidence=[{"title": "Ty <tu>ł</tu>", "url": "https://a.pl/1",
+                              "source": "web", "published": "2026-09-02",
+                              "snippet": "s", "stance": "neutral"}],
+                   sources_found=1,
+                   assessment_path="data/assessments/2026-09-02.json"),
         ]}, ensure_ascii=False), encoding="utf-8")
         return p
 
@@ -68,14 +87,17 @@ class TestBuild(unittest.TestCase):
                 self.assertTrue((out / name).exists(), name)
             idx = (out / "index.html").read_text(encoding="utf-8")
             self.assertIn("45%", idx)
+            self.assertIn("35%", idx)
+            self.assertIn("Północ gminy", idx)
+            self.assertIn("Południe gminy", idx)
             self.assertIn("lang=\"pl\"", idx)
             # escaping: raw HTML z danych NIE może się pojawić
             day2 = (out / "day-2026-09-02.html").read_text(encoding="utf-8")
             self.assertNotIn("<script>alert(1)</script>", day2)
             self.assertIn("&lt;script&gt;", day2)
             self.assertNotIn("<tu>", day2)
-            # trend używa 2 punktów
-            self.assertIn("<polyline", idx)
+            # trend używa 2 linii (po jednej na scenariusz)
+            self.assertEqual(idx.count("<polyline"), 2)
 
 
 class TestMdToHtml(unittest.TestCase):
@@ -106,12 +128,8 @@ class TestMdToHtml(unittest.TestCase):
 class TestAnalizyPages(unittest.TestCase):
     def _scores(self, tmp: Path) -> Path:
         p = tmp / "scores.json"
-        p.write_text(json.dumps({"entries": [
-            {"date": "2026-09-01", "score": 30, "confidence": "niska",
-             "summary": "s", "trend_vs_prev": 0, "rationale": "r",
-             "key_findings": [], "evidence": [], "sources_found": 0,
-             "engine_status": "ok", "assessment_path": ""}]},
-            ensure_ascii=False), encoding="utf-8")
+        p.write_text(json.dumps({"entries": [_entry("2026-09-01", 30, 20)]},
+                                ensure_ascii=False), encoding="utf-8")
         return p
 
     def test_build_generates_analizy_pages(self):

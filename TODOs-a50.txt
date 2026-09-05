@@ -1,3 +1,25 @@
 Chciałbym monitorować w mediach i wszystkich dostępnych źródłach w tym w social mediach aktualną sytuację dotyczącą decyzji o przebiegu obwodnicy autostradowej Warszawy na południe od miasta. Mieszkam w gminie Sobienie-Jeziory i ostatnio zaczęły pojawiać się informację że autostrada może zostać przeprowadzona przez naszą gmine. 
 Potrzebuje codziennego monitoringu źredł w tym przy użyciu skilla last30days do przeglądania wszelkich infromacji które pojawiają się na ten temnat. 
 Repo projektu ma być na githubie, informacje mają być publikowane w htmlu na stronie www wraz z linkami do źródeł, oraz  codziennym podsumowaniem sytuacji na temat ocenyt prawdopodobieństwa przebiegu autostrady przez gminę sobienie-jeziory (wyraźny score z prawdopodobieństwem)    
+
+
+wprowadz następujące zmiany na stronie:
+=> zmiaeść dwa pliki z analizą z folderu a5-monitor/analizy
+=> dodaj dwa scory z oceną prawdopodobieństwa przebiegu autostrady przez północną stronę stronę gminy sobienie-jeziory (na północ od sobień) i przebiegu przez południową gminy Sobienie Jeziory (na poludnie od sobień) 
+
+zaplanuj: zmiany: (1) zamieść dwa pliki z analizą z folderu a5-monitor/analizy 
+
+model do analizy na openrouter to glm-5.3-flash
+
+
+
+
+Nowe:
+
+wprowadz sekcję monitoringu mediów społecznościowych (przy wykorzystaniu skilla last30days)
+
+W sekcji 'Dowody z ostatniego dnia' strona nieprawdiłowo wyświetla się na telefonach komórkowych - linki wychodzą poza szerokość kafelka
+
+jak odpala się skrypt - powinien z serwera nie lokalnie
+
+popraw readme.md żeby odpowiadało aktualnemu stanowi

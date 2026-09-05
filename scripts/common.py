@@ -12,6 +12,14 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 
 CONFIDENCE_LEVELS = ("niska", "średnia", "wysoka")
 
+# Dwa niezależne score'y dzienne: północna i południowa strona gminy
+# (na północ / na południe od wsi Sobienie-Jeziory). Jedno źródło prawdy
+# etykiet dla promptu (assess) i strony (build_site).
+SCENARIOS = (
+    ("north", "Północ gminy — na północ od wsi Sobienie-Jeziory"),
+    ("south", "Południe gminy — na południe od wsi Sobienie-Jeziory"),
+)
+
 
 def load_config() -> dict:
     with open(REPO_ROOT / "config.json", encoding="utf-8") as f:

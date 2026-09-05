@@ -19,14 +19,15 @@ uruchamiaj z katalogu repo (ścieżki względne):
    python scripts/fetch_feeds.py
    ```
 
-3. Ocena + score (OpenRouter, JSON):
+3. Ocena + score (OpenRouter, JSON; dwa scory: północ/południe gminy):
 
    ```
    python scripts/assess.py
    ```
 
-   Wynik wypisz użytkownikowi: score %, confidence, podsumowanie (polski),
-   trend względem poprzedniego dnia. Plik: `data/assessments/<dzień>.json`.
+   Wynik wypisz użytkownikowi: oba score % (północ i południe), confidence
+   per scenariusz, podsumowanie (polski), trend względem poprzedniego dnia.
+   Plik: `data/assessments/<dzień>.json`.
 
 4. Budowa strony:
 
@@ -47,5 +48,6 @@ uruchamiaj z katalogu repo (ścieżki względne):
 
    Jeśli repo nie ma jeszcze remote — poinformuj użytkownika i pomiń push.
 
-6. Podsumuj: score, kluczowe ustalenia z linkami (2–4 pozycje), zmiany
-   względem wczoraj. Nie redaguj treści assessmentu — relacjonuj plik.
+6. Podsumuj: oba score (północ/południe), kluczowe ustalenia z linkami
+   (2–4 pozycje), zmiany względem wczoraj. Nie redaguj treści assessmentu —
+   relacjonuj plik.
