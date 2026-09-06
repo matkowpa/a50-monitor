@@ -4,7 +4,9 @@ Użycie:
     python scripts/assess.py [--date YYYY-MM-DD]
 
 Czyta data/raw/<dzień>/report.json (silnik) i feeds.json (RSS),
-buduje prompt z rubryką PL, wywołuje OpenRouter i zapisuje:
+buduje prompt z rubryką PL (tylko dowody NOWE względem poprzednich ocen —
+delta dnia; cichy dzień utrzymuje score bez wywołania LLM), wywołuje
+OpenRouter i zapisuje:
   - data/assessments/<dzień>.json  (pełny assessment)
   - data/scores.json               (historia, idempotentny upsert)
 """
@@ -127,6 +129,43 @@ def merge_evidence(*groups: list[Evidence], cap: int) -> list[Evidence]:
     return merged[:cap]
 
 
+def pick_evidence(evidence: list[Evidence], seen: set[str],
+                  prev_entry: dict | None) -> tuple[list[Evidence], bool]:
+    """Delta dnia (tylko dowody nieobecne w poprzednich ocenach) + decyzja,
+    czy w ogóle wywoływać LLM. Pierwsza ocena (brak prev) używa pełnego
+    zbioru — nawet gdy assessments coś mają, a scores.json jest pusty."""
+    if not evidence:
+        return [], False
+    new = [e for e in evidence if _norm_url(e.url) not in seen]
+    if new or prev_entry is None:
+        return (new or evidence), True
+    return [], False
+
+
+def seen_evidence_urls(day: str, directory: Path | None = None) -> set[str]:
+    """Znormalizowane URL-e dowodów z dotychczasowych ocen (data/assessments).
+
+    Pomija plik dnia bieżącego: rerun tego samego dnia nie może potraktować
+    własnych, wcześniej zapisanych dowodów jako 'widziane'.
+    """
+    out: set[str] = set()
+    d = directory or assessments_dir()
+    if not d.is_dir():
+        return out
+    for path in sorted(d.glob("*.json")):
+        if path.stem == day:
+            continue
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue  # uszkodzony plik nie blokuje pipeline'u
+        for ev in data.get("evidence") or []:
+            url = _clean(ev.get("url")) if isinstance(ev, dict) else ""
+            if url:
+                out.add(_norm_url(url))
+    return out
+
+
 # ------------------------------------------------------------------- prompt
 
 def build_prompt(evidence: list[Evidence], prev_entry: dict | None, cfg: dict,
@@ -165,7 +204,7 @@ def build_prompt(evidence: list[Evidence], prev_entry: dict | None, cfg: dict,
         "starszy, nieaktualny przebieg DK50 przez gminę — w razie "
         "sprzeczności stosuj niniejszy kontekst.",
         "",
-        "DOWODY z ostatnich 30 dni (media, Reddit, YouTube, RSS):",
+        "NOWE DOWODY (nieobecne w poprzednich ocenach; media, Reddit, YouTube, RSS):",
     ]
     for i, ev in enumerate(evidence, 1):
         lines.append(f"[{i}] {ev.title} | {ev.source} | {ev.published or 'b.d.'} | "
@@ -198,6 +237,7 @@ RUBRYKA (osobno dla PÓŁNOC i POŁUDNIE):
 - Kluczowe ogniwo: wariant przebiegu. Oficjalne potwierdzenie wariantu omijającego gminę albo prowadzącego przez jej środek/inną stronę => score danego scenariusza niski. Oficjalny proces wskazujący korytarz przez daną stronę gminy (studium, raport OOŚ, decyzja środowiskowa, przetarg) => score tego scenariusza wyższy.
 - Dowody mogą mówić o jednej stronie gminy i nic nie wnosić o drugiej — wtedy oceniaj samodzielnie geometrycznie (Wisła/Natura 2000 na północy, DK50 środkiem, otwarte tereny rolnicze na południu) i nisko ustaw confidence danej strony.
 - Dowody sprzeczne lub nieliczne => obniż confidence i trzymaj score blisko poprzedniego.
+- Score modyfikuj WYŁĄCZNIE w oparciu o NOWE dowody z listy powyżej — wcześniejsze ustalenia są już odzwierciedlone w poprzedniej ocenie. Przy każdym dowodzie jest data publikacji: stare doniesienia (sprzed wielu dni) nie powinny przesuwać score.
 - Brak nowych, istotnych dowodów => score = poprzedni (osobno dla północy i południa), confidence = "niska", wyraźnie zaznacz brak nowych sygnałów.
 - KAŻDY claim w key_findings MUSI mieć evidence_urls wyłącznie z listy dowodów powyżej. Nie wymyślaj URL-i.
 - Pisz po polsku.
@@ -465,9 +505,11 @@ def main() -> int:
     evidence = merge_evidence(engine_items, feed_items,
                               cap=int(cfg.get("max_evidence", 40)))
     prev = prev_entry_before(load_scores()["entries"], day)
+    seen = seen_evidence_urls(day)
+    to_assess, assess_needed = pick_evidence(evidence, seen, prev)
 
-    if evidence:
-        prompt = build_prompt(evidence, prev, cfg, load_analyses())
+    if assess_needed:
+        prompt = build_prompt(to_assess, prev, cfg, load_analyses())
         api_key = os.environ.get("OPENROUTER_API_KEY", "")
         if not api_key:
             print("[assess] FAIL: brak OPENROUTER_API_KEY w środowisku", file=sys.stderr)
@@ -487,10 +529,13 @@ def main() -> int:
             raise RuntimeError("OpenRouter: 3× niepoprawny JSON w odpowiedzi")
         entry = {
             "date": day, **assessment,
-            "evidence": [e.to_dict() for e in evidence[:15]],
-            "sources_found": len(evidence),
+            "evidence": [e.to_dict() for e in to_assess[:15]],
+            "sources_found": len(to_assess),
             "engine_status": "ok",
         }
+    elif evidence:
+        # Cichy dzień: nic nowego od ostatniej oceny — utrzymanie bez LLM.
+        entry = no_evidence_entry(day, prev, "no-new-evidence", cfg)
     else:
         status = "no-data" if not (raw_path.exists() or feeds_path.exists()) else "no-evidence"
         entry = no_evidence_entry(day, prev, status, cfg)
@@ -499,7 +544,7 @@ def main() -> int:
     upsert_entry(entry)
 
     full = dict(entry)
-    full["evidence"] = [e.to_dict() for e in evidence]
+    full["evidence"] = [e.to_dict() for e in to_assess]
     assessments_dir().mkdir(parents=True, exist_ok=True)
     (assessments_dir() / f"{day}.json").write_text(
         json.dumps(full, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

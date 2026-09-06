@@ -68,6 +68,93 @@ class TestMergeEvidence(unittest.TestCase):
         self.assertEqual(merged[0].url, "https://x.com/2")  # najnowszy pierwszy
 
 
+class TestSeenEvidenceUrls(unittest.TestCase):
+    def test_collects_from_past_assessments(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as tmp:
+            d = Path(tmp)
+            (d / "2026-09-05.json").write_text(json.dumps(
+                {"date": "2026-09-05", "evidence": [
+                    {"url": "https://a.pl/1?x=1", "title": "t"},
+                    {"url": "https://a.pl/2", "title": "t"}]}), encoding="utf-8")
+            seen = assess.seen_evidence_urls("2026-09-06", directory=d)
+            self.assertEqual(seen, {"https://a.pl/1", "https://a.pl/2"})
+
+    def test_excludes_current_day(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as tmp:
+            d = Path(tmp)
+            (d / "2026-09-06.json").write_text(
+                json.dumps({"evidence": [{"url": "https://a.pl/1"}]}),
+                encoding="utf-8")
+            self.assertEqual(assess.seen_evidence_urls("2026-09-06", directory=d),
+                             set())
+
+    def test_skips_malformed_and_missing_evidence(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as tmp:
+            d = Path(tmp)
+            self.assertEqual(assess.seen_evidence_urls("2026-09-06", directory=d),
+                             set())
+            (d / "zepsuty.json").write_text("{nie-json", encoding="utf-8")
+            (d / "pusty.json").write_text('{"date": "x"}', encoding="utf-8")
+            self.assertEqual(assess.seen_evidence_urls("2026-09-06", directory=d),
+                             set())
+
+
+class TestPickEvidence(unittest.TestCase):
+    EV = [Evidence(title="old", url="https://a.pl/1", source="s"),
+          Evidence(title="new", url="https://a.pl/2", source="s")]
+
+    def test_delta_only_new_urls(self):
+        to_assess, need = assess.pick_evidence(self.EV, {"https://a.pl/1"},
+                                               {"date": "d"})
+        self.assertEqual([e.url for e in to_assess], ["https://a.pl/2"])
+        self.assertTrue(need)
+
+    def test_query_string_variant_counts_as_seen(self):
+        ev = [Evidence(title="1", url="https://a.pl/1?utm=x", source="s")]
+        to_assess, need = assess.pick_evidence(ev, {"https://a.pl/1"}, {"date": "d"})
+        self.assertEqual(to_assess, [])
+        self.assertFalse(need)
+
+    def test_quiet_day_keeps_prev_without_llm(self):
+        to_assess, need = assess.pick_evidence(
+            self.EV, {"https://a.pl/1", "https://a.pl/2"}, {"date": "d"})
+        self.assertEqual(to_assess, [])
+        self.assertFalse(need)
+
+    def test_first_assessment_uses_full_list(self):
+        to_assess, need = assess.pick_evidence(self.EV, set(), None)
+        self.assertEqual(len(to_assess), 2)
+        self.assertTrue(need)
+
+    def test_first_assessment_with_seen_but_no_prev(self):
+        # assessments istnieją, ale scores.json puste → pełny zbiór
+        to_assess, need = assess.pick_evidence(
+            self.EV, {"https://a.pl/1", "https://a.pl/2"}, None)
+        self.assertEqual(len(to_assess), 2)
+        self.assertTrue(need)
+
+    def test_no_evidence_never_calls_llm(self):
+        to_assess, need = assess.pick_evidence([], set(), None)
+        self.assertEqual(to_assess, [])
+        self.assertFalse(need)
+
+
+class TestNoNewEvidenceEntry(unittest.TestCase):
+    def test_keeps_prev_scores_with_status(self):
+        prev = {"date": "2026-09-05",
+                "scores": {"north": {"score": 45, "confidence": "średnia"},
+                           "south": {"score": 28, "confidence": "niska"}}}
+        entry = assess.no_evidence_entry("2026-09-06", prev, "no-new-evidence", CFG)
+        self.assertEqual(entry["engine_status"], "no-new-evidence")
+        self.assertEqual(entry["sources_found"], 0)
+        self.assertEqual(entry["scores"]["north"]["score"], 45)
+        self.assertEqual(entry["scores"]["north"]["confidence"], "niska")
+        self.assertIn("Brak nowych dowodów", entry["scores"]["north"]["summary"])
+
+
 def _scenario(score=35, confidence="średnia", findings=None):
     return {"score": score, "confidence": confidence, "summary": "s",
             "rationale": "r",
@@ -227,6 +314,13 @@ class TestBuildPrompt(unittest.TestCase):
         prompt = assess.build_prompt([Evidence(title="t", url="u", source="s")], None, CFG)
         self.assertIn("PUNKT WYJŚCIA", prompt)
         self.assertNotIn("Pełne teksty analiz:", prompt)
+
+    def test_prompt_announces_new_evidence_only(self):
+        prompt = assess.build_prompt([Evidence(title="t", url="u", source="s")],
+                                     None, CFG)
+        self.assertIn("NOWE DOWODY", prompt)
+        self.assertNotIn("DOWODY z ostatnich 30 dni", prompt)
+        self.assertIn("WYŁĄCZNIE w oparciu o NOWE dowody", prompt)
 
 
 class TestLoadAnalyses(unittest.TestCase):
