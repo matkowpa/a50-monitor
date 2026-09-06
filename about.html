@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Metodologia — A50 Monitor</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="brand" href="index.html">🛣️ A50 Monitor</a>
+    <nav>
+      <a href="index.html">Start</a>
+      <a href="analizy.html">Analizy</a>
+      <a href="about.html">Metodologia</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+
+<h1>Metodologia i zastrzeżenia</h1>
+<div class="panel">
+<h2>Jak to działa</h2>
+<p>Codzienny automat (GitHub Actions) uruchamia silnik badawczy
+<a href="https://github.com/mvanhorn/last30days-skill" rel="noopener" target="_blank">last30days</a>
+(Reddit, YouTube, Hacker News, web) uzupełniony o kanały RSS mediów
+polskich (Google News, GDDKiA). Zebrane dowody są oceniane przez model
+językowy (OpenRouter), który dzień po dniu <strong>modyfikuje</strong>
+dwa niezależne score'y prawdopodobieństwa — od punktu wyjścia ustalonego
+przez analizy eksperckie oraz oceny z dnia poprzedniego.</p>
+<h2>Co oznaczają score'y</h2>
+<p>Są dwa niezależne scenariusze, każdy z osobnym score 0–100%:</p>
+<ul>
+<li><strong>Północ gminy</strong> — prawdopodobieństwo, że finalny przebieg
+autostrady przetnie północną część gminy, na północ od wsi
+Sobienie-Jeziory — pas między wsią a doliną Wisły (tereny zalewowe,
+Natura 2000 Dolina Środkowej Wisły), obejmujący środkowo-północną
+część gminy; korytarz DK50 biegnie dalej na północ, za granicą gminy;</li>
+<li><strong>Południe gminy</strong> — prawdopodobieństwo, że trasa przetnie
+południową część gminy, na południe od wsi Sobienie-Jeziory (rejon
+m.in. Śniadkowa Dolnego i Górnego) — otwarty płaskowyż rolniczy ku
+południowej granicy gminy.</li>
+</ul>
+<p>Wieś Sobienie-Jeziory leży na drogach wojewódzkich 801 i 739, w
+środkowej części gminy. <strong>DK50 biegnie na północ od gminy</strong> —
+od Góry Kalwarii (nowy most Nadwiślańskiego Urzecza) przez Ostrówek
+i Piotrowice (gmina Karczew) oraz Tabor i Regut (gmina Celestynów)
+do Kołbiela — i nie przecina gminy. Wagi dowodów: oficjalne komunikaty
+GDDKiA/ministerstw &gt; uchwały samorządów &gt; media ogólnopolskie &gt;
+media lokalne &gt; social media. Niuans: wariant w korytarzu DK50 (za
+północną granicą gminy) może zostać zrealizowany w standardzie S50,
+a nie A50 — dla score nie ma to znaczenia, liczy się przebieg przez
+daną stronę gminy.</p>
+<p>Punktem wyjścia obu score'y są <strong>analizy eksperckie</strong>
+(<a href="analizy.html">analizy/</a> — baza: północ 45%, południe
+28%); codzienne dowody modyfikują je od tego poziomu, a wyraźne
+odstępstwa od wniosków analiz wymagają mocnych, oficjalnych dowodów
+(GDDKiA, warianty, DŚU, przetarg).</p>
+<h2>Zastrzeżenia</h2>
+<p class="disclaimer">Zarówno codzienne score'y, jak i analizy eksperckie,
+na których bazują, <strong>nie są</strong> informacją oficjalną ani opinią
+ludzkiego eksperta — to oceny wygenerowane przez AI (model językowy),
+oparte na publicznie dostępnych źródłach. Decyzje o przebiegu dróg
+podejmuje GDDKiA i administracja publiczna — źródłem prawdy są zawsze
+ich oficjalne komunikaty. Model może się mylić; linki do źródeł są
+udostępnione, by każdy mógł zweryfikować dowody samodzielnie.</p>
+<h2>Brak nowych dowodów</h2>
+<p>Gdy danego dnia nie ma nowych, istotnych dowodów, oba score'y
+pozostają bez zmian, a pewność oceny spada do poziomu „niska”.</p>
+</div>
+
+
+</main>
+<footer>
+  <div class="wrap">
+    <p>Automatyczny monitoring mediów (silnik last30days + OpenRouter + RSS).
+    Oba score'y to oceny modelu językowego (AI), zakotwiczone w analizach
+    eksperckich z folderu analizy/ i oparte na publicznie dostępnych
+    dowodach — <strong>nie są</strong> informacją oficjalną.
+    <a href="about.html">Metodologia i zastrzeżenia</a>.</p>
+  </div>
+</footer>
+</body>
+</html>
