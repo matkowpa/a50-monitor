@@ -1,0 +1,104 @@
+{
+  "artifacts": {
+    "corpus_in_export": false,
+    "grounding": [
+      {
+        "keyless_backend": "ddg",
+        "label": "keyless",
+        "resultCount": 5,
+        "webSearchQueries": [
+          "obwodnica autostradowa Warszawy A50 przebieg Sobienie-Jeziory"
+        ]
+      }
+    ],
+    "hiring_signals_mode": false,
+    "plan_source": "llm",
+    "pre_research_flags_present": false,
+    "resolved": {
+      "context": "",
+      "entity": "obwodnica autostradowa Warszawy A50 przebieg trasy Sobienie-Jeziory",
+      "github_repos": [],
+      "github_user": "",
+      "subreddits": [],
+      "trustpilot_domain": "",
+      "x_handle": ""
+    }
+  },
+  "clusters": [],
+  "errors_by_source": {
+    "youtube": "Source was requested but is not configured for this run."
+  },
+  "freshness_verdicts": [],
+  "generated_at": "2026-09-06T14:56:15.319852+00:00",
+  "items_by_source": {
+    "grounding": [],
+    "reddit": []
+  },
+  "library_context": [],
+  "provider_runtime": {
+    "planner_model": "google/gemini-3.1-flash-lite-preview",
+    "reasoning_provider": "openrouter",
+    "rerank_model": "google/gemini-3.1-flash-lite-preview"
+  },
+  "query_plan": {
+    "cluster_mode": "none",
+    "freshness_mode": "balanced_recent",
+    "intent": "factual",
+    "notes": [
+      "Hackernews excluded as it is not relevant for Polish infrastructure planning.",
+      "Focus on official GDDKiA/CPK documentation and local community discussions."
+    ],
+    "raw_topic": "obwodnica autostradowa Warszawy A50 przebieg trasy Sobienie-Jeziory",
+    "source_weights": {
+      "grounding": 0.625,
+      "hackernews": 0.0,
+      "reddit": 0.37499999999999994
+    },
+    "subqueries": [
+      {
+        "label": "Trasa A50 Sobienie-Jeziory",
+        "ranking_query": "Jaki jest aktualny planowany przebieg autostrady A50 w okolicach miejscowo\u015bci Sobienie-Jeziory?",
+        "search_query": "obwodnica autostradowa Warszawy A50 przebieg Sobienie-Jeziory",
+        "sources": [
+          "grounding",
+          "reddit"
+        ],
+        "weight": 1.0
+      }
+    ]
+  },
+  "range_from": "2026-08-07",
+  "range_to": "2026-09-06",
+  "ranked_candidates": [],
+  "source_status": {
+    "grounding": {
+      "at": "2026-09-06T14:56:15.313764Z",
+      "attempted": true,
+      "items_returned": 0,
+      "source": "grounding",
+      "state": "no-results"
+    },
+    "reddit": {
+      "at": "2026-09-06T14:56:15.008330Z",
+      "attempted": true,
+      "items_returned": 0,
+      "source": "reddit",
+      "state": "no-results"
+    },
+    "youtube": {
+      "at": "2026-09-06T14:56:14.754097Z",
+      "attempted": false,
+      "detail": "Source was requested but is not configured for this run.",
+      "fix_hint": "doctor",
+      "items_returned": 0,
+      "source": "youtube",
+      "state": "skipped-unconfigured"
+    }
+  },
+  "topic": "obwodnica autostradowa Warszawy A50 przebieg trasy Sobienie-Jeziory",
+  "warnings": [
+    "No candidates survived retrieval and ranking.",
+    "Evidence is thin for this topic.",
+    "Some sources failed: youtube"
+  ]
+}
