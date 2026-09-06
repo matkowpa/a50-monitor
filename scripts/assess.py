@@ -202,9 +202,40 @@ RUBRYKA (osobno dla PÓŁNOC i POŁUDNIE):
 - KAŻDY claim w key_findings MUSI mieć evidence_urls wyłącznie z listy dowodów powyżej. Nie wymyślaj URL-i.
 - Pisz po polsku.
 
-ODPOWIEDŹ: wyłącznie JSON dokładnie wg schematu (bez ogrodzeń markdown; max 5 pozycji w key_findings per scenariusz; summary ≤ 2 zdania; rationale ≤ 4 zdania):
+ODPOWIEDŹ: wyłącznie JSON dokładnie wg schematu (bez ogrodzeń markdown; wewnątrz wartości tekstowych NIE używaj znaku " — cytuj polskimi cudzysłowami „…”; max 5 pozycji w key_findings per scenariusz; summary ≤ 2 zdania; rationale ≤ 4 zdania):
 {"scores": {"north": {"score": <int 0-100>, "confidence": "<niska|średnia|wysoka>", "summary": "<1-2 zdania>", "rationale": "<pełne uzasadnienie, 3-6 zdań>", "key_findings": [{"claim": "<...>", "evidence_urls": ["<url z dowodów>"]}]}, "south": {...analogicznie...}}}""")
     return "\n".join(lines)
+
+
+def _json_continues(text: str, j: int) -> bool:
+    """Czy cudzysłów na pozycji j-1 zamyka string, czy jest tylko treścią?
+
+    Polskie zdania w wartościach często mają cudzysłów tuż przed
+    przecinkiem: 'wariant "południowy", który…'. Po przecinku idzie wtedy
+    zwykły wyraz — a w JSON po przecinku musi nastąpić wartość, klucz
+    lub koniec struktury, więc taki cudzysłów to treść, nie koniec.
+    """
+    n = len(text)
+    while j < n and text[j] in " \t\r\n":
+        j += 1
+    if j >= n:
+        return True  # koniec tekstu — traktuj jako zamykający
+    if text[j] in ":}]":
+        return True
+    if text[j] != ",":
+        return False
+    j += 1
+    while j < n and text[j] in " \t\r\n":
+        j += 1
+    if j >= n:
+        return True
+    if text[j] in '"{[-' or text[j].isdigit():
+        return True  # po przecinku zaczyna się wartość/klucz/element tablicy
+    for word in ("true", "false", "null"):
+        if text.startswith(word, j):
+            after = text[j + len(word):].lstrip()
+            return not after or after[0] in ",:}]"
+    return False  # zwykły wyraz — cudzysłów był treścią
 
 
 def _repair_json(text: str) -> str:
@@ -222,11 +253,7 @@ def _repair_json(text: str) -> str:
                 i += 2
                 continue
             if ch == '"':
-                j = i + 1
-                while j < n and text[j] in " \t\r\n":
-                    j += 1
-                nxt = text[j] if j < n else ""
-                if nxt in ",:}]":
+                if _json_continues(text, i + 1):
                     in_str = False
                     out.append(ch)
                 else:
@@ -251,10 +278,20 @@ def extract_json(content: str) -> dict:
         text = text.strip("`")
         if text.lower().startswith("json"):
             text = text[4:]
+    text = text.strip()
     try:
-        return json.loads(text.strip())
+        return json.loads(text)
     except json.JSONDecodeError:
-        return json.loads(_repair_json(text.strip()))
+        pass
+    repaired = _repair_json(text)
+    try:
+        return json.loads(repaired)
+    except json.JSONDecodeError as exc:
+        # Fragment wokół błędu trafia do komunikatu — bez tego diagnoza
+        # w CI ("Expecting ',' delimiter, char 4723") to zgadywanie.
+        frag = repaired[max(0, exc.pos - 120):exc.pos + 120]
+        raise json.JSONDecodeError(
+            f"{exc.msg} (kontekst: {frag!r})", exc.doc, exc.pos) from None
 
 
 # --------------------------------------------------------------- OpenRouter

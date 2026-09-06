@@ -133,6 +133,30 @@ class TestExtractJson(unittest.TestCase):
         self.assertEqual(out["a"], "linia1\nlinia2")
         self.assertEqual(out["b"], [1, 2])
 
+    def test_repairs_polish_quote_before_comma(self):
+        broken = ('{"scores": {"north": {"score": 10, "summary": '
+                  '"GDDKiA: wariant "południowy", który omija gminę"}, '
+                  '"south": {"score": 5, "summary": "ok"}}}')
+        out = assess.extract_json(broken)
+        self.assertEqual(out["scores"]["south"]["summary"], "ok")
+        self.assertIn('"południowy"', out["scores"]["north"]["summary"])
+
+    def test_repairs_quotes_inside_nested_value(self):
+        broken = '{"a": "stwierdził: "nie"", "b": 2}'
+        out = assess.extract_json(broken)
+        self.assertEqual(out["b"], 2)
+        self.assertIn('"nie"', out["a"])
+
+    def test_valid_string_arrays_still_parse(self):
+        ok = '{"urls": ["https://a.pl/1", "https://a.pl/2"], "n": 3}'
+        out = assess.extract_json(ok)
+        self.assertEqual(out["urls"], ["https://a.pl/1", "https://a.pl/2"])
+
+    def test_error_includes_context_snippet(self):
+        with self.assertRaises(json.JSONDecodeError) as ctx:
+            assess.extract_json('{"a": "tekst", "b": [1, 2 }')
+        self.assertIn("kontekst", str(ctx.exception))
+
     def test_unrepairable_raises(self):
         with self.assertRaises(json.JSONDecodeError):
             assess.extract_json("totalnie nie json")
