@@ -240,8 +240,10 @@ def _json_continues(text: str, j: int) -> bool:
 
 def _repair_json(text: str) -> str:
     """Naprawia typowe błędy LLM w JSON: nieescapowane cudzysłowy wewnątrz
-    wartości, surowe znaki nowej linii w stringach, przecinki wiszące."""
+    wartości, surowe znaki nowej linii w stringach, przecinki wiszące
+    oraz pomylony/niedomknięty ogon nawiasów (LLM gubi głębię na końcu)."""
     out: list[str] = []
+    stack: list[str] = []
     i, n = 0, len(text)
     in_str = False
     while i < n:
@@ -265,8 +267,28 @@ def _repair_json(text: str) -> str:
         else:
             if ch == '"':
                 in_str = True
-            out.append(ch)
+                out.append(ch)
+            elif ch in "{[":
+                stack.append(ch)
+                out.append(ch)
+            elif ch in "}]":
+                if not stack:
+                    i += 1
+                    continue  # nadmiarowe domknięcie — pomiń
+                want = "}" if stack[-1] == "{" else "]"
+                stack.pop()
+                if ch != want:
+                    out.append(want)  # zły znak domykający — popraw
+                    i += 1
+                    continue
+                out.append(ch)
+            else:
+                out.append(ch)
         i += 1
+    if in_str:
+        out.append('"')  # string ucięty przez limit tokenów
+    while stack:
+        out.append("}" if stack.pop() == "{" else "]")  # dokończ ogon
     return re.sub(r",\s*([}\]])", r"\1", "".join(out))
 
 
@@ -325,10 +347,17 @@ def call_openrouter(prompt: str, api_key: str, model: str, timeout: int = 180) -
         try:
             with urllib.request.urlopen(req, timeout=timeout) as resp:
                 data = json.loads(resp.read().decode("utf-8"))
-            content = data["choices"][0]["message"]["content"]
+            choice = data["choices"][0]
+            content = choice["message"]["content"]
+            finish = choice.get("finish_reason")
+            usage = data.get("usage") or {}
+            print(f"[assess] OpenRouter: finish_reason={finish}, "
+                  f"completion_tokens={usage.get('completion_tokens')}",
+                  file=sys.stderr)
             if not content:
-                raise RuntimeError("OpenRouter: pusta odpowiedź")
-            return content
+                raise RuntimeError(
+                    f"OpenRouter: pusta odpowiedź (finish_reason={finish})")
+            return content, finish
         except urllib.error.HTTPError as exc:
             body = exc.read().decode("utf-8", "replace")[:500]
             if exc.code in (401, 402):
@@ -348,7 +377,12 @@ def parse_assessment(data: dict, prev_entry: dict | None) -> dict:
         data_sc = data.get("scores", {}).get(key)
         if not isinstance(data_sc, dict):
             raise ValueError(f"brak sekcji scores.{key} w odpowiedzi LLM")
-        score = int(round(float(data_sc.get("score", 0))))
+        score = data_sc.get("score")
+        try:
+            score = int(round(float(score)))
+        except (TypeError, ValueError):
+            raise ValueError(
+                f"brak/nieliczbowy score w scores.{key} w odpowiedzi LLM") from None
         score = max(0, min(100, score))
         confidence = data_sc.get("confidence") or "niska"
         if confidence not in CONFIDENCE_LEVELS:
@@ -441,13 +475,14 @@ def main() -> int:
         model = cfg.get("openrouter_model", "google/gemini-2.5-flash")
         assessment = None
         for attempt in (1, 2, 3):
-            content = call_openrouter(prompt, api_key, model)
+            content, finish = call_openrouter(prompt, api_key, model)
             try:
                 assessment = parse_assessment(extract_json(content), prev)
                 break
-            except json.JSONDecodeError as exc:
+            except (json.JSONDecodeError, ValueError) as exc:
                 print(f"[assess] ostrzeżenie: JSON LLM niepoprawny "
-                      f"(próba {attempt}/3): {exc}", file=sys.stderr)
+                      f"(próba {attempt}/3, finish_reason={finish}): {exc}",
+                      file=sys.stderr)
         if assessment is None:
             raise RuntimeError("OpenRouter: 3× niepoprawny JSON w odpowiedzi")
         entry = {

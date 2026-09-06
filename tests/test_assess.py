@@ -154,8 +154,36 @@ class TestExtractJson(unittest.TestCase):
 
     def test_error_includes_context_snippet(self):
         with self.assertRaises(json.JSONDecodeError) as ctx:
-            assess.extract_json('{"a": "tekst", "b": [1, 2 }')
+            assess.extract_json('{"a": }')
         self.assertIn("kontekst", str(ctx.exception))
+
+    def test_fixes_mangled_closing_run_from_ci(self):
+        # przypadek z CI: model skończył ogonem '"]}}}'  zamiast '"]}]}}}'
+        broken = ('{"scores": {"north": {"score": 40, "summary": "n"}, '
+                  '"south": {"score": 30, "confidence": "niska", '
+                  '"summary": "s", "rationale": "r", "key_findings": '
+                  '[{"claim": "c", "evidence_urls": ["https://x/1/"]}]}}')
+        out = assess.extract_json(broken)
+        self.assertEqual(out["scores"]["south"]["key_findings"][0]["claim"], "c")
+        parsed = assess.parse_assessment(out, None)
+        self.assertEqual(parsed["scores"]["south"]["score"], 30)
+
+    def test_closes_truncated_tail(self):
+        good = ('{"scores": {"north": {"score": 10, "summary": "s"}, '
+                '"south": {"score": 5, "summary": "t"}}}')
+        out = assess.extract_json(good[:-2])
+        self.assertEqual(out["scores"]["south"]["score"], 5)
+
+    def test_drops_extra_closer(self):
+        self.assertEqual(assess.extract_json('{"a": [1]]}'), {"a": [1]})
+
+    def test_closes_unterminated_string(self):
+        self.assertEqual(assess.extract_json('{"a": "tek'), {"a": "tek"})
+
+    def test_missing_score_raises(self):
+        data = {"scores": {"north": {"summary": "s"}, "south": {"score": 5}}}
+        with self.assertRaises(ValueError):
+            assess.parse_assessment(data, None)
 
     def test_unrepairable_raises(self):
         with self.assertRaises(json.JSONDecodeError):
