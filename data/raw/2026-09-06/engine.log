@@ -3,9 +3,10 @@
     "corpus_in_export": false,
     "grounding": [
       {
-        "keyless_backend": "ddg",
+        "keyless_backend": "startpage",
         "label": "keyless",
-        "resultCount": 5,
+        "reason": "keyless-search-unavailable",
+        "resultCount": 0,
         "webSearchQueries": [
           "obwodnica autostradowa Warszawy A50 przebieg Sobienie-Jeziory"
         ]
@@ -26,10 +27,11 @@
   },
   "clusters": [],
   "errors_by_source": {
+    "grounding": "Keyless web search unavailable",
     "youtube": "Source was requested but is not configured for this run."
   },
   "freshness_verdicts": [],
-  "generated_at": "2026-09-06T14:56:15.319852+00:00",
+  "generated_at": "2026-09-06T16:57:54.676806+00:00",
   "items_by_source": {
     "grounding": [],
     "reddit": []
@@ -72,21 +74,23 @@
   "ranked_candidates": [],
   "source_status": {
     "grounding": {
-      "at": "2026-09-06T14:56:15.313764Z",
+      "at": "2026-09-06T16:57:54.674288Z",
       "attempted": true,
+      "detail": "Keyless web search unavailable",
+      "fix_hint": "doctor",
       "items_returned": 0,
       "source": "grounding",
-      "state": "no-results"
+      "state": "unreachable"
     },
     "reddit": {
-      "at": "2026-09-06T14:56:15.008330Z",
+      "at": "2026-09-06T16:57:54.307226Z",
       "attempted": true,
       "items_returned": 0,
       "source": "reddit",
       "state": "no-results"
     },
     "youtube": {
-      "at": "2026-09-06T14:56:14.754097Z",
+      "at": "2026-09-06T16:57:54.059729Z",
       "attempted": false,
       "detail": "Source was requested but is not configured for this run.",
       "fix_hint": "doctor",
@@ -99,7 +103,7 @@
   "warnings": [
     "No candidates survived retrieval and ranking.",
     "Evidence is thin for this topic.",
-    "Some sources failed: youtube"
+    "Some sources failed: grounding, youtube"
   ]
 }
 
@@ -109,7 +113,7 @@
 [Planner] Plan: intent=factual, freshness=balanced_recent, cluster_mode=none, subqueries=1, source=llm
 [Planner]   sq1 label=Trasa A50 Sobienie-Jeziory search="obwodnica autostradowa Warszawy A50 przebieg Sobienie-Jeziory" sources=[grounding,reddit]
 [RedditKeyless] Tier 1 (RSS) 0 posts; score-only; 0 scored cards
-✓ Research complete (2.1s) - Reddit: 0 threads, YouTube: 0 videos, HN: 0 stories, Web: 0 results
+✓ Research complete (2.4s) - Reddit: 0 threads, YouTube: 0 videos, HN: 0 stories, Web: 0 results
 
 💡 You can unlock native grounded web search with BRAVE_API_KEY or SERPER_API_KEY.
 
@@ -121,4 +125,4 @@ Free fixes:
 
 Bonus: TikTok and Instagram are available with a free ScrapeCreators key at scrapecreators.com (no affiliation).
 [last30days] Saved output to /home/runner/work/a50-monitor/a50-monitor/data/raw/2026-09-06/report.json
-[last30days] Saved output to /home/runner/work/a50-monitor/a50-monitor/data/raw/2026-09-06/obwodnica-autostradowa-warszawy-a50-przebieg-trasy-sobienie-jeziory-raw.json
+[last30days] Saved output to /home/runner/work/a50-monitor/a50-monitor/data/raw/2026-09-06/obwodnica-autostradowa-warszawy-a50-przebieg-trasy-sobienie-jeziory-raw-2026-09-06.json
