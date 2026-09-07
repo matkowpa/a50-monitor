@@ -6,7 +6,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
 
-from common import Evidence, atomic_write_json, load_scores, upsert_entry
+from common import (Evidence, atomic_write_json, is_fresh, load_scores,  # noqa: E402
+                    upsert_entry)
 
 
 class TestAtomicWrite(unittest.TestCase):
@@ -47,6 +48,29 @@ class TestEvidence(unittest.TestCase):
         d = ev.to_dict()
         self.assertEqual(d["stance"], "neutral")
         self.assertIn("snippet", d)
+
+
+class TestIsFresh(unittest.TestCase):
+    def test_recent_publication_kept(self):
+        self.assertTrue(is_fresh("2026-09-01", "2026-09-06", 30))
+
+    def test_older_than_window_rejected(self):
+        # przypadek z runu 2026-09-06: publikacja RSS z 2026-04-24
+        self.assertFalse(is_fresh("2026-04-24", "2026-09-06", 30))
+
+    def test_boundary_exactly_max_age_kept(self):
+        # dokładnie 30 dni = granica okna → zostaje (odrzucamy tylko starsze)
+        self.assertTrue(is_fresh("2026-08-07", "2026-09-06", 30))
+
+    def test_missing_or_garbage_date_kept(self):
+        self.assertTrue(is_fresh("", "2026-09-06", 30))
+        self.assertTrue(is_fresh("b.d.", "2026-09-06", 30))
+
+    def test_future_date_kept(self):
+        self.assertTrue(is_fresh("2026-09-10", "2026-09-06", 30))
+
+    def test_bad_report_day_kept(self):
+        self.assertTrue(is_fresh("2026-01-01", "", 30))
 
 
 if __name__ == "__main__":

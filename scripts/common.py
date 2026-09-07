@@ -34,6 +34,22 @@ def resolve_date(raw: str | None) -> str:
     return raw or today_str()
 
 
+def is_fresh(published: str, day: str, max_age_days: int = 30) -> bool:
+    """Okno świeżości: True, gdy dowód nadaje się do oceny dnia `day`.
+
+    Odrzuca wyłącznie dowody z parsowalną datą publikacji starszą niż
+    `max_age_days` od dnia raportu. Pusta/nieprawidłowa data (dowodu lub
+    dnia) → True — nie odrzucamy tego, czego wieku nie da się zweryfikować;
+    data z przyszłości → True (np. różnice stref czasowych).
+    """
+    try:
+        pub = date.fromisoformat((published or "").strip()[:10])
+        run = date.fromisoformat((day or "").strip()[:10])
+    except ValueError:
+        return True
+    return (run - pub).days <= max_age_days
+
+
 @dataclass
 class Evidence:
     title: str

@@ -26,6 +26,12 @@ GitHub Actions (cron 6:30 PL) lub lokalnie z Cline (/a50-daily)
 - **Silnik**: [last30days](https://github.com/mvanhorn/last30days-skill) (MIT),
   zwendoryzowany w `skill/last30days/` — działa w trybie headless/cron,
   planowanie zapytań przez OpenRouter.
+- **Okno świeżości**: do oceny trafiają wyłącznie dowody opublikowane
+  w ciągu ostatnich 30 dni od dnia raportu (`lookback_days` w
+  `config.json`) — starsze artykuły są odfiltrowywane przed oceną
+  (pełne, nieprzefiltrowane zebranie zostaje w `data/raw/` jako audyt),
+  a dowody bez daty publikacji zostają, bo ich wieku nie da się
+  zweryfikować.
 - **Ocena**: model wskazany w `config.json` (`openrouter_model`,
   obecnie `z-ai/glm-5.3-flash`) ocenia dowody wg sztywnej rubryki,
   **osobno dla dwóch scenariuszy** — trasa przez północną część gminy

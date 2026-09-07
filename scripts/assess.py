@@ -24,7 +24,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import (CONFIDENCE_LEVELS, SCENARIOS, Evidence, assessments_dir,  # noqa: E402
-                    load_config, load_scores, raw_dir, resolve_date, upsert_entry)
+                    is_fresh, load_config, load_scores, raw_dir, resolve_date,
+                    upsert_entry)
 
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 
@@ -237,7 +238,7 @@ RUBRYKA (osobno dla PÓŁNOC i POŁUDNIE):
 - Kluczowe ogniwo: wariant przebiegu. Oficjalne potwierdzenie wariantu omijającego gminę albo prowadzącego przez jej środek/inną stronę => score danego scenariusza niski. Oficjalny proces wskazujący korytarz przez daną stronę gminy (studium, raport OOŚ, decyzja środowiskowa, przetarg) => score tego scenariusza wyższy.
 - Dowody mogą mówić o jednej stronie gminy i nic nie wnosić o drugiej — wtedy oceniaj samodzielnie geometrycznie (Wisła/Natura 2000 na północy, DK50 środkiem, otwarte tereny rolnicze na południu) i nisko ustaw confidence danej strony.
 - Dowody sprzeczne lub nieliczne => obniż confidence i trzymaj score blisko poprzedniego.
-- Score modyfikuj WYŁĄCZNIE w oparciu o NOWE dowody z listy powyżej — wcześniejsze ustalenia są już odzwierciedlone w poprzedniej ocenie. Przy każdym dowodzie jest data publikacji: stare doniesienia (sprzed wielu dni) nie powinny przesuwać score.
+- Score modyfikuj WYŁĄCZNIE w oparciu o NOWE dowody z listy powyżej — wcześniejsze ustalenia są już odzwierciedlone w poprzedniej ocenie. Przy każdym dowodzie jest data publikacji: dowody starsze niż 30 dni są odfiltrowane przed oceną, a stare doniesienia (sprzed wielu dni) nie powinny przesuwać score.
 - Brak nowych, istotnych dowodów => score = poprzedni (osobno dla północy i południa), confidence = "niska", wyraźnie zaznacz brak nowych sygnałów.
 - KAŻDY claim w key_findings MUSI mieć evidence_urls wyłącznie z listy dowodów powyżej. Nie wymyślaj URL-i.
 - Pisz po polsku.
@@ -501,6 +502,15 @@ def main() -> int:
     if feeds_path.exists():
         with open(feeds_path, encoding="utf-8") as f:
             feed_items = extract_feed_items(json.load(f), cfg)
+
+    # Okno świeżości: do oceny trafiają tylko dowody z ostatnich
+    # lookback_days dni od dnia raportu (bez daty → zostaje). Stare
+    # publikacje nie wchodzą do assessmentu; pełne zebranie zostaje
+    # w data/raw/ jako audyt. Filtr przed merge, by cap zapełniały
+    # świeże pozycje.
+    max_age_days = int(cfg.get("lookback_days", 30))
+    engine_items = [e for e in engine_items if is_fresh(e.published, day, max_age_days)]
+    feed_items = [e for e in feed_items if is_fresh(e.published, day, max_age_days)]
 
     evidence = merge_evidence(engine_items, feed_items,
                               cap=int(cfg.get("max_evidence", 40)))

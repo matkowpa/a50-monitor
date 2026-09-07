@@ -398,6 +398,7 @@ def build(scores_file: Path, out_dir: Path,
     baseline = cfg.get("baseline_scores") or {}
     b_north = baseline.get("north", "?")
     b_south = baseline.get("south", "?")
+    lookback = int(cfg.get("lookback_days", 30))
     about_content = f"""
 <h1>Metodologia i zastrzeżenia</h1>
 <div class="panel">
@@ -409,6 +410,13 @@ polskich (Google News, GDDKiA). Zebrane dowody są oceniane przez model
 językowy (OpenRouter), który dzień po dniu <strong>modyfikuje</strong>
 dwa niezależne score'y prawdopodobieństwa — od punktu wyjścia ustalonego
 przez analizy eksperckie oraz oceny z dnia poprzedniego.</p>
+<p>Do oceny trafiają wyłącznie <strong>dowody opublikowane w ciągu
+ostatnich {lookback} dni</strong> od dnia raportu (okno świeżości,
+<code>lookback_days</code> w config.json) — starsze artykuły są
+odfiltrowywane przed oceną, by score'y opierały się na najświeższych
+informacjach. Dowody bez daty publikacji zostają w zestawie, bo ich
+wieku nie da się zweryfikować; pełne, nieprzefiltrowane zebranie
+pozostaje w <code>data/raw/</code> jako materiał audytowy.</p>
 <h2>Co oznaczają score'y</h2>
 <p>Są dwa niezależne scenariusze, każdy z osobnym score 0–100%:</p>
 <ul>
