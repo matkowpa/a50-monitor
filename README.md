@@ -18,6 +18,7 @@ oraz dłuższe analizy eksperckie z folderu [`analizy/`](analizy/).
 GitHub Actions (cron 6:30 PL) lub lokalnie z Cline (/a50-daily)
   → scripts/research.py      # silnik last30days (Reddit, YouTube, HN, web)
   → scripts/fetch_feeds.py   # fallback RSS: Google News, GDDKiA
+  → scripts/agent_reach.py   # wyszukiwanie semantyczne agent-reach (Exa przez mcporter)
   → scripts/assess.py        # rubryka PL → OpenRouter → 2 score (północ/południe) + dowody
   → scripts/build_site.py    # statyczny HTML (zero JS, czyste SVG)
   → deploy na gh-pages + commit data/ (historia w repo)
@@ -32,8 +33,16 @@ GitHub Actions (cron 6:30 PL) lub lokalnie z Cline (/a50-daily)
   (pełne, nieprzefiltrowane zebranie zostaje w `data/raw/` jako audyt),
   a dowody bez daty publikacji zostają, bo ich wieku nie da się
   zweryfikować.
+- **Wyszukiwanie agent-reach**: `scripts/agent_reach.py` dopytuje
+  semantyczną wyszukiwarkę Exa (serwer MCP `exa` przez `mcporter` —
+  definicja w `config/mcporter.json`, bez klucza API) zapytaniami
+  z `config.json` → `agent_reach.queries`. Wynik ląduje w
+  `data/raw/<dzień>/agent_reach.json` w tym samym formacie co RSS,
+  więc ocena traktuje go jak każdy inny dowód. Gdy `mcporter` nie ma
+  w PATH (np. runner CI bez Node), krok jest pomijany ze statusem
+  `skipped` i **nie przerywa** pipeline'u.
 - **Ocena**: model wskazany w `config.json` (`openrouter_model`,
-  obecnie `z-ai/glm-5.3-flash`) ocenia dowody wg sztywnej rubryki,
+  obecnie `deepseek/deepseek-v4.1-flash`) ocenia dowody wg sztywnej rubryki,
   **osobno dla dwóch scenariuszy** — trasa przez północną część gminy
   (na północ od wsi, kierunek Wisły/Natura 2000) lub przez południową
   (na południe od wsi, rejon Śniadków). Wagi dowodów:
@@ -59,7 +68,7 @@ zawsze jest w chmurze — nie ma tu żadnego lokalnego LLM.
 
 | Ścieżka | Opis |
 |---|---|
-| `scripts/` | pipeline (research, fetch_feeds, assess, build_site, common) |
+| `scripts/` | pipeline (research, fetch_feeds, agent_reach, assess, build_site, common) |
 | `skill/last30days/` | zwendoryzowany silnik badawczy |
 | `templates/` | szablony strony (string.Template) |
 | `data/scores.json` | historia score'ów (committowana) |
@@ -68,6 +77,7 @@ zawsze jest w chmurze — nie ma tu żadnego lokalnego LLM.
 | `analizy/` | analizy eksperckie (markdown), publikowane na stronie |
 | `feeds.txt` | kanały RSS fallback (dodaj własne liniami `URL\|Etykieta`) |
 | `config.json` | temat, słowa kluczowe, źródła, model |
+| `config/mcporter.json` | serwer MCP Exa (wyszukiwanie agent-reach) |
 | `tests/` | testy jednostkowe (`python -m unittest discover -s tests`) |
 
 ## Uruchomienie lokalne (lub przez Cline: `/a50-daily`)
@@ -77,6 +87,7 @@ Wymagane: Python 3.12+, `OPENROUTER_API_KEY` w środowisku.
 ```powershell
 python scripts/research.py       # silnik last30days (kilka minut)
 python scripts/fetch_feeds.py    # RSS fallback
+python scripts/agent_reach.py    # wyszukiwanie agent-reach (Exa; wymaga mcporter)
 python scripts/assess.py         # dwa score (północ/południe) + zapis do data/
 python scripts/build_site.py     # strona w site/ (podgląd lokalny)
 ```

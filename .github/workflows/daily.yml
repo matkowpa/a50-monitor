@@ -29,6 +29,16 @@ jobs:
           TZ: Europe/Warsaw
         run: python scripts/research.py
 
+      - name: Wyszukiwanie agent-reach (Exa przez mcporter)
+        # Dodatkowe źródło: awaria wyszukiwania nie może zablokować raportu
+        # (brak mcporter w PATH → skrypt zapisuje status "skipped" i kończy 0).
+        continue-on-error: true
+        env:
+          TZ: Europe/Warsaw
+        run: |
+          npm install -g mcporter || true
+          python scripts/agent_reach.py
+
       - name: Fallback RSS (Google News, GDDKiA)
         env:
           TZ: Europe/Warsaw

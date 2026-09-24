@@ -14,8 +14,18 @@
     "węzeł sobienie"
   ],
   "search_sources": "web,reddit,youtube,hackernews",
+  "agent_reach": {
+    "results_per_query": 8,
+    "queries": [
+      "oficjalne stanowisko lub uchwała gminy Sobienie-Jeziory i sąsiednich gmin w sprawie przebiegu autostrady A50 (Obwodnicy Aglomeracji Warszawskiej) przez ich teren",
+      "aktualne komunikaty GDDKiA o wariantach przebiegu autostrady A50 / Obwodnicy Aglomeracji Warszawskiej na południe i południowy wschód od Warszawy",
+      "artykuł prasowy o planowanym przebiegu drogi A50 przez gminę Sobienie-Jeziory w powiecie otwockim — protesty mieszkańców i sadowników",
+      "analiza Studium Techniczno-Ekonomiczno-Środowiskowego (STEŚ) i wybór wariantu Obwodnicy Aglomeracji Warszawskiej wraz z przeprawą mostową przez Wisłę",
+      "wypowiedź samorządowca lub posła o trasie A50/S50 w powiatach otwockim, grójeckim i piaseczyńskim — węzeł Kołbiel, Góra Kalwaria, Celestynów"
+    ]
+  },
   "lookback_days": 30,
-  "openrouter_model": "z-ai/glm-5.3-flash",
+  "openrouter_model": "deepseek/deepseek-v4.1-flash",
   "baseline_scores": {"north": 45, "south": 28},
   "max_results": 30,
   "max_per_source": 10,

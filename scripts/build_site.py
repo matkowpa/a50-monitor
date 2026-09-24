@@ -406,7 +406,9 @@ def build(scores_file: Path, out_dir: Path,
 <p>Codzienny automat (GitHub Actions) uruchamia silnik badawczy
 <a href="https://github.com/mvanhorn/last30days-skill" rel="noopener" target="_blank">last30days</a>
 (Reddit, YouTube, Hacker News, web) uzupełniony o kanały RSS mediów
-polskich (Google News, GDDKiA). Zebrane dowody są oceniane przez model
+polskich (Google News, GDDKiA) oraz wyszukiwanie semantyczne agent-reach
+(Exa — serwer MCP przez <code>mcporter</code>, zapytania z
+<code>agent_reach.queries</code>). Zebrane dowody są oceniane przez model
 językowy (OpenRouter), który dzień po dniu <strong>modyfikuje</strong>
 dwa niezależne score'y prawdopodobieństwa — od punktu wyjścia ustalonego
 przez analizy eksperckie oraz oceny z dnia poprzedniego.</p>

@@ -19,7 +19,14 @@ uruchamiaj z katalogu repo (ścieżki względne):
    python scripts/fetch_feeds.py
    ```
 
-3. Ocena + score (OpenRouter, JSON; dwa scory: północ/południe gminy):
+3. Wyszukiwanie agent-reach (Exa przez `mcporter`; opcjonalne — gdy brak
+   `mcporter` w PATH, skrypt zapisuje status „skipped” i nie przerywa dalej):
+
+   ```
+   python scripts/agent_reach.py
+   ```
+
+4. Ocena + score (OpenRouter, JSON; dwa scory: północ/południe gminy):
 
    ```
    python scripts/assess.py
@@ -29,7 +36,7 @@ uruchamiaj z katalogu repo (ścieżki względne):
    per scenariusz, podsumowanie (polski), trend względem poprzedniego dnia.
    Plik: `data/assessments/<dzień>.json`.
 
-4. Budowa strony:
+5. Budowa strony:
 
    ```
    python scripts/build_site.py
@@ -38,7 +45,7 @@ uruchamiaj z katalogu repo (ścieżki względne):
    Otwórz `site/index.html` w przeglądarce do podglądu (katalog `site/` jest
    w `.gitignore` — NIE commituj go).
 
-5. Commit + push danych historycznych (tylko `data/`, nigdy `site/`):
+6. Commit + push danych historycznych (tylko `data/`, nigdy `site/`):
 
    ```
    git add data
@@ -48,6 +55,6 @@ uruchamiaj z katalogu repo (ścieżki względne):
 
    Jeśli repo nie ma jeszcze remote — poinformuj użytkownika i pomiń push.
 
-6. Podsumuj: oba score (północ/południe), kluczowe ustalenia z linkami
+7. Podsumuj: oba score (północ/południe), kluczowe ustalenia z linkami
    (2–4 pozycje), zmiany względem wczoraj. Nie redaguj treści assessmentu —
    relacjonuj plik.
