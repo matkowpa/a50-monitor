@@ -4,22 +4,147 @@
     "north": {
       "score": 45,
       "confidence": "niska",
-      "summary": "Brak nowych dowodów w podglądanych źródłach — utrzymuję poprzednią ocenę (45%).",
-      "trend_vs_prev": 0,
-      "rationale": "Brak nowych dowodów w podglądanych źródłach — utrzymuję poprzednią ocenę (45%).",
-      "key_findings": []
+      "summary": "Brak oficjalnego potwierdzenia wariantu przebiegu przez północną część gminy; nowe dowody dotyczą analizy wariantu w śladzie DK50 i nie rozstrzygają strony wsi. Utrzymuję poprzednią ocenę.",
+      "rationale": "Nowe pozycje [1] i [3] potwierdzają jedynie, że GDDKiA rozważa wariant w śladzie istniejącej DK50 oraz że o taki przebieg zabiega Wiązowna, ale nie wskazują strony wsi Sobienie-Jeziory. Zgodnie z aktualnym kontekstem geograficznym DK50 biegnie na północ od gminy i jej nie przecina, co czyni ewentualny wariant w śladzie DK50 niejednoznacznym dla wnioskowania o północnym pasie gminy. Północ wsi pozostaje ograniczona doliną Wisły, terenami zalewowymi i obszarem Natura 2000 Dolina Środkowej Wisły, co jest stałym czynnikiem ryzyka środowiskowego. Brak oficjalnego komunikatu o wariancie przez północną część gminy nakazuje ostrożność, stąd utrzymanie wartości bazowej 45 i niska pewność.",
+      "key_findings": [
+        {
+          "claim": "GDDKiA potwierdza, że wariant OAW w śladzie istniejącej DK50 będzie analizowany, co nie rozstrzyga jednak strony wsi w samej gminie.",
+          "evidence_urls": [
+            "https://iotwock.info/artykul/a50-przez-powiat-otwocki-n1860551"
+          ]
+        },
+        {
+          "claim": "Wschodnia część Obwodnicy Aglomeracji Warszawskiej (A50) nie ma jeszcze wyznaczonego przebiegu.",
+          "evidence_urls": [
+            "https://iotwock.info/artykul/a50-przez-powiat-otwocki-n1860551"
+          ]
+        },
+        {
+          "claim": "Wiązowna zabiega o trasę bliżej istniejącej DK50, a sąsiednie samorządy nie są tym zachwycone.",
+          "evidence_urls": [
+            "https://www.przegladotwocki.pl/artykul/5544,a50-przez-powiat-otwocki-wiazowna-chce-trase-blizej-50-sasiedzi-nie-sa-zachwyceni"
+          ]
+        },
+        {
+          "claim": "OAW ma przejąć ruch tranzytowy, a jej południowa część ma domykać ring wokół Warszawy.",
+          "evidence_urls": [
+            "https://knews.pl/article/762-a50-ma-odciazyc-warszawe-i-zmienic-uklad-ruchu-w-centralnej-polsce-wazna-takze-dla-portu-polska-i-lodzi"
+          ]
+        }
+      ],
+      "trend_vs_prev": 0
     },
     "south": {
       "score": 28,
       "confidence": "niska",
-      "summary": "Brak nowych dowodów w podglądanych źródłach — utrzymuję poprzednią ocenę (28%).",
-      "trend_vs_prev": 0,
-      "rationale": "Brak nowych dowodów w podglądanych źródłach — utrzymuję poprzednią ocenę (28%).",
-      "key_findings": []
+      "summary": "Nowe dowody wskazują na analizę wariantu w śladzie DK50, ale nie potwierdzają przebiegu na południe od wsi Sobienie-Jeziory. Utrzymuję poprzednią ocenę.",
+      "rationale": "Pozycja [1] oraz [3] wzmacniają wagę wariantu w śladzie DK50, który w starszej analizie był podstawą scenariusza południowego, lecz aktualny kontekst geograficzny pokazuje, że DK50 biegnie na północ od gminy i jej nie przecina, co osłabia to wnioskowanie. Brak oficjalnego komunikatu o wariancie poprowadzonym na południe od wsi (rejon Śniadkowa Dolnego i Górnego). Południowy płaskowyż rolniczy pozostaje technicznie atrakcyjny, ale niezorganizowany politycznie w porównaniu z lobby wariantu DK50. Wobec niejednoznaczności dowodów trzymam wartość bazową 28 z niską pewnością.",
+      "key_findings": [
+        {
+          "claim": "Analizowany wariant w śladzie istniejącej drogi krajowej nr 50 nie przesądza o poprowadzeniu trasy po południowej stronie wsi Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://iotwock.info/artykul/a50-przez-powiat-otwocki-n1860551"
+          ]
+        },
+        {
+          "claim": "Wiązowna chce trasy bliżej istniejącej DK50, co może wzmacniać lobbing za korytarzem DK50, lecz nie rozstrzyga o południowym pasie gminy.",
+          "evidence_urls": [
+            "https://www.przegladotwocki.pl/artykul/5544,a50-przez-powiat-otwocki-wiazowna-chce-trase-blizej-50-sasiedzi-nie-sa-zachwyceni"
+          ]
+        },
+        {
+          "claim": "Południowa część OAW ma domykać wielki ring wokół Warszawy i przejmować ruch tranzytowy.",
+          "evidence_urls": [
+            "https://knews.pl/article/762-a50-ma-odciazyc-warszawe-i-zmienic-uklad-ruchu-w-centralnej-polsce-wazna-takze-dla-portu-polska-i-lodzi"
+          ]
+        }
+      ],
+      "trend_vs_prev": 0
     }
   },
-  "sources_found": 0,
-  "engine_status": "no-new-evidence",
-  "assessment_path": "data/assessments/2026-09-24.json",
-  "evidence": []
+  "evidence": [
+    {
+      "title": "A50 przez powiat otwocki? GDDKiA: wariant DK50 będzie analizowany - wiadomości Otwock",
+      "url": "https://iotwock.info/artykul/a50-przez-powiat-otwocki-n1860551",
+      "source": "exa",
+      "published": "2026-09-21",
+      "snippet": "Wschodnia część Obwodnicy Aglomeracji Warszawskiej (OAW), czyli planowana autostrada A50, nie ma jeszcze wyznaczonego przebiegu. Po spotkaniu samorządów z GDDKiA wiadomo, że wariant w śladzie obecnej DK50 będzie obowiązkowo analizowany, a pierwsze warianty trasy przez nasz region pojawią się najwcześniej w 2028 roku. 16 września w warszawskim oddziale Generalnej Dyrekcji Dróg Krajowych i Autostrad",
+      "stance": "neutral"
+    },
+    {
+      "title": "A50 odciąży Warszawę i zmieni ruch w centralnej Polsce | KNews.pl",
+      "url": "https://knews.pl/article/762-a50-ma-odciazyc-warszawe-i-zmienic-uklad-ruchu-w-centralnej-polsce-wazna-takze-dla-portu-polska-i-lodzi",
+      "source": "exa",
+      "published": "2026-09-20",
+      "snippet": "Obwodnica Aglomeracji Warszawskiej ma przejąć część ruchu tranzytowego, który dziś korzysta z dróg prowadzących przez Warszawę lub jej bezpośrednie otoczenie. Południową część wielkiego ringu ma tworzyć autostrada A50, północną droga ekspresowa S50. Trasa ma jednocześnie zostać powiązana z A2 – główną osią między Łodzią, Portem Polska i Warszawą. O jej przebieg już dziś toczą się jednak spory. Sam",
+      "stance": "neutral"
+    },
+    {
+      "title": "A50 przez powiat otwocki? Wiązowna chce trasę bliżej „50”. Sąsiedzi nie są zachwyceni",
+      "url": "https://www.przegladotwocki.pl/artykul/5544,a50-przez-powiat-otwocki-wiazowna-chce-trase-blizej-50-sasiedzi-nie-sa-zachwyceni",
+      "source": "exa",
+      "published": "2026-08-31",
+      "snippet": "# A50 przez powiat otwocki? Wiązowna chce trasę bliżej „50”. Sąsiedzi nie są zachwyceni Mieszkańcy powiatu otwockiego, w tym Wiązowny znów mobilizują się przeciwko A50. Autostrada A50 ma być południową częścią Obwodnicy Aglomeracji Warszawskiej, czyli dużego ringu drogowego wokół stolicy. W planach tej jednej z największych inwestycji drogowych przygotowywanych obecnie w Polsce uwzględniono także",
+      "stance": "neutral"
+    },
+    {
+      "title": "–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––",
+      "url": "https://bip-v1-files.idcom-jst.pl/sites/47399/wiadomosci/678908/files/uchwala_nr_lix58423_w_sprawie_wyrazenia_sprzeciwu_wobec_wariantow_przebiegu_drogi_a50__obwodnicy_aglomeracji_warszawskiej_przez_teren_gminy_grojec.pdf",
+      "source": "exa",
+      "published": "",
+      "snippet": "UCHWAŁA NR LIX/584/23 RADY MIEJSKIEJ W GRÓJCU z dnia 17 marca 2023 r. w sprawie wyrażenia sprzeciwu wobec wariantów przebiegu drogi A50 - Obwodnicy Aglomeracji Warszawskiej przez teren Gminy Grójec 2023, poz. 40) Rada Miejska w Grójcu uchwala, co następuje: § 1. 1. Mając na względzie dotychczasowe zagospodarowanie przestrzenne, uwarunkowania środowiskowe i przyrodnicze, a także uwagi oraz protesty",
+      "stance": "neutral"
+    },
+    {
+      "title": "_wniesione_projekt stanowiska - A50",
+      "url": "https://www.bip.powiat-otwocki.pl/plik,20728,projekt-stanowiska-w-sprawie-planowanego-przebiegu-autostrady-a50-przez-teren-powiatu-otwockiego.pdf",
+      "source": "exa",
+      "published": "",
+      "snippet": "RADY POWIATU W OTWOCKU z dnia …………..…. 2020 r. w sprawie planowanego przebiegu Autostrady A50 przez teren powiatu otwockiego § 1. 1. Mając na uwadze trwające konsultacje społeczne projektu dokumentu pn. „Strategiczne Studium Lokalizacyjne Inwestycji Centralnego Portu Komunikacyjnego”, które prowadzone są przez Centralny Port Komunikacyjny Sp. z o.o. z siedzibą w Warszawie przy Alejach Jerozolimski",
+      "stance": "neutral"
+    },
+    {
+      "title": "Projektujemy zachodnią część Obwodnicy Aglomeracji Warszawskiej - Generalna Dyrekcja Dróg Krajowych i Autostrad- Oddział Warszawa - Portal Gov.pl",
+      "url": "https://www.gov.pl/web/gddkia-warszawa/projektujemy-zachodnia-czesc-obwodnicy-aglomeracji-warszawskiej",
+      "source": "exa",
+      "published": "",
+      "snippet": "Spośród projektowanych obecnie wariantów zachodniej części OAW, trzy są poprowadzone po nowym śladzie, a założeniem czwartego wariantu jest jak największe wykorzystanie istniejącej drogi krajowej nr 50. Wariant czwarty, jak i tzw. podwariant tarczyński zostały wprowadzone w wyniku przeanalizowania i uwzględnienia wniosków oraz opinii z pierwszej akcji informacyjnej, która przeprowadzona została w",
+      "stance": "neutral"
+    },
+    {
+      "title": "Będą protestować przeciwko wariantom A50 Obwodnicy Aglomeracji Warszawskiej - Rynek Infrastruktury",
+      "url": "https://www.rynekinfrastruktury.pl/wiadomosci/drogi-i-autostrady/beda-protestowac-przeciwko-wariantom-a50-obwodnicy-aglomeracji-warszawskiej-99513.html",
+      "source": "exa",
+      "published": "",
+      "snippet": "Mieszkańcy części terenów, przez które przebiegać ma planowana autostrada A50 stanowiąca część Obwodnicy Aglomeracji Warszawskiej decydują się na protest. Ich decyzja ma na celu wyrażenie sprzeciwu wobec kilku proponowanych wariantów trasy. Protestujący nie chcą, by swoje nieruchomości utracili mieszkańcy, ale też wskazują na kwestie środowiskowe. Protest zaplanowano na 24 kwietnia na godzinę 12:0",
+      "stance": "neutral"
+    },
+    {
+      "title": "Prezentacja programu PowerPoint",
+      "url": "https://www.gov.pl/attachment/ac21749d-2b14-494a-a749-85cbe42df69e",
+      "source": "exa",
+      "published": "",
+      "snippet": "## Obwodnica Aglomeracji Warszawskiej - podpisanie umów na wykonanie Studium techniczno ekonomiczno-środowiskowego dla dwóch zachodnich odcinków • czerwiec 2018 r. - decyzją Generalnego Dyrektora Dróg Krajowych i Autostrad rozpoczęto prace nad Studium korytarzowym przygotowywanym przez Pracowników GDDKiA • sierpień 2019 r. - Płock, pierwsza publiczna prezentacja wytypowanych korytarzy OAW i S10 •",
+      "stance": "neutral"
+    },
+    {
+      "title": "MINISTER INFRASTRUKTURY",
+      "url": "https://www.gov.pl/attachment/e0a78eea-8395-4695-b03a-a5090fc32065",
+      "source": "exa",
+      "published": "",
+      "snippet": "Minister Infrastruktury działając na podstawie art. 13 ustawy z dnia 11 lipca 2014 r. o petycjach (Dz. U. z 2018 r. poz. 870) zawiadamia, że złożona przez Panów petycja w imieniu Stowarzyszeń ,,Nie tędy droga” i Eko-Glinianka z dnia 14 września 2021 r. w sprawie odstąpienia od planowania przebiegu Obwodnicy Aglomeracji Warszawskiej (OAW) przez tereny gmin Wiązowna, Dębe Wielkie i Otwock została ro",
+      "stance": "neutral"
+    },
+    {
+      "title": "Interpelacja nr 22190 - tekst - Sejm Rzeczypospolitej Polskiej",
+      "url": "https://www.sejm.gov.pl/Sejm9.nsf/InterpelacjaTresc.xsp?key=BZVARM",
+      "source": "exa",
+      "published": "",
+      "snippet": "mieszkańcy powiatu otwockiego zwrócili się do mnie z prośbą o wsparcie ich działań zmierzających do zmiany przebiegu Obwodnicy Aglomeracji Warszawskiej (OAW) na odcinku most na Wiśle – Mińsk Mazowiecki oraz zmiany charakteru tej drogi ze standardu autostrady (A50) na standard drogi ekspresowej (S50). W ramach studium korytarzowego OAW GDDKiA wybrała do dalszych prac tzw. korytarz czerwony, przebie",
+      "stance": "neutral"
+    }
+  ],
+  "sources_found": 10,
+  "engine_status": "ok",
+  "assessment_path": "data/assessments/2026-09-24.json"
 }
