@@ -29,7 +29,7 @@
     "youtube": "Source was requested but is not configured for this run."
   },
   "freshness_verdicts": [],
-  "generated_at": "2026-09-24T20:29:21.646696+00:00",
+  "generated_at": "2026-09-24T20:57:08.982138+00:00",
   "items_by_source": {
     "grounding": [],
     "reddit": []
@@ -72,21 +72,21 @@
   "ranked_candidates": [],
   "source_status": {
     "grounding": {
-      "at": "2026-09-24T20:29:21.644197Z",
+      "at": "2026-09-24T20:57:08.974671Z",
       "attempted": true,
       "items_returned": 0,
       "source": "grounding",
       "state": "no-results"
     },
     "reddit": {
-      "at": "2026-09-24T20:29:21.221910Z",
+      "at": "2026-09-24T20:57:08.599551Z",
       "attempted": true,
       "items_returned": 0,
       "source": "reddit",
       "state": "no-results"
     },
     "youtube": {
-      "at": "2026-09-24T20:29:20.876100Z",
+      "at": "2026-09-24T20:57:08.276054Z",
       "attempted": false,
       "detail": "Source was requested but is not configured for this run.",
       "fix_hint": "doctor",
@@ -105,11 +105,11 @@
 
 --- STDERR ---
 /last30days · researching: obwodnica autostradowa Warszawy A50 przebieg trasy Sobienie-Jeziory
-⏳ [95mProcessing[0m Scoring and ranking...
+⏳ [95mProcessing[0m Finding patterns...
 [Planner] Plan: intent=factual, freshness=balanced_recent, cluster_mode=none, subqueries=1, source=llm
 [Planner]   sq1 label=Trasa A50 Sobienie-Jeziory search="obwodnica autostradowa Warszawy A50 przebieg Sobienie-Jeziory" sources=[grounding,reddit]
 [RedditKeyless] Tier 1 (RSS) 0 posts; score-only; 0 scored cards
-✓ Research complete (3.0s) - Reddit: 0 threads, YouTube: 0 videos, HN: 0 stories, Web: 0 results
+✓ Research complete (2.5s) - Reddit: 0 threads, YouTube: 0 videos, HN: 0 stories, Web: 0 results
 
 💡 You can unlock native grounded web search with BRAVE_API_KEY or SERPER_API_KEY.
 
@@ -121,4 +121,4 @@ Free fixes:
 
 Bonus: TikTok and Instagram are available with a free ScrapeCreators key at scrapecreators.com (no affiliation).
 [last30days] Saved output to /home/runner/work/a50-monitor/a50-monitor/data/raw/2026-09-24/report.json
-[last30days] Saved output to /home/runner/work/a50-monitor/a50-monitor/data/raw/2026-09-24/obwodnica-autostradowa-warszawy-a50-przebieg-trasy-sobienie-jeziory-raw-2026-09-24.json
+[last30days] Saved output to /home/runner/work/a50-monitor/a50-monitor/data/raw/2026-09-24/obwodnica-autostradowa-warszawy-a50-przebieg-trasy-sobienie-jeziory-raw-2026-09-24-1.json

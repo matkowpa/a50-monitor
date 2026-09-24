@@ -802,64 +802,58 @@
       "date": "2026-09-24",
       "scores": {
         "north": {
-          "score": 45,
+          "score": 40,
           "confidence": "niska",
-          "summary": "Brak oficjalnego potwierdzenia wariantu przebiegu przez północną część gminy; nowe dowody dotyczą analizy wariantu w śladzie DK50 i nie rozstrzygają strony wsi. Utrzymuję poprzednią ocenę.",
-          "rationale": "Nowe pozycje [1] i [3] potwierdzają jedynie, że GDDKiA rozważa wariant w śladzie istniejącej DK50 oraz że o taki przebieg zabiega Wiązowna, ale nie wskazują strony wsi Sobienie-Jeziory. Zgodnie z aktualnym kontekstem geograficznym DK50 biegnie na północ od gminy i jej nie przecina, co czyni ewentualny wariant w śladzie DK50 niejednoznacznym dla wnioskowania o północnym pasie gminy. Północ wsi pozostaje ograniczona doliną Wisły, terenami zalewowymi i obszarem Natura 2000 Dolina Środkowej Wisły, co jest stałym czynnikiem ryzyka środowiskowego. Brak oficjalnego komunikatu o wariancie przez północną część gminy nakazuje ostrożność, stąd utrzymanie wartości bazowej 45 i niska pewność.",
+          "summary": "Utrzymuję umiarkowanie obniżony score dla północy; nowe dowody wskazują, że analizowany jest wariant w śladzie DK50, który – zgodnie z kontekstem – biegnie na północ od gminy, więc raczej omija jej północną część.",
+          "rationale": "Nowe dowody z 20-21.09.2026 potwierdzają, że GDDKiA analizuje wariant DK50, a Wiązowna lobbuje za trasą bliżej „50”. Ponieważ DK50 nie przecina gminy, a biegnie na północ od niej, taki wariant zmniejsza szansę na przecięcie północnej części gminy. Brak jednak oficjalnych wariantów dla odcinka wschodniego, więc score obniżam tylko umiarkowanie z 45 do 40. Confidence pozostaje niska z powodu wczesnego etapu procesu.",
           "key_findings": [
             {
-              "claim": "GDDKiA potwierdza, że wariant OAW w śladzie istniejącej DK50 będzie analizowany, co nie rozstrzyga jednak strony wsi w samej gminie.",
+              "claim": "GDDKiA po spotkaniu z samorządami zapowiada analizę wariantu w śladzie obecnej DK50 dla wschodniej OAW.",
               "evidence_urls": [
                 "https://iotwock.info/artykul/a50-przez-powiat-otwocki-n1860551"
               ]
             },
             {
-              "claim": "Wschodnia część Obwodnicy Aglomeracji Warszawskiej (A50) nie ma jeszcze wyznaczonego przebiegu.",
-              "evidence_urls": [
-                "https://iotwock.info/artykul/a50-przez-powiat-otwocki-n1860551"
-              ]
-            },
-            {
-              "claim": "Wiązowna zabiega o trasę bliżej istniejącej DK50, a sąsiednie samorządy nie są tym zachwycone.",
+              "claim": "Wiązowna chce trasy bliżej „50”, co wzmacnia korytarz DK50, który – zgodnie z kontekstem – nie przecina gminy Sobienie-Jeziory.",
               "evidence_urls": [
                 "https://www.przegladotwocki.pl/artykul/5544,a50-przez-powiat-otwocki-wiazowna-chce-trase-blizej-50-sasiedzi-nie-sa-zachwyceni"
               ]
             },
             {
-              "claim": "OAW ma przejąć ruch tranzytowy, a jej południowa część ma domykać ring wokół Warszawy.",
+              "claim": "Wschodnia część OAW nie ma jeszcze wyznaczonego przebiegu, więc żaden wariant przez północ gminy nie jest przesądzony.",
               "evidence_urls": [
-                "https://knews.pl/article/762-a50-ma-odciazyc-warszawe-i-zmienic-uklad-ruchu-w-centralnej-polsce-wazna-takze-dla-portu-polska-i-lodzi"
+                "https://iotwock.info/artykul/a50-przez-powiat-otwocki-n1860551"
               ]
             }
           ],
-          "trend_vs_prev": 0
+          "trend_vs_prev": -5
         },
         "south": {
-          "score": 28,
+          "score": 25,
           "confidence": "niska",
-          "summary": "Nowe dowody wskazują na analizę wariantu w śladzie DK50, ale nie potwierdzają przebiegu na południe od wsi Sobienie-Jeziory. Utrzymuję poprzednią ocenę.",
-          "rationale": "Pozycja [1] oraz [3] wzmacniają wagę wariantu w śladzie DK50, który w starszej analizie był podstawą scenariusza południowego, lecz aktualny kontekst geograficzny pokazuje, że DK50 biegnie na północ od gminy i jej nie przecina, co osłabia to wnioskowanie. Brak oficjalnego komunikatu o wariancie poprowadzonym na południe od wsi (rejon Śniadkowa Dolnego i Górnego). Południowy płaskowyż rolniczy pozostaje technicznie atrakcyjny, ale niezorganizowany politycznie w porównaniu z lobby wariantu DK50. Wobec niejednoznaczności dowodów trzymam wartość bazową 28 z niską pewnością.",
+          "summary": "Obniżam score dla południa; nowe dowody o analizie wariantu DK50 (biegnącego na północ od gminy) zmniejszają szansę na przecięcie południowej części gminy.",
+          "rationale": "Podobnie jak dla północy, oficjalny sygnał o analizie wariantu DK50 oraz presja Wiązowny na trasę bliżej „50” wskazują na korytarz poza gminą. To obniża prawdopodobieństwo, że finalny przebieg przetnie południową część gminy. Brak nowych, konkretnych wariantów dla tego obszaru nakazuje ostrożność, stąd tylko niewielka korekta z 28 do 25. Confidence niska.",
           "key_findings": [
             {
-              "claim": "Analizowany wariant w śladzie istniejącej drogi krajowej nr 50 nie przesądza o poprowadzeniu trasy po południowej stronie wsi Sobienie-Jeziory.",
+              "claim": "GDDKiA po spotkaniu z samorządami zapowiada analizę wariantu w śladzie obecnej DK50 dla wschodniej OAW.",
               "evidence_urls": [
                 "https://iotwock.info/artykul/a50-przez-powiat-otwocki-n1860551"
               ]
             },
             {
-              "claim": "Wiązowna chce trasy bliżej istniejącej DK50, co może wzmacniać lobbing za korytarzem DK50, lecz nie rozstrzyga o południowym pasie gminy.",
+              "claim": "Wiązowna chce trasy bliżej „50”, co wzmacnia korytarz DK50, który – zgodnie z kontekstem – nie przecina gminy Sobienie-Jeziory.",
               "evidence_urls": [
                 "https://www.przegladotwocki.pl/artykul/5544,a50-przez-powiat-otwocki-wiazowna-chce-trase-blizej-50-sasiedzi-nie-sa-zachwyceni"
               ]
             },
             {
-              "claim": "Południowa część OAW ma domykać wielki ring wokół Warszawy i przejmować ruch tranzytowy.",
+              "claim": "Wschodnia część OAW nie ma jeszcze wyznaczonego przebiegu, więc żaden wariant przez południe gminy nie jest przesądzony.",
               "evidence_urls": [
-                "https://knews.pl/article/762-a50-ma-odciazyc-warszawe-i-zmienic-uklad-ruchu-w-centralnej-polsce-wazna-takze-dla-portu-polska-i-lodzi"
+                "https://iotwock.info/artykul/a50-przez-powiat-otwocki-n1860551"
               ]
             }
           ],
-          "trend_vs_prev": 0
+          "trend_vs_prev": -3
         }
       },
       "evidence": [
