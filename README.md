@@ -19,6 +19,7 @@ GitHub Actions (cron 6:30 PL) lub lokalnie z Cline (/a50-daily)
   → scripts/research.py      # silnik last30days (Reddit, YouTube, HN, web)
   → scripts/fetch_feeds.py   # fallback RSS: Google News, GDDKiA
   → scripts/agent_reach.py   # wyszukiwanie semantyczne agent-reach (Exa przez mcporter)
+  → scripts/facebook.py      # treści z Facebooka (tylko lokalnie, sesja OpenCLI)
   → scripts/assess.py        # rubryka PL → OpenRouter → 2 score (północ/południe) + dowody
   → scripts/build_site.py    # statyczny HTML (zero JS, czyste SVG)
   → deploy na gh-pages + commit data/ (historia w repo)
@@ -41,6 +42,17 @@ GitHub Actions (cron 6:30 PL) lub lokalnie z Cline (/a50-daily)
   więc ocena traktuje go jak każdy inny dowód. Gdy `mcporter` nie ma
   w PATH (np. runner CI bez Node), krok jest pomijany ze statusem
   `skipped` i **nie przerywa** pipeline'u.
+- **Facebook (tylko lokalnie)**: `scripts/facebook.py` czyta grupy/strony
+  z `config.json` → `facebook.sources` w Twojej sesji OpenCLI
+  (`opencli browser <sesja> open/extract`), zapisuje wynik jako
+  `data/raw/<dzień>/facebook.json` (ten sam format co RSS) oraz surowy
+  markdown do `data/raw/<dzień>/facebook-raw-<n>.md`. Wymaga Chrome
+  z rozszerzeniem OpenCLI i zalogowanego `facebook.com` — Facebook pokazuje
+  treść dyskusji tylko członkom grupy, więc krok **nie działa w cronie CI**:
+  brak `opencli` ⇒ status `skipped`, pipeline leci dalej. Wpisy dopasowujemy
+  węziej niż media (`config.json` → `facebook.keywords`), bo sama nazwa gminy
+  występuje w opisie i statystykach grupy. Dowody z FB
+  wpływają na score tylko w dniach, gdy uruchomisz `/a50-daily` lokalnie.
 - **Ocena**: model wskazany w `config.json` (`openrouter_model`,
   obecnie `deepseek/deepseek-v4.1-flash`) ocenia dowody wg sztywnej rubryki,
   **osobno dla dwóch scenariuszy** — trasa przez północną część gminy
@@ -68,7 +80,7 @@ zawsze jest w chmurze — nie ma tu żadnego lokalnego LLM.
 
 | Ścieżka | Opis |
 |---|---|
-| `scripts/` | pipeline (research, fetch_feeds, agent_reach, assess, build_site, common) |
+| `scripts/` | pipeline (research, fetch_feeds, agent_reach, facebook, assess, build_site, common) |
 | `skill/last30days/` | zwendoryzowany silnik badawczy |
 | `templates/` | szablony strony (string.Template) |
 | `data/scores.json` | historia score'ów (committowana) |
@@ -88,6 +100,7 @@ Wymagane: Python 3.12+, `OPENROUTER_API_KEY` w środowisku.
 python scripts/research.py       # silnik last30days (kilka minut)
 python scripts/fetch_feeds.py    # RSS fallback
 python scripts/agent_reach.py    # wyszukiwanie agent-reach (Exa; wymaga mcporter)
+python scripts/facebook.py       # Facebook: grupy/strony z configu (lokalnie; Chrome + OpenCLI + login)
 python scripts/assess.py         # dwa score (północ/południe) + zapis do data/
 python scripts/build_site.py     # strona w site/ (podgląd lokalny)
 ```

@@ -26,7 +26,19 @@ uruchamiaj z katalogu repo (ścieżki względne):
    python scripts/agent_reach.py
    ```
 
-4. Ocena + score (OpenRouter, JSON; dwa scory: północ/południe gminy):
+4. Facebook (tylko lokalnie — wymaga Chrome z rozszerzeniem OpenCLI i
+   zalogowanego facebook.com; na runnerze CI skrypt zapisuje status
+   „skipped” i nie przerywa dalej):
+
+   ```
+   python scripts/facebook.py
+   ```
+
+   Źródła: `config.json` → `facebook.sources` (grupy/strony, których treść
+   widzi Twoje konto). Surowy markdown każdego źródła ląduje w
+   `data/raw/<dzień>/facebook-raw-<n>.md`.
+
+5. Ocena + score (OpenRouter, JSON; dwa scory: północ/południe gminy):
 
    ```
    python scripts/assess.py
@@ -36,7 +48,7 @@ uruchamiaj z katalogu repo (ścieżki względne):
    per scenariusz, podsumowanie (polski), trend względem poprzedniego dnia.
    Plik: `data/assessments/<dzień>.json`.
 
-5. Budowa strony:
+6. Budowa strony:
 
    ```
    python scripts/build_site.py
@@ -45,7 +57,7 @@ uruchamiaj z katalogu repo (ścieżki względne):
    Otwórz `site/index.html` w przeglądarce do podglądu (katalog `site/` jest
    w `.gitignore` — NIE commituj go).
 
-6. Commit + push danych historycznych (tylko `data/`, nigdy `site/`):
+7. Commit + push danych historycznych (tylko `data/`, nigdy `site/`):
 
    ```
    git add data
@@ -55,6 +67,6 @@ uruchamiaj z katalogu repo (ścieżki względne):
 
    Jeśli repo nie ma jeszcze remote — poinformuj użytkownika i pomiń push.
 
-7. Podsumuj: oba score (północ/południe), kluczowe ustalenia z linkami
+8. Podsumuj: oba score (północ/południe), kluczowe ustalenia z linkami
    (2–4 pozycje), zmiany względem wczoraj. Nie redaguj treści assessmentu —
    relacjonuj plik.

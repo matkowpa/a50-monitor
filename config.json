@@ -24,6 +24,14 @@
       "wypowiedź samorządowca lub posła o trasie A50/S50 w powiatach otwockim, grójeckim i piaseczyńskim — węzeł Kołbiel, Góra Kalwaria, Celestynów"
     ]
   },
+  "facebook": {
+    "keywords": ["a50", "obwodnica", "autostrada", "oaw", "gddkia"],
+    "sources": [
+      "https://www.facebook.com/groups/3789393041111856/",
+      "https://www.facebook.com/groups/554076521391212/",
+      "https://www.facebook.com/groups/1080958999914396/"
+    ]
+  },
   "lookback_days": 30,
   "openrouter_model": "deepseek/deepseek-v4.1-flash",
   "baseline_scores": {"north": 45, "south": 28},
