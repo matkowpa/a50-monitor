@@ -1,0 +1,33 @@
+{
+  "generated_at": "2026-09-26T10:04:36.732778+00:00",
+  "feeds": [
+    "https://news.google.com/rss/search?q=%22Sobienie-Jeziory%22+A50&hl=pl&gl=PL&ceid=PL:pl",
+    "https://news.google.com/rss/search?q=%22obwodnica+autostradowa+Warszawy%22&hl=pl&gl=PL&ceid=PL:pl",
+    "https://news.google.com/rss/search?q=A50+przebieg+wariant+autostrada&hl=pl&gl=PL&ceid=PL:pl",
+    "https://www.gddkia.gov.pl/rss/aktualnosci",
+    "https://trakt.eu/oaw-dk92-s7/feed/"
+  ],
+  "items": [
+    {
+      "title": "AKCJA INFORMACYJNA NR 2 [2025]",
+      "url": "https://www.trakt.eu/oaw-dk92-s7/akcja-informacyjna-nr-2/",
+      "source": "Trakt: OAW DK92-S7 (STEŚ)",
+      "published": "2025-09-25",
+      "snippet": "Październik &#8211; Listopad 2025 Jest to druga z dwóch akcji informacyjnych zaplanowanych do przeprowadzenia przed złożeniem wniosku o DŚU. 25 września 2025 udostępnione zostają materiały: Rysunki: 01_Plan_orientacyjny Miasto i Gmina Sochaczew OAW-S50_war-4-BLEKITNY_01_SOCHACZEW_ark-01 OAW-S50_war-4-BLEKITNY_01_SOCHACZEW_ark-02 OAW-S50_war-4-BLEKITNY_TUNEL_01_SOCHACZEW_ark-01 Gmina Teresin OAW-S5"
+    },
+    {
+      "title": "Spotkania informacyjne [2023]",
+      "url": "https://www.trakt.eu/oaw-dk92-s7/spotkania-informacyjne/",
+      "source": "Trakt: OAW DK92-S7 (STEŚ)",
+      "published": "2023-03-07",
+      "snippet": "AKCJA INFORMACYJNA NR 1, marzec 2023 Materiały do pobrania. Plan orientacyjny.        902_plan_orientacyjny-01.01        902_plan_orientacyjny-01.01 Plany sytuacyjne dla trzech wariantów.        902_plan_sytuacyjny_W1-02.01        902_plan_sytuacyjny_W1-02.02        902_plan_sytuacyjny_W1-02.03        902_plan_sytuacyjny_W1-02.04        902_plan_sytuacyjny_W1-02.05        902_plan_sytuacyjny_W1-02"
+    },
+    {
+      "title": "Podpisanie umowy [2022]",
+      "url": "https://www.trakt.eu/oaw-dk92-s7/podpisanie-umowy/",
+      "source": "Trakt: OAW DK92-S7 (STEŚ)",
+      "published": "2022-07-07",
+      "snippet": "20220706 Podpisano umowę na wykonanie zadania &#8222;Wykonanie Studium Techniczno-Ekonomiczno-Środowiskowego wraz z uzyskaniem Decyzji o Środowiskowych Uwarunkowaniach dla zadania „Obwodnica Aglomeracji Warszawskiej, odcinek od DK92 (bez węzła) do S7 (z węzłem)&#8221;."
+    }
+  ]
+}
