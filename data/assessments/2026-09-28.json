@@ -1,0 +1,48 @@
+{
+  "date": "2026-09-28",
+  "scores": {
+    "north": {
+      "score": 40,
+      "confidence": "niska",
+      "summary": "Brak nowych dowodów różnicujących strony gminy — utrzymuję poprzednią ocenę 40%. Jedyny nowy sygnał to ogólny komunikat GDDKiA o uruchomieniu przygotowań i STEŚ dla kolejnych fragmentów OAW, neutralny wobec północy i południa.",
+      "rationale": "Nowy dowód [1] to oficjalny komunikat GDDKiA o rozpoczęciu przygotowań dla kolejnych fragmentów OAW i ogłoszeniu postępowania na STEŚ, w którym projektant przeanalizuje możliwe warianty przebiegu. Jest to sygnał proceduralny, nie wskazujący żadnej konkretnej strony gminy Sobienie-Jeziory. Nie podważa kotwicy analiz eksperckich (scenariusz północny ~10–12% dla obwodnicy wsi + ~30–35% dla nowego śladu przez środkowo-północny pas). Wobec braku dowodów rozstrzygających o wariancie utrzymuję poprzednią wartość 40% i niską pewność.",
+      "key_findings": [
+        {
+          "claim": "GDDKiA oficjalnie rozpoczyna przygotowania dla kolejnych fragmentów OAW i ogłosi postępowanie na STEŚ, w którym projektant przeanalizuje możliwe warianty przebiegu nowej trasy.",
+          "evidence_urls": [
+            "https://www.gov.pl/web/gddkia-warszawa/rozpoczynamy-przygotowania-dla-kolejnych-fragmentow-oaw"
+          ]
+        }
+      ],
+      "trend_vs_prev": 0
+    },
+    "south": {
+      "score": 25,
+      "confidence": "niska",
+      "summary": "Brak nowych dowodów dotyczących południowej strony gminy — utrzymuję poprzednią ocenę 25%. Komunikat GDDKiA o STEŚ jest neutralny i nie wskazuje wariantu na południe od wsi.",
+      "rationale": "Jedyny nowy dowód [1] to ogólny komunikat GDDKiA o przygotowaniach do STEŚ dla kolejnych fragmentów OAW, bez wskazania konkretnego korytarza ani strony gminy. Nie zmienia kotwicy analizy nr 2, która scenariusz obwodnicy wsi po stronie południowej szacuje na ~25–30%. Geometria (Natura 2000 i zalewowe tereny na północy, DK50 środkiem, otwarty płaskowyż rolniczy na południu) pozostaje bez zmian wobec braku nowych danych. Utrzymuję 25% przy niskiej pewności.",
+      "key_findings": [
+        {
+          "claim": "GDDKiA ogłasza STEŚ dla kolejnych fragmentów OAW, co potwierdza zaawansowanie procesu, ale nie wskazuje wariantu po południowej stronie gminy Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://www.gov.pl/web/gddkia-warszawa/rozpoczynamy-przygotowania-dla-kolejnych-fragmentow-oaw"
+          ]
+        }
+      ],
+      "trend_vs_prev": 0
+    }
+  },
+  "evidence": [
+    {
+      "title": "Rozpoczynamy przygotowania dla kolejnych fragmentów OAW - Generalna Dyrekcja Dróg Krajowych i Autostrad- Oddział Warszawa - Portal Gov.pl",
+      "url": "https://www.gov.pl/web/gddkia-warszawa/rozpoczynamy-przygotowania-dla-kolejnych-fragmentow-oaw",
+      "source": "exa",
+      "published": "",
+      "snippet": "Następnie ogłosimy postępowanie na wykonanie Studium techniczno-ekonomiczno-środowiskowego (STEŚ). Zadaniem projektanta będzie przeanalizowanie możliwych wariantów przebiegu nowej trasy, w tym poprowadzenia jej w śladzie istniejącej drogi krajowej. Będą brane pod uwagę nowoczesne technologie oraz nasze dotychczasowe doświadczenia w realizacji takich inwestycji. Konsekwencją prac będzie wskazanie p",
+      "stance": "neutral"
+    }
+  ],
+  "sources_found": 1,
+  "engine_status": "ok",
+  "assessment_path": "data/assessments/2026-09-28.json"
+}
