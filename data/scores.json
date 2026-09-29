@@ -1061,6 +1061,54 @@
       "sources_found": 1,
       "engine_status": "ok",
       "assessment_path": "data/assessments/2026-09-28.json"
+    },
+    {
+      "date": "2026-09-29",
+      "scores": {
+        "north": {
+          "score": 37,
+          "confidence": "niska",
+          "summary": "Nowy dowód potwierdza analizę wariantu DK50, który w świetle aktualnego kontekstu biegnie na północ od gminy i nie przecina jej; nieznacznie obniża to szansę na przecięcie północnej części gminy.",
+          "rationale": "Jedyny nowy dowód to lokalny komunikat, że GDDKiA będzie analizować wariant DK50. Ponieważ zgodnie z kontekstem DK50 nie przecina gminy, a biegnie na północ od niej, wariant ten nie wspiera scenariusza północnego przez północną część gminy. Brak oficjalnego wskazania korytarza w samej gminie, więc pozostaję blisko poprzedniej oceny, lekko obniżając score. Kotwica analiz eksperckich dla północy pozostaje aktualna, ale nowy sygnał proceduralny nie daje podstaw do wzrostu.",
+          "key_findings": [
+            {
+              "claim": "GDDKiA będzie analizować wariant DK50 dla A50 w rejonie powiatu otwockiego.",
+              "evidence_urls": [
+                "https://news.google.com/rss/articles/CBMib0FVX3lxTE5QVnZaMWRZbEEzcnJDX2ZaVG5TYUVJcUcxR0lCblVSMDdyVjdENENwNTBMZ3AwdGx0cE45WDBjZVpHNHRQaDBTZFZXR2FSWHVhS2JDLVRFRGNvbzlKdGJ4QVF3RjZiZHY1cFRwRTlGUQ?oc=5"
+              ]
+            }
+          ],
+          "trend_vs_prev": -3
+        },
+        "south": {
+          "score": 23,
+          "confidence": "niska",
+          "summary": "Nowy dowód o analizie wariantu DK50 nie wskazuje na południowy korytarz w gminie; wg kontekstu DK50 jest na północ od gminy, co nie zwiększa szansy na przecięcie części południowej.",
+          "rationale": "Jedyny nowy dowód dotyczy analizy wariantu DK50 przez GDDKiA. W świetle aktualnego kontekstu DK50 nie przecina gminy, więc ten sygnał nie wspiera scenariusza południowego. Utrzymuję score blisko poprzedniej oceny, z lekkim obniżeniem, bo wariant DK50 może omijać gminę. Kotwica analizy dla południa pozostaje, ale brak nowych przesłanek wskazujących na południowy przebieg.",
+          "key_findings": [
+            {
+              "claim": "GDDKiA będzie analizować wariant DK50 dla A50 w rejonie powiatu otwockiego.",
+              "evidence_urls": [
+                "https://news.google.com/rss/articles/CBMib0FVX3lxTE5QVnZaMWRZbEEzcnJDX2ZaVG5TYUVJcUcxR0lCblVSMDdyVjdENENwNTBMZ3AwdGx0cE45WDBjZVpHNHRQaDBTZFZXR2FSWHVhS2JDLVRFRGNvbzlKdGJ4QVF3RjZiZHY1cFRwRTlGUQ?oc=5"
+              ]
+            }
+          ],
+          "trend_vs_prev": -2
+        }
+      },
+      "evidence": [
+        {
+          "title": "A50 przez powiat otwocki? GDDKiA: wariant DK50 będzie analizowany - iOtwock.info",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5QVnZaMWRZbEEzcnJDX2ZaVG5TYUVJcUcxR0lCblVSMDdyVjdENENwNTBMZ3AwdGx0cE45WDBjZVpHNHRQaDBTZFZXR2FSWHVhS2JDLVRFRGNvbzlKdGJ4QVF3RjZiZHY1cFRwRTlGUQ?oc=5",
+          "source": "Google News: A50 przebieg",
+          "published": "2026-09-21",
+          "snippet": "<a href=\"https://news.google.com/rss/articles/CBMib0FVX3lxTE5QVnZaMWRZbEEzcnJDX2ZaVG5TYUVJcUcxR0lCblVSMDdyVjdENENwNTBMZ3AwdGx0cE45WDBjZVpHNHRQaDBTZFZXR2FSWHVhS2JDLVRFRGNvbzlKdGJ4QVF3RjZiZHY1cFRwRTlGUQ?oc=5\" target=\"_blank\">A50 przez powiat otwocki? GDDKiA: wariant DK50 będzie analizowany</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">iOtwock.info</font>",
+          "stance": "neutral"
+        }
+      ],
+      "sources_found": 1,
+      "engine_status": "ok",
+      "assessment_path": "data/assessments/2026-09-29.json"
     }
   ]
 }
