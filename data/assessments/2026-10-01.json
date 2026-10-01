@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-01",
+  "scores": {
+    "north": {
+      "score": 37,
+      "confidence": "niska",
+      "summary": "Brak nowych, istotnych dowodów dotyczących północnej strony gminy Sobienie-Jeziory. Utrzymuję poprzednią ocenę 37%.",
+      "rationale": "Jedyny nowy dowód dotyczy protestu w Pniewach przy zachodnim odcinku A50 i nie odnosi się do gminy Sobienie-Jeziory. Nie zawiera informacji o wariantach przebiegu, decyzjach GDDKiA ani stanowiskach samorządów z powiatu otwockiego. Zgodnie z rubryką brak nowych sygnałów nakazuje utrzymanie poprzedniego score i niską confidence.",
+      "key_findings": [
+        {
+          "claim": "Nowy materiał o proteście w Pniewach dotyczy zachodniego odcinka A50 i nie wnosi informacji o północnym przebiegu przez gminę Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://www.topagrar.pl/articles/aktualnosci/autostrada-a50-odetnie-mnie-od-pol-i-zablokuje-rozwoj-protest-w-pniewach-11-lipca-2684712"
+          ]
+        }
+      ],
+      "trend_vs_prev": 0
+    },
+    "south": {
+      "score": 23,
+      "confidence": "niska",
+      "summary": "Brak nowych, istotnych dowodów dotyczących południowej strony gminy Sobienie-Jeziory. Utrzymuję poprzednią ocenę 23%.",
+      "rationale": "Jedyny nowy dowód opisuje protest w Pniewach na zachodnim odcinku A50, odległy od analizowanego terenu. Nie wskazuje żadnego wariantu, decyzji środowiskowej ani stanowiska dotyczącego południowej części gminy Sobienie-Jeziory. Wobec braku nowych sygnałów score pozostaje bez zmian, a confidence jest niska.",
+      "key_findings": [
+        {
+          "claim": "Nowy materiał o proteście w Pniewach nie odnosi się do południowej części gminy Sobienie-Jeziory ani do wariantu przebiegu A50 w tym rejonie.",
+          "evidence_urls": [
+            "https://www.topagrar.pl/articles/aktualnosci/autostrada-a50-odetnie-mnie-od-pol-i-zablokuje-rozwoj-protest-w-pniewach-11-lipca-2684712"
+          ]
+        }
+      ],
+      "trend_vs_prev": 0
+    }
+  },
+  "evidence": [
+    {
+      "title": "„Autostrada A50 odetnie mnie od pól i zablokuje rozwój”. Protest w Pniewach 11 lipca",
+      "url": "https://www.topagrar.pl/articles/aktualnosci/autostrada-a50-odetnie-mnie-od-pol-i-zablokuje-rozwoj-protest-w-pniewach-11-lipca-2684712",
+      "source": "exa",
+      "published": "2026-09-08",
+      "snippet": "# „Autostrada A50 odetnie mnie od pól i zablokuje rozwój”. Protest w Pniewach 11 To ma być wspólny głos sadowników i samorządów. W sobotę 11 lipca przed Urzędem Gminy Pniewy odbędzie się protest przeciwko wariantom 4 i 4b autostrady A50. Organizatorzy przekonują, że proponowany przebieg drogi może doprowadzić do podziału i likwidacji wielu gospodarstw sadowniczych w powiecie grójeckim. Rozmawiamy",
+      "stance": "neutral"
+    }
+  ],
+  "sources_found": 1,
+  "engine_status": "ok",
+  "assessment_path": "data/assessments/2026-10-01.json"
+}
