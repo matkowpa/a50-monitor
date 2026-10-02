@@ -1181,6 +1181,54 @@
       "sources_found": 1,
       "engine_status": "ok",
       "assessment_path": "data/assessments/2026-10-01.json"
+    },
+    {
+      "date": "2026-10-02",
+      "scores": {
+        "north": {
+          "score": 37,
+          "confidence": "niska",
+          "summary": "Brak nowych dowodów wiążących protest z północną częścią gminy Sobienie-Jeziory; utrzymuję poprzednią ocenę.",
+          "rationale": "Jedyny nowy materiał to regionalny reportaż TVP Warszawa o protestach przeciw A50 i wariantowi przez środek gminy, bez wskazania Sobienie-Jezior ani strony północnej. Nie zawiera oficjalnych decyzji GDDKiA, wariantów, uchwał samorządów ani danych o korytarzu. Zgodnie z rubryką brak istotnych nowych sygnałów nakazuje utrzymanie score i niską confidence.",
+          "key_findings": [
+            {
+              "claim": "Regionalny reportaż TVP Warszawa opisuje protesty mieszkańców przeciwko trasie A50 i wariantowi przez środek gminy, ale nie wskazuje gminy Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://warszawa.tvp.pl/93907346/przebieg-a50-pod-znakiem-zapytania-trwaja-protesty-mieszkancow"
+              ]
+            }
+          ],
+          "trend_vs_prev": 0
+        },
+        "south": {
+          "score": 23,
+          "confidence": "niska",
+          "summary": "Brak nowych dowodów dotyczących południowej części gminy Sobienie-Jeziory; utrzymuję poprzednią ocenę.",
+          "rationale": "Jedyny nowy materiał to regionalny reportaż TVP Warszawa o protestach przeciw A50 i wariantowi przez środek gminy, bez odniesienia do Śniadkowa Dolnego/Górnego ani południowej granicy gminy. Nie zawiera oficjalnych decyzji GDDKiA, wariantów, uchwał samorządów ani danych o korytarzu. Zgodnie z rubryką brak istotnych nowych sygnałów nakazuje utrzymanie score i niską confidence.",
+          "key_findings": [
+            {
+              "claim": "Regionalny reportaż TVP Warszawa opisuje protesty mieszkańców przeciwko trasie A50 i wariantowi przez środek gminy, ale nie wskazuje południowej części gminy Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://warszawa.tvp.pl/93907346/przebieg-a50-pod-znakiem-zapytania-trwaja-protesty-mieszkancow"
+              ]
+            }
+          ],
+          "trend_vs_prev": 0
+        }
+      },
+      "evidence": [
+        {
+          "title": "Mieszkańcy protestują przeciwko trasie A50. Nie chcą wariantu ...",
+          "url": "https://warszawa.tvp.pl/93907346/przebieg-a50-pod-znakiem-zapytania-trwaja-protesty-mieszkancow",
+          "source": "exa",
+          "published": "",
+          "snippet": "Mieszkańcy protestują przeciwko trasie A50. Nie chcą wariantu przez środek gmin",
+          "stance": "neutral"
+        }
+      ],
+      "sources_found": 1,
+      "engine_status": "ok",
+      "assessment_path": "data/assessments/2026-10-02.json"
     }
   ]
 }
