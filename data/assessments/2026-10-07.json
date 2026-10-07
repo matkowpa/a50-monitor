@@ -1,0 +1,88 @@
+{
+  "date": "2026-10-07",
+  "scores": {
+    "north": {
+      "score": 37,
+      "confidence": "niska",
+      "summary": "Utrzymuję poprzednią ocenę 37% — nowe dowody potwierdzają protesty przeciw A50 przez gminę, ale nie wskazują, by trasa biegła przez północną (zalianową) część gminy.",
+      "rationale": "Nowe materiały (Otwock Info 23.09.2026, sobienie.pl 22.09.2026, stanowisko powiatu otwockiego) dotyczą sprzeciwu wobec przebiegu A50 przez gminę jako całość, bez rozróżnienia strony północnej i południowej. Są to źródła lokalne/samorządowe o słabszej wadze niż oficjalne komunikaty GDDKiA — a takich brak. Geometria nadal premiuje pas środkowo-północny, ale wobec braku rozstrzygających danych nie ma podstaw do modyfikacji score. Pozostaję przy wartości 37% z niską pewnością.",
+      "key_findings": [
+        {
+          "claim": "Mieszkańcy gminy protestują przeciwko planowanej autostradzie A50 przez teren gminy, co potwierdza realność ryzyka przecięcia gminy, lecz nie wskazuje konkretnej strony.",
+          "evidence_urls": [
+            "https://otwockinfo.pl/mieszkancy-sobienia-jeziory-protestuja-przeciwko-autostradzie-a50/"
+          ]
+        },
+        {
+          "claim": "Trwa zbiórka podpisów pod stanowiskiem wobec planowanego przebiegu A50 przez gminę Sobienie-Jeziory — sprzeciw dotyczy przecięcia gminy ogólnie, bez rozróżnienia północy i południa.",
+          "evidence_urls": [
+            "https://sobienie.pl/aktualnosci/nie-dla-autostrady-a50-przez-gmine-sobienie-jeziory-1165"
+          ]
+        },
+        {
+          "claim": "Rada Powiatu Otwockiego przygotowuje stanowisko w sprawie studium lokalizacyjnego inwestycji (CPK/A50) kierowane m.in. do GDDKiA, co potwierdza aktywność samorządu powiatowego wobec korytarza.",
+          "evidence_urls": [
+            "https://www.bip.powiat-otwocki.pl/plik,22845,projekt-stanowiska-w-sprawie-strategicznego-studium-lokalizacyjnego-inwestycji-centralnego-portu-komunikacyjnego-wraz-z-prognoza-oddzialywania-na-srodowisko.pdf"
+          ]
+        }
+      ],
+      "trend_vs_prev": 0
+    },
+    "south": {
+      "score": 23,
+      "confidence": "niska",
+      "summary": "Utrzymuję poprzednią ocenę 23% — nowe dowody dotyczą sprzeciwu wobec A50 przez gminę, ale nie przesądzają o przebiegu po południowej stronie wsi (rejon Śniadkowa).",
+      "rationale": "Protesty i stanowiska (Otwock Info 23.09.2026, sobienie.pl 22.09.2026) mówią o sprzeciwie wobec A50 przez gminę, nie wskazując strony południowej — a to kluczowe dla tego scenariusza. Dowody są lokalne i nie mają rangi oficjalnego wskazania wariantu przez GDDKiA. Sam fakt mobilizacji przeciw przejściu przez gminę pośrednio sprzyja hipotezie, że trasa w ogóle przetnie gminę, ale nie rozstrzyga południe vs północ. Brak podstaw do zmiany score — pozostaję przy 23% z niską pewnością.",
+      "key_findings": [
+        {
+          "claim": "Protesty mieszkańców przeciw A50 przez gminę potwierdzają ryzyko przecięcia gminy, ale nie wskazują na wariant południowy (Śniadków Dolny/Górny).",
+          "evidence_urls": [
+            "https://otwockinfo.pl/mieszkancy-sobienia-jeziory-protestuja-przeciwko-autostradzie-a50/"
+          ]
+        },
+        {
+          "claim": "Zbiórka podpisów przeciw planowanemu przebiegowi A50 przez gminę nie precyzuje położenia korytarza po południowej stronie wsi Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://sobienie.pl/aktualnosci/nie-dla-autostrady-a50-przez-gmine-sobienie-jeziory-1165"
+          ]
+        },
+        {
+          "claim": "Stanowisko Rady Powiatu Otwockiego ws. studium lokalizacyjnego wskazuje na trwające procedury wobec korytarza, bez rozstrzygnięcia o wariancie południowym.",
+          "evidence_urls": [
+            "https://www.bip.powiat-otwocki.pl/plik,22845,projekt-stanowiska-w-sprawie-strategicznego-studium-lokalizacyjnego-inwestycji-centralnego-portu-komunikacyjnego-wraz-z-prognoza-oddzialywania-na-srodowisko.pdf"
+          ]
+        }
+      ],
+      "trend_vs_prev": 0
+    }
+  },
+  "evidence": [
+    {
+      "title": "Mieszkańcy Sobienia-Jeziory protestują przeciwko autostradzie A50! - Otwock Info",
+      "url": "https://otwockinfo.pl/mieszkancy-sobienia-jeziory-protestuja-przeciwko-autostradzie-a50/",
+      "source": "exa",
+      "published": "2026-09-23",
+      "snippet": "Mieszkańcy Sobienia-Jeziory protestują przeciwko autostradzie A50! - Otwock Info # Mieszkańcy Sobienia-Jeziory protestują przeciwko autostradzie A50! Dominik Zalewski 23 września 2026 Protest przeciwko autostradzie A50: Gmina Sobienie-Jeziory na straży własnego rozwoju W obliczu planów budowy drogi A50, mieszkańcy Gminy Sobienie-Jeziory aktywnie angażują się w kampanię przeciwdziałającą realizacji",
+      "stance": "neutral"
+    },
+    {
+      "title": "NIE DLA AUTOSTRADY A50 PRZEZ GMINĘ SOBIENIE- ...",
+      "url": "https://sobienie.pl/aktualnosci/nie-dla-autostrady-a50-przez-gmine-sobienie-jeziory-1165",
+      "source": "exa",
+      "published": "2026-09-22",
+      "snippet": "NIE DLA AUTOSTRADY A50 PRZEZ GMINĘ SOBIENIE-JEZIORY! Przypominamy o trwającej zbiórce podpisów pod stanowiskiem wobec planowanego przebiegu drogi A50 – Obwodnicy Aglomeracji Warszawskiej - przez teren naszej Gminy. Stanowisko jest dostępne do podpisu w tradycyjnej formie papierowej (u Radnych i Sołtysów) oraz on-line (wystarczy otworzyć link poniżej lub zeskanować kod QR): • Treść stanowiska pdf (",
+      "stance": "neutral"
+    },
+    {
+      "title": "A50 - bip.powiat-otwocki.pl",
+      "url": "https://www.bip.powiat-otwocki.pl/plik,22845,projekt-stanowiska-w-sprawie-strategicznego-studium-lokalizacyjnego-inwestycji-centralnego-portu-komunikacyjnego-wraz-z-prognoza-oddzialywania-na-srodowisko.pdf",
+      "source": "exa",
+      "published": "",
+      "snippet": "| | § 3. Rada Powiatu Otwockiego zobowiązuje Starostę Otwockiego do przekazania | | --- | --- | | niniejszego stanowiska do: | | | | 1) Generalnej Dyrekcji Dróg Krajowych i Autostrad; | | | 2) Generalnej Dyrekcja Ochrony Środowiska; | | | 3) Głównego Inspektoratu Sanitarnego; | | | 4) poseł na sejm – Bożeny Żelazowskiej; | – Dariusza Olszewskiego. 1. Przedstaw ... do uzgodnień dokumenty SSL ... w",
+      "stance": "neutral"
+    }
+  ],
+  "sources_found": 3,
+  "engine_status": "ok",
+  "assessment_path": "data/assessments/2026-10-07.json"
+}
