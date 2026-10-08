@@ -1413,6 +1413,90 @@
       "sources_found": 3,
       "engine_status": "ok",
       "assessment_path": "data/assessments/2026-10-07.json"
+    },
+    {
+      "date": "2026-10-08",
+      "scores": {
+        "north": {
+          "score": 37,
+          "confidence": "niska",
+          "summary": "Brak nowych, oficjalnych dowodów wskazujących na północny wariant; nowy materiał ma charakter redakcyjnego przeglądu i nie różnicuje stron gminy. Utrzymuję poprzednią ocenę.",
+          "rationale": "Jedyny nowy dowód to opracowanie redakcji Sobienie.pl, które zbiera dokumenty GDDKiA, uchwałę rady gminy i przepisy, ale nie jest oficjalnym stanowiskiem urzędu. Nie zawiera ono wskazania wariantu ani rozróżnienia północnej i południowej części gminy. Wobec braku nowych sygnałów z GDDKiA, samorządu lub mediów o zasięgu ogólnopolskim score pozostaje na poziomie poprzedniej oceny 37. Geometria nadal premiuje pas środkowo-północny, lecz bez oficjalnego potwierdzenia confidence jest niska.",
+          "key_findings": [
+            {
+              "claim": "Nowy materiał to redakcyjne opracowanie Sobienie.pl, a nie oficjalne pismo urzędu gminy.",
+              "evidence_urls": [
+                "https://sobienie.pl/a50"
+              ]
+            },
+            {
+              "claim": "Materiał zbiera dokumenty GDDKiA, uchwałę rady gminy i przepisy, ale nie wskazuje konkretnego wariantu przebiegu.",
+              "evidence_urls": [
+                "https://sobienie.pl/a50"
+              ]
+            },
+            {
+              "claim": "Materiał odsyła po oficjalne stanowisko gminy na stronę urzędu, więc nie zastępuje źródła urzędowego.",
+              "evidence_urls": [
+                "https://sobienie.pl/a50"
+              ]
+            },
+            {
+              "claim": "Nie rozstrzyga, czy trasa miałaby przeciąć północną czy południową część gminy.",
+              "evidence_urls": [
+                "https://sobienie.pl/a50"
+              ]
+            }
+          ],
+          "trend_vs_prev": 0
+        },
+        "south": {
+          "score": 23,
+          "confidence": "niska",
+          "summary": "Nowy materiał nie wskazuje południowego wariantu ani nie różnicuje stron gminy. Utrzymuję poprzednią ocenę.",
+          "rationale": "Dowód z Sobienie.pl jest opracowaniem redakcyjnym, które zbiera dokumenty i uchwałę rady gminy, ale nie podaje szczegółów przebiegu. Nie zawiera informacji o wariancie na południe od wsi Sobienie-Jeziory. Brak oficjalnego wskazania GDDKiA dla strony południowej, więc score pozostaje 23. Confidence niska z powodu szczątkowego charakteru nowego sygnału.",
+          "key_findings": [
+            {
+              "claim": "Nowy materiał nie jest oficjalnym stanowiskiem urzędu gminy ani komunikatem GDDKiA.",
+              "evidence_urls": [
+                "https://sobienie.pl/a50"
+              ]
+            },
+            {
+              "claim": "Materiał zbiera dokumenty i uchwałę rady gminy, ale nie wskazuje wariantu przez południową część gminy.",
+              "evidence_urls": [
+                "https://sobienie.pl/a50"
+              ]
+            },
+            {
+              "claim": "Nie różnicuje scenariusza północnego i południowego względem wsi Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://sobienie.pl/a50"
+              ]
+            },
+            {
+              "claim": "Oficjalne stanowisko gminy znajduje się na stronie urzędu, co osłabia wagę tego opracowania redakcyjnego.",
+              "evidence_urls": [
+                "https://sobienie.pl/a50"
+              ]
+            }
+          ],
+          "trend_vs_prev": 0
+        }
+      },
+      "evidence": [
+        {
+          "title": "A50 a gmina Sobienie-Jeziory — co naprawdę wiadomo | Sobienie.pl",
+          "url": "https://sobienie.pl/a50",
+          "source": "exa",
+          "published": "",
+          "snippet": "To opracowanie redakcji, nie pismo urzędu. Zebraliśmy dokumenty GDDKiA, uchwałę rady gminy i przepisy w jedno miejsce. Oficjalne stanowisko gminy znajdziesz na stronie urzędu. I z sąsiedzkiej arytmetyki. 20 marca 2026 r. burmistrz Góry Kalwarii wystąpił do GDDKiA, popierając stanowisko samorządów z powiatów grójeckiego i piaseczyńskiego: obwodnica wzdłuż granic administracyjnych powiatów, odsunięt",
+          "stance": "neutral"
+        }
+      ],
+      "sources_found": 1,
+      "engine_status": "ok",
+      "assessment_path": "data/assessments/2026-10-08.json"
     }
   ]
 }
