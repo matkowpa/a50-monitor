@@ -1497,6 +1497,54 @@
       "sources_found": 1,
       "engine_status": "ok",
       "assessment_path": "data/assessments/2026-10-08.json"
+    },
+    {
+      "date": "2026-10-09",
+      "scores": {
+        "north": {
+          "score": 37,
+          "confidence": "niska",
+          "summary": "Brak nowych istotnych dowodów dotyczących północnej części gminy Sobienie-Jeziory; score pozostaje na poziomie poprzedniej oceny 37.",
+          "rationale": "Jedyny nowy dowód to ogólny artykuł MotoGuru o A50, który nie wskazuje wariantu przebiegu ani nie odnosi się do gminy Sobienie-Jeziory. Nie zawiera rozróżnienia na północną i południową stronę wsi ani oficjalnego komunikatu GDDKiA. Zgodnie z rubryką brak nowych, istotnych sygnałów nakazuje utrzymanie poprzedniego score i niską confidence.",
+          "key_findings": [
+            {
+              "claim": "Nowy dowód to wyłącznie ogólny materiał o A50, bez wskazania wariantu przez północną część gminy Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOOENibUd4N081OVVNbEt2Y21HbnRabmNUNDQ0c1BzbEVKLTVqaGo1NlBkcmhZTVZYZFU1QWVldkxVcFFnenBpUXhac194UGUxTkcyZGFxdnVxNjNKVzBFNE43MjlDSW1vd1dyeXlLbWFVcmlMbjZSRTR2TTZtcm5JYnUtTHRkVGhHMFpn?oc=5"
+              ]
+            }
+          ],
+          "trend_vs_prev": 0
+        },
+        "south": {
+          "score": 23,
+          "confidence": "niska",
+          "summary": "Brak nowych istotnych dowodów dotyczących południowej części gminy Sobienie-Jeziory; score pozostaje na poziomie poprzedniej oceny 23.",
+          "rationale": "Nowy materiał MotoGuru o A50 nie opisuje przebiegu przez południową część gminy ani nie wskazuje wariantu na południe od wsi Sobienie-Jeziory. Nie zawiera też oficjalnego stanowiska GDDKiA, decyzji środowiskowej ani dokumentów przetargowych. Wobec braku nowych, istotnych sygnałów score utrzymano, a confidence pozostaje niska.",
+          "key_findings": [
+            {
+              "claim": "Nowy dowód nie wskazuje wariantu A50 prowadzącego przez południową część gminy Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOOENibUd4N081OVVNbEt2Y21HbnRabmNUNDQ0c1BzbEVKLTVqaGo1NlBkcmhZTVZYZFU1QWVldkxVcFFnenBpUXhac194UGUxTkcyZGFxdnVxNjNKVzBFNE43MjlDSW1vd1dyeXlLbWFVcmlMbjZSRTR2TTZtcm5JYnUtTHRkVGhHMFpn?oc=5"
+              ]
+            }
+          ],
+          "trend_vs_prev": 0
+        }
+      },
+      "evidence": [
+        {
+          "title": "Autostrada A50. W Polsce powstanie 120 km nowej trasy - MotoGuru.pl",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOOENibUd4N081OVVNbEt2Y21HbnRabmNUNDQ0c1BzbEVKLTVqaGo1NlBkcmhZTVZYZFU1QWVldkxVcFFnenBpUXhac194UGUxTkcyZGFxdnVxNjNKVzBFNE43MjlDSW1vd1dyeXlLbWFVcmlMbjZSRTR2TTZtcm5JYnUtTHRkVGhHMFpn?oc=5",
+          "source": "Google News: A50 przebieg",
+          "published": "2026-10-09",
+          "snippet": "<a href=\"https://news.google.com/rss/articles/CBMiiwFBVV95cUxOOENibUd4N081OVVNbEt2Y21HbnRabmNUNDQ0c1BzbEVKLTVqaGo1NlBkcmhZTVZYZFU1QWVldkxVcFFnenBpUXhac194UGUxTkcyZGFxdnVxNjNKVzBFNE43MjlDSW1vd1dyeXlLbWFVcmlMbjZSRTR2TTZtcm5JYnUtTHRkVGhHMFpn?oc=5\" target=\"_blank\">Autostrada A50. W Polsce powstanie 120 km nowej trasy</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MotoGuru.pl</font>",
+          "stance": "neutral"
+        }
+      ],
+      "sources_found": 1,
+      "engine_status": "ok",
+      "assessment_path": "data/assessments/2026-10-09.json"
     }
   ]
 }
