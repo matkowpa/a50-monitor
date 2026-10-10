@@ -1545,6 +1545,66 @@
       "sources_found": 1,
       "engine_status": "ok",
       "assessment_path": "data/assessments/2026-10-09.json"
+    },
+    {
+      "date": "2026-10-10",
+      "scores": {
+        "north": {
+          "score": 37,
+          "confidence": "niska",
+          "summary": "Brak nowych dowodów specyficznych dla północnej części gminy Sobienie-Jeziory; nowy materiał to ogólna petycja przeciw wariantom OAW przez tereny edukacyjno-rekreacyjne, nieprzesądzająca przebiegu.",
+          "rationale": "Poprzednia ocena 37% pozostaje kotwicą. Jedyny nowy dowód to petycja na gov.pl przeciw wariantom 1, 1A, 2, 3 przez tereny edukacji przyrodniczej, rekreacji i terapii; nie wskazuje gminy Sobienie-Jeziory ani północnej strony wsi. Może korespondować z ochroną doliny Wisły, ale jako dokument społecznościowy ma niską wagę i nie zmienia score. Zgodnie z rubryką brak istotnych nowych sygnałów nakazuje utrzymanie 37 i niską confidence.",
+          "key_findings": [
+            {
+              "claim": "Nowy dowód to petycja przeciw wariantom OAW A50 przez tereny edukacji przyrodniczej, rekreacji i terapii, bez odniesienia do gminy Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://www.gov.pl/attachment/766f08f0-f3a2-4358-8b21-5fc6ba92be3d"
+              ]
+            },
+            {
+              "claim": "Petycja nie wskazuje północnej części gminy ani nie potwierdza oficjalnego wariantu przebiegu A50.",
+              "evidence_urls": [
+                "https://www.gov.pl/attachment/766f08f0-f3a2-4358-8b21-5fc6ba92be3d"
+              ]
+            }
+          ],
+          "trend_vs_prev": 0
+        },
+        "south": {
+          "score": 23,
+          "confidence": "niska",
+          "summary": "Brak nowych dowodów dotyczących południowej części gminy Sobienie-Jeziory; nowa petycja ogólna nie zmienia oceny.",
+          "rationale": "Poprzednia ocena 23% pozostaje kotwicą. Nowy materiał nie opisuje Śniadkowa Dolnego/Górnego ani pasa na południe od wsi Sobienie-Jeziory. Petycja przeciw wariantom OAW przez tereny edukacyjne, rekreacyjne i terapeutyczne nie odnosi się do południowego scenariusza. Brak istotnych sygnałów nakazuje utrzymanie 23 i niską confidence.",
+          "key_findings": [
+            {
+              "claim": "Nowy dowód to petycja przeciw wariantom OAW A50 przez tereny edukacji przyrodniczej, rekreacji i terapii, bez odniesienia do południowej części gminy Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://www.gov.pl/attachment/766f08f0-f3a2-4358-8b21-5fc6ba92be3d"
+              ]
+            },
+            {
+              "claim": "Petycja nie wskazuje Śniadkowa Dolnego/Górnego ani nie potwierdza oficjalnego wariantu na południe od wsi.",
+              "evidence_urls": [
+                "https://www.gov.pl/attachment/766f08f0-f3a2-4358-8b21-5fc6ba92be3d"
+              ]
+            }
+          ],
+          "trend_vs_prev": 0
+        }
+      },
+      "evidence": [
+        {
+          "title": "NIE DLA OAW A50 W WARIANTACH 1,1A, 2, 3 PRZEZ TERENY SŁUŻĄCE EDUKACJI PRZYRODNICZEJ, REKREACJI",
+          "url": "https://www.gov.pl/attachment/766f08f0-f3a2-4358-8b21-5fc6ba92be3d",
+          "source": "exa",
+          "published": "",
+          "snippet": "I DZIAŁANIOM TERAPEUTYCZNYM PETYCJA w sprawie planowanych wariantów Obwodnicy Aglomeracji Warszawskiej (ASO) Jako organizacje prowadzące miejsca służące edukacji przyrodniczej, działaniom terapeutycznym oraz rekreacji dzieci i dorosłych, a także jako społeczność tysięcy rodzin z nich korzystających, w obliczu zagrożenia przebiegiem A50 przez gminę Tarczyn, domagamy się odrzucenia wariantów 1, 2, 3",
+          "stance": "neutral"
+        }
+      ],
+      "sources_found": 1,
+      "engine_status": "ok",
+      "assessment_path": "data/assessments/2026-10-10.json"
     }
   ]
 }
