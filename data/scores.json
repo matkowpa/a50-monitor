@@ -1605,6 +1605,74 @@
       "sources_found": 1,
       "engine_status": "ok",
       "assessment_path": "data/assessments/2026-10-10.json"
+    },
+    {
+      "date": "2026-10-11",
+      "scores": {
+        "north": {
+          "score": 37,
+          "confidence": "niska",
+          "summary": "Brak nowych, istotnych dowodów dotyczących północnej strony gminy Sobienie-Jeziory; poprzednia ocena 37% pozostaje kotwicą.",
+          "rationale": "Dwa nowe dowody to petycja obywatelska na Petycjeonline.com oraz ogólne uzasadnienie Ministerstwa Infrastruktury o pracach przygotowawczych do OAW na odcinku DK92–S7. Żaden z nich nie wskazuje wariantu przez północną stronę wsi Sobienie-Jeziory ani nie zawiera oficjalnego komunikatu GDDKiA o korytarzu w tym rejonie. Petycja ma charakter społecznościowy i niską wagę dowodową, a dokument resortu dotyczy innego odcinka OAW. Zgodnie z rubryką brak istotnych nowych sygnałów nakazuje utrzymanie poprzedniego score i niską confidence.",
+          "key_findings": [
+            {
+              "claim": "Petycja obywatelska dotyczy potencjalnego wariantu A50 przez gminę Sobienie-Jeziory, ale nie wskazuje północnej strony wsi ani konkretnego korytarza.",
+              "evidence_urls": [
+                "https://www.petycjeonline.com/stanowisko_w_sprawie_planowanego_przebiegu_drogi_a50_obwodnicy_aglomeracji_warszawskiej_potencjalny_wariant_ktory_moe_przechodzi_przez_teren_gminy_sobienie-jeziory"
+              ]
+            },
+            {
+              "claim": "Uzasadnienie Ministerstwa Infrastruktury opisuje prace przygotowawcze do OAW na odcinku DK92–S7, czyli poza obszarem gminy Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://www.gov.pl/attachment/0d8ce2a8-7669-4581-a166-803dc66caa0e"
+              ]
+            }
+          ],
+          "trend_vs_prev": 0
+        },
+        "south": {
+          "score": 23,
+          "confidence": "niska",
+          "summary": "Brak nowych dowodów odnoszących się do pasa na południe od wsi Sobienie-Jeziory (rejon Śniadkowa Dolnego i Górnego); poprzednia ocena 23% pozostaje aktualna.",
+          "rationale": "Nowe dowody nie opisują Śniadkowa Dolnego ani Górnego ani południowego korytarza gminy Sobienie-Jeziory. Petycja na Petycjeonline.com ma charakter ogólny i społecznościowy, a dokument Ministerstwa Infrastruktury dotyczy odcinka DK92–S7, niezwiązanego z południem gminy. Zgodnie z rubryką brak istotnych sygnałów dla tego scenariusza nakazuje utrzymanie score 23 i niską confidence. Ewentualne przesunięcie korytarza na południe pozostaje hipotezą geometryczną, niepotwierdzoną nowymi źródłami.",
+          "key_findings": [
+            {
+              "claim": "Petycja obywatelska nie odnosi się do południowej części gminy Sobienie-Jeziory ani do rejonu Śniadkowa Dolnego i Górnego.",
+              "evidence_urls": [
+                "https://www.petycjeonline.com/stanowisko_w_sprawie_planowanego_przebiegu_drogi_a50_obwodnicy_aglomeracji_warszawskiej_potencjalny_wariant_ktory_moe_przechodzi_przez_teren_gminy_sobienie-jeziory"
+              ]
+            },
+            {
+              "claim": "Dokument Ministerstwa Infrastruktury dotyczy odcinka OAW od DK92 do S7 i nie wnosi informacji o wariancie południowym w gminie Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://www.gov.pl/attachment/0d8ce2a8-7669-4581-a166-803dc66caa0e"
+              ]
+            }
+          ],
+          "trend_vs_prev": 0
+        }
+      },
+      "evidence": [
+        {
+          "title": "STANOWISKO w sprawie planowanego przebiegu drogi A50 – Obwodnicy Aglomeracji Warszawskiej (potencjalny wariant, który może przechodzić przez teren Gminy Sobienie-Jeziory) - Petycjeonline.com",
+          "url": "https://www.petycjeonline.com/stanowisko_w_sprawie_planowanego_przebiegu_drogi_a50_obwodnicy_aglomeracji_warszawskiej_potencjalny_wariant_ktory_moe_przechodzi_przez_teren_gminy_sobienie-jeziory",
+          "source": "exa",
+          "published": "2026-10-04",
+          "snippet": "STANOWISKO w sprawie planowanego przebiegu drogi A50 – Obwodnicy Aglomeracji Warszawskiej (potencjalny wariant, który może przechodzić przez teren Gminy Sobienie-Jeziory) - Petycjeonline.com # STANOWISKO w sprawie planowanego przebiegu drogi A50 – Obwodnicy Aglomeracji Warszawskiej (potencjalny wariant, który może przechodzić przez teren Gminy Sobienie-Jeziory) G Gmina Sobienie-Jeziory · PL W zwią",
+          "stance": "neutral"
+        },
+        {
+          "title": "Minister Infrastruktury",
+          "url": "https://www.gov.pl/attachment/0d8ce2a8-7669-4581-a166-803dc66caa0e",
+          "source": "exa",
+          "published": "",
+          "snippet": "UZASADNIENIE Aktualnie w ramach prac przygotowawczych do budowy ode. Obwodnicy Aglomeracji Warszawskiej (OAW) od drogi krajowej nr 92 (bez węzła) do drogi ekspresowej S7 trwa etap opracowania dokumentacji Studium Techniczno-Ekonomiczno-Środowiskowego (STEŚ). Co istotne, w ramach aktualnego etapu prac żaden z dotychczas przedstawionych wariantów przebiegu OAW na odcinku od drogi krajowej nr 92 (bez",
+          "stance": "neutral"
+        }
+      ],
+      "sources_found": 2,
+      "engine_status": "ok",
+      "assessment_path": "data/assessments/2026-10-11.json"
     }
   ]
 }
