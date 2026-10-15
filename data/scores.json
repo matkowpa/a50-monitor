@@ -1745,6 +1745,104 @@
       "sources_found": 0,
       "engine_status": "no-new-evidence",
       "assessment_path": "data/assessments/2026-10-14.json"
+    },
+    {
+      "date": "2026-10-15",
+      "scores": {
+        "north": {
+          "score": 37,
+          "confidence": "niska",
+          "summary": "Brak nowych dowodów dotyczących wschodniego odcinka OAW lub gminy Sobienie-Jeziory; utrzymuję poprzednią ocenę 37%.",
+          "rationale": "Nowe materiały dotyczą zachodniego odcinka OAW (DK92–S7), w tym gminy Pniewy i wyboru biura TRAKT, a nie rejonu Sobienie-Jezior. Pismo sejmowe ma charakter ogólny i nie wskazuje wariantu przez gminę. Zgodnie z rubryką brak istotnych nowych sygnałów nakazuje utrzymanie poprzedniego score i niską confidence. Ewentualne przesunięcie oceny wymagałoby oficjalnego komunikatu GDDKiA o wariantach odcinka wschodniego.",
+          "key_findings": [
+            {
+              "claim": "Nowe dowody [1] i [2] dotyczą gminy Pniewy i zachodniego odcinka OAW, nie gminy Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://pniewy.pl/cms/8987/autostrada_a50",
+                "https://cms-v2-files.idcom-jst.pl/sites/117/cms/szablony/8987/pliki/oawa50_war2fioletowy_08_pniewy_ark06.pdf"
+              ]
+            },
+            {
+              "claim": "Wybór biura TRAKT [3] dotyczy odcinka S50/A50 między DK92 i S7, czyli zachodniej części OAW.",
+              "evidence_urls": [
+                "https://www.gov.pl/web/gddkia-warszawa/wybralismy-pierwsze-biuro-projektowe-dla-obwodnicy-aglomeracji-warszawskiej"
+              ]
+            },
+            {
+              "claim": "Pismo sejmowe [4] ogólnie wspiera OAW, ale nie rozstrzyga przebiegu przez północną część gminy Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://sejm.gov.pl/INT9.nsf/klucz/ATTCV7GYC/%24FILE/i42855-o1.pdf"
+              ]
+            }
+          ],
+          "trend_vs_prev": 0
+        },
+        "south": {
+          "score": 23,
+          "confidence": "niska",
+          "summary": "Brak nowych dowodów o wariancie południowym; utrzymuję poprzednią ocenę 23%.",
+          "rationale": "Nowe dowody odnoszą się do zachodniego odcinka OAW i gminy Pniewy, a nie do południowej części gminy Sobienie-Jeziory. Wybór projektanta TRAKT oraz materiały STEŚ dotyczą odcinka DK92–S7, więc nie zmieniają oceny wariantu południowego. Pismo sejmowe nie zawiera rozstrzygnięć lokalizacyjnych dla wschodniego odcinka. Brak nowych, istotnych sygnałów uzasadnia utrzymanie score 23% i niską confidence.",
+          "key_findings": [
+            {
+              "claim": "Nowe dowody [1] i [2] dotyczą gminy Pniewy i zachodniego odcinka OAW, nie południowej części gminy Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://pniewy.pl/cms/8987/autostrada_a50",
+                "https://cms-v2-files.idcom-jst.pl/sites/117/cms/szablony/8987/pliki/oawa50_war2fioletowy_08_pniewy_ark06.pdf"
+              ]
+            },
+            {
+              "claim": "Wybór biura TRAKT [3] dotyczy odcinka S50/A50 między DK92 i S7, czyli zachodniej części OAW.",
+              "evidence_urls": [
+                "https://www.gov.pl/web/gddkia-warszawa/wybralismy-pierwsze-biuro-projektowe-dla-obwodnicy-aglomeracji-warszawskiej"
+              ]
+            },
+            {
+              "claim": "Pismo sejmowe [4] ogólnie wspiera OAW, ale nie rozstrzyga przebiegu przez południową część gminy Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://sejm.gov.pl/INT9.nsf/klucz/ATTCV7GYC/%24FILE/i42855-o1.pdf"
+              ]
+            }
+          ],
+          "trend_vs_prev": 0
+        }
+      },
+      "evidence": [
+        {
+          "title": "Autostrada A50 - Gmina Pniewy",
+          "url": "https://pniewy.pl/cms/8987/autostrada_a50",
+          "source": "exa",
+          "published": "",
+          "snippet": "Drodzy Mieszkańcy Gminy Pniewy zach ... camy do przesyłania Państwa uwag, sugestii i spostrzeżeń dotyczących przebiegu A50 przez teren naszej gminy na specjalny adres mailowy: a50@pniewy.pl utworzony przez Urząd Gminy Pniewy do zbierania Państwa opinii. Stanowisko Wójta Gminy Pniewy w sprawie Obwodnicy Aglomeracji Warszawskiej (pobierz) Pismo GDDKiA z dnia 20.04.2023 w sprawie OAW - odpowiedź na s",
+          "stance": "neutral"
+        },
+        {
+          "title": "DG 160907W",
+          "url": "https://cms-v2-files.idcom-jst.pl/sites/117/cms/szablony/8987/pliki/oawa50_war2fioletowy_08_pniewy_ark06.pdf",
+          "source": "exa",
+          "published": "",
+          "snippet": "02.06 / STEŚ-01 PLAN SYTUACYJNY OD KM 44+000 DO KM 53+000 Studium Techniczno-Ekonomiczno-Środowiskowe wraz z uzyskaniem Decyzji o Środowiskowych Uwarunkowaniach dla zadania „Obwodnica Aglomeracji Warszawskiej, odcinek od DK92 (bez węzła) do S7 (z węzłem)” BRANŻA STEŚ DROGOWA",
+          "stance": "neutral"
+        },
+        {
+          "title": "Wybraliśmy pierwsze biuro projektowe dla Obwodnicy Aglomeracji Warszawskiej - Generalna Dyrekcja Dróg Krajowych i Autostrad- Oddział Warszawa - Portal Gov.pl",
+          "url": "https://www.gov.pl/web/gddkia-warszawa/wybralismy-pierwsze-biuro-projektowe-dla-obwodnicy-aglomeracji-warszawskiej",
+          "source": "exa",
+          "published": "",
+          "snippet": "Oferta firmy TRAKT została wybrana jako najkorzystniejsza w przetargu na opracowanie Studium techniczno-ekonomiczno-środowiskowego wraz z uzyskaniem decyzji środowiskowej dla S50/A50 pomiędzy DK92 i S7 na południe od Stolicy. To jeden z dwóch odcinków pierwszego, zachodniego fragmentu Obwodnicy Aglomeracji Warszawskiej, które połączą S10 w okolicy Naruszewa pod Płońskiem z S7 na południe od Warsza",
+          "stance": "neutral"
+        },
+        {
+          "title": "Szanowna Pani Elżbieta Witek Marszałek Sejmu Rzeczypospolitej Polskiej",
+          "url": "https://sejm.gov.pl/INT9.nsf/klucz/ATTCV7GYC/%24FILE/i42855-o1.pdf",
+          "source": "exa",
+          "published": "",
+          "snippet": "Zaznaczam, że Obwodnica Aglomeracji Warszawskiej (OAW) to niewątpliwie jedna z kluczowych inwestycji transportowych nie tylko w skali regionu, ale i całego kraju, w związku z czym pragnę podkreślić wagę i potrzebę realizacji tej inwestycji. Wykonane analizy w ramach Studium korytarzowego potwierdziły zasadność realizacji OAW oraz pozwoliły wskazać kierunek dalszego uszczegółowiania w ramach kolejn",
+          "stance": "neutral"
+        }
+      ],
+      "sources_found": 4,
+      "engine_status": "ok",
+      "assessment_path": "data/assessments/2026-10-15.json"
     }
   ]
 }
