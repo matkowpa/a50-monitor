@@ -1,0 +1,43 @@
+{
+  "generated_at": "2026-10-16T10:01:52.117077+00:00",
+  "status": "ok",
+  "backend": "agent-reach/exa.web_search_exa via mcporter",
+  "queries": [
+    "oficjalne stanowisko lub uchwała gminy Sobienie-Jeziory i sąsiednich gmin w sprawie przebiegu autostrady A50 (Obwodnicy Aglomeracji Warszawskiej) przez ich teren",
+    "aktualne komunikaty GDDKiA o wariantach przebiegu autostrady A50 / Obwodnicy Aglomeracji Warszawskiej na południe i południowy wschód od Warszawy",
+    "artykuł prasowy o planowanym przebiegu drogi A50 przez gminę Sobienie-Jeziory w powiecie otwockim — protesty mieszkańców i sadowników",
+    "analiza Studium Techniczno-Ekonomiczno-Środowiskowego (STEŚ) i wybór wariantu Obwodnicy Aglomeracji Warszawskiej wraz z przeprawą mostową przez Wisłę",
+    "wypowiedź samorządowca lub posła o trasie A50/S50 w powiatach otwockim, grójeckim i piaseczyńskim — węzeł Kołbiel, Góra Kalwaria, Celestynów"
+  ],
+  "errors": [],
+  "items": [
+    {
+      "title": "A50 a nasza gmina — sprawdziliśmy, co naprawdę wiadomo",
+      "url": "https://sobienie.pl/aktualnosci/a50-a-nasza-gmina-sprawdzilismy-co-naprawde-wiadomo",
+      "source": "exa",
+      "published": "2026-09-08",
+      "snippet": "obejmują obszarów na Do tego doszły oczekiwania sąsiadów, i część z nich jest na piśmie. 20 marca 2026 r. burmistrz Góry Kalwarii wystąpił do GDDKiA, popierając stanowisko samorządów z powiatów grójeckiego i piaseczyńskiego: obwodnica wzdłuż granic administracyjnych powiatów, odsunięta na południe, z możliwie największą częścią gminy wewnątrz ringu. W sierpniu gmina Wiązowna zaczęła postulować, że"
+    },
+    {
+      "title": "Co dalej z obwodnicą wokół Warszawy w powiecie otwockim?",
+      "url": "https://www.przegladotwocki.pl/artykul/4733,co-dalej-z-obwodnica-wokol-warszawy-w-powiecie-otwockim",
+      "source": "exa",
+      "published": "2026-02-21",
+      "snippet": "Powiat otwocki został uwzględniony w planach budowy Obwodnicy Aglomeracji Warszawskiej (OAW), jednej z największych inwestycji drogowych przygotowywanych obecnie w Polsce. Według propozycji nowa trasa miałaby przycinać m.in. tereny chronione, park krajobrazowy (gm. Celestynów) czy w miejscach, gdzie obwodnica miałaby podzielić małe miejscowości na pół np. Glinki (gm. Karczew) czy Malcanów (gm. Wią"
+    },
+    {
+      "title": "Wschodnia część OAW w powiecie otwockim. Nowe perspektywy?",
+      "url": "https://www.przegladotwocki.pl/artykul/1382,wschodnia-czesc-oaw-w-powiecie-otwockim-nowe-perspektywy",
+      "source": "exa",
+      "published": "2023-12-13",
+      "snippet": "Generalna Dyrekcja Dróg Krajowych i Autostrad przymierza się do zaprojektowania i zbudowania Obwodnicy Aglomeracji Warszawskiej (trasa A50). Prace trwają od kilku lat, bo proponowane warianty wzbudzają gorące emocje w mieszkańcach m.in. powiatu otwockiego. Według propozycji nowa trasa miałaby przycinać m.in. tereny chronione, park krajobrazowy (gm. Celestynów) czy w miejscach, gdzie obwodnica miał"
+    },
+    {
+      "title": "Interpelacja nr 22190 - tekst - Sejm Rzeczypospolitej Polskiej",
+      "url": "https://www.sejm.gov.pl/Sejm9.nsf/InterpelacjaTresc.xsp?key=BZVARM",
+      "source": "exa",
+      "published": "",
+      "snippet": "mieszkańcy powiatu otwockiego zwrócili się do mnie z prośbą o wsparcie ich działań zmierzających do zmiany przebiegu Obwodnicy Aglomeracji Warszawskiej (OAW) na odcinku most na Wiśle – Mińsk Mazowiecki oraz zmiany charakteru tej drogi ze standardu autostrady (A50) na standard drogi ekspresowej (S50). W ramach studium korytarzowego OAW GDDKiA wybrała do dalszych prac tzw. korytarz czerwony, przebie"
+    }
+  ]
+}
