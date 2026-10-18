@@ -1935,6 +1935,74 @@
       "sources_found": 2,
       "engine_status": "ok",
       "assessment_path": "data/assessments/2026-10-17.json"
+    },
+    {
+      "date": "2026-10-18",
+      "scores": {
+        "north": {
+          "score": 37,
+          "confidence": "niska",
+          "summary": "Brak nowych, istotnych dowodów dla północnej strony gminy Sobienie-Jeziory; utrzymuję poprzedni score 37%.",
+          "rationale": "Nowe dowody nie zawierają oficjalnego wskazania wariantu przez północną stronę gminy. Dowód GDDKiA dotyczy odcinka DK92–S7, czyli zachodniej części OAW, a nie gminy Sobienie-Jeziory. Drugi materiał to ogólny, stary dokument o poszukiwaniu innego przebiegu dla części wschodniej, bez rozstrzygnięcia północ versus południe. Zgodnie z rubryką brak istotnych nowych sygnałów oznacza utrzymanie poprzedniego score i niską confidence.",
+          "key_findings": [
+            {
+              "claim": "Oficjalny materiał GDDKiA dotyczy odcinka DK92–S7, czyli zachodniej części OAW, i nie przesądza przebiegu przez północną część gminy Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8"
+              ]
+            },
+            {
+              "claim": "Dokument o historii AOW/S50 z 2022 r. mówi ogólnie o poszukiwaniu innego przebiegu dla części wschodniej, bez wskazania wariantu północnego w gminie Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://serock.treespot.pl/media/pdf/22458.pdf"
+              ]
+            }
+          ],
+          "trend_vs_prev": 0
+        },
+        "south": {
+          "score": 23,
+          "confidence": "niska",
+          "summary": "Brak nowych, istotnych dowodów dla południowej strony gminy Sobienie-Jeziory; utrzymuję poprzedni score 23%.",
+          "rationale": "Nowe dowody nie odnoszą się do wariantu prowadzącego na południe od wsi Sobienie-Jeziory. Dowód GDDKiA opisuje odcinek DK92–S7, czyli zachodnią część OAW, a nie analizowany obszar. Drugi materiał z 2022 r. jest ogólny i nie wskazuje korytarza przez południową część gminy. Zgodnie z rubryką brak nowych, istotnych sygnałów nakazuje utrzymanie poprzedniego score i niską confidence.",
+          "key_findings": [
+            {
+              "claim": "Oficjalny materiał GDDKiA o odcinku DK92–S7 nie odnosi się do południowej części gminy Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8"
+              ]
+            },
+            {
+              "claim": "Materiał o historii AOW/S50 z 2022 r. nie wskazuje wariantu na południe od wsi Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://serock.treespot.pl/media/pdf/22458.pdf"
+              ]
+            }
+          ],
+          "trend_vs_prev": 0
+        }
+      },
+      "evidence": [
+        {
+          "title": "A50/S50 Obwodnica Aglomeracji Warszawskiej odcinek DK92 - S7 - Generalna Dyrekcja Dróg Krajowych i Autostrad - Portal Gov.pl",
+          "url": "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8",
+          "source": "exa",
+          "published": "",
+          "snippet": "A50/S50 Obwodnica Aglomeracji Warszawskiej odcinek DK92 - S7 - Generalna Dyrekcja Dróg Krajowych i Autostrad - Portal Gov.pl ## A50/S50 Obwodnica Aglomeracji Warszawskiej odcinek DK92 - S7 Podstawowe informacje Nr drogi : A50 / S50 Nazwa odcinka : Obwodnica Aglomeracji Warszawskiej odcinek DK92 - S7 System realizacji : Projektuj i Buduj Program : Rządowy Program Budowy Dróg Krajowych do 2030 r. (z",
+          "stance": "neutral"
+        },
+        {
+          "title": "OBWODNICA AGLOMERACJI WARSZAWSKIEJ ODCINEK S50",
+          "url": "https://serock.treespot.pl/media/pdf/22458.pdf",
+          "source": "exa",
+          "published": "",
+          "snippet": "Historia AOW/S50 2022 r GDDKiA ogłasza STEŚ tylko dla ZACHODNIEJ części obwodnicy, dla części WSCHODNIEJ poszukiwany będzie inny przebieg trasy. serock.pl Lipiec 2022 r. Rozpoczęcie prac nad STEŚ dla S50 dla zachodniej strony warszawy. OAW Obecnie OAW Kolejne kroki OAW/S50 serock.pl 02.2026 Oferty –11 podmiotów złożyło oferty (w przypadku braku odwołań) Połowa 2026 r. Planowane podpisanie umowy 31",
+          "stance": "neutral"
+        }
+      ],
+      "sources_found": 2,
+      "engine_status": "ok",
+      "assessment_path": "data/assessments/2026-10-18.json"
     }
   ]
 }
