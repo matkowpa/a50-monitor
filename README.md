@@ -63,7 +63,12 @@ GitHub Actions (cron 6:30 PL) lub lokalnie z Cline (/a50-daily)
   obecnie `deepseek/deepseek-v4.1-flash`) ocenia dowody wg sztywnej rubryki,
   **osobno dla dwóch scenariuszy** — trasa przez północną część gminy
   (na północ od wsi, kierunek Wisły/Natura 2000) lub przez południową
-  (na południe od wsi, rejon Śniadków). Wagi dowodów:
+  (na południe od wsi, rejon Śniadków). Każdy scenariusz to **osobne
+  wywołanie modelu** z własnym punktem wyjścia i własnym uzasadnieniem —
+  wspólny prompt z dwoma score'ami kończył się kopiowaniem tej samej
+  delty (korelacja obu ocen 1,0). Awaria jednej strony nie blokuje
+  raportu: ta strona dostaje poprzednią wartość z confidence „niska”,
+  a powód trafia do pola `assess_errors` w assessmencie. Wagi dowodów:
   oficjalne komunikaty GDDKiA/ministerstw > uchwały samorządów > media
   ogólnopolskie > media lokalne > social media. Faktograficznie: wieś
   Sobienie-Jeziory leży na DW801/DW739, a DK50 biegnie na północ od

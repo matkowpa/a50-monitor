@@ -195,83 +195,128 @@ def seen_evidence_urls(day: str, directory: Path | None = None,
 
 # ------------------------------------------------------------------- prompt
 
+SCENARIO_GEOMETRY = {
+    "north": (
+        "SCENARIUSZ PÓŁNOC: trasa prowadzi przez północną część gminy — pas "
+        "między wsią Sobienie-Jeziory a doliną Wisły (tereny zalewowe, "
+        "Natura 2000 Dolina Środkowej Wisły), łącznie z nowym śladem przez "
+        "środkowo-północny pas gminy."
+    ),
+    "south": (
+        "SCENARIUSZ POŁUDNIE: trasa prowadzi przez południową część gminy — "
+        "na południe od wsi Sobienie-Jeziory (rejon Śniadkowa Dolnego "
+        "i Górnego), otwarty płaskowyż rolniczy ku południowej granicy gminy."
+    ),
+}
+
+# Skąd bierze się score bazowy danego scenariusza (analiza nr 2).
+SCENARIO_BASELINE_NOTE = {
+    "north": ("analiza nr 2: obwodnica wsi po stronie północnej ~10–12% "
+              "+ nowy ślad przez środkowo-północny pas gminy ~30–35%"),
+    "south": "analiza nr 2: korytarz DK50 z obwodnicą wsi po stronie południowej ~25–30%",
+}
+
+
 def build_prompt(evidence: list[Evidence], prev_entry: dict | None, cfg: dict,
-                 analyses: str = "") -> str:
-    prev_scores = ""
-    if prev_entry:
-        prev_s = prev_entry.get("scores") or {}
-        prev_scores = (
-            f"score północ={prev_s.get('north', {}).get('score')}, "
-            f"południe={prev_s.get('south', {}).get('score')}, "
-            f"confidence północ={prev_s.get('north', {}).get('confidence')}, "
-            f"południe={prev_s.get('south', {}).get('confidence')}"
-        )
+                 analyses: str = "", scenario: str = "north") -> str:
+    """Prompt oceny JEDNEGO scenariusza (północ albo południe).
+
+    Każdy scenariusz oceniamy osobnym wywołaniem modelu: wspólny prompt
+    z dwoma score'ami kończył się kopiowaniem delty (korelacja 1,0), bo model
+    traktował oba jak jedną ocenę z przesunięciem. Osobny kontekst i osobny
+    punkt wyjścia wymuszają osobne uzasadnienie.
+    """
+    if scenario not in SCENARIO_GEOMETRY:
+        raise ValueError(f"nieznany scenariusz: {scenario!r}")
+    baseline = cfg.get("baseline_scores") or {}
+    base = baseline.get(scenario)
+    prev_sc = ((prev_entry or {}).get("scores") or {}).get(scenario) or {}
     lines = [
         "Jesteś analitykiem oceniającym planowaną południową obwodnicę "
         "autostradową Warszawy (A50/OAW) i szansę, że jej finalny przebieg "
         f"przetnie teren gminy {cfg.get('focus', 'Sobienie-Jeziory')} "
-        "(woj. mazowieckie, powiat otwocki). Ocenasz DWA niezależne "
-        "scenariusze przebiegu:",
-        "1) SCENARIUSZ PÓŁNOC: trasa prowadzi przez północną część gminy — "
-        "na północ od wsi Sobienie-Jeziory (pas między wsią a doliną Wisły: "
-        "tereny zalewowe, Natura 2000 Dolina Środkowej Wisły), łącznie "
-        "z nowym śladem przez środkowo-północny pas gminy.",
-        "2) SCENARIUSZ POŁUDNIE: trasa prowadzi przez południową część "
-        "gminy — na południe od wsi Sobienie-Jeziory (rejon m.in. "
-        "Śniadkowa Dolnego i Górnego; otwarty płaskowyż rolniczy ku "
-        "południowej granicy gminy).",
-        "Kontekst geograficzny: wieś Sobienie-Jeziory leży na drogach "
-        "wojewódzkich 801 i 739, w środkowej części gminy. DK50 biegnie "
-        "NA PÓŁNOC od gminy — od Góry Kalwarii (nowy most Nadwiślańskiego "
-        "Urzecza) przez Ostrówek i Piotrowice (gmina Karczew) oraz Tabor "
-        "i Regut (gmina Celestynów) do Kołbiela — i nie przecina gminy. "
-        "Północną granicę gminy wyznacza dolina Wisły (tereny zalewowe, "
-        "Natura 2000); na południe od wsi leżą m.in. Śniadków Dolny "
-        "i Górny. UWAGA: teksty analiz eksperckich poniżej zakładają "
-        "starszy, nieaktualny przebieg DK50 przez gminę — w razie "
-        "sprzeczności stosuj niniejszy kontekst.",
+        "(woj. mazowieckie, powiat otwocki). Oceniasz WYŁĄCZNIE jeden "
+        "scenariusz przebiegu:",
+        SCENARIO_GEOMETRY[scenario],
         "",
-        "NOWE DOWODY (nieobecne w poprzednich ocenach; media, Reddit, YouTube, RSS):",
+        "Kontekst geograficzny (obowiązuje nawet gdy źródła mówią inaczej): "
+        "wieś Sobienie-Jeziory leży na drogach wojewódzkich 801 i 739, "
+        "w środkowej części gminy. DK50 biegnie NA PÓŁNOC od gminy — od Góry "
+        "Kalwarii (nowy most Nadwiślańskiego Urzecza) przez Ostrówek "
+        "i Piotrowice (gmina Karczew) oraz Tabor i Regut (gmina Celestynów) "
+        "do Kołbiela — i nie przecina gminy. Północną granicę gminy wyznacza "
+        "dolina Wisły (tereny zalewowe, Natura 2000); na południe od wsi leżą "
+        "m.in. Śniadków Dolny i Górny. UWAGA: teksty analiz eksperckich "
+        "poniżej zakładają starszy, nieaktualny przebieg DK50 przez gminę — "
+        "w razie sprzeczności stosuj niniejszy kontekst.",
+        "",
+        "NOWE DOWODY (nieobecne w ocenach z ostatnich dni; media, Reddit, "
+        "YouTube, RSS):",
     ]
     for i, ev in enumerate(evidence, 1):
         lines.append(f"[{i}] {ev.title} | {ev.source} | {ev.published or 'b.d.'} | "
                      f"{ev.url} | {ev.snippet[:200]}")
     lines.append("")
-    baseline = cfg.get("baseline_scores") or {}
     lines.append("PUNKT WYJŚCIA — ANALIZY EKSPERCKIE:")
-    lines.append(f"- Score bazowy PÓŁNOC: {baseline.get('north', '?')}% "
-                 "(analiza nr 2: obwodnica wsi po stronie północnej ~10–12% "
-                 "+ nowy ślad przez środkowo-północny pas gminy ~30–35%).")
-    lines.append(f"- Score bazowy POŁUDNIE: {baseline.get('south', '?')}% "
-                 "(analiza nr 2: korytarz DK50 z obwodnicą wsi po stronie "
-                 "południowej ~25–30%).")
+    lines.append(f"- Score bazowy dla tego scenariusza: "
+                 f"{base if base is not None else '?'}% ({SCENARIO_BASELINE_NOTE[scenario]}).")
     if analyses:
         lines.append("- Pełne teksty analiz:")
         lines.append(analyses)
     lines.append("")
     if prev_entry:
-        lines.append(f"POPRZEDNIA OCENA ({prev_entry.get('date')}): "
-                     f"{prev_scores}. "
-                     f"Uzasadnienie północ: {(prev_s.get('north') or {}).get('rationale', '')[:400]}. "
-                     f"Uzasadnienie południe: {(prev_s.get('south') or {}).get('rationale', '')[:400]}")
+        lines.append(f"POPRZEDNIA OCENA TEGO SCENARIUSZA ({prev_entry.get('date')}): "
+                     f"score={prev_sc.get('score')}, "
+                     f"confidence={prev_sc.get('confidence')}. "
+                     f"Uzasadnienie: {(prev_sc.get('rationale') or '')[:400]}")
     else:
         lines.append("POPRZEDNIA OCENA: brak (pierwsza ocena).")
-    lines.append("""
-RUBRYKA (osobno dla PÓŁNOC i POŁUDNIE):
-- score 0-100 = Twoja ocena prawdopodobieństwa (w %), że finalny przebieg A50 przetnie DANĄ stronę gminy Sobienie-Jeziory (północną lub południową względem wsi Sobienie-Jeziory).
-- Punktem wyjścia są score bazowe z analiz eksperckich (oraz poprzednia ocena). Codzienne dowody modyfikują score; wnioski obu analiz są kotwicą — wyraźne odstępstwo od nich wymaga mocnych, oficjalnych dowodów (komunikat GDDKiA, wskazanie wariantu, DŚU, przetarg). Brak nowych dowodów → utrzymanie poprzednich wartości.
+    lines.append(f"""
+RUBRYKA (dotyczy wyłącznie scenariusza {scenario.upper()}):
+- score 0-100 = Twoja ocena prawdopodobieństwa (w %), że finalny przebieg A50 przetnie tą stronę gminy Sobienie-Jeziory, którą opisuje scenariusz powyżej.
+- Punktem wyjścia jest score bazowy z analiz eksperckich oraz poprzednia ocena TEGO scenariusza. Codzienne dowody modyfikują score; wnioski analiz są kotwicą — wyraźne odstępstwo wymaga mocnych, oficjalnych dowodów (komunikat GDDKiA, wskazanie wariantu, DŚU, przetarg).
+- NIE oceniasz drugiego scenariusza i nie próbuj zachować jakiejkolwiek relacji między ich wartościami. Nie stosuj tej samej delty do obu stron; każda strona ma własne prawdopodobieństwo i własne uzasadnienie.
+- Dowód dotyczący wyłącznie przeciwnej strony gminy nie zmienia tego score (może co najwyżej obniżyć confidence).
 - Wagi dowodów (od najsilniejszych): oficjalne komunikaty GDDKiA / ministerstw / rządu > uchwały i stanowiska samorządów (gminnych, powiatowych, marszałkowskich) > główne media ogólnopolskie > media lokalne > social media / sentyment.
-- Kluczowe ogniwo: wariant przebiegu. Oficjalne potwierdzenie wariantu omijającego gminę albo prowadzącego przez jej środek/inną stronę => score danego scenariusza niski. Oficjalny proces wskazujący korytarz przez daną stronę gminy (studium, raport OOŚ, decyzja środowiskowa, przetarg) => score tego scenariusza wyższy.
-- Dowody mogą mówić o jednej stronie gminy i nic nie wnosić o drugiej — wtedy oceniaj samodzielnie geometrycznie (Wisła/Natura 2000 na północy, DK50 środkiem, otwarte tereny rolnicze na południu) i nisko ustaw confidence danej strony.
+- Kluczowe ogniwo: wariant przebiegu. Oficjalne potwierdzenie wariantu omijającego gminę albo prowadzącego przez jej środek/inną stronę => score tego scenariusza niski. Oficjalny proces wskazujący korytarz przez tę stronę gminy (studium, raport OOŚ, decyzja środowiskowa, przetarg) => score wyższy.
 - Dowody sprzeczne lub nieliczne => obniż confidence i trzymaj score blisko poprzedniego.
-- Score modyfikuj WYŁĄCZNIE w oparciu o NOWE dowody z listy powyżej — wcześniejsze ustalenia są już odzwierciedlone w poprzedniej ocenie. Przy każdym dowodzie jest data publikacji: dowody starsze niż 30 dni są odfiltrowane przed oceną, a stare doniesienia (sprzed wielu dni) nie powinny przesuwać score.
-- Brak nowych, istotnych dowodów => score = poprzedni (osobno dla północy i południa), confidence = "niska", wyraźnie zaznacz brak nowych sygnałów.
+- Score modyfikuj WYŁĄCZNIE w oparciu o NOWE dowody z listy powyżej — wcześniejsze ustalenia są już odzwierciedlone w poprzedniej ocenie. Dowody starsze niż 30 dni są odfiltrowane przed oceną.
+- Brak nowych, istotnych dowodów => score = poprzedni (lub bazowy), confidence = "niska", wyraźnie zaznacz brak nowych sygnałów.
 - KAŻDY claim w key_findings MUSI mieć evidence_urls wyłącznie z listy dowodów powyżej. Nie wymyślaj URL-i.
 - Pisz po polsku.
 
-ODPOWIEDŹ: wyłącznie JSON dokładnie wg schematu (bez ogrodzeń markdown; wewnątrz wartości tekstowych NIE używaj znaku " — cytuj polskimi cudzysłowami „…”; max 5 pozycji w key_findings per scenariusz; summary ≤ 2 zdania; rationale ≤ 4 zdania):
-{"scores": {"north": {"score": <int 0-100>, "confidence": "<niska|średnia|wysoka>", "summary": "<1-2 zdania>", "rationale": "<pełne uzasadnienie, 3-6 zdań>", "key_findings": [{"claim": "<...>", "evidence_urls": ["<url z dowodów>"]}]}, "south": {...analogicznie...}}}""")
+ODPOWIEDŹ: wyłącznie JSON dokładnie wg schematu (bez ogrodzeń markdown; wewnątrz wartości tekstowych NIE używaj znaku " — cytuj polskimi cudzysłowami „…”; max 5 pozycji w key_findings; summary ≤ 2 zdania; rationale ≤ 4 zdania):
+{{"score": <int 0-100>, "confidence": "<niska|średnia|wysoka>", "summary": "<1-2 zdania>", "rationale": "<pełne uzasadnienie, 3-6 zdań>", "key_findings": [{{"claim": "<...>", "evidence_urls": ["<url z dowodów>"]}}]}}""")
     return "\n".join(lines)
+
+
+def parse_scenario(data: dict, prev_sc: dict | None) -> dict:
+    """Waliduje odpowiedź modelu dla jednego scenariusza."""
+    if not isinstance(data, dict):
+        raise ValueError("odpowiedź LLM nie jest obiektem JSON")
+    score = data.get("score")
+    try:
+        score = int(round(float(score)))
+    except (TypeError, ValueError):
+        raise ValueError("brak/nieliczbowy score w odpowiedzi LLM") from None
+    score = max(0, min(100, score))
+    confidence = data.get("confidence") or "niska"
+    if confidence not in CONFIDENCE_LEVELS:
+        confidence = "niska"
+    prev_score = (prev_sc or {}).get("score")
+    findings = []
+    for f in data.get("key_findings") or []:
+        if isinstance(f, dict) and _clean(f.get("claim")):
+            urls = [u for u in (f.get("evidence_urls") or []) if _clean(u)]
+            findings.append({"claim": _clean(f["claim"]), "evidence_urls": urls})
+    return {
+        "score": score,
+        "confidence": confidence,
+        "summary": _clean(data.get("summary")) or "Brak opisu.",
+        "rationale": _clean(data.get("rationale")) or "Brak uzasadnienia.",
+        "key_findings": findings,
+        "trend_vs_prev": (score - prev_score) if isinstance(prev_score, int) else 0,
+    }
 
 
 def _json_continues(text: str, j: int) -> bool:
@@ -437,41 +482,6 @@ def call_openrouter(prompt: str, api_key: str, model: str, timeout: int = 180) -
 
 # --------------------------------------------------------------- parsowanie
 
-def parse_assessment(data: dict, prev_entry: dict | None) -> dict:
-    prev_scores = (prev_entry.get("scores") or {}) if prev_entry else {}
-    out = {}
-    for key, _label in SCENARIOS:
-        data_sc = data.get("scores", {}).get(key)
-        if not isinstance(data_sc, dict):
-            raise ValueError(f"brak sekcji scores.{key} w odpowiedzi LLM")
-        score = data_sc.get("score")
-        try:
-            score = int(round(float(score)))
-        except (TypeError, ValueError):
-            raise ValueError(
-                f"brak/nieliczbowy score w scores.{key} w odpowiedzi LLM") from None
-        score = max(0, min(100, score))
-        confidence = data_sc.get("confidence") or "niska"
-        if confidence not in CONFIDENCE_LEVELS:
-            confidence = "niska"
-        prev_score = (prev_scores.get(key) or {}).get("score")
-        trend = (score - prev_score) if isinstance(prev_score, int) else 0
-        findings = []
-        for f in data_sc.get("key_findings") or []:
-            if isinstance(f, dict) and _clean(f.get("claim")):
-                urls = [u for u in (f.get("evidence_urls") or []) if _clean(u)]
-                findings.append({"claim": _clean(f["claim"]), "evidence_urls": urls})
-        out[key] = {
-            "score": score,
-            "confidence": confidence,
-            "summary": _clean(data_sc.get("summary")) or "Brak opisu.",
-            "rationale": _clean(data_sc.get("rationale")) or "Brak uzasadnienia.",
-            "key_findings": findings,
-            "trend_vs_prev": trend,
-        }
-    return {"scores": out}
-
-
 def prev_entry_before(entries: list[dict], day: str) -> dict | None:
     earlier = [e for e in entries if e.get("date", "") < day]
     return earlier[-1] if earlier else None
@@ -506,6 +516,56 @@ def no_evidence_entry(day: str, prev: dict | None, status: str,
         "sources_found": 0,
         "engine_status": status, "assessment_path": "",
     }
+
+
+def assess_scenarios(evidence: list[Evidence], prev: dict | None, cfg: dict,
+                     api_key: str, analyses: str) -> tuple[dict, list[str]]:
+    """Ocenia każdy scenariusz osobnym wywołaniem modelu.
+
+    Zwraca (scores, błędy). Awaria jednego scenariusza nie zabija raportu:
+    ta strona dostaje poprzednią wartość z confidence „niska”, a powód ląduje
+    w `assess_errors`. Gdy padną oba — wyjątek (workflow ma być czerwony).
+    """
+    model = cfg.get("openrouter_model", "google/gemini-2.5-flash")
+    baseline = cfg.get("baseline_scores") or {}
+    prev_scores = (prev or {}).get("scores") or {}
+    scores: dict = {}
+    errors: list[str] = []
+    for key, _label in SCENARIOS:
+        prev_sc = prev_scores.get(key) or {}
+        prompt = build_prompt(evidence, prev, cfg, analyses, scenario=key)
+        parsed = None
+        for attempt in (1, 2, 3):
+            content, finish = call_openrouter(prompt, api_key, model)
+            try:
+                parsed = parse_scenario(extract_json(content), prev_sc)
+                break
+            except (json.JSONDecodeError, ValueError) as exc:
+                print(f"[assess] ostrzeżenie ({key}): JSON LLM niepoprawny "
+                      f"(próba {attempt}/3, finish_reason={finish}): {exc}",
+                      file=sys.stderr)
+        if parsed is None:
+            fallback = prev_sc.get("score")
+            if not isinstance(fallback, int):
+                fallback = baseline.get(key) if isinstance(baseline.get(key), int) else 50
+            errors.append(f"{key}: brak poprawnej odpowiedzi modelu — "
+                          f"utrzymano poprzednią ocenę ({fallback}%)")
+            print(f"[assess] BŁĄD ({key}): 3× niepoprawny JSON — "
+                  f"utrzymuję {fallback}%", file=sys.stderr)
+            parsed = {
+                "score": fallback, "confidence": "niska",
+                "summary": ("Ocena modelu nie powiodła się — utrzymuję "
+                            f"poprzednią wartość ({fallback}%)."),
+                "rationale": ("Brak poprawnej odpowiedzi modelu dla tego "
+                              "scenariusza; score niezmieniony."),
+                "key_findings": [],
+                "trend_vs_prev": ((fallback - prev_sc["score"])
+                                  if isinstance(prev_sc.get("score"), int) else 0),
+            }
+        scores[key] = parsed
+    if len(errors) == len(SCENARIOS):
+        raise RuntimeError("OpenRouter: żaden scenariusz nie został oceniony")
+    return {"scores": scores}, errors
 
 
 # -------------------------------------------------------------------- main
@@ -561,30 +621,20 @@ def main() -> int:
     to_assess, assess_needed = pick_evidence(evidence, seen, prev)
 
     if assess_needed:
-        prompt = build_prompt(to_assess, prev, cfg, load_analyses())
         api_key = os.environ.get("OPENROUTER_API_KEY", "")
         if not api_key:
             print("[assess] FAIL: brak OPENROUTER_API_KEY w środowisku", file=sys.stderr)
             return 2
-        model = cfg.get("openrouter_model", "google/gemini-2.5-flash")
-        assessment = None
-        for attempt in (1, 2, 3):
-            content, finish = call_openrouter(prompt, api_key, model)
-            try:
-                assessment = parse_assessment(extract_json(content), prev)
-                break
-            except (json.JSONDecodeError, ValueError) as exc:
-                print(f"[assess] ostrzeżenie: JSON LLM niepoprawny "
-                      f"(próba {attempt}/3, finish_reason={finish}): {exc}",
-                      file=sys.stderr)
-        if assessment is None:
-            raise RuntimeError("OpenRouter: 3× niepoprawny JSON w odpowiedzi")
+        assessment, errors = assess_scenarios(to_assess, prev, cfg, api_key,
+                                              load_analyses())
         entry = {
             "date": day, **assessment,
             "evidence": [e.to_dict() for e in to_assess[:15]],
             "sources_found": len(to_assess),
             "engine_status": "ok",
         }
+        if errors:
+            entry["assess_errors"] = errors
     elif evidence:
         # Cichy dzień: nic nowego od ostatniej oceny — utrzymanie bez LLM.
         entry = no_evidence_entry(day, prev, "no-new-evidence", cfg)

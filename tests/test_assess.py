@@ -219,35 +219,35 @@ def _llm_data(n_score=35, s_score=20, confidence="średnia"):
     }}
 
 
-class TestParseAssessment(unittest.TestCase):
+class TestParseScenario(unittest.TestCase):
     def test_valid(self):
-        prev = {"date": "2026-09-04",
-                "scores": {"north": {"score": 30}, "south": {"score": 25}}}
-        out = assess.parse_assessment(_llm_data(), prev)
-        self.assertEqual(out["scores"]["north"]["score"], 35)
-        self.assertEqual(out["scores"]["north"]["trend_vs_prev"], 5)
-        self.assertEqual(out["scores"]["south"]["trend_vs_prev"], -5)
-        self.assertEqual(out["scores"]["north"]["key_findings"][0]["evidence_urls"],
-                         ["https://a.pl/1"])
+        prev = {"score": 30}
+        out = assess.parse_scenario(
+            _scenario(35, "średnia",
+                      [{"claim": "c", "evidence_urls": ["https://a.pl/1"]}]), prev)
+        self.assertEqual(out["score"], 35)
+        self.assertEqual(out["trend_vs_prev"], 5)
+        self.assertEqual(out["key_findings"][0]["evidence_urls"], ["https://a.pl/1"])
 
     def test_clamps_and_defaults(self):
-        out = assess.parse_assessment(_llm_data(n_score=150, s_score=150,
-                                                confidence="bogu"), None)
-        self.assertEqual(out["scores"]["north"]["score"], 100)
-        self.assertEqual(out["scores"]["south"]["score"], 100)
-        self.assertEqual(out["scores"]["north"]["confidence"], "niska")
-        self.assertEqual(out["scores"]["south"]["trend_vs_prev"], 0)
-        self.assertTrue(out["scores"]["south"]["summary"])
+        out = assess.parse_scenario(_scenario(150, "bogu"), None)
+        self.assertEqual(out["score"], 100)
+        self.assertEqual(out["confidence"], "niska")
+        self.assertEqual(out["trend_vs_prev"], 0)
+        self.assertTrue(out["summary"])
 
     def test_drops_findings_without_claim(self):
-        data = _llm_data()
-        data["scores"]["north"]["key_findings"] = [{"claim": ""}, "x"]
-        out = assess.parse_assessment(data, None)
-        self.assertEqual(out["scores"]["north"]["key_findings"], [])
+        data = _scenario()
+        data["key_findings"] = [{"claim": ""}, "x"]
+        self.assertEqual(assess.parse_scenario(data, None)["key_findings"], [])
 
-    def test_missing_scenario_raises(self):
+    def test_missing_score_raises(self):
         with self.assertRaises(ValueError):
-            assess.parse_assessment({"score": 10}, None)
+            assess.parse_scenario({"summary": "s"}, None)
+
+    def test_non_dict_raises(self):
+        with self.assertRaises(ValueError):
+            assess.parse_scenario(["nie", "obiekt"], None)
 
 
 class TestExtractJson(unittest.TestCase):
@@ -302,8 +302,8 @@ class TestExtractJson(unittest.TestCase):
                   '[{"claim": "c", "evidence_urls": ["https://x/1/"]}]}}')
         out = assess.extract_json(broken)
         self.assertEqual(out["scores"]["south"]["key_findings"][0]["claim"], "c")
-        parsed = assess.parse_assessment(out, None)
-        self.assertEqual(parsed["scores"]["south"]["score"], 30)
+        parsed = assess.parse_scenario(out["scores"]["south"], None)
+        self.assertEqual(parsed["score"], 30)
 
     def test_closes_truncated_tail(self):
         good = ('{"scores": {"north": {"score": 10, "summary": "s"}, '
@@ -320,7 +320,7 @@ class TestExtractJson(unittest.TestCase):
     def test_missing_score_raises(self):
         data = {"scores": {"north": {"summary": "s"}, "south": {"score": 5}}}
         with self.assertRaises(ValueError):
-            assess.parse_assessment(data, None)
+            assess.parse_scenario(data["scores"]["north"], None)
 
     def test_unrepairable_raises(self):
         with self.assertRaises(json.JSONDecodeError):
@@ -336,17 +336,18 @@ class TestBuildPrompt(unittest.TestCase):
                                      "rationale": "r"},
                            "south": {"score": 25, "confidence": "niska",
                                      "rationale": "r"}}}
-        prompt = assess.build_prompt(ev, prev, CFG, "### analiza-1\nTreść analizy.")
+        prompt = assess.build_prompt(ev, prev, CFG, "### analiza-1\nTreść analizy.",
+                                     scenario="north")
         self.assertIn("Sobienie-Jeziory", prompt)
-        self.assertIn("score północ=30", prompt)
-        self.assertIn("południe=25", prompt)
+        self.assertIn("score=30", prompt)
+        self.assertNotIn("score=25", prompt)
         self.assertIn("https://a.pl/1", prompt)
         self.assertIn("RUBRYKA", prompt)
         self.assertIn("SCENARIUSZ PÓŁNOC", prompt)
-        self.assertIn("SCENARIUSZ POŁUDNIE", prompt)
+        self.assertNotIn("SCENARIUSZ POŁUDNIE", prompt)
         self.assertIn("PUNKT WYJŚCIA — ANALIZY EKSPERCKIE", prompt)
         self.assertIn("45%", prompt)
-        self.assertIn("28%", prompt)
+        self.assertNotIn("28%", prompt)
         self.assertIn("### analiza-1", prompt)
         self.assertIn("Treść analizy.", prompt)
         # geografia wg stanu faktycznego: DK50 na północ od gminy
@@ -371,6 +372,80 @@ class TestBuildPrompt(unittest.TestCase):
         self.assertIn("NOWE DOWODY", prompt)
         self.assertNotIn("DOWODY z ostatnich 30 dni", prompt)
         self.assertIn("WYŁĄCZNIE w oparciu o NOWE dowody", prompt)
+
+
+class TestScenariosAreIndependent(unittest.TestCase):
+    """Dwa score'y oceniamy osobnymi wywołaniami — nie mogą ruszać się parami."""
+
+    def test_south_prompt_uses_own_baseline_and_geometry(self):
+        prompt = assess.build_prompt([Evidence(title="t", url="u", source="s")],
+                                     None, CFG, scenario="south")
+        self.assertIn("SCENARIUSZ POŁUDNIE", prompt)
+        self.assertNotIn("SCENARIUSZ PÓŁNOC", prompt)
+        self.assertIn("28%", prompt)
+        self.assertNotIn("45%", prompt)
+        self.assertIn("NIE oceniasz drugiego scenariusza", prompt)
+
+    def test_unknown_scenario_rejected(self):
+        with self.assertRaises(ValueError):
+            assess.build_prompt([], None, CFG, scenario="wschód")
+
+
+class TestAssessScenarios(unittest.TestCase):
+    EV = [Evidence(title="t", url="https://a.pl/1", source="s",
+                   published="2026-09-05")]
+
+    def _fake(self, fail=()):
+        calls = []
+
+        def fake(prompt, api_key, model):
+            calls.append("north" if "SCENARIUSZ PÓŁNOC" in prompt else "south")
+            side = calls[-1]
+            if side in fail:
+                return "totalnie nie json", "stop"
+            return (json.dumps({"score": 40 if side == "north" else 25,
+                                "confidence": "średnia", "summary": "s",
+                                "rationale": "r", "key_findings": []}), "stop")
+        return calls, fake
+
+    def test_one_call_per_scenario(self):
+        calls, fake = self._fake()
+        orig = assess.call_openrouter
+        assess.call_openrouter = fake
+        try:
+            scores, errors = assess.assess_scenarios(self.EV, None, CFG, "k", "")
+        finally:
+            assess.call_openrouter = orig
+        self.assertEqual(sorted(calls), ["north", "south"])
+        self.assertEqual(errors, [])
+        self.assertEqual(scores["scores"]["north"]["score"], 40)
+        self.assertEqual(scores["scores"]["south"]["score"], 25)
+
+    def test_failed_side_keeps_previous_score(self):
+        calls, fake = self._fake(fail=("south",))
+        orig = assess.call_openrouter
+        assess.call_openrouter = fake
+        prev = {"date": "2026-09-04",
+                "scores": {"north": {"score": 44}, "south": {"score": 22}}}
+        try:
+            scores, errors = assess.assess_scenarios(self.EV, prev, CFG, "k", "")
+        finally:
+            assess.call_openrouter = orig
+        self.assertEqual(calls.count("south"), 3)  # trzy próby
+        self.assertEqual(scores["scores"]["south"]["score"], 22)
+        self.assertEqual(scores["scores"]["south"]["confidence"], "niska")
+        self.assertEqual(len(errors), 1)
+        self.assertIn("south", errors[0])
+
+    def test_both_sides_failing_raises(self):
+        _, fake = self._fake(fail=("north", "south"))
+        orig = assess.call_openrouter
+        assess.call_openrouter = fake
+        try:
+            with self.assertRaises(RuntimeError):
+                assess.assess_scenarios(self.EV, None, CFG, "k", "")
+        finally:
+            assess.call_openrouter = orig
 
 
 class TestLoadAnalyses(unittest.TestCase):
