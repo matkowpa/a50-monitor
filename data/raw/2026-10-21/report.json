@@ -3,11 +3,10 @@
     "corpus_in_export": false,
     "grounding": [
       {
-        "keyless_backend": "ddg",
-        "label": "keyless",
-        "resultCount": 5,
+        "label": "brave",
+        "resultCount": 0,
         "webSearchQueries": [
-          "A50 \"Sobienie-Jeziory\" przebieg trasy"
+          "\"A50\" \"Sobienie-Jeziory\" przebieg trasy"
         ]
       }
     ],
@@ -25,11 +24,9 @@
     }
   },
   "clusters": [],
-  "errors_by_source": {
-    "youtube": "Source was requested but is not configured for this run."
-  },
+  "errors_by_source": {},
   "freshness_verdicts": [],
-  "generated_at": "2026-10-21T10:25:48.366751+00:00",
+  "generated_at": "2026-10-21T20:37:06.528405+00:00",
   "items_by_source": {
     "grounding": [],
     "reddit": []
@@ -42,23 +39,24 @@
   },
   "query_plan": {
     "cluster_mode": "none",
-    "freshness_mode": "balanced_recent",
+    "freshness_mode": "strict_recent",
     "intent": "factual",
     "notes": [
-      "A50 jest cz\u0119\u015bci\u0105 planowanego uk\u0142adu drogowego zwi\u0105zanego z CPK, informacje cz\u0119sto pojawiaj\u0105 si\u0119 na forach lokalnych i stronach rz\u0105dowych.",
-      "Hackernews jest ma\u0142o prawdopodobnym \u017ar\u00f3d\u0142em dla tego tematu, dlatego waga zosta\u0142a przesuni\u0119ta na grounding i reddit."
+      "Skupienie na oficjalnych dokumentach GDDKiA oraz dyskusjach lokalnych spo\u0142eczno\u015bci.",
+      "A50 jest cz\u0119\u015bci\u0105 wi\u0119kszego projektu Obwodnicy Aglomeracji Warszawskiej (OAW)."
     ],
     "raw_topic": "obwodnica autostradowa Warszawy A50 przebieg trasy Sobienie-Jeziory",
     "source_weights": {
-      "grounding": 0.6666666666666666,
-      "hackernews": 0.11111111111111112,
-      "reddit": 0.22222222222222224
+      "grounding": 0.6,
+      "hackernews": 0.1,
+      "reddit": 0.2,
+      "youtube": 0.1
     },
     "subqueries": [
       {
-        "label": "Przebieg A50",
-        "ranking_query": "Jaki jest aktualny planowany przebieg autostrady A50 w okolicach miejscowo\u015bci Sobienie-Jeziory?",
-        "search_query": "A50 \"Sobienie-Jeziory\" przebieg trasy",
+        "label": "Trasa A50 Sobienie-Jeziory",
+        "ranking_query": "Jaki jest aktualny planowany przebieg autostrady A50 w okolicach Sobienie-Jeziory?",
+        "search_query": "\"A50\" \"Sobienie-Jeziory\" przebieg trasy",
         "sources": [
           "grounding",
           "reddit"
@@ -72,33 +70,23 @@
   "ranked_candidates": [],
   "source_status": {
     "grounding": {
-      "at": "2026-10-21T10:25:48.361451Z",
+      "at": "2026-10-21T20:37:06.525809Z",
       "attempted": true,
       "items_returned": 0,
       "source": "grounding",
       "state": "no-results"
     },
     "reddit": {
-      "at": "2026-10-21T10:25:48.108105Z",
+      "at": "2026-10-21T20:37:06.320741Z",
       "attempted": true,
       "items_returned": 0,
       "source": "reddit",
       "state": "no-results"
-    },
-    "youtube": {
-      "at": "2026-10-21T10:25:47.730432Z",
-      "attempted": false,
-      "detail": "Source was requested but is not configured for this run.",
-      "fix_hint": "doctor",
-      "items_returned": 0,
-      "source": "youtube",
-      "state": "skipped-unconfigured"
     }
   },
   "topic": "obwodnica autostradowa Warszawy A50 przebieg trasy Sobienie-Jeziory",
   "warnings": [
     "No candidates survived retrieval and ranking.",
-    "Evidence is thin for this topic.",
-    "Some sources failed: youtube"
+    "Evidence is thin for this topic."
   ]
 }
