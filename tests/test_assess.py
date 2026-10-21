@@ -80,6 +80,56 @@ class TestSeenEvidenceUrls(unittest.TestCase):
             seen = assess.seen_evidence_urls("2026-09-06", directory=d)
             self.assertEqual(seen, {"https://a.pl/1", "https://a.pl/2"})
 
+    def test_ignores_assessments_older_than_window(self):
+        """Po oknie dowód wraca do oceny — inaczej score stoi w miejscu."""
+        import tempfile
+        with tempfile.TemporaryDirectory() as tmp:
+            d = Path(tmp)
+            (d / "2026-09-01.json").write_text(
+                json.dumps({"evidence": [{"url": "https://stary.pl/1"}]}),
+                encoding="utf-8")
+            (d / "2026-09-10.json").write_text(
+                json.dumps({"evidence": [{"url": "https://swiezy.pl/1"}]}),
+                encoding="utf-8")
+            seen = assess.seen_evidence_urls("2026-09-14", directory=d,
+                                             window_days=7)
+            self.assertEqual(seen, {"https://swiezy.pl/1"})
+
+    def test_window_boundary_is_inclusive(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as tmp:
+            d = Path(tmp)
+            (d / "2026-09-07.json").write_text(
+                json.dumps({"evidence": [{"url": "https://a.pl/7"}]}),
+                encoding="utf-8")
+            (d / "2026-09-06.json").write_text(
+                json.dumps({"evidence": [{"url": "https://a.pl/6"}]}),
+                encoding="utf-8")
+            seen = assess.seen_evidence_urls("2026-09-14", directory=d,
+                                             window_days=7)
+            self.assertEqual(seen, {"https://a.pl/7"})
+
+    def test_window_zero_means_whole_history(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as tmp:
+            d = Path(tmp)
+            (d / "2026-01-01.json").write_text(
+                json.dumps({"evidence": [{"url": "https://stary.pl/1"}]}),
+                encoding="utf-8")
+            seen = assess.seen_evidence_urls("2026-09-14", directory=d,
+                                             window_days=0)
+            self.assertEqual(seen, {"https://stary.pl/1"})
+
+    def test_future_assessments_are_ignored(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as tmp:
+            d = Path(tmp)
+            (d / "2026-09-20.json").write_text(
+                json.dumps({"evidence": [{"url": "https://jutro.pl/1"}]}),
+                encoding="utf-8")
+            self.assertEqual(assess.seen_evidence_urls("2026-09-14", directory=d),
+                             set())
+
     def test_excludes_current_day(self):
         import tempfile
         with tempfile.TemporaryDirectory() as tmp:

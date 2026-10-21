@@ -34,6 +34,12 @@ GitHub Actions (cron 6:30 PL) lub lokalnie z Cline (/a50-daily)
   (pełne, nieprzefiltrowane zebranie zostaje w `data/raw/` jako audyt),
   a dowody bez daty publikacji zostają, bo ich wieku nie da się
   zweryfikować.
+- **Okno powtórnej oceny**: dowód uznajemy za „już widziany” tylko przez
+  `seen_window_days` dni (`config.json`, domyślnie 7) — potem wraca do
+  oceny jako odświeżenie kontekstu. Bez tego okna pula nowych URL-i przy
+  wąskim temacie wyczerpywała się po kilku tygodniach i score zamarzał
+  w statusie `no-new-evidence`. Wartość `0` = cała historia (zachowanie
+  sprzed zmiany).
 - **Wyszukiwanie agent-reach**: `scripts/agent_reach.py` dopytuje
   semantyczną wyszukiwarkę Exa (serwer MCP `exa` przez `mcporter` —
   definicja w `config/mcporter.json`, bez klucza API) zapytaniami

@@ -25,7 +25,13 @@
     ]
   },
   "facebook": {
-    "keywords": ["a50", "obwodnica", "autostrada", "oaw", "gddkia"],
+    "keywords": [
+      "a50",
+      "obwodnica",
+      "autostrada",
+      "oaw",
+      "gddkia"
+    ],
     "sources": [
       "https://www.facebook.com/groups/3789393041111856/",
       "https://www.facebook.com/groups/554076521391212/",
@@ -33,8 +39,12 @@
     ]
   },
   "lookback_days": 30,
+  "seen_window_days": 7,
   "openrouter_model": "deepseek/deepseek-v4.1-flash",
-  "baseline_scores": {"north": 45, "south": 28},
+  "baseline_scores": {
+    "north": 45,
+    "south": 28
+  },
   "max_results": 30,
   "max_per_source": 10,
   "max_evidence": 40

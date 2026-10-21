@@ -22,6 +22,7 @@ import sys
 import time
 import urllib.error
 import urllib.request
+from datetime import date
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -33,6 +34,10 @@ OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 
 ANALIZY_DIR = Path(__file__).resolve().parent.parent / "analizy"
 ANALIZY_CAP = 8000
+
+# Ile dni wstecz dowody uznajemy za "już widziane" (0 = cała historia).
+# Bez okna pula nowych URL-i wyczerpuje się i score staje na zawsze.
+DEFAULT_SEEN_WINDOW_DAYS = 7
 
 
 def load_analyses() -> str:
@@ -145,19 +150,38 @@ def pick_evidence(evidence: list[Evidence], seen: set[str],
     return [], False
 
 
-def seen_evidence_urls(day: str, directory: Path | None = None) -> set[str]:
-    """Znormalizowane URL-e dowodów z dotychczasowych ocen (data/assessments).
+def seen_evidence_urls(day: str, directory: Path | None = None,
+                       window_days: int = DEFAULT_SEEN_WINDOW_DAYS) -> set[str]:
+    """Znormalizowane URL-e dowodów z ocen z ostatnich `window_days` dni.
 
     Pomija plik dnia bieżącego: rerun tego samego dnia nie może potraktować
     własnych, wcześniej zapisanych dowodów jako 'widziane'.
+
+    Okno jest konieczne: przy wąskim temacie pula artykułów jest mała, więc
+    „widziane raz na zawsze” wyczerpywało się po kilku tygodniach i pipeline
+    zamarzał w statusie `no-new-evidence` (score nigdy się nie zmieniał).
+    Po `window_days` dniach dowód wraca do oceny jako kontekst odświeżający.
+
+    `window_days <= 0` → bez okna (cała historia; zachowanie sprzed zmiany).
     """
     out: set[str] = set()
     d = directory or assessments_dir()
     if not d.is_dir():
         return out
+    try:
+        run_day = date.fromisoformat((day or "").strip()[:10])
+    except ValueError:
+        run_day = None
     for path in sorted(d.glob("*.json")):
         if path.stem == day:
             continue
+        if run_day is not None and window_days > 0:
+            try:
+                file_day = date.fromisoformat(path.stem[:10])
+            except ValueError:
+                continue  # nazwa nie jest datą — nie wiemy, czy w oknie
+            if (run_day - file_day).days > window_days or file_day > run_day:
+                continue
         try:
             data = json.loads(path.read_text(encoding="utf-8"))
         except (OSError, json.JSONDecodeError):
@@ -532,7 +556,8 @@ def main() -> int:
     evidence = merge_evidence(engine_items, feed_items, reach_items, facebook_items,
                               cap=int(cfg.get("max_evidence", 40)))
     prev = prev_entry_before(load_scores()["entries"], day)
-    seen = seen_evidence_urls(day)
+    seen_window = int(cfg.get("seen_window_days", DEFAULT_SEEN_WINDOW_DAYS))
+    seen = seen_evidence_urls(day, window_days=seen_window)
     to_assess, assess_needed = pick_evidence(evidence, seen, prev)
 
     if assess_needed:
