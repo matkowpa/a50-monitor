@@ -1,8 +1,10 @@
 # Codzienny monitoring A50 — ręczny run ($ARGUMENTS: opcjonalna data ISO)
 
 Uruchamia lokalnie ten sam pipeline, co GitHub Actions (workflow `daily-monitor`).
-Wymagane: `OPENROUTER_API_KEY` w środowisku. Kroki wykonuj po kolei, komendy
-uruchamiaj z katalogu repo (ścieżki względne):
+Wymagane: `OPENROUTER_API_KEY` w środowisku. Zalecane: `BRAVE_API_KEY`
+(web search silnika — bez niego zostaje keyless DDG, który nie przepuszcza
+wyników) oraz `yt-dlp` w PATH (`pip install yt-dlp`) dla transkryptów YouTube.
+Kroki wykonuj po kolei, komendy uruchamiaj z katalogu repo (ścieżki względne):
 
 1. Research (silnik last30days, ~2–10 min, wykorzystuje OpenRouter):
 

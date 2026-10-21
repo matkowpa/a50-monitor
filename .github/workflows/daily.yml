@@ -23,9 +23,16 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Instalacja yt-dlp (transkrypty YouTube)
+        continue-on-error: true
+        run: pip install --upgrade yt-dlp
+
       - name: Research (silnik last30days)
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          # Web search (brave -> exa -> serper -> keyless). Bez klucza silnik
+          # spada do keyless DDG i nie przepuszcza wyników przez ranking.
+          BRAVE_API_KEY: ${{ secrets.BRAVE_API_KEY }}
           TZ: Europe/Warsaw
         run: python scripts/research.py
 

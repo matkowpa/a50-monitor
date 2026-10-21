@@ -106,6 +106,9 @@ zawsze jest w chmurze — nie ma tu żadnego lokalnego LLM.
 ## Uruchomienie lokalne (lub przez Cline: `/a50-daily`)
 
 Wymagane: Python 3.12+, `OPENROUTER_API_KEY` w środowisku.
+Opcjonalne, ale zalecane: `BRAVE_API_KEY` (web search w silniku; bez niego
+zostaje keyless DDG, który dziś nie przepuszcza wyników) oraz `yt-dlp`
+w PATH (`pip install yt-dlp`) — transkrypty YouTube.
 
 ```powershell
 python scripts/research.py       # silnik last30days (kilka minut)
@@ -121,16 +124,18 @@ i wypychasz ręcznie (`git add data && git commit -m "daily data" &&
 git push`), a strona w `site/` służy tylko do podglądu (katalog jest
 w `.gitignore` i nie jest commitowany). Publikację na GitHub Pages robi
 wyłącznie workflow `daily-monitor` — ręcznie (Actions → Run workflow)
-albo czekając na cron. Klucz API: lokalnie ze zmiennej środowiskowej,
-na GitHubie z secretu repo.
+albo czekając na cron. Klucze API: lokalnie ze zmiennych środowiskowych
+(`OPENROUTER_API_KEY`, `BRAVE_API_KEY`), na GitHubie z sekretów repo.
 
 ## Setup GitHub (jednorazowo)
 
 1. Utwórz **publiczne** repo `a50-monitor` na github.com (bez README).
 2. `git remote add origin https://github.com/<USER>/a50-monitor.git`
    i `git push -u origin main`.
-3. **Settings → Secrets and variables → Actions**: dodaj secret
-   `OPENROUTER_API_KEY`.
+3. **Settings → Secrets and variables → Actions**: dodaj sekrety
+   `OPENROUTER_API_KEY` (ocena) i `BRAVE_API_KEY` (web search —
+   klucz z <https://api.search.brave.com/app/keys>, darmowy plan
+   2 000 zapytań/mies. wystarcza z zapasem).
 4. **Settings → Pages**: Source = *Deploy from a branch*, Branch = `gh-pages`
    (pojawi się po pierwszym uruchomieniu workflow) / *(root)*.
 5. Uruchom workflow ręcznie: **Actions → daily-monitor → Run workflow**.
