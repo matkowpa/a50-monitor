@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-22",
+  "scores": {
+    "north": {
+      "score": 35,
+      "confidence": "niska",
+      "summary": "Brak nowych dowodów w podglądanych źródłach — utrzymuję poprzednią ocenę (35%).",
+      "trend_vs_prev": 0,
+      "rationale": "Brak nowych dowodów w podglądanych źródłach — utrzymuję poprzednią ocenę (35%).",
+      "key_findings": []
+    },
+    "south": {
+      "score": 18,
+      "confidence": "niska",
+      "summary": "Brak nowych dowodów w podglądanych źródłach — utrzymuję poprzednią ocenę (18%).",
+      "trend_vs_prev": 0,
+      "rationale": "Brak nowych dowodów w podglądanych źródłach — utrzymuję poprzednią ocenę (18%).",
+      "key_findings": []
+    }
+  },
+  "sources_found": 0,
+  "engine_status": "no-new-evidence",
+  "assessment_path": "data/assessments/2026-10-22.json",
+  "evidence": []
+}
