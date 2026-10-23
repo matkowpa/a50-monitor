@@ -2217,6 +2217,105 @@
       "sources_found": 0,
       "engine_status": "no-new-evidence",
       "assessment_path": "data/assessments/2026-10-22.json"
+    },
+    {
+      "date": "2026-10-23",
+      "scores": {
+        "north": {
+          "score": 35,
+          "confidence": "niska",
+          "summary": "Brak nowych dowodów dotyczących północnej części gminy Sobienie-Jeziory; nowe materiały odnoszą się do zachodniego odcinka OAW i gminy Pniewy. Utrzymuję poprzednią ocenę 35%.",
+          "rationale": "Poprzednia ocena 35% pozostaje kotwicą, ponieważ nowe dowody nie dotyczą spornego odcinka wschodniego ani wariantów przez gminę Sobienie-Jeziory. Dokumenty GDDKiA i Pniewy opisują odcinek DK92–S7, czyli zachodni fragment OAW, a nie rejon Sobienie-Jezior. Brak oficjalnego wskazania wariantu przez północną część gminy, decyzji środowiskowej lub przetargu dla odcinka wschodniego. Zgodnie z rubryką brak istotnych nowych sygnałów nakazuje utrzymać score i niską confidence.",
+          "key_findings": [
+            {
+              "claim": "Nowe dowody dotyczą zachodniego odcinka OAW i gminy Pniewy, nie gminy Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://pniewy.pl/cms/8987/autostrada_a50",
+                "https://cms-v2-files.idcom-jst.pl/sites/117/cms/szablony/8987/pliki/oawa50_war2fioletowy_08_pniewy_ark06.pdf"
+              ]
+            },
+            {
+              "claim": "Wybór biura projektowego TRAKT dotyczy odcinka od DK92 do S7, czyli zachodniej części OAW.",
+              "evidence_urls": [
+                "https://www.gov.pl/web/gddkia-warszawa/wybralismy-pierwsze-biuro-projektowe-dla-obwodnicy-aglomeracji-warszawskiej"
+              ]
+            },
+            {
+              "claim": "W dostępnych nowych dowodach nie ma materiału o wariantach przebiegu przez północną część gminy Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://pniewy.pl/cms/8987/autostrada_a50",
+                "https://www.gov.pl/web/gddkia-warszawa/wybralismy-pierwsze-biuro-projektowe-dla-obwodnicy-aglomeracji-warszawskiej",
+                "https://cms-v2-files.idcom-jst.pl/sites/117/cms/szablony/8987/pliki/oawa50_war2fioletowy_08_pniewy_ark06.pdf"
+              ]
+            }
+          ],
+          "trend_vs_prev": 0
+        },
+        "south": {
+          "score": 18,
+          "confidence": "niska",
+          "summary": "Brak nowych istotnych dowodów dla scenariusza południowego w gminie Sobienie-Jeziory; utrzymuję poprzednią ocenę 18%.",
+          "rationale": "Nowe dowody dotyczą wyłącznie zachodniego odcinka OAW i gminy Pniewy, a nie wschodniego odcinka obejmującego Sobienie-Jeziory. Zgodnie z rubryką, brak nowych sygnałów dla tego scenariusza nakazuje pozostać przy poprzedniej ocenie. Kontekst geograficzny wskazuje, że DK50 biegnie na północ od gminy, ale nie jest to nowy dowód zmieniający score. Confidence pozostaje niska z powodu braku oficjalnych wariantów i dokumentów dla tego obszaru.",
+          "key_findings": [
+            {
+              "claim": "Nowe dowody dotyczą zachodniego odcinka OAW (DK92–S7) i gminy Pniewy, nie odcinka wschodniego ani gminy Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://pniewy.pl/cms/8987/autostrada_a50",
+                "https://www.gov.pl/web/gddkia-warszawa/wybralismy-pierwsze-biuro-projektowe-dla-obwodnicy-aglomeracji-warszawskiej",
+                "https://cms-v2-files.idcom-jst.pl/sites/117/cms/szablony/8987/pliki/oawa50_war2fioletowy_08_pniewy_ark06.pdf"
+              ]
+            },
+            {
+              "claim": "Dokumentacja wariantu fioletowego dotyczy arkusza Pniewy, więc nie przesądza przebiegu na południe od Sobienie-Jezior.",
+              "evidence_urls": [
+                "https://cms-v2-files.idcom-jst.pl/sites/117/cms/szablony/8987/pliki/oawa50_war2fioletowy_08_pniewy_ark06.pdf"
+              ]
+            },
+            {
+              "claim": "Wybór biura TRAKT w 2022 dotyczy studium odcinka DK92–S7, a nie odcinka wschodniego przez powiat otwocki.",
+              "evidence_urls": [
+                "https://www.gov.pl/web/gddkia-warszawa/wybralismy-pierwsze-biuro-projektowe-dla-obwodnicy-aglomeracji-warszawskiej"
+              ]
+            },
+            {
+              "claim": "Strona gminy Pniewy dotyczy uwag do przebiegu A50 przez tę gminę, co nie wnosi informacji o wariancie południowym w Sobienie-Jeziorach.",
+              "evidence_urls": [
+                "https://pniewy.pl/cms/8987/autostrada_a50"
+              ]
+            }
+          ],
+          "trend_vs_prev": 0
+        }
+      },
+      "evidence": [
+        {
+          "title": "Autostrada A50 - Gmina Pniewy",
+          "url": "https://pniewy.pl/cms/8987/autostrada_a50",
+          "source": "exa",
+          "published": "",
+          "snippet": "### Autostrada A50 Drodzy Mieszkańcy Gminy Pniewy zachęcamy do przesyłania Państwa uwag, sugestii i spostrzeżeń dotyczących przebiegu A50 przez teren naszej gminy na specjalny adres mailowy: a50@pniewy.pl utworzony przez Urząd Gminy Pniewy do zbierania Państwa opinii. Koordynatorem ze ramienia Gminy Pniewy w sprawach związanych z OAW jest Pani Paulina Abramowicz, tel. 048 685 02 10 wew. 19. Stanow",
+          "stance": "neutral"
+        },
+        {
+          "title": "Wybraliśmy pierwsze biuro projektowe dla Obwodnicy Aglomeracji Warszawskiej - Generalna Dyrekcja Dróg Krajowych i Autostrad- Oddział Warszawa - Portal Gov.pl",
+          "url": "https://www.gov.pl/web/gddkia-warszawa/wybralismy-pierwsze-biuro-projektowe-dla-obwodnicy-aglomeracji-warszawskiej",
+          "source": "exa",
+          "published": "",
+          "snippet": "## Wybraliśmy pierwsze biuro projektowe dla Obwodnicy Aglomeracji Warszawskiej 02.06.2022 Oferta firmy TRAKT została wybrana jako najkorzystniejsza w przetargu na opracowanie Studium techniczno-ekonomiczno-środowiskowego wraz z uzyskaniem decyzji środowiskowej dla S50/A50 pomiędzy DK92 i S7 na południe od Stolicy. To jeden z dwóch odcinków pierwszego, zachodniego fragmentu Obwodnicy Aglomeracji Wa",
+          "stance": "neutral"
+        },
+        {
+          "title": "DG 160907W",
+          "url": "https://cms-v2-files.idcom-jst.pl/sites/117/cms/szablony/8987/pliki/oawa50_war2fioletowy_08_pniewy_ark06.pdf",
+          "source": "exa",
+          "published": "",
+          "snippet": "Studium Techniczno-Ekonomiczno-Środowiskowe wraz z uzyskaniem Decyzji o Środowiskowych Uwarunkowaniach dla zadania „Obwodnica Aglomeracji Warszawskiej, odcinek od DK92 (bez węzła) do S7 (z węzłem)” NAZWA OPRACOWANIA TYTUŁ",
+          "stance": "neutral"
+        }
+      ],
+      "sources_found": 3,
+      "engine_status": "ok",
+      "assessment_path": "data/assessments/2026-10-23.json"
     }
   ]
 }
