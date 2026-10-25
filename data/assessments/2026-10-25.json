@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-25",
+  "scores": {
+    "north": {
+      "score": 35,
+      "confidence": "niska",
+      "summary": "Brak nowych dowodów dotyczących północnej części gminy Sobienie-Jeziory lub wschodniego odcinka OAW. Score pozostaje na poziomie poprzedniej oceny 35%.",
+      "rationale": "Poprzednia ocena tego scenariusza wynosiła 35% i opierała się na niepewnych, nieoficjalnych szacunkach dla odcinka wschodniego. Jedyny nowy dowód to uchwała Rady Gminy Zabrodzie przeciw proponowanemu przebiegowi S50/A50 przez tę gminę, co nie dotyczy Sobienie-Jezior ani scenariusza północnego. Nie ma oficjalnego wskazania wariantu, decyzji środowiskowej ani przetargu na STEŚ dla odcinka wschodniego. Zgodnie z rubryką brak istotnych nowych sygnałów nakazuje utrzymanie score i niską confidence.",
+      "key_findings": [
+        {
+          "claim": "Nowy dowód dotyczy wyłącznie sprzeciwu Rady Gminy Zabrodzie wobec przebiegu S50/A50 przez tę gminę i nie odnosi się do gminy Sobienie-Jeziory ani do scenariusza północnego.",
+          "evidence_urls": [
+            "https://samorzad.gov.pl/attachment/d00ee210-cc97-4bc1-90d3-16ccd7a41a2c"
+          ]
+        }
+      ],
+      "trend_vs_prev": 0
+    },
+    "south": {
+      "score": 18,
+      "confidence": "niska",
+      "summary": "Brak nowych dowodów dotyczących scenariusza południowego w gminie Sobienie-Jeziory; jedyny nowy materiał odnosi się do gminy Zabrodzie. Utrzymuję score na poziomie poprzedniej oceny 18%.",
+      "rationale": "Nowy dowód to uchwała Rady Gminy Zabrodzie, dotycząca sprzeciwu wobec przebiegu S50/A50 przez Zabrodzie, czyli innej gminy i innego odcinka OAW. Nie dostarcza żadnej informacji o wariantach dla gminy Sobienie-Jeziory ani o scenariuszu południowym. Zgodnie z rubryką dowód dotyczący innego obszaru nie modyfikuje score tego scenariusza. Utrzymuję poprzednią ocenę 18% przy niskiej pewności z powodu braku nowych, istotnych sygnałów.",
+      "key_findings": [
+        {
+          "claim": "Jedyny nowy dowód dotyczy sprzeciwu Rady Gminy Zabrodzie wobec przebiegu S50/A50 przez teren tej gminy, a nie przez gminę Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://samorzad.gov.pl/attachment/d00ee210-cc97-4bc1-90d3-16ccd7a41a2c"
+          ]
+        }
+      ],
+      "trend_vs_prev": 0
+    }
+  },
+  "evidence": [
+    {
+      "title": "w sprawie wyrażenia sprzeciwu wobec proponowanego przebiegu drogi ekspresowej S50/ autostrady A50 - Obwodnicy Aglomeracji Warszawskiej przez teren Gminy Zabrodzie",
+      "url": "https://samorzad.gov.pl/attachment/d00ee210-cc97-4bc1-90d3-16ccd7a41a2c",
+      "source": "exa",
+      "published": "",
+      "snippet": "UCHWAŁA NR …….2025 RADY GMINY ZABRODZIE z dnia ………………… r. w sprawie wyrażenia sprzeciwu wobec proponowanego przebiegu drogi ekspresowej S50/ autostrady A50 - Obwodnicy Aglomeracji Warszawskiej przez teren Gminy Zabrodzie Na podstawie art. 7 ust. 1 pkt 1 i art. 18 ust. 1 ustawy z dnia 8 marca 1990 r. o samorządzie gminnym (t.j. Dz. U. z 2025 r. poz. 1153) uchwala się, co następuje: § 1. 1. W związk",
+      "stance": "neutral"
+    }
+  ],
+  "sources_found": 1,
+  "engine_status": "ok",
+  "assessment_path": "data/assessments/2026-10-25.json"
+}

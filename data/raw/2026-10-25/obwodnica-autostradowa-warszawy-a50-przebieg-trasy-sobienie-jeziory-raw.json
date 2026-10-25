@@ -1,0 +1,88 @@
+{
+  "artifacts": {
+    "corpus_in_export": false,
+    "grounding": [],
+    "hiring_signals_mode": false,
+    "plan_source": "llm",
+    "pre_research_flags_present": false,
+    "resolved": {
+      "context": "",
+      "entity": "obwodnica autostradowa Warszawy A50 przebieg trasy Sobienie-Jeziory",
+      "github_repos": [],
+      "github_user": "",
+      "subreddits": [],
+      "trustpilot_domain": "",
+      "x_handle": ""
+    }
+  },
+  "clusters": [],
+  "errors_by_source": {
+    "grounding": "HTTP 402: Payment Required"
+  },
+  "freshness_verdicts": [],
+  "generated_at": "2026-10-25T09:59:28.243320+00:00",
+  "items_by_source": {
+    "reddit": []
+  },
+  "library_context": [],
+  "provider_runtime": {
+    "planner_model": "google/gemini-3.1-flash-lite-preview",
+    "reasoning_provider": "openrouter",
+    "rerank_model": "google/gemini-3.1-flash-lite-preview"
+  },
+  "query_plan": {
+    "cluster_mode": "none",
+    "freshness_mode": "strict_recent",
+    "intent": "factual",
+    "notes": [
+      "Skupienie na oficjalnych dokumentach GDDKiA oraz dyskusjach lokalnych spo\u0142eczno\u015bci.",
+      "A50 jest cz\u0119\u015bci\u0105 wi\u0119kszego projektu Obwodnicy Aglomeracji Warszawskiej (OAW)."
+    ],
+    "raw_topic": "obwodnica autostradowa Warszawy A50 przebieg trasy Sobienie-Jeziory",
+    "source_weights": {
+      "grounding": 0.6,
+      "hackernews": 0.1,
+      "reddit": 0.2,
+      "youtube": 0.1
+    },
+    "subqueries": [
+      {
+        "label": "Trasa A50 Sobienie-Jeziory",
+        "ranking_query": "Jaki jest aktualny planowany przebieg autostrady A50 w okolicach Sobienie-Jeziory?",
+        "search_query": "\"A50\" \"Sobienie-Jeziory\" przebieg trasy",
+        "sources": [
+          "grounding",
+          "reddit"
+        ],
+        "weight": 1.0
+      }
+    ]
+  },
+  "range_from": "2026-09-25",
+  "range_to": "2026-10-25",
+  "ranked_candidates": [],
+  "source_status": {
+    "grounding": {
+      "at": "2026-10-25T09:59:27.993742Z",
+      "attempted": true,
+      "detail": "HTTP 402: Payment Required",
+      "fix_hint": "doctor",
+      "items_returned": 0,
+      "source": "grounding",
+      "state": "auth-failed"
+    },
+    "reddit": {
+      "at": "2026-10-25T09:59:28.237691Z",
+      "attempted": true,
+      "items_returned": 0,
+      "source": "reddit",
+      "state": "no-results"
+    }
+  },
+  "topic": "obwodnica autostradowa Warszawy A50 przebieg trasy Sobienie-Jeziory",
+  "warnings": [
+    "No candidates survived retrieval and ranking.",
+    "Evidence is thin for this topic.",
+    "Some sources failed: grounding"
+  ]
+}
