@@ -2418,6 +2418,97 @@
       "sources_found": 1,
       "engine_status": "ok",
       "assessment_path": "data/assessments/2026-10-25.json"
+    },
+    {
+      "date": "2026-10-26",
+      "scores": {
+        "north": {
+          "score": 35,
+          "confidence": "niska",
+          "summary": "Brak nowych, istotnych dowodów dla wschodniego odcinka OAW; nowe materiały GDDKiA dotyczą zachodu i północy, nie gminy Sobienie-Jeziory. Utrzymuję ocenę 35% dla scenariusza północnego.",
+          "rationale": "Poprzednia ocena tego scenariusza wynosiła 35% i opierała się na niepewnych szacunkach dla odcinka wschodniego. Nowe dowody odnoszą się do zachodniej części OAW DK92-S7 oraz odcinka północnego w rejonie Serocka, a nie do przebiegu przez gminę Sobienie-Jeziory. Nie ma oficjalnego wskazania wariantu, decyzji środowiskowej ani przetargu na STEŚ dla odcinka wschodniego, który mógłby zmienić ocenę. Wobec braku nowych sygnałów utrzymuję score blisko poprzedniej wartości.",
+          "key_findings": [
+            {
+              "claim": "Nowe materiały GDDKiA dotyczą przygotowania wariantów zachodniej części OAW, nie odcinka wschodniego przez Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://www.gov.pl/web/gddkia-warszawa/aglomeracja-warszawska-potrzebuje-spojnej-sieci-polaczen-drogowych",
+                "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8"
+              ]
+            },
+            {
+              "claim": "Dokument o OAW/S50 w Serocku dotyczy odcinka północnego, więc nie przesądza o scenariuszu północnym w gminie Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://serock.treespot.pl/media/pdf/22458.pdf"
+              ]
+            },
+            {
+              "claim": "Dostępne nowe dowody nie zawierają informacji o gminie Sobienie-Jeziory ani o wariancie północnym tej gminy.",
+              "evidence_urls": [
+                "https://www.gov.pl/web/gddkia-warszawa/aglomeracja-warszawska-potrzebuje-spojnej-sieci-polaczen-drogowych",
+                "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8",
+                "https://serock.treespot.pl/media/pdf/22458.pdf"
+              ]
+            }
+          ],
+          "trend_vs_prev": 0
+        },
+        "south": {
+          "score": 18,
+          "confidence": "niska",
+          "summary": "Nowe dowody dotyczą wyłącznie zachodniego i północnego odcinka OAW (DK92–S7, rejon Serocka) i nie odnoszą się do wariantów przebiegu przez gminę Sobienie-Jeziory ani do scenariusza południowego. Brak nowych sygnałów dla ocenianego scenariusza.",
+          "rationale": "Przekazane materiały GDDKiA opisują przygotowanie wariantów zachodniej części OAW (odcinek DK92–S7) oraz przetarg na STEŚ odcinka północnego w rejonie Serocka/Zalewu Zegrzyńskiego. Żaden z nich nie zawiera informacji o wariantach, studium czy decyzji środowiskowej dotyczącej odcinka wschodniego, a tym bardziej południowej części gminy Sobienie-Jeziory. Zgodnie z rubryką dowód dotyczący innego obszaru nie modyfikuje score tego scenariusza. Utrzymuję poprzednią ocenę 18% przy niskiej pewności, ponieważ brak nowych, istotnych sygnałów.",
+          "key_findings": [
+            {
+              "claim": "GDDKiA przygotowuje warianty przebiegu zachodniej części OAW na odcinkach od DK92 do S7, co nie dotyczy odcinka wschodniego ani gminy Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://www.gov.pl/web/gddkia-warszawa/aglomeracja-warszawska-potrzebuje-spojnej-sieci-polaczen-drogowych"
+              ]
+            },
+            {
+              "claim": "Dokumentacja odcinka A50/S50 DK92–S7 dotyczy zachodniego fragmentu obwodnicy, nie scenariusza południowego w gminie Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://www.gov.pl/web/gddkia/a50s50-odcink-dk92-do-s8"
+              ]
+            },
+            {
+              "claim": "Materiał o odcinku S50 w rejonie Serocka dotyczy północnego odcinka OAW i nie wnosi informacji o wariantach na wschodzie Mazowsza.",
+              "evidence_urls": [
+                "https://serock.treespot.pl/media/pdf/22458.pdf"
+              ]
+            }
+          ],
+          "trend_vs_prev": 0
+        }
+      },
+      "evidence": [
+        {
+          "title": "Aglomeracja warszawska potrzebuje spójnej sieci połączeń drogowych - Generalna Dyrekcja Dróg Krajowych i Autostrad- Oddział Warszawa - Portal Gov.pl",
+          "url": "https://www.gov.pl/web/gddkia-warszawa/aglomeracja-warszawska-potrzebuje-spojnej-sieci-polaczen-drogowych",
+          "source": "exa",
+          "published": "2026-10-14",
+          "snippet": "### Obwodnica Aglomeracji Warszawskiej – odpowiedź GDDKiA na potrzeby Warszawy i metropolii Przygotowujemy warianty przebiegu zachodniej części Obwodnicy Aglomeracji Warszawskiej (OAW) na odcinkach od S10 do DK92 oraz od DK92 do S7 na południe od stolicy. Analizowane są cztery warianty przebiegu trasy z podwariantami. Trzy z nich zakładają budowę OAW w nowym śladzie, natomiast jeden przewiduje moż",
+          "stance": "neutral"
+        },
+        {
+          "title": "A50/S50 Obwodnica Aglomeracji Warszawskiej odcinek DK92 - S7 - Generalna Dyrekcja Dróg Krajowych i Autostrad - Portal Gov.pl",
+          "url": "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8",
+          "source": "exa",
+          "published": "",
+          "snippet": "A50/S50 Obwodnica Aglomeracji Warszawskiej odcinek DK92 - S7 - Generalna Dyrekcja Dróg Krajowych i Autostrad - Portal Gov.pl ## A50/S50 Obwodnica Aglomeracji Warszawskiej odcinek DK92 - S7 Podstawowe informacje Nr drogi : A50 / S50 Nazwa odcinka : Obwodnica Aglomeracji Warszawskiej odcinek DK92 - S7 System realizacji : Projektuj i Buduj Program : Rządowy Program Budowy Dróg Krajowych do 2030 r. (z",
+          "stance": "neutral"
+        },
+        {
+          "title": "OBWODNICA AGLOMERACJI WARSZAWSKIEJ ODCINEK S50",
+          "url": "https://serock.treespot.pl/media/pdf/22458.pdf",
+          "source": "exa",
+          "published": "",
+          "snippet": "OAW Obecnie OAW Kolejne kroki OAW/S50 serock.pl 02.2026 Oferty –11 podmiotów złożyło oferty (w przypadku braku odwołań) Połowa 2026 r. Planowane podpisanie umowy 31.12.2025 r. Ogłoszenie przetargu na STEŚ STEŚ - Studium Techniczno Ekonomiczno Środowiskowe serock.pl STEŚ, jak i I etap STEŚ-R to opracowanie projektowe o charakterze ogólnym. Większość elementów zadania inwestycyjnego ma być szacowany",
+          "stance": "neutral"
+        }
+      ],
+      "sources_found": 3,
+      "engine_status": "ok",
+      "assessment_path": "data/assessments/2026-10-26.json"
     }
   ]
 }
