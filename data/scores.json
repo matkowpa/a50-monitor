@@ -2509,6 +2509,60 @@
       "sources_found": 3,
       "engine_status": "ok",
       "assessment_path": "data/assessments/2026-10-26.json"
+    },
+    {
+      "date": "2026-10-27",
+      "scores": {
+        "north": {
+          "score": 35,
+          "confidence": "niska",
+          "summary": "Brak nowych, oficjalnych dowodów na wariant północny; jedyny nowy materiał lokalny nie wskazuje narysowanego przebiegu. Utrzymuję score 35% przy niskiej pewności.",
+          "rationale": "Poprzednia ocena tego scenariusza wynosiła 35% i opierała się na niepewnych szacunkach dla odcinka wschodniego. Nowy dowód z Sobienie.pl mówi o mieszaniu dokumentów z tym, czego jeszcze nikt nie narysował, co potwierdza brak rozstrzygnięcia wariantu. Nie ma komunikatu GDDKiA, decyzji środowiskowej ani przetargu STEŚ dla odcinka wschodniego, który wskazywałby północny pas gminy. W związku z tym score pozostaje bez zmian, a confidence jest niska.",
+          "key_findings": [
+            {
+              "claim": "Lokalne źródło podkreśla, że nie istnieją jeszcze narysowane warianty A50 dla gminy Sobienie-Jeziory, więc nie można potwierdzić przebiegu północnego.",
+              "evidence_urls": [
+                "https://sobienie.pl/a50"
+              ]
+            }
+          ],
+          "trend_vs_prev": 0
+        },
+        "south": {
+          "score": 18,
+          "confidence": "niska",
+          "summary": "Nowy lokalny materiał nie potwierdza oficjalnego wariantu A50 przez południową część gminy Sobienie-Jeziory i nie zmienia istotnie oceny. Utrzymuję score blisko poprzedniej wartości, ponieważ nadal brak dowodów rozstrzygających.",
+          "rationale": "Poprzednia ocena 18% odzwierciedlała brak oficjalnych wariantów dla wschodniego odcinka OAW oraz brak jakiegokolwiek potwierdzenia scenariusza południowego. Nowy dowód z Sobienie.pl wskazuje, że w sprawie A50 trzeba odróżnić to, co zapisano w dokumentach, od tego, czego jeszcze nikt nie narysował. To wzmacnia tezę o wysokiej niepewności, a nie o konkretnym przebiegu przez rejon Śniadkowa Dolnego i Górnego. Wobec braku komunikatu GDDKiA, wskazania wariantu, decyzji środowiskowej lub przetargu dla tego korytarza score pozostaje blisko poprzedniego.",
+          "key_findings": [
+            {
+              "claim": "Lokalne opracowanie podkreśla potrzebę odróżnienia ustaleń dokumentacyjnych od tras, których jeszcze nikt nie narysował.",
+              "evidence_urls": [
+                "https://sobienie.pl/a50"
+              ]
+            },
+            {
+              "claim": "Materiał nie zawiera oficjalnego potwierdzenia wariantu przebiegu przez południową część gminy Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://sobienie.pl/a50"
+              ]
+            }
+          ],
+          "trend_vs_prev": 0
+        }
+      },
+      "evidence": [
+        {
+          "title": "A50 a gmina Sobienie-Jeziory — co naprawdę wiadomo | Sobienie.pl",
+          "url": "https://sobienie.pl/a50",
+          "source": "exa",
+          "published": "",
+          "snippet": "## Co jest ustalone, a co nie Największym źródłem nieporozumień w tej sprawie jest mieszanie dwóch rzeczy: tego, co zapisano w dokumentach, z tym, czego jeszcze nikt nie narysował. ### To jest ustalone - Obwodnica Aglomeracji Warszawskiej (A50 na południu, S50 na północy) jest wpisana do Rządowego Programu Budowy Dróg Krajowych do 2030 r. jako inwestycja priorytetowa. - Koncepcja zakłada nową prze",
+          "stance": "neutral"
+        }
+      ],
+      "sources_found": 1,
+      "engine_status": "ok",
+      "assessment_path": "data/assessments/2026-10-27.json"
     }
   ]
 }
