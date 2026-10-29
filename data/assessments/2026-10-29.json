@@ -1,0 +1,108 @@
+{
+  "date": "2026-10-29",
+  "scores": {
+    "north": {
+      "score": 35,
+      "confidence": "niska",
+      "summary": "Brak nowych, istotnych dowodów dla scenariusza północnego przebiegu A50 przez gminę Sobienie-Jeziory. Utrzymuję poprzednią ocenę 35% przy niskiej pewności.",
+      "rationale": "Nowe źródła nie wskazują oficjalnego wariantu OAW prowadzącego przez północną część gminy, między wsią a doliną Wisły. GDDKiA komunikuje przede wszystkim prace nad zachodnią częścią OAW, a petycja mówi ogólnie o potencjalnym wariancie przez gminę, bez rozstrzygnięcia o przebiegu północnym. Interpelacja i media ogólne dotyczą sprzeciwów lub planów A50, ale nie potwierdzają tego konkretnego korytarza. Wobec braku nowych sygnałów score pozostaje na poziomie poprzedniej oceny 35%.",
+      "key_findings": [
+        {
+          "claim": "GDDKiA w nowym komunikacie koncentruje się na projektowaniu zachodniej części OAW, nie wskazując wariantu przez północną część gminy Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://www.gov.pl/web/gddkia-warszawa/projektujemy-zachodnia-czesc-obwodnicy-aglomeracji-warszawskiej"
+          ]
+        },
+        {
+          "claim": "Petycja lokalna mówi o potencjalnym wariancie A50 mogącym przechodzić przez teren gminy Sobienie-Jeziory, ale nie przesądza o przebiegu północnym.",
+          "evidence_urls": [
+            "https://www.petycjeonline.com/stanowisko_w_sprawie_planowanego_przebiegu_drogi_a50_obwodnicy_aglomeracji_warszawskiej_potencjalny_wariant_ktory_moe_przechodzi_przez_teren_gminy_sobienie-jeziory"
+          ]
+        },
+        {
+          "claim": "Interpelacja dotyczy sprzeciwów samorządów m.in. Wiązowny, Kołbieli, Dębe Wielkie i powiatu otwockiego, co nie potwierdza scenariusza północnego przez Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://www.sejm.gov.pl/Sejm9.nsf/InterpelacjaTresc.xsp?key=BZK9VA"
+          ]
+        },
+        {
+          "claim": "Ogólny materiał medialny o A50 nie precyzuje przebiegu przez północną część gminy Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOOENibUd4N081OVVNbEt2Y21HbnRabmNUNDQ0c1BzbEVKLTVqaGo1NlBkcmhZTVZYZFU1QWVldkxVcFFnenBpUXhac194UGUxTkcyZGFxdnVxNjNKVzBFNE43MjlDSW1vd1dyeXlLbWFVcmlMbjZSRTR2TTZtcm5JYnUtTHRkVGhHMFpn?oc=5"
+          ]
+        }
+      ],
+      "trend_vs_prev": 0
+    },
+    "south": {
+      "score": 18,
+      "confidence": "niska",
+      "summary": "Brak nowych oficjalnych dowodów na wariant A50 prowadzący przez południową część gminy Sobienie-Jeziory. Pojawiła się jedynie petycja o potencjalnym wariancie przez gminę, nieprecyzująca strony przebiegu.",
+      "rationale": "Nowe materiały nie zawierają komunikatu GDDKiA, decyzji środowiskowej ani wskazania wariantu dla odcinka wschodniego OAW. Petycja z 4.10.2026 wspomina o możliwym przebiegu przez gminę Sobienie-Jeziory, ale nie wskazuje na południe od wsi. Pozostałe dowody dotyczą ogólnych planów A50, zachodniej części OAW lub innych gmin. Wobec braku przesłanek do zmiany utrzymuję poprzednią ocenę 18%.",
+      "key_findings": [
+        {
+          "claim": "Petycja z 4.10.2026 mówi o potencjalnym wariancie A50 mogącym przechodzić przez gminę Sobienie-Jeziory, ale nie precyzuje przebiegu przez jej południową część.",
+          "evidence_urls": [
+            "https://www.petycjeonline.com/stanowisko_w_sprawie_planowanego_przebiegu_drogi_a50_obwodnicy_aglomeracji_warszawskiej_potencjalny_wariant_ktory_moe_przechodzi_przez_teren_gminy_sobienie-jeziory"
+          ]
+        },
+        {
+          "claim": "Media ogólnopolskie informują o planach 120 km nowej trasy A50, bez wskazania konkretnego przebiegu przez gminę Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOOENibUd4N081OVVNbEt2Y21HbnRabmNUNDQ0c1BzbEVKLTVqaGo1NlBkcmhZTVZYZFU1QWVldkxVcFFnenBpUXhac194UGUxTkcyZGFxdnVxNjNKVzBFNE43MjlDSW1vd1dyeXlLbWFVcmlMbjZSRTR2TTZtcm5JYnUtTHRkVGhHMFpn?oc=5"
+          ]
+        },
+        {
+          "claim": "GDDKiA kontynuuje prace nad zachodnią częścią OAW, co nie dotyczy wschodniego odcinka ani południowej części gminy Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://www.gov.pl/web/gddkia-warszawa/projektujemy-zachodnia-czesc-obwodnicy-aglomeracji-warszawskiej"
+          ]
+        },
+        {
+          "claim": "Interpelacja poselska wymienia sprzeciwy m.in. Wiązowny, Kołbieli, Dębego Wielkiego i powiatu otwockiego, nie wskazując wariantu przez południową część gminy Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://www.sejm.gov.pl/Sejm9.nsf/InterpelacjaTresc.xsp?key=BZK9VA"
+          ]
+        }
+      ],
+      "trend_vs_prev": 0
+    }
+  },
+  "evidence": [
+    {
+      "title": "Autostrada A50. W Polsce powstanie 120 km nowej trasy - MotoGuru.pl",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOOENibUd4N081OVVNbEt2Y21HbnRabmNUNDQ0c1BzbEVKLTVqaGo1NlBkcmhZTVZYZFU1QWVldkxVcFFnenBpUXhac194UGUxTkcyZGFxdnVxNjNKVzBFNE43MjlDSW1vd1dyeXlLbWFVcmlMbjZSRTR2TTZtcm5JYnUtTHRkVGhHMFpn?oc=5",
+      "source": "Google News: A50 przebieg",
+      "published": "2026-10-09",
+      "snippet": "<a href=\"https://news.google.com/rss/articles/CBMiiwFBVV95cUxOOENibUd4N081OVVNbEt2Y21HbnRabmNUNDQ0c1BzbEVKLTVqaGo1NlBkcmhZTVZYZFU1QWVldkxVcFFnenBpUXhac194UGUxTkcyZGFxdnVxNjNKVzBFNE43MjlDSW1vd1dyeXlLbWFVcmlMbjZSRTR2TTZtcm5JYnUtTHRkVGhHMFpn?oc=5\" target=\"_blank\">Autostrada A50. W Polsce powstanie 120 km nowej trasy</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MotoGuru.pl</font>",
+      "stance": "neutral"
+    },
+    {
+      "title": "STANOWISKO w sprawie planowanego przebiegu drogi A50 – Obwodnicy Aglomeracji Warszawskiej (potencjalny wariant, który może przechodzić przez teren Gminy Sobienie-Jeziory) - Petycjeonline.com",
+      "url": "https://www.petycjeonline.com/stanowisko_w_sprawie_planowanego_przebiegu_drogi_a50_obwodnicy_aglomeracji_warszawskiej_potencjalny_wariant_ktory_moe_przechodzi_przez_teren_gminy_sobienie-jeziory",
+      "source": "exa",
+      "published": "2026-10-04",
+      "snippet": "W związku z docierającymi do nas informacjami o inicjatywie niektórych samorządów z terenu powiatów piaseczyńskiego i grójeckiego dotyczącej przebiegu projektowanej Obwodnicy Aglomeracji Warszawskiej przez południową część Gminy Góra Kalwaria i dalej, po drugiej stronie Wisły, przez teren Gminy Sobienie-Jeziory, wyrażamy stanowczy sprzeciw wobec lokalizacji tej trasy na obszarze naszej Gminy. Prze",
+      "stance": "neutral"
+    },
+    {
+      "title": "Projektujemy zachodnią część Obwodnicy Aglomeracji Warszawskiej - Generalna Dyrekcja Dróg Krajowych i Autostrad- Oddział Warszawa - Portal Gov.pl",
+      "url": "https://www.gov.pl/web/gddkia-warszawa/projektujemy-zachodnia-czesc-obwodnicy-aglomeracji-warszawskiej",
+      "source": "exa",
+      "published": "",
+      "snippet": "## Projektujemy zachodnią część Obwodnicy Aglomeracji Warszawskiej 07.04.2026 Nieprzerwanie kontynuujemy prace związane z wariantowym poprowadzeniem dwóch fragmentów zachodniej części OAW. Obejmują one opracowanie dokumentacji dla odcinka od drogi ekspresowej S7 na północ od Warszawy, przez połączenie z planowaną drogą ekspresową S10 w rejonie Nacpolska i dalej do DK92. Tu rozpoczyna się drugi odc",
+      "stance": "neutral"
+    },
+    {
+      "title": "Interpelacja nr 21813 - tekst - Sejm Rzeczypospolitej Polskiej",
+      "url": "https://www.sejm.gov.pl/Sejm9.nsf/InterpelacjaTresc.xsp?key=BZK9VA",
+      "source": "exa",
+      "published": "",
+      "snippet": "Lokalni włodarze (m.in. wójt gminy Wiązowna, wójt gminy Kołbiel, wójt gminy Dębe Wielkie, jak również Rada Powiatu Otwockiego), ale przede wszystkim lokalne społeczności, mieszkańcy, m.in. zrzeszeni w różnych stowarzyszeniach (jak np. Stowarzyszenie „NIE TĘDY DROGA”), głośno sprzeciwiają się przebiegowi OAW w „czerwonym korytarzu”, kierując nie tylko petycje, ale również oficjalne stanowiska organ",
+      "stance": "neutral"
+    }
+  ],
+  "sources_found": 4,
+  "engine_status": "ok",
+  "assessment_path": "data/assessments/2026-10-29.json"
+}
