@@ -1,0 +1,68 @@
+{
+  "date": "2026-10-30",
+  "scores": {
+    "north": {
+      "score": 35,
+      "confidence": "niska",
+      "summary": "Nowe dowody nie wskazują oficjalnego wariantu OAW przez północną część gminy Sobienie-Jeziory; GDDKiA dopiero zapowiada STEŚ dla kolejnych fragmentów OAW, a protesty dotyczą wariantów A50 ogólnie. Utrzymuję score 35%.",
+      "rationale": "Poprzednia ocena 35% opierała się na braku oficjalnego potwierdzenia północnego korytarza. Nowy komunikat GDDKiA o przygotowaniach do STEŚ dla kolejnych fragmentów OAW potwierdza, że warianty są dopiero analizowane, ale nie wskazuje przebiegu przez północ gminy. Drugi dowód to ogólny protest przeciw wariantom A50, bez odniesienia do Sobienie-Jezior. Brak nowych, istotnych sygnałów dla tego scenariusza, więc score pozostaje bez zmian, a confidence niska.",
+      "key_findings": [
+        {
+          "claim": "GDDKiA ogłasza przygotowania do STEŚ dla kolejnych fragmentów OAW, gdzie projektant ma analizować możliwe warianty przebiegu nowej trasy, ale komunikat nie wskazuje północnej części gminy Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://www.gov.pl/web/gddkia/rozpoczynamy-przygotowania-dla-kolejnych-fragmentow-oaw2"
+          ]
+        },
+        {
+          "claim": "Protest mieszkańców dotyczy wariantów A50 OAW ogólnie, bez potwierdzenia konkretnego korytarza przez północną część gminy Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://www.rynekinfrastruktury.pl/wiadomosci/drogi-i-autostrady/beda-protestowac-przeciwko-wariantom-a50-obwodnicy-aglomeracji-warszawskiej-99513.html"
+          ]
+        }
+      ],
+      "trend_vs_prev": 0
+    },
+    "south": {
+      "score": 18,
+      "confidence": "niska",
+      "summary": "Nowe dowody nie wskazują, aby finalny przebieg A50 miał prowadzić przez południową część gminy Sobienie-Jeziory. Utrzymuję poprzednią ocenę 18%.",
+      "rationale": "Nowy komunikat GDDKiA zapowiada dopiero przygotowanie STEŚ i analizę możliwych wariantów, nie wskazując żadnego konkretnego przebiegu przez południową część gminy Sobienie-Jeziory. Drugi dowód dotyczy ogólnych protestów przeciwko wariantom A50, bez precyzji co do odcinka wschodniego ani strony gminy. Brak oficjalnego wskazania wariantu, decyzji środowiskowej lub przetargu dla odcinka południowo-wschodniego, który potwierdzałby scenariusz SOUTH. Zgodnie z rubryką, przy braku istotnych nowych sygnałów dla tego scenariusza score pozostaje na poprzednim poziomie.",
+      "key_findings": [
+        {
+          "claim": "GDDKiA zapowiada dopiero postępowanie na STEŚ, w którym projektant przeanalizuje możliwe warianty przebiegu nowej trasy, bez wskazania konkretnego przebiegu przez południową część gminy Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://www.gov.pl/web/gddkia/rozpoczynamy-przygotowania-dla-kolejnych-fragmentow-oaw2"
+          ]
+        },
+        {
+          "claim": "Nowe materiały o protestach dotyczą ogólnych wariantów A50/OAW i nie precyzują, czy trasa miałaby przeciąć południową część gminy Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://www.rynekinfrastruktury.pl/wiadomosci/drogi-i-autostrady/beda-protestowac-przeciwko-wariantom-a50-obwodnicy-aglomeracji-warszawskiej-99513.html"
+          ]
+        }
+      ],
+      "trend_vs_prev": 0
+    }
+  },
+  "evidence": [
+    {
+      "title": "Generalna Dyrekcja Dróg Krajowych i Autostrad- Oddział ...",
+      "url": "https://www.gov.pl/web/gddkia/rozpoczynamy-przygotowania-dla-kolejnych-fragmentow-oaw2",
+      "source": "exa",
+      "published": "",
+      "snippet": "Następnie ogłosimy postępowanie na wykonanie Studium techniczno-ekonomiczno-środowiskowego (STEŚ). Zadaniem projektanta będzie przeanalizowanie możliwych wariantów przebiegu nowej trasy, w tym poprowadzenia jej w śladzie istniejącej drogi krajowej. Będą brane pod uwagę nowoczesne technologie oraz nasze dotychczasowe doświadczenia w realizacji takich inwestycji. Konsekwencją prac będzie wskazanie p",
+      "stance": "neutral"
+    },
+    {
+      "title": "Będą protestować przeciwko wariantom A50 Obwodnicy Aglomeracji Warszawskiej - Rynek Infrastruktury",
+      "url": "https://www.rynekinfrastruktury.pl/wiadomosci/drogi-i-autostrady/beda-protestowac-przeciwko-wariantom-a50-obwodnicy-aglomeracji-warszawskiej-99513.html",
+      "source": "exa",
+      "published": "",
+      "snippet": "Mieszkańcy części terenów, przez które przebiegać ma planowana autostrada A50 stanowiąca część Obwodnicy Aglomeracji Warszawskiej decydują się na protest. Ich decyzja ma na celu wyrażenie sprzeciwu wobec kilku proponowanych wariantów trasy. Protestujący nie chcą, by swoje nieruchomości utracili mieszkańcy, ale też wskazują na kwestie środowiskowe. Protest zaplanowano na 24 kwietnia na godzinę 12:0",
+      "stance": "neutral"
+    }
+  ],
+  "sources_found": 2,
+  "engine_status": "ok",
+  "assessment_path": "data/assessments/2026-10-30.json"
+}

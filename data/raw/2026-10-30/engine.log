@@ -1,0 +1,209 @@
+{
+  "artifacts": {
+    "corpus_in_export": false,
+    "grounding": [],
+    "hiring_signals_mode": false,
+    "plan_source": "llm",
+    "pre_research_flags_present": false,
+    "resolved": {
+      "context": "",
+      "entity": "obwodnica autostradowa Warszawy A50 przebieg trasy Sobienie-Jeziory",
+      "github_repos": [],
+      "github_user": "",
+      "subreddits": [],
+      "trustpilot_domain": "",
+      "x_handle": ""
+    }
+  },
+  "clusters": [
+    {
+      "candidate_ids": [
+        "https://reddit.com/r/infrastrukturadrogowa/comments/1xfasur/dlaczego_gddkia_i_samorz\u0105dy_wojew\u00f3dztw_nie_chc\u0105"
+      ],
+      "cluster_id": "cluster-1",
+      "representative_ids": [
+        "https://reddit.com/r/infrastrukturadrogowa/comments/1xfasur/dlaczego_gddkia_i_samorz\u0105dy_wojew\u00f3dztw_nie_chc\u0105"
+      ],
+      "score": 5.435901639344262,
+      "sources": [
+        "reddit"
+      ],
+      "title": "Dlaczego GDDKiA i samorz\u0105dy wojew\u00f3dztw nie chc\u0105 przejmowa\u0107 na siebie dr\u00f3g?"
+    }
+  ],
+  "errors_by_source": {
+    "grounding": "HTTP 402: Payment Required"
+  },
+  "freshness_verdicts": [],
+  "generated_at": "2026-10-30T11:30:42.165642+00:00",
+  "items_by_source": {
+    "reddit": [
+      {
+        "body": "Dlaczego GDDKiA i samorz\u0105dy wojew\u00f3dztw nie chc\u0105 przejmowa\u0107 na siebie dr\u00f3g?\nW Polsce ostatniego czasu zaobserwowa\u0142em \u017ce pa\u0144stwo i wojew\u00f3dztwa nie chc\u0105 przejmowa\u0107 na siebie dr\u00f3g, w wielu przypadkach trend jest odwroty, i zauwa\u017cy\u0142em \u017ce wojew\u00f3dztwa oddaj\u0105 drogi powiatom i gminom o niepor\u00f3wnywalnie mniejszych dochodach, co wida\u0107 po tym \u017ce drogi te nie s\u0105 od\u015bnie\u017cane lub bardzo s\u0142abo, nawierzchnia jest znacz\u0105co gorsza od dr\u00f3g wojew\u00f3dzkich, o ile Polskie drogi ekspresowe, krajowe, wojew\u00f3dzkie (nieco gorzej ni\u017c DK) maj\u0105 w wi\u0119kszo\u015bci dobr\u0105 nawierzchni\u0119 to wiele powiat\u00f3wek do dzi",
+        "container": "infrastrukturadrogowa",
+        "date_confidence": "high",
+        "engagement": {
+          "num_comments": 0,
+          "score": 0
+        },
+        "freshness": 83,
+        "item_id": "R1",
+        "local_rank_score": 0.2465,
+        "local_relevance": 0.06,
+        "metadata": {
+          "comment_insights": [],
+          "top_comments": []
+        },
+        "published_at": "2026-10-25",
+        "relevance_hint": 0.0,
+        "snippet": "W Polsce ostatniego czasu zaobserwowa\u0142em \u017ce pa\u0144stwo i wojew\u00f3dztwa nie chc\u0105 przejmowa\u0107 na siebie dr\u00f3g, w wielu przypadkach trend jest odwroty, i zauwa\u017cy\u0142em \u017ce wojew\u00f3dztwa oddaj\u0105 drogi powiatom i gminom o niepor\u00f3wnywalnie mniejszych dochodach, co wida\u0107 po tym \u017ce drogi te nie s\u0105 od\u015bnie\u017cane lub bardzo s\u0142abo, nawierzchnia jest znacz\u0105co gorsza od dr\u00f3g wojew\u00f3dzkich, o ile Polskie drogi ekspresowe, krajow",
+        "source": "reddit",
+        "source_quality": 0.6,
+        "title": "Dlaczego GDDKiA i samorz\u0105dy wojew\u00f3dztw nie chc\u0105 przejmowa\u0107 na siebie dr\u00f3g?",
+        "url": "https://www.reddit.com/r/infrastrukturadrogowa/comments/1xfasur/dlaczego_gddkia_i_samorz\u0105dy_wojew\u00f3dztw_nie_chc\u0105/",
+        "why_relevant": "Reddit RSS"
+      }
+    ]
+  },
+  "library_context": [],
+  "provider_runtime": {
+    "planner_model": "google/gemini-3.1-flash-lite-preview",
+    "reasoning_provider": "openrouter",
+    "rerank_model": "google/gemini-3.1-flash-lite-preview"
+  },
+  "query_plan": {
+    "cluster_mode": "none",
+    "freshness_mode": "strict_recent",
+    "intent": "factual",
+    "notes": [
+      "Skupienie na oficjalnych dokumentach GDDKiA oraz dyskusjach lokalnych spo\u0142eczno\u015bci.",
+      "A50 jest cz\u0119\u015bci\u0105 wi\u0119kszego projektu Obwodnicy Aglomeracji Warszawskiej (OAW)."
+    ],
+    "raw_topic": "obwodnica autostradowa Warszawy A50 przebieg trasy Sobienie-Jeziory",
+    "source_weights": {
+      "grounding": 0.6,
+      "hackernews": 0.1,
+      "reddit": 0.2,
+      "youtube": 0.1
+    },
+    "subqueries": [
+      {
+        "label": "Trasa A50 Sobienie-Jeziory",
+        "ranking_query": "Jaki jest aktualny planowany przebieg autostrady A50 w okolicach Sobienie-Jeziory?",
+        "search_query": "\"A50\" \"Sobienie-Jeziory\" przebieg trasy",
+        "sources": [
+          "grounding",
+          "reddit"
+        ],
+        "weight": 1.0
+      }
+    ]
+  },
+  "range_from": "2026-09-30",
+  "range_to": "2026-10-30",
+  "ranked_candidates": [
+    {
+      "candidate_id": "https://reddit.com/r/infrastrukturadrogowa/comments/1xfasur/dlaczego_gddkia_i_samorz\u0105dy_wojew\u00f3dztw_nie_chc\u0105",
+      "cluster_id": "cluster-1",
+      "explanation": "The candidate does not mention the A50 motorway or Sobienie-Jeziory in the title or snippet. It discusses general road management issues in Poland and fails the primary entity grounding requirement.",
+      "final_score": 5.435901639344262,
+      "freshness": 83,
+      "fun_explanation": "Dry, analytical observation about road maintenance bureaucracy. Lacks humor or wit.",
+      "fun_score": 15.0,
+      "item_id": "R1",
+      "local_relevance": 0.06,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "R1",
+            "native_rank": 1,
+            "source": "reddit",
+            "subquery_label": "Trasa A50 Sobienie-Jeziory"
+          }
+        ],
+        "range_from": "2026-09-30",
+        "range_to": "2026-10-30"
+      },
+      "native_ranks": {
+        "Trasa A50 Sobienie-Jeziory:reddit": 1
+      },
+      "rerank_score": 10.0,
+      "rrf_score": 0.003278688524590164,
+      "snippet": "W Polsce ostatniego czasu zaobserwowa\u0142em \u017ce pa\u0144stwo i wojew\u00f3dztwa nie chc\u0105 przejmowa\u0107 na siebie dr\u00f3g, w wielu przypadkach trend jest odwroty, i zauwa\u017cy\u0142em \u017ce wojew\u00f3dztwa oddaj\u0105 drogi powiatom i gminom o niepor\u00f3wnywalnie mniejszych dochodach, co wida\u0107 po tym \u017ce drogi te nie s\u0105 od\u015bnie\u017cane lub bardzo s\u0142abo, nawierzchnia jest znacz\u0105co gorsza od dr\u00f3g wojew\u00f3dzkich, o ile Polskie drogi ekspresowe, krajow",
+      "source": "reddit",
+      "source_items": [
+        {
+          "body": "Dlaczego GDDKiA i samorz\u0105dy wojew\u00f3dztw nie chc\u0105 przejmowa\u0107 na siebie dr\u00f3g?\nW Polsce ostatniego czasu zaobserwowa\u0142em \u017ce pa\u0144stwo i wojew\u00f3dztwa nie chc\u0105 przejmowa\u0107 na siebie dr\u00f3g, w wielu przypadkach trend jest odwroty, i zauwa\u017cy\u0142em \u017ce wojew\u00f3dztwa oddaj\u0105 drogi powiatom i gminom o niepor\u00f3wnywalnie mniejszych dochodach, co wida\u0107 po tym \u017ce drogi te nie s\u0105 od\u015bnie\u017cane lub bardzo s\u0142abo, nawierzchnia jest znacz\u0105co gorsza od dr\u00f3g wojew\u00f3dzkich, o ile Polskie drogi ekspresowe, krajowe, wojew\u00f3dzkie (nieco gorzej ni\u017c DK) maj\u0105 w wi\u0119kszo\u015bci dobr\u0105 nawierzchni\u0119 to wiele powiat\u00f3wek do dzi",
+          "container": "infrastrukturadrogowa",
+          "date_confidence": "high",
+          "engagement": {
+            "num_comments": 0,
+            "score": 0
+          },
+          "freshness": 83,
+          "item_id": "R1",
+          "local_rank_score": 0.2465,
+          "local_relevance": 0.06,
+          "metadata": {
+            "comment_insights": [],
+            "top_comments": []
+          },
+          "published_at": "2026-10-25",
+          "relevance_hint": 0.0,
+          "snippet": "W Polsce ostatniego czasu zaobserwowa\u0142em \u017ce pa\u0144stwo i wojew\u00f3dztwa nie chc\u0105 przejmowa\u0107 na siebie dr\u00f3g, w wielu przypadkach trend jest odwroty, i zauwa\u017cy\u0142em \u017ce wojew\u00f3dztwa oddaj\u0105 drogi powiatom i gminom o niepor\u00f3wnywalnie mniejszych dochodach, co wida\u0107 po tym \u017ce drogi te nie s\u0105 od\u015bnie\u017cane lub bardzo s\u0142abo, nawierzchnia jest znacz\u0105co gorsza od dr\u00f3g wojew\u00f3dzkich, o ile Polskie drogi ekspresowe, krajow",
+          "source": "reddit",
+          "source_quality": 0.6,
+          "title": "Dlaczego GDDKiA i samorz\u0105dy wojew\u00f3dztw nie chc\u0105 przejmowa\u0107 na siebie dr\u00f3g?",
+          "url": "https://www.reddit.com/r/infrastrukturadrogowa/comments/1xfasur/dlaczego_gddkia_i_samorz\u0105dy_wojew\u00f3dztw_nie_chc\u0105/",
+          "why_relevant": "Reddit RSS"
+        }
+      ],
+      "source_quality": 0.6,
+      "sources": [
+        "reddit"
+      ],
+      "subquery_labels": [
+        "Trasa A50 Sobienie-Jeziory"
+      ],
+      "title": "Dlaczego GDDKiA i samorz\u0105dy wojew\u00f3dztw nie chc\u0105 przejmowa\u0107 na siebie dr\u00f3g?",
+      "url": "https://www.reddit.com/r/infrastrukturadrogowa/comments/1xfasur/dlaczego_gddkia_i_samorz\u0105dy_wojew\u00f3dztw_nie_chc\u0105/"
+    }
+  ],
+  "source_status": {
+    "grounding": {
+      "at": "2026-10-30T11:30:38.366721Z",
+      "attempted": true,
+      "detail": "HTTP 402: Payment Required",
+      "fix_hint": "doctor",
+      "items_returned": 0,
+      "source": "grounding",
+      "state": "auth-failed"
+    },
+    "reddit": {
+      "at": "2026-10-30T11:30:40.315749Z",
+      "attempted": true,
+      "detail": "2 sub-requests blocked (HTTP 403)",
+      "items_returned": 1,
+      "lane_failure_state": "auth-failed",
+      "source": "reddit",
+      "state": "ok"
+    }
+  },
+  "topic": "obwodnica autostradowa Warszawy A50 przebieg trasy Sobienie-Jeziory",
+  "warnings": [
+    "Evidence is thin for this topic.",
+    "Some sources failed: grounding"
+  ]
+}
+
+--- STDERR ---
+/last30days · researching: obwodnica autostradowa Warszawy A50 przebieg trasy Sobienie-Jeziory
+⏳ [95mProcessing[0m Finding patterns...
+[Planner] Plan: intent=factual, freshness=strict_recent, cluster_mode=none, subqueries=1, source=llm
+[Planner]   sq1 label=Trasa A50 Sobienie-Jeziory search=""A50" "Sobienie-Jeziory" przebieg trasy" sources=[grounding,reddit]
+[RedditKeyless] arctic-shift supplement: 8 new posts from 8 arctic results
+[RedditKeyless] Tier 1 (RSS) 1 posts; score-only; 8 scored cards
+[RedditKeyless] arctic-shift backfilled 1 post scores
+✓ Research complete (6.0s) - Reddit: 1 thread, YouTube: 0 videos, HN: 0 stories, Web: 0 results
+[last30days] Saved output to /home/runner/work/a50-monitor/a50-monitor/data/raw/2026-10-30/report.json
+[last30days] Saved output to /home/runner/work/a50-monitor/a50-monitor/data/raw/2026-10-30/obwodnica-autostradowa-warszawy-a50-przebieg-trasy-sobienie-jeziory-raw.json
