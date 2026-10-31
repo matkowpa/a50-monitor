@@ -1,0 +1,88 @@
+{
+  "date": "2026-10-31",
+  "scores": {
+    "north": {
+      "score": 35,
+      "confidence": "niska",
+      "summary": "Brak nowych, istotnych dowodów dotyczących północnego wariantu przebiegu A50 przez gminę Sobienie-Jeziory. Utrzymuję poprzednią ocenę 35% przy niskiej pewności.",
+      "rationale": "Nowe dowody odnoszą się do sprzeciwu gminy Grójec, wyboru biura projektowego dla OAW oraz planu sytuacyjnego wariantu fioletowego w rejonie Pniew. Żaden z nich nie wskazuje oficjalnego korytarza przez północną część gminy Sobienie-Jeziory ani nie potwierdza wariantu omijającego tę stronę gminy. Ponieważ brak jest nowych sygnałów dla ocenianego scenariusza, score pozostaje na poziomie poprzedniej oceny. Pewność pozostaje niska z powodu ogólnego charakteru dostępnych materiałów i braku rozstrzygnięć wariantowych dla odcinka wschodniego.",
+      "key_findings": [
+        {
+          "claim": "Uchwała Rady Miejskiej w Grójcu dotyczy sprzeciwu wobec wariantów A50 przez gminę Grójec, a nie przez północną część gminy Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://bip-v1-files.idcom-jst.pl/sites/47399/wiadomosci/678908/files/uchwala_nr_lix58423_w_sprawie_wyrazenia_sprzeciwu_wobec_wariantow_przebiegu_drogi_a50__obwodnicy_aglomeracji_warszawskiej_przez_teren_gminy_grojec.pdf"
+          ]
+        },
+        {
+          "claim": "Komunikat GDDKiA o wyborze pierwszego biura projektowego dla OAW nie wskazuje przebiegu przez północną część gminy Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://www.gov.pl/web/gddkia-warszawa/wybralismy-pierwsze-biuro-projektowe-dla-obwodnicy-aglomeracji-warszawskiej"
+          ]
+        },
+        {
+          "claim": "Plan sytuacyjny wariantu fioletowego w rejonie Pniew dotyczy zachodniego odcinka OAW, a nie północnej części gminy Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://cms-v2-files.idcom-jst.pl/sites/117/cms/szablony/8987/pliki/oawa50_war2fioletowy_08_pniewy_ark06.pdf"
+          ]
+        }
+      ],
+      "trend_vs_prev": 0
+    },
+    "south": {
+      "score": 18,
+      "confidence": "niska",
+      "summary": "Wszystkie trzy nowe dowody dotyczą zachodniego odcinka OAW (DK92–S7, rejon Grójca i Pniew), a nie wschodniego odcinka przez gminę Sobienie-Jeziory. Brak nowych sygnałów dla scenariusza SOUTH, więc score pozostaje na poziomie poprzedniej oceny.",
+      "rationale": "Nowe dowody nie odnoszą się do odcinka południowo-wschodniego OAW ani do gminy Sobienie-Jeziory: uchwała grójecka dotyczy sprzeciwu gminy Grójec, wybór biura TRAKT obejmuje zadanie DK92–S7, a arkusz war2fioletowy to plan sytuacyjny odcinka zachodniego w rejonie Pniew. Zgodnie z rubryką dowody dotyczące innej części inwestycji nie zmieniają tego score, mogą co najwyżej utrzymać niską pewność. Brak oficjalnego wskazania wariantu, decyzji środowiskowej lub przetargu dla odcinka wschodniego, który przesądzałby o przebiegu na południe od wsi Sobienie-Jeziory. Wobec braku nowych istotnych sygnałów utrzymuję score z poprzedniej oceny (18) i niską confidence.",
+      "key_findings": [
+        {
+          "claim": "Uchwała Rady Miejskiej w Grójcu wyraża sprzeciw wobec wariantów A50 przez gminę Grójec, czyli dotyczy zachodniego odcinka, a nie gminy Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://bip-v1-files.idcom-jst.pl/sites/47399/wiadomosci/678908/files/uchwala_nr_lix58423_w_sprawie_wyrazenia_sprzeciwu_wobec_wariantow_przebiegu_drogi_a50__obwodnicy_aglomeracji_warszawskiej_przez_teren_gminy_grojec.pdf"
+          ]
+        },
+        {
+          "claim": "Wybór biura TRAKT dotyczy studium S50/A50 pomiędzy DK92 i S7, czyli odcinka zachodniego OAW, bez związku z południową częścią gminy Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://www.gov.pl/web/gddkia-warszawa/wybralismy-pierwsze-biuro-projektowe-dla-obwodnicy-aglomeracji-warszawskiej"
+          ]
+        },
+        {
+          "claim": "Plan sytuacyjny od km 44+000 do km 53+000 (wariant fioletowy) obejmuje rejon Pniew, tj. odcinek zachodni, nie odcinek wschodni przez Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://cms-v2-files.idcom-jst.pl/sites/117/cms/szablony/8987/pliki/oawa50_war2fioletowy_08_pniewy_ark06.pdf"
+          ]
+        }
+      ],
+      "trend_vs_prev": 0
+    }
+  },
+  "evidence": [
+    {
+      "title": "UCHWAŁA NR LIX/584/23 RADY MIEJSKIEJ W GRÓJCU z dnia 17 marca 2023 r. w sprawie wyrażenia sprzeciwu wobec wariantów przebiegu drogi A50 - Obwodnicy Aglomeracji Warszawskiej przez teren Gminy Grójec",
+      "url": "https://bip-v1-files.idcom-jst.pl/sites/47399/wiadomosci/678908/files/uchwala_nr_lix58423_w_sprawie_wyrazenia_sprzeciwu_wobec_wariantow_przebiegu_drogi_a50__obwodnicy_aglomeracji_warszawskiej_przez_teren_gminy_grojec.pdf",
+      "source": "exa",
+      "published": "",
+      "snippet": "UCHWAŁA NR LIX/584/23 RADY MIEJSKIEJ W GRÓJCU z dnia 17 marca 2023 r. w sprawie wyrażenia sprzeciwu wobec wariantów przebiegu drogi A50 - Obwodnicy Aglomeracji Warszawskiej przez teren Gminy Grójec Na podstawie art. 7 ust. 1 pkt 1, art. 18 ust. 1 ustawy z dnia 8 marca 1990 r. o samorządzie gminnym (Dz. U. 2023, poz. 40) Rada Miejska w Grójcu uchwala, co następuje: § 1. 1. Mając na względzie dotych",
+      "stance": "neutral"
+    },
+    {
+      "title": "Wybraliśmy pierwsze biuro projektowe dla Obwodnicy Aglomeracji Warszawskiej - Generalna Dyrekcja Dróg Krajowych i Autostrad- Oddział Warszawa - Portal Gov.pl",
+      "url": "https://www.gov.pl/web/gddkia-warszawa/wybralismy-pierwsze-biuro-projektowe-dla-obwodnicy-aglomeracji-warszawskiej",
+      "source": "exa",
+      "published": "",
+      "snippet": "Oferta firmy TRAKT została wybrana jako najkorzystniejsza w przetargu na opracowanie Studium techniczno-ekonomiczno-środowiskowego wraz z uzyskaniem decyzji środowiskowej dla S50/A50 pomiędzy DK92 i S7 na południe od Stolicy. To jeden z dwóch odcinków pierwszego, zachodniego fragmentu Obwodnicy Aglomeracji Warszawskiej, które połączą S10 w okolicy Naruszewa pod Płońskiem z S7 na południe od Warsza",
+      "stance": "neutral"
+    },
+    {
+      "title": "DG 160907W",
+      "url": "https://cms-v2-files.idcom-jst.pl/sites/117/cms/szablony/8987/pliki/oawa50_war2fioletowy_08_pniewy_ark06.pdf",
+      "source": "exa",
+      "published": "",
+      "snippet": "PLAN SYTUACYJNY OD KM 44+000 DO KM 53+000 Studium Techniczno-Ekonomiczno-Środowiskowe wraz z uzyskaniem Decyzji o Środowiskowych Uwarunkowaniach dla zadania „Obwodnica Aglomeracji Warszawskiej, odcinek od DK92 (bez węzła) do S7 (z węzłem)” NAZWA OPRACOWANIA TYTUŁ RYSUNKU INWESTOR PROJEKTANT ZADANIE Skarb Państwa - Generalny Dyrektor Dróg Krajowych i Autostrad NR UMOWY SKALA DATA NR RYS. 197/2022 B",
+      "stance": "neutral"
+    }
+  ],
+  "sources_found": 3,
+  "engine_status": "ok",
+  "assessment_path": "data/assessments/2026-10-31.json"
+}
