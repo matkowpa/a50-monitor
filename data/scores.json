@@ -2851,6 +2851,128 @@
       "sources_found": 3,
       "engine_status": "ok",
       "assessment_path": "data/assessments/2026-10-31.json"
+    },
+    {
+      "date": "2026-11-01",
+      "scores": {
+        "north": {
+          "score": 35,
+          "confidence": "niska",
+          "summary": "Brak nowych dowodów, które wskazywałyby oficjalny wariant A50 przez północną część gminy Sobienie-Jeziory. Score pozostaje na poziomie poprzedniej oceny 35%.",
+          "rationale": "Nowe dowody nie zawierają komunikatu GDDKiA, studium, raportu OOŚ ani decyzji środowiskowej wskazującej korytarz przez północną część gminy Sobienie-Jeziory. Ogłoszenie przetargu na STEŚ kolejnego odcinka OAW nie precyzuje przebiegu w tym rejonie. Stanowisko Góry Kalwarii dotyczy sprzeciwu wobec jakiegokolwiek przebiegu przez tę gminę, a nie północnej części Sobienie-Jezior. Dokument powiatu otwockiego mówi o poszerzonych korytarzach bez wariantowania OAW, co nie przesądza ocenianego scenariusza. Wobec braku nowych, istotnych sygnałów score pozostaje bez zmian, a confidence jest niska.",
+          "key_findings": [
+            {
+              "claim": "Ogłoszenie przetargu na STEŚ kolejnego odcinka OAW nie wskazuje wariantu przez północną część gminy Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://www.gov.pl/web/gddkia/ruszamy-z-przetargiem-na-kolejny-odcinek-oaw"
+              ]
+            },
+            {
+              "claim": "Stanowisko Rady Miejskiej Góry Kalwarii jest sprzeciwem wobec jakiegokolwiek przebiegu przez tę gminę i nie przesądza o północnej części Sobienie-Jezior.",
+              "evidence_urls": [
+                "https://gorakalwaria.pl/wiadomosci/temat/242"
+              ]
+            },
+            {
+              "claim": "Dokument powiatu otwockiego wskazuje, że dokumenty SSL CPK zawierają poszerzone korytarze bez wariantowania planowanych przebiegów OAW.",
+              "evidence_urls": [
+                "https://www.bip.powiat-otwocki.pl/plik,22845,projekt-stanowiska-w-sprawie-strategicznego-studium-lokalizacyjnego-inwestycji-centralnego-portu-komunikacyjnego-wraz-z-prognoza-oddzialywania-na-srodowisko.pdf"
+              ]
+            },
+            {
+              "claim": "Interpelacja nr 19079 dotyczy przejrzystości procesu przygotowania A50/OAW, a nie konkretnego przebiegu przez gminę Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://leniwyposel.pl/interpelacje/19079/"
+              ]
+            },
+            {
+              "claim": "Materiał gminy Pniewy dotyczy innego terenu i nie odnosi się do gminy Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://pniewy.pl/cms/8987/autostrada_a50"
+              ]
+            }
+          ],
+          "trend_vs_prev": 0
+        },
+        "south": {
+          "score": 18,
+          "confidence": "niska",
+          "summary": "Brak nowych dowodów dotyczących południowej części gminy Sobienie-Jeziory; dostępne materiały odnoszą się do innych odcinków OAW lub ogólnych procedur. Utrzymuję score na poziomie poprzedniej oceny 18%.",
+          "rationale": "Nowe dowody nie wskazują oficjalnego wariantu, studium ani decyzji środowiskowej dla odcinka południowo-wschodniego OAW w rejonie Sobienie-Jezior. Uchwała Góry Kalwarii dotyczy sprzeciwu wobec przebiegu przez tę gminę, a nie potwierdzenia trasy na południe od wsi Sobienie-Jeziory. Komunikat GDDKiA o przetargu na kolejny odcinek OAW nie precyzuje w dostarczonym fragmencie lokalizacji wariantów na tym terenie. Materiał powiatu otwockiego mówi o korytarzach bez wariantowania, co nie daje podstaw do podniesienia oceny tego konkretnego scenariusza.",
+          "key_findings": [
+            {
+              "claim": "Stanowisko Góry Kalwarii dotyczy sprzeciwu wobec jakiegokolwiek przebiegu przez tę gminę, a nie potwierdzenia wariantu na południe od Sobienie-Jezior.",
+              "evidence_urls": [
+                "https://gorakalwaria.pl/wiadomosci/temat/242"
+              ]
+            },
+            {
+              "claim": "Komunikat GDDKiA o przetargu na kolejny odcinek OAW nie wskazuje w dostarczonym fragmencie wariantu przez południową część gminy Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://www.gov.pl/web/gddkia/ruszamy-z-przetargiem-na-kolejny-odcinek-oaw"
+              ]
+            },
+            {
+              "claim": "Materiał powiatu otwockiego wskazuje na poszerzone korytarze bez wariantowania planowanych przebiegów OAW, co nie przesądza scenariusza południowego.",
+              "evidence_urls": [
+                "https://www.bip.powiat-otwocki.pl/plik,22845,projekt-stanowiska-w-sprawie-strategicznego-studium-lokalizacyjnego-inwestycji-centralnego-portu-komunikacyjnego-wraz-z-prognoza-oddzialywania-na-srodowisko.pdf"
+              ]
+            },
+            {
+              "claim": "Dowód z Pniew dotyczy innej gminy i innego fragmentu A50, więc nie zmienia oceny dla Sobienie-Jezior.",
+              "evidence_urls": [
+                "https://pniewy.pl/cms/8987/autostrada_a50"
+              ]
+            }
+          ],
+          "trend_vs_prev": 0
+        }
+      },
+      "evidence": [
+        {
+          "title": "Autostrada A50 - Gmina Pniewy",
+          "url": "https://pniewy.pl/cms/8987/autostrada_a50",
+          "source": "exa",
+          "published": "",
+          "snippet": "### Autostrada A50 Drodzy Mieszkańcy Gminy Pniewy zachęcamy do przesyłania Państwa uwag, sugestii i spostrzeżeń dotyczących przebiegu A50 przez teren naszej gminy na specjalny adres mailowy: a50@pniewy.pl utworzony przez Urząd Gminy Pniewy do zbierania Państwa opinii. Koordynatorem ze ramienia Gminy Pniewy w sprawach związanych z OAW jest Pani Paulina Abramowicz, tel. 048 685 02 10 wew. 19. Stanow",
+          "stance": "neutral"
+        },
+        {
+          "title": "Obwodnica A50",
+          "url": "https://gorakalwaria.pl/wiadomosci/temat/242",
+          "source": "exa",
+          "published": "",
+          "snippet": "stanowisko Rady Miejskiej - przeciwko jakimkolwiek w... Podczas wczorajszej sesji, Rada Miejska jednogłośnie (przy obecności 19 na 21 radnych) podjęła stanowisko wyrażające sprzeciw wobec jakiegokolwiek poprowadzenia Obwodnicy Aglomeracji",
+          "stance": "neutral"
+        },
+        {
+          "title": "Ruszamy z przetargiem na kolejny odcinek OAW",
+          "url": "https://www.gov.pl/web/gddkia/ruszamy-z-przetargiem-na-kolejny-odcinek-oaw",
+          "source": "exa",
+          "published": "",
+          "snippet": "Do Dziennika Urzędowego Unii Europejskiej przekazaliśmy ogłoszenie o przetargu na wykonanie Studium techniczno-ekonomiczno-środowiskowego (STEŚ) dla kolejnego fragmentu Obwodnicy Aglomeracji Warszawskiej (OAW). Chodzi o odcinek drogi ekspresowej S50, od węzła Przyborowice na S7 do rejonu S8 na północny-wschód od Warszawy. AKTUALIZACJA: od 31 grudnia ogłoszenie o przetargu jest widoczne na platform",
+          "stance": "neutral"
+        },
+        {
+          "title": "Interpelacja nr 19079 w sprawie przejrzystości procesu ...",
+          "url": "https://leniwyposel.pl/interpelacje/19079/",
+          "source": "exa",
+          "published": "",
+          "snippet": "Szanowny Panie Ministrze, zwracam się do Pana w sprawie procesu przygotowania inwestycji pn. Autostrada A50 Obwodnica Aglomeracji Warszawskiej (OAW), w szczególności w kwestii przejrzystości procedury wyboru wariantu inwestorskiego oraz sposobu prowadzenia analizy wielokryterialnej. W przestrzeni publicznej, w tym w oficjalnych materiałach publikowanych przez Ministerstwo Infrastruktury oraz Gener",
+          "stance": "neutral"
+        },
+        {
+          "title": "A50 - bip.powiat-otwocki.pl",
+          "url": "https://www.bip.powiat-otwocki.pl/plik,22845,projekt-stanowiska-w-sprawie-strategicznego-studium-lokalizacyjnego-inwestycji-centralnego-portu-komunikacyjnego-wraz-z-prognoza-oddzialywania-na-srodowisko.pdf",
+          "source": "exa",
+          "published": "",
+          "snippet": "1. Przedstawione do uzgodnień dokumenty SSL CPK w zakresie infrastruktury drogowej przedstawiają jedynie poszerzone korytarze drogowe bez wariantowania planowanych przebiegów Obwodnicy Aglomeracji Warszawskiej (OAW), przez co nie jest możliwym odniesienie się do poszczególnych wariantów i zbadania ich wpływu na powiat otwocki i środowisko naturalne. 2. W zakresie ograniczenia hałasu wnioskujemy o",
+          "stance": "neutral"
+        }
+      ],
+      "sources_found": 5,
+      "engine_status": "ok",
+      "assessment_path": "data/assessments/2026-11-01.json"
     }
   ]
 }
