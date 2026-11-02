@@ -60,7 +60,7 @@ GitHub Actions (cron 6:30 PL) lub lokalnie z Cline (/a50-daily)
   występuje w opisie i statystykach grupy. Dowody z FB
   wpływają na score tylko w dniach, gdy uruchomisz `/a50-daily` lokalnie.
 - **Ocena**: model wskazany w `config.json` (`openrouter_model`,
-  obecnie `deepseek/deepseek-v4.1-flash`) ocenia dowody wg sztywnej rubryki,
+  obecnie `deepseek/deepseek-v4.1-flash-1017`) ocenia dowody wg sztywnej rubryki,
   **osobno dla dwóch scenariuszy** — trasa przez północną część gminy
   (na północ od wsi, kierunek Wisły/Natura 2000) lub przez południową
   (na południe od wsi, rejon Śniadków). Każdy scenariusz to **osobne

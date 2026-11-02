@@ -526,7 +526,7 @@ def assess_scenarios(evidence: list[Evidence], prev: dict | None, cfg: dict,
     ta strona dostaje poprzednią wartość z confidence „niska”, a powód ląduje
     w `assess_errors`. Gdy padną oba — wyjątek (workflow ma być czerwony).
     """
-    model = cfg.get("openrouter_model", "google/gemini-2.5-flash")
+    model = cfg.get("openrouter_model", "deepseek/deepseek-v4.1-flash-1017")
     baseline = cfg.get("baseline_scores") or {}
     prev_scores = (prev or {}).get("scores") or {}
     scores: dict = {}
