@@ -3021,6 +3021,94 @@
       "sources_found": 1,
       "engine_status": "ok",
       "assessment_path": "data/assessments/2026-11-02.json"
+    },
+    {
+      "date": "2026-11-03",
+      "scores": {
+        "north": {
+          "score": 35,
+          "confidence": "niska",
+          "summary": "Nowe dowody dotyczą wyłącznie zachodniego i północnego odcinka OAW (Żabia Wola, Serock, odcinek DK92–S7) i nie odnoszą się do gminy Sobienie-Jeziory ani do wariantu przez jej północną część. Brak podstaw do zmiany oceny — score pozostaje na poziomie 35%.",
+          "rationale": "Przegląd nowych materiałów nie zawiera żadnego komunikatu GDDKiA, studium korytarzowego, raportu OOŚ ani decyzji środowiskowej wskazującej przebieg przez północną część gminy Sobienie-Jeziory. Petycja dotycząca Petrykozów i Grzegorzewic w gminie Żabia Wola oraz uchwały Rady Miejskiej w Serocku odnoszą się do innych, odległych odcinków OAW. Strona GDDKiA dla odcinka DK92–S7 dotyczy fragmentu zachodniego, a nie odcinka wschodnego, na którym leży omawiana gmina. Zgodnie z rubryką brak nowych, istotnych sygnałów oznacza utrzymanie poprzedniego score przy niskiej pewności.",
+          "key_findings": [
+            {
+              "claim": "Nowy dowód ministerstwa dotyczy petycji w sprawie przebiegu OAW przez Petrykozy i Grzegorzewice w gminie Żabia Wola, czyli zachodniego odcinka — bez związku z gminą Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://www.gov.pl/web/infrastruktura/6-pazdziernika6"
+              ]
+            },
+            {
+              "claim": "Materiały z Serocka zawierają stanowiska samorządów w sprawie korytarza OAW w rejonie północnym (Zalew Zegrzyński), a nie w powiecie otwockim.",
+              "evidence_urls": [
+                "https://serock.treespot.pl/media/pdf/22458.pdf"
+              ]
+            },
+            {
+              "claim": "Strona GDDKiA opisuje odcinek A50/S50 DK92–S7, tj. fragment zachodni obwodnicy, nie odcinek wschodni obejmujący gminę Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8"
+              ]
+            }
+          ],
+          "trend_vs_prev": 0
+        },
+        "south": {
+          "score": 18,
+          "confidence": "niska",
+          "summary": "Brak nowych dowodów dotyczących południowego przebiegu OAW przez gminę Sobienie-Jeziory; dostępne materiały odnoszą się do innych lokalizacji lub odcinków. Utrzymuję poprzednią ocenę scenariusza SOUTH na poziomie 18%.",
+          "rationale": "Nowe dowody nie zawierają oficjalnego wariantu, studium, przetargu STEŚ ani decyzji środowiskowej dla odcinka południowo-wschodniego OAW w rejonie Sobienie-Jezior. Petycja ministerialna dotyczy Petrykoz i Grzegorzewic w gminie Żabia Wola, a materiał GDDKiA opisuje odcinek DK92–S7, czyli inne zadanie. Dokument ze stanowiskami JST dotyczy głównie Serocka i innych gmin, nie wskazując przebiegu przez południową część Sobienie-Jezior. Zgodnie z rubryką dowody dotyczące innych obszarów nie zmieniają score tego scenariusza, więc pozostaje on blisko poprzedniej oceny.",
+          "key_findings": [
+            {
+              "claim": "Petycja ministerialna dotyczy przebiegu OAW przez Petrykozy i Grzegorzewice w gminie Żabia Wola, a nie przez gminę Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://www.gov.pl/web/infrastruktura/6-pazdziernika6"
+              ]
+            },
+            {
+              "claim": "Materiał GDDKiA dotyczy odcinka A50/S50 DK92–S7, czyli zachodniego fragmentu OAW, nie odcinka południowo-wschodniego przy Sobienie-Jeziorach.",
+              "evidence_urls": [
+                "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8"
+              ]
+            },
+            {
+              "claim": "Dokument ze stanowiskami jednostek samorządu terytorialnego nie wskazuje oficjalnego wariantu przebiegu przez południową część gminy Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://serock.treespot.pl/media/pdf/22458.pdf"
+              ]
+            }
+          ],
+          "trend_vs_prev": 0
+        }
+      },
+      "evidence": [
+        {
+          "title": "6 października - Ministerstwo Infrastruktury - Portal Gov.pl",
+          "url": "https://www.gov.pl/web/infrastruktura/6-pazdziernika6",
+          "source": "exa",
+          "published": "2026-10-30",
+          "snippet": "## 6 października 06.10.2026 Petycja w sprawie przebiegu Obwodnicy Aglomeracji Warszawskiej (A50/S50) przez Petrykozy i Grzegorzewice w gminie Żabia Wola. ### Materiały Petycja dostępna cyfrowo. 20261006​_petycja​_DDP​_dostępność.pdf 4.33MB Pierwsza publikacja: 30.10.2026 07:33 Joanna Jankowska Wytwarzający/ Odpowiadający: Joanna Jankowska | Tytuł | Wersja | Dane zmiany / publikacji | | --- | ---",
+          "stance": "neutral"
+        },
+        {
+          "title": "OBWODNICA AGLOMERACJI WARSZAWSKIEJ ODCINEK S50",
+          "url": "https://serock.treespot.pl/media/pdf/22458.pdf",
+          "source": "exa",
+          "published": "",
+          "snippet": "Stanowiska Jednostek samorządu terytorialnego w sprawie OAW Uchwała Nr 374/XXXIV/2021 Rady Miejskiej w Serocku z dnia 17 marca 2021 r. – w sprawie przebiegu korytarza (AOW). Stanowisko Gmin Powiatu Legionowskiego - na trasie OAW serock.pl Stanowisko Rady Powiatu Legionowie z dnia 28 czerwca 2021 r. w sprawie przebiegu Obwodnicy Aglomeracji Warszawskiej",
+          "stance": "neutral"
+        },
+        {
+          "title": "A50/S50 Obwodnica Aglomeracji Warszawskiej odcinek DK92 - S7 - Generalna Dyrekcja Dróg Krajowych i Autostrad - Portal Gov.pl",
+          "url": "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8",
+          "source": "exa",
+          "published": "",
+          "snippet": "## A50/S50 Obwodnica Aglomeracji Warszawskiej odcinek DK92 - S7 Podstawowe informacje Nr drogi : A50 / S50 Nazwa odcinka : Obwodnica Aglomeracji Warszawskiej odcinek DK92 - S7 System realizacji : Projektuj i Buduj Program : Rządowy Program Budowy Dróg Krajowych do 2030 r. (z perspektywą do 2033 r.) Oddział GDDKiA : Warszawa ### Aktualnie realizowany etap - #### Przygotowanie Studium techniczno-eko",
+          "stance": "neutral"
+        }
+      ],
+      "sources_found": 3,
+      "engine_status": "ok",
+      "assessment_path": "data/assessments/2026-11-03.json"
     }
   ]
 }
