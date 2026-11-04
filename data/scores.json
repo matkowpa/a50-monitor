@@ -3109,6 +3109,80 @@
       "sources_found": 3,
       "engine_status": "ok",
       "assessment_path": "data/assessments/2026-11-03.json"
+    },
+    {
+      "date": "2026-11-04",
+      "scores": {
+        "north": {
+          "score": 38,
+          "confidence": "niska",
+          "summary": "Nowe materiały nie zawierają żadnego oficjalnego dokumentu GDDKiA wskazującego wariant przez północny pas gminy; jedyny sygnał to ogólna wzmianka o nowej przeprawie przez Wisłę w koncepcji A50. Score pozostaje blisko poprzedniej oceny, z minimalnym podniesieniem.",
+          "rationale": "Scenariusz północny (pas między wsią Sobienie-Jeziory a doliną Wisły, w tym Natura 2000 i tereny zalewowe) nie zyskał potwierdzenia w nowych dowodach — brak komunikatu GDDKiA, studium korytarzowego, raportu OOŚ czy przetargu wskazującego ten korytarz. Publikacja Sobienie.pl potwierdza jedynie ogólne ramy programu (OAW w RPBDK do 2030) i koncepcję nowej przeprawy przez Wisłę, co jest spójne z przekroczeniem doliny, ale nie wskazuje strony gminy. Materiał z Grójca dotyczy zachodniego odcinka i nie odnosi się do gminy Sobienie-Jeziory. Utrzymuję score blisko poprzedniej oceny (35), z niewielkim podniesieniem za wzmiankę o przeprawie wiślanej, przy niskiej confidence z uwagi na szczupłość i ogólność dowodów.",
+          "key_findings": [
+            {
+              "claim": "OAW (A50 na południu, S50 na północy) jest wpisana do Rządowego Programu Budowy Dróg Krajowych do 2030 r. jako inwestycja priorytetowa, a koncepcja zakłada nową przeprawę przez Wisłę — spójne z przekroczeniem doliny, lecz bez wskazania strony gminy.",
+              "evidence_urls": [
+                "https://sobienie.pl/a50"
+              ]
+            },
+            {
+              "claim": "Mieszkańcy powiatu grójeckiego nie sprzeciwiają się budowie A50 i oczekują zastąpienia DK50 — dowód dotyczy odcinka zachodniego, nie północnego pasa gminy Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://www.gov.pl/attachment/a8cf6775-b9a4-4d9a-bdfa-e3da9299a428"
+              ]
+            }
+          ],
+          "trend_vs_prev": 3
+        },
+        "south": {
+          "score": 18,
+          "confidence": "niska",
+          "summary": "Brak nowych oficjalnych dowodów na wariant południowy; dostępne sygnały dotyczą ogólnie priorytetu OAW/A50 i oczekiwań związanych z DK50, a nie przebiegu na południe od Sobienie-Jezior.",
+          "rationale": "Poprzednia ocena 18% odzwierciedlała brak oficjalnego wariantu, studium, przetargu STEŚ lub decyzji środowiskowej dla odcinka południowo-wschodniego w rejonie Sobienie-Jezior. Nowy dowód [1] potwierdza jedynie priorytetowy status OAW/A50 w programie rządowym, bez wskazania konkretnego przebiegu przez południową część gminy. Nowy dowód [2] dotyczy oczekiwań mieszkańców wobec zastąpienia DK50 autostradą A50, ale nie odnosi się do scenariusza na południe od wsi Sobienie-Jeziory. Zgodnie z zasadą braku istotnych nowych sygnałów dla tego scenariusza score pozostaje blisko poprzedniej oceny, a confidence jest niska.",
+          "key_findings": [
+            {
+              "claim": "OAW, w tym A50 na południu i S50 na północy, jest wpisana do Rządowego Programu Budowy Dróg Krajowych do 2030 r. jako inwestycja priorytetowa.",
+              "evidence_urls": [
+                "https://sobienie.pl/a50"
+              ]
+            },
+            {
+              "claim": "Lokalny materiał o A50 i gminie Sobienie-Jeziory nie wskazuje w dostępnym fragmencie oficjalnego wariantu prowadzącego trasę na południe od wsi Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://sobienie.pl/a50"
+              ]
+            },
+            {
+              "claim": "Nowy dowód z rejonu Grójca potwierdza brak sprzeciwu wobec A50 i oczekiwanie zastąpienia DK50, ale nie dotyczy południowej części gminy Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://www.gov.pl/attachment/a8cf6775-b9a4-4d9a-bdfa-e3da9299a428"
+              ]
+            }
+          ],
+          "trend_vs_prev": 0
+        }
+      },
+      "evidence": [
+        {
+          "title": "A50 a gmina Sobienie-Jeziory — co naprawdę wiadomo | Sobienie.pl",
+          "url": "https://sobienie.pl/a50",
+          "source": "exa",
+          "published": "",
+          "snippet": "- Obwodnica Aglomeracji Warszawskiej (A50 na południu, S50 na północy) jest wpisana do Rządowego Programu Budowy Dróg Krajowych do 2030 r. jako inwestycja priorytetowa. - Koncepcja zakłada nową przeprawę przez Wisłę w rejonie Góry Kalwarii. Most gdzieś musi wyjść na wschodni brzeg. - GDDKiA projektuje dziś wyłącznie zachodnią część obwodnicy. W komunikacie z 15 lipca 2026 r. napisała wprost, że pr",
+          "stance": "neutral"
+        },
+        {
+          "title": "9. Starostwo Powiatowe w Grójcu ul. Piłsudskiego 59 05-600 Grójec 10. Biuro Poselskie",
+          "url": "https://www.gov.pl/attachment/a8cf6775-b9a4-4d9a-bdfa-e3da9299a428",
+          "source": "exa",
+          "published": "",
+          "snippet": "4b. ... Natomiast nie sprzeciwiamy się budowie autostrady A50. My jako mieszkańcy od lat byliśmy zapewnieni jako że DK50 z czasem zostanie zastąpiona ... O tym że DK50 zastępuje nieistniejący odcinek autostrady A2 mówi dokument '’Meritorium z 2002r.\" Przedsięwzięcie ISPA nr: 2002/PL/16/P/PT7018 Dzięki tej obietnicy inwestowaliśmy w nowe i istniejące domy, budynki, siedliska, gospodarstwa. Aby nasz",
+          "stance": "neutral"
+        }
+      ],
+      "sources_found": 2,
+      "engine_status": "ok",
+      "assessment_path": "data/assessments/2026-11-04.json"
     }
   ]
 }
