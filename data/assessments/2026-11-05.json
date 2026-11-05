@@ -1,0 +1,96 @@
+{
+  "date": "2026-11-05",
+  "scores": {
+    "north": {
+      "score": 38,
+      "confidence": "niska",
+      "summary": "Brak nowych dowodów dotyczących północnego pasa gminy Sobienie-Jeziory; nowe materiały dotyczą sprzeciwów w Grójcu i Zabrodziu oraz ogólnego stanowiska kierowanego do Sejmu. Utrzymuję score na poziomie poprzedniej oceny.",
+      "rationale": "Nowe dowody to uchwały samorządów Grójca i Zabrodzia oraz pismo do Sejmu, a żaden z nich nie wskazuje wariantu OAW w gminie Sobienie-Jeziory ani po jej północnej stronie. Nie ma oficjalnego komunikatu GDDKiA, studium korytarzowego, raportu OOŚ ani przetargu potwierdzającego ten korytarz. Ponieważ dowody są nieistotne dla ocenianego scenariusza, nie zmieniam score. Pewność pozostaje niska z powodu braku nowych sygnałów dotyczących tej strony gminy.",
+      "key_findings": [
+        {
+          "claim": "Rada Miejska w Grójcu przyjęła stanowisko wobec przebiegu OAW 50 przez teren Gminy Grójec.",
+          "evidence_urls": [
+            "https://bip-v1-files.idcom-jst.pl/sites/47399/wiadomosci/854902/files/uchwala_nr_xxiii.211.25_w_sprawie_zajecia_stanowiska_wobec_przebiegu_obwodnicy_aglomeracji_warszawskiej..pdf"
+          ]
+        },
+        {
+          "claim": "Rada Gminy Zabrodzie wyraziła sprzeciw wobec proponowanego przebiegu S50/A50 — Obwodnicy Aglomeracji Warszawskiej.",
+          "evidence_urls": [
+            "https://redakcja.samorzad.gov.pl/attachment/349498ab-6038-43d2-bbe0-15f9a01c0b66"
+          ]
+        },
+        {
+          "claim": "Pismo do Marszałka Sejmu wskazuje OAW jako kluczową inwestycję transportową w skali regionu i kraju.",
+          "evidence_urls": [
+            "https://sejm.gov.pl/INT9.nsf/klucz/ATTCV7GYC/%24FILE/i42855-o1.pdf"
+          ]
+        },
+        {
+          "claim": "Żaden z nowych dowodów nie odnosi się do gminy Sobienie-Jeziory ani do pasa między wsią Sobienie-Jeziory a doliną Wisły.",
+          "evidence_urls": [
+            "https://bip-v1-files.idcom-jst.pl/sites/47399/wiadomosci/854902/files/uchwala_nr_xxiii.211.25_w_sprawie_zajecia_stanowiska_wobec_przebiegu_obwodnicy_aglomeracji_warszawskiej..pdf",
+            "https://redakcja.samorzad.gov.pl/attachment/349498ab-6038-43d2-bbe0-15f9a01c0b66",
+            "https://sejm.gov.pl/INT9.nsf/klucz/ATTCV7GYC/%24FILE/i42855-o1.pdf"
+          ]
+        }
+      ],
+      "trend_vs_prev": 0
+    },
+    "south": {
+      "score": 18,
+      "confidence": "niska",
+      "summary": "Nowe dowody dotyczą innych gmin oraz ogólnego znaczenia OAW, a nie wariantu przebiegu przez południową część gminy Sobienie-Jeziory. Brak oficjalnego rozstrzygnięcia dla tego terenu, więc utrzymuję niską ocenę.",
+      "rationale": "Poprzednia ocena 18% wynikała z braku oficjalnego wariantu, studium, przetargu STEŚ lub decyzji środowiskowej dla odcinka południowo-wschodniego w rejonie Sobienie-Jezior. Nowa uchwała Grójca dotyczy stanowiska wobec przebiegu OAW/A50 przez teren gminy Grójec, a nie przez południową część Sobienie-Jezior. Uchwała Zabrodzia wyraża sprzeciw wobec proponowanego przebiegu S50/A50, ale również nie wskazuje wariantu w tej gminie. Dokument sejmowy podkreśla ogólne znaczenie OAW, bez rozstrzygnięcia przebiegu przez południową część gminy Sobienie-Jeziory, więc score pozostaje bez zmian.",
+      "key_findings": [
+        {
+          "claim": "Uchwała Rady Miejskiej w Grójcu dotyczy stanowiska wobec przebiegu OAW/A50 przez teren gminy Grójec, a nie przez południową część gminy Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://bip-v1-files.idcom-jst.pl/sites/47399/wiadomosci/854902/files/uchwala_nr_xxiii.211.25_w_sprawie_zajecia_stanowiska_wobec_przebiegu_obwodnicy_aglomeracji_warszawskiej..pdf"
+          ]
+        },
+        {
+          "claim": "Uchwała Rady Gminy Zabrodzie wyraża sprzeciw wobec proponowanego przebiegu S50/A50 OAW, ale nie wskazuje wariantu w gminie Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://redakcja.samorzad.gov.pl/attachment/349498ab-6038-43d2-bbe0-15f9a01c0b66"
+          ]
+        },
+        {
+          "claim": "Dokument sejmowy podkreśla ogólne znaczenie OAW, bez rozstrzygnięcia przebiegu przez południową część gminy Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://sejm.gov.pl/INT9.nsf/klucz/ATTCV7GYC/%24FILE/i42855-o1.pdf"
+          ]
+        }
+      ],
+      "trend_vs_prev": 0
+    }
+  },
+  "evidence": [
+    {
+      "title": "Uchwała Nr XXIII/211/25 Rady Miejskiej w Grójcu z dnia 27 listopada 2025 r. w sprawie zajęcia stanowiska wobec przebiegu obwodnicy Aglomeracji Warszawskiej (OAW 50) przez teren Gminy Grójec.",
+      "url": "https://bip-v1-files.idcom-jst.pl/sites/47399/wiadomosci/854902/files/uchwala_nr_xxiii.211.25_w_sprawie_zajecia_stanowiska_wobec_przebiegu_obwodnicy_aglomeracji_warszawskiej..pdf",
+      "source": "exa",
+      "published": "",
+      "snippet": "UCHWAŁA NR XXIII/211/25 RADY MIEJSKIEJ W GRÓJCU z dnia 27 listopada 2025 r. w sprawie zajęcia stanowiska wobec przebiegu obwodnicy Aglomeracji Warszawskiej (OAW 50) przez teren Gminy Grójec. Na podstawie art. 18 ust. 1 pkt ustawy z dnia 8 marca 1990 roku o samorządzie gminnym (Dz.U. z 2025r., poz. 1153) uchwala się, co następuje: § 1. Biorąc pod uwagę postępy prac nad ustaleniem przebiegu Obwodnic",
+      "stance": "neutral"
+    },
+    {
+      "title": "RADY GMINY ZABRODZIE z dnia 25 listopada 2025 roku",
+      "url": "https://redakcja.samorzad.gov.pl/attachment/349498ab-6038-43d2-bbe0-15f9a01c0b66",
+      "source": "exa",
+      "published": "",
+      "snippet": "UCHWAŁA NR XIX/119/2025 RADY GMINY ZABRODZIE z dnia 25 listopada 2025 roku w sprawie wyrażenia sprzeciwu wobec proponowanego przebiegu drogi ekspresowej S50/ autostrady A50 - Obwodnicy Aglomeracji Warszawskiej przez teren Gminy Zabrodzie Na podstawie art. 7 ust. 1 pkt 1 i art. 18 ust. 1 ustawy z dnia 8 marca 1990 r. o samorządzie gminnym (t.j. Dz. U. z 2025 r. poz. 1153) uchwala się, co następuje:",
+      "stance": "neutral"
+    },
+    {
+      "title": "Szanowna Pani Elżbieta Witek Marszałek Sejmu Rzeczypospolitej Polskiej",
+      "url": "https://sejm.gov.pl/INT9.nsf/klucz/ATTCV7GYC/%24FILE/i42855-o1.pdf",
+      "source": "exa",
+      "published": "",
+      "snippet": "Zaznaczam, że Obwodnica Aglomeracji Warszawskiej (OAW) to niewątpliwie jedna z kluczowych inwestycji transportowych nie tylko w skali regionu, ale i całego kraju, w związku z czym pragnę podkreślić wagę i potrzebę realizacji tej inwestycji. Wykonane analizy w ramach Studium korytarzowego potwierdziły zasadność realizacji OAW oraz pozwoliły wskazać kierunek dalszego uszczegółowiania w ramach kolejn",
+      "stance": "neutral"
+    }
+  ],
+  "sources_found": 3,
+  "engine_status": "ok",
+  "assessment_path": "data/assessments/2026-11-05.json"
+}
