@@ -4,9 +4,9 @@
     "grounding": [
       {
         "label": "brave",
-        "resultCount": 0,
+        "resultCount": 5,
         "webSearchQueries": [
-          "\"A50\" \"Sobienie-Jeziory\" przebieg trasy"
+          "A50 obwodnica Warszawy Sobienie-Jeziory przebieg trasy mapa"
         ]
       }
     ],
@@ -26,81 +26,138 @@
   "clusters": [
     {
       "candidate_ids": [
-        "https://reddit.com/r/infrastrukturadrogowa/comments/1xfasur/dlaczego_gddkia_i_samorz\u0105dy_wojew\u00f3dztw_nie_chc\u0105"
+        "https://motoguru.pl/na-czasie/autostrada-a50-w-polsce-powstanie-120-km-nowej-trasy"
       ],
       "cluster_id": "cluster-1",
       "representative_ids": [
-        "https://reddit.com/r/infrastrukturadrogowa/comments/1xfasur/dlaczego_gddkia_i_samorz\u0105dy_wojew\u00f3dztw_nie_chc\u0105"
+        "https://motoguru.pl/na-czasie/autostrada-a50-w-polsce-powstanie-120-km-nowej-trasy"
       ],
-      "score": 4.745901639344262,
+      "score": 34.17777777777778,
       "sources": [
-        "reddit"
+        "grounding"
       ],
-      "title": "Dlaczego GDDKiA i samorz\u0105dy wojew\u00f3dztw nie chc\u0105 przejmowa\u0107 na siebie dr\u00f3g?"
+      "title": "Autostrada A50. W Polsce powstanie 120 km nowej trasy"
+    },
+    {
+      "candidate_ids": [
+        "https://auto-swiat.pl/wiadomosci/aktualnosci/kiedy-wschodnia-obwodnica-warszawy-s17-bedzie-gotowa-gddkia-podaje-daty/p3ctdzg"
+      ],
+      "cluster_id": "cluster-2",
+      "representative_ids": [
+        "https://auto-swiat.pl/wiadomosci/aktualnosci/kiedy-wschodnia-obwodnica-warszawy-s17-bedzie-gotowa-gddkia-podaje-daty/p3ctdzg"
+      ],
+      "score": 20.868852459016395,
+      "sources": [
+        "grounding"
+      ],
+      "title": "GDDKiA poda\u0142a, kiedy Wschodnia Obwodnica Warszawy b\u0119dzie gotowa. Poczekasz"
+    },
+    {
+      "candidate_ids": [
+        "https://inzynieria.com/drogi/artykuly/101717,nowy-uklad-drogowy-wokol-stolicy"
+      ],
+      "cluster_id": "cluster-3",
+      "representative_ids": [
+        "https://inzynieria.com/drogi/artykuly/101717,nowy-uklad-drogowy-wokol-stolicy"
+      ],
+      "score": 5.466774193548387,
+      "sources": [
+        "grounding"
+      ],
+      "title": "Nowy uk\u0142ad drogowy wok\u00f3\u0142 stolicy - In\u017cynieria.com"
     }
   ],
   "errors_by_source": {},
   "freshness_verdicts": [],
-  "generated_at": "2026-11-06T13:07:45.272985+00:00",
+  "generated_at": "2026-11-06T21:15:26.229773+00:00",
   "items_by_source": {
-    "grounding": [],
-    "reddit": [
+    "grounding": [
       {
-        "body": "Dlaczego GDDKiA i samorz\u0105dy wojew\u00f3dztw nie chc\u0105 przejmowa\u0107 na siebie dr\u00f3g?\nW Polsce ostatniego czasu zaobserwowa\u0142em \u017ce pa\u0144stwo i wojew\u00f3dztwa nie chc\u0105 przejmowa\u0107 na siebie dr\u00f3g, w wielu przypadkach trend jest odwroty, i zauwa\u017cy\u0142em \u017ce wojew\u00f3dztwa oddaj\u0105 drogi powiatom i gminom o niepor\u00f3wnywalnie mniejszych dochodach, co wida\u0107 po tym \u017ce drogi te nie s\u0105 od\u015bnie\u017cane lub bardzo s\u0142abo, nawierzchnia jest znacz\u0105co gorsza od dr\u00f3g wojew\u00f3dzkich, o ile Polskie drogi ekspresowe, krajowe, wojew\u00f3dzkie (nieco gorzej ni\u017c DK) maj\u0105 w wi\u0119kszo\u015bci dobr\u0105 nawierzchni\u0119 to wiele powiat\u00f3wek do dzi",
-        "container": "infrastrukturadrogowa",
+        "body": "GDDKiA poda\u0142a, kiedy Wschodnia Obwodnica Warszawy b\u0119dzie gotowa. Poczekasz\nPlanowan\u0105 tras\u0119 pokazuje poni\u017csza mapa. Niebieski kolor oznacza, \u017ce nie jest jeszcze w stu proc. wytyczona. To orientacyjny przebieg. ... Warszawska obwodnica jest do\u015b\u0107 specyficzna, bo... znajduje si\u0119 tak naprawd\u0119 w mie\u015bcie. Czasem zaskakuj\u0105co bardzo w jego centrum (dlatego budowany jest znacznie wi\u0119kszy ring Autostradowej Obwodnicy Warszawy AOW).",
+        "container": "www.auto-swiat.pl",
         "date_confidence": "high",
-        "engagement": {
-          "num_comments": 0,
-          "score": 0
-        },
-        "freshness": 60,
-        "item_id": "R1",
-        "local_rank_score": 0.189,
-        "local_relevance": 0.06,
-        "metadata": {
-          "comment_insights": [],
-          "top_comments": []
-        },
-        "published_at": "2026-10-25",
-        "relevance_hint": 0.0,
-        "snippet": "W Polsce ostatniego czasu zaobserwowa\u0142em \u017ce pa\u0144stwo i wojew\u00f3dztwa nie chc\u0105 przejmowa\u0107 na siebie dr\u00f3g, w wielu przypadkach trend jest odwroty, i zauwa\u017cy\u0142em \u017ce wojew\u00f3dztwa oddaj\u0105 drogi powiatom i gminom o niepor\u00f3wnywalnie mniejszych dochodach, co wida\u0107 po tym \u017ce drogi te nie s\u0105 od\u015bnie\u017cane lub bardzo s\u0142abo, nawierzchnia jest znacz\u0105co gorsza od dr\u00f3g wojew\u00f3dzkich, o ile Polskie drogi ekspresowe, krajow",
-        "source": "reddit",
+        "engagement": {},
+        "freshness": 30,
+        "item_id": "WB2",
+        "local_rank_score": 0.3155,
+        "local_relevance": 0.37,
+        "metadata": {},
+        "published_at": "2026-10-15",
+        "relevance_hint": 0.8,
+        "snippet": "Planowan\u0105 tras\u0119 pokazuje poni\u017csza mapa. Niebieski kolor oznacza, \u017ce nie jest jeszcze w stu proc. wytyczona. To orientacyjny przebieg. ... Warszawska obwodnica jest do\u015b\u0107 specyficzna, bo... znajduje si\u0119 tak naprawd\u0119 w mie\u015bcie. Czasem zaskakuj\u0105co bardzo w jego centrum (dlatego budowany jest znacznie wi\u0119kszy ring Autostradowej Obwodnicy Warszawy AOW).",
+        "source": "grounding",
         "source_quality": 0.6,
-        "title": "Dlaczego GDDKiA i samorz\u0105dy wojew\u00f3dztw nie chc\u0105 przejmowa\u0107 na siebie dr\u00f3g?",
-        "url": "https://www.reddit.com/r/infrastrukturadrogowa/comments/1xfasur/dlaczego_gddkia_i_samorz\u0105dy_wojew\u00f3dztw_nie_chc\u0105/",
-        "why_relevant": "Reddit RSS"
+        "title": "GDDKiA poda\u0142a, kiedy Wschodnia Obwodnica Warszawy b\u0119dzie gotowa. Poczekasz",
+        "url": "https://www.auto-swiat.pl/wiadomosci/aktualnosci/kiedy-wschodnia-obwodnica-warszawy-s17-bedzie-gotowa-gddkia-podaje-daty/p3ctdzg",
+        "why_relevant": "Brave web search"
+      },
+      {
+        "body": "Nowy uk\u0142ad drogowy wok\u00f3\u0142 stolicy - In\u017cynieria.com\nZ tekstu dowiesz si\u0119: jakie warianty przebiegu zachodniej cz\u0119\u015bci OAW s\u0105 obecnie analizowane, kt\u00f3re kluczowe trasy ma po\u0142\u0105czy\u0107 przysz\u0142y uk\u0142ad drogowy wok\u00f3\u0142 Warszawy, jakie s\u0105 kolejne etapy przygotowania inwestycji i kiedy planowany jest wniosek o decyzj\u0119 \u015brodowiskow\u0105.",
+        "container": "inzynieria.com",
+        "date_confidence": "high",
+        "engagement": {},
+        "freshness": 34,
+        "item_id": "WB5",
+        "local_rank_score": 0.21500000000000002,
+        "local_relevance": 0.2,
+        "metadata": {},
+        "published_at": "2026-10-16",
+        "relevance_hint": 0.8,
+        "snippet": "Z tekstu dowiesz si\u0119: jakie warianty przebiegu zachodniej cz\u0119\u015bci OAW s\u0105 obecnie analizowane, kt\u00f3re kluczowe trasy ma po\u0142\u0105czy\u0107 przysz\u0142y uk\u0142ad drogowy wok\u00f3\u0142 Warszawy, jakie s\u0105 kolejne etapy przygotowania inwestycji i kiedy planowany jest wniosek o decyzj\u0119 \u015brodowiskow\u0105.",
+        "source": "grounding",
+        "source_quality": 0.6,
+        "title": "Nowy uk\u0142ad drogowy wok\u00f3\u0142 stolicy - In\u017cynieria.com",
+        "url": "https://inzynieria.com/drogi/artykuly/101717,nowy-uklad-drogowy-wokol-stolicy",
+        "why_relevant": "Brave web search"
+      },
+      {
+        "body": "Autostrada A50. W Polsce powstanie 120 km nowej trasy\nA50 ma by\u0107 cz\u0119\u015bci\u0105 Obwodnicy Aglomeracji Warszawskiej (OAW).",
+        "container": "motoguru.pl",
+        "date_confidence": "high",
+        "engagement": {},
+        "freshness": 14,
+        "item_id": "WB1",
+        "local_rank_score": 0.165,
+        "local_relevance": 0.2,
+        "metadata": {},
+        "published_at": "2026-10-09",
+        "relevance_hint": 0.8,
+        "snippet": "A50 ma by\u0107 cz\u0119\u015bci\u0105 Obwodnicy Aglomeracji Warszawskiej (OAW).",
+        "source": "grounding",
+        "source_quality": 0.6,
+        "title": "Autostrada A50. W Polsce powstanie 120 km nowej trasy",
+        "url": "https://motoguru.pl/na-czasie/autostrada-a50-w-polsce-powstanie-120-km-nowej-trasy/",
+        "why_relevant": "Brave web search"
       }
     ]
   },
   "library_context": [],
   "provider_runtime": {
-    "planner_model": "google/gemini-3.1-flash-lite-preview",
-    "reasoning_provider": "openrouter",
-    "rerank_model": "google/gemini-3.1-flash-lite-preview"
+    "planner_model": "cline-pass/deepseek-v4.1-flash-1017",
+    "reasoning_provider": "cline",
+    "rerank_model": "cline-pass/deepseek-v4.1-flash-1017"
   },
   "query_plan": {
     "cluster_mode": "none",
-    "freshness_mode": "strict_recent",
+    "freshness_mode": "balanced_recent",
     "intent": "factual",
     "notes": [
-      "Skupienie na oficjalnych dokumentach GDDKiA oraz dyskusjach lokalnych spo\u0142eczno\u015bci.",
-      "A50 jest cz\u0119\u015bci\u0105 wi\u0119kszego projektu Obwodnicy Aglomeracji Warszawskiej (OAW)."
+      "Factual infrastructure query; prioritize official/grounding sources and maps, with community sources for local context."
     ],
     "raw_topic": "obwodnica autostradowa Warszawy A50 przebieg trasy Sobienie-Jeziory",
     "source_weights": {
-      "grounding": 0.6,
-      "hackernews": 0.1,
-      "reddit": 0.2,
+      "grounding": 0.7,
+      "hackernews": 0.05,
+      "reddit": 0.15,
       "youtube": 0.1
     },
     "subqueries": [
       {
-        "label": "Trasa A50 Sobienie-Jeziory",
-        "ranking_query": "Jaki jest aktualny planowany przebieg autostrady A50 w okolicach Sobienie-Jeziory?",
-        "search_query": "\"A50\" \"Sobienie-Jeziory\" przebieg trasy",
+        "label": "official route",
+        "ranking_query": "Jaki jest przebieg trasy obwodnicy autostradowej Warszawy A50 w rejonie Sobienie-Jeziory?",
+        "search_query": "A50 obwodnica Warszawy Sobienie-Jeziory przebieg trasy mapa",
         "sources": [
-          "grounding",
-          "reddit"
+          "grounding"
         ],
         "weight": 1.0
       }
@@ -110,104 +167,207 @@
   "range_to": "2026-11-06",
   "ranked_candidates": [
     {
-      "candidate_id": "https://reddit.com/r/infrastrukturadrogowa/comments/1xfasur/dlaczego_gddkia_i_samorz\u0105dy_wojew\u00f3dztw_nie_chc\u0105",
+      "candidate_id": "https://motoguru.pl/na-czasie/autostrada-a50-w-polsce-powstanie-120-km-nowej-trasy",
       "cluster_id": "cluster-1",
-      "explanation": "The candidate does not mention the A50 motorway or Sobienie-Jeziory in the title or snippet. It discusses general road management issues in Poland and fails the primary entity grounding requirement.",
-      "final_score": 4.745901639344262,
-      "freshness": 60,
-      "fun_explanation": "Dry, analytical observation about road maintenance bureaucracy. Lacks humor or wit.",
-      "fun_score": 15.0,
-      "item_id": "R1",
-      "local_relevance": 0.06,
+      "explanation": "Mentions A50 and OAW, but gives no specific route details for Sobienie-Jeziory.",
+      "final_score": 34.17777777777778,
+      "freshness": 14,
+      "fun_explanation": "Dry infrastructure news; no joke or wit.",
+      "fun_score": 5.0,
+      "item_id": "WB1",
+      "local_relevance": 0.2,
       "metadata": {
         "provenance": [
           {
-            "item_id": "R1",
-            "native_rank": 1,
-            "source": "reddit",
-            "subquery_label": "Trasa A50 Sobienie-Jeziory"
+            "item_id": "WB1",
+            "native_rank": 3,
+            "source": "grounding",
+            "subquery_label": "official route"
           }
         ],
         "range_from": "2026-10-07",
         "range_to": "2026-11-06"
       },
       "native_ranks": {
-        "Trasa A50 Sobienie-Jeziory:reddit": 1
+        "official route:grounding": 3
       },
-      "rerank_score": 10.0,
-      "rrf_score": 0.003278688524590164,
-      "snippet": "W Polsce ostatniego czasu zaobserwowa\u0142em \u017ce pa\u0144stwo i wojew\u00f3dztwa nie chc\u0105 przejmowa\u0107 na siebie dr\u00f3g, w wielu przypadkach trend jest odwroty, i zauwa\u017cy\u0142em \u017ce wojew\u00f3dztwa oddaj\u0105 drogi powiatom i gminom o niepor\u00f3wnywalnie mniejszych dochodach, co wida\u0107 po tym \u017ce drogi te nie s\u0105 od\u015bnie\u017cane lub bardzo s\u0142abo, nawierzchnia jest znacz\u0105co gorsza od dr\u00f3g wojew\u00f3dzkich, o ile Polskie drogi ekspresowe, krajow",
-      "source": "reddit",
+      "rerank_score": 45.0,
+      "rrf_score": 0.01111111111111111,
+      "snippet": "A50 ma by\u0107 cz\u0119\u015bci\u0105 Obwodnicy Aglomeracji Warszawskiej (OAW).",
+      "source": "grounding",
       "source_items": [
         {
-          "body": "Dlaczego GDDKiA i samorz\u0105dy wojew\u00f3dztw nie chc\u0105 przejmowa\u0107 na siebie dr\u00f3g?\nW Polsce ostatniego czasu zaobserwowa\u0142em \u017ce pa\u0144stwo i wojew\u00f3dztwa nie chc\u0105 przejmowa\u0107 na siebie dr\u00f3g, w wielu przypadkach trend jest odwroty, i zauwa\u017cy\u0142em \u017ce wojew\u00f3dztwa oddaj\u0105 drogi powiatom i gminom o niepor\u00f3wnywalnie mniejszych dochodach, co wida\u0107 po tym \u017ce drogi te nie s\u0105 od\u015bnie\u017cane lub bardzo s\u0142abo, nawierzchnia jest znacz\u0105co gorsza od dr\u00f3g wojew\u00f3dzkich, o ile Polskie drogi ekspresowe, krajowe, wojew\u00f3dzkie (nieco gorzej ni\u017c DK) maj\u0105 w wi\u0119kszo\u015bci dobr\u0105 nawierzchni\u0119 to wiele powiat\u00f3wek do dzi",
-          "container": "infrastrukturadrogowa",
+          "body": "Autostrada A50. W Polsce powstanie 120 km nowej trasy\nA50 ma by\u0107 cz\u0119\u015bci\u0105 Obwodnicy Aglomeracji Warszawskiej (OAW).",
+          "container": "motoguru.pl",
           "date_confidence": "high",
-          "engagement": {
-            "num_comments": 0,
-            "score": 0
-          },
-          "freshness": 60,
-          "item_id": "R1",
-          "local_rank_score": 0.189,
-          "local_relevance": 0.06,
-          "metadata": {
-            "comment_insights": [],
-            "top_comments": []
-          },
-          "published_at": "2026-10-25",
-          "relevance_hint": 0.0,
-          "snippet": "W Polsce ostatniego czasu zaobserwowa\u0142em \u017ce pa\u0144stwo i wojew\u00f3dztwa nie chc\u0105 przejmowa\u0107 na siebie dr\u00f3g, w wielu przypadkach trend jest odwroty, i zauwa\u017cy\u0142em \u017ce wojew\u00f3dztwa oddaj\u0105 drogi powiatom i gminom o niepor\u00f3wnywalnie mniejszych dochodach, co wida\u0107 po tym \u017ce drogi te nie s\u0105 od\u015bnie\u017cane lub bardzo s\u0142abo, nawierzchnia jest znacz\u0105co gorsza od dr\u00f3g wojew\u00f3dzkich, o ile Polskie drogi ekspresowe, krajow",
-          "source": "reddit",
+          "engagement": {},
+          "freshness": 14,
+          "item_id": "WB1",
+          "local_rank_score": 0.165,
+          "local_relevance": 0.2,
+          "metadata": {},
+          "published_at": "2026-10-09",
+          "relevance_hint": 0.8,
+          "snippet": "A50 ma by\u0107 cz\u0119\u015bci\u0105 Obwodnicy Aglomeracji Warszawskiej (OAW).",
+          "source": "grounding",
           "source_quality": 0.6,
-          "title": "Dlaczego GDDKiA i samorz\u0105dy wojew\u00f3dztw nie chc\u0105 przejmowa\u0107 na siebie dr\u00f3g?",
-          "url": "https://www.reddit.com/r/infrastrukturadrogowa/comments/1xfasur/dlaczego_gddkia_i_samorz\u0105dy_wojew\u00f3dztw_nie_chc\u0105/",
-          "why_relevant": "Reddit RSS"
+          "title": "Autostrada A50. W Polsce powstanie 120 km nowej trasy",
+          "url": "https://motoguru.pl/na-czasie/autostrada-a50-w-polsce-powstanie-120-km-nowej-trasy/",
+          "why_relevant": "Brave web search"
         }
       ],
       "source_quality": 0.6,
       "sources": [
-        "reddit"
+        "grounding"
       ],
       "subquery_labels": [
-        "Trasa A50 Sobienie-Jeziory"
+        "official route"
       ],
-      "title": "Dlaczego GDDKiA i samorz\u0105dy wojew\u00f3dztw nie chc\u0105 przejmowa\u0107 na siebie dr\u00f3g?",
-      "url": "https://www.reddit.com/r/infrastrukturadrogowa/comments/1xfasur/dlaczego_gddkia_i_samorz\u0105dy_wojew\u00f3dztw_nie_chc\u0105/"
+      "title": "Autostrada A50. W Polsce powstanie 120 km nowej trasy",
+      "url": "https://motoguru.pl/na-czasie/autostrada-a50-w-polsce-powstanie-120-km-nowej-trasy/"
+    },
+    {
+      "candidate_id": "https://auto-swiat.pl/wiadomosci/aktualnosci/kiedy-wschodnia-obwodnica-warszawy-s17-bedzie-gotowa-gddkia-podaje-daty/p3ctdzg",
+      "cluster_id": "cluster-2",
+      "explanation": "Mentions AOW/Warsaw bypass generally, but not A50 or Sobienie-Jeziory; focuses on S17 Wschodnia Obwodnica.",
+      "final_score": 20.868852459016395,
+      "freshness": 30,
+      "fun_explanation": "Slight snark in 'Poczekasz,' but still mostly straight news.",
+      "fun_score": 18.0,
+      "item_id": "WB2",
+      "local_relevance": 0.37,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "WB2",
+            "native_rank": 1,
+            "source": "grounding",
+            "subquery_label": "official route"
+          }
+        ],
+        "range_from": "2026-10-07",
+        "range_to": "2026-11-06"
+      },
+      "native_ranks": {
+        "official route:grounding": 1
+      },
+      "rerank_score": 20.0,
+      "rrf_score": 0.011475409836065573,
+      "snippet": "Planowan\u0105 tras\u0119 pokazuje poni\u017csza mapa. Niebieski kolor oznacza, \u017ce nie jest jeszcze w stu proc. wytyczona. To orientacyjny przebieg. ... Warszawska obwodnica jest do\u015b\u0107 specyficzna, bo... znajduje si\u0119 tak naprawd\u0119 w mie\u015bcie. Czasem zaskakuj\u0105co bardzo w jego centrum (dlatego budowany jest znacznie wi\u0119kszy ring Autostradowej Obwodnicy Warszawy AOW).",
+      "source": "grounding",
+      "source_items": [
+        {
+          "body": "GDDKiA poda\u0142a, kiedy Wschodnia Obwodnica Warszawy b\u0119dzie gotowa. Poczekasz\nPlanowan\u0105 tras\u0119 pokazuje poni\u017csza mapa. Niebieski kolor oznacza, \u017ce nie jest jeszcze w stu proc. wytyczona. To orientacyjny przebieg. ... Warszawska obwodnica jest do\u015b\u0107 specyficzna, bo... znajduje si\u0119 tak naprawd\u0119 w mie\u015bcie. Czasem zaskakuj\u0105co bardzo w jego centrum (dlatego budowany jest znacznie wi\u0119kszy ring Autostradowej Obwodnicy Warszawy AOW).",
+          "container": "www.auto-swiat.pl",
+          "date_confidence": "high",
+          "engagement": {},
+          "freshness": 30,
+          "item_id": "WB2",
+          "local_rank_score": 0.3155,
+          "local_relevance": 0.37,
+          "metadata": {},
+          "published_at": "2026-10-15",
+          "relevance_hint": 0.8,
+          "snippet": "Planowan\u0105 tras\u0119 pokazuje poni\u017csza mapa. Niebieski kolor oznacza, \u017ce nie jest jeszcze w stu proc. wytyczona. To orientacyjny przebieg. ... Warszawska obwodnica jest do\u015b\u0107 specyficzna, bo... znajduje si\u0119 tak naprawd\u0119 w mie\u015bcie. Czasem zaskakuj\u0105co bardzo w jego centrum (dlatego budowany jest znacznie wi\u0119kszy ring Autostradowej Obwodnicy Warszawy AOW).",
+          "source": "grounding",
+          "source_quality": 0.6,
+          "title": "GDDKiA poda\u0142a, kiedy Wschodnia Obwodnica Warszawy b\u0119dzie gotowa. Poczekasz",
+          "url": "https://www.auto-swiat.pl/wiadomosci/aktualnosci/kiedy-wschodnia-obwodnica-warszawy-s17-bedzie-gotowa-gddkia-podaje-daty/p3ctdzg",
+          "why_relevant": "Brave web search"
+        }
+      ],
+      "source_quality": 0.6,
+      "sources": [
+        "grounding"
+      ],
+      "subquery_labels": [
+        "official route"
+      ],
+      "title": "GDDKiA poda\u0142a, kiedy Wschodnia Obwodnica Warszawy b\u0119dzie gotowa. Poczekasz",
+      "url": "https://www.auto-swiat.pl/wiadomosci/aktualnosci/kiedy-wschodnia-obwodnica-warszawy-s17-bedzie-gotowa-gddkia-podaje-daty/p3ctdzg"
+    },
+    {
+      "candidate_id": "https://inzynieria.com/drogi/artykuly/101717,nowy-uklad-drogowy-wokol-stolicy",
+      "cluster_id": "cluster-3",
+      "explanation": "Discusses OAW western variants, but does not mention A50 or Sobienie-Jeziory.",
+      "final_score": 5.466774193548387,
+      "freshness": 34,
+      "fun_explanation": "Official planning summary; no humorous angle.",
+      "fun_score": 3.0,
+      "item_id": "WB5",
+      "local_relevance": 0.2,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "WB5",
+            "native_rank": 2,
+            "source": "grounding",
+            "subquery_label": "official route"
+          }
+        ],
+        "range_from": "2026-10-07",
+        "range_to": "2026-11-06"
+      },
+      "native_ranks": {
+        "official route:grounding": 2
+      },
+      "rerank_score": 15.0,
+      "rrf_score": 0.01129032258064516,
+      "snippet": "Z tekstu dowiesz si\u0119: jakie warianty przebiegu zachodniej cz\u0119\u015bci OAW s\u0105 obecnie analizowane, kt\u00f3re kluczowe trasy ma po\u0142\u0105czy\u0107 przysz\u0142y uk\u0142ad drogowy wok\u00f3\u0142 Warszawy, jakie s\u0105 kolejne etapy przygotowania inwestycji i kiedy planowany jest wniosek o decyzj\u0119 \u015brodowiskow\u0105.",
+      "source": "grounding",
+      "source_items": [
+        {
+          "body": "Nowy uk\u0142ad drogowy wok\u00f3\u0142 stolicy - In\u017cynieria.com\nZ tekstu dowiesz si\u0119: jakie warianty przebiegu zachodniej cz\u0119\u015bci OAW s\u0105 obecnie analizowane, kt\u00f3re kluczowe trasy ma po\u0142\u0105czy\u0107 przysz\u0142y uk\u0142ad drogowy wok\u00f3\u0142 Warszawy, jakie s\u0105 kolejne etapy przygotowania inwestycji i kiedy planowany jest wniosek o decyzj\u0119 \u015brodowiskow\u0105.",
+          "container": "inzynieria.com",
+          "date_confidence": "high",
+          "engagement": {},
+          "freshness": 34,
+          "item_id": "WB5",
+          "local_rank_score": 0.21500000000000002,
+          "local_relevance": 0.2,
+          "metadata": {},
+          "published_at": "2026-10-16",
+          "relevance_hint": 0.8,
+          "snippet": "Z tekstu dowiesz si\u0119: jakie warianty przebiegu zachodniej cz\u0119\u015bci OAW s\u0105 obecnie analizowane, kt\u00f3re kluczowe trasy ma po\u0142\u0105czy\u0107 przysz\u0142y uk\u0142ad drogowy wok\u00f3\u0142 Warszawy, jakie s\u0105 kolejne etapy przygotowania inwestycji i kiedy planowany jest wniosek o decyzj\u0119 \u015brodowiskow\u0105.",
+          "source": "grounding",
+          "source_quality": 0.6,
+          "title": "Nowy uk\u0142ad drogowy wok\u00f3\u0142 stolicy - In\u017cynieria.com",
+          "url": "https://inzynieria.com/drogi/artykuly/101717,nowy-uklad-drogowy-wokol-stolicy",
+          "why_relevant": "Brave web search"
+        }
+      ],
+      "source_quality": 0.6,
+      "sources": [
+        "grounding"
+      ],
+      "subquery_labels": [
+        "official route"
+      ],
+      "title": "Nowy uk\u0142ad drogowy wok\u00f3\u0142 stolicy - In\u017cynieria.com",
+      "url": "https://inzynieria.com/drogi/artykuly/101717,nowy-uklad-drogowy-wokol-stolicy"
     }
   ],
   "source_status": {
     "grounding": {
-      "at": "2026-11-06T13:07:41.300794Z",
+      "at": "2026-11-06T21:15:20.301997Z",
       "attempted": true,
-      "items_returned": 0,
+      "items_returned": 3,
       "source": "grounding",
-      "state": "no-results"
-    },
-    "reddit": {
-      "at": "2026-11-06T13:07:43.298018Z",
-      "attempted": true,
-      "detail": "2 sub-requests blocked (HTTP 403)",
-      "items_returned": 1,
-      "lane_failure_state": "auth-failed",
-      "source": "reddit",
       "state": "ok"
     }
   },
   "topic": "obwodnica autostradowa Warszawy A50 przebieg trasy Sobienie-Jeziory",
   "warnings": [
-    "Evidence is thin for this topic."
+    "Evidence is thin for this topic.",
+    "Top evidence is highly concentrated in one source."
   ]
 }
 
 --- STDERR ---
 /last30days · researching: obwodnica autostradowa Warszawy A50 przebieg trasy Sobienie-Jeziory
-⏳ [95mProcessing[0m Removing duplicates...
-[Planner] Plan: intent=factual, freshness=strict_recent, cluster_mode=none, subqueries=1, source=llm
-[Planner]   sq1 label=Trasa A50 Sobienie-Jeziory search=""A50" "Sobienie-Jeziory" przebieg trasy" sources=[grounding,reddit]
-[RedditKeyless] arctic-shift supplement: 9 new posts from 9 arctic results
-[RedditKeyless] Tier 1 (RSS) 1 posts; score-only; 9 scored cards
-[RedditKeyless] arctic-shift backfilled 1 post scores
-✓ Research complete (6.5s) - Reddit: 1 thread, YouTube: 0 videos, HN: 0 stories, Web: 0 results
+⏳ [95mProcessing[0m Crunching the data...
+[Planner] Plan: intent=factual, freshness=balanced_recent, cluster_mode=none, subqueries=1, source=llm
+[Planner]   sq1 label=official route search="A50 obwodnica Warszawy Sobienie-Jeziory przebieg trasy mapa" sources=[grounding]
+✓ Research complete (14.7s) - Reddit: 0 threads, YouTube: 0 videos, HN: 0 stories, Web: 3 results
 [last30days] Saved output to /home/runner/work/a50-monitor/a50-monitor/data/raw/2026-11-06/report.json
-[last30days] Saved output to /home/runner/work/a50-monitor/a50-monitor/data/raw/2026-11-06/obwodnica-autostradowa-warszawy-a50-przebieg-trasy-sobienie-jeziory-raw.json
+[last30days] Saved output to /home/runner/work/a50-monitor/a50-monitor/data/raw/2026-11-06/obwodnica-autostradowa-warszawy-a50-przebieg-trasy-sobienie-jeziory-raw-2026-11-06.json
