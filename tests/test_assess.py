@@ -410,12 +410,12 @@ class TestAssessScenarios(unittest.TestCase):
 
     def test_one_call_per_scenario(self):
         calls, fake = self._fake()
-        orig = assess.call_openrouter
-        assess.call_openrouter = fake
+        orig = assess.call_llm
+        assess.call_llm = fake
         try:
             scores, errors = assess.assess_scenarios(self.EV, None, CFG, "k", "")
         finally:
-            assess.call_openrouter = orig
+            assess.call_llm = orig
         self.assertEqual(sorted(calls), ["north", "south"])
         self.assertEqual(errors, [])
         self.assertEqual(scores["scores"]["north"]["score"], 40)
@@ -423,14 +423,14 @@ class TestAssessScenarios(unittest.TestCase):
 
     def test_failed_side_keeps_previous_score(self):
         calls, fake = self._fake(fail=("south",))
-        orig = assess.call_openrouter
-        assess.call_openrouter = fake
+        orig = assess.call_llm
+        assess.call_llm = fake
         prev = {"date": "2026-09-04",
                 "scores": {"north": {"score": 44}, "south": {"score": 22}}}
         try:
             scores, errors = assess.assess_scenarios(self.EV, prev, CFG, "k", "")
         finally:
-            assess.call_openrouter = orig
+            assess.call_llm = orig
         self.assertEqual(calls.count("south"), 3)  # trzy próby
         self.assertEqual(scores["scores"]["south"]["score"], 22)
         self.assertEqual(scores["scores"]["south"]["confidence"], "niska")
@@ -439,13 +439,13 @@ class TestAssessScenarios(unittest.TestCase):
 
     def test_both_sides_failing_raises(self):
         _, fake = self._fake(fail=("north", "south"))
-        orig = assess.call_openrouter
-        assess.call_openrouter = fake
+        orig = assess.call_llm
+        assess.call_llm = fake
         try:
             with self.assertRaises(RuntimeError):
                 assess.assess_scenarios(self.EV, None, CFG, "k", "")
         finally:
-            assess.call_openrouter = orig
+            assess.call_llm = orig
 
 
 class TestLoadAnalyses(unittest.TestCase):

@@ -40,7 +40,7 @@
   },
   "lookback_days": 30,
   "seen_window_days": 7,
-  "openrouter_model": "deepseek/deepseek-v4.1-flash-1017",
+  "model": "cline-pass/deepseek-v4.1-flash-1017",
   "baseline_scores": {
     "north": 45,
     "south": 28

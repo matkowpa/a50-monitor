@@ -25,6 +25,12 @@ OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 # double-check that OpenRouter's slug still maps to the same upstream model.
 OPENROUTER_DEFAULT = "google/gemini-3.1-flash-lite-preview"
 
+# ClinePass: OpenAI-compatible gateway. Its /chat/completions wraps the payload
+# as {"success": true, "data": {"choices": [...]}}; extract_openai_text unwraps
+# it. The subscription id is the two-segment "cline-pass/<model>" form.
+CLINE_URL = "https://api.cline.bot/api/v1/chat/completions"
+CLINE_DEFAULT = "cline-pass/deepseek-v4.1-flash-1017"
+
 
 class ReasoningClient:
     """Shared interface for planner and rerank providers."""
@@ -164,8 +170,9 @@ class XAIClient(ReasoningClient):
 class OpenRouterClient(ReasoningClient):
     name = "openrouter"
 
-    def __init__(self, api_key: str):
+    def __init__(self, api_key: str, url: str | None = None):
         self.api_key = api_key
+        self.url = url or os.environ.get("OPENROUTER_BASE_URL", OPENROUTER_URL)
 
     def generate_text(
         self,
@@ -182,7 +189,7 @@ class OpenRouterClient(ReasoningClient):
             "temperature": 0,
         }
         response = http.post(
-            os.environ.get("OPENROUTER_BASE_URL", OPENROUTER_URL),
+            self.url,
             payload,
             headers={
                 "Authorization": f"Bearer {self.api_key}",
@@ -193,11 +200,21 @@ class OpenRouterClient(ReasoningClient):
         return extract_openai_text(response)
 
 
+class ClineClient(OpenRouterClient):
+    """ClinePass gateway — ta sama koperta co OpenAI, ale owinięta w `data`."""
+
+    name = "cline"
+
+    def __init__(self, api_key: str):
+        super().__init__(api_key, CLINE_URL)
+
+
 _MODEL_DEFAULTS: dict[str, tuple[str, str]] = {
     "gemini": (GEMINI_FLASH_LITE, GEMINI_FLASH_LITE),
     "openai": (OPENAI_DEFAULT, OPENAI_DEFAULT),
     "xai": (XAI_DEFAULT, XAI_DEFAULT),
     "openrouter": (OPENROUTER_DEFAULT, OPENROUTER_DEFAULT),
+    "cline": (CLINE_DEFAULT, CLINE_DEFAULT),
 }
 
 
@@ -249,6 +266,8 @@ def resolve_runtime(config: dict[str, Any], depth: str) -> tuple[schema.Provider
             provider_name = "openai"
         elif xai_key:
             provider_name = "xai"
+        elif config.get("CLINE_API_KEY"):
+            provider_name = "cline"
         elif config.get("OPENROUTER_API_KEY"):
             provider_name = "openrouter"
         else:
@@ -298,6 +317,18 @@ def resolve_runtime(config: dict[str, Any], depth: str) -> tuple[schema.Provider
             x_search_backend=_resolve_x_backend(config),
         )
         return runtime, XAIClient(xai_key)
+
+    if provider_name == "cline":
+        cline_key = config.get("CLINE_API_KEY")
+        if not cline_key:
+            raise RuntimeError("ClinePass selected but CLINE_API_KEY is not configured.")
+        runtime = schema.ProviderRuntime(
+            reasoning_provider="cline",
+            planner_model=planner_model,
+            rerank_model=rerank_model,
+            x_search_backend=_resolve_x_backend(config),
+        )
+        return runtime, ClineClient(cline_key)
 
     if provider_name == "openrouter":
         openrouter_key = config.get("OPENROUTER_API_KEY")
@@ -359,6 +390,10 @@ def extract_gemini_text(payload: dict[str, Any]) -> str:
 
 
 def extract_openai_text(payload: dict[str, Any]) -> str:
+    inner = payload.get("data")
+    if isinstance(inner, dict) and "choices" in inner:
+        # ClinePass: sukces owinięty w {"success": true, "data": {...}}.
+        payload = inner
     if isinstance(payload.get("output_text"), str):
         return payload["output_text"]
     output = payload.get("output") or payload.get("choices") or []

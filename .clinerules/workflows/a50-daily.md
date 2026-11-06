@@ -1,12 +1,12 @@
 # Codzienny monitoring A50 — ręczny run ($ARGUMENTS: opcjonalna data ISO)
 
 Uruchamia lokalnie ten sam pipeline, co GitHub Actions (workflow `daily-monitor`).
-Wymagane: `OPENROUTER_API_KEY` w środowisku. Zalecane: `BRAVE_API_KEY`
+Wymagane: `CLINE_API_KEY` w środowisku. Zalecane: `BRAVE_API_KEY`
 (web search silnika — bez niego zostaje keyless DDG, który nie przepuszcza
 wyników) oraz `yt-dlp` w PATH (`pip install yt-dlp`) dla transkryptów YouTube.
 Kroki wykonuj po kolei, komendy uruchamiaj z katalogu repo (ścieżki względne):
 
-1. Research (silnik last30days, ~2–10 min, wykorzystuje OpenRouter):
+1. Research (silnik last30days, ~2–10 min, wykorzystuje ClinePass / DeepSeek):
 
    ```
    python scripts/research.py
@@ -40,7 +40,7 @@ Kroki wykonuj po kolei, komendy uruchamiaj z katalogu repo (ścieżki względne)
    widzi Twoje konto). Surowy markdown każdego źródła ląduje w
    `data/raw/<dzień>/facebook-raw-<n>.md`.
 
-5. Ocena + score (OpenRouter, JSON; dwa scory: północ/południe gminy):
+5. Ocena + score (ClinePass, JSON; dwa scory: północ/południe gminy):
 
    ```
    python scripts/assess.py

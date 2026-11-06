@@ -1,4 +1,4 @@
-"""Krok 2: rubryka oceny → OpenRouter → assessment + update scores.json.
+"""Krok 2: rubryka oceny → LLM (ClinePass) → assessment + update scores.json.
 
 Użycie:
     python scripts/assess.py [--date YYYY-MM-DD]
@@ -8,7 +8,7 @@ agent_reach.json (wyszukiwanie agent-reach/Exa) i facebook.json
 (LOKALNY krok OpenCLI — w CI go nie ma),
 buduje prompt z rubryką PL (tylko dowody NOWE względem poprzednich ocen —
 delta dnia; cichy dzień utrzymuje score bez wywołania LLM), wywołuje
-OpenRouter i zapisuje:
+gateway LLM i zapisuje:
   - data/assessments/<dzień>.json  (pełny assessment)
   - data/scores.json               (historia, idempotentny upsert)
 """
@@ -30,7 +30,39 @@ from common import (CONFIDENCE_LEVELS, SCENARIOS, Evidence, assessments_dir,  # 
                     is_fresh, load_config, load_scores, raw_dir, resolve_date,
                     upsert_entry)
 
-OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
+CLINE_URL = "https://api.cline.bot/api/v1/chat/completions"
+DEFAULT_MODEL = "cline-pass/deepseek-v4.1-flash-1017"
+
+
+def llm_endpoint() -> str:
+    """Endpoint czatu: LLM_BASE_URL > OPENROUTER_BASE_URL > ClinePass.
+
+    Nazwa OPENROUTER_BASE_URL jest historyczna i oznacza PEŁNY adres
+    /chat/completions, nie bazowy prefiks.
+    """
+    return (os.environ.get("LLM_BASE_URL")
+            or os.environ.get("OPENROUTER_BASE_URL")
+            or CLINE_URL)
+
+
+def llm_api_key() -> str:
+    """Klucz: LLM_API_KEY > CLINE_API_KEY > OPENROUTER_API_KEY."""
+    for name in ("LLM_API_KEY", "CLINE_API_KEY", "OPENROUTER_API_KEY"):
+        value = os.environ.get(name, "").strip()
+        if value:
+            return value
+    return ""
+
+
+def unwrap_response(payload: dict) -> dict:
+    """ClinePass opakowuje sukces w {"success": true, "data": {"choices": [...]}}.
+
+    OpenRouter zwraca `choices` na wierzchu; obsługujemy obie koperty.
+    """
+    inner = payload.get("data")
+    if isinstance(inner, dict) and "choices" in inner:
+        return inner
+    return payload
 
 ANALIZY_DIR = Path(__file__).resolve().parent.parent / "analizy"
 ANALIZY_CAP = 8000
@@ -428,21 +460,23 @@ def extract_json(content: str) -> dict:
             f"{exc.msg} (kontekst: {frag!r})", exc.doc, exc.pos) from None
 
 
-# --------------------------------------------------------------- OpenRouter
+# ------------------------------------------- LLM (ClinePass / OpenRouter)
 
-def call_openrouter(prompt: str, api_key: str, model: str, timeout: int = 180) -> str:
+def call_llm(prompt: str, api_key: str, model: str,
+             timeout: int = 180) -> tuple[str, str | None]:
     payload = {
         "model": model,
         "messages": [{"role": "user", "content": prompt}],
         "response_format": {"type": "json_object"},
         "temperature": 0.2,
         # Modele reasoningowe (np. DeepSeek V4.1 Flash) zużywają budżet na
-        # rozumowanie — za mały limit skutkuje pustym content (finish_reason=length).
+        # rozumowanie — za mały limit skutkuje pustym content (finish_reason=length)
+        # albo błędem 500 "empty response content" w gatewayu ClinePass.
         "max_tokens": 20000,
         "reasoning": {"effort": "low", "exclude": True},
     }
     req = urllib.request.Request(
-        os.environ.get("OPENROUTER_BASE_URL", OPENROUTER_URL),
+        llm_endpoint(),
         data=json.dumps(payload).encode("utf-8"),
         headers={
             "Authorization": f"Bearer {api_key}",
@@ -452,29 +486,31 @@ def call_openrouter(prompt: str, api_key: str, model: str, timeout: int = 180) -
         },
         method="POST",
     )
-    last_err: Exception = RuntimeError("OpenRouter: brak prób")
+    last_err: Exception = RuntimeError("LLM: brak prób")
     for delay in (0, 5, 15, 30):
         if delay:
             time.sleep(delay)
         try:
             with urllib.request.urlopen(req, timeout=timeout) as resp:
-                data = json.loads(resp.read().decode("utf-8"))
+                data = unwrap_response(json.loads(resp.read().decode("utf-8")))
+            if data.get("error"):
+                raise RuntimeError(f"LLM: {data['error']}")
             choice = data["choices"][0]
             content = choice["message"]["content"]
             finish = choice.get("finish_reason")
             usage = data.get("usage") or {}
-            print(f"[assess] OpenRouter: finish_reason={finish}, "
+            print(f"[assess] LLM: finish_reason={finish}, "
                   f"completion_tokens={usage.get('completion_tokens')}",
                   file=sys.stderr)
             if not content:
                 raise RuntimeError(
-                    f"OpenRouter: pusta odpowiedź (finish_reason={finish})")
+                    f"LLM: pusta odpowiedź (finish_reason={finish})")
             return content, finish
         except urllib.error.HTTPError as exc:
             body = exc.read().decode("utf-8", "replace")[:500]
             if exc.code in (401, 402):
-                raise RuntimeError(f"OpenRouter HTTP {exc.code}: {body}") from exc
-            last_err = RuntimeError(f"OpenRouter HTTP {exc.code}: {body}")
+                raise RuntimeError(f"LLM HTTP {exc.code}: {body}") from exc
+            last_err = RuntimeError(f"LLM HTTP {exc.code}: {body}")
         except Exception as exc:  # noqa: BLE001 — retry każdej awarii sieciowej
             last_err = exc
     raise last_err
@@ -526,7 +562,8 @@ def assess_scenarios(evidence: list[Evidence], prev: dict | None, cfg: dict,
     ta strona dostaje poprzednią wartość z confidence „niska”, a powód ląduje
     w `assess_errors`. Gdy padną oba — wyjątek (workflow ma być czerwony).
     """
-    model = cfg.get("openrouter_model", "deepseek/deepseek-v4.1-flash-1017")
+    model = (cfg.get("model") or cfg.get("openrouter_model")
+             or DEFAULT_MODEL)
     baseline = cfg.get("baseline_scores") or {}
     prev_scores = (prev or {}).get("scores") or {}
     scores: dict = {}
@@ -536,7 +573,7 @@ def assess_scenarios(evidence: list[Evidence], prev: dict | None, cfg: dict,
         prompt = build_prompt(evidence, prev, cfg, analyses, scenario=key)
         parsed = None
         for attempt in (1, 2, 3):
-            content, finish = call_openrouter(prompt, api_key, model)
+            content, finish = call_llm(prompt, api_key, model)
             try:
                 parsed = parse_scenario(extract_json(content), prev_sc)
                 break
@@ -564,7 +601,7 @@ def assess_scenarios(evidence: list[Evidence], prev: dict | None, cfg: dict,
             }
         scores[key] = parsed
     if len(errors) == len(SCENARIOS):
-        raise RuntimeError("OpenRouter: żaden scenariusz nie został oceniony")
+        raise RuntimeError("LLM: żaden scenariusz nie został oceniony")
     return {"scores": scores}, errors
 
 
@@ -621,9 +658,10 @@ def main() -> int:
     to_assess, assess_needed = pick_evidence(evidence, seen, prev)
 
     if assess_needed:
-        api_key = os.environ.get("OPENROUTER_API_KEY", "")
+        api_key = llm_api_key()
         if not api_key:
-            print("[assess] FAIL: brak OPENROUTER_API_KEY w środowisku", file=sys.stderr)
+            print("[assess] FAIL: brak LLM_API_KEY/CLINE_API_KEY w środowisku",
+                  file=sys.stderr)
             return 2
         assessment, errors = assess_scenarios(to_assess, prev, cfg, api_key,
                                               load_analyses())

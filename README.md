@@ -20,14 +20,14 @@ GitHub Actions (cron 6:30 PL) lub lokalnie z Cline (/a50-daily)
   → scripts/fetch_feeds.py   # fallback RSS: Google News, GDDKiA
   → scripts/agent_reach.py   # wyszukiwanie semantyczne agent-reach (Exa przez mcporter)
   → scripts/facebook.py      # treści z Facebooka (tylko lokalnie, sesja OpenCLI)
-  → scripts/assess.py        # rubryka PL → OpenRouter → 2 score (północ/południe) + dowody
+  → scripts/assess.py        # rubryka PL → ClinePass (DeepSeek) → 2 score (północ/południe) + dowody
   → scripts/build_site.py    # statyczny HTML (zero JS, czyste SVG)
   → deploy na gh-pages + commit data/ (historia w repo)
 ```
 
 - **Silnik**: [last30days](https://github.com/mvanhorn/last30days-skill) (MIT),
   zwendoryzowany w `skill/last30days/` — działa w trybie headless/cron,
-  planowanie zapytań przez OpenRouter.
+  planowanie zapytań przez ClinePass (model `cline-pass/deepseek-v4.1-flash-1017`).
 - **Okno świeżości**: do oceny trafiają wyłącznie dowody opublikowane
   w ciągu ostatnich 30 dni od dnia raportu (`lookback_days` w
   `config.json`) — starsze artykuły są odfiltrowywane przed oceną
@@ -82,9 +82,9 @@ sposoby: automatycznie na **GitHub Actions** (cron powyżej lub ręczne
 (`/a50-daily`, sekcja niżej) — kod jest identyczny, bo silnik
 last30days jest zwendoryzowany w repo. Sam model LLM **nigdy nie działa
 ani lokalnie, ani na runnerze GitHuba**: skrypty wysyłają prompt przez
-HTTPS do API OpenRouter (`openrouter.ai`) i otrzymują ocenę jako JSON.
+HTTPS do gatewaya ClinePass (`api.cline.bot`) i otrzymują ocenę jako JSON.
 „Lokalnie” oznacza wyłącznie to, że skrypt wywołujący działa na Twojej
-maszynie (z lokalną zmienną `OPENROUTER_API_KEY`); oceniający model
+maszynie (z lokalną zmienną `CLINE_API_KEY`); oceniający model
 zawsze jest w chmurze — nie ma tu żadnego lokalnego LLM.
 
 ## Struktura repo
@@ -105,7 +105,7 @@ zawsze jest w chmurze — nie ma tu żadnego lokalnego LLM.
 
 ## Uruchomienie lokalne (lub przez Cline: `/a50-daily`)
 
-Wymagane: Python 3.12+, `OPENROUTER_API_KEY` w środowisku.
+Wymagane: Python 3.12+, `CLINE_API_KEY` w środowisku.
 Opcjonalne, ale zalecane: `BRAVE_API_KEY` (web search w silniku; bez niego
 zostaje keyless DDG, który dziś nie przepuszcza wyników) oraz `yt-dlp`
 w PATH (`pip install yt-dlp`) — transkrypty YouTube.
@@ -125,7 +125,7 @@ git push`), a strona w `site/` służy tylko do podglądu (katalog jest
 w `.gitignore` i nie jest commitowany). Publikację na GitHub Pages robi
 wyłącznie workflow `daily-monitor` — ręcznie (Actions → Run workflow)
 albo czekając na cron. Klucze API: lokalnie ze zmiennych środowiskowych
-(`OPENROUTER_API_KEY`, `BRAVE_API_KEY`), na GitHubie z sekretów repo.
+(`CLINE_API_KEY`, `BRAVE_API_KEY`), na GitHubie z sekretów repo.
 
 ## Setup GitHub (jednorazowo)
 
@@ -133,7 +133,7 @@ albo czekając na cron. Klucze API: lokalnie ze zmiennych środowiskowych
 2. `git remote add origin https://github.com/<USER>/a50-monitor.git`
    i `git push -u origin main`.
 3. **Settings → Secrets and variables → Actions**: dodaj sekrety
-   `OPENROUTER_API_KEY` (ocena) i `BRAVE_API_KEY` (web search —
+   `CLINE_API_KEY` (research + ocena) i `BRAVE_API_KEY` (web search —
    klucz z <https://api.search.brave.com/app/keys>, darmowy plan
    2 000 zapytań/mies. wystarcza z zapasem).
 4. **Settings → Pages**: Source = *Deploy from a branch*, Branch = `gh-pages`

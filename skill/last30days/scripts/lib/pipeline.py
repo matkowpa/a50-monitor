@@ -1809,11 +1809,12 @@ def diagnose(
         "google": bool(google_key),
         "openai": bool(config.get("OPENAI_API_KEY")) and config.get("OPENAI_AUTH_STATUS") == env.AUTH_STATUS_OK,
         "xai": bool(config.get("XAI_API_KEY")),
+        "cline": bool(config.get("CLINE_API_KEY")),
         "openrouter": bool(config.get("OPENROUTER_API_KEY")),
         "perplexity": bool(config.get("PERPLEXITY_API_KEY")),
     }
     reasoning_provider_available = any(
-        providers_status[name] for name in ("google", "openai", "xai", "openrouter")
+        providers_status[name] for name in ("google", "openai", "xai", "cline", "openrouter")
     )
     external_commands = {
         "yt-dlp": bool(which("yt-dlp")),

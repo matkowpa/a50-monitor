@@ -29,7 +29,12 @@ jobs:
 
       - name: Research (silnik last30days)
         env:
-          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          CLINE_API_KEY: ${{ secrets.CLINE_API_KEY }}
+          # Dostawca reasoning+rerank: ClinePass (DeepSeek V4.1 Flash 1017),
+          # id subskrypcyjne z prefiksem cline-pass/.
+          LAST30DAYS_REASONING_PROVIDER: cline
+          LAST30DAYS_PLANNER_MODEL: cline-pass/deepseek-v4.1-flash-1017
+          LAST30DAYS_RERANK_MODEL: cline-pass/deepseek-v4.1-flash-1017
           # Web search (brave -> exa -> serper -> keyless). Bez klucza silnik
           # spada do keyless DDG i nie przepuszcza wyników przez ranking.
           BRAVE_API_KEY: ${{ secrets.BRAVE_API_KEY }}
@@ -51,9 +56,9 @@ jobs:
           TZ: Europe/Warsaw
         run: python scripts/fetch_feeds.py
 
-      - name: Assess (score przez OpenRouter)
+      - name: Assess (score przez ClinePass)
         env:
-          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          CLINE_API_KEY: ${{ secrets.CLINE_API_KEY }}
           TZ: Europe/Warsaw
         run: python scripts/assess.py
 

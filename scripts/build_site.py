@@ -409,7 +409,7 @@ def build(scores_file: Path, out_dir: Path,
 polskich (Google News, GDDKiA) oraz wyszukiwanie semantyczne agent-reach
 (Exa — serwer MCP przez <code>mcporter</code>, zapytania z
 <code>agent_reach.queries</code>). Zebrane dowody są oceniane przez model
-językowy (OpenRouter), który dzień po dniu <strong>modyfikuje</strong>
+językowy (ClinePass / DeepSeek), który dzień po dniu <strong>modyfikuje</strong>
 dwa niezależne score'y prawdopodobieństwa — od punktu wyjścia ustalonego
 przez analizy eksperckie oraz oceny z dnia poprzedniego.</p>
 <p>Do oceny trafiają wyłącznie <strong>dowody opublikowane w ciągu
