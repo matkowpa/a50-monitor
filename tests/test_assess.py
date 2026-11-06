@@ -495,5 +495,36 @@ class TestPrevAndNoEvidence(unittest.TestCase):
         self.assertEqual(entry["scores"]["south"]["score"], 50)
 
 
+class TestLlmConfig(unittest.TestCase):
+    """Klucz i endpoint muszą pochodzić od tego samego dostawcy."""
+
+    KEYS = ("LLM_BASE_URL", "OPENROUTER_BASE_URL", "LLM_API_KEY",
+            "CLINE_API_KEY", "OPENROUTER_API_KEY")
+
+    def _cfg(self, **values):
+        from unittest.mock import patch
+        clean = {k: "" for k in self.KEYS}
+        clean.update(values)
+        with patch.dict("os.environ", clean, clear=False):
+            return assess.llm_config()
+
+    def test_cline_key_goes_to_cline(self):
+        self.assertEqual(self._cfg(CLINE_API_KEY="ck"),
+                         (assess.CLINE_URL, "ck"))
+
+    def test_openrouter_key_stays_on_openrouter(self):
+        self.assertEqual(self._cfg(OPENROUTER_API_KEY="or"),
+                         (assess.OPENROUTER_URL, "or"))
+
+    def test_explicit_base_url_wins(self):
+        url = "https://proxy.local/v1/chat/completions"
+        self.assertEqual(self._cfg(OPENROUTER_BASE_URL=url, OPENROUTER_API_KEY="or"),
+                         (url, "or"))
+
+    def test_cline_beats_openrouter(self):
+        self.assertEqual(self._cfg(CLINE_API_KEY="ck", OPENROUTER_API_KEY="or"),
+                         (assess.CLINE_URL, "ck"))
+
+
 if __name__ == "__main__":
     unittest.main()

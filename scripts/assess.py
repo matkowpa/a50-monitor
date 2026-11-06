@@ -31,27 +31,40 @@ from common import (CONFIDENCE_LEVELS, SCENARIOS, Evidence, assessments_dir,  # 
                     upsert_entry)
 
 CLINE_URL = "https://api.cline.bot/api/v1/chat/completions"
+OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 DEFAULT_MODEL = "cline-pass/deepseek-v4.1-flash-1017"
 
 
-def llm_endpoint() -> str:
-    """Endpoint czatu: LLM_BASE_URL > OPENROUTER_BASE_URL > ClinePass.
+def llm_config() -> tuple[str, str]:
+    """Zwraca spójną parę (endpoint, klucz).
 
-    Nazwa OPENROUTER_BASE_URL jest historyczna i oznacza PEŁNY adres
-    /chat/completions, nie bazowy prefiks.
+    Klucz i endpoint muszą pochodzić z tego samego dostawcy — inaczej klucz
+    OpenRoutera poleciałby na api.cline.bot. Kolejność: jawne LLM_BASE_URL /
+    OPENROUTER_BASE_URL (pełny adres /chat/completions), potem dostawca
+    wybrany obecnością klucza: CLINE_API_KEY > LLM_API_KEY > OPENROUTER_API_KEY.
     """
-    return (os.environ.get("LLM_BASE_URL")
-            or os.environ.get("OPENROUTER_BASE_URL")
-            or CLINE_URL)
+    base = (os.environ.get("LLM_BASE_URL")
+            or os.environ.get("OPENROUTER_BASE_URL"))
+    cline = os.environ.get("CLINE_API_KEY", "").strip()
+    llm = os.environ.get("LLM_API_KEY", "").strip()
+    openrouter = os.environ.get("OPENROUTER_API_KEY", "").strip()
+    if base:
+        return base, (cline or llm or openrouter)
+    if cline:
+        return CLINE_URL, cline
+    if llm:
+        return CLINE_URL, llm
+    if openrouter:
+        return OPENROUTER_URL, openrouter
+    return CLINE_URL, ""
+
+
+def llm_endpoint() -> str:
+    return llm_config()[0]
 
 
 def llm_api_key() -> str:
-    """Klucz: LLM_API_KEY > CLINE_API_KEY > OPENROUTER_API_KEY."""
-    for name in ("LLM_API_KEY", "CLINE_API_KEY", "OPENROUTER_API_KEY"):
-        value = os.environ.get(name, "").strip()
-        if value:
-            return value
-    return ""
+    return llm_config()[1]
 
 
 def unwrap_response(payload: dict) -> dict:

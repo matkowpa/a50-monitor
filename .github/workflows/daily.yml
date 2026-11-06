@@ -67,7 +67,8 @@ jobs:
         env:
           CLINE_API_KEY: ${{ secrets.CLINE_API_KEY }}
           # Fallback do czasu dodania sekretu CLINE_API_KEY (assess bierze
-          # pierwszy dostępny klucz: LLM_API_KEY > CLINE_API_KEY > OPENROUTER_API_KEY).
+          # pierwszy dostępny klucz: CLINE_API_KEY > LLM_API_KEY > OPENROUTER_API_KEY
+          # i endpoint dobiera się do tego samego dostawcy).
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           TZ: Europe/Warsaw
         run: python scripts/assess.py
