@@ -1,0 +1,108 @@
+{
+  "date": "2026-11-06",
+  "scores": {
+    "north": {
+      "score": 38,
+      "confidence": "niska",
+      "summary": "Nowe dowody nie wskazują oficjalnego wariantu OAW przez północną część gminy Sobienie-Jeziory; petycja i interpelacja dotyczą ogólnie potencjalnego przebiegu, a artykuł o A50 nie podaje szczegółów korytarza.",
+      "rationale": "Utrzymuję score 38%, ponieważ żaden z nowych materiałów nie potwierdza korytarza między wsią Sobienie-Jeziory a doliną Wisły. Petycja online mówi jedynie o potencjalnym wariancie przez gminę, bez wskazania strony północnej, a interpelacja dotyczy postulatów mieszkańców powiatu otwockiego. Ogólny artykuł o A50 nie zawiera rozstrzygnięć wariantowych dla tego terenu. Brak oficjalnego studium, decyzji środowiskowej lub przetargu dla tego korytarza uzasadnia niską pewność oceny.",
+      "key_findings": [
+        {
+          "claim": "Petycja online wspomina o potencjalnym wariancie A50 mogącym przechodzić przez gminę Sobienie-Jeziory, ale nie precyzuje północnej strony gminy.",
+          "evidence_urls": [
+            "https://www.petycjeonline.com/stanowisko_w_sprawie_planowanego_przebiegu_drogi_a50_obwodnicy_aglomeracji_warszawskiej_potencjalny_wariant_ktory_moe_przechodzi_przez_teren_gminy_sobienie-jeziory"
+          ]
+        },
+        {
+          "claim": "Interpelacja poselska odnosi się do postulatów mieszkańców powiatu otwockiego zmiany przebiegu OAW, bez potwierdzenia korytarza północnego w gminie.",
+          "evidence_urls": [
+            "https://www.sejm.gov.pl/Sejm9.nsf/InterpelacjaTresc.xsp?key=BZVARM"
+          ]
+        },
+        {
+          "claim": "Ogólny artykuł o A50 nie dostarcza szczegółów wariantu przebiegu przez gminę Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOOENibUd4N081OVVNbEt2Y21HbnRabmNUNDQ0c1BzbEVKLTVqaGo1NlBkcmhZTVZYZFU1QWVldkxVcFFnenBpUXhac194UGUxTkcyZGFxdnVxNjNKVzBFNE43MjlDSW1vd1dyeXlLbWFVcmlMbjZSRTR2TTZtcm5JYnUtTHRkVGhHMFpn?oc=5"
+          ]
+        },
+        {
+          "claim": "Komunikat GDDKiA dotyczy projektowania zachodniej części OAW, a nie wschodniego odcinka w rejonie Sobienie-Jezior.",
+          "evidence_urls": [
+            "https://www.gov.pl/web/gddkia-warszawa/projektujemy-zachodnia-czesc-obwodnicy-aglomeracji-warszawskiej"
+          ]
+        }
+      ],
+      "trend_vs_prev": 0
+    },
+    "south": {
+      "score": 18,
+      "confidence": "niska",
+      "summary": "Nowe dowody nie wskazują oficjalnego wariantu A50 przez południową część gminy Sobienie-Jeziory; brak STEŚ, wariantów ani decyzji środowiskowej dla odcinka południowo-wschodniego. Utrzymuję score na poziomie poprzedniej oceny z niską pewnością.",
+      "rationale": "Poprzednia ocena 18% odzwierciedlała brak oficjalnego rozstrzygnięcia dla rejonu Sobienie-Jezior. Nowy materiał MotoGuru ma charakter ogólny i nie precyzuje przebiegu, a petycja mówi jedynie o potencjalnym wariancie przez teren gminy, bez wskazania strony południowej. Komunikat GDDKiA dotyczy zachodniej części OAW, a interpelacja poselska odnosi się do powiatu otwockiego i odcinka mostowego, nie do scenariusza SOUTH. Wobec braku nowych, oficjalnych i rozstrzygających dowodów score pozostaje bez zmian, a confidence jest niska.",
+      "key_findings": [
+        {
+          "claim": "Materiał medialny o A50 wspomina o 120 km nowej trasy, ale nie wskazuje wariantu przez południową część gminy Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOOENibUd4N081OVVNbEt2Y21HbnRabmNUNDQ0c1BzbEVKLTVqaGo1NlBkcmhZTVZYZFU1QWVldkxVcFFnenBpUXhac194UGUxTkcyZGFxdnVxNjNKVzBFNE43MjlDSW1vd1dyeXlLbWFVcmlMbjZSRTR2TTZtcm5JYnUtTHRkVGhHMFpn?oc=5"
+          ]
+        },
+        {
+          "claim": "Petycja dotyczy potencjalnego wariantu A50 mogącego przechodzić przez teren gminy Sobienie-Jeziory, ale nie potwierdza konkretnie przebiegu na południe od wsi.",
+          "evidence_urls": [
+            "https://www.petycjeonline.com/stanowisko_w_sprawie_planowanego_przebiegu_drogi_a50_obwodnicy_aglomeracji_warszawskiej_potencjalny_wariant_ktory_moe_przechodzi_przez_teren_gminy_sobienie-jeziory"
+          ]
+        },
+        {
+          "claim": "Komunikat GDDKiA dotyczy projektowania zachodniej części OAW i nie rozstrzyga wariantu odcinka wschodniego przy Sobienie-Jeziorach.",
+          "evidence_urls": [
+            "https://www.gov.pl/web/gddkia-warszawa/projektujemy-zachodnia-czesc-obwodnicy-aglomeracji-warszawskiej"
+          ]
+        },
+        {
+          "claim": "Interpelacja poselska odnosi się do powiatu otwockiego i zmiany przebiegu OAW na odcinku mostowym, nie wskazując południowego wariantu przez gminę Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://www.sejm.gov.pl/Sejm9.nsf/InterpelacjaTresc.xsp?key=BZVARM"
+          ]
+        }
+      ],
+      "trend_vs_prev": 0
+    }
+  },
+  "evidence": [
+    {
+      "title": "Autostrada A50. W Polsce powstanie 120 km nowej trasy - MotoGuru.pl",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOOENibUd4N081OVVNbEt2Y21HbnRabmNUNDQ0c1BzbEVKLTVqaGo1NlBkcmhZTVZYZFU1QWVldkxVcFFnenBpUXhac194UGUxTkcyZGFxdnVxNjNKVzBFNE43MjlDSW1vd1dyeXlLbWFVcmlMbjZSRTR2TTZtcm5JYnUtTHRkVGhHMFpn?oc=5",
+      "source": "Google News: A50 przebieg",
+      "published": "2026-10-09",
+      "snippet": "<a href=\"https://news.google.com/rss/articles/CBMiiwFBVV95cUxOOENibUd4N081OVVNbEt2Y21HbnRabmNUNDQ0c1BzbEVKLTVqaGo1NlBkcmhZTVZYZFU1QWVldkxVcFFnenBpUXhac194UGUxTkcyZGFxdnVxNjNKVzBFNE43MjlDSW1vd1dyeXlLbWFVcmlMbjZSRTR2TTZtcm5JYnUtTHRkVGhHMFpn?oc=5\" target=\"_blank\">Autostrada A50. W Polsce powstanie 120 km nowej trasy</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MotoGuru.pl</font>",
+      "stance": "neutral"
+    },
+    {
+      "title": "STANOWISKO w sprawie planowanego przebiegu drogi A50 – Obwodnicy Aglomeracji Warszawskiej (potencjalny wariant, który może przechodzić przez teren Gminy Sobienie-Jeziory) - Petycjeonline.com",
+      "url": "https://www.petycjeonline.com/stanowisko_w_sprawie_planowanego_przebiegu_drogi_a50_obwodnicy_aglomeracji_warszawskiej_potencjalny_wariant_ktory_moe_przechodzi_przez_teren_gminy_sobienie-jeziory",
+      "source": "exa",
+      "published": "",
+      "snippet": "W związku z docierającymi do nas informacjami o inicjatywie niektórych samorządów z terenu powiatów piaseczyńskiego i grójeckiego dotyczącej przebiegu projektowanej Obwodnicy Aglomeracji Warszawskiej przez południową część Gminy Góra Kalwaria i dalej, po drugiej stronie Wisły, przez teren Gminy Sobienie-Jeziory, wyrażamy stanowczy sprzeciw wobec lokalizacji tej trasy na obszarze naszej Gminy. Ewen",
+      "stance": "neutral"
+    },
+    {
+      "title": "Projektujemy zachodnią część Obwodnicy Aglomeracji Warszawskiej - Generalna Dyrekcja Dróg Krajowych i Autostrad- Oddział Warszawa - Portal Gov.pl",
+      "url": "https://www.gov.pl/web/gddkia-warszawa/projektujemy-zachodnia-czesc-obwodnicy-aglomeracji-warszawskiej",
+      "source": "exa",
+      "published": "",
+      "snippet": "07.04.2026 Nieprzerwanie kontynuujemy prace związane z wariantowym poprowadzeniem dwóch fragmentów zachodniej części OAW. Obejmują one opracowanie dokumentacji dla odcinka od drogi ekspresowej S7 na północ od Warszawy, przez połączenie z planowaną drogą ekspresową S10 w rejonie Nacpolska i dalej do DK92. Tu rozpoczyna się drugi odcinek biegnący do autostrady A2 i drogi ekspresowej S8, a następnie",
+      "stance": "neutral"
+    },
+    {
+      "title": "Interpelacja nr 22190 - tekst - Sejm Rzeczypospolitej Polskiej",
+      "url": "https://www.sejm.gov.pl/Sejm9.nsf/InterpelacjaTresc.xsp?key=BZVARM",
+      "source": "exa",
+      "published": "",
+      "snippet": "Szanowny Panie Ministrze, mieszkańcy powiatu otwockiego zwrócili się do mnie z prośbą o wsparcie ich działań zmierzających do zmiany przebiegu Obwodnicy Aglomeracji Warszawskiej (OAW) na odcinku most na Wiśle – Mińsk Mazowiecki oraz zmiany charakteru tej drogi ze standardu autostrady (A50) na standard drogi ekspresowej (S50). W ramach studium korytarzowego OAW GDDKiA wybrała do dalszych prac tzw.",
+      "stance": "neutral"
+    }
+  ],
+  "sources_found": 4,
+  "engine_status": "ok",
+  "assessment_path": "data/assessments/2026-11-06.json"
+}
