@@ -30,16 +30,23 @@ jobs:
       - name: Research (silnik last30days)
         env:
           CLINE_API_KEY: ${{ secrets.CLINE_API_KEY }}
-          # Dostawca reasoning+rerank: ClinePass (DeepSeek V4.1 Flash 1017),
-          # id subskrypcyjne z prefiksem cline-pass/.
-          LAST30DAYS_REASONING_PROVIDER: cline
-          LAST30DAYS_PLANNER_MODEL: cline-pass/deepseek-v4.1-flash-1017
-          LAST30DAYS_RERANK_MODEL: cline-pass/deepseek-v4.1-flash-1017
+          # Fallback na czas, gdy sekret CLINE_API_KEY nie jest jeszcze dodany
+          # w repo: wtedy run idzie po staremu przez OpenRouter.
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           # Web search (brave -> exa -> serper -> keyless). Bez klucza silnik
           # spada do keyless DDG i nie przepuszcza wyników przez ranking.
           BRAVE_API_KEY: ${{ secrets.BRAVE_API_KEY }}
           TZ: Europe/Warsaw
-        run: python scripts/research.py
+        run: |
+          # Dostawca reasoning+rerank: ClinePass (DeepSeek V4.1 Flash 1017),
+          # id subskrypcyjne z prefiksem cline-pass/. Piny tylko przy kluczu
+          # Cline — inaczej silnik wybiera dostawcę sam (auto: cline > openrouter).
+          if [ -n "$CLINE_API_KEY" ]; then
+            export LAST30DAYS_REASONING_PROVIDER=cline
+            export LAST30DAYS_PLANNER_MODEL=cline-pass/deepseek-v4.1-flash-1017
+            export LAST30DAYS_RERANK_MODEL=cline-pass/deepseek-v4.1-flash-1017
+          fi
+          python scripts/research.py
 
       - name: Wyszukiwanie agent-reach (Exa przez mcporter)
         # Dodatkowe źródło: awaria wyszukiwania nie może zablokować raportu
@@ -59,6 +66,9 @@ jobs:
       - name: Assess (score przez ClinePass)
         env:
           CLINE_API_KEY: ${{ secrets.CLINE_API_KEY }}
+          # Fallback do czasu dodania sekretu CLINE_API_KEY (assess bierze
+          # pierwszy dostępny klucz: LLM_API_KEY > CLINE_API_KEY > OPENROUTER_API_KEY).
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           TZ: Europe/Warsaw
         run: python scripts/assess.py
 
