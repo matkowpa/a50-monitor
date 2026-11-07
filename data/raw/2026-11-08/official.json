@@ -1,0 +1,42 @@
+{
+  "day": "2026-11-08",
+  "sources": [
+    {
+      "id": "gddkia-oaw",
+      "label": "GDDKiA — projekt OAW (zachodnia część)",
+      "status": "ok",
+      "changed": false,
+      "baseline": null,
+      "error": null,
+      "chars": 7188
+    },
+    {
+      "id": "gddkia-a50s50",
+      "label": "GDDKiA — odcinek A50/S50 DK92–S7",
+      "status": "ok",
+      "changed": false,
+      "baseline": null,
+      "error": null,
+      "chars": 4141
+    },
+    {
+      "id": "gmina-sobienie",
+      "label": "Gmina Sobienie-Jeziory — aktualności",
+      "status": "ok",
+      "changed": false,
+      "baseline": null,
+      "error": null,
+      "chars": 18121
+    },
+    {
+      "id": "rdos-warszawa",
+      "label": "RDOŚ Warszawa — komunikaty",
+      "status": "ok",
+      "changed": false,
+      "baseline": null,
+      "error": null,
+      "chars": 4327
+    }
+  ],
+  "items": []
+}

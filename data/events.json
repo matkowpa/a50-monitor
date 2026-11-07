@@ -83,6 +83,18 @@
       "grade": "official",
       "confirmed": true,
       "snippet": "Do Dziennika Urzędowego Unii Europejskiej przekazaliśmy ogłoszenie o przetargu na wykonanie Studium techniczno-ekonomiczno-środowiskowego (STEŚ) dla kolejnego fragmentu Obwodnicy Aglomeracji Warszawskiej (OAW). Chodzi o odcinek drogi ekspre"
+    },
+    {
+      "id": "f59d0750c351",
+      "date": "2026-11-08",
+      "type": "variant",
+      "type_label": "wariant przebiegu",
+      "title": "Autostrada A50. W Polsce powstanie 120 km nowej trasy",
+      "url": "https://motoguru.pl/na-czasie/autostrada-a50-w-polsce-powstanie-120-km-nowej-trasy/",
+      "host": "motoguru.pl",
+      "grade": "media",
+      "confirmed": false,
+      "snippet": "Kluczowe będzie ustalenie ostatecznego przebiegu trasy, od którego zależą kolejne etapy przygotowania inwestycji. Nowa autostrada ma umożliwić ominięcie aglomeracji warszawskiej od południa i odciążyć część dróg wykorzystywanych dziś przez "
     }
   ]
 }

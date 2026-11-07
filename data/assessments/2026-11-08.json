@@ -1,0 +1,143 @@
+{
+  "date": "2026-11-08",
+  "scores": {
+    "north": {
+      "score": 38,
+      "confidence": "niska",
+      "summary": "Nowe dowody dotyczą wyłącznie ogólnego statusu OAW (A50/S50) i nie zawierają żadnego wskazania wariantu dla odcinka wschodniego przez powiat otwocki. Brak podstaw do zmiany oceny — utrzymuję 38% dla scenariusza północnego.",
+      "rationale": "Żaden z nowych materiałów nie odnosi się do wariantu przebiegu przez północną część gminy Sobienie-Jeziory: źródła opisują albo odcinek zachodni DK92–S7, albo ogólne ramy OAW jako zewnętrznego pierścienia A50/S50. GDDKiA wprost wskazuje, że ostateczny przebieg nie został ustalony, a dokumentacja ma być gotowa dopiero w 2030 r., co potwierdza wczesny etap procesu i brak rozstrzygnięć wariantowych. Interpelacje poselskie pokazują presję polityczną na zmianę przebiegu w powiecie otwockim, ale nie precyzują korytarza w samej gminie. Wobec braku nowych, istotnych sygnałów score pozostaje na poziomie poprzedniej oceny (38%), a confidence obniżam do niskiej.",
+      "key_findings": [
+        {
+          "claim": "GDDKiA nie wskazała jeszcze ostatecznego przebiegu OAW — dokumentacja ma być gotowa w 2030 r., a trasa pozostaje na etapie przygotowawczym.",
+          "evidence_urls": [
+            "https://informacje.wp.pl/motoryzacja/wielkie-inwestycje-drogowe-wokol-warszawy-gddkia-ujawnia-plany-i-terminy-budowy-7339932369226176a"
+          ]
+        },
+        {
+          "claim": "Publikowane materiały GDDKiA dotyczą odcinka DK92–S7 (zachodniego), a nie wschodniego odcinka OAW przebiegającego przez powiat otwocki.",
+          "evidence_urls": [
+            "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8"
+          ]
+        },
+        {
+          "claim": "OAW planowana jest jako zewnętrzny pierścień drogowy obejmujący trasy A50 i S50, bez rozstrzygnięcia szczegółowego korytarza na wschodzie.",
+          "evidence_urls": [
+            "https://tematwarszawa.pl/news/trasa-n-s-wola-polczynska-gorczewska/"
+          ]
+        },
+        {
+          "claim": "Interpelacje poselskie potwierdzają nacisk mieszkańców powiatu otwockiego na zmianę przebiegu OAW na odcinku mostowym, co wskazuje na trwającą niepewność co do wariantu.",
+          "evidence_urls": [
+            "https://www.sejm.gov.pl/Sejm9.nsf/InterpelacjaTresc.xsp?key=BZVARM",
+            "https://sejm.gov.pl/INT9.nsf/klucz/ATTCV7GYC/%24FILE/i42855-o1.pdf"
+          ]
+        }
+      ],
+      "trend_vs_prev": 0,
+      "score_raw": 38,
+      "evidence_grade": "official",
+      "delta_capped": false,
+      "change_reason": "official: bez zmiany"
+    },
+    "south": {
+      "score": 18,
+      "confidence": "niska",
+      "summary": "Nowe dowody nie zawierają żadnego oficjalnego wskazania wariantu przebiegu OAW na wschód od S7 — GDDKiA nadal nie ma ustalonego przebiegu, a dokumentacja ma być gotowa dopiero w 2030 r. Utrzymuję poprzednią ocenę scenariusza południowego na poziomie 18%.",
+      "rationale": "Żaden z nowych materiałów nie odnosi się do wariantu przebiegu przez południową część gminy Sobienie-Jeziory (rejon Śniadkowa Dolnego i Górnego) — publikacje dotyczą ogólnych ram OAW oraz odcinka zachodniego DK92–S7. Media ogólnopolskie potwierdzają jedynie, że OAW pozostaje na etapie przygotowawczym, a ostateczny przebieg nie został ustalony, co jest zgodne z wcześniejszymi ustaleniami, a nie nowym sygnałem. Interpelacje poselskie dotyczą presji mieszkańców powiatu otwockiego na zmianę przebiegu na odcinku mostowym, co nie wskazuje na korytarz południowy w gminie. Brak dowodów na rzecz tego scenariusza oraz brak dowodów przeciwnych specyficznych dla tej strony gminy nakazuje trzymać score blisko poprzedniej wartości przy niskiej pewności.",
+      "key_findings": [
+        {
+          "claim": "GDDKiA nie wskazała ostatecznego przebiegu OAW — dokumentacja ma być gotowa w 2030 r., a trasa pozostaje na etapie przygotowawczym.",
+          "evidence_urls": [
+            "https://informacje.wp.pl/motoryzacja/wielkie-inwestycje-drogowe-wokol-warszawy-gddkia-ujawnia-plany-i-terminy-budowy-7339932369226176a"
+          ]
+        },
+        {
+          "claim": "Oficjalna strona GDDKiA dotyczy odcinka OAW DK92–S7, czyli fragmentu zachodniego, a nie wschodniego przebiegającego przez gminę Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8"
+          ]
+        },
+        {
+          "claim": "OAW (A50/S50) jest opisana jako zewnętrzny pierścień drogowy Warszawy, bez rozstrzygnięcia szczegółowego korytarza na wschodzie.",
+          "evidence_urls": [
+            "https://tematwarszawa.pl/news/trasa-n-s-wola-polczynska-gorczewska/"
+          ]
+        },
+        {
+          "claim": "Interpelacje poselskie koncentrują się na presji mieszkańców powiatu otwockiego na zmianę przebiegu OAW na odcinku mostowym, nie wskazując wariantu przez południe gminy Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://www.sejm.gov.pl/Sejm9.nsf/InterpelacjaTresc.xsp?key=BZVARM",
+            "https://sejm.gov.pl/INT9.nsf/klucz/ATTCV7GYC/%24FILE/i42855-o1.pdf"
+          ]
+        }
+      ],
+      "trend_vs_prev": 0,
+      "score_raw": 18,
+      "evidence_grade": "official",
+      "delta_capped": false,
+      "change_reason": "official: bez zmiany"
+    }
+  },
+  "evidence": [
+    {
+      "title": "Trasa N-S na Woli bez terminu budowy. Co dalej?",
+      "url": "https://tematwarszawa.pl/news/trasa-n-s-wola-polczynska-gorczewska/",
+      "source": "grounding",
+      "published": "2026-10-26",
+      "snippet": "Osobnym, znacznie większym przedsięwzięciem jest Obwodnica Aglomeracji Warszawskiej (OAW), planowana jako zewnętrzny pierścień drogowy, obejmujący między innymi trasy A50 i S50. Ma ona przebiegać dalej od centrum i przejmować przede wszystkim ruch tranzytowy, którego celem nie jest ...",
+      "stance": "neutral"
+    },
+    {
+      "title": "Wielkie inwestycje drogowe wokół Warszawy. GDDKiA ujawnia plany i terminy budowy",
+      "url": "https://informacje.wp.pl/motoryzacja/wielkie-inwestycje-drogowe-wokol-warszawy-gddkia-ujawnia-plany-i-terminy-budowy-7339932369226176a",
+      "source": "grounding",
+      "published": "2026-10-14",
+      "snippet": "Dokumentacja ma być gotowa w 2030 r. Nie jest to jednak termin oddania obwodnicy do ruchu. Trasa pozostaje na etapie przygotowawczym, a jej ostateczny przebieg nie został jeszcze ustalony. Najbardziej zaawansowane prace nad OAW dotyczą jej zachodniej części: odcinków od S10 do DK92 oraz od DK92 do S7 na południe od Warszawy.",
+      "stance": "neutral"
+    },
+    {
+      "title": "A50/S50 Obwodnica Aglomeracji Warszawskiej odcinek DK92 - S7 - Generalna Dyrekcja Dróg Krajowych i Autostrad - Portal Gov.pl",
+      "url": "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8",
+      "source": "exa",
+      "published": "",
+      "snippet": "A50/S50 Obwodnica Aglomeracji Warszawskiej odcinek DK92 - S7 - Generalna Dyrekcja Dróg Krajowych i Autostrad - Portal Gov.pl ## A50/S50 Obwodnica Aglomeracji Warszawskiej odcinek DK92 - S7 Podstawowe informacje Nr drogi : A50 / S50 Nazwa odcinka : Obwodnica Aglomeracji Warszawskiej odcinek DK92 - S7 System realizacji : Projektuj i Buduj Program : Rządowy Program Budowy Dróg Krajowych do 2030 r. (z",
+      "stance": "neutral"
+    },
+    {
+      "title": "Szanowna Pani Elżbieta Witek Marszałek Sejmu Rzeczypospolitej Polskiej",
+      "url": "https://sejm.gov.pl/INT9.nsf/klucz/ATTCV7GYC/%24FILE/i42855-o1.pdf",
+      "source": "exa",
+      "published": "",
+      "snippet": "Zaznaczam, że Obwodnica Aglomeracji Warszawskiej (OAW) to niewątpliwie jedna z kluczowych inwestycji transportowych nie tylko w skali regionu, ale i całego kraju, w związku z czym pragnę podkreślić wagę i potrzebę realizacji tej inwestycji. Wykonane analizy w ramach Studium korytarzowego potwierdziły zasadność realizacji OAW oraz pozwoliły wskazać kierunek dalszego uszczegółowiania w ramach kolejn",
+      "stance": "neutral"
+    },
+    {
+      "title": "Interpelacja nr 22190 - tekst - Sejm Rzeczypospolitej Polskiej",
+      "url": "https://www.sejm.gov.pl/Sejm9.nsf/InterpelacjaTresc.xsp?key=BZVARM",
+      "source": "exa",
+      "published": "",
+      "snippet": "Szanowny Panie Ministrze, mieszkańcy powiatu otwockiego zwrócili się do mnie z prośbą o wsparcie ich działań zmierzających do zmiany przebiegu Obwodnicy Aglomeracji Warszawskiej (OAW) na odcinku most na Wiśle – Mińsk Mazowiecki oraz zmiany charakteru tej drogi ze standardu autostrady (A50) na standard drogi ekspresowej (S50). W ramach studium korytarzowego OAW GDDKiA wybrała do dalszych prac tzw.",
+      "stance": "neutral"
+    }
+  ],
+  "sources_found": 5,
+  "source_funnel": {
+    "fetched": {
+      "engine": 4,
+      "feeds": 1,
+      "agent_reach": 25,
+      "facebook": 0,
+      "official": 0
+    },
+    "fresh": {
+      "engine": 4,
+      "feeds": 1,
+      "agent_reach": 5,
+      "facebook": 0,
+      "official": 0
+    },
+    "merged": 10
+  },
+  "engine_status": "ok",
+  "assessment_path": "data/assessments/2026-11-08.json"
+}
