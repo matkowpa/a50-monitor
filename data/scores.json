@@ -3425,6 +3425,30 @@
       "sources_found": 7,
       "engine_status": "ok",
       "assessment_path": "data/assessments/2026-11-06.json"
+    },
+    {
+      "date": "2026-11-07",
+      "scores": {
+        "north": {
+          "score": 38,
+          "confidence": "niska",
+          "summary": "Brak nowych dowodów w podglądanych źródłach — utrzymuję poprzednią ocenę (38%).",
+          "trend_vs_prev": 0,
+          "rationale": "Brak nowych dowodów w podglądanych źródłach — utrzymuję poprzednią ocenę (38%).",
+          "key_findings": []
+        },
+        "south": {
+          "score": 18,
+          "confidence": "niska",
+          "summary": "Brak nowych dowodów w podglądanych źródłach — utrzymuję poprzednią ocenę (18%).",
+          "trend_vs_prev": 0,
+          "rationale": "Brak nowych dowodów w podglądanych źródłach — utrzymuję poprzednią ocenę (18%).",
+          "key_findings": []
+        }
+      },
+      "sources_found": 0,
+      "engine_status": "no-new-evidence",
+      "assessment_path": "data/assessments/2026-11-07.json"
     }
   ]
 }
