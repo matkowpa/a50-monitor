@@ -88,5 +88,27 @@
    "uchwała lub stanowisko Rady Gminy Sobienie-Jeziory za albo przeciw konkretnemu wariantowi",
    "przetarg lub umowa na projekt odcinka wschodniego",
    "oficjalne wykluczenie korytarza przez gminę"
+  ],
+  "official_sources": [
+   {
+    "id": "gddkia-oaw",
+    "label": "GDDKiA — projekt OAW (zachodnia część)",
+    "url": "https://www.gov.pl/web/gddkia-warszawa/projektujemy-zachodnia-czesc-obwodnicy-aglomeracji-warszawskiej"
+   },
+   {
+    "id": "gddkia-a50s50",
+    "label": "GDDKiA — odcinek A50/S50 DK92–S7",
+    "url": "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8"
+   },
+   {
+    "id": "gmina-sobienie",
+    "label": "Gmina Sobienie-Jeziory — aktualności",
+    "url": "https://sobieniejeziory.pl/asp/aktualnosci,2"
+   },
+   {
+    "id": "rdos-warszawa",
+    "label": "RDOŚ Warszawa — komunikaty",
+    "url": "https://www.gov.pl/web/rdos-warszawa"
+   }
   ]
-  }
+}

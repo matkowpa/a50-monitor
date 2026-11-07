@@ -700,11 +700,13 @@ def main() -> int:
     feeds_path = raw_dir(day) / "feeds.json"
     reach_path = raw_dir(day) / "agent_reach.json"
     facebook_path = raw_dir(day) / "facebook.json"
+    official_path = raw_dir(day) / "official.json"
 
     engine_items: list[Evidence] = []
     feed_items: list[Evidence] = []
     reach_items: list[Evidence] = []
     facebook_items: list[Evidence] = []
+    official_items: list[Evidence] = []
     if raw_path.exists():
         with open(raw_path, encoding="utf-8") as f:
             engine_items = extract_engine_items(json.load(f), cfg)
@@ -719,6 +721,10 @@ def main() -> int:
         with open(facebook_path, encoding="utf-8") as f:
             # krok lokalny (OpenCLI) — w CI pliku nie ma; kształt jak feeds.json
             facebook_items = extract_feed_items(json.load(f), cfg)
+    if official_path.exists():
+        with open(official_path, encoding="utf-8") as f:
+            # monitoring stron urzędowych: kształt jak feeds.json, klasa official
+            official_items = extract_feed_items(json.load(f), cfg)
 
     # Okno świeżości: do oceny trafiają tylko dowody z ostatnich
     # lookback_days dni od dnia raportu (bez daty → zostaje). Stare
@@ -731,8 +737,11 @@ def main() -> int:
     reach_items = [e for e in reach_items if is_fresh(e.published, day, max_age_days)]
     facebook_items = [e for e in facebook_items
                       if is_fresh(e.published, day, max_age_days)]
+    official_items = [e for e in official_items
+                      if is_fresh(e.published, day, max_age_days)]
 
-    evidence = merge_evidence(engine_items, feed_items, reach_items, facebook_items,
+    evidence = merge_evidence(engine_items, official_items, feed_items,
+                              reach_items, facebook_items,
                               cap=int(cfg.get("max_evidence", 40)))
     prev = prev_entry_before(load_scores()["entries"], day)
     seen_window = int(cfg.get("seen_window_days", DEFAULT_SEEN_WINDOW_DAYS))
@@ -760,7 +769,7 @@ def main() -> int:
         entry = no_evidence_entry(day, prev, "no-new-evidence", cfg)
     else:
         have_raw = (raw_path.exists() or feeds_path.exists() or reach_path.exists()
-                    or facebook_path.exists())
+                    or facebook_path.exists() or official_path.exists())
         status = "no-evidence" if have_raw else "no-data"
         entry = no_evidence_entry(day, prev, status, cfg)
 

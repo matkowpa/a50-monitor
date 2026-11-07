@@ -63,6 +63,11 @@ jobs:
           TZ: Europe/Warsaw
         run: python scripts/fetch_feeds.py
 
+      - name: Monitoring źródeł oficjalnych (GDDKiA, gmina, RDOŚ)
+        env:
+          TZ: Europe/Warsaw
+        run: python scripts/official_watch.py
+
       - name: Assess (score przez ClinePass)
         env:
           CLINE_API_KEY: ${{ secrets.CLINE_API_KEY }}
