@@ -121,3 +121,22 @@ class TestGateScore(unittest.TestCase):
 
     def test_out_of_range_clamped(self):
         self.assertEqual(common.gate_score(130, None, "media"), (100, False))
+
+
+class TestQualityHelpers(unittest.TestCase):
+    def test_junk_titles(self):
+        for bad in ("––––––––––––", "9. Starostwo Powiatowe w Grójcu", "A50", ""):
+            self.assertTrue(common.is_junk_title(bad), bad)
+        for good in ("A50 przez powiat otwocki? GDDKiA: wariant DK50 będzie analizowany",
+                     "Uchwała Rady Gminy Sobienie-Jeziory w sprawie A50"):
+            self.assertFalse(common.is_junk_title(good), good)
+
+    def test_parse_date_hint_formats(self):
+        self.assertEqual(common.parse_date_hint("2026-11-04 — wariant"), "2026-11-04")
+        self.assertEqual(common.parse_date_hint("Opublikowano: 03.07.2026"), "2026-07-03")
+        self.assertEqual(common.parse_date_hint("z dnia 17 marca 2023 r."), "2023-03-17")
+        self.assertEqual(common.parse_date_hint("brak daty"), "")
+
+    def test_parse_date_hint_rejects_bad_calendar_and_future(self):
+        self.assertEqual(common.parse_date_hint("31.02.2026", today="2026-11-07"), "")
+        self.assertEqual(common.parse_date_hint("2027-05-01", today="2026-11-07"), "")

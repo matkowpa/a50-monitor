@@ -194,7 +194,8 @@ class TestContractWithAssess(unittest.TestCase):
         payload = facebook.build_payload(["s"], items, errors)
         evidence = assess.extract_feed_items(payload, CFG)
         self.assertEqual(len(evidence), 1)
-        self.assertEqual(evidence[0].published, "")   # brak daty → przepuszczone
+        # brak daty w RSS → wyciągana z treści (inaczej omija okno świeżości)
+        self.assertEqual(evidence[0].published, "2026-09-20")
         self.assertTrue(evidence[0].url.startswith("https://www.facebook.com/"))
 
 

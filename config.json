@@ -89,6 +89,27 @@
    "przetarg lub umowa na projekt odcinka wschodniego",
    "oficjalne wykluczenie korytarza przez gminę"
   ],
+  "feed_rotation": {
+   "per_day": 5,
+   "queries": [
+    "A50 obwodnica Sobienie-Jeziory",
+    "\"obwodnica aglomeracji warszawskiej\" wariant przebiegu",
+    "OAW GDDKiA warianty konsultacje",
+    "STEŚ obwodnica aglomeracji warszawskiej odcinek wschodni",
+    "przebieg A50 powiat otwocki wariant",
+    "\"Sobienie-Jeziory\" autostrada",
+    "obwodnica Warszawy decyzja środowiskowa RDOŚ",
+    "site:rynekinfrastruktury.pl OAW",
+    "site:trakt.eu OAW",
+    "site:gazetaotwock.pl A50",
+    "site:iotwock.info A50",
+    "site:tuwiazowna.pl obwodnica",
+    "site:grojec24.net obwodnica aglomeracji",
+    "site:zyciepw.pl obwodnica aglomeracji",
+    "A50 protest mieszkańcy gmina",
+    "OAW przeprawa mostowa Wisła wariant"
+   ]
+  },
   "official_sources": [
    {
     "id": "gddkia-oaw",

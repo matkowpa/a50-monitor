@@ -28,8 +28,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import (CONFIDENCE_LEVELS, MAX_DELTA, SCENARIOS, Evidence,  # noqa: E402
                     assessments_dir, best_grade, evidence_grade, gate_score,
-                    is_fresh, load_config, load_scores, raw_dir, resolve_date,
-                    upsert_entry)
+                    is_fresh, is_junk_title, load_config, load_scores,
+                    parse_date_hint, raw_dir, resolve_date, upsert_entry)
 from events import extract_events, merge_events  # noqa: E402
 
 CLINE_URL = "https://api.cline.bot/api/v1/chat/completions"
@@ -143,6 +143,8 @@ def extract_engine_items(raw: dict, cfg: dict) -> list[Evidence]:
             if published:
                 break
         source = _clean(cand.get("source")) or ",".join(cand.get("sources") or []) or "web"
+        if is_junk_title(title):
+            continue
         if not _keyword_matches(f"{title} {snippet} {url}", keywords):
             continue
         seen.add(_norm_url(url))
@@ -161,12 +163,18 @@ def extract_feed_items(feeds: dict, cfg: dict) -> list[Evidence]:
             continue
         title = _clean(item.get("title"))
         snippet = _clean(item.get("snippet"))
+        if is_junk_title(title):
+            continue
         if not _keyword_matches(f"{title} {snippet} {url}", keywords):
             continue
+        published = _clean(item.get("published"))[:10]
+        if not published:
+            published = parse_date_hint(f"{title} {snippet}",
+                                        resolve_date(None))
         seen.add(_norm_url(url))
-        out.append(Evidence(title=title or "(bez tytułu)", url=url,
+        out.append(Evidence(title=title, url=url,
                             source=_clean(item.get("source")) or "rss",
-                            published=_clean(item.get("published"))[:10],
+                            published=published,
                             snippet=snippet[:400]))
     out.sort(key=lambda e: e.published, reverse=True)
     return out

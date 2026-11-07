@@ -6,7 +6,7 @@ import os
 import re
 import tempfile
 from dataclasses import asdict, dataclass
-from datetime import date
+from datetime import date, timedelta
 from pathlib import Path
 from urllib.parse import urlparse
 
@@ -201,3 +201,70 @@ def gate_score(score, prev_score, grade: str) -> tuple[int, bool]:
         return score, False
     gated = prev_score + (limit if delta > 0 else -limit)
     return max(0, min(100, gated)), True
+
+
+# ------------------------------------------------------- jakość dowodów: tytuł
+JUNK_TITLE_RE = re.compile(r"^(?:[–—\-_*.·\s]{3,}|\d+\.\s|_+\w)")
+
+
+def is_junk_title(title: str, min_len: int = 12, min_letters: int = 8) -> bool:
+    """Tytuł, który nie jest tytułem: ciąg myślników, numerowana lista z PDF-a,
+    samo „A50”, puste pole. Takie dowody trafiały do promptu i do uzasadnień."""
+    t = (title or "").strip()
+    if len(t) < min_len:
+        return True
+    if sum(1 for ch in t if ch.isalpha()) < min_letters:
+        return True
+    return bool(JUNK_TITLE_RE.match(t))
+
+
+# ---------------------------------------------- jakość dowodów: data publikacji
+MONTHS_PL = {
+    "stycznia": 1, "lutego": 2, "marca": 3, "kwietnia": 4, "maja": 5,
+    "czerwca": 6, "lipca": 7, "sierpnia": 8, "września": 9,
+    "października": 10, "listopada": 11, "grudnia": 12,
+}
+DATE_ISO_RE = re.compile(r"\b(20\d{2})-(\d{2})-(\d{2})\b")
+DATE_DOTTED_RE = re.compile(r"\b(\d{1,2})[.\-](\d{1,2})[.\-](20\d{2})\b")
+DATE_PL_RE = re.compile(
+    r"\b(\d{1,2})\s+(" + "|".join(MONTHS_PL) + r")\s+(20\d{2})\b", re.IGNORECASE)
+
+
+def parse_date_hint(text: str, today: str | None = None) -> str:
+    """Data publikacji z treści dowodu (tytuł/skrót), gdy RSS jej nie podał.
+
+    44% dowodów w tym repo nie miało daty, więc omijały okno świeżości.
+    Akceptujemy wyłącznie daty kalendarzowo poprawne, nie z przyszłości
+    (poza marginesem jednego dnia) i nie starsze niż 10 lat.
+    """
+    if not text:
+        return ""
+    limit = None
+    try:
+        limit = date.fromisoformat((today or date.today().isoformat())[:10])
+    except ValueError:
+        limit = date.today()
+    candidates = []
+    for pattern, order in ((DATE_ISO_RE, "ymd"), (DATE_DOTTED_RE, "dmy")):
+        for m in pattern.finditer(text):
+            a, b, c = m.groups()
+            try:
+                if order == "ymd":
+                    candidates.append(date(int(a), int(b), int(c)))
+                else:
+                    candidates.append(date(int(c), int(b), int(a)))
+            except ValueError:
+                continue
+    for m in DATE_PL_RE.finditer(text):
+        day_, month_, year_ = m.groups()
+        try:
+            candidates.append(date(int(year_), MONTHS_PL[month_.lower()], int(day_)))
+        except (ValueError, KeyError):
+            continue
+    for d in sorted(candidates):
+        if d > limit + timedelta(days=1):
+            continue
+        if limit.year - d.year > 10:
+            continue
+        return d.isoformat()
+    return ""
