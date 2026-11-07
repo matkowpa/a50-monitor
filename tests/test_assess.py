@@ -528,3 +528,50 @@ class TestLlmConfig(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestMaterialityGate(unittest.TestCase):
+    """Bramka materialności: zmiana score musi być proporcjonalna do wagi dowodu."""
+
+    def _ev(self, url, title="A50 Sobienie-Jeziory"):
+        return Evidence(title=title, url=url, source="test")
+
+    def _parsed(self, score, urls):
+        return {"score": score, "confidence": "niska", "summary": "s",
+                "rationale": "r", "key_findings": [{"claim": "c", "evidence_urls": urls}]}
+
+    def test_official_evidence_allows_full_move(self):
+        ev = [self._ev("https://www.gov.pl/web/gddkia/komunikat")]
+        parsed = self._parsed(55, ["https://www.gov.pl/web/gddkia/komunikat"])
+        assess._apply_gate(parsed, {"score": 35}, ev, "north")
+        self.assertEqual(parsed["score"], 55)
+        self.assertEqual(parsed["evidence_grade"], "official")
+        self.assertFalse(parsed["delta_capped"])
+
+    def test_uncited_evidence_is_treated_as_media_and_capped(self):
+        ev = [self._ev("https://www.rynekinfrastruktury.pl/a50")]
+        parsed = self._parsed(55, [])          # model nie zacytował dowodu
+        assess._apply_gate(parsed, {"score": 35}, ev, "north")
+        self.assertEqual(parsed["score"], 37)  # 35 + 2
+        self.assertTrue(parsed["delta_capped"])
+        self.assertEqual(parsed["score_raw"], 55)
+        self.assertIn("bramka", parsed["change_reason"])
+
+    def test_no_evidence_keeps_previous_score(self):
+        parsed = self._parsed(90, [])
+        assess._apply_gate(parsed, {"score": 18}, [], "south")
+        self.assertEqual(parsed["score"], 18)
+        self.assertEqual(parsed["evidence_grade"], "media")
+
+    def test_local_gov_allows_six_points(self):
+        url = "https://bip.powiat-otwocki.pl/uchwala"
+        ev = [self._ev(url, "Uchwała Rady Powiatu w sprawie A50")]
+        parsed = self._parsed(30, [url])
+        assess._apply_gate(parsed, {"score": 23}, ev, "south")
+        self.assertEqual(parsed["score"], 29)  # 23 + 6
+        self.assertEqual(parsed["evidence_grade"], "local_gov")
+
+    def test_first_assessment_not_gated(self):
+        parsed = self._parsed(45, [])
+        assess._apply_gate(parsed, {}, [], "north")
+        self.assertEqual(parsed["score"], 45)

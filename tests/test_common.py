@@ -6,6 +6,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
 
+import common  # noqa: E402
 from common import (Evidence, atomic_write_json, is_fresh, load_scores,  # noqa: E402
                     upsert_entry)
 
@@ -75,3 +76,48 @@ class TestIsFresh(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestEvidenceGrade(unittest.TestCase):
+    def test_official_gov_hosts(self):
+        for url in ("https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8",
+                    "https://www.gov.pl/web/infrastruktura/petycja",
+                    "https://rdos.gov.pl/wnioski",
+                    "https://isap.sejm.gov.pl/isap.nsf/x"):
+            self.assertEqual(common.evidence_grade(url), "official", url)
+
+    def test_local_gov_bip_and_council_title(self):
+        self.assertEqual(common.evidence_grade("https://bip.powiat-otwocki.pl/a"), "local_gov")
+        self.assertEqual(
+            common.evidence_grade("https://www.sobienie.pl/plik.pdf",
+                                  title="Uchwała XXIII/192/2026 Rady Gminy"),
+            "local_gov")
+
+    def test_media_and_social(self):
+        self.assertEqual(common.evidence_grade("https://news.google.com/rss/articles/x"), "media")
+        self.assertEqual(common.evidence_grade("https://www.rynekinfrastruktury.pl/a"), "media")
+        self.assertEqual(common.evidence_grade("https://www.reddit.com/r/x/comments/1"), "social")
+        self.assertEqual(common.evidence_grade("https://www.facebook.com/groups/1/"), "social")
+
+    def test_best_grade_orders_by_strength(self):
+        self.assertEqual(common.best_grade(["social", "media", "official"]), "official")
+        self.assertEqual(common.best_grade([]), "media")
+
+
+class TestGateScore(unittest.TestCase):
+    def test_media_change_is_capped_at_two(self):
+        self.assertEqual(common.gate_score(38, 35, "media"), (37, True))
+        self.assertEqual(common.gate_score(30, 35, "media"), (33, True))
+
+    def test_media_small_change_passes(self):
+        self.assertEqual(common.gate_score(36, 35, "media"), (36, False))
+
+    def test_official_allows_large_move(self):
+        self.assertEqual(common.gate_score(55, 35, "official"), (55, False))
+        self.assertEqual(common.gate_score(70, 35, "official"), (55, True))
+
+    def test_first_assessment_not_capped(self):
+        self.assertEqual(common.gate_score(70, None, "social"), (70, False))
+
+    def test_out_of_range_clamped(self):
+        self.assertEqual(common.gate_score(130, None, "media"), (100, False))

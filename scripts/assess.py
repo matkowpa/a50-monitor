@@ -26,7 +26,8 @@ from datetime import date
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from common import (CONFIDENCE_LEVELS, SCENARIOS, Evidence, assessments_dir,  # noqa: E402
+from common import (CONFIDENCE_LEVELS, MAX_DELTA, SCENARIOS, Evidence,  # noqa: E402
+                    assessments_dir, best_grade, evidence_grade, gate_score,
                     is_fresh, load_config, load_scores, raw_dir, resolve_date,
                     upsert_entry)
 
@@ -559,12 +560,78 @@ def no_evidence_entry(day: str, prev: dict | None, status: str,
             "summary": summary, "trend_vs_prev": trend,
             "rationale": summary,
             "key_findings": [],
+            "score_raw": score, "evidence_grade": "none",
+            "delta_capped": False,
+            "change_reason": "brak nowych dowodów — utrzymano poprzednią ocenę",
         }
     return {
         "date": day, "scores": scores,
         "sources_found": 0,
         "engine_status": status, "assessment_path": "",
     }
+
+
+def _scenario_grade(parsed: dict, evidence: list[Evidence]) -> str:
+    """Klasa dowodu dla scenariusza = najmocniejszy dowód, na który powołał się model.
+
+    Model ma obowiązek cytować URL-e z listy dowodów. Gdy nie zacytował
+    żadnego, traktujemy ocenę jak opartą na mediach (limit ±2) — inaczej
+    „oficjalny" dokument niecytowany otwierałby furtkę na dowolną zmianę.
+    """
+    by_url = {_norm_url(e.url): e for e in evidence}
+    grades = []
+    for finding in parsed.get("key_findings") or []:
+        for url in finding.get("evidence_urls") or []:
+            ev = by_url.get(_norm_url(url))
+            if ev is not None:
+                grades.append(evidence_grade(ev.url, ev.title, ev.source))
+    return best_grade(grades) if grades else "media"
+
+
+def _change_reason(gated: int, raw: int, prev_score, grade: str, capped: bool,
+                   had_evidence: bool) -> str:
+    if not had_evidence:
+        return "brak nowych dowodów — utrzymano poprzednią ocenę"
+    if not isinstance(prev_score, int):
+        return f"pierwsza ocena ({grade})"
+    if capped:
+        return (f"{grade}: model chciał {raw}%, bramka materialności "
+                f"przycięła do {gated}% (limit ±{MAX_DELTA[grade]} pkt)")
+    if gated == prev_score:
+        return f"{grade}: bez zmiany"
+    return f"{grade}: {prev_score}% → {gated}%"
+
+
+def _apply_gate(parsed: dict, prev_sc: dict, evidence: list[Evidence],
+                scenario: str) -> None:
+    """Bramka materialności: przycina zmianę score do wagi dowodu.
+
+    Modyfikuje `parsed` w miejscu, dopisując ślad audytowy:
+    `score_raw` (co zwrócił model), `evidence_grade`, `delta_capped`,
+    `change_reason`. Bez nowych dowodów score zostaje na poprzedniej
+    wartości niezależnie od tego, co odpowiedział model.
+    """
+    prev_score = prev_sc.get("score")
+    raw = parsed.get("score")
+    raw = raw if isinstance(raw, int) else 50
+    grade = _scenario_grade(parsed, evidence)
+    if not evidence:
+        gated = prev_score if isinstance(prev_score, int) else gate_score(
+            raw, None, grade)[0]
+        capped = gated != raw
+    else:
+        gated, capped = gate_score(raw, prev_score, grade)
+    parsed.update({
+        "score": gated,
+        "score_raw": raw,
+        "evidence_grade": grade,
+        "delta_capped": capped,
+        "change_reason": _change_reason(gated, raw, prev_score, grade,
+                                        capped, bool(evidence)),
+    })
+    print(f"[assess] bramka ({scenario}): grade={grade} prev={prev_score} "
+          f"raw={raw} -> {gated}{' (przycięto)' if capped else ''}",
+          file=sys.stderr)
 
 
 def assess_scenarios(evidence: list[Evidence], prev: dict | None, cfg: dict,
@@ -613,6 +680,7 @@ def assess_scenarios(evidence: list[Evidence], prev: dict | None, cfg: dict,
                                   if isinstance(prev_sc.get("score"), int) else 0),
             }
         scores[key] = parsed
+        _apply_gate(parsed, prev_sc, evidence, key)
     if len(errors) == len(SCENARIOS):
         raise RuntimeError("LLM: żaden scenariusz nie został oceniony")
     return {"scores": scores}, errors
