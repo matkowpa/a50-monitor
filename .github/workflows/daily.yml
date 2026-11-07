@@ -2,7 +2,7 @@ name: daily-monitor
 
 on:
   schedule:
-    - cron: "30 5 * * *"  # 06:30/07:30 czasu PL
+    - cron: "17 3 * * *"  # 04:17/05:17 PL; GitHub i tak startuje z opóźnieniem
   workflow_dispatch:
 
 permissions:

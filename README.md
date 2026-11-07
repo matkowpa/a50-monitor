@@ -15,12 +15,14 @@ oraz dłuższe analizy eksperckie z folderu [`analizy/`](analizy/).
 ## Jak to działa
 
 ```
-GitHub Actions (cron 6:30 PL) lub lokalnie z Cline (/a50-daily)
+GitHub Actions (cron 03:17 UTC) lub lokalnie z Cline (/a50-daily)
   → scripts/research.py      # silnik last30days (Reddit, YouTube, HN, web)
-  → scripts/fetch_feeds.py   # fallback RSS: Google News, GDDKiA
+  → scripts/fetch_feeds.py   # RSS: Google News (rotacja zapytań), GDDKiA
+  → scripts/official_watch.py # strony GDDKiA, gminy i RDOŚ + detekcja zmian
   → scripts/agent_reach.py   # wyszukiwanie semantyczne agent-reach (Exa przez mcporter)
   → scripts/facebook.py      # treści z Facebooka (tylko lokalnie, sesja OpenCLI)
   → scripts/assess.py        # rubryka PL → ClinePass (DeepSeek) → 2 score (północ/południe) + dowody
+                             # + bramka materialności + dziennik zdarzeń (data/events.json)
   → scripts/build_site.py    # statyczny HTML (zero JS, czyste SVG)
   → deploy na gh-pages + commit data/ (historia w repo)
 ```
@@ -59,8 +61,8 @@ GitHub Actions (cron 6:30 PL) lub lokalnie z Cline (/a50-daily)
   węziej niż media (`config.json` → `facebook.keywords`), bo sama nazwa gminy
   występuje w opisie i statystykach grupy. Dowody z FB
   wpływają na score tylko w dniach, gdy uruchomisz `/a50-daily` lokalnie.
-- **Ocena**: model wskazany w `config.json` (`openrouter_model`,
-  obecnie `deepseek/deepseek-v4.1-flash-1017`) ocenia dowody wg sztywnej rubryki,
+- **Ocena**: model wskazany w `config.json` (`model`, obecnie
+  `cline-pass/deepseek-v4.1-flash-1017` przez ClinePass) ocenia dowody wg sztywnej rubryki,
   **osobno dla dwóch scenariuszy** — trasa przez północną część gminy
   (na północ od wsi, kierunek Wisły/Natura 2000) lub przez południową
   (na południe od wsi, rejon Śniadków). Każdy scenariusz to **osobne
@@ -73,8 +75,22 @@ GitHub Actions (cron 6:30 PL) lub lokalnie z Cline (/a50-daily)
   ogólnopolskie > media lokalne > social media. Faktograficznie: wieś
   Sobienie-Jeziory leży na DW801/DW739, a DK50 biegnie na północ od
   gminy (przez Karczew/Celestynów do Kołbiela) i jej nie przecina.
-- **Brak nowych dowodów danego dnia** → oba score pozostają bez zmian,
-  confidence spada do „niska”.
+- **Bramka materialności** (`scripts/common.py`, `MAX_DELTA`): model może
+  ruszyć score o ±20 pkt, gdy cytuje dowód z gov.pl/RDOŚ/Sejmu/BIP, o ±6 pkt
+  przy uchwale samorządu, o ±2 pkt przy artykule medialnym i o ±1 pkt przy
+  social media. Dowód bez cytowanego URL-a liczy się jak medialny.
+  Powód: wcześniej 3 pkt zmiany wystarczał jeden artykuł portalu.
+- **Brak nowych dowodów danego dnia** → oba score pozostają bez zmian
+  (egzekwowane w kodzie, nie w promptcie), confidence spada do „niska”.
+- **Dziennik zdarzeń** (`data/events.json`): decyzja środowiskowa, wniosek do
+  RDOŚ, wybór wariantu, przetarg, STEŚ, uchwała, komunikat — deduplikowane,
+  z podziałem na potwierdzone (źródło oficjalne) i niepotwierdzone (media).
+  Score zmienia się kilka razy w roku, a nie codziennie, więc strona pokazuje
+  **co** się zmieniło i **kiedy**, obok samej liczby.
+- **Strony oficjalne** (`scripts/official_watch.py`) są sprawdzane codziennie
+  przez hash treści; zmiana na stronie GDDKiA/gminy/RDOŚ wchodzi jako dowód
+  klasy `official` z fragmentem `#zmiana-<hash>`, bo stały adres strony
+  wyciszałoby okno „już widziane”.
 
 **Skrypty vs model — gdzie co działa.** Pipeline uruchamia się na dwa
 sposoby: automatycznie na **GitHub Actions** (cron powyżej lub ręczne
@@ -143,6 +159,22 @@ albo czekając na cron. Klucze API: lokalnie ze zmiennych środowiskowych
 Strona będzie dostępna pod `https://<USER>.github.io/a50-monitor/`.
 
 ## Zastrzeżenia
+
+**Harmonogram bywa później, niż mówi cron.** GitHub Actions kolejkuje zadania
+planowane — w praktyce run startuje 1–4 h po `03:17 UTC`, więc raport pojawia
+się zwykle między 8:00 a 11:00 czasu polskiego. Wiążąca jest data w stopce
+strony („Ostatnia generacja”), nie pora w harmonogramie.
+
+**Dwa score'y nie są niezależne.** Korelacja między scenariuszem północnym
+i południowym wynosi ok. 0,9 — oba ruszają się razem, bo dzielą ten sam zestaw
+dowodów (większość artykułów mówi o „A50/OAW” bez rozstrzygania przebiegu).
+Traktuj je jako jedną ocenę prawdopodobieństwa z dwoma wariantami, nie jako
+dwa niezależne pomiary.
+
+**Cisza na temat nie znaczy „bez zmian”.** W 64 dniach działania monitora
+media opublikowały o tym odcinku pojedyncze teksty; 44% dowodów nie miało daty.
+Panel „Stan monitoringu” pokazuje, od ilu dni nie ma nowych dowodów i od ilu
+dni score się nie zmienił — to informacja, nie błąd.
 
 Score jest **oceną ekspercką modelu językowego** opartą na publicznie
 dostępnych dowodach — nie jest informacją oficjalną ani prognozą ekspercką

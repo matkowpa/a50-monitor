@@ -199,7 +199,12 @@ def pick_evidence(evidence: list[Evidence], seen: set[str],
     zbioru — nawet gdy assessments coś mają, a scores.json jest pusty."""
     if not evidence:
         return [], False
-    new = [e for e in evidence if _norm_url(e.url) not in seen]
+    new = [e for e in evidence
+           if _norm_url(e.url) not in seen
+           # dokumenty urzędowe mają stałe adresy (jedna strona = wiele
+           # komunikatów), więc okno „już widziane” nigdy by ich nie
+           # przepuściło ponownie — zostawiamy je zawsze
+           or evidence_grade(e.url, e.title, e.source) in ("official", "local_gov")]
     if new or prev_entry is None:
         return (new or evidence), True
     return [], False
@@ -734,6 +739,10 @@ def main() -> int:
             # monitoring stron urzędowych: kształt jak feeds.json, klasa official
             official_items = extract_feed_items(json.load(f), cfg)
 
+    fetched = {"engine": len(engine_items), "feeds": len(feed_items),
+               "agent_reach": len(reach_items), "facebook": len(facebook_items),
+               "official": len(official_items)}
+
     # Okno świeżości: do oceny trafiają tylko dowody z ostatnich
     # lookback_days dni od dnia raportu (bez daty → zostaje). Stare
     # publikacje nie wchodzą do assessmentu; pełne zebranie zostaje
@@ -748,6 +757,9 @@ def main() -> int:
     official_items = [e for e in official_items
                       if is_fresh(e.published, day, max_age_days)]
 
+    fresh = {"engine": len(engine_items), "feeds": len(feed_items),
+             "agent_reach": len(reach_items), "facebook": len(facebook_items),
+             "official": len(official_items)}
     evidence = merge_evidence(engine_items, official_items, feed_items,
                               reach_items, facebook_items,
                               cap=int(cfg.get("max_evidence", 40)))
@@ -768,6 +780,8 @@ def main() -> int:
             "date": day, **assessment,
             "evidence": [e.to_dict() for e in to_assess[:15]],
             "sources_found": len(to_assess),
+            "source_funnel": {"fetched": fetched, "fresh": fresh,
+                              "merged": len(evidence)},
             "engine_status": "ok",
         }
         if errors:
@@ -775,11 +789,15 @@ def main() -> int:
     elif evidence:
         # Cichy dzień: nic nowego od ostatniej oceny — utrzymanie bez LLM.
         entry = no_evidence_entry(day, prev, "no-new-evidence", cfg)
+        entry["source_funnel"] = {"fetched": fetched, "fresh": fresh,
+                                  "merged": len(evidence), "new": 0}
     else:
         have_raw = (raw_path.exists() or feeds_path.exists() or reach_path.exists()
                     or facebook_path.exists() or official_path.exists())
         status = "no-evidence" if have_raw else "no-data"
         entry = no_evidence_entry(day, prev, status, cfg)
+        entry["source_funnel"] = {"fetched": fetched, "fresh": fresh,
+                                  "merged": len(evidence), "new": 0}
 
     entry["assessment_path"] = f"data/assessments/{day}.json"
     upsert_entry(entry)

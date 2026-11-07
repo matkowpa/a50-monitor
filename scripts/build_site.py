@@ -13,7 +13,7 @@ import html
 import re
 import shutil
 import sys
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 from pathlib import Path
 from string import Template
 
@@ -338,6 +338,70 @@ def events_panel_html(limit: int = 6) -> str:
             'tej listy nie zmieniły oceny.</p></div>')
 
 
+SOURCE_LABELS = {
+    "engine": "silnik last30days",
+    "feeds": "RSS / Google News",
+    "agent_reach": "agent-reach (Exa)",
+    "official": "strony oficjalne",
+    "facebook": "Facebook (lokalnie)",
+}
+
+
+def funnel_html(entry: dict) -> str:
+    """Ile źródło pobrało, ile przeszło filtr świeżości, ile trafiło do oceny."""
+    f = entry.get("source_funnel") or {}
+    fetched = f.get("fetched") or {}
+    fresh = f.get("fresh") or {}
+    if not fetched:
+        return ""
+    rows = "".join(
+        f"<li>{SOURCE_LABELS.get(k, k)}: pobrano {fetched.get(k, 0)}, "
+        f"świeżych {fresh.get(k, 0)}</li>"
+        for k in SOURCE_LABELS if fetched.get(k))
+    merged = f.get("merged")
+    assessed = f.get("new", entry.get("sources_found"))
+    tail = ""
+    if merged is not None:
+        tail = (f'<p class="meta">Po scaleniu i deduplikacji: {merged} dowodów, '
+                f'do oceny: {assessed}.</p>')
+    return ('<div class="panel"><h2>Skąd te dowody</h2>'
+            f'<ul class="archive">{rows}</ul>{tail}</div>')
+
+
+def health_notes(entries: list[dict]) -> str:
+    """Ostrzeżenia, których nie widać w zielonym runie: cisza i zastój score."""
+    if not entries:
+        return ""
+    last = entries[-1]
+    notes = []
+    quiet = 0
+    for e in reversed(entries):
+        if not e.get("sources_found"):
+            quiet += 1
+        else:
+            break
+    if quiet >= 3:
+        notes.append(f"Brak nowych dowodów od {quiet} dni — score utrzymany "
+                     "bez nowej oceny.")
+    try:
+        last_day = date.fromisoformat(str(last.get("date"))[:10])
+    except ValueError:
+        last_day = None
+    for key, label in SCENARIOS:
+        change = last_change(entries, key)
+        if change and last_day:
+            try:
+                days = (last_day - date.fromisoformat(change[0][:10])).days
+            except (ValueError, TypeError):
+                continue
+            if days >= 14:
+                notes.append(f"{label}: bez zmiany od {days} dni.")
+    if not notes:
+        return ""
+    body = "".join(f"<p class=\"disclaimer\">{esc(n)}</p>" for n in notes)
+    return f'<div class="panel"><h2>Stan monitoringu</h2>{body}</div>'
+
+
 def milestones_panel_html(cfg: dict) -> str:
     milestones = cfg.get("milestones") or []
     triggers = cfg.get("score_triggers") or []
@@ -447,7 +511,9 @@ def build(scores_file: Path, out_dir: Path,
 <p><a href="day-{esc(latest.get('date'))}.html">Pełny raport z uzasadnieniem i wszystkimi dowodami →</a></p></div>
 {events_panel_html()}
 {milestones_panel_html(cfg)}
+{health_notes(entries)}
 <div class="panel"><h2>Trend score'ów</h2>{trend}</div>
+{funnel_html(latest)}
 <div class="panel"><h2>Dowody z ostatniego dnia</h2>{evidence_table_html((latest.get('evidence') or [])[:10])}</div>
 {analizy_panel}
 <div class="panel"><h2>Archiwum raportów</h2>{archive_html(entries)}</div>
@@ -473,7 +539,11 @@ def build(scores_file: Path, out_dir: Path,
 <p>Codzienny automat (GitHub Actions) uruchamia silnik badawczy
 <a href="https://github.com/mvanhorn/last30days-skill" rel="noopener" target="_blank">last30days</a>
 (Reddit, YouTube, Hacker News, web) uzupełniony o kanały RSS mediów
-polskich (Google News, GDDKiA) oraz wyszukiwanie semantyczne agent-reach
+polskich (Google News z rotacją zapytań, GDDKiA) oraz codzienne sprawdzanie
+stron urzędowych, na których proces się rozstrzyga (projekt OAW w GDDKiA,
+odcinek A50/S50, aktualności gminy Sobienie-Jeziory, RDOŚ Warszawa) —
+zmiana treści na takiej stronie wchodzi jako dowód klasy
+<code>official</code>. Uzupełnieniem jest wyszukiwanie semantyczne agent-reach
 (Exa — serwer MCP przez <code>mcporter</code>, zapytania z
 <code>agent_reach.queries</code>). Zebrane dowody są oceniane przez model
 językowy (ClinePass / DeepSeek), który dzień po dniu <strong>modyfikuje</strong>
@@ -483,9 +553,23 @@ przez analizy eksperckie oraz oceny z dnia poprzedniego.</p>
 ostatnich {lookback} dni</strong> od dnia raportu (okno świeżości,
 <code>lookback_days</code> w config.json) — starsze artykuły są
 odfiltrowywane przed oceną, by score'y opierały się na najświeższych
-informacjach. Dowody bez daty publikacji zostają w zestawie, bo ich
-wieku nie da się zweryfikować; pełne, nieprzefiltrowane zebranie
-pozostaje w <code>data/raw/</code> jako materiał audytowy.</p>
+informacjach. Gdy RSS nie podaje daty, próbujemy odczytać ją z tytułu lub
+skrótu; dowody bez żadnej daty zostają w zestawie, bo ich wieku nie da się
+zweryfikować. Pełne, nieprzefiltrowane zebranie pozostaje w
+<code>data/raw/</code> jako materiał audytowy.</p>
+<h2>Ograniczenia tej oceny</h2>
+<p>Model <strong>nie może</strong> przesunąć score o dowolną wartość. Dobowy
+ruch jest ograniczony wagą cytowanego dowodu: ±20 pkt przy źródle
+urzędowym, ±6 pkt przy uchwale samorządu, ±2 pkt przy artykule medialnym,
+±1 pkt przy wpisie społecznościowym. Dowód bez cytowanego linku liczy się
+jak medialny. Brak nowych dowodów oznacza, że score zostaje na poprzedniej
+wartości — jest to wymuszone w kodzie, nie w instrukcji dla modelu.</p>
+<p>Dwa score'y <strong>nie są niezależne</strong>: korelacja między nimi
+wynosi ok. 0,9, bo większość materiałów mówi o „A50/OAW” bez rozstrzygania
+przebiegu przez gminę. Czytaj je jako jeden obraz sytuacji z dwoma
+wariantami, a nie jako dwa niezależne pomiary. Prawda o tym temacie zmienia
+się kilka razy w roku (wybór wariantu, wniosek do RDOŚ, decyzja, przetarg) —
+dlatego obok score'ów publikujemy dziennik zdarzeń i kamienie milowe.</p>
 <h2>Co oznaczają score'y</h2>
 <p>Są dwa niezależne scenariusze, każdy z osobnym score 0–100%:</p>
 <ul>

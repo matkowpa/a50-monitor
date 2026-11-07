@@ -575,3 +575,19 @@ class TestMaterialityGate(unittest.TestCase):
         parsed = self._parsed(45, [])
         assess._apply_gate(parsed, {}, [], "north")
         self.assertEqual(parsed["score"], 45)
+
+
+class TestOfficialBypassesSeenWindow(unittest.TestCase):
+    def test_government_document_is_kept_even_if_seen(self):
+        import assess
+        from common import Evidence
+        gov = Evidence(title="Komunikat GDDKiA o wariancie OAW",
+                       url="https://www.gov.pl/web/gddkia/komunikat",
+                       source="rss", published="2026-11-07", snippet="")
+        media = Evidence(title="Artykuł portalu o wariancie OAW",
+                         url="https://www.rynekinfrastruktury.pl/a50",
+                         source="rss", published="2026-11-07", snippet="")
+        seen = {assess._norm_url(gov.url), assess._norm_url(media.url)}
+        picked, needed = assess.pick_evidence([gov, media], seen, {"date": "2026-11-06"})
+        self.assertTrue(needed)
+        self.assertEqual([e.url for e in picked], [gov.url])
