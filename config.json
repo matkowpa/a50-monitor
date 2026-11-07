@@ -47,5 +47,46 @@
   },
   "max_results": 30,
   "max_per_source": 10,
-  "max_evidence": 40
-}
+  "max_evidence": 40,
+  "milestones": [
+   {
+    "id": "variant-west",
+    "label": "Wskazanie preferowanego wariantu zachodniej OAW (odcinki S10–DK92 i DK92–S7)",
+    "due": "2026-12-31",
+    "status": "oczekiwane — GDDKiA zapowiadała przełom IX–X 2026",
+    "source": "https://www.gov.pl/web/gddkia-warszawa/projektujemy-zachodnia-czesc-obwodnicy-aglomeracji-warszawskiej",
+    "impact": "dotyczy części zachodniej; na score północ/południe wpływa pośrednio (kształt całego pierścienia)"
+   },
+   {
+    "id": "es-application",
+    "label": "Wniosek o decyzję środowiskową dla zachodniej OAW",
+    "due": "2026-12-31",
+    "status": "zapowiedziany na koniec 2026",
+    "source": "https://www.gov.pl/web/gddkia/projektujemy-zachodnia-czesc-obwodnicy-aglomeracji-warszawskiej",
+    "impact": "oficjalny dokument = najsilniejszy dowód (klasa official, limit ±20 pkt)"
+   },
+   {
+    "id": "east-steś",
+    "label": "STEŚ odcinka wschodniego OAW (za S7, rejon Sobienie-Jeziory)",
+    "due": null,
+    "status": "nie rozpoczęte — GDDKiA nie prowadzi prac projektowych na wschód od S7",
+    "source": "https://www.gov.pl/web/gddkia-warszawa/projektujemy-zachodnia-czesc-obwodnicy-aglomeracji-warszawskiej",
+    "impact": "dopóki ten etap nie startuje, oba score'y opisują scenariusz odległy — stąd niska pewność"
+   },
+   {
+    "id": "variant-east",
+    "label": "Wskazanie wariantu przebiegu dla odcinka wschodniego",
+    "due": null,
+    "status": "zależne od rozpoczęcia STEŚ",
+    "source": null,
+    "impact": "zdarzenie rozstrzygające dla obu score'ów"
+   }
+  ],
+  "score_triggers": [
+   "oficjalne wskazanie wariantu przebiegu przez północną albo południową część gminy (GDDKiA, STEŚ, raport OOŚ)",
+   "wniosek do RDOŚ / decyzja środowiskowa obejmująca odcinek wschodni",
+   "uchwała lub stanowisko Rady Gminy Sobienie-Jeziory za albo przeciw konkretnemu wariantowi",
+   "przetarg lub umowa na projekt odcinka wschodniego",
+   "oficjalne wykluczenie korytarza przez gminę"
+  ]
+  }

@@ -30,6 +30,7 @@ from common import (CONFIDENCE_LEVELS, MAX_DELTA, SCENARIOS, Evidence,  # noqa: 
                     assessments_dir, best_grade, evidence_grade, gate_score,
                     is_fresh, load_config, load_scores, raw_dir, resolve_date,
                     upsert_entry)
+from events import extract_events, merge_events  # noqa: E402
 
 CLINE_URL = "https://api.cline.bot/api/v1/chat/completions"
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
@@ -765,6 +766,13 @@ def main() -> int:
 
     entry["assessment_path"] = f"data/assessments/{day}.json"
     upsert_entry(entry)
+
+    # Dziennik zdarzeń materialnych: score bez „dlaczego” jest bezużyteczny.
+    new_events = extract_events(evidence, day)
+    if new_events:
+        merged = merge_events(new_events)
+        print(f"[assess] zdarzenia materialne: +{len(new_events)} "
+              f"(dziennik: {len(merged['events'])})")
 
     full = dict(entry)
     full["evidence"] = [e.to_dict() for e in to_assess]

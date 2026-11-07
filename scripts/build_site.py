@@ -293,10 +293,74 @@ def render_page(content_name: str, title: str, content: str) -> str:
 
 # ------------------------------------------------------------------- build
 
+def last_change(entries: list[dict], key: str):
+    """(data, poprzedni, nowy, powód) ostatniej zmiany score dla scenariusza."""
+    prev = None
+    last = None
+    for e in entries:
+        s = (e.get("scores") or {}).get(key) or {}
+        cur = s.get("score")
+        if prev is not None and cur != prev:
+            last = (e.get("date"), prev, cur, s.get("change_reason") or "")
+        prev = cur
+    return last
+
+
+def change_note_html(entries: list[dict], key: str) -> str:
+    last = last_change(entries, key)
+    if not last:
+        return '<p class="meta">Score bez zmian od początku serii.</p>'
+    date_, prev, cur, reason = last
+    reason_html = f" · {esc(reason)}" if reason else ""
+    return (f'<p class="meta">Ostatnia zmiana: {esc(date_)} '
+            f'({prev}% → {cur}%){reason_html}</p>')
+
+
+def events_panel_html(limit: int = 6) -> str:
+    """Dziennik zdarzeń materialnych z data/events.json (gdy istnieje)."""
+    try:
+        from events import last_events
+        evs = last_events(limit)
+    except Exception:
+        evs = []
+    if not evs:
+        return ""
+    items = ""
+    for e in evs:
+        badge = ("" if e.get("confirmed")
+                 else ' <span class="meta">(media — niepotwierdzone oficjalnie)</span>')
+        items += (f'<li><strong>{esc(e.get("date"))}</strong> · '
+                  f'{esc(e.get("type_label"))} · '
+                  f'<a href="{esc(e.get("url"))}">{esc(e.get("title"))}</a>{badge}</li>')
+    return ('<div class="panel"><h2>Zdarzenia materialne</h2>'
+            f'<ul class="archive">{items}</ul>'
+            '<p class="meta">Dziennik prowadzony od 2026-11; zdarzenia spoza '
+            'tej listy nie zmieniły oceny.</p></div>')
+
+
+def milestones_panel_html(cfg: dict) -> str:
+    milestones = cfg.get("milestones") or []
+    triggers = cfg.get("score_triggers") or []
+    if not milestones and not triggers:
+        return ""
+    rows = ""
+    for m in milestones:
+        due = m.get("due") or "brak terminu"
+        rows += (f'<li><strong>{esc(m.get("label"))}</strong><br>'
+                 f'<span class="meta">termin: {esc(due)} · status: '
+                 f'{esc(m.get("status") or "—")}</span></li>')
+    trig = "".join(f"<li>{esc(t)}</li>" for t in triggers)
+    return ('<div class="panel"><h2>Kamienie milowe procesu</h2>'
+            f'<ul class="archive">{rows}</ul>'
+            + (f'<h3>Co zmieni score</h3><ul class="archive">{trig}</ul>' if trig else "")
+            + "</div>")
+
+
 def build(scores_file: Path, out_dir: Path,
           analizy_dir: Path = ANALIZY_DIR) -> None:
     entries = sorted(load_scores(scores_file)["entries"],
                      key=lambda e: e.get("date", ""))
+    cfg = load_config()
     out_dir.mkdir(parents=True, exist_ok=True)
     shutil.copyfile(TEMPLATES / "style.css", out_dir / "style.css")
 
@@ -353,6 +417,7 @@ def build(scores_file: Path, out_dir: Path,
        <span class="badge {css}">{band_label}</span></p>
     <p class="meta">pewność: {esc(s.get('confidence'))} ·
        trend: {s.get('trend_vs_prev', 0):+d} p.p.</p>
+    {change_note_html(entries, key)}
   </div>""")
         trend = render_trend_svg(entries)
         status = latest.get("engine_status")
@@ -380,6 +445,8 @@ def build(scores_file: Path, out_dir: Path,
 </div>
 <div class="panel"><h2>Podsumowanie dnia</h2>{summaries}
 <p><a href="day-{esc(latest.get('date'))}.html">Pełny raport z uzasadnieniem i wszystkimi dowodami →</a></p></div>
+{events_panel_html()}
+{milestones_panel_html(cfg)}
 <div class="panel"><h2>Trend score'ów</h2>{trend}</div>
 <div class="panel"><h2>Dowody z ostatniego dnia</h2>{evidence_table_html((latest.get('evidence') or [])[:10])}</div>
 {analizy_panel}

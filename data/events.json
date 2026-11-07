@@ -1,0 +1,88 @@
+{
+  "events": [
+    {
+      "id": "3f99f78b711f",
+      "date": "2026-09-28",
+      "type": "variant",
+      "type_label": "wariant przebiegu",
+      "title": "Rozpoczynamy przygotowania dla kolejnych fragmentów OAW - Generalna Dyrekcja Dróg Krajowych i Autostrad- Oddział Warszawa - Portal Gov.pl",
+      "url": "https://www.gov.pl/web/gddkia-warszawa/rozpoczynamy-przygotowania-dla-kolejnych-fragmentow-oaw",
+      "host": "gov.pl",
+      "grade": "official",
+      "confirmed": true,
+      "snippet": "Następnie ogłosimy postępowanie na wykonanie Studium techniczno-ekonomiczno-środowiskowego (STEŚ). Zadaniem projektanta będzie przeanalizowanie możliwych wariantów przebiegu nowej trasy, w tym poprowadzenia jej w śladzie istniejącej drogi k"
+    },
+    {
+      "id": "e8d1d7b3a100",
+      "date": "2026-10-15",
+      "type": "decision",
+      "type_label": "decyzja środowiskowa",
+      "title": "Wybraliśmy pierwsze biuro projektowe dla Obwodnicy Aglomeracji Warszawskiej - Generalna Dyrekcja Dróg Krajowych i Autostrad- Oddział Warszawa - Portal Gov.pl",
+      "url": "https://www.gov.pl/web/gddkia-warszawa/wybralismy-pierwsze-biuro-projektowe-dla-obwodnicy-aglomeracji-warszawskiej",
+      "host": "gov.pl",
+      "grade": "official",
+      "confirmed": true,
+      "snippet": "Oferta firmy TRAKT została wybrana jako najkorzystniejsza w przetargu na opracowanie Studium techniczno-ekonomiczno-środowiskowego wraz z uzyskaniem decyzji środowiskowej dla S50/A50 pomiędzy DK92 i S7 na południe od Stolicy. To jeden z dwó"
+    },
+    {
+      "id": "98295b93cc8f",
+      "date": "2026-10-17",
+      "type": "council",
+      "type_label": "uchwała / stanowisko",
+      "title": "w sprawie wyrażenia sprzeciwu wobec proponowanego przebiegu drogi ekspresowej S50/ autostrady A50 - Obwodnicy Aglomeracji Warszawskiej przez teren Gminy Zabrodzie",
+      "url": "https://samorzad.gov.pl/attachment/d00ee210-cc97-4bc1-90d3-16ccd7a41a2c",
+      "host": "samorzad.gov.pl",
+      "grade": "official",
+      "confirmed": true,
+      "snippet": "UCHWAŁA NR …….2025 RADY GMINY ZABRODZIE z dnia ………………… r. w sprawie wyrażenia sprzeciwu wobec proponowanego przebiegu drogi ekspresowej S50/ autostrady A50 - Obwodnicy Aglomeracji Warszawskiej przez teren Gminy Zabrodzie ust. 1 ... z dnia 8"
+    },
+    {
+      "id": "d4da5f074cd8",
+      "date": "2026-10-26",
+      "type": "variant",
+      "type_label": "wariant przebiegu",
+      "title": "Aglomeracja warszawska potrzebuje spójnej sieci połączeń drogowych - Generalna Dyrekcja Dróg Krajowych i Autostrad- Oddział Warszawa - Portal Gov.pl",
+      "url": "https://www.gov.pl/web/gddkia-warszawa/aglomeracja-warszawska-potrzebuje-spojnej-sieci-polaczen-drogowych",
+      "host": "gov.pl",
+      "grade": "official",
+      "confirmed": true,
+      "snippet": "### Obwodnica Aglomeracji Warszawskiej – odpowiedź GDDKiA na potrzeby Warszawy i metropolii Przygotowujemy warianty przebiegu zachodniej części Obwodnicy Aglomeracji Warszawskiej (OAW) na odcinkach od S10 do DK92 oraz od DK92 do S7 na połud"
+    },
+    {
+      "id": "de6756dfe25c",
+      "date": "2026-10-26",
+      "type": "tender",
+      "type_label": "przetarg",
+      "title": "OBWODNICA AGLOMERACJI WARSZAWSKIEJ ODCINEK S50",
+      "url": "https://serock.treespot.pl/media/pdf/22458.pdf",
+      "host": "serock.treespot.pl",
+      "grade": "media",
+      "confirmed": false,
+      "snippet": "OAW Obecnie OAW Kolejne kroki OAW/S50 serock.pl 02.2026 Oferty –11 podmiotów złożyło oferty (w przypadku braku odwołań) Połowa 2026 r. Planowane podpisanie umowy 31.12.2025 r. Ogłoszenie przetargu na STEŚ STEŚ - Studium Techniczno Ekonomicz"
+    },
+    {
+      "id": "97249f61917a",
+      "date": "2026-10-29",
+      "type": "council",
+      "type_label": "uchwała / stanowisko",
+      "title": "Interpelacja nr 21813 - tekst - Sejm Rzeczypospolitej Polskiej",
+      "url": "https://www.sejm.gov.pl/Sejm9.nsf/InterpelacjaTresc.xsp?key=BZK9VA",
+      "host": "sejm.gov.pl",
+      "grade": "official",
+      "confirmed": true,
+      "snippet": "Lokalni włodarze (m.in. wójt gminy Wiązowna, wójt gminy Kołbiel, wójt gminy Dębe Wielkie, jak również Rada Powiatu Otwockiego), ale przede wszystkim lokalne społeczności, mieszkańcy, m.in. zrzeszeni w różnych stowarzyszeniach (jak np. Stowa"
+    },
+    {
+      "id": "9176deacb0ce",
+      "date": "2026-11-01",
+      "type": "tender",
+      "type_label": "przetarg",
+      "title": "Ruszamy z przetargiem na kolejny odcinek OAW",
+      "url": "https://www.gov.pl/web/gddkia/ruszamy-z-przetargiem-na-kolejny-odcinek-oaw",
+      "host": "gov.pl",
+      "grade": "official",
+      "confirmed": true,
+      "snippet": "Do Dziennika Urzędowego Unii Europejskiej przekazaliśmy ogłoszenie o przetargu na wykonanie Studium techniczno-ekonomiczno-środowiskowego (STEŚ) dla kolejnego fragmentu Obwodnicy Aglomeracji Warszawskiej (OAW). Chodzi o odcinek drogi ekspre"
+    }
+  ]
+}
