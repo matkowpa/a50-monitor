@@ -179,10 +179,21 @@ def publisher_of(item) -> str:
     return ""
 
 
-def fetch_url(url: str, timeout: int = 30) -> bytes:
-    req = urllib.request.Request(url, headers=UA)
-    with urllib.request.urlopen(req, timeout=timeout) as resp:
-        return resp.read()
+def fetch_url(url: str, timeout: int = 60, retries: int = 1) -> bytes:
+    """Pobranie kanału z jednym ponowieniem.
+
+    gov.pl potrafi nie odpowiedzieć w 30 s (GDDKiA regularnie), a pojedynczy
+    timeout pozbawiał run całego kanału urzędowego.
+    """
+    last: Exception | None = None
+    for attempt in range(retries + 1):
+        req = urllib.request.Request(url, headers=UA)
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as resp:
+                return resp.read()
+        except Exception as exc:
+            last = exc
+    raise last if last else RuntimeError("fetch failed")
 
 
 def keyword_matches(text: str, keywords: list[str]) -> bool:
