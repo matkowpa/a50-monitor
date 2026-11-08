@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T08:29:22.919092+00:00",
+  "generated_at": "2026-11-08T10:15:11.383422+00:00",
   "status": "ok",
   "backend": "agent-reach/exa.web_search_exa via mcporter",
   "queries": [
@@ -93,7 +93,7 @@
       "url": "https://www.przegladotwocki.pl/artykul/4733,co-dalej-z-obwodnica-wokol-warszawy-w-powiecie-otwockim",
       "source": "exa",
       "published": "2026-02-21",
-      "snippet": "Powiat otwocki został uwzględniony w planach budowy Obwodnicy Aglomeracji Warszawskiej (OAW), jednej z największych inwestycji ... Według propozycji nowa trasa miałaby przycinać m.in. tereny chronione, park krajobrazowy (gm. Celestynów) czy w miejscach, gdzie obwodnica miałaby podzielić małe miejscowości na pół np. Glinki (gm. Najwięcej emocji wśród mieszkańców i samorządowców powiatu otwockiego b"
+      "snippet": "Najwięcej emocji wśród mieszkańców i samorządowców powiatu otwockiego budzi wschodnia część OAW, obejmująca nasze okolice. Wciąż nie zapadły jednak rozstrzygnięcia dotyczące przebiegu tej trasy. Inwestor nie wskazał wariantu preferowanego ani harmonogramu dalszych decyzji administracyjnych, a inwestycja jest nadal na etapie analiz. Według Stowarzyszenia Puszcza Mazowiecka warianty przebiegu tego o"
     },
     {
       "title": "Obwodnica Aglomeracji Warszawskiej – przetarg na STEŚ | NBI",
@@ -115,6 +115,13 @@
       "source": "exa",
       "published": "2025-08-21",
       "snippet": "W ramach Studium techniczno-ekonomiczno-środowiskowego (STEŚ) przygotowano cztery warianty przyszłej trasy. Początek pierwszego odcinka zaplanowano na połączeniu z trasą S10 w rejonie Nacpolska. Trzy warianty – zielony, czerwony i błękitny – przebiegają po zachodniej stronie Wyszogrodu, a wariant niebieski po stronie wschodniej. Wszystkie kończą się na przecięciu z DK92 w rejonie Sochaczewa. W dal"
+    },
+    {
+      "title": "Wschodnia część OAW w powiecie otwockim. Nowe perspektywy?",
+      "url": "https://www.przegladotwocki.pl/artykul/1382,wschodnia-czesc-oaw-w-powiecie-otwockim-nowe-perspektywy",
+      "source": "exa",
+      "published": "2023-12-13",
+      "snippet": "##### Mieszkańcy protestują do dziś Przypominamy, że w 2021 roku Rada Powiatu Otwockiego podjęła stanowisko, w którym wyraziła swój sprzeciw wobec planowanego przebiegu autostrady. Według przedstawionego opracowania proponowane warianty drogi miałyby przebiegać przez teren 6 gmin powiatu: Wiązowny, Karczewa, Celestynowa, Kołbieli, Otwocka i Józefowa. Dlatego samorządy postulują, aby proponowana tr"
     },
     {
       "title": "Projektujemy zachodnią część Obwodnicy Aglomeracji Warszawskiej – gdzie jesteśmy - Generalna Dyrekcja Dróg Krajowych i Autostrad- Oddział Warszawa - Portal Gov.pl",

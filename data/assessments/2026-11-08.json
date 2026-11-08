@@ -4,31 +4,32 @@
     "north": {
       "score": 38,
       "confidence": "niska",
-      "summary": "Nowe dowody dotyczą wyłącznie etapu przygotowań zachodniego odcinka OAW (DK92–S7) oraz interpelacji mieszkańców powiatu otwockiego o zmianę przebiegu na odcinku mostowym — nie wskazują żadnego wariantu w północnym pasie gminy Sobienie-Jeziory. Utrzymuję poprzednią ocenę 38%.",
-      "rationale": "Żaden z nowych materiałów nie zawiera oficjalnego wariantu, studium czy decyzji środowiskowej dotyczącej wschodniego odcinka OAW, a tym bardziej pasa między wsią Sobienie-Jeziory a doliną Wisły. Komunikat o wskazaniu preferowanego przebiegu zachodniej części OAW w październiku 2026 r. oraz strona projektu dla odcinka DK92–S7 potwierdzają, że proces dla wschodniej części jest na wcześniejszym etapie. Interpelacja nr 22190 pokazuje, że korytarz w rejonie powiatu otwockiego i przekroczenia Wisły jest przedmiotem nacisków mieszkańców, ale nie przesądza o poprowadzeniu trasy północnym pasem gminy. Wobec braku dowodów specyficznych dla tego scenariusza score pozostaje na poziomie poprzedniej oceny, a jakość dowodów jest niska.",
+      "summary": "Nowe dowody dotyczą wyłącznie zachodniego odcinka OAW (DK92–S7) i ogólnego harmonogramu GDDKiA — nie zawierają żadnego wskazania wariantu dla odcinka wschodniego, a więc nie zmieniają oceny scenariusza północnego. Utrzymuję score 38%.",
+      "rationale": "Dostępne nowe materiały odnoszą się do zachodniego zadania OAW (odcinek DK92–S7) oraz do deklaracji GDDKiA o wskazaniu preferowanego przebiegu zachodniej części w październiku 2026 r., co nie przekłada się na żadną decyzję o korytarzu na wschód od S7. Interpelacja nr 22190 dotyczy postulatów mieszkańców powiatu otwockiego o zmianę przebiegu OAW na odcinku mostowym, ale nie precyzuje strony gminy ani nie wskazuje pasa między wsią Sobienie-Jeziory a doliną Wisły. Żaden z nowych dowodów nie potwierdza ani nie wyklucza wariantu prowadzonego północną częścią gminy przez tereny zalewowe i obszar Natura 2000 Dolina Środkowej Wisły. Wobec braku oficjalnego wskazania wariantu utrzymuję poprzednią wartość 38%, blisko kotwicy bazowej (45%), z obniżoną pewnością z uwagi na szczupłość i pośredniość dowodów.",
       "key_findings": [
         {
-          "claim": "GDDKiA dopiero w październiku 2026 r. ma wskazać preferowany przebieg zachodniej części OAW, co potwierdza, że warianty dla odcinka wschodniego (obejmującego gminę Sobienie-Jeziory) nie są jeszcze rozstrzygnięte.",
+          "claim": "Nowe doniesienia dotyczą wyłącznie zachodniej części OAW — GDDKiA ma wskazać preferowany przebieg zachodniego odcinka w październiku 2026 r., bez rozstrzygnięć dla odcinka wschodniego.",
           "evidence_urls": [
-            "https://informacje.wp.pl/motoryzacja/wielkie-inwestycje-drogowe-wokol-warszawy-gddkia-ujawnia-plany-i-terminy-budowy-7339932369226176a"
+            "https://motoguru.pl/na-czasie/drogi-wokol-warszawy-nowe-plany-s7-s17-i-obwodnicy/"
           ]
         },
         {
-          "claim": "Oficjalna strona projektu GDDKiA obejmuje wyłącznie odcinek A50/S50 OAW od DK92 do S7, czyli część zachodnią — brak tam dokumentacji wariantów dla wschodniego odcinka i północnego pasa gminy Sobienie-Jeziory.",
+          "claim": "Oficjalna strona GDDKiA dla zadania A50/S50 Obwodnica Aglomeracji Warszawskiej opisuje odcinek DK92–S7, czyli fragment zachodni, nieodnoszący się do gminy Sobienie-Jeziory.",
           "evidence_urls": [
             "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8"
           ]
         },
         {
-          "claim": "Interpelacja nr 22190 pokazuje, że mieszkańcy powiatu otwockiego zabiegają o zmianę przebiegu OAW na odcinku mostowym, co świadczy o trwającym sporze o korytarz w rejonie przekroczenia Wisły, bez wskazania konkretnego wariantu przez północną część gminy.",
+          "claim": "Interpelacja nr 22190 dotyczy wniosku mieszkańców powiatu otwockiego o zmianę przebiegu OAW na odcinku mostowym, bez wskazania północnego pasa gminy Sobienie-Jeziory.",
           "evidence_urls": [
             "https://www.sejm.gov.pl/Sejm9.nsf/InterpelacjaTresc.xsp?key=BZVARM"
           ]
         },
         {
-          "claim": "Pismo do Marszałka Sejmu potwierdza rangę OAW jako kluczowej inwestycji transportowej, ale nie zawiera rozstrzygnięć lokalizacyjnych dla wschodniego odcinka.",
+          "claim": "W nowych materiałach nie ma żadnego oficjalnego komunikatu, studium ani wskazania wariantu prowadzącego trasę między wsią Sobienie-Jeziory a doliną Wisły.",
           "evidence_urls": [
-            "https://sejm.gov.pl/INT9.nsf/klucz/ATTCV7GYC/%24FILE/i42855-o1.pdf"
+            "https://motoguru.pl/na-czasie/drogi-wokol-warszawy-nowe-plany-s7-s17-i-obwodnicy/",
+            "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8"
           ]
         }
       ],
@@ -41,31 +42,31 @@
     "south": {
       "score": 18,
       "confidence": "niska",
-      "summary": "Brak nowych dowodów dotyczących południowego przebiegu przez gminę Sobienie-Jeziory; nowe materiały dotyczą zachodniego odcinka OAW i ogólnych interpelacji. Utrzymuję score 18.",
-      "rationale": "Nowe dowody nie wskazują wariantu przez południową część gminy ani oficjalnego korytarza w tym rejonie. Źródło GDDKiA dotyczy wskazania preferowanego przebiegu zachodniej części OAW w październiku 2026, a strona projektu obejmuje odcinek DK92–S7. Interpelacje dotyczą OAW i powiatu otwockiego, nie rozstrzygają przebiegu w gminie Sobienie-Jeziory. Wobec braku rozstrzygających sygnałów score pozostaje blisko poprzedniej oceny, a confidence jest niska.",
+      "summary": "Nowe dowody dotyczą wyłącznie zachodniego odcinka OAW (DK92–S7) oraz ogólnych wystąpień o randze inwestycji i postulatów z powiatu otwockiego — żaden nie wskazuje wariantu przebiegu przez południową część gminy Sobienie-Jeziory. Utrzymuję ocenę 18%.",
+      "rationale": "Score pozostaje na poziomie 18%, czyli wyraźnie poniżej kotwicy eksperckiej 28%, ponieważ nadal nie ma żadnego oficjalnego dokumentu (studium, raport OOŚ, wniosek o DŚU, przetarg na STEŚ odcinka wschodniego), który lokowałby korytarz A50 na południe od wsi Sobienie-Jeziory, w rejonie Śniadkowa Dolnego i Górnego. Nowy materiał prasowy mówi o wskazaniu preferowanego przebiegu zachodniej części OAW w październiku 2026 r., a strona GDDKiA dla zadania A50/S50 opisuje odcinek DK92–S7 — oba dotyczą innego fragmentu obwodnicy niż gmina Sobienie-Jeziory. Wystąpienia sejmowe (pismo do Marszałka Sejmu i interpelacja nr 22190) potwierdzają jedynie wysoką rangę projektu i presję mieszkańców powiatu otwockiego na zmianę przebiegu, nie rozstrzygając, po której stronie gminy miałaby biec trasa. Brak rozstrzygnięć wariantowych dla odcinka wschodniego oznacza, że scenariusz południowy pozostaje hipotezą geometryczno-polityczną, a nie planem. Dlatego confidence pozostaje niska, a score nie odbiega istotnie od poprzedniej oceny.",
       "key_findings": [
         {
-          "claim": "GDDKiA zapowiada wskazanie preferowanego przebiegu zachodniej części OAW w październiku 2026, co nie dotyczy wariantu południowego w gminie Sobienie-Jeziory.",
+          "claim": "GDDKiA ma wskazać preferowany przebieg zachodniej części OAW w październiku 2026 r., co dotyczy odcinka zachodniego, a nie wschodniego przez gminę Sobienie-Jeziory.",
           "evidence_urls": [
-            "https://informacje.wp.pl/motoryzacja/wielkie-inwestycje-drogowe-wokol-warszawy-gddkia-ujawnia-plany-i-terminy-budowy-7339932369226176a"
+            "https://motoguru.pl/na-czasie/drogi-wokol-warszawy-nowe-plany-s7-s17-i-obwodnicy/"
           ]
         },
         {
-          "claim": "Oficjalna strona GDDKiA dla A50/S50 obejmuje odcinek DK92–S7, czyli zachodni fragment OAW, a nie odcinek wschodni przez Sobienie-Jeziory.",
+          "claim": "Oficjalna strona zadania GDDKiA dla A50/S50 obejmuje odcinek DK92–S7, czyli fragment zachodni — brak tam wariantów dla odcinka wschodniego obejmującego gminę Sobienie-Jeziory.",
           "evidence_urls": [
             "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8"
           ]
         },
         {
-          "claim": "Interpelacja sejmowa dotyczy OAW jako kluczowej inwestycji, bez wskazania przebiegu przez południową część gminy Sobienie-Jeziory.",
+          "claim": "Interpelacja nr 22190 relacjonuje postulaty mieszkańców powiatu otwockiego o zmianę przebiegu OAW, ale nie wskazuje rozstrzygnięcia wariantu przez południową część gminy Sobienie-Jeziory.",
           "evidence_urls": [
-            "https://sejm.gov.pl/INT9.nsf/klucz/ATTCV7GYC/%24FILE/i42855-o1.pdf"
+            "https://www.sejm.gov.pl/Sejm9.nsf/InterpelacjaTresc.xsp?key=BZVARM"
           ]
         },
         {
-          "claim": "Interpelacja nr 22190 odnosi się do działań mieszkańców powiatu otwockiego o zmianę przebiegu OAW na odcinku mostowym, nie do wariantu południowego w Sobienie-Jeziorach.",
+          "claim": "Pismo do Marszałka Sejmu podkreśla kluczowe znaczenie OAW dla regionu i kraju, nie zawierając rozstrzygnięcia co do konkretnego korytarza w gminie Sobienie-Jeziory.",
           "evidence_urls": [
-            "https://www.sejm.gov.pl/Sejm9.nsf/InterpelacjaTresc.xsp?key=BZVARM"
+            "https://sejm.gov.pl/INT9.nsf/klucz/ATTCV7GYC/%24FILE/i42855-o1.pdf"
           ]
         }
       ],
@@ -78,11 +79,11 @@
   },
   "evidence": [
     {
-      "title": "Wielkie inwestycje drogowe wokół Warszawy. GDDKiA ujawnia plany i terminy budowy",
-      "url": "https://informacje.wp.pl/motoryzacja/wielkie-inwestycje-drogowe-wokol-warszawy-gddkia-ujawnia-plany-i-terminy-budowy-7339932369226176a",
+      "title": "Drogi wokół Warszawy. Nowe plany S7, S17 i obwodnicy",
+      "url": "https://motoguru.pl/na-czasie/drogi-wokol-warszawy-nowe-plany-s7-s17-i-obwodnicy/",
       "source": "grounding",
       "published": "2026-10-14",
-      "snippet": "GDDKiA przygotowuje kolejne inwestycje drogowe wokół Warszawy. Jeszcze w październiku 2026 r. ma wskazać preferowany przebieg zachodniej części Obwodnicy Aglomeracji Warszawskiej (OAW), a pod koniec roku planuje...",
+      "snippet": "GDDKiA przygotowuje kolejne inwestycje drogowe wokół Warszawy. Jeszcze w październiku 2026 r. ma wskazać preferowany przebieg zachodniej części Obwodnicy Aglomeracji Warszawskiej (OAW), a pod koniec roku planuje złożyć wnioski o decyzje środowiskowe.",
       "stance": "neutral"
     },
     {
@@ -113,20 +114,20 @@
   "sources_found": 4,
   "source_funnel": {
     "fetched": {
-      "engine": 2,
+      "engine": 1,
       "feeds": 1,
-      "agent_reach": 24,
+      "agent_reach": 25,
       "facebook": 0,
       "official": 0
     },
     "fresh": {
-      "engine": 2,
+      "engine": 1,
       "feeds": 1,
       "agent_reach": 5,
       "facebook": 0,
       "official": 0
     },
-    "merged": 8
+    "merged": 7
   },
   "engine_status": "ok",
   "assessment_path": "data/assessments/2026-11-08.json"
