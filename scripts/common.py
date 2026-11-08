@@ -268,3 +268,35 @@ def parse_date_hint(text: str, today: str | None = None) -> str:
             continue
         return d.isoformat()
     return ""
+
+
+# ------------------------------------------------- skala prawdopodobieństwa
+# Jedno miejsce, w którym zdefiniowana jest skala. Etykieta na stronie
+# (badge przy score), legenda skali i archiwum muszą brać ją stąd — wcześniej
+# 38% miało etykietę „umiarkowane” przy zegarze, a w archiwum stało obok
+# „(niska)”, bo w nawiasie drukowano pewność oceny, nie przedział.
+SCORE_BANDS = (
+    (75, "wysokie", "R", (75, 100)),
+    (50, "podwyższone", "O", (50, 74)),
+    (25, "umiarkowane", "Y", (25, 49)),
+    (0, "niskie", "G", (0, 24)),
+)
+
+
+def score_band(score) -> str:
+    """Etykieta przedziału prawdopodobieństwa dla score 0-100."""
+    try:
+        value = int(round(float(score)))
+    except (TypeError, ValueError):
+        value = 0
+    for threshold, label, _css, _range in SCORE_BANDS:
+        if value >= threshold:
+            return label
+    return SCORE_BANDS[-1][1]
+
+
+def score_band_range(label: str) -> str:
+    for _threshold, name, _css, (low, high) in SCORE_BANDS:
+        if name == label:
+            return f"{low}–{high}%"
+    return ""

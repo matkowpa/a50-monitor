@@ -343,6 +343,7 @@ RUBRYKA (dotyczy wyłącznie scenariusza {scenario.upper()}):
 - Score modyfikuj WYŁĄCZNIE w oparciu o NOWE dowody z listy powyżej — wcześniejsze ustalenia są już odzwierciedlone w poprzedniej ocenie. Dowody starsze niż 30 dni są odfiltrowane przed oceną.
 - Brak nowych, istotnych dowodów => score = poprzedni (lub bazowy), confidence = "niska", wyraźnie zaznacz brak nowych sygnałów.
 - KAŻDY claim w key_findings MUSI mieć evidence_urls wyłącznie z listy dowodów powyżej. Nie wymyślaj URL-i.
+- Nie opisuj poziomu score słowami „niskie / umiarkowane / podwyższone / wysokie” ani zdaniami typu „prawdopodobieństwo jest niskie”. Etykietę skali nadaje strona według progów 0–24 / 25–49 / 50–74 / 75–100; w uzasadnieniu podawaj liczbę i to, co za nią stoi. Słowo „niska” zarezerwuj wyłącznie dla confidence (jakości dowodów).,
 - Pisz po polsku.
 
 ODPOWIEDŹ: wyłącznie JSON dokładnie wg schematu (bez ogrodzeń markdown; wewnątrz wartości tekstowych NIE używaj znaku " — cytuj polskimi cudzysłowami „…”; max 5 pozycji w key_findings; summary ≤ 2 zdania; rationale ≤ 4 zdania):

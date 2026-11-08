@@ -19,7 +19,7 @@ from string import Template
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import (REPO_ROOT, SCENARIOS, load_config, load_scores,  # noqa: E402
-                    scores_path)
+                    score_band, score_band_range, scores_path)
 
 # Kolory linii trendu per scenariusz (zmienna CSS musi istnieć w style.css).
 SCENARIO_COLORS = {"north": "var(--accent)", "south": "var(--orange)"}
@@ -27,19 +27,30 @@ SCENARIO_COLORS = {"north": "var(--accent)", "south": "var(--orange)"}
 TEMPLATES = REPO_ROOT / "templates"
 ANALIZY_DIR = REPO_ROOT / "analizy"
 
-BANDS = (
-    (75, "wysokie", "r", "var(--red)"),
-    (50, "podwyższone", "o", "var(--orange)"),
-    (25, "umiarkowane", "y", "var(--yellow)"),
-    (-1, "niskie", "g", "var(--green)"),
-)
+# Wygląd etykiet; same progi i nazwy pochodzą z common.SCORE_BANDS,
+# żeby strona, legenda i archiwum nie mogły się rozjechać.
+BAND_STYLE = {
+    "wysokie": ("r", "var(--red)"),
+    "podwyższone": ("o", "var(--orange)"),
+    "umiarkowane": ("y", "var(--yellow)"),
+    "niskie": ("g", "var(--green)"),
+}
 
 
 def band(score: int) -> tuple[str, str, str]:
-    for threshold, label, css, color in BANDS:
-        if score >= threshold:
-            return label, css, color
-    return BANDS[-1][1], BANDS[-1][2], BANDS[-1][3]
+    label = score_band(score)
+    css, color = BAND_STYLE.get(label, ("y", "var(--yellow)"))
+    return label, css, color
+
+
+def scale_legend_html() -> str:
+    """Legenda skali pod zegarami — żeby etykieta była sprawdzalna."""
+    parts = [f"<strong>{score_band_range(lbl)}</strong> {lbl}"
+             for lbl in ("wysokie", "podwyższone", "umiarkowane", "niskie")]
+    return ('<p class="meta">Skala prawdopodobieństwa: '
+            + " · ".join(parts)
+            + '. „Pewność oceny” (niska/średnia/wysoka) to osobna oś: mówi, '
+              "jak mocne są dowody, nie jak wysokie jest prawdopodobieństwo.</p>")
 
 
 def esc(text) -> str:
@@ -252,8 +263,12 @@ def evidence_table_html(evidence: list[dict]) -> str:
 def archive_html(entries: list[dict]) -> str:
     items = "".join(
         f'<li><a href="day-{esc(e.get("date"))}.html">{esc(e.get("date"))}</a> '
-        f'— północ {sc_score(e, "north")}% ({esc(sc(e, "north").get("confidence"))}) · '
-        f'południe {sc_score(e, "south")}% ({esc(sc(e, "south").get("confidence"))})</li>'
+        f'— północ {sc_score(e, "north")}% '
+        f'({esc(score_band(sc_score(e, "north")))}, pewność: '
+        f'{esc(sc(e, "north").get("confidence"))}) · '
+        f'południe {sc_score(e, "south")}% '
+        f'({esc(score_band(sc_score(e, "south")))}, pewność: '
+        f'{esc(sc(e, "south").get("confidence"))})</li>'
         for e in reversed(entries))
     return f'<ul class="archive">{items}</ul>'
 
@@ -507,6 +522,7 @@ def build(scores_file: Path, out_dir: Path,
 <div class="panel" style="display:flex;gap:24px;align-items:flex-start;flex-wrap:wrap">
 {''.join(gauges)}
 </div>
+{scale_legend_html()}
 <div class="panel"><h2>Podsumowanie dnia</h2>{summaries}
 <p><a href="day-{esc(latest.get('date'))}.html">Pełny raport z uzasadnieniem i wszystkimi dowodami →</a></p></div>
 {events_panel_html()}
@@ -557,6 +573,21 @@ informacjach. Gdy RSS nie podaje daty, próbujemy odczytać ją z tytułu lub
 skrótu; dowody bez żadnej daty zostają w zestawie, bo ich wieku nie da się
 zweryfikować. Pełne, nieprzefiltrowane zebranie pozostaje w
 <code>data/raw/</code> jako materiał audytowy.</p>
+<h2>Skala i pewność</h2>
+<p>Prawdopodobieństwo jest pokazywane na jednej skali, z jednymi progami:
+<strong>0–24% niskie</strong>, <strong>25–49% umiarkowane</strong>,
+<strong>50–74% podwyższone</strong>, <strong>75–100% wysokie</strong>.
+Etykieta przy score, legenda pod zegarami, archiwum dni i wykres trendu
+korzystają z tej samej definicji w kodzie
+(<code>SCORE_BANDS</code> w <code>scripts/common.py</code>), więc liczba
+i słowo nie mogą się rozjechać.</p>
+<p><strong>Pewność oceny</strong> (niska / średnia / wysoka) to druga,
+niezależna oś: opisuje jakość i kompletność dowodów, a nie poziom
+prawdopodobieństwa. Niska pewność przy 38% znaczy „tyle wiemy, ale dowody
+są słabe lub nieaktualne” — nie „prawdopodobieństwo jest niskie”.</p>
+<p>Progi są umowne i służą porównywaniu dni między sobą, a nie kalibracji
+do częstotliwości zdarzeń. 38% oznacza „bardziej prawdopodobne niż nie”,
+a nie „w 38 na 100 przypadków”.</p>
 <h2>Ograniczenia tej oceny</h2>
 <p>Model <strong>nie może</strong> przesunąć score o dowolną wartość. Dobowy
 ruch jest ograniczony wagą cytowanego dowodu: ±20 pkt przy źródle

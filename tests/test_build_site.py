@@ -197,3 +197,26 @@ class TestAnalizyPages(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestScaleConsistency(unittest.TestCase):
+    """Jedna skala: badge, archiwum i legenda muszą mówić to samo."""
+
+    def test_band_matches_common_scale(self):
+        for score, label in ((18, "niskie"), (38, "umiarkowane"),
+                             (60, "podwyższone"), (80, "wysokie")):
+            self.assertEqual(build_site.band(score)[0], label)
+
+    def test_archive_separates_probability_from_confidence(self):
+        html = build_site.archive_html([
+            {"date": "2026-11-08", "scores": {
+                "north": {"score": 38, "confidence": "niska"},
+                "south": {"score": 18, "confidence": "niska"}}}])
+        self.assertIn("38% (umiarkowane, pewność: niska)", html)
+        self.assertIn("18% (niskie, pewność: niska)", html)
+        self.assertNotIn("38% (niska)", html)
+
+    def test_legend_lists_every_range(self):
+        legend = build_site.scale_legend_html()
+        for fragment in ("0–24%", "25–49%", "50–74%", "75–100%", "Pewność oceny"):
+            self.assertIn(fragment, legend)

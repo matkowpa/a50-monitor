@@ -140,3 +140,20 @@ class TestQualityHelpers(unittest.TestCase):
     def test_parse_date_hint_rejects_bad_calendar_and_future(self):
         self.assertEqual(common.parse_date_hint("31.02.2026", today="2026-11-07"), "")
         self.assertEqual(common.parse_date_hint("2027-05-01", today="2026-11-07"), "")
+
+
+class TestScoreBands(unittest.TestCase):
+    def test_boundaries(self):
+        cases = {0: "niskie", 24: "niskie", 25: "umiarkowane", 38: "umiarkowane",
+                 49: "umiarkowane", 50: "podwyższone", 74: "podwyższone",
+                 75: "wysokie", 100: "wysokie"}
+        for score, label in cases.items():
+            self.assertEqual(common.score_band(score), label, score)
+
+    def test_band_ranges_are_consistent_with_labels(self):
+        for label in ("niskie", "umiarkowane", "podwyższone", "wysokie"):
+            low, high = (0, 24) if label == "niskie" else {
+                "umiarkowane": (25, 49), "podwyższone": (50, 74),
+                "wysokie": (75, 100)}[label]
+            self.assertEqual(common.score_band(low), label)
+            self.assertEqual(common.score_band(high), label)
