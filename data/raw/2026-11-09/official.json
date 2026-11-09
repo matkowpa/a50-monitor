@@ -1,0 +1,50 @@
+{
+  "day": "2026-11-09",
+  "sources": [
+    {
+      "id": "gddkia-oaw",
+      "label": "GDDKiA — projekt OAW (zachodnia część)",
+      "status": "ok",
+      "changed": false,
+      "baseline": null,
+      "error": null,
+      "chars": 7188
+    },
+    {
+      "id": "gddkia-a50s50",
+      "label": "GDDKiA — odcinek A50/S50 DK92–S7",
+      "status": "ok",
+      "changed": false,
+      "baseline": null,
+      "error": null,
+      "chars": 4141
+    },
+    {
+      "id": "gmina-sobienie",
+      "label": "Gmina Sobienie-Jeziory — aktualności",
+      "status": "ok",
+      "changed": true,
+      "baseline": null,
+      "error": null,
+      "chars": 18009
+    },
+    {
+      "id": "rdos-warszawa",
+      "label": "RDOŚ Warszawa — komunikaty",
+      "status": "ok",
+      "changed": false,
+      "baseline": null,
+      "error": null,
+      "chars": 4327
+    }
+  ],
+  "items": [
+    {
+      "title": "Gmina Sobienie-Jeziory — aktualności — zmiana na stronie (Aktualności, strona 1 - Urząd Gminy Sobienie-Jeziory)",
+      "url": "https://sobieniejeziory.pl/asp/aktualnosci,2#zmiana-552a34fbbadd7567",
+      "source": "official:gmina-sobienie",
+      "published": "2026-11-09",
+      "snippet": "2026-11-08 09:32 ⏎ Zmiana terminu szkolenia z AI w Sobieniach-Jeziorach ⏎ Szkolenie odbędzie się w najbliższy czwartek, 12 listopada, w świetlicy w Sobieniach-Jeziorach w godz. 10.00-15.00. ⏎ Pozycje 1 - 15 / 525"
+    }
+  ]
+}

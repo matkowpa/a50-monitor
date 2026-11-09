@@ -1,0 +1,157 @@
+{
+  "date": "2026-11-09",
+  "scores": {
+    "north": {
+      "score": 38,
+      "confidence": "niska",
+      "summary": "Nowe dowody nie zawierają żadnego oficjalnego sygnału o wariancie przebiegu OAW na wschód od S7 — dotyczą głównie zachodniego zadania DK92–S7 oraz ogólnych deklaracji o randze projektu. Utrzymuję score na poziomie poprzedniej oceny (38), bo brak podstaw do korekty w którąkolwiek stronę.",
+      "rationale": "Dostępne materiały odnoszą się do zachodniego odcinka OAW (DK92–S7) oraz do gminy Pniewy, czyli obszarów odległych od gminy Sobienie-Jeziory, więc nie zmieniają oceny korytarza północnego. Interpelacja nr 22190 sygnalizuje postulaty mieszkańców powiatu otwockiego dotyczące zmiany przebiegu na odcinku mostowym, ale nie wskazuje, po której stronie gminy miałaby biec trasa. Pozostałe pozycje (portal GDDKiA dla odcinka DK92–S7, wystąpienie sejmowe o randze OAW, artykuł o trasie N-S na Woli) potwierdzają jedynie ramy projektu A50/S50 jako zewnętrznego pierścienia, bez wariantów dla wschodniego odcinka. Jedyny nowy materiał gminny dotyczy szkolenia z AI i jest całkowicie nieistotny dla przebiegu trasy. Wobec braku nowych, istotnych dowodów score pozostaje przy poprzedniej wartości 38, a jakość dowodów uzasadnia confidence „niska”.",
+      "key_findings": [
+        {
+          "claim": "Nowe materiały o A50/S50 dotyczą zachodniego zadania OAW (odcinek DK92–S7) i nie przekładają się na żaden wariant korytarza na wschód od S7, w tym na północną część gminy Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8",
+            "https://pniewy.pl/cms/8987/autostrada_a50"
+          ]
+        },
+        {
+          "claim": "Interpelacja nr 22190 dotyczy postulatów mieszkańców powiatu otwockiego o zmianę przebiegu OAW na odcinku mostowym, ale nie precyzuje, po której stronie gminy Sobienie-Jeziory miałaby poprowadzić trasa.",
+          "evidence_urls": [
+            "https://www.sejm.gov.pl/Sejm9.nsf/InterpelacjaTresc.xsp?key=BZVARM"
+          ]
+        },
+        {
+          "claim": "OAW jest opisywana jako zewnętrzny pierścień drogowy obejmujący A50 i S50, bez wskazania rozstrzygnięć wariantowych dla odcinka wschodniego.",
+          "evidence_urls": [
+            "https://tematwarszawa.pl/news/trasa-n-s-wola-polczynska-gorczewska/",
+            "https://sejm.gov.pl/INT9.nsf/klucz/ATTCV7GYC/%24FILE/i42855-o1.pdf"
+          ]
+        },
+        {
+          "claim": "Jedyny nowy materiał z oficjalnego serwisu gminy Sobienie-Jeziory dotyczy zmiany terminu szkolenia z AI i nie zawiera żadnych informacji o przebiegu OAW.",
+          "evidence_urls": [
+            "https://sobieniejeziory.pl/asp/aktualnosci,2#zmiana-552a34fbbadd7567"
+          ]
+        }
+      ],
+      "trend_vs_prev": 0,
+      "score_raw": 38,
+      "evidence_grade": "official",
+      "delta_capped": false,
+      "change_reason": "official: bez zmiany"
+    },
+    "south": {
+      "score": 18,
+      "confidence": "niska",
+      "summary": "Nowe dowody nie zawierają żadnego dokumentu GDDKiA, studium czy przetargu lokującego korytarz A50 na południe od wsi Sobienie-Jeziory (rejon Śniadkowa Dolnego i Górnego). Utrzymuję score na poziomie 18%.",
+      "rationale": "Oficjalne materiały GDDKiA w nowym zestawie dotyczą wyłącznie odcinka DK92–S7, czyli zachodniej części OAW, i nie odnoszą się do wschodniego odcinka ani do gminy Sobienie-Jeziory. Interpelacja nr 22190 pokazuje presję mieszkańców powiatu otwockiego na zmianę przebiegu OAW na odcinku mostowym, ale jest to postulat, a nie wskazanie wariantu przez tę stronę gminy. Pozostałe nowe pozycje są nieistotne dla tego scenariusza: szkolenie z AI w gminie, konsultacje A50 w gminie Pniewy oraz ogólne opisy OAW jako pierścienia A50/S50 bez geometrii. Brak nowych sygnałów potwierdzających południowy korytarz oznacza utrzymanie score blisko poprzedniej oceny i niską jakość dowodów.",
+      "key_findings": [
+        {
+          "claim": "Oficjalna strona GDDKiA dla A50/S50 dotyczy odcinka DK92–S7, czyli części zachodniej — nie zawiera żadnego wariantu w rejonie gminy Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8"
+          ]
+        },
+        {
+          "claim": "Interpelacja poselska nr 22190 dotyczy prośby mieszkańców powiatu otwockiego o zmianę przebiegu OAW na odcinku mostowym — to sygnał presji społecznej, a nie oficjalne wskazanie korytarza przez południową część gminy.",
+          "evidence_urls": [
+            "https://www.sejm.gov.pl/Sejm9.nsf/InterpelacjaTresc.xsp?key=BZVARM"
+          ]
+        },
+        {
+          "claim": "Nowy materiał o trasie N-S opisuje OAW jedynie ogólnie jako zewnętrzny pierścień obejmujący A50 i S50, bez wskazania przebiegu w gminie Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://tematwarszawa.pl/news/trasa-n-s-wola-polczynska-gorczewska/"
+          ]
+        },
+        {
+          "claim": "Aktywność Urzędu Gminy Sobienie-Jeziory w nowych dowodach ogranicza się do zmiany terminu szkolenia z AI i nie zawiera odniesień do OAW ani do wariantów przebiegu.",
+          "evidence_urls": [
+            "https://sobieniejeziory.pl/asp/aktualnosci,2#zmiana-552a34fbbadd7567"
+          ]
+        },
+        {
+          "claim": "Konsultacje przebiegu A50 prowadzone przez gminę Pniewy dotyczą odcinka zachodniego i nie mają związku z gminą Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://pniewy.pl/cms/8987/autostrada_a50"
+          ]
+        }
+      ],
+      "trend_vs_prev": 0,
+      "score_raw": 18,
+      "evidence_grade": "official",
+      "delta_capped": false,
+      "change_reason": "official: bez zmiany"
+    }
+  },
+  "evidence": [
+    {
+      "title": "Gmina Sobienie-Jeziory — aktualności — zmiana na stronie (Aktualności, strona 1 - Urząd Gminy Sobienie-Jeziory)",
+      "url": "https://sobieniejeziory.pl/asp/aktualnosci,2#zmiana-552a34fbbadd7567",
+      "source": "official:gmina-sobienie",
+      "published": "2026-11-09",
+      "snippet": "2026-11-08 09:32 ⏎ Zmiana terminu szkolenia z AI w Sobieniach-Jeziorach ⏎ Szkolenie odbędzie się w najbliższy czwartek, 12 listopada, w świetlicy w Sobieniach-Jeziorach w godz. 10.00-15.00. ⏎ Pozycje 1 - 15 / 525",
+      "stance": "neutral"
+    },
+    {
+      "title": "Trasa N-S na Woli bez terminu budowy. Co dalej?",
+      "url": "https://tematwarszawa.pl/news/trasa-n-s-wola-polczynska-gorczewska/",
+      "source": "grounding",
+      "published": "2026-10-26",
+      "snippet": "Osobnym, znacznie większym przedsięwzięciem jest Obwodnica Aglomeracji Warszawskiej (OAW), planowana jako zewnętrzny pierścień drogowy, obejmujący między innymi trasy A50 i S50. Ma ona przebiegać dalej od centrum i przejmować przede wszystkim ruch tranzytowy, którego celem nie jest ...",
+      "stance": "neutral"
+    },
+    {
+      "title": "Autostrada A50 - Gmina Pniewy",
+      "url": "https://pniewy.pl/cms/8987/autostrada_a50",
+      "source": "exa",
+      "published": "",
+      "snippet": "Drodzy Mieszkańcy Gminy Pniewy zachęcamy do przesyłania Państwa uwag, sugestii i spostrzeżeń dotyczących przebiegu A50 przez teren naszej gminy na specjalny adres mailowy: a50@pniewy.pl utworzony przez Urząd Gminy Pniewy do zbierania Państwa opinii. Koordynatorem ze ramienia Gminy Pniewy w sprawach związanych z OAW jest Pani Paulina Abramowicz, tel. Stanowisko Wójta Gminy Pniewy w sprawie Obwodnic",
+      "stance": "neutral"
+    },
+    {
+      "title": "A50/S50 Obwodnica Aglomeracji Warszawskiej odcinek DK92 - S7 - Generalna Dyrekcja Dróg Krajowych i Autostrad - Portal Gov.pl",
+      "url": "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8",
+      "source": "exa",
+      "published": "",
+      "snippet": "A50/S50 Obwodnica Aglomeracji Warszawskiej odcinek DK92 - S7 - Generalna Dyrekcja Dróg Krajowych i Autostrad - Portal Gov.pl ## A50/S50 Obwodnica Aglomeracji Warszawskiej odcinek DK92 - S7 Podstawowe informacje Nr drogi : A50 / S50 Nazwa odcinka : Obwodnica Aglomeracji Warszawskiej odcinek DK92 - S7 System realizacji : Projektuj i Buduj Program : Rządowy Program Budowy Dróg Krajowych do 2030 r. (z",
+      "stance": "neutral"
+    },
+    {
+      "title": "Szanowna Pani Elżbieta Witek Marszałek Sejmu Rzeczypospolitej Polskiej",
+      "url": "https://sejm.gov.pl/INT9.nsf/klucz/ATTCV7GYC/%24FILE/i42855-o1.pdf",
+      "source": "exa",
+      "published": "",
+      "snippet": "Zaznaczam, że Obwodnica Aglomeracji Warszawskiej (OAW) to niewątpliwie jedna z kluczowych inwestycji transportowych nie tylko w skali regionu, ale i całego kraju, w związku z czym pragnę podkreślić wagę i potrzebę realizacji tej inwestycji. Wykonane analizy w ramach Studium korytarzowego potwierdziły zasadność realizacji OAW oraz pozwoliły wskazać kierunek dalszego uszczegółowiania w ramach kolejn",
+      "stance": "neutral"
+    },
+    {
+      "title": "Interpelacja nr 22190 - tekst - Sejm Rzeczypospolitej Polskiej",
+      "url": "https://www.sejm.gov.pl/Sejm9.nsf/InterpelacjaTresc.xsp?key=BZVARM",
+      "source": "exa",
+      "published": "",
+      "snippet": "Szanowny Panie Ministrze, mieszkańcy powiatu otwockiego zwrócili się do mnie z prośbą o wsparcie ich działań zmierzających do zmiany przebiegu Obwodnicy Aglomeracji Warszawskiej (OAW) na odcinku most na Wiśle – Mińsk Mazowiecki oraz zmiany charakteru tej drogi ze standardu autostrady (A50) na standard drogi ekspresowej (S50). W ramach studium korytarzowego OAW GDDKiA wybrała do dalszych prac tzw.",
+      "stance": "neutral"
+    }
+  ],
+  "sources_found": 6,
+  "source_funnel": {
+    "fetched": {
+      "engine": 1,
+      "feeds": 0,
+      "agent_reach": 24,
+      "facebook": 0,
+      "official": 1
+    },
+    "fresh": {
+      "engine": 1,
+      "feeds": 0,
+      "agent_reach": 4,
+      "facebook": 0,
+      "official": 1
+    },
+    "merged": 6
+  },
+  "engine_status": "ok",
+  "assessment_path": "data/assessments/2026-11-09.json"
+}

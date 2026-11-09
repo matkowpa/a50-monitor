@@ -1,0 +1,388 @@
+{
+  "artifacts": {
+    "corpus_in_export": false,
+    "grounding": [
+      {
+        "label": "brave",
+        "resultCount": 5,
+        "webSearchQueries": [
+          "obwodnica autostradowa Warszawy A50 przebieg trasy"
+        ]
+      }
+    ],
+    "hiring_signals_mode": false,
+    "plan_source": "llm",
+    "pre_research_flags_present": false,
+    "resolved": {
+      "context": "",
+      "entity": "obwodnica autostradowa Warszawy A50 przebieg trasy Sobienie-Jeziory",
+      "github_repos": [],
+      "github_user": "",
+      "subreddits": [],
+      "trustpilot_domain": "",
+      "x_handle": ""
+    }
+  },
+  "clusters": [
+    {
+      "candidate_ids": [
+        "https://tematwarszawa.pl/news/trasa-n-s-wola-polczynska-gorczewska"
+      ],
+      "cluster_id": "cluster-1",
+      "representative_ids": [
+        "https://tematwarszawa.pl/news/trasa-n-s-wola-polczynska-gorczewska"
+      ],
+      "score": 37.45409836065574,
+      "sources": [
+        "grounding"
+      ],
+      "title": "Trasa N-S na Woli bez terminu budowy. Co dalej?"
+    },
+    {
+      "candidate_ids": [
+        "https://informacje.wp.pl/motoryzacja/wielkie-inwestycje-drogowe-wokol-warszawy-gddkia-ujawnia-plany-i-terminy-budowy-7339932369226176a"
+      ],
+      "cluster_id": "cluster-2",
+      "representative_ids": [
+        "https://informacje.wp.pl/motoryzacja/wielkie-inwestycje-drogowe-wokol-warszawy-gddkia-ujawnia-plany-i-terminy-budowy-7339932369226176a"
+      ],
+      "score": 22.217741935483872,
+      "sources": [
+        "grounding"
+      ],
+      "title": "Wielkie inwestycje drogowe wok\u00f3\u0142 Warszawy. GDDKiA ujawnia plany i terminy budowy"
+    },
+    {
+      "candidate_ids": [
+        "https://reddit.com/r/infrastrukturadrogowa/comments/1xfasur/dlaczego_gddkia_i_samorz\u0105dy_wojew\u00f3dztw_nie_chc\u0105"
+      ],
+      "cluster_id": "cluster-3",
+      "representative_ids": [
+        "https://reddit.com/r/infrastrukturadrogowa/comments/1xfasur/dlaczego_gddkia_i_samorz\u0105dy_wojew\u00f3dztw_nie_chc\u0105"
+      ],
+      "score": 3.607377049180328,
+      "sources": [
+        "reddit"
+      ],
+      "title": "Dlaczego GDDKiA i samorz\u0105dy wojew\u00f3dztw nie chc\u0105 przejmowa\u0107 na siebie dr\u00f3g?"
+    }
+  ],
+  "errors_by_source": {},
+  "freshness_verdicts": [],
+  "generated_at": "2026-11-09T11:25:56.478408+00:00",
+  "items_by_source": {
+    "grounding": [
+      {
+        "body": "Trasa N-S na Woli bez terminu budowy. Co dalej?\nOsobnym, znacznie wi\u0119kszym przedsi\u0119wzi\u0119ciem jest Obwodnica Aglomeracji Warszawskiej (OAW), planowana jako zewn\u0119trzny pier\u015bcie\u0144 drogowy, obejmuj\u0105cy mi\u0119dzy innymi trasy A50 i S50. Ma ona przebiega\u0107 dalej od centrum i przejmowa\u0107 przede wszystkim ruch tranzytowy, kt\u00f3rego celem nie jest ...",
+        "container": "tematwarszawa.pl",
+        "date_confidence": "high",
+        "engagement": {},
+        "freshness": 52,
+        "item_id": "WB1",
+        "local_rank_score": 0.3185,
+        "local_relevance": 0.29,
+        "metadata": {},
+        "published_at": "2026-10-26",
+        "relevance_hint": 0.8,
+        "snippet": "Osobnym, znacznie wi\u0119kszym przedsi\u0119wzi\u0119ciem jest Obwodnica Aglomeracji Warszawskiej (OAW), planowana jako zewn\u0119trzny pier\u015bcie\u0144 drogowy, obejmuj\u0105cy mi\u0119dzy innymi trasy A50 i S50. Ma ona przebiega\u0107 dalej od centrum i przejmowa\u0107 przede wszystkim ruch tranzytowy, kt\u00f3rego celem nie jest ...",
+        "source": "grounding",
+        "source_quality": 0.6,
+        "title": "Trasa N-S na Woli bez terminu budowy. Co dalej?",
+        "url": "https://tematwarszawa.pl/news/trasa-n-s-wola-polczynska-gorczewska/",
+        "why_relevant": "Brave web search"
+      },
+      {
+        "body": "Wielkie inwestycje drogowe wok\u00f3\u0142 Warszawy. GDDKiA ujawnia plany i terminy budowy\nDokumentacja ma by\u0107 gotowa w 2030 r. Nie jest to jednak termin oddania obwodnicy do ruchu. Trasa pozostaje na etapie przygotowawczym, a jej ostateczny przebieg nie zosta\u0142 jeszcze ustalony.",
+        "container": "informacje.wp.pl",
+        "date_confidence": "high",
+        "engagement": {},
+        "freshness": 20,
+        "item_id": "WB2",
+        "local_rank_score": 0.3165,
+        "local_relevance": 0.41,
+        "metadata": {},
+        "published_at": "2026-10-14",
+        "relevance_hint": 0.8,
+        "snippet": "Dokumentacja ma by\u0107 gotowa w 2030 r. Nie jest to jednak termin oddania obwodnicy do ruchu. Trasa pozostaje na etapie przygotowawczym, a jej ostateczny przebieg nie zosta\u0142 jeszcze ustalony.",
+        "source": "grounding",
+        "source_quality": 0.6,
+        "title": "Wielkie inwestycje drogowe wok\u00f3\u0142 Warszawy. GDDKiA ujawnia plany i terminy budowy",
+        "url": "https://informacje.wp.pl/motoryzacja/wielkie-inwestycje-drogowe-wokol-warszawy-gddkia-ujawnia-plany-i-terminy-budowy-7339932369226176a",
+        "why_relevant": "Brave web search"
+      }
+    ],
+    "reddit": [
+      {
+        "body": "Dlaczego GDDKiA i samorz\u0105dy wojew\u00f3dztw nie chc\u0105 przejmowa\u0107 na siebie dr\u00f3g?\nW Polsce ostatniego czasu zaobserwowa\u0142em \u017ce pa\u0144stwo i wojew\u00f3dztwa nie chc\u0105 przejmowa\u0107 na siebie dr\u00f3g, w wielu przypadkach trend jest odwroty, i zauwa\u017cy\u0142em \u017ce wojew\u00f3dztwa oddaj\u0105 drogi powiatom i gminom o niepor\u00f3wnywalnie mniejszych dochodach, co wida\u0107 po tym \u017ce drogi te nie s\u0105 od\u015bnie\u017cane lub bardzo s\u0142abo, nawierzchnia jest znacz\u0105co gorsza od dr\u00f3g wojew\u00f3dzkich, o ile Polskie drogi ekspresowe, krajowe, wojew\u00f3dzkie (nieco gorzej ni\u017c DK) maj\u0105 w wi\u0119kszo\u015bci dobr\u0105 nawierzchni\u0119 to wiele powiat\u00f3wek do dzi",
+        "container": "infrastrukturadrogowa",
+        "date_confidence": "high",
+        "engagement": {
+          "num_comments": 0,
+          "score": 0
+        },
+        "freshness": 50,
+        "item_id": "R1",
+        "local_rank_score": 0.177,
+        "local_relevance": 0.08,
+        "metadata": {
+          "comment_insights": [],
+          "top_comments": []
+        },
+        "published_at": "2026-10-25",
+        "relevance_hint": 0.0,
+        "snippet": "W Polsce ostatniego czasu zaobserwowa\u0142em \u017ce pa\u0144stwo i wojew\u00f3dztwa nie chc\u0105 przejmowa\u0107 na siebie dr\u00f3g, w wielu przypadkach trend jest odwroty, i zauwa\u017cy\u0142em \u017ce wojew\u00f3dztwa oddaj\u0105 drogi powiatom i gminom o niepor\u00f3wnywalnie mniejszych dochodach, co wida\u0107 po tym \u017ce drogi te nie s\u0105 od\u015bnie\u017cane lub bardzo s\u0142abo, nawierzchnia jest znacz\u0105co gorsza od dr\u00f3g wojew\u00f3dzkich, o ile Polskie drogi ekspresowe, krajow",
+        "source": "reddit",
+        "source_quality": 0.6,
+        "title": "Dlaczego GDDKiA i samorz\u0105dy wojew\u00f3dztw nie chc\u0105 przejmowa\u0107 na siebie dr\u00f3g?",
+        "url": "https://www.reddit.com/r/infrastrukturadrogowa/comments/1xfasur/dlaczego_gddkia_i_samorz\u0105dy_wojew\u00f3dztw_nie_chc\u0105/",
+        "why_relevant": "Reddit RSS"
+      }
+    ]
+  },
+  "library_context": [],
+  "provider_runtime": {
+    "planner_model": "cline-pass/deepseek-v4.1-flash-1017",
+    "reasoning_provider": "cline",
+    "rerank_model": "cline-pass/deepseek-v4.1-flash-1017"
+  },
+  "query_plan": {
+    "cluster_mode": "none",
+    "freshness_mode": "balanced_recent",
+    "intent": "factual",
+    "notes": [
+      "Polish-language queries preserve proper nouns A50 and Sobienie-Jeziory.",
+      "Factual infrastructure topic; no temporal phrases included in search queries."
+    ],
+    "raw_topic": "obwodnica autostradowa Warszawy A50 przebieg trasy Sobienie-Jeziory",
+    "source_weights": {
+      "grounding": 0.55,
+      "hackernews": 0.05,
+      "reddit": 0.25,
+      "youtube": 0.15
+    },
+    "subqueries": [
+      {
+        "label": "A50 route",
+        "ranking_query": "Jaki jest przebieg trasy obwodnicy autostradowej Warszawy A50?",
+        "search_query": "obwodnica autostradowa Warszawy A50 przebieg trasy",
+        "sources": [
+          "grounding",
+          "reddit"
+        ],
+        "weight": 1.0
+      }
+    ]
+  },
+  "range_from": "2026-10-10",
+  "range_to": "2026-11-09",
+  "ranked_candidates": [
+    {
+      "candidate_id": "https://tematwarszawa.pl/news/trasa-n-s-wola-polczynska-gorczewska",
+      "cluster_id": "cluster-1",
+      "explanation": "Mentions A50 as part of OAW, but gives no route details for the Sobienie-Jeziory segment.",
+      "final_score": 37.45409836065574,
+      "freshness": 52,
+      "fun_explanation": "Dry infrastructure news; no joke or punchline.",
+      "fun_score": 5.0,
+      "item_id": "WB1",
+      "local_relevance": 0.29,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "WB1",
+            "native_rank": 1,
+            "source": "grounding",
+            "subquery_label": "A50 route"
+          }
+        ],
+        "range_from": "2026-10-10",
+        "range_to": "2026-11-09"
+      },
+      "native_ranks": {
+        "A50 route:grounding": 1
+      },
+      "rerank_score": 45.0,
+      "rrf_score": 0.009016393442622951,
+      "snippet": "Osobnym, znacznie wi\u0119kszym przedsi\u0119wzi\u0119ciem jest Obwodnica Aglomeracji Warszawskiej (OAW), planowana jako zewn\u0119trzny pier\u015bcie\u0144 drogowy, obejmuj\u0105cy mi\u0119dzy innymi trasy A50 i S50. Ma ona przebiega\u0107 dalej od centrum i przejmowa\u0107 przede wszystkim ruch tranzytowy, kt\u00f3rego celem nie jest ...",
+      "source": "grounding",
+      "source_items": [
+        {
+          "body": "Trasa N-S na Woli bez terminu budowy. Co dalej?\nOsobnym, znacznie wi\u0119kszym przedsi\u0119wzi\u0119ciem jest Obwodnica Aglomeracji Warszawskiej (OAW), planowana jako zewn\u0119trzny pier\u015bcie\u0144 drogowy, obejmuj\u0105cy mi\u0119dzy innymi trasy A50 i S50. Ma ona przebiega\u0107 dalej od centrum i przejmowa\u0107 przede wszystkim ruch tranzytowy, kt\u00f3rego celem nie jest ...",
+          "container": "tematwarszawa.pl",
+          "date_confidence": "high",
+          "engagement": {},
+          "freshness": 52,
+          "item_id": "WB1",
+          "local_rank_score": 0.3185,
+          "local_relevance": 0.29,
+          "metadata": {},
+          "published_at": "2026-10-26",
+          "relevance_hint": 0.8,
+          "snippet": "Osobnym, znacznie wi\u0119kszym przedsi\u0119wzi\u0119ciem jest Obwodnica Aglomeracji Warszawskiej (OAW), planowana jako zewn\u0119trzny pier\u015bcie\u0144 drogowy, obejmuj\u0105cy mi\u0119dzy innymi trasy A50 i S50. Ma ona przebiega\u0107 dalej od centrum i przejmowa\u0107 przede wszystkim ruch tranzytowy, kt\u00f3rego celem nie jest ...",
+          "source": "grounding",
+          "source_quality": 0.6,
+          "title": "Trasa N-S na Woli bez terminu budowy. Co dalej?",
+          "url": "https://tematwarszawa.pl/news/trasa-n-s-wola-polczynska-gorczewska/",
+          "why_relevant": "Brave web search"
+        }
+      ],
+      "source_quality": 0.6,
+      "sources": [
+        "grounding"
+      ],
+      "subquery_labels": [
+        "A50 route"
+      ],
+      "title": "Trasa N-S na Woli bez terminu budowy. Co dalej?",
+      "url": "https://tematwarszawa.pl/news/trasa-n-s-wola-polczynska-gorczewska/"
+    },
+    {
+      "candidate_id": "https://informacje.wp.pl/motoryzacja/wielkie-inwestycje-drogowe-wokol-warszawy-gddkia-ujawnia-plany-i-terminy-budowy-7339932369226176a",
+      "cluster_id": "cluster-2",
+      "explanation": "Discusses Warsaw bypass planning generally, but does not mention A50 or Sobienie-Jeziory.",
+      "final_score": 22.217741935483872,
+      "freshness": 20,
+      "fun_explanation": "Official planning update; purely factual and dry.",
+      "fun_score": 3.0,
+      "item_id": "WB2",
+      "local_relevance": 0.41,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "WB2",
+            "native_rank": 2,
+            "source": "grounding",
+            "subquery_label": "A50 route"
+          }
+        ],
+        "range_from": "2026-10-10",
+        "range_to": "2026-11-09"
+      },
+      "native_ranks": {
+        "A50 route:grounding": 2
+      },
+      "rerank_score": 25.0,
+      "rrf_score": 0.008870967741935484,
+      "snippet": "Dokumentacja ma by\u0107 gotowa w 2030 r. Nie jest to jednak termin oddania obwodnicy do ruchu. Trasa pozostaje na etapie przygotowawczym, a jej ostateczny przebieg nie zosta\u0142 jeszcze ustalony.",
+      "source": "grounding",
+      "source_items": [
+        {
+          "body": "Wielkie inwestycje drogowe wok\u00f3\u0142 Warszawy. GDDKiA ujawnia plany i terminy budowy\nDokumentacja ma by\u0107 gotowa w 2030 r. Nie jest to jednak termin oddania obwodnicy do ruchu. Trasa pozostaje na etapie przygotowawczym, a jej ostateczny przebieg nie zosta\u0142 jeszcze ustalony.",
+          "container": "informacje.wp.pl",
+          "date_confidence": "high",
+          "engagement": {},
+          "freshness": 20,
+          "item_id": "WB2",
+          "local_rank_score": 0.3165,
+          "local_relevance": 0.41,
+          "metadata": {},
+          "published_at": "2026-10-14",
+          "relevance_hint": 0.8,
+          "snippet": "Dokumentacja ma by\u0107 gotowa w 2030 r. Nie jest to jednak termin oddania obwodnicy do ruchu. Trasa pozostaje na etapie przygotowawczym, a jej ostateczny przebieg nie zosta\u0142 jeszcze ustalony.",
+          "source": "grounding",
+          "source_quality": 0.6,
+          "title": "Wielkie inwestycje drogowe wok\u00f3\u0142 Warszawy. GDDKiA ujawnia plany i terminy budowy",
+          "url": "https://informacje.wp.pl/motoryzacja/wielkie-inwestycje-drogowe-wokol-warszawy-gddkia-ujawnia-plany-i-terminy-budowy-7339932369226176a",
+          "why_relevant": "Brave web search"
+        }
+      ],
+      "source_quality": 0.6,
+      "sources": [
+        "grounding"
+      ],
+      "subquery_labels": [
+        "A50 route"
+      ],
+      "title": "Wielkie inwestycje drogowe wok\u00f3\u0142 Warszawy. GDDKiA ujawnia plany i terminy budowy",
+      "url": "https://informacje.wp.pl/motoryzacja/wielkie-inwestycje-drogowe-wokol-warszawy-gddkia-ujawnia-plany-i-terminy-budowy-7339932369226176a"
+    },
+    {
+      "candidate_id": "https://reddit.com/r/infrastrukturadrogowa/comments/1xfasur/dlaczego_gddkia_i_samorz\u0105dy_wojew\u00f3dztw_nie_chc\u0105",
+      "cluster_id": "cluster-3",
+      "explanation": "Off-topic road governance discussion; no A50 route or Sobienie-Jeziory content.",
+      "final_score": 3.607377049180328,
+      "freshness": 50,
+      "fun_explanation": "Earnest road-policy rant, not a witty line.",
+      "fun_score": 12.0,
+      "item_id": "R1",
+      "local_relevance": 0.08,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "R1",
+            "native_rank": 1,
+            "source": "reddit",
+            "subquery_label": "A50 route"
+          }
+        ],
+        "range_from": "2026-10-10",
+        "range_to": "2026-11-09"
+      },
+      "native_ranks": {
+        "A50 route:reddit": 1
+      },
+      "rerank_score": 5.0,
+      "rrf_score": 0.004098360655737705,
+      "snippet": "W Polsce ostatniego czasu zaobserwowa\u0142em \u017ce pa\u0144stwo i wojew\u00f3dztwa nie chc\u0105 przejmowa\u0107 na siebie dr\u00f3g, w wielu przypadkach trend jest odwroty, i zauwa\u017cy\u0142em \u017ce wojew\u00f3dztwa oddaj\u0105 drogi powiatom i gminom o niepor\u00f3wnywalnie mniejszych dochodach, co wida\u0107 po tym \u017ce drogi te nie s\u0105 od\u015bnie\u017cane lub bardzo s\u0142abo, nawierzchnia jest znacz\u0105co gorsza od dr\u00f3g wojew\u00f3dzkich, o ile Polskie drogi ekspresowe, krajow",
+      "source": "reddit",
+      "source_items": [
+        {
+          "body": "Dlaczego GDDKiA i samorz\u0105dy wojew\u00f3dztw nie chc\u0105 przejmowa\u0107 na siebie dr\u00f3g?\nW Polsce ostatniego czasu zaobserwowa\u0142em \u017ce pa\u0144stwo i wojew\u00f3dztwa nie chc\u0105 przejmowa\u0107 na siebie dr\u00f3g, w wielu przypadkach trend jest odwroty, i zauwa\u017cy\u0142em \u017ce wojew\u00f3dztwa oddaj\u0105 drogi powiatom i gminom o niepor\u00f3wnywalnie mniejszych dochodach, co wida\u0107 po tym \u017ce drogi te nie s\u0105 od\u015bnie\u017cane lub bardzo s\u0142abo, nawierzchnia jest znacz\u0105co gorsza od dr\u00f3g wojew\u00f3dzkich, o ile Polskie drogi ekspresowe, krajowe, wojew\u00f3dzkie (nieco gorzej ni\u017c DK) maj\u0105 w wi\u0119kszo\u015bci dobr\u0105 nawierzchni\u0119 to wiele powiat\u00f3wek do dzi",
+          "container": "infrastrukturadrogowa",
+          "date_confidence": "high",
+          "engagement": {
+            "num_comments": 0,
+            "score": 0
+          },
+          "freshness": 50,
+          "item_id": "R1",
+          "local_rank_score": 0.177,
+          "local_relevance": 0.08,
+          "metadata": {
+            "comment_insights": [],
+            "top_comments": []
+          },
+          "published_at": "2026-10-25",
+          "relevance_hint": 0.0,
+          "snippet": "W Polsce ostatniego czasu zaobserwowa\u0142em \u017ce pa\u0144stwo i wojew\u00f3dztwa nie chc\u0105 przejmowa\u0107 na siebie dr\u00f3g, w wielu przypadkach trend jest odwroty, i zauwa\u017cy\u0142em \u017ce wojew\u00f3dztwa oddaj\u0105 drogi powiatom i gminom o niepor\u00f3wnywalnie mniejszych dochodach, co wida\u0107 po tym \u017ce drogi te nie s\u0105 od\u015bnie\u017cane lub bardzo s\u0142abo, nawierzchnia jest znacz\u0105co gorsza od dr\u00f3g wojew\u00f3dzkich, o ile Polskie drogi ekspresowe, krajow",
+          "source": "reddit",
+          "source_quality": 0.6,
+          "title": "Dlaczego GDDKiA i samorz\u0105dy wojew\u00f3dztw nie chc\u0105 przejmowa\u0107 na siebie dr\u00f3g?",
+          "url": "https://www.reddit.com/r/infrastrukturadrogowa/comments/1xfasur/dlaczego_gddkia_i_samorz\u0105dy_wojew\u00f3dztw_nie_chc\u0105/",
+          "why_relevant": "Reddit RSS"
+        }
+      ],
+      "source_quality": 0.6,
+      "sources": [
+        "reddit"
+      ],
+      "subquery_labels": [
+        "A50 route"
+      ],
+      "title": "Dlaczego GDDKiA i samorz\u0105dy wojew\u00f3dztw nie chc\u0105 przejmowa\u0107 na siebie dr\u00f3g?",
+      "url": "https://www.reddit.com/r/infrastrukturadrogowa/comments/1xfasur/dlaczego_gddkia_i_samorz\u0105dy_wojew\u00f3dztw_nie_chc\u0105/"
+    }
+  ],
+  "source_status": {
+    "grounding": {
+      "at": "2026-11-09T11:25:42.961659Z",
+      "attempted": true,
+      "items_returned": 2,
+      "source": "grounding",
+      "state": "ok"
+    },
+    "reddit": {
+      "at": "2026-11-09T11:25:45.491088Z",
+      "attempted": true,
+      "detail": "2 sub-requests blocked (HTTP 403)",
+      "items_returned": 1,
+      "lane_failure_state": "auth-failed",
+      "source": "reddit",
+      "state": "ok"
+    }
+  },
+  "topic": "obwodnica autostradowa Warszawy A50 przebieg trasy Sobienie-Jeziory",
+  "warnings": [
+    "Evidence is thin for this topic."
+  ]
+}
