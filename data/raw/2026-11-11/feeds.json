@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-11-11T10:52:00.578889+00:00",
+  "feeds": [
+    "https://news.google.com/rss/search?q=%22Sobienie-Jeziory%22+A50&hl=pl&gl=PL&ceid=PL:pl",
+    "https://news.google.com/rss/search?q=%22obwodnica+autostradowa+Warszawy%22&hl=pl&gl=PL&ceid=PL:pl",
+    "https://news.google.com/rss/search?q=A50+przebieg+wariant+autostrada&hl=pl&gl=PL&ceid=PL:pl",
+    "https://www.gddkia.gov.pl/rss/aktualnosci",
+    "https://trakt.eu/oaw-dk92-s7/feed/"
+  ],
+  "rotated_queries": [
+    "OAW GDDKiA warianty konsultacje",
+    "STEŚ obwodnica aglomeracji warszawskiej odcinek wschodni",
+    "przebieg A50 powiat otwocki wariant",
+    "\"Sobienie-Jeziory\" autostrada",
+    "obwodnica Warszawy decyzja środowiskowa RDOŚ"
+  ],
+  "items": []
+}

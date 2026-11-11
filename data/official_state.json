@@ -2,7 +2,7 @@
   "sources": {
     "gddkia-oaw": {
       "url": "https://www.gov.pl/web/gddkia-warszawa/projektujemy-zachodnia-czesc-obwodnicy-aglomeracji-warszawskiej",
-      "checked_at": "2026-11-10T11:06:43+00:00",
+      "checked_at": "2026-11-11T10:52:00+00:00",
       "status": "ok",
       "fingerprint": "2f58602ca8d6e79c",
       "title": "Projektujemy zachodnią część Obwodnicy Aglomeracji Warszawskiej - Generalna Dyrekcja Dróg Krajowych i Autostrad- Oddział Warszawa - Portal Gov.pl",
@@ -12,7 +12,7 @@
     },
     "gddkia-a50s50": {
       "url": "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8",
-      "checked_at": "2026-11-10T11:06:44+00:00",
+      "checked_at": "2026-11-11T10:52:01+00:00",
       "status": "ok",
       "fingerprint": "61fb74167626709f",
       "title": "A50/S50 Obwodnica Aglomeracji Warszawskiej odcinek DK92 - S7 - Generalna Dyrekcja Dróg Krajowych i Autostrad - Portal Gov.pl",
@@ -22,13 +22,13 @@
     },
     "gmina-sobienie": {
       "url": "https://sobieniejeziory.pl/asp/aktualnosci,2",
-      "checked_at": "2026-11-10T11:06:44+00:00",
+      "checked_at": "2026-11-11T10:52:01+00:00",
       "status": "error",
       "error": "HTTP Error 403: Forbidden"
     },
     "rdos-warszawa": {
       "url": "https://www.gov.pl/web/rdos-warszawa",
-      "checked_at": "2026-11-10T11:06:45+00:00",
+      "checked_at": "2026-11-11T10:52:02+00:00",
       "status": "ok",
       "fingerprint": "d332349de246d035",
       "title": "Regionalna Dyrekcja Ochrony Środowiska w Warszawie - Regionalna Dyrekcja Ochrony Środowiska w Warszawie - Portal Gov.pl",

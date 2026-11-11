@@ -3853,6 +3853,153 @@
       },
       "engine_status": "ok",
       "assessment_path": "data/assessments/2026-11-10.json"
+    },
+    {
+      "date": "2026-11-11",
+      "scores": {
+        "north": {
+          "score": 38,
+          "confidence": "niska",
+          "summary": "Nowe dowody nie zawierają żadnego oficjalnego rozstrzygnięcia wariantu dla wschodniego odcinka OAW, a jedynie ogólne zapowiedzi harmonogramu i wystąpienia samorządów oraz parlamentarzystów. Utrzymuję score na poziomie poprzedniej oceny, bo północny pas między wsią Sobienie-Jeziory a doliną Wisły pozostaje hipotezą bez potwierdzenia w dokumentacji GDDKiA.",
+          "rationale": "Dowód [1] potwierdza jedynie, że w październiku 2026 r. GDDKiA wskaże preferowany przebieg zachodniej części OAW, czyli odcinka DK92–S7, a nie wschodniego, który dotyczy gminy Sobienie-Jeziory. Dowód [2] to uchwała gminy Zabrodzie sprzeciwiająca się przebiegowi S50/A50 przez jej teren — sygnał presji samorządowej, ale geograficznie odległy od powiatu otwockiego. Dowody [4] i [5] to wystąpienia sejmowe o charakterze ogólnym oraz postulat mieszkańców powiatu otwockiego zmiany przebiegu na odcinku mostowym, bez wskazania strony gminy ani pasa między wsią a Wisłą. Brak oficjalnego studium, wariantu, raportu OOŚ lub przetargu wskazującego korytarz przez północną część gminy, więc nie ma podstaw do odstąpienia od poprzedniej wartości 38. Materiał jest ubogi i pośredni, stąd confidence niska.",
+          "key_findings": [
+            {
+              "claim": "GDDKiA w październiku 2026 r. ma wskazać preferowany przebieg wyłącznie zachodniej części OAW, więc rozstrzygnięcie dla odcinka wschodniego (gmina Sobienie-Jeziory) pozostaje otwarte.",
+              "evidence_urls": [
+                "https://informacje.wp.pl/motoryzacja/wielkie-inwestycje-drogowe-wokol-warszawy-gddkia-ujawnia-plany-i-terminy-budowy-7339932369226176a"
+              ]
+            },
+            {
+              "claim": "Rada Gminy Zabrodzie przyjęła uchwałę o sprzeciwie wobec przebiegu S50/A50 przez jej teren, co pokazuje skalę oporu samorządów, ale nie dotyczy położenia trasy w gminie Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://samorzad.gov.pl/attachment/d00ee210-cc97-4bc1-90d3-16ccd7a41a2c"
+              ]
+            },
+            {
+              "claim": "Interpelacja nr 22190 opisuje postulat mieszkańców powiatu otwockiego zmiany przebiegu OAW na odcinku mostowym, bez wskazania północnego pasa między wsią Sobienie-Jeziory a doliną Wisły.",
+              "evidence_urls": [
+                "https://www.sejm.gov.pl/Sejm9.nsf/InterpelacjaTresc.xsp?key=BZVARM"
+              ]
+            },
+            {
+              "claim": "Wystąpienie do Marszałka Sejmu wskazuje OAW jako kluczową inwestycję transportową, ale nie zawiera informacji o wariancie przebiegu przez gminę Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://sejm.gov.pl/INT9.nsf/klucz/ATTCV7GYC/%24FILE/i42855-o1.pdf"
+              ]
+            }
+          ],
+          "trend_vs_prev": 0,
+          "score_raw": 38,
+          "evidence_grade": "official",
+          "delta_capped": false,
+          "change_reason": "official: bez zmiany"
+        },
+        "south": {
+          "score": 18,
+          "confidence": "niska",
+          "summary": "Brak nowych dowodów wiążących scenariusz południowy z oficjalnym wariantem OAW; score pozostaje 18%. Materiały dotyczą zachodniej części OAW, innej gminy lub ogólnych deklaracji.",
+          "rationale": "Nowe dowody nie zawierają komunikatu GDDKiA wskazującego wariant przez południową część gminy Sobienie-Jeziory ani przetargu lub studium dla odcinka wschodniego. Materiał o planach GDDKiA dotyczy wskazania preferowanego przebiegu zachodniej części OAW, a uchwała gminy Zabrodzie odnosi się do innego terenu. Interpelacja nr 22190 dotyczy postulatów mieszkańców powiatu otwockiego w sprawie odcinka mostowego, bez wskazania korytarza na południe od wsi Sobienie-Jeziory. Zgodnie z regułą braku istotnych nowych sygnałów utrzymuję score 18%, a confidence pozostaje niska z powodu pośredniości dowodów i braku rozstrzygnięć wariantowych.",
+          "key_findings": [
+            {
+              "claim": "Materiał o planach GDDKiA dotyczy wskazania preferowanego przebiegu zachodniej części OAW, a nie wariantu południowego w gminie Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://informacje.wp.pl/motoryzacja/wielkie-inwestycje-drogowe-wokol-warszawy-gddkia-ujawnia-plany-i-terminy-budowy-7339932369226176a"
+              ]
+            },
+            {
+              "claim": "Uchwała gminy Zabrodzie dotyczy sprzeciwu wobec przebiegu S50/A50 przez Zabrodzie, więc nie wskazuje korytarza na południe od wsi Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://samorzad.gov.pl/attachment/d00ee210-cc97-4bc1-90d3-16ccd7a41a2c"
+              ]
+            },
+            {
+              "claim": "Interpelacja nr 22190 odnosi się do postulatów mieszkańców powiatu otwockiego dotyczących odcinka mostowego, bez wskazania przebiegu przez południową część gminy Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://www.sejm.gov.pl/Sejm9.nsf/InterpelacjaTresc.xsp?key=BZVARM"
+              ]
+            },
+            {
+              "claim": "Ogólne strony GDDKiA o stanie autostrad nie zawierają rozstrzygnięcia wariantu OAW dla gminy Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://www.gov.pl/web/gddkia/autostrady---stan-realizacji2"
+              ]
+            },
+            {
+              "claim": "Pismo sejmowe podkreśla znaczenie OAW, ale nie podaje wariantu przebiegu przez południową część gminy Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://sejm.gov.pl/INT9.nsf/klucz/ATTCV7GYC/%24FILE/i42855-o1.pdf"
+              ]
+            }
+          ],
+          "trend_vs_prev": 0,
+          "score_raw": 18,
+          "evidence_grade": "official",
+          "delta_capped": false,
+          "change_reason": "official: bez zmiany"
+        }
+      },
+      "evidence": [
+        {
+          "title": "Wielkie inwestycje drogowe wokół Warszawy. GDDKiA ujawnia plany i terminy budowy",
+          "url": "https://informacje.wp.pl/motoryzacja/wielkie-inwestycje-drogowe-wokol-warszawy-gddkia-ujawnia-plany-i-terminy-budowy-7339932369226176a",
+          "source": "grounding",
+          "published": "2026-10-14",
+          "snippet": "GDDKiA przygotowuje kolejne inwestycje drogowe wokół Warszawy. Jeszcze w październiku 2026 r. ma wskazać preferowany przebieg zachodniej części Obwodnicy Aglomeracji Warszawskiej (OAW), a pod koniec roku planuje...",
+          "stance": "neutral"
+        },
+        {
+          "title": "w sprawie wyrażenia sprzeciwu wobec proponowanego przebiegu drogi ekspresowej S50/ autostrady A50 - Obwodnicy Aglomeracji Warszawskiej przez teren Gminy Zabrodzie",
+          "url": "https://samorzad.gov.pl/attachment/d00ee210-cc97-4bc1-90d3-16ccd7a41a2c",
+          "source": "exa",
+          "published": "",
+          "snippet": "UCHWAŁA NR …….2025 RADY GMINY ZABRODZIE z dnia ………………… r. w sprawie wyrażenia sprzeciwu wobec proponowanego przebiegu drogi ekspresowej S50/ autostrady A50 - Obwodnicy Aglomeracji Warszawskiej przez teren Gminy Zabrodzie Na podstawie art. 7 ust. 1 pkt 1 i art. 18 ust. 1 ustawy z dnia 8 marca 1990 r. o samorządzie gminnym (t.j. Dz. U. z 2025 r. poz. 1153) uchwala się, co następuje: § 1. 1. W związk",
+          "stance": "neutral"
+        },
+        {
+          "title": "Autostrady - stan realizacji - Generalna Dyrekcja Dróg Krajowych i Autostrad - Portal Gov.pl",
+          "url": "https://www.gov.pl/web/gddkia/autostrady---stan-realizacji2",
+          "source": "exa",
+          "published": "",
+          "snippet": "1950 km liczy sieć autostrad w Polsce, a do osiągnięcia jej docelowej długości brakuje jeszcze ok. 150 km. Złożą się na to dwa odcinki A2 na wschód od Białej Podlaskiej do Dobrynia i Terminala Samochodowego w Koroszczynie oraz A50 omijająca od południa Warszawę. Na A6 pod Szczecinem, w obrębie węzła Kijewo, stare poniemieckie płyty betonowe zastąpiliśmy nową nawierzchnią. Zniknął też stary beton n",
+          "stance": "neutral"
+        },
+        {
+          "title": "Szanowna Pani Elżbieta Witek Marszałek Sejmu Rzeczypospolitej Polskiej",
+          "url": "https://sejm.gov.pl/INT9.nsf/klucz/ATTCV7GYC/%24FILE/i42855-o1.pdf",
+          "source": "exa",
+          "published": "",
+          "snippet": "Zaznaczam, że Obwodnica Aglomeracji Warszawskiej (OAW) to niewątpliwie jedna z kluczowych inwestycji transportowych nie tylko w skali regionu, ale i całego kraju, w związku z czym pragnę podkreślić wagę i potrzebę realizacji tej inwestycji. Wykonane analizy w ramach Studium korytarzowego potwierdziły zasadność realizacji OAW oraz pozwoliły wskazać kierunek dalszego uszczegółowiania w ramach kolejn",
+          "stance": "neutral"
+        },
+        {
+          "title": "Interpelacja nr 22190 - tekst - Sejm Rzeczypospolitej Polskiej",
+          "url": "https://www.sejm.gov.pl/Sejm9.nsf/InterpelacjaTresc.xsp?key=BZVARM",
+          "source": "exa",
+          "published": "",
+          "snippet": "Szanowny Panie Ministrze, mieszkańcy powiatu otwockiego zwrócili się do mnie z prośbą o wsparcie ich działań zmierzających do zmiany przebiegu Obwodnicy Aglomeracji Warszawskiej (OAW) na odcinku most na Wiśle – Mińsk Mazowiecki oraz zmiany charakteru tej drogi ze standardu autostrady (A50) na standard drogi ekspresowej (S50). W ramach studium korytarzowego OAW GDDKiA wybrała do dalszych prac tzw.",
+          "stance": "neutral"
+        }
+      ],
+      "sources_found": 5,
+      "source_funnel": {
+        "fetched": {
+          "engine": 1,
+          "feeds": 0,
+          "agent_reach": 26,
+          "facebook": 0,
+          "official": 0
+        },
+        "fresh": {
+          "engine": 1,
+          "feeds": 0,
+          "agent_reach": 6,
+          "facebook": 0,
+          "official": 0
+        },
+        "merged": 7
+      },
+      "engine_status": "ok",
+      "assessment_path": "data/assessments/2026-11-11.json"
     }
   ]
 }
