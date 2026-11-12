@@ -4000,6 +4000,155 @@
       },
       "engine_status": "ok",
       "assessment_path": "data/assessments/2026-11-11.json"
+    },
+    {
+      "date": "2026-11-12",
+      "scores": {
+        "north": {
+          "score": 37,
+          "confidence": "niska",
+          "summary": "Brak jakiegokolwiek oficjalnego wariantu przebiegu po wschodniej stronie Wisły, a lokalne źródło wprost zaprzecza istnieniu osi trasy, miejsca mostu czy numerów działek. Scenariusz północny — przez tereny zalewowe i Naturę 2000 między wsią a doliną Wisły — pozostaje hipotezą bez potwierdzenia w dokumentach GDDKiA.",
+          "rationale": "Score utrzymuję blisko poprzedniej oceny (38), obniżając nieznacznie do 37, ponieważ nowe dowody nie zawierają żadnego oficjalnego wskazania korytarza po północnej stronie gminy. Dowód [2] wprost stwierdza, że dla wschodniej strony Wisły nie istnieje ani jeden wariant przebiegu — nie ma osi trasy, miejsca mostu ani numerów działek, co jest argumentem przeciw podnoszeniu oceny jakiegokolwiek konkretnego scenariusza. Uchwała gminy Zabrodzie [1] oraz wystąpienia sejmowe [4] i [5] dotyczą sprzeciwów i ogólnego priorytetu OAW, a nie wariantu w gminie Sobienie-Jeziory; interpelacja [5] sygnalizuje jedynie presję na zmianę przebiegu na odcinku mostowym w powiecie otwockim, bez wskazania strony. Dowód [6] potwierdza, że dokumenty planistyczne pokazują wyłącznie poszerzone korytarze bez wariantowania, więc rozstrzygnięcie kierunku (północ vs południe od wsi) pozostaje otwarte. Scenariusz północny dodatkowo koliduje z obszarem Natura 2000 Dolina Środkowej Wisły i terenami zalewowymi, co przy braku decyzji środowiskowej każe trzymać ocenę poniżej kotwicy 45%.",
+          "key_findings": [
+            {
+              "claim": "Dla wschodniej strony Wisły nie istnieje ani jeden wariant przebiegu A50 — brak osi trasy, miejsca mostu i numerów działek, co osłabia przypisanie trasie konkretnej strony gminy.",
+              "evidence_urls": [
+                "https://sobienie.pl/a50"
+              ]
+            },
+            {
+              "claim": "Rada Gminy Zabrodzie przyjęła uchwałę wyrażającą sprzeciw wobec proponowanego przebiegu S50/A50 przez jej teren — presja samorządowa rozszerza się, ale geograficznie nie dotyczy północnej części gminy Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://samorzad.gov.pl/attachment/d00ee210-cc97-4bc1-90d3-16ccd7a41a2c"
+              ]
+            },
+            {
+              "claim": "Interpelacja poselska w sprawie OAW wskazuje na postulaty mieszkańców powiatu otwockiego dotyczące zmiany przebiegu na odcinku mostowym, bez rozstrzygnięcia kierunku względem wsi Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://www.sejm.gov.pl/Sejm9.nsf/InterpelacjaTresc.xsp?key=BZVARM"
+              ]
+            },
+            {
+              "claim": "Dokumenty planistyczne OAW przedstawiają wyłącznie poszerzone korytarze drogowe bez wariantowania przebiegów, więc wybór między stronami gminy nie został jeszcze dokonany.",
+              "evidence_urls": [
+                "https://www.bip.powiat-otwocki.pl/plik,22845,projekt-stanowiska-w-sprawie-strategicznego-studium-lokalizacyjnego-inwestycji-centralnego-portu-komunikacyjnego-wraz-z-prognoza-oddzialywania-na-srodowisko.pdf"
+              ]
+            }
+          ],
+          "trend_vs_prev": -1,
+          "score_raw": 37,
+          "evidence_grade": "official",
+          "delta_capped": false,
+          "change_reason": "official: 38% → 37%"
+        },
+        "south": {
+          "score": 18,
+          "confidence": "niska",
+          "summary": "Brak nowego oficjalnego sygnału o wariancie prowadzącym przez południową część gminy Sobienie-Jeziory. Źródło lokalne wprost wskazuje, że dla wschodniej strony Wisły nie ma jeszcze żadnego wariantu przebiegu.",
+          "rationale": "Utrzymuję score 18, czyli poniżej kotwicy 28, ponieważ nowe dowody nie zawierają komunikatu GDDKiA, przetargu ani studium wskazującego korytarz przez południową część gminy. Dowód [2] potwierdza, że dla wschodniej strony Wisły nie istnieje oficjalny wariant, oś trasy, miejsce mostu ani numery działek. Uchwała gminy Zabrodzie [1] dotyczy innego terenu, a interpelacja nr 22190 [5] odnosi się do postulatów mieszkańców powiatu otwockiego bez wskazania wariantu przez Sobienie-Jeziory. Materiał GDDKiA [3] ma charakter ogólny i nie rozstrzyga przebiegu OAW w tej gminie.",
+          "key_findings": [
+            {
+              "claim": "Dla wschodniej strony Wisły nie istnieje oficjalny wariant przebiegu A50; nie ma osi trasy, miejsca mostu ani numerów działek.",
+              "evidence_urls": [
+                "https://sobienie.pl/a50"
+              ]
+            },
+            {
+              "claim": "Uchwała gminy Zabrodzie dotyczy sprzeciwu wobec S50/A50 na terenie tej gminy, a nie Sobienie-Jezior.",
+              "evidence_urls": [
+                "https://samorzad.gov.pl/attachment/d00ee210-cc97-4bc1-90d3-16ccd7a41a2c"
+              ]
+            },
+            {
+              "claim": "Interpelacja nr 22190 odnosi się do postulatów mieszkańców powiatu otwockiego o zmianę przebiegu OAW na odcinku mostowym, bez wskazania wariantu przez południe gminy Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://www.sejm.gov.pl/Sejm9.nsf/InterpelacjaTresc.xsp?key=BZVARM"
+              ]
+            },
+            {
+              "claim": "Materiał GDDKiA o stanie realizacji autostrad nie wskazuje wariantu OAW dla gminy Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://www.gov.pl/web/gddkia/autostrady---stan-realizacji2"
+              ]
+            }
+          ],
+          "trend_vs_prev": 0,
+          "score_raw": 18,
+          "evidence_grade": "official",
+          "delta_capped": false,
+          "change_reason": "official: bez zmiany"
+        }
+      },
+      "evidence": [
+        {
+          "title": "w sprawie wyrażenia sprzeciwu wobec proponowanego przebiegu drogi ekspresowej S50/ autostrady A50 - Obwodnicy Aglomeracji Warszawskiej przez teren Gminy Zabrodzie",
+          "url": "https://samorzad.gov.pl/attachment/d00ee210-cc97-4bc1-90d3-16ccd7a41a2c",
+          "source": "exa",
+          "published": "",
+          "snippet": "UCHWAŁA NR …….2025 RADY GMINY ZABRODZIE z dnia ………………… r. w sprawie wyrażenia sprzeciwu wobec proponowanego przebiegu drogi ekspresowej S50/ autostrady A50 - Obwodnicy Aglomeracji Warszawskiej przez teren Gminy Zabrodzie Na podstawie art. 7 ust. 1 pkt 1 i art. 18 ust. 1 ustawy z dnia 8 marca 1990 r. o samorządzie gminnym (t.j. Dz. U. z 2025 r. poz. 1153) uchwala się, co następuje: § 1. 1. W związk",
+          "stance": "neutral"
+        },
+        {
+          "title": "A50 a gmina Sobienie-Jeziory — co naprawdę wiadomo | Sobienie.pl",
+          "url": "https://sobienie.pl/a50",
+          "source": "exa",
+          "published": "",
+          "snippet": "### Czy wiadomo, którędy A50 pójdzie przez naszą gminę? NIE Dla wschodniej strony Wisły nie istnieje ani jeden wariant przebiegu. Nie ma osi trasy, nie ma miejsca mostu, nie ma numerów działek. Nie ma też firmy, która by je rysowała — przetarg na dokumentację jeszcze nie został ogłoszony. Z geografii. Obwodnica Aglomeracji Warszawskiej to zewnętrzny pierścień wokół stolicy: na północy droga ekspre",
+          "stance": "neutral"
+        },
+        {
+          "title": "Autostrady - stan realizacji - Generalna Dyrekcja Dróg Krajowych i Autostrad - Portal Gov.pl",
+          "url": "https://www.gov.pl/web/gddkia/autostrady---stan-realizacji2",
+          "source": "exa",
+          "published": "",
+          "snippet": "1950 km liczy sieć autostrad w Polsce, a do osiągnięcia jej docelowej długości brakuje jeszcze ok. 150 km. Złożą się na to dwa odcinki A2 na wschód od Białej Podlaskiej do Dobrynia i Terminala Samochodowego w Koroszczynie oraz A50 omijająca od południa Warszawę. Na A6 pod Szczecinem, w obrębie węzła Kijewo, stare poniemieckie płyty betonowe zastąpiliśmy nową nawierzchnią. Zniknął też stary beton n",
+          "stance": "neutral"
+        },
+        {
+          "title": "Szanowna Pani Elżbieta Witek Marszałek Sejmu Rzeczypospolitej Polskiej",
+          "url": "https://sejm.gov.pl/INT9.nsf/klucz/ATTCV7GYC/%24FILE/i42855-o1.pdf",
+          "source": "exa",
+          "published": "",
+          "snippet": "Zaznaczam, że Obwodnica Aglomeracji Warszawskiej (OAW) to niewątpliwie jedna z kluczowych inwestycji transportowych nie tylko w skali regionu, ale i całego kraju, w związku z czym pragnę podkreślić wagę i potrzebę realizacji tej inwestycji. Wykonane analizy w ramach Studium korytarzowego potwierdziły zasadność realizacji OAW oraz pozwoliły wskazać kierunek dalszego uszczegółowiania w ramach kolejn",
+          "stance": "neutral"
+        },
+        {
+          "title": "Interpelacja nr 22190 - tekst - Sejm Rzeczypospolitej Polskiej",
+          "url": "https://www.sejm.gov.pl/Sejm9.nsf/InterpelacjaTresc.xsp?key=BZVARM",
+          "source": "exa",
+          "published": "",
+          "snippet": "Szanowny Panie Ministrze, mieszkańcy powiatu otwockiego zwrócili się do mnie z prośbą o wsparcie ich działań zmierzających do zmiany przebiegu Obwodnicy Aglomeracji Warszawskiej (OAW) na odcinku most na Wiśle – Mińsk Mazowiecki oraz zmiany charakteru tej drogi ze standardu autostrady (A50) na standard drogi ekspresowej (S50). W ramach studium korytarzowego OAW GDDKiA wybrała do dalszych prac tzw.",
+          "stance": "neutral"
+        },
+        {
+          "title": "4.,Projekt stanowiska w sprawie Strategicznegoi Studium Lokalizacyjnego Inwestycji Centralnego Portu Komunikacyjnego - A50 - grudzień 2020",
+          "url": "https://www.bip.powiat-otwocki.pl/plik,22845,projekt-stanowiska-w-sprawie-strategicznego-studium-lokalizacyjnego-inwestycji-centralnego-portu-komunikacyjnego-wraz-z-prognoza-oddzialywania-na-srodowisko.pdf",
+          "source": "exa",
+          "published": "",
+          "snippet": "1. Przedstawione do uzgodnień dokumenty SSL CPK w zakresie infrastruktury drogowej przedstawiają jedynie poszerzone korytarze drogowe bez wariantowania planowanych przebiegów Obwodnicy Aglomeracji Warszawskiej (OAW), przez co nie jest możliwym odniesienie się do poszczególnych wariantów i zbadania ich wpływu na powiat otwocki i środowisko naturalne. 2. W zakresie ograniczenia hałasu wnioskujemy o",
+          "stance": "neutral"
+        }
+      ],
+      "sources_found": 6,
+      "source_funnel": {
+        "fetched": {
+          "engine": 0,
+          "feeds": 0,
+          "agent_reach": 26,
+          "facebook": 0,
+          "official": 0
+        },
+        "fresh": {
+          "engine": 0,
+          "feeds": 0,
+          "agent_reach": 7,
+          "facebook": 0,
+          "official": 0
+        },
+        "merged": 7
+      },
+      "engine_status": "ok",
+      "assessment_path": "data/assessments/2026-11-12.json"
     }
   ]
 }
