@@ -1,0 +1,472 @@
+{
+  "artifacts": {
+    "corpus_in_export": false,
+    "grounding": [
+      {
+        "label": "brave",
+        "resultCount": 5,
+        "webSearchQueries": [
+          "A50 obwodnica Warszawy przebieg trasy"
+        ]
+      }
+    ],
+    "hiring_signals_mode": false,
+    "plan_source": "llm",
+    "pre_research_flags_present": false,
+    "resolved": {
+      "context": "",
+      "entity": "obwodnica autostradowa Warszawy A50 przebieg trasy Sobienie-Jeziory",
+      "github_repos": [],
+      "github_user": "",
+      "subreddits": [],
+      "trustpilot_domain": "",
+      "x_handle": ""
+    }
+  },
+  "clusters": [
+    {
+      "candidate_ids": [
+        "https://tematwarszawa.pl/news/trasa-n-s-wola-polczynska-gorczewska"
+      ],
+      "cluster_id": "cluster-1",
+      "representative_ids": [
+        "https://tematwarszawa.pl/news/trasa-n-s-wola-polczynska-gorczewska"
+      ],
+      "score": 36.3484375,
+      "sources": [
+        "grounding"
+      ],
+      "title": "Trasa N-S na Woli bez terminu budowy. Co dalej?"
+    },
+    {
+      "candidate_ids": [
+        "https://e-sochaczew.pl/artykul/trasa-s50--decyzje-n2572991"
+      ],
+      "cluster_id": "cluster-2",
+      "representative_ids": [
+        "https://e-sochaczew.pl/artykul/trasa-s50--decyzje-n2572991"
+      ],
+      "score": 28.05409836065574,
+      "sources": [
+        "grounding"
+      ],
+      "title": "Trasa S50 - decyzj\u0119 o jej przebiegu przez powiat sochaczewski poznamy dopiero w po\u0142owie grudnia - wiadomo\u015bci"
+    },
+    {
+      "candidate_ids": [
+        "https://informacje.wp.pl/motoryzacja/wielkie-inwestycje-drogowe-wokol-warszawy-gddkia-ujawnia-plany-i-terminy-budowy-7339932369226176a"
+      ],
+      "cluster_id": "cluster-3",
+      "representative_ids": [
+        "https://informacje.wp.pl/motoryzacja/wielkie-inwestycje-drogowe-wokol-warszawy-gddkia-ujawnia-plany-i-terminy-budowy-7339932369226176a"
+      ],
+      "score": 23.017741935483873,
+      "sources": [
+        "grounding"
+      ],
+      "title": "Wielkie inwestycje drogowe wok\u00f3\u0142 Warszawy. GDDKiA ujawnia plany i terminy budowy"
+    },
+    {
+      "candidate_ids": [
+        "https://inzynieria.com/drogi/artykuly/101717,nowy-uklad-drogowy-wokol-stolicy"
+      ],
+      "cluster_id": "cluster-4",
+      "representative_ids": [
+        "https://inzynieria.com/drogi/artykuly/101717,nowy-uklad-drogowy-wokol-stolicy"
+      ],
+      "score": 21.582539682539682,
+      "sources": [
+        "grounding"
+      ],
+      "title": "Nowy uk\u0142ad drogowy wok\u00f3\u0142 stolicy - In\u017cynieria.com"
+    }
+  ],
+  "errors_by_source": {
+    "reddit": "HTTP 403: Forbidden"
+  },
+  "freshness_verdicts": [],
+  "generated_at": "2026-11-13T10:54:28.435328+00:00",
+  "items_by_source": {
+    "grounding": [
+      {
+        "body": "Trasa S50 - decyzj\u0119 o jej przebiegu przez powiat sochaczewski poznamy dopiero w po\u0142owie grudnia - wiadomo\u015bci\nPrzypomnijmy, \u017ce trasa S50 ma stanowi\u0107 fragment Obwodnicy Aglomeracji Warszawskiej i jednocze\u015bnie drogi prowadz\u0105cej do budowanego w Baranowie lotniska. Ca\u0142a OAW o d\u0142ugo\u015bci oko\u0142o 300 kilometr\u00f3w ma zosta\u0107 wybudowana w ci\u0105gu oko\u0142o dziesi\u0119ciu lat. Jednak w pierwszej kolejno\u015bci planowana jest budowa zachodniego i po\u0142udniowego odcinka, czyli tych fragment\u00f3w, kt\u00f3re b\u0119d\u0105 przebiega\u0142y mi\u0119dzy innymi przez teren naszego powiatu.",
+        "container": "e-sochaczew.pl",
+        "date_confidence": "high",
+        "engagement": {},
+        "freshness": 78,
+        "item_id": "WB5",
+        "local_rank_score": 0.312,
+        "local_relevance": 0.18,
+        "metadata": {},
+        "published_at": "2026-11-09",
+        "relevance_hint": 0.8,
+        "snippet": "Przypomnijmy, \u017ce trasa S50 ma stanowi\u0107 fragment Obwodnicy Aglomeracji Warszawskiej i jednocze\u015bnie drogi prowadz\u0105cej do budowanego w Baranowie lotniska. Ca\u0142a OAW o d\u0142ugo\u015bci oko\u0142o 300 kilometr\u00f3w ma zosta\u0107 wybudowana w ci\u0105gu oko\u0142o dziesi\u0119ciu lat. Jednak w pierwszej kolejno\u015bci planowana jest budowa zachodniego i po\u0142udniowego odcinka, czyli tych fragment\u00f3w, kt\u00f3re b\u0119d\u0105 przebiega\u0142y mi\u0119dzy innymi przez teren naszego powiatu.",
+        "source": "grounding",
+        "source_quality": 0.6,
+        "title": "Trasa S50 - decyzj\u0119 o jej przebiegu przez powiat sochaczewski poznamy dopiero w po\u0142owie grudnia - wiadomo\u015bci",
+        "url": "https://e-sochaczew.pl/artykul/trasa-s50--decyzje-n2572991",
+        "why_relevant": "Brave web search"
+      },
+      {
+        "body": "Wielkie inwestycje drogowe wok\u00f3\u0142 Warszawy. GDDKiA ujawnia plany i terminy budowy\nDokumentacja ma by\u0107 gotowa w 2030 r. Nie jest to jednak termin oddania obwodnicy do ruchu. Trasa pozostaje na etapie przygotowawczym, a jej ostateczny przebieg nie zosta\u0142 jeszcze ustalony. Najbardziej zaawansowane prace nad OAW dotycz\u0105 jej zachodniej cz\u0119\u015bci: odcink\u00f3w od S10 do DK92 oraz od DK92 do S7 na po\u0142udnie od Warszawy.",
+        "container": "informacje.wp.pl",
+        "date_confidence": "high",
+        "engagement": {},
+        "freshness": 10,
+        "item_id": "WB1",
+        "local_rank_score": 0.29150000000000004,
+        "local_relevance": 0.41,
+        "metadata": {},
+        "published_at": "2026-10-14",
+        "relevance_hint": 0.8,
+        "snippet": "Dokumentacja ma by\u0107 gotowa w 2030 r. Nie jest to jednak termin oddania obwodnicy do ruchu. Trasa pozostaje na etapie przygotowawczym, a jej ostateczny przebieg nie zosta\u0142 jeszcze ustalony. Najbardziej zaawansowane prace nad OAW dotycz\u0105 jej zachodniej cz\u0119\u015bci: odcink\u00f3w od S10 do DK92 oraz od DK92 do S7 na po\u0142udnie od Warszawy.",
+        "source": "grounding",
+        "source_quality": 0.6,
+        "title": "Wielkie inwestycje drogowe wok\u00f3\u0142 Warszawy. GDDKiA ujawnia plany i terminy budowy",
+        "url": "https://informacje.wp.pl/motoryzacja/wielkie-inwestycje-drogowe-wokol-warszawy-gddkia-ujawnia-plany-i-terminy-budowy-7339932369226176a",
+        "why_relevant": "Brave web search"
+      },
+      {
+        "body": "Nowy uk\u0142ad drogowy wok\u00f3\u0142 stolicy - In\u017cynieria.com\nZ tekstu dowiesz si\u0119: jakie warianty przebiegu zachodniej cz\u0119\u015bci OAW s\u0105 obecnie analizowane, kt\u00f3re kluczowe trasy ma po\u0142\u0105czy\u0107 przysz\u0142y uk\u0142ad drogowy wok\u00f3\u0142 Warszawy, jakie s\u0105 kolejne etapy przygotowania inwestycji i kiedy planowany jest wniosek o decyzj\u0119 \u015brodowiskow\u0105.",
+        "container": "inzynieria.com",
+        "date_confidence": "high",
+        "engagement": {},
+        "freshness": 14,
+        "item_id": "WB3",
+        "local_rank_score": 0.2235,
+        "local_relevance": 0.29,
+        "metadata": {},
+        "published_at": "2026-10-16",
+        "relevance_hint": 0.8,
+        "snippet": "Z tekstu dowiesz si\u0119: jakie warianty przebiegu zachodniej cz\u0119\u015bci OAW s\u0105 obecnie analizowane, kt\u00f3re kluczowe trasy ma po\u0142\u0105czy\u0107 przysz\u0142y uk\u0142ad drogowy wok\u00f3\u0142 Warszawy, jakie s\u0105 kolejne etapy przygotowania inwestycji i kiedy planowany jest wniosek o decyzj\u0119 \u015brodowiskow\u0105.",
+        "source": "grounding",
+        "source_quality": 0.6,
+        "title": "Nowy uk\u0142ad drogowy wok\u00f3\u0142 stolicy - In\u017cynieria.com",
+        "url": "https://inzynieria.com/drogi/artykuly/101717,nowy-uklad-drogowy-wokol-stolicy",
+        "why_relevant": "Brave web search"
+      },
+      {
+        "body": "Trasa N-S na Woli bez terminu budowy. Co dalej?\nOsobnym, znacznie wi\u0119kszym przedsi\u0119wzi\u0119ciem jest Obwodnica Aglomeracji Warszawskiej (OAW), planowana jako zewn\u0119trzny pier\u015bcie\u0144 drogowy, obejmuj\u0105cy mi\u0119dzy innymi trasy A50 i S50. Ma ona przebiega\u0107 dalej od centrum i przejmowa\u0107 przede wszystkim ruch tranzytowy, kt\u00f3rego celem nie jest stolica.",
+        "container": "tematwarszawa.pl",
+        "date_confidence": "high",
+        "engagement": {},
+        "freshness": 42,
+        "item_id": "WB2",
+        "local_rank_score": 0.22199999999999998,
+        "local_relevance": 0.18,
+        "metadata": {},
+        "published_at": "2026-10-26",
+        "relevance_hint": 0.8,
+        "snippet": "Osobnym, znacznie wi\u0119kszym przedsi\u0119wzi\u0119ciem jest Obwodnica Aglomeracji Warszawskiej (OAW), planowana jako zewn\u0119trzny pier\u015bcie\u0144 drogowy, obejmuj\u0105cy mi\u0119dzy innymi trasy A50 i S50. Ma ona przebiega\u0107 dalej od centrum i przejmowa\u0107 przede wszystkim ruch tranzytowy, kt\u00f3rego celem nie jest stolica.",
+        "source": "grounding",
+        "source_quality": 0.6,
+        "title": "Trasa N-S na Woli bez terminu budowy. Co dalej?",
+        "url": "https://tematwarszawa.pl/news/trasa-n-s-wola-polczynska-gorczewska/",
+        "why_relevant": "Brave web search"
+      }
+    ],
+    "reddit": []
+  },
+  "library_context": [],
+  "provider_runtime": {
+    "planner_model": "cline-pass/deepseek-v4.1-flash-1017",
+    "reasoning_provider": "cline",
+    "rerank_model": "cline-pass/deepseek-v4.1-flash-1017"
+  },
+  "query_plan": {
+    "cluster_mode": "none",
+    "freshness_mode": "balanced_recent",
+    "intent": "factual",
+    "notes": [
+      "Polish-language infrastructure query; prioritize official/grounding sources for route details.",
+      "Hacker News is low-weight because the topic is local Polish road planning."
+    ],
+    "raw_topic": "obwodnica autostradowa Warszawy A50 przebieg trasy Sobienie-Jeziory",
+    "source_weights": {
+      "grounding": 0.55,
+      "hackernews": 0.05,
+      "reddit": 0.25,
+      "youtube": 0.15
+    },
+    "subqueries": [
+      {
+        "label": "A50 route",
+        "ranking_query": "Jaki jest planowany przebieg obwodnicy autostradowej Warszawy A50?",
+        "search_query": "A50 obwodnica Warszawy przebieg trasy",
+        "sources": [
+          "grounding",
+          "reddit"
+        ],
+        "weight": 1.0
+      }
+    ]
+  },
+  "range_from": "2026-10-14",
+  "range_to": "2026-11-13",
+  "ranked_candidates": [
+    {
+      "candidate_id": "https://tematwarszawa.pl/news/trasa-n-s-wola-polczynska-gorczewska",
+      "cluster_id": "cluster-1",
+      "explanation": "Mentions A50 as part of OAW, but does not describe the A50 route or Sobienie-Jeziory.",
+      "final_score": 36.3484375,
+      "freshness": 42,
+      "fun_explanation": "Dry planning update; no punchline or wit.",
+      "fun_score": 4.0,
+      "item_id": "WB2",
+      "local_relevance": 0.18,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "WB2",
+            "native_rank": 4,
+            "source": "grounding",
+            "subquery_label": "A50 route"
+          }
+        ],
+        "range_from": "2026-10-14",
+        "range_to": "2026-11-13"
+      },
+      "native_ranks": {
+        "A50 route:grounding": 4
+      },
+      "rerank_score": 45.0,
+      "rrf_score": 0.00859375,
+      "snippet": "Osobnym, znacznie wi\u0119kszym przedsi\u0119wzi\u0119ciem jest Obwodnica Aglomeracji Warszawskiej (OAW), planowana jako zewn\u0119trzny pier\u015bcie\u0144 drogowy, obejmuj\u0105cy mi\u0119dzy innymi trasy A50 i S50. Ma ona przebiega\u0107 dalej od centrum i przejmowa\u0107 przede wszystkim ruch tranzytowy, kt\u00f3rego celem nie jest stolica.",
+      "source": "grounding",
+      "source_items": [
+        {
+          "body": "Trasa N-S na Woli bez terminu budowy. Co dalej?\nOsobnym, znacznie wi\u0119kszym przedsi\u0119wzi\u0119ciem jest Obwodnica Aglomeracji Warszawskiej (OAW), planowana jako zewn\u0119trzny pier\u015bcie\u0144 drogowy, obejmuj\u0105cy mi\u0119dzy innymi trasy A50 i S50. Ma ona przebiega\u0107 dalej od centrum i przejmowa\u0107 przede wszystkim ruch tranzytowy, kt\u00f3rego celem nie jest stolica.",
+          "container": "tematwarszawa.pl",
+          "date_confidence": "high",
+          "engagement": {},
+          "freshness": 42,
+          "item_id": "WB2",
+          "local_rank_score": 0.22199999999999998,
+          "local_relevance": 0.18,
+          "metadata": {},
+          "published_at": "2026-10-26",
+          "relevance_hint": 0.8,
+          "snippet": "Osobnym, znacznie wi\u0119kszym przedsi\u0119wzi\u0119ciem jest Obwodnica Aglomeracji Warszawskiej (OAW), planowana jako zewn\u0119trzny pier\u015bcie\u0144 drogowy, obejmuj\u0105cy mi\u0119dzy innymi trasy A50 i S50. Ma ona przebiega\u0107 dalej od centrum i przejmowa\u0107 przede wszystkim ruch tranzytowy, kt\u00f3rego celem nie jest stolica.",
+          "source": "grounding",
+          "source_quality": 0.6,
+          "title": "Trasa N-S na Woli bez terminu budowy. Co dalej?",
+          "url": "https://tematwarszawa.pl/news/trasa-n-s-wola-polczynska-gorczewska/",
+          "why_relevant": "Brave web search"
+        }
+      ],
+      "source_quality": 0.6,
+      "sources": [
+        "grounding"
+      ],
+      "subquery_labels": [
+        "A50 route"
+      ],
+      "title": "Trasa N-S na Woli bez terminu budowy. Co dalej?",
+      "url": "https://tematwarszawa.pl/news/trasa-n-s-wola-polczynska-gorczewska/"
+    },
+    {
+      "candidate_id": "https://e-sochaczew.pl/artykul/trasa-s50--decyzje-n2572991",
+      "cluster_id": "cluster-2",
+      "explanation": "Mentions S50 and OAW, but not A50 or the Sobienie-Jeziory route; off-target for the primary entity.",
+      "final_score": 28.05409836065574,
+      "freshness": 78,
+      "fun_explanation": "Straight infrastructure news with no humorous angle.",
+      "fun_score": 3.0,
+      "item_id": "WB5",
+      "local_relevance": 0.18,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "WB5",
+            "native_rank": 1,
+            "source": "grounding",
+            "subquery_label": "A50 route"
+          }
+        ],
+        "range_from": "2026-10-14",
+        "range_to": "2026-11-13"
+      },
+      "native_ranks": {
+        "A50 route:grounding": 1
+      },
+      "rerank_score": 25.0,
+      "rrf_score": 0.009016393442622951,
+      "snippet": "Przypomnijmy, \u017ce trasa S50 ma stanowi\u0107 fragment Obwodnicy Aglomeracji Warszawskiej i jednocze\u015bnie drogi prowadz\u0105cej do budowanego w Baranowie lotniska. Ca\u0142a OAW o d\u0142ugo\u015bci oko\u0142o 300 kilometr\u00f3w ma zosta\u0107 wybudowana w ci\u0105gu oko\u0142o dziesi\u0119ciu lat. Jednak w pierwszej kolejno\u015bci planowana jest budowa zachodniego i po\u0142udniowego odcinka, czyli tych fragment\u00f3w, kt\u00f3re b\u0119d\u0105 przebiega\u0142y mi\u0119dzy innymi przez teren naszego powiatu.",
+      "source": "grounding",
+      "source_items": [
+        {
+          "body": "Trasa S50 - decyzj\u0119 o jej przebiegu przez powiat sochaczewski poznamy dopiero w po\u0142owie grudnia - wiadomo\u015bci\nPrzypomnijmy, \u017ce trasa S50 ma stanowi\u0107 fragment Obwodnicy Aglomeracji Warszawskiej i jednocze\u015bnie drogi prowadz\u0105cej do budowanego w Baranowie lotniska. Ca\u0142a OAW o d\u0142ugo\u015bci oko\u0142o 300 kilometr\u00f3w ma zosta\u0107 wybudowana w ci\u0105gu oko\u0142o dziesi\u0119ciu lat. Jednak w pierwszej kolejno\u015bci planowana jest budowa zachodniego i po\u0142udniowego odcinka, czyli tych fragment\u00f3w, kt\u00f3re b\u0119d\u0105 przebiega\u0142y mi\u0119dzy innymi przez teren naszego powiatu.",
+          "container": "e-sochaczew.pl",
+          "date_confidence": "high",
+          "engagement": {},
+          "freshness": 78,
+          "item_id": "WB5",
+          "local_rank_score": 0.312,
+          "local_relevance": 0.18,
+          "metadata": {},
+          "published_at": "2026-11-09",
+          "relevance_hint": 0.8,
+          "snippet": "Przypomnijmy, \u017ce trasa S50 ma stanowi\u0107 fragment Obwodnicy Aglomeracji Warszawskiej i jednocze\u015bnie drogi prowadz\u0105cej do budowanego w Baranowie lotniska. Ca\u0142a OAW o d\u0142ugo\u015bci oko\u0142o 300 kilometr\u00f3w ma zosta\u0107 wybudowana w ci\u0105gu oko\u0142o dziesi\u0119ciu lat. Jednak w pierwszej kolejno\u015bci planowana jest budowa zachodniego i po\u0142udniowego odcinka, czyli tych fragment\u00f3w, kt\u00f3re b\u0119d\u0105 przebiega\u0142y mi\u0119dzy innymi przez teren naszego powiatu.",
+          "source": "grounding",
+          "source_quality": 0.6,
+          "title": "Trasa S50 - decyzj\u0119 o jej przebiegu przez powiat sochaczewski poznamy dopiero w po\u0142owie grudnia - wiadomo\u015bci",
+          "url": "https://e-sochaczew.pl/artykul/trasa-s50--decyzje-n2572991",
+          "why_relevant": "Brave web search"
+        }
+      ],
+      "source_quality": 0.6,
+      "sources": [
+        "grounding"
+      ],
+      "subquery_labels": [
+        "A50 route"
+      ],
+      "title": "Trasa S50 - decyzj\u0119 o jej przebiegu przez powiat sochaczewski poznamy dopiero w po\u0142owie grudnia - wiadomo\u015bci",
+      "url": "https://e-sochaczew.pl/artykul/trasa-s50--decyzje-n2572991"
+    },
+    {
+      "candidate_id": "https://informacje.wp.pl/motoryzacja/wielkie-inwestycje-drogowe-wokol-warszawy-gddkia-ujawnia-plany-i-terminy-budowy-7339932369226176a",
+      "cluster_id": "cluster-3",
+      "explanation": "Discusses OAW plans and timing, but does not mention A50 or the Sobienie-Jeziory route.",
+      "final_score": 23.017741935483873,
+      "freshness": 10,
+      "fun_explanation": "Slightly more engaging headline, but still official road-planning content.",
+      "fun_score": 6.0,
+      "item_id": "WB1",
+      "local_relevance": 0.41,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "WB1",
+            "native_rank": 2,
+            "source": "grounding",
+            "subquery_label": "A50 route"
+          }
+        ],
+        "range_from": "2026-10-14",
+        "range_to": "2026-11-13"
+      },
+      "native_ranks": {
+        "A50 route:grounding": 2
+      },
+      "rerank_score": 28.0,
+      "rrf_score": 0.008870967741935484,
+      "snippet": "Dokumentacja ma by\u0107 gotowa w 2030 r. Nie jest to jednak termin oddania obwodnicy do ruchu. Trasa pozostaje na etapie przygotowawczym, a jej ostateczny przebieg nie zosta\u0142 jeszcze ustalony. Najbardziej zaawansowane prace nad OAW dotycz\u0105 jej zachodniej cz\u0119\u015bci: odcink\u00f3w od S10 do DK92 oraz od DK92 do S7 na po\u0142udnie od Warszawy.",
+      "source": "grounding",
+      "source_items": [
+        {
+          "body": "Wielkie inwestycje drogowe wok\u00f3\u0142 Warszawy. GDDKiA ujawnia plany i terminy budowy\nDokumentacja ma by\u0107 gotowa w 2030 r. Nie jest to jednak termin oddania obwodnicy do ruchu. Trasa pozostaje na etapie przygotowawczym, a jej ostateczny przebieg nie zosta\u0142 jeszcze ustalony. Najbardziej zaawansowane prace nad OAW dotycz\u0105 jej zachodniej cz\u0119\u015bci: odcink\u00f3w od S10 do DK92 oraz od DK92 do S7 na po\u0142udnie od Warszawy.",
+          "container": "informacje.wp.pl",
+          "date_confidence": "high",
+          "engagement": {},
+          "freshness": 10,
+          "item_id": "WB1",
+          "local_rank_score": 0.29150000000000004,
+          "local_relevance": 0.41,
+          "metadata": {},
+          "published_at": "2026-10-14",
+          "relevance_hint": 0.8,
+          "snippet": "Dokumentacja ma by\u0107 gotowa w 2030 r. Nie jest to jednak termin oddania obwodnicy do ruchu. Trasa pozostaje na etapie przygotowawczym, a jej ostateczny przebieg nie zosta\u0142 jeszcze ustalony. Najbardziej zaawansowane prace nad OAW dotycz\u0105 jej zachodniej cz\u0119\u015bci: odcink\u00f3w od S10 do DK92 oraz od DK92 do S7 na po\u0142udnie od Warszawy.",
+          "source": "grounding",
+          "source_quality": 0.6,
+          "title": "Wielkie inwestycje drogowe wok\u00f3\u0142 Warszawy. GDDKiA ujawnia plany i terminy budowy",
+          "url": "https://informacje.wp.pl/motoryzacja/wielkie-inwestycje-drogowe-wokol-warszawy-gddkia-ujawnia-plany-i-terminy-budowy-7339932369226176a",
+          "why_relevant": "Brave web search"
+        }
+      ],
+      "source_quality": 0.6,
+      "sources": [
+        "grounding"
+      ],
+      "subquery_labels": [
+        "A50 route"
+      ],
+      "title": "Wielkie inwestycje drogowe wok\u00f3\u0142 Warszawy. GDDKiA ujawnia plany i terminy budowy",
+      "url": "https://informacje.wp.pl/motoryzacja/wielkie-inwestycje-drogowe-wokol-warszawy-gddkia-ujawnia-plany-i-terminy-budowy-7339932369226176a"
+    },
+    {
+      "candidate_id": "https://inzynieria.com/drogi/artykuly/101717,nowy-uklad-drogowy-wokol-stolicy",
+      "cluster_id": "cluster-4",
+      "explanation": "Covers OAW western variants, but lacks A50 and Sobienie-Jeziory route details.",
+      "final_score": 21.582539682539682,
+      "freshness": 14,
+      "fun_explanation": "Procedural summary; essentially a press-release tone.",
+      "fun_score": 2.0,
+      "item_id": "WB3",
+      "local_relevance": 0.29,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "WB3",
+            "native_rank": 3,
+            "source": "grounding",
+            "subquery_label": "A50 route"
+          }
+        ],
+        "range_from": "2026-10-14",
+        "range_to": "2026-11-13"
+      },
+      "native_ranks": {
+        "A50 route:grounding": 3
+      },
+      "rerank_score": 25.0,
+      "rrf_score": 0.00873015873015873,
+      "snippet": "Z tekstu dowiesz si\u0119: jakie warianty przebiegu zachodniej cz\u0119\u015bci OAW s\u0105 obecnie analizowane, kt\u00f3re kluczowe trasy ma po\u0142\u0105czy\u0107 przysz\u0142y uk\u0142ad drogowy wok\u00f3\u0142 Warszawy, jakie s\u0105 kolejne etapy przygotowania inwestycji i kiedy planowany jest wniosek o decyzj\u0119 \u015brodowiskow\u0105.",
+      "source": "grounding",
+      "source_items": [
+        {
+          "body": "Nowy uk\u0142ad drogowy wok\u00f3\u0142 stolicy - In\u017cynieria.com\nZ tekstu dowiesz si\u0119: jakie warianty przebiegu zachodniej cz\u0119\u015bci OAW s\u0105 obecnie analizowane, kt\u00f3re kluczowe trasy ma po\u0142\u0105czy\u0107 przysz\u0142y uk\u0142ad drogowy wok\u00f3\u0142 Warszawy, jakie s\u0105 kolejne etapy przygotowania inwestycji i kiedy planowany jest wniosek o decyzj\u0119 \u015brodowiskow\u0105.",
+          "container": "inzynieria.com",
+          "date_confidence": "high",
+          "engagement": {},
+          "freshness": 14,
+          "item_id": "WB3",
+          "local_rank_score": 0.2235,
+          "local_relevance": 0.29,
+          "metadata": {},
+          "published_at": "2026-10-16",
+          "relevance_hint": 0.8,
+          "snippet": "Z tekstu dowiesz si\u0119: jakie warianty przebiegu zachodniej cz\u0119\u015bci OAW s\u0105 obecnie analizowane, kt\u00f3re kluczowe trasy ma po\u0142\u0105czy\u0107 przysz\u0142y uk\u0142ad drogowy wok\u00f3\u0142 Warszawy, jakie s\u0105 kolejne etapy przygotowania inwestycji i kiedy planowany jest wniosek o decyzj\u0119 \u015brodowiskow\u0105.",
+          "source": "grounding",
+          "source_quality": 0.6,
+          "title": "Nowy uk\u0142ad drogowy wok\u00f3\u0142 stolicy - In\u017cynieria.com",
+          "url": "https://inzynieria.com/drogi/artykuly/101717,nowy-uklad-drogowy-wokol-stolicy",
+          "why_relevant": "Brave web search"
+        }
+      ],
+      "source_quality": 0.6,
+      "sources": [
+        "grounding"
+      ],
+      "subquery_labels": [
+        "A50 route"
+      ],
+      "title": "Nowy uk\u0142ad drogowy wok\u00f3\u0142 stolicy - In\u017cynieria.com",
+      "url": "https://inzynieria.com/drogi/artykuly/101717,nowy-uklad-drogowy-wokol-stolicy"
+    }
+  ],
+  "source_status": {
+    "grounding": {
+      "at": "2026-11-13T10:54:21.628176Z",
+      "attempted": true,
+      "items_returned": 4,
+      "source": "grounding",
+      "state": "ok"
+    },
+    "reddit": {
+      "at": "2026-11-13T10:54:21.156404Z",
+      "attempted": true,
+      "detail": "HTTP 403: Forbidden",
+      "fix_hint": "doctor",
+      "items_returned": 0,
+      "source": "reddit",
+      "state": "auth-failed"
+    }
+  },
+  "topic": "obwodnica autostradowa Warszawy A50 przebieg trasy Sobienie-Jeziory",
+  "warnings": [
+    "Evidence is thin for this topic.",
+    "Top evidence is highly concentrated in one source.",
+    "Some sources failed: reddit"
+  ]
+}

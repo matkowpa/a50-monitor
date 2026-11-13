@@ -4149,6 +4149,170 @@
       },
       "engine_status": "ok",
       "assessment_path": "data/assessments/2026-11-12.json"
+    },
+    {
+      "date": "2026-11-13",
+      "scores": {
+        "north": {
+          "score": 37,
+          "confidence": "niska",
+          "summary": "Utrzymuję score 37, bo nowe dowody nie zawierają oficjalnego wskazania korytarza przez północną część gminy Sobienie-Jeziory. Sygnały dotyczą głównie odcinka zachodniego OAW, innych gmin lub ogólnych interpelacji.",
+          "rationale": "Poprzednia ocena tego scenariusza wynosiła 37 i pozostaje kotwicą, ponieważ żaden z nowych dowodów nie jest komunikatem GDDKiA o wariancie przez północną stronę gminy. Dowód [1] dotyczy decyzji dla powiatu sochaczewskiego, [2] sprzeciwu gminy Zabrodzie, a [5] zachodniego fragmentu S50/A50 od DK92 do S7. Interpelacja [6] i dokument powiatu otwockiego [7] nie rozstrzygają wariantu, a jedynie sygnalizują naciski i brak wariantowania. Wobec braku dowodów bezpośrednich utrzymuję score 37 przy confidence niska.",
+          "key_findings": [
+            {
+              "claim": "Nowe dowody koncentrują się na odcinku zachodnim S50/A50 i decyzji dla powiatu sochaczewskiego, nie wskazują korytarza po północnej stronie gminy Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://e-sochaczew.pl/artykul/trasa-s50--decyzje-n2572991",
+                "https://www.gov.pl/attachment/ac21749d-2b14-494a-a749-85cbe42df69e"
+              ]
+            },
+            {
+              "claim": "Uchwała gminy Zabrodzie dotyczy sprzeciwu wobec przebiegu S50/A50 przez Zabrodzie, a nie przez Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://samorzad.gov.pl/attachment/d00ee210-cc97-4bc1-90d3-16ccd7a41a2c"
+              ]
+            },
+            {
+              "claim": "Interpelacja poselska wskazuje na działania mieszkańców powiatu otwockiego o zmianę przebiegu OAW na odcinku most na Wiśle – Mińsk Mazowiecki, bez rozstrzygnięcia wariantu północnego.",
+              "evidence_urls": [
+                "https://www.sejm.gov.pl/Sejm9.nsf/InterpelacjaTresc.xsp?key=BZVARM"
+              ]
+            },
+            {
+              "claim": "Dokument powiatu otwockiego z 2020 r. wskazywał jedynie poszerzone korytarze bez wariantowania, więc nie jest dowodem na konkretny przebieg.",
+              "evidence_urls": [
+                "https://www.bip.powiat-otwocki.pl/plik,22845,projekt-stanowiska-w-sprawie-strategicznego-studium-lokalizacyjnego-inwestycji-centralnego-portu-komunikacyjnego-wraz-z-prognoza-oddzialywania-na-srodowisko.pdf"
+              ]
+            }
+          ],
+          "trend_vs_prev": 0,
+          "score_raw": 37,
+          "evidence_grade": "official",
+          "delta_capped": false,
+          "change_reason": "official: bez zmiany"
+        },
+        "south": {
+          "score": 18,
+          "confidence": "niska",
+          "summary": "Brak nowych dowodów wskazujących korytarz przez południową część gminy Sobienie-Jeziory; utrzymuję score 18.",
+          "rationale": "Nowe materiały dotyczą zachodniego odcinka OAW/S50, powiatu sochaczewskiego i Zabrodzia, a nie wschodniego odcinka przez powiat otwocki. Interpelacja nr 22190 potwierdza jedynie presję mieszkańców powiatu otwockiego na zmianę przebiegu na odcinku most na Wiśle – Mińsk Mazowiecki, bez wskazania wariantu przez Śniadków Dolny/Górny. Prezentacja GDDKiA obejmuje zachodni fragment S50/A50 od DK92 do S7, więc nie dostarcza rozstrzygnięcia dla Sobienie-Jezior. Utrzymuję 18, bo nadal nie ma oficjalnego studium, przetargu STEŚ dla wschodu ani rysunku wariantu przez południową stronę gminy.",
+          "key_findings": [
+            {
+              "claim": "Dowód [1] dotyczy decyzji o przebiegu S50 w powiecie sochaczewskim, a nie wschodniego odcinka OAW przez gminę Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://e-sochaczew.pl/artykul/trasa-s50--decyzje-n2572991"
+              ]
+            },
+            {
+              "claim": "Uchwała Rady Gminy Zabrodzie [2] wyraża sprzeciw wobec S50/A50 na terenie Zabrodzia, więc nie wskazuje korytarza w gminie Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://samorzad.gov.pl/attachment/d00ee210-cc97-4bc1-90d3-16ccd7a41a2c"
+              ]
+            },
+            {
+              "claim": "Prezentacja GDDKiA [5] opisuje zachodni fragment OAW S50/A50 od DK92 do S7, bez wariantów dla wschodniej strony Wisły.",
+              "evidence_urls": [
+                "https://www.gov.pl/attachment/ac21749d-2b14-494a-a749-85cbe42df69e"
+              ]
+            },
+            {
+              "claim": "Interpelacja nr 22190 [6] odnosi się do postulatów mieszkańców powiatu otwockiego na odcinku most na Wiśle – Mińsk Mazowiecki, ale nie potwierdza przebiegu przez południową część gminy.",
+              "evidence_urls": [
+                "https://www.sejm.gov.pl/Sejm9.nsf/InterpelacjaTresc.xsp?key=BZVARM"
+              ]
+            },
+            {
+              "claim": "Materiał powiatu otwockiego [7] dotyczy SSL CPK/A50 z 2020 r. i nie zawiera aktualnego wariantu przez Śniadków Dolny/Górny.",
+              "evidence_urls": [
+                "https://www.bip.powiat-otwocki.pl/plik,22845,projekt-stanowiska-w-sprawie-strategicznego-studium-lokalizacyjnego-inwestycji-centralnego-portu-komunikacyjnego-wraz-z-prognoza-oddzialywania-na-srodowisko.pdf"
+              ]
+            }
+          ],
+          "trend_vs_prev": 0,
+          "score_raw": 18,
+          "evidence_grade": "official",
+          "delta_capped": false,
+          "change_reason": "official: bez zmiany"
+        }
+      },
+      "evidence": [
+        {
+          "title": "Trasa S50 - decyzję o jej przebiegu przez powiat sochaczewski poznamy dopiero w połowie grudnia - wiadomości",
+          "url": "https://e-sochaczew.pl/artykul/trasa-s50--decyzje-n2572991",
+          "source": "grounding",
+          "published": "2026-11-09",
+          "snippet": "Przypomnijmy, że trasa S50 ma stanowić fragment Obwodnicy Aglomeracji Warszawskiej i jednocześnie drogi prowadzącej do budowanego w Baranowie lotniska. Cała OAW o długości około 300 kilometrów ma zostać wybudowana w ciągu około dziesięciu lat. Jednak w pierwszej kolejności planowana jest budowa zachodniego i południowego odcinka, czyli tych fragmentów, które będą przebiegały między innymi przez te",
+          "stance": "neutral"
+        },
+        {
+          "title": "w sprawie wyrażenia sprzeciwu wobec proponowanego przebiegu drogi ekspresowej S50/ autostrady A50 - Obwodnicy Aglomeracji Warszawskiej przez teren Gminy Zabrodzie",
+          "url": "https://samorzad.gov.pl/attachment/d00ee210-cc97-4bc1-90d3-16ccd7a41a2c",
+          "source": "exa",
+          "published": "",
+          "snippet": "UCHWAŁA NR …….2025 RADY GMINY ZABRODZIE z dnia ………………… r. w sprawie wyrażenia sprzeciwu wobec proponowanego przebiegu drogi ekspresowej S50/ autostrady A50 - Obwodnicy Aglomeracji Warszawskiej przez teren Gminy Zabrodzie Na podstawie art. 7 ust. 1 pkt 1 i art. 18 ust. 1 ustawy z dnia 8 marca 1990 r. o samorządzie gminnym (t.j. Dz. U. z 2025 r. poz. 1153) uchwala się, co następuje: § 1. 1. W związk",
+          "stance": "neutral"
+        },
+        {
+          "title": "Autostrady - stan realizacji - Generalna Dyrekcja Dróg Krajowych i Autostrad - Portal Gov.pl",
+          "url": "https://www.gov.pl/web/gddkia/autostrady---stan-realizacji2",
+          "source": "exa",
+          "published": "",
+          "snippet": "1950 km liczy sieć autostrad w Polsce, a do osiągnięcia jej docelowej długości brakuje jeszcze ok. 150 km. Złożą się na to dwa odcinki A2 na wschód od Białej Podlaskiej do Dobrynia i Terminala Samochodowego w Koroszczynie oraz A50 omijająca od południa Warszawę. Jako pierwsza przeciwległe granice kraju połączyła autostrada A4. ... udostępniliśmy do ruchu jej ostatni odcinek, od Rzeszowa do Jarosła",
+          "stance": "neutral"
+        },
+        {
+          "title": "Szanowna Pani Elżbieta Witek Marszałek Sejmu Rzeczypospolitej Polskiej",
+          "url": "https://sejm.gov.pl/INT9.nsf/klucz/ATTCV7GYC/%24FILE/i42855-o1.pdf",
+          "source": "exa",
+          "published": "",
+          "snippet": "Zaznaczam, że Obwodnica Aglomeracji Warszawskiej (OAW) to niewątpliwie jedna z kluczowych inwestycji transportowych nie tylko w skali regionu, ale i całego kraju, w związku z czym pragnę podkreślić wagę i potrzebę realizacji tej inwestycji. Wykonane analizy w ramach Studium korytarzowego potwierdziły zasadność realizacji OAW oraz pozwoliły wskazać kierunek dalszego uszczegółowiania w ramach kolejn",
+          "stance": "neutral"
+        },
+        {
+          "title": "Prezentacja programu PowerPoint",
+          "url": "https://www.gov.pl/attachment/ac21749d-2b14-494a-a749-85cbe42df69e",
+          "source": "exa",
+          "published": "",
+          "snippet": "## Obwodnica Aglomeracji Warszawskiej zachodni fragment S50/A50 odcinek od DK92 do S7 ## S50 odcinek od S10 do DK92 • Umowa: wykonanie Studium techniczno ekonomiczno-środowiskowego wraz z uzyskaniem decyzji o środowiskowych uwarunkowaniach • Wykonawca: TRANSPROJEKT - WARSZAWA • Wartość (cena oferty): ok. 8,5 mln zł. • Czas trwania umowy: 44 miesiące, koniec I kw. 2026 r. • Długość odcinka: ok. 37",
+          "stance": "neutral"
+        },
+        {
+          "title": "Interpelacja nr 22190 - tekst - Sejm Rzeczypospolitej Polskiej",
+          "url": "https://www.sejm.gov.pl/Sejm9.nsf/InterpelacjaTresc.xsp?key=BZVARM",
+          "source": "exa",
+          "published": "",
+          "snippet": "mieszkańcy powiatu otwockiego zwrócili się do mnie z prośbą o wsparcie ich działań zmierzających do zmiany przebiegu Obwodnicy Aglomeracji Warszawskiej (OAW) na odcinku most na Wiśle – Mińsk Mazowiecki oraz zmiany charakteru tej drogi ze standardu autostrady (A50) na standard drogi ekspresowej (S50). W ramach studium korytarzowego OAW GDDKiA wybrała do dalszych prac tzw. korytarz czerwony, przebie",
+          "stance": "neutral"
+        },
+        {
+          "title": "4.,Projekt stanowiska w sprawie Strategicznegoi Studium Lokalizacyjnego Inwestycji Centralnego Portu Komunikacyjnego - A50 - grudzień 2020",
+          "url": "https://www.bip.powiat-otwocki.pl/plik,22845,projekt-stanowiska-w-sprawie-strategicznego-studium-lokalizacyjnego-inwestycji-centralnego-portu-komunikacyjnego-wraz-z-prognoza-oddzialywania-na-srodowisko.pdf",
+          "source": "exa",
+          "published": "",
+          "snippet": "1. Przedstawione do uzgodnień dokumenty SSL CPK w zakresie infrastruktury drogowej przedstawiają jedynie poszerzone korytarze drogowe bez wariantowania planowanych przebiegów Obwodnicy Aglomeracji Warszawskiej (OAW), przez co nie jest możliwym odniesienie się do poszczególnych wariantów i zbadania ich wpływu na powiat otwocki i środowisko naturalne. 2. W zakresie ograniczenia hałasu wnioskujemy o",
+          "stance": "neutral"
+        }
+      ],
+      "sources_found": 7,
+      "source_funnel": {
+        "fetched": {
+          "engine": 4,
+          "feeds": 0,
+          "agent_reach": 28,
+          "facebook": 0,
+          "official": 0
+        },
+        "fresh": {
+          "engine": 4,
+          "feeds": 0,
+          "agent_reach": 8,
+          "facebook": 0,
+          "official": 0
+        },
+        "merged": 12
+      },
+      "engine_status": "ok",
+      "assessment_path": "data/assessments/2026-11-13.json"
     }
   ]
 }
