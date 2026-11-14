@@ -1,0 +1,169 @@
+{
+  "date": "2026-11-14",
+  "scores": {
+    "north": {
+      "score": 37,
+      "confidence": "niska",
+      "summary": "Utrzymuję score 37: nowe dowody nie wskazują oficjalnego wariantu A50 przez północną część gminy Sobienie-Jeziory. Sygnały dotyczą etapu dokumentacyjnego, innych gmin lub ogólnych stanowisk.",
+      "rationale": "Poprzednia ocena 37 pozostaje kotwicą, bo żaden nowy materiał nie jest komunikatem GDDKiA o wariancie przez północną stronę gminy. Dowód [1] mówi tylko o opracowywaniu dokumentacji przez Transprojekt i Trakt oraz o S50/A50 jako części OAW. Dowód [2] dotyczy sprzeciwu gminy Zabrodzie, [6] zachodniego fragmentu S50/A50, a [7] interpelacji dotyczącej powiatu otwockiego bez wskazania strony północnej. Petycja [4] potwierdza ogólną obawę o potencjalny wariant przez gminę, ale nie rozstrzyga, czy miałby on biec między wsią a doliną Wisły.",
+      "key_findings": [
+        {
+          "claim": "Dokumentacja OAW jest na etapie opracowywania przez Transprojekt Warszawa i Trakt, a OAW obejmuje S50 i A50; nie wskazano wariantu północnego przez Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://moto.pl/MotoPL/7,190330,33130820,obwodnica-aglomeracji-warszawskiej-kiedy-doczekamy-nowej-trasy.html"
+          ]
+        },
+        {
+          "claim": "Uchwała gminy Zabrodzie dotyczy sprzeciwu wobec przebiegu S50/A50 przez Zabrodzie, a nie przez gminę Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://samorzad.gov.pl/attachment/d00ee210-cc97-4bc1-90d3-16ccd7a41a2c"
+          ]
+        },
+        {
+          "claim": "Stanowisko w Sobienie-Jeziorach mówi o potencjalnym wariancie przez gminę, bez rozstrzygnięcia, czy przebieg ma iść północną stroną wsi.",
+          "evidence_urls": [
+            "https://www.petycjeonline.com/stanowisko_w_sprawie_planowanego_przebiegu_drogi_a50_obwodnicy_aglomeracji_warszawskiej_potencjalny_wariant_ktory_moe_przechodzi_przez_teren_gminy_sobienie-jeziory"
+          ]
+        },
+        {
+          "claim": "Prezentacja GDDKiA dotyczy zachodniego fragmentu S50/A50 od DK92 do S7, więc nie przesądza wariantu w gminie Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://www.gov.pl/attachment/ac21749d-2b14-494a-a749-85cbe42df69e"
+          ]
+        },
+        {
+          "claim": "Interpelacja nr 22190 dotyczy OAW w powiecie otwockim i odcinka mostowego, ale nie wskazuje wariantu przez północną część gminy Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://www.sejm.gov.pl/Sejm9.nsf/InterpelacjaTresc.xsp?key=BZVARM"
+          ]
+        }
+      ],
+      "trend_vs_prev": 0,
+      "score_raw": 37,
+      "evidence_grade": "official",
+      "delta_capped": false,
+      "change_reason": "official: bez zmiany"
+    },
+    "south": {
+      "score": 18,
+      "confidence": "niska",
+      "summary": "Nowe dowody nie wskazują wariantu prowadzącego przez południową część gminy Sobienie-Jeziory; najbliższy materiał mówi tylko o potencjalnym przebiegu przez gminę. Utrzymuję score 18.",
+      "rationale": "Punktem wyjścia jest score bazowy 28% i poprzednia ocena 18%; nowe dowody nie zawierają oficjalnego wskazania wariantu przez południową stronę gminy. Najbliższy tematycznie materiał [4] mówi jedynie o potencjalnym wariancie przez gminę, bez lokalizacji na południe od wsi i Śniadkowa. Interpelacja [7] potwierdza presję w powiecie otwockim, ale nie wskazuje przebiegu przez Śniadków Dolny/Górny. Pozostałe dowody dotyczą zachodniego odcinka, Zabrodzia lub ogólnego stanu autostrad, więc utrzymuję score 18 przy confidence niska.",
+      "key_findings": [
+        {
+          "claim": "Nowe doniesienie o OAW dotyczy opóźnień i dokumentacji S50/A50, ale nie wskazuje wariantu przez południową część Sobienie-Jezior.",
+          "evidence_urls": [
+            "https://moto.pl/MotoPL/7,190330,33130820,obwodnica-aglomeracji-warszawskiej-kiedy-doczekamy-nowej-trasy.html"
+          ]
+        },
+        {
+          "claim": "Prezentacja GDDKiA obejmuje zachodni fragment S50/A50 od DK92 do S7, więc nie rozstrzyga wschodniego odcinka przez gminę Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://www.gov.pl/attachment/ac21749d-2b14-494a-a749-85cbe42df69e"
+          ]
+        },
+        {
+          "claim": "Stanowisko dotyczące Sobienie-Jezior mówi o potencjalnym wariancie przez gminę, bez wskazania przebiegu na południe od wsi i Śniadkowa.",
+          "evidence_urls": [
+            "https://www.petycjeonline.com/stanowisko_w_sprawie_planowanego_przebiegu_drogi_a50_obwodnicy_aglomeracji_warszawskiej_potencjalny_wariant_ktory_moe_przechodzi_przez_teren_gminy_sobienie-jeziory"
+          ]
+        },
+        {
+          "claim": "Interpelacja nr 22190 potwierdza presję mieszkańców powiatu otwockiego na zmianę przebiegu OAW na odcinku most na Wiśle–Mińsk Mazowiecki, ale nie wskazuje wariantu południowego.",
+          "evidence_urls": [
+            "https://www.sejm.gov.pl/Sejm9.nsf/InterpelacjaTresc.xsp?key=BZVARM"
+          ]
+        },
+        {
+          "claim": "Uchwała gminy Zabrodzie dotyczy sprzeciwu wobec przebiegu przez Zabrodzie, a nie przez gminę Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://samorzad.gov.pl/attachment/d00ee210-cc97-4bc1-90d3-16ccd7a41a2c"
+          ]
+        }
+      ],
+      "trend_vs_prev": 0,
+      "score_raw": 18,
+      "evidence_grade": "official",
+      "delta_capped": false,
+      "change_reason": "official: bez zmiany"
+    }
+  },
+  "evidence": [
+    {
+      "title": "Obwodnica Aglomeracji Warszawskiej. Kiedy doczekamy nowej trasy? Sprawa się opóźnia",
+      "url": "https://moto.pl/MotoPL/7,190330,33130820,obwodnica-aglomeracji-warszawskiej-kiedy-doczekamy-nowej-trasy.html",
+      "source": "grounding",
+      "published": "2026-11-13",
+      "snippet": "Dokumentację przebiegu nowych tras opracowują dwie firmy. To Transprojekt Warszawa i Trakt. Częścią OAW będą nowa droga ekspresowa S50 oraz przyszła autostrada A50. Oto jedna z tras, która jest potrzebna niemal od zaraz. To OAW - Obwodnica Aglomeracji Warszawskiej.",
+      "stance": "neutral"
+    },
+    {
+      "title": "w sprawie wyrażenia sprzeciwu wobec proponowanego przebiegu drogi ekspresowej S50/ autostrady A50 - Obwodnicy Aglomeracji Warszawskiej przez teren Gminy Zabrodzie",
+      "url": "https://samorzad.gov.pl/attachment/d00ee210-cc97-4bc1-90d3-16ccd7a41a2c",
+      "source": "exa",
+      "published": "",
+      "snippet": "UCHWAŁA NR …….2025 RADY GMINY ZABRODZIE z dnia ………………… r. w sprawie wyrażenia sprzeciwu wobec proponowanego przebiegu drogi ekspresowej S50/ autostrady A50 - Obwodnicy Aglomeracji Warszawskiej przez teren Gminy Zabrodzie Na podstawie art. 7 ust. 1 pkt 1 i art. 18 ust. 1 ustawy z dnia 8 marca 1990 r. o samorządzie gminnym (t.j. Dz. U. z 2025 r. poz. 1153) uchwala się, co następuje: § 1. 1. W związk",
+      "stance": "neutral"
+    },
+    {
+      "title": "Autostrady - stan realizacji - Generalna Dyrekcja Dróg Krajowych i Autostrad - Portal Gov.pl",
+      "url": "https://www.gov.pl/web/gddkia/autostrady---stan-realizacji2",
+      "source": "exa",
+      "published": "",
+      "snippet": "1950 km liczy sieć autostrad w Polsce, a do osiągnięcia jej docelowej długości brakuje jeszcze ok. 150 km. Złożą się na to dwa odcinki A2 na wschód od Białej Podlaskiej do Dobrynia i Terminala Samochodowego w Koroszczynie oraz A50 omijająca od południa Warszawę. Jako pierwsza przeciwległe granice kraju połączyła autostrada A4. W 2016 r. udostępniliśmy do ruchu jej ostatni odcinek, od Rzeszowa do J",
+      "stance": "neutral"
+    },
+    {
+      "title": "STANOWISKO w sprawie planowanego przebiegu drogi A50 – Obwodnicy Aglomeracji Warszawskiej (potencjalny wariant, który może przechodzić przez teren Gminy Sobienie-Jeziory) - Petycjeonline.com",
+      "url": "https://www.petycjeonline.com/stanowisko_w_sprawie_planowanego_przebiegu_drogi_a50_obwodnicy_aglomeracji_warszawskiej_potencjalny_wariant_ktory_moe_przechodzi_przez_teren_gminy_sobienie-jeziory",
+      "source": "exa",
+      "published": "",
+      "snippet": "# STANOWISKO w sprawie planowanego przebiegu drogi A50 – Obwodnicy Aglomeracji Warszawskiej (potencjalny wariant, który może przechodzić przez teren Gminy Sobienie-Jeziory) G Gmina Sobienie-Jeziory · PL W związku z docierającymi do nas informacjami o inicjatywie niektórych samorządów z terenu powiatów piaseczyńskiego i grójeckiego dotyczącej przebiegu projektowanej Obwodnicy Aglomeracji Warszawski",
+      "stance": "neutral"
+    },
+    {
+      "title": "Szanowna Pani Elżbieta Witek Marszałek Sejmu Rzeczypospolitej Polskiej",
+      "url": "https://sejm.gov.pl/INT9.nsf/klucz/ATTCV7GYC/%24FILE/i42855-o1.pdf",
+      "source": "exa",
+      "published": "",
+      "snippet": "Zaznaczam, że Obwodnica Aglomeracji Warszawskiej (OAW) to niewątpliwie jedna z kluczowych inwestycji transportowych nie tylko w skali regionu, ale i całego kraju, w związku z czym pragnę podkreślić wagę i potrzebę realizacji tej inwestycji. Wykonane analizy w ramach Studium korytarzowego potwierdziły zasadność realizacji OAW oraz pozwoliły wskazać kierunek dalszego uszczegółowiania w ramach kolejn",
+      "stance": "neutral"
+    },
+    {
+      "title": "Prezentacja programu PowerPoint",
+      "url": "https://www.gov.pl/attachment/ac21749d-2b14-494a-a749-85cbe42df69e",
+      "source": "exa",
+      "published": "",
+      "snippet": "## Obwodnica Aglomeracji Warszawskiej zachodni fragment S50/A50 odcinek od DK92 do S7 ## S50 odcinek od S10 do DK92 • Umowa: wykonanie Studium techniczno ekonomiczno-środowiskowego wraz z uzyskaniem decyzji o środowiskowych uwarunkowaniach • Wykonawca: TRANSPROJEKT - WARSZAWA • Wartość (cena oferty): ok. 8,5 mln zł. • Czas trwania umowy: 44 miesiące, koniec I kw. 2026 r. • Długość odcinka: ok. 37",
+      "stance": "neutral"
+    },
+    {
+      "title": "Interpelacja nr 22190 - tekst - Sejm Rzeczypospolitej Polskiej",
+      "url": "https://www.sejm.gov.pl/Sejm9.nsf/InterpelacjaTresc.xsp?key=BZVARM",
+      "source": "exa",
+      "published": "",
+      "snippet": "Szanowny Panie Ministrze, mieszkańcy powiatu otwockiego zwrócili się do mnie z prośbą o wsparcie ich działań zmierzających do zmiany przebiegu Obwodnicy Aglomeracji Warszawskiej (OAW) na odcinku most na Wiśle – Mińsk Mazowiecki oraz zmiany charakteru tej drogi ze standardu autostrady (A50) na standard drogi ekspresowej (S50). W ramach studium korytarzowego OAW GDDKiA wybrała do dalszych prac tzw.",
+      "stance": "neutral"
+    }
+  ],
+  "sources_found": 7,
+  "source_funnel": {
+    "fetched": {
+      "engine": 1,
+      "feeds": 0,
+      "agent_reach": 29,
+      "facebook": 0,
+      "official": 0
+    },
+    "fresh": {
+      "engine": 1,
+      "feeds": 0,
+      "agent_reach": 7,
+      "facebook": 0,
+      "official": 0
+    },
+    "merged": 8
+  },
+  "engine_status": "ok",
+  "assessment_path": "data/assessments/2026-11-14.json"
+}

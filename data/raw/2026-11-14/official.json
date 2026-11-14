@@ -1,0 +1,42 @@
+{
+  "day": "2026-11-14",
+  "sources": [
+    {
+      "id": "gddkia-oaw",
+      "label": "GDDKiA — projekt OAW (zachodnia część)",
+      "status": "error",
+      "changed": null,
+      "baseline": null,
+      "error": "<urlopen error [Errno 101] Network is unreachable>",
+      "chars": null
+    },
+    {
+      "id": "gddkia-a50s50",
+      "label": "GDDKiA — odcinek A50/S50 DK92–S7",
+      "status": "error",
+      "changed": null,
+      "baseline": null,
+      "error": "<urlopen error [Errno 101] Network is unreachable>",
+      "chars": null
+    },
+    {
+      "id": "gmina-sobienie",
+      "label": "Gmina Sobienie-Jeziory — aktualności",
+      "status": "error",
+      "changed": null,
+      "baseline": null,
+      "error": "HTTP Error 403: Forbidden",
+      "chars": null
+    },
+    {
+      "id": "rdos-warszawa",
+      "label": "RDOŚ Warszawa — komunikaty",
+      "status": "error",
+      "changed": null,
+      "baseline": null,
+      "error": "<urlopen error [Errno 101] Network is unreachable>",
+      "chars": null
+    }
+  ],
+  "items": []
+}

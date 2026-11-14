@@ -1,0 +1,564 @@
+{
+  "artifacts": {
+    "corpus_in_export": false,
+    "grounding": [
+      {
+        "label": "brave",
+        "resultCount": 5,
+        "webSearchQueries": [
+          "obwodnica autostradowa Warszawy A50 przebieg trasy"
+        ]
+      }
+    ],
+    "hiring_signals_mode": false,
+    "plan_source": "llm",
+    "pre_research_flags_present": false,
+    "resolved": {
+      "context": "",
+      "entity": "obwodnica autostradowa Warszawy A50 przebieg trasy Sobienie-Jeziory",
+      "github_repos": [],
+      "github_user": "",
+      "subreddits": [],
+      "trustpilot_domain": "",
+      "x_handle": ""
+    }
+  },
+  "clusters": [
+    {
+      "candidate_ids": [
+        "https://moto.pl/motopl/7,190330,33130820,obwodnica-aglomeracji-warszawskiej-kiedy-doczekamy-nowej-trasy.html"
+      ],
+      "cluster_id": "cluster-1",
+      "representative_ids": [
+        "https://moto.pl/motopl/7,190330,33130820,obwodnica-aglomeracji-warszawskiej-kiedy-doczekamy-nowej-trasy.html"
+      ],
+      "score": 61.85409836065574,
+      "sources": [
+        "grounding"
+      ],
+      "title": "Obwodnica Aglomeracji Warszawskiej. Kiedy doczekamy nowej trasy? Sprawa si\u0119 op\u00f3\u017ania"
+    },
+    {
+      "candidate_ids": [
+        "https://drivemode.pl/news/pierscien-wokol-warszawy-wciaz-niedomkniety"
+      ],
+      "cluster_id": "cluster-2",
+      "representative_ids": [
+        "https://drivemode.pl/news/pierscien-wokol-warszawy-wciaz-niedomkniety"
+      ],
+      "score": 28.582539682539686,
+      "sources": [
+        "grounding"
+      ],
+      "title": "Kiedy znikn\u0105 korki wok\u00f3\u0142 Warszawy? Co z ma\u0142\u0105 i du\u017c\u0105 obwodnic\u0105"
+    },
+    {
+      "candidate_ids": [
+        "https://pl.wikipedia.org/wiki/droga_ekspresowa_s8_(polska)"
+      ],
+      "cluster_id": "cluster-3",
+      "representative_ids": [
+        "https://pl.wikipedia.org/wiki/droga_ekspresowa_s8_(polska)"
+      ],
+      "score": 4.925322580645161,
+      "sources": [
+        "grounding"
+      ],
+      "title": "Droga ekspresowa S8 (Polska) \u2013 Wikipedia, wolna encyklopedia"
+    },
+    {
+      "candidate_ids": [
+        "https://pl.wikipedia.org/wiki/autostrada_a2_(polska)"
+      ],
+      "cluster_id": "cluster-4",
+      "representative_ids": [
+        "https://pl.wikipedia.org/wiki/autostrada_a2_(polska)"
+      ],
+      "score": 4.72453125,
+      "sources": [
+        "grounding"
+      ],
+      "title": "Autostrada A2 (Polska) \u2013 Wikipedia, wolna encyklopedia"
+    },
+    {
+      "candidate_ids": [
+        "https://en.wikipedia.org/wiki/highways_in_poland"
+      ],
+      "cluster_id": "cluster-5",
+      "representative_ids": [
+        "https://en.wikipedia.org/wiki/highways_in_poland"
+      ],
+      "score": 3.934615384615385,
+      "sources": [
+        "grounding"
+      ],
+      "title": "Motorways and expressways in Poland - Wikipedia"
+    }
+  ],
+  "errors_by_source": {
+    "reddit": "HTTP 403: Forbidden"
+  },
+  "freshness_verdicts": [],
+  "generated_at": "2026-11-14T10:19:02.413985+00:00",
+  "items_by_source": {
+    "grounding": [
+      {
+        "body": "Obwodnica Aglomeracji Warszawskiej. Kiedy doczekamy nowej trasy? Sprawa si\u0119 op\u00f3\u017ania\nDokumentacj\u0119 przebiegu nowych tras opracowuj\u0105 dwie firmy. To Transprojekt Warszawa i Trakt. Cz\u0119\u015bci\u0105 OAW b\u0119d\u0105 nowa droga ekspresowa S50 oraz przysz\u0142a autostrada A50. Oto jedna z tras, kt\u00f3ra jest potrzebna niemal od zaraz. To OAW - Obwodnica Aglomeracji Warszawskiej.",
+        "container": "moto.pl",
+        "date_confidence": "high",
+        "engagement": {},
+        "freshness": 86,
+        "item_id": "WB1",
+        "local_rank_score": 0.2865,
+        "local_relevance": 0.11,
+        "metadata": {},
+        "published_at": "2026-11-13",
+        "relevance_hint": 0.8,
+        "snippet": "Dokumentacj\u0119 przebiegu nowych tras opracowuj\u0105 dwie firmy. To Transprojekt Warszawa i Trakt. Cz\u0119\u015bci\u0105 OAW b\u0119d\u0105 nowa droga ekspresowa S50 oraz przysz\u0142a autostrada A50. Oto jedna z tras, kt\u00f3ra jest potrzebna niemal od zaraz. To OAW - Obwodnica Aglomeracji Warszawskiej.",
+        "source": "grounding",
+        "source_quality": 0.6,
+        "title": "Obwodnica Aglomeracji Warszawskiej. Kiedy doczekamy nowej trasy? Sprawa si\u0119 op\u00f3\u017ania",
+        "url": "https://moto.pl/MotoPL/7,190330,33130820,obwodnica-aglomeracji-warszawskiej-kiedy-doczekamy-nowej-trasy.html",
+        "why_relevant": "Brave web search"
+      },
+      {
+        "body": "Droga ekspresowa S8 (Polska) \u2013 Wikipedia, wolna encyklopedia\nW rozporz\u0105dzeniu tym fragment drogi przebiegaj\u0105cy przez Wroc\u0142aw mo\u017ce by\u0107 wariantowo wybudowany i oznaczony jako autostrada A8, w\u00f3wczas S8 zaczyna\u0142aby si\u0119 od w\u0119z\u0142a na Psim Polu. Droga ma tak\u017ce przerw\u0119 na odcinku \u0141\u00f3d\u017a \u2013 Warszawa. W rozporz\u0105dzeniu z 2004 roku autostrada A8 nie jest ju\u017c wariantem, a jest okre\u015blana jako <strong>autostradowa</strong> <strong>obwodnica</strong> ...",
+        "container": "pl.wikipedia.org",
+        "date_confidence": "high",
+        "engagement": {},
+        "freshness": 52,
+        "item_id": "WB3",
+        "local_rank_score": 0.2015,
+        "local_relevance": 0.11,
+        "metadata": {},
+        "published_at": "2026-10-31",
+        "relevance_hint": 0.8,
+        "snippet": "W rozporz\u0105dzeniu tym fragment drogi przebiegaj\u0105cy przez Wroc\u0142aw mo\u017ce by\u0107 wariantowo wybudowany i oznaczony jako autostrada A8, w\u00f3wczas S8 zaczyna\u0142aby si\u0119 od w\u0119z\u0142a na Psim Polu. Droga ma tak\u017ce przerw\u0119 na odcinku \u0141\u00f3d\u017a \u2013 Warszawa. W rozporz\u0105dzeniu z 2004 roku autostrada A8 nie jest ju\u017c wariantem, a jest okre\u015blana jako <strong>autostradowa</strong> <strong>obwodnica</strong> ...",
+        "source": "grounding",
+        "source_quality": 0.6,
+        "title": "Droga ekspresowa S8 (Polska) \u2013 Wikipedia, wolna encyklopedia",
+        "url": "https://pl.wikipedia.org/wiki/Droga_ekspresowa_S8_(Polska)",
+        "why_relevant": "Brave web search"
+      },
+      {
+        "body": "Kiedy znikn\u0105 korki wok\u00f3\u0142 Warszawy? Co z ma\u0142\u0105 i du\u017c\u0105 obwodnic\u0105\nTo planowana \u201edu\u017ca obwodnica\u201d o d\u0142ugo\u015bci ok. 300 km, oddalona od stolicy o kilkadziesi\u0105t kilometr\u00f3w. <strong>Zostanie poprowadzona nowym \u015bladem (oraz cz\u0119\u015bciowo tras\u0105 DK50), aby wyprowadzi\u0107 ruch tranzytowy daleko poza aglomeracj\u0119</strong>.",
+        "container": "drivemode.pl",
+        "date_confidence": "high",
+        "engagement": {},
+        "freshness": 66,
+        "item_id": "WB5",
+        "local_rank_score": 0.1975,
+        "local_relevance": 0.05,
+        "metadata": {},
+        "published_at": "2026-11-05",
+        "relevance_hint": 0.8,
+        "snippet": "To planowana \u201edu\u017ca obwodnica\u201d o d\u0142ugo\u015bci ok. 300 km, oddalona od stolicy o kilkadziesi\u0105t kilometr\u00f3w. <strong>Zostanie poprowadzona nowym \u015bladem (oraz cz\u0119\u015bciowo tras\u0105 DK50), aby wyprowadzi\u0107 ruch tranzytowy daleko poza aglomeracj\u0119</strong>.",
+        "source": "grounding",
+        "source_quality": 0.6,
+        "title": "Kiedy znikn\u0105 korki wok\u00f3\u0142 Warszawy? Co z ma\u0142\u0105 i du\u017c\u0105 obwodnic\u0105",
+        "url": "https://drivemode.pl/news/pierscien-wokol-warszawy-wciaz-niedomkniety/",
+        "why_relevant": "Brave web search"
+      },
+      {
+        "body": "Autostrada A2 (Polska) \u2013 Wikipedia, wolna encyklopedia\nWykonawc\u0105 rob\u00f3t by\u0142o konsorcjum: ... Siedlce / Przedsi\u0119biorstwo Budownictwa L\u0105dowego \u201eMAZOWIECKIE MOSTY\u201d Sp. z o.o. / Warszawskie Przedsi\u0119biorstwo Mostowe \u201eMOSTY\u201d S.A. <strong>Obwodnica</strong> Mi\u0144ska Mazowieckiego ma dwa pasy ruchu o szeroko\u015bci 3,75 m w ka\u017cdym kierunk...",
+        "container": "pl.wikipedia.org",
+        "date_confidence": "high",
+        "engagement": {},
+        "freshness": 76,
+        "item_id": "WB4",
+        "local_rank_score": 0.19,
+        "local_relevance": 0.0,
+        "metadata": {},
+        "published_at": "2026-11-09",
+        "relevance_hint": 0.8,
+        "snippet": "Wykonawc\u0105 rob\u00f3t by\u0142o konsorcjum: ... Siedlce / Przedsi\u0119biorstwo Budownictwa L\u0105dowego \u201eMAZOWIECKIE MOSTY\u201d Sp. z o.o. / Warszawskie Przedsi\u0119biorstwo Mostowe \u201eMOSTY\u201d S.A. <strong>Obwodnica</strong> Mi\u0144ska Mazowieckiego ma dwa pasy ruchu o szeroko\u015bci 3,75 m w ka\u017cdym kierunk...",
+        "source": "grounding",
+        "source_quality": 0.6,
+        "title": "Autostrada A2 (Polska) \u2013 Wikipedia, wolna encyklopedia",
+        "url": "https://pl.wikipedia.org/wiki/Autostrada_A2_(Polska)",
+        "why_relevant": "Brave web search"
+      },
+      {
+        "body": "Motorways and expressways in Poland - Wikipedia\nMotorways and expressways in Poland are controlled-access highways in the network of Poland&#x27;s national roads. They feature grade-separated interchanges with all other roads, emergency lanes, feeder lanes, wildlife crossings and dedicated roadside rest areas. Motorways differ from expressways ...",
+        "container": "en.wikipedia.org",
+        "date_confidence": "high",
+        "engagement": {},
+        "freshness": 50,
+        "item_id": "WB2",
+        "local_rank_score": 0.125,
+        "local_relevance": 0.0,
+        "metadata": {},
+        "published_at": "2026-10-30",
+        "relevance_hint": 0.8,
+        "snippet": "Motorways and expressways in Poland are controlled-access highways in the network of Poland&#x27;s national roads. They feature grade-separated interchanges with all other roads, emergency lanes, feeder lanes, wildlife crossings and dedicated roadside rest areas. Motorways differ from expressways ...",
+        "source": "grounding",
+        "source_quality": 0.6,
+        "title": "Motorways and expressways in Poland - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Highways_in_Poland",
+        "why_relevant": "Brave web search"
+      }
+    ],
+    "reddit": []
+  },
+  "library_context": [],
+  "provider_runtime": {
+    "planner_model": "cline-pass/deepseek-v4.1-flash-1017",
+    "reasoning_provider": "cline",
+    "rerank_model": "cline-pass/deepseek-v4.1-flash-1017"
+  },
+  "query_plan": {
+    "cluster_mode": "none",
+    "freshness_mode": "balanced_recent",
+    "intent": "factual",
+    "notes": [
+      "Hacker News is likely low relevance for Polish road planning; keep its weight low.",
+      "Use grounding for official route and consultation documents; Reddit and YouTube for local discussion."
+    ],
+    "raw_topic": "obwodnica autostradowa Warszawy A50 przebieg trasy Sobienie-Jeziory",
+    "source_weights": {
+      "grounding": 0.55,
+      "hackernews": 0.05,
+      "reddit": 0.25,
+      "youtube": 0.15
+    },
+    "subqueries": [
+      {
+        "label": "A50 route alignment",
+        "ranking_query": "Jaki jest planowany przebieg obwodnicy autostradowej Warszawy A50, w tym odcinek w rejonie Sobienie-Jeziory?",
+        "search_query": "obwodnica autostradowa Warszawy A50 przebieg trasy",
+        "sources": [
+          "grounding",
+          "reddit"
+        ],
+        "weight": 1.0
+      }
+    ]
+  },
+  "range_from": "2026-10-15",
+  "range_to": "2026-11-14",
+  "ranked_candidates": [
+    {
+      "candidate_id": "https://moto.pl/motopl/7,190330,33130820,obwodnica-aglomeracji-warszawskiej-kiedy-doczekamy-nowej-trasy.html",
+      "cluster_id": "cluster-1",
+      "explanation": "Mentions A50 as part of OAW and route documentation, but lacks Sobienie-Jeziory detail.",
+      "final_score": 61.85409836065574,
+      "freshness": 86,
+      "fun_explanation": "Dry infrastructure update; mild bureaucratic irony in 'sprawa si\u0119 op\u00f3\u017ania' but no real joke.",
+      "fun_score": 8.0,
+      "item_id": "WB1",
+      "local_relevance": 0.11,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "WB1",
+            "native_rank": 1,
+            "source": "grounding",
+            "subquery_label": "A50 route alignment"
+          }
+        ],
+        "range_from": "2026-10-15",
+        "range_to": "2026-11-14"
+      },
+      "native_ranks": {
+        "A50 route alignment:grounding": 1
+      },
+      "rerank_score": 80.0,
+      "rrf_score": 0.009016393442622951,
+      "snippet": "Dokumentacj\u0119 przebiegu nowych tras opracowuj\u0105 dwie firmy. To Transprojekt Warszawa i Trakt. Cz\u0119\u015bci\u0105 OAW b\u0119d\u0105 nowa droga ekspresowa S50 oraz przysz\u0142a autostrada A50. Oto jedna z tras, kt\u00f3ra jest potrzebna niemal od zaraz. To OAW - Obwodnica Aglomeracji Warszawskiej.",
+      "source": "grounding",
+      "source_items": [
+        {
+          "body": "Obwodnica Aglomeracji Warszawskiej. Kiedy doczekamy nowej trasy? Sprawa si\u0119 op\u00f3\u017ania\nDokumentacj\u0119 przebiegu nowych tras opracowuj\u0105 dwie firmy. To Transprojekt Warszawa i Trakt. Cz\u0119\u015bci\u0105 OAW b\u0119d\u0105 nowa droga ekspresowa S50 oraz przysz\u0142a autostrada A50. Oto jedna z tras, kt\u00f3ra jest potrzebna niemal od zaraz. To OAW - Obwodnica Aglomeracji Warszawskiej.",
+          "container": "moto.pl",
+          "date_confidence": "high",
+          "engagement": {},
+          "freshness": 86,
+          "item_id": "WB1",
+          "local_rank_score": 0.2865,
+          "local_relevance": 0.11,
+          "metadata": {},
+          "published_at": "2026-11-13",
+          "relevance_hint": 0.8,
+          "snippet": "Dokumentacj\u0119 przebiegu nowych tras opracowuj\u0105 dwie firmy. To Transprojekt Warszawa i Trakt. Cz\u0119\u015bci\u0105 OAW b\u0119d\u0105 nowa droga ekspresowa S50 oraz przysz\u0142a autostrada A50. Oto jedna z tras, kt\u00f3ra jest potrzebna niemal od zaraz. To OAW - Obwodnica Aglomeracji Warszawskiej.",
+          "source": "grounding",
+          "source_quality": 0.6,
+          "title": "Obwodnica Aglomeracji Warszawskiej. Kiedy doczekamy nowej trasy? Sprawa si\u0119 op\u00f3\u017ania",
+          "url": "https://moto.pl/MotoPL/7,190330,33130820,obwodnica-aglomeracji-warszawskiej-kiedy-doczekamy-nowej-trasy.html",
+          "why_relevant": "Brave web search"
+        }
+      ],
+      "source_quality": 0.6,
+      "sources": [
+        "grounding"
+      ],
+      "subquery_labels": [
+        "A50 route alignment"
+      ],
+      "title": "Obwodnica Aglomeracji Warszawskiej. Kiedy doczekamy nowej trasy? Sprawa si\u0119 op\u00f3\u017ania",
+      "url": "https://moto.pl/MotoPL/7,190330,33130820,obwodnica-aglomeracji-warszawskiej-kiedy-doczekamy-nowej-trasy.html"
+    },
+    {
+      "candidate_id": "https://drivemode.pl/news/pierscien-wokol-warszawy-wciaz-niedomkniety",
+      "cluster_id": "cluster-2",
+      "explanation": "Discusses a Warsaw outer bypass but does not mention A50 or Sobienie-Jeziory.",
+      "final_score": 28.582539682539686,
+      "freshness": 66,
+      "fun_explanation": "Relatable traffic frustration, but delivered as straight news with no punchline.",
+      "fun_score": 7.0,
+      "item_id": "WB5",
+      "local_relevance": 0.05,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "WB5",
+            "native_rank": 3,
+            "source": "grounding",
+            "subquery_label": "A50 route alignment"
+          }
+        ],
+        "range_from": "2026-10-15",
+        "range_to": "2026-11-14"
+      },
+      "native_ranks": {
+        "A50 route alignment:grounding": 3
+      },
+      "rerank_score": 28.0,
+      "rrf_score": 0.00873015873015873,
+      "snippet": "To planowana \u201edu\u017ca obwodnica\u201d o d\u0142ugo\u015bci ok. 300 km, oddalona od stolicy o kilkadziesi\u0105t kilometr\u00f3w. <strong>Zostanie poprowadzona nowym \u015bladem (oraz cz\u0119\u015bciowo tras\u0105 DK50), aby wyprowadzi\u0107 ruch tranzytowy daleko poza aglomeracj\u0119</strong>.",
+      "source": "grounding",
+      "source_items": [
+        {
+          "body": "Kiedy znikn\u0105 korki wok\u00f3\u0142 Warszawy? Co z ma\u0142\u0105 i du\u017c\u0105 obwodnic\u0105\nTo planowana \u201edu\u017ca obwodnica\u201d o d\u0142ugo\u015bci ok. 300 km, oddalona od stolicy o kilkadziesi\u0105t kilometr\u00f3w. <strong>Zostanie poprowadzona nowym \u015bladem (oraz cz\u0119\u015bciowo tras\u0105 DK50), aby wyprowadzi\u0107 ruch tranzytowy daleko poza aglomeracj\u0119</strong>.",
+          "container": "drivemode.pl",
+          "date_confidence": "high",
+          "engagement": {},
+          "freshness": 66,
+          "item_id": "WB5",
+          "local_rank_score": 0.1975,
+          "local_relevance": 0.05,
+          "metadata": {},
+          "published_at": "2026-11-05",
+          "relevance_hint": 0.8,
+          "snippet": "To planowana \u201edu\u017ca obwodnica\u201d o d\u0142ugo\u015bci ok. 300 km, oddalona od stolicy o kilkadziesi\u0105t kilometr\u00f3w. <strong>Zostanie poprowadzona nowym \u015bladem (oraz cz\u0119\u015bciowo tras\u0105 DK50), aby wyprowadzi\u0107 ruch tranzytowy daleko poza aglomeracj\u0119</strong>.",
+          "source": "grounding",
+          "source_quality": 0.6,
+          "title": "Kiedy znikn\u0105 korki wok\u00f3\u0142 Warszawy? Co z ma\u0142\u0105 i du\u017c\u0105 obwodnic\u0105",
+          "url": "https://drivemode.pl/news/pierscien-wokol-warszawy-wciaz-niedomkniety/",
+          "why_relevant": "Brave web search"
+        }
+      ],
+      "source_quality": 0.6,
+      "sources": [
+        "grounding"
+      ],
+      "subquery_labels": [
+        "A50 route alignment"
+      ],
+      "title": "Kiedy znikn\u0105 korki wok\u00f3\u0142 Warszawy? Co z ma\u0142\u0105 i du\u017c\u0105 obwodnic\u0105",
+      "url": "https://drivemode.pl/news/pierscien-wokol-warszawy-wciaz-niedomkniety/"
+    },
+    {
+      "candidate_id": "https://pl.wikipedia.org/wiki/droga_ekspresowa_s8_(polska)",
+      "cluster_id": "cluster-3",
+      "explanation": "About S8/A8, not A50 or the Warsaw A50 route near Sobienie-Jeziory.",
+      "final_score": 4.925322580645161,
+      "freshness": 52,
+      "fun_explanation": "Wikipedia road regulation text; purely factual and dry.",
+      "fun_score": 3.0,
+      "item_id": "WB3",
+      "local_relevance": 0.11,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "WB3",
+            "native_rank": 2,
+            "source": "grounding",
+            "subquery_label": "A50 route alignment"
+          }
+        ],
+        "range_from": "2026-10-15",
+        "range_to": "2026-11-14"
+      },
+      "native_ranks": {
+        "A50 route alignment:grounding": 2
+      },
+      "rerank_score": 10.0,
+      "rrf_score": 0.008870967741935484,
+      "snippet": "W rozporz\u0105dzeniu tym fragment drogi przebiegaj\u0105cy przez Wroc\u0142aw mo\u017ce by\u0107 wariantowo wybudowany i oznaczony jako autostrada A8, w\u00f3wczas S8 zaczyna\u0142aby si\u0119 od w\u0119z\u0142a na Psim Polu. Droga ma tak\u017ce przerw\u0119 na odcinku \u0141\u00f3d\u017a \u2013 Warszawa. W rozporz\u0105dzeniu z 2004 roku autostrada A8 nie jest ju\u017c wariantem, a jest okre\u015blana jako <strong>autostradowa</strong> <strong>obwodnica</strong> ...",
+      "source": "grounding",
+      "source_items": [
+        {
+          "body": "Droga ekspresowa S8 (Polska) \u2013 Wikipedia, wolna encyklopedia\nW rozporz\u0105dzeniu tym fragment drogi przebiegaj\u0105cy przez Wroc\u0142aw mo\u017ce by\u0107 wariantowo wybudowany i oznaczony jako autostrada A8, w\u00f3wczas S8 zaczyna\u0142aby si\u0119 od w\u0119z\u0142a na Psim Polu. Droga ma tak\u017ce przerw\u0119 na odcinku \u0141\u00f3d\u017a \u2013 Warszawa. W rozporz\u0105dzeniu z 2004 roku autostrada A8 nie jest ju\u017c wariantem, a jest okre\u015blana jako <strong>autostradowa</strong> <strong>obwodnica</strong> ...",
+          "container": "pl.wikipedia.org",
+          "date_confidence": "high",
+          "engagement": {},
+          "freshness": 52,
+          "item_id": "WB3",
+          "local_rank_score": 0.2015,
+          "local_relevance": 0.11,
+          "metadata": {},
+          "published_at": "2026-10-31",
+          "relevance_hint": 0.8,
+          "snippet": "W rozporz\u0105dzeniu tym fragment drogi przebiegaj\u0105cy przez Wroc\u0142aw mo\u017ce by\u0107 wariantowo wybudowany i oznaczony jako autostrada A8, w\u00f3wczas S8 zaczyna\u0142aby si\u0119 od w\u0119z\u0142a na Psim Polu. Droga ma tak\u017ce przerw\u0119 na odcinku \u0141\u00f3d\u017a \u2013 Warszawa. W rozporz\u0105dzeniu z 2004 roku autostrada A8 nie jest ju\u017c wariantem, a jest okre\u015blana jako <strong>autostradowa</strong> <strong>obwodnica</strong> ...",
+          "source": "grounding",
+          "source_quality": 0.6,
+          "title": "Droga ekspresowa S8 (Polska) \u2013 Wikipedia, wolna encyklopedia",
+          "url": "https://pl.wikipedia.org/wiki/Droga_ekspresowa_S8_(Polska)",
+          "why_relevant": "Brave web search"
+        }
+      ],
+      "source_quality": 0.6,
+      "sources": [
+        "grounding"
+      ],
+      "subquery_labels": [
+        "A50 route alignment"
+      ],
+      "title": "Droga ekspresowa S8 (Polska) \u2013 Wikipedia, wolna encyklopedia",
+      "url": "https://pl.wikipedia.org/wiki/Droga_ekspresowa_S8_(Polska)"
+    },
+    {
+      "candidate_id": "https://pl.wikipedia.org/wiki/autostrada_a2_(polska)",
+      "cluster_id": "cluster-4",
+      "explanation": "About A2 and Mi\u0144sk Mazowiecki bypass, not A50 or Sobienie-Jeziory.",
+      "final_score": 4.72453125,
+      "freshness": 76,
+      "fun_explanation": "Construction and lane-width details; official and humorless.",
+      "fun_score": 3.0,
+      "item_id": "WB4",
+      "local_relevance": 0.0,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "WB4",
+            "native_rank": 4,
+            "source": "grounding",
+            "subquery_label": "A50 route alignment"
+          }
+        ],
+        "range_from": "2026-10-15",
+        "range_to": "2026-11-14"
+      },
+      "native_ranks": {
+        "A50 route alignment:grounding": 4
+      },
+      "rerank_score": 5.0,
+      "rrf_score": 0.00859375,
+      "snippet": "Wykonawc\u0105 rob\u00f3t by\u0142o konsorcjum: ... Siedlce / Przedsi\u0119biorstwo Budownictwa L\u0105dowego \u201eMAZOWIECKIE MOSTY\u201d Sp. z o.o. / Warszawskie Przedsi\u0119biorstwo Mostowe \u201eMOSTY\u201d S.A. <strong>Obwodnica</strong> Mi\u0144ska Mazowieckiego ma dwa pasy ruchu o szeroko\u015bci 3,75 m w ka\u017cdym kierunk...",
+      "source": "grounding",
+      "source_items": [
+        {
+          "body": "Autostrada A2 (Polska) \u2013 Wikipedia, wolna encyklopedia\nWykonawc\u0105 rob\u00f3t by\u0142o konsorcjum: ... Siedlce / Przedsi\u0119biorstwo Budownictwa L\u0105dowego \u201eMAZOWIECKIE MOSTY\u201d Sp. z o.o. / Warszawskie Przedsi\u0119biorstwo Mostowe \u201eMOSTY\u201d S.A. <strong>Obwodnica</strong> Mi\u0144ska Mazowieckiego ma dwa pasy ruchu o szeroko\u015bci 3,75 m w ka\u017cdym kierunk...",
+          "container": "pl.wikipedia.org",
+          "date_confidence": "high",
+          "engagement": {},
+          "freshness": 76,
+          "item_id": "WB4",
+          "local_rank_score": 0.19,
+          "local_relevance": 0.0,
+          "metadata": {},
+          "published_at": "2026-11-09",
+          "relevance_hint": 0.8,
+          "snippet": "Wykonawc\u0105 rob\u00f3t by\u0142o konsorcjum: ... Siedlce / Przedsi\u0119biorstwo Budownictwa L\u0105dowego \u201eMAZOWIECKIE MOSTY\u201d Sp. z o.o. / Warszawskie Przedsi\u0119biorstwo Mostowe \u201eMOSTY\u201d S.A. <strong>Obwodnica</strong> Mi\u0144ska Mazowieckiego ma dwa pasy ruchu o szeroko\u015bci 3,75 m w ka\u017cdym kierunk...",
+          "source": "grounding",
+          "source_quality": 0.6,
+          "title": "Autostrada A2 (Polska) \u2013 Wikipedia, wolna encyklopedia",
+          "url": "https://pl.wikipedia.org/wiki/Autostrada_A2_(Polska)",
+          "why_relevant": "Brave web search"
+        }
+      ],
+      "source_quality": 0.6,
+      "sources": [
+        "grounding"
+      ],
+      "subquery_labels": [
+        "A50 route alignment"
+      ],
+      "title": "Autostrada A2 (Polska) \u2013 Wikipedia, wolna encyklopedia",
+      "url": "https://pl.wikipedia.org/wiki/Autostrada_A2_(Polska)"
+    },
+    {
+      "candidate_id": "https://en.wikipedia.org/wiki/highways_in_poland",
+      "cluster_id": "cluster-5",
+      "explanation": "General Polish highway overview with no A50, Warsaw bypass, or Sobienie-Jeziory content.",
+      "final_score": 3.934615384615385,
+      "freshness": 50,
+      "fun_explanation": "Generic encyclopedia definition of Polish highways; no wit or shareable angle.",
+      "fun_score": 2.0,
+      "item_id": "WB2",
+      "local_relevance": 0.0,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "WB2",
+            "native_rank": 5,
+            "source": "grounding",
+            "subquery_label": "A50 route alignment"
+          }
+        ],
+        "range_from": "2026-10-15",
+        "range_to": "2026-11-14"
+      },
+      "native_ranks": {
+        "A50 route alignment:grounding": 5
+      },
+      "rerank_score": 5.0,
+      "rrf_score": 0.008461538461538463,
+      "snippet": "Motorways and expressways in Poland are controlled-access highways in the network of Poland&#x27;s national roads. They feature grade-separated interchanges with all other roads, emergency lanes, feeder lanes, wildlife crossings and dedicated roadside rest areas. Motorways differ from expressways ...",
+      "source": "grounding",
+      "source_items": [
+        {
+          "body": "Motorways and expressways in Poland - Wikipedia\nMotorways and expressways in Poland are controlled-access highways in the network of Poland&#x27;s national roads. They feature grade-separated interchanges with all other roads, emergency lanes, feeder lanes, wildlife crossings and dedicated roadside rest areas. Motorways differ from expressways ...",
+          "container": "en.wikipedia.org",
+          "date_confidence": "high",
+          "engagement": {},
+          "freshness": 50,
+          "item_id": "WB2",
+          "local_rank_score": 0.125,
+          "local_relevance": 0.0,
+          "metadata": {},
+          "published_at": "2026-10-30",
+          "relevance_hint": 0.8,
+          "snippet": "Motorways and expressways in Poland are controlled-access highways in the network of Poland&#x27;s national roads. They feature grade-separated interchanges with all other roads, emergency lanes, feeder lanes, wildlife crossings and dedicated roadside rest areas. Motorways differ from expressways ...",
+          "source": "grounding",
+          "source_quality": 0.6,
+          "title": "Motorways and expressways in Poland - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Highways_in_Poland",
+          "why_relevant": "Brave web search"
+        }
+      ],
+      "source_quality": 0.6,
+      "sources": [
+        "grounding"
+      ],
+      "subquery_labels": [
+        "A50 route alignment"
+      ],
+      "title": "Motorways and expressways in Poland - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Highways_in_Poland"
+    }
+  ],
+  "source_status": {
+    "grounding": {
+      "at": "2026-11-14T10:18:54.338859Z",
+      "attempted": true,
+      "items_returned": 5,
+      "source": "grounding",
+      "state": "ok"
+    },
+    "reddit": {
+      "at": "2026-11-14T10:18:53.492684Z",
+      "attempted": true,
+      "detail": "HTTP 403: Forbidden",
+      "fix_hint": "doctor",
+      "items_returned": 0,
+      "source": "reddit",
+      "state": "auth-failed"
+    }
+  },
+  "topic": "obwodnica autostradowa Warszawy A50 przebieg trasy Sobienie-Jeziory",
+  "warnings": [
+    "Top evidence is highly concentrated in one source.",
+    "Some sources failed: reddit"
+  ]
+}
