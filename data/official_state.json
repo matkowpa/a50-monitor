@@ -2,25 +2,25 @@
   "sources": {
     "gddkia-oaw": {
       "url": "https://www.gov.pl/web/gddkia-warszawa/projektujemy-zachodnia-czesc-obwodnicy-aglomeracji-warszawskiej",
-      "checked_at": "2026-11-14T10:21:19+00:00",
+      "checked_at": "2026-11-15T10:49:56+00:00",
       "status": "error",
       "error": "<urlopen error [Errno 101] Network is unreachable>"
     },
     "gddkia-a50s50": {
       "url": "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8",
-      "checked_at": "2026-11-14T10:21:49+00:00",
+      "checked_at": "2026-11-15T10:50:26+00:00",
       "status": "error",
       "error": "<urlopen error [Errno 101] Network is unreachable>"
     },
     "gmina-sobienie": {
       "url": "https://sobieniejeziory.pl/asp/aktualnosci,2",
-      "checked_at": "2026-11-14T10:22:19+00:00",
+      "checked_at": "2026-11-15T10:50:56+00:00",
       "status": "error",
       "error": "HTTP Error 403: Forbidden"
     },
     "rdos-warszawa": {
       "url": "https://www.gov.pl/web/rdos-warszawa",
-      "checked_at": "2026-11-14T10:22:20+00:00",
+      "checked_at": "2026-11-15T10:50:57+00:00",
       "status": "error",
       "error": "<urlopen error [Errno 101] Network is unreachable>"
     }

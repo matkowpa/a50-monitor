@@ -1,0 +1,192 @@
+{
+  "artifacts": {
+    "corpus_in_export": false,
+    "grounding": [
+      {
+        "label": "brave",
+        "resultCount": 5,
+        "webSearchQueries": [
+          "A50 obwodnica Warszawy Sobienie-Jeziory"
+        ]
+      }
+    ],
+    "hiring_signals_mode": false,
+    "plan_source": "llm",
+    "pre_research_flags_present": false,
+    "resolved": {
+      "context": "",
+      "entity": "obwodnica autostradowa Warszawy A50 przebieg trasy Sobienie-Jeziory",
+      "github_repos": [],
+      "github_user": "",
+      "subreddits": [],
+      "trustpilot_domain": "",
+      "x_handle": ""
+    }
+  },
+  "clusters": [
+    {
+      "candidate_ids": [
+        "https://moto.pl/motopl/7,190330,33130820,obwodnica-aglomeracji-warszawskiej-kiedy-doczekamy-nowej-trasy.html"
+      ],
+      "cluster_id": "cluster-1",
+      "representative_ids": [
+        "https://moto.pl/motopl/7,190330,33130820,obwodnica-aglomeracji-warszawskiej-kiedy-doczekamy-nowej-trasy.html"
+      ],
+      "score": 31.85409836065574,
+      "sources": [
+        "grounding"
+      ],
+      "title": "Obwodnica Aglomeracji Warszawskiej. Kiedy doczekamy nowej trasy? Sprawa si\u0119 op\u00f3\u017ania"
+    }
+  ],
+  "errors_by_source": {
+    "reddit": "HTTP 403: Forbidden"
+  },
+  "freshness_verdicts": [],
+  "generated_at": "2026-11-15T10:47:36.129640+00:00",
+  "items_by_source": {
+    "grounding": [
+      {
+        "body": "Obwodnica Aglomeracji Warszawskiej. Kiedy doczekamy nowej trasy? Sprawa si\u0119 op\u00f3\u017ania\nDokumentacj\u0119 przebiegu nowych tras opracowuj\u0105 dwie firmy. To Transprojekt Warszawa i Trakt. Cz\u0119\u015bci\u0105 OAW b\u0119d\u0105 nowa droga ekspresowa S50 oraz przysz\u0142a autostrada A50. Oto jedna z tras, kt\u00f3ra jest potrzebna niemal od zaraz. To OAW - Obwodnica Aglomeracji Warszawskiej.",
+        "container": "moto.pl",
+        "date_confidence": "high",
+        "engagement": {},
+        "freshness": 86,
+        "item_id": "WB2",
+        "local_rank_score": 0.345,
+        "local_relevance": 0.2,
+        "metadata": {},
+        "published_at": "2026-11-14",
+        "relevance_hint": 0.8,
+        "snippet": "Dokumentacj\u0119 przebiegu nowych tras opracowuj\u0105 dwie firmy. To Transprojekt Warszawa i Trakt. Cz\u0119\u015bci\u0105 OAW b\u0119d\u0105 nowa droga ekspresowa S50 oraz przysz\u0142a autostrada A50. Oto jedna z tras, kt\u00f3ra jest potrzebna niemal od zaraz. To OAW - Obwodnica Aglomeracji Warszawskiej.",
+        "source": "grounding",
+        "source_quality": 0.6,
+        "title": "Obwodnica Aglomeracji Warszawskiej. Kiedy doczekamy nowej trasy? Sprawa si\u0119 op\u00f3\u017ania",
+        "url": "https://moto.pl/MotoPL/7,190330,33130820,obwodnica-aglomeracji-warszawskiej-kiedy-doczekamy-nowej-trasy.html",
+        "why_relevant": "Brave web search"
+      }
+    ],
+    "reddit": []
+  },
+  "library_context": [],
+  "provider_runtime": {
+    "planner_model": "cline-pass/deepseek-v4.1-flash-1017",
+    "reasoning_provider": "cline",
+    "rerank_model": "cline-pass/deepseek-v4.1-flash-1017"
+  },
+  "query_plan": {
+    "cluster_mode": "none",
+    "freshness_mode": "balanced_recent",
+    "intent": "factual",
+    "notes": [
+      "Polish-language keyword queries; prioritize grounding for official route information and reddit for local discussion.",
+      "Hacker News is unlikely to be relevant for this local infrastructure topic."
+    ],
+    "raw_topic": "obwodnica autostradowa Warszawy A50 przebieg trasy Sobienie-Jeziory",
+    "source_weights": {
+      "grounding": 0.55,
+      "hackernews": 0.05,
+      "reddit": 0.25,
+      "youtube": 0.15
+    },
+    "subqueries": [
+      {
+        "label": "A50 route Sobienie-Jeziory",
+        "ranking_query": "Jaki jest przebieg trasy obwodnicy autostradowej Warszawy A50 w rejonie Sobienie-Jeziory?",
+        "search_query": "A50 obwodnica Warszawy Sobienie-Jeziory",
+        "sources": [
+          "grounding",
+          "reddit"
+        ],
+        "weight": 1.0
+      }
+    ]
+  },
+  "range_from": "2026-10-16",
+  "range_to": "2026-11-15",
+  "ranked_candidates": [
+    {
+      "candidate_id": "https://moto.pl/motopl/7,190330,33130820,obwodnica-aglomeracji-warszawskiej-kiedy-doczekamy-nowej-trasy.html",
+      "cluster_id": "cluster-1",
+      "explanation": "Mentions A50 and OAW generally, but does not mention Sobienie-Jeziory or the specific route segment requested.",
+      "final_score": 31.85409836065574,
+      "freshness": 86,
+      "fun_explanation": "Dry infrastructure news; no punchline or wit.",
+      "fun_score": 5.0,
+      "item_id": "WB2",
+      "local_relevance": 0.2,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "WB2",
+            "native_rank": 1,
+            "source": "grounding",
+            "subquery_label": "A50 route Sobienie-Jeziory"
+          }
+        ],
+        "range_from": "2026-10-16",
+        "range_to": "2026-11-15"
+      },
+      "native_ranks": {
+        "A50 route Sobienie-Jeziory:grounding": 1
+      },
+      "rerank_score": 30.0,
+      "rrf_score": 0.009016393442622951,
+      "snippet": "Dokumentacj\u0119 przebiegu nowych tras opracowuj\u0105 dwie firmy. To Transprojekt Warszawa i Trakt. Cz\u0119\u015bci\u0105 OAW b\u0119d\u0105 nowa droga ekspresowa S50 oraz przysz\u0142a autostrada A50. Oto jedna z tras, kt\u00f3ra jest potrzebna niemal od zaraz. To OAW - Obwodnica Aglomeracji Warszawskiej.",
+      "source": "grounding",
+      "source_items": [
+        {
+          "body": "Obwodnica Aglomeracji Warszawskiej. Kiedy doczekamy nowej trasy? Sprawa si\u0119 op\u00f3\u017ania\nDokumentacj\u0119 przebiegu nowych tras opracowuj\u0105 dwie firmy. To Transprojekt Warszawa i Trakt. Cz\u0119\u015bci\u0105 OAW b\u0119d\u0105 nowa droga ekspresowa S50 oraz przysz\u0142a autostrada A50. Oto jedna z tras, kt\u00f3ra jest potrzebna niemal od zaraz. To OAW - Obwodnica Aglomeracji Warszawskiej.",
+          "container": "moto.pl",
+          "date_confidence": "high",
+          "engagement": {},
+          "freshness": 86,
+          "item_id": "WB2",
+          "local_rank_score": 0.345,
+          "local_relevance": 0.2,
+          "metadata": {},
+          "published_at": "2026-11-14",
+          "relevance_hint": 0.8,
+          "snippet": "Dokumentacj\u0119 przebiegu nowych tras opracowuj\u0105 dwie firmy. To Transprojekt Warszawa i Trakt. Cz\u0119\u015bci\u0105 OAW b\u0119d\u0105 nowa droga ekspresowa S50 oraz przysz\u0142a autostrada A50. Oto jedna z tras, kt\u00f3ra jest potrzebna niemal od zaraz. To OAW - Obwodnica Aglomeracji Warszawskiej.",
+          "source": "grounding",
+          "source_quality": 0.6,
+          "title": "Obwodnica Aglomeracji Warszawskiej. Kiedy doczekamy nowej trasy? Sprawa si\u0119 op\u00f3\u017ania",
+          "url": "https://moto.pl/MotoPL/7,190330,33130820,obwodnica-aglomeracji-warszawskiej-kiedy-doczekamy-nowej-trasy.html",
+          "why_relevant": "Brave web search"
+        }
+      ],
+      "source_quality": 0.6,
+      "sources": [
+        "grounding"
+      ],
+      "subquery_labels": [
+        "A50 route Sobienie-Jeziory"
+      ],
+      "title": "Obwodnica Aglomeracji Warszawskiej. Kiedy doczekamy nowej trasy? Sprawa si\u0119 op\u00f3\u017ania",
+      "url": "https://moto.pl/MotoPL/7,190330,33130820,obwodnica-aglomeracji-warszawskiej-kiedy-doczekamy-nowej-trasy.html"
+    }
+  ],
+  "source_status": {
+    "grounding": {
+      "at": "2026-11-15T10:47:32.041881Z",
+      "attempted": true,
+      "items_returned": 1,
+      "source": "grounding",
+      "state": "ok"
+    },
+    "reddit": {
+      "at": "2026-11-15T10:47:31.149652Z",
+      "attempted": true,
+      "detail": "HTTP 403: Forbidden",
+      "fix_hint": "doctor",
+      "items_returned": 0,
+      "source": "reddit",
+      "state": "auth-failed"
+    }
+  },
+  "topic": "obwodnica autostradowa Warszawy A50 przebieg trasy Sobienie-Jeziory",
+  "warnings": [
+    "Evidence is thin for this topic.",
+    "Some sources failed: reddit"
+  ]
+}
