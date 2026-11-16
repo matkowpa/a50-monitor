@@ -4658,6 +4658,163 @@
       },
       "engine_status": "ok",
       "assessment_path": "data/assessments/2026-11-15.json"
+    },
+    {
+      "date": "2026-11-16",
+      "scores": {
+        "north": {
+          "score": 37,
+          "confidence": "niska",
+          "summary": "Żaden z nowych materiałów nie wskazuje oficjalnie wariantu prowadzącego przez północny pas gminy Sobienie-Jeziory (między wsią a doliną Wisły). Utrzymuję score 37 przy niskiej jakości dowodów, bo nowe pozycje dotyczą innych gmin lub innych odcinków OAW.",
+          "rationale": "Nowe dowody nie zawierają rozstrzygnięcia wariantowego dla wschodniego odcinka OAW w rejonie gminy Sobienie-Jeziory: [1] to sprzeciw gminy Zabrodzie, a [3] i [5] opisują zachodni fragment DK92–S7. Jedynym materiałem dotyczącym właściwego korytarza jest [6], który sygnalizuje presję mieszkańców powiatu otwockiego na zmianę przebiegu na odcinku most na Wiśle – Mińsk Mazowiecki, ale nie wskazuje, po której stronie gminy miałaby biec trasa. [2] i [4] mają charakter ogólny (stan sieci autostrad, priorytetowość OAW) i nie zmieniają obrazu wariantów. Wobec braku dowodów specyficznych dla pasa północnego score pozostaje na poziomie poprzedniej oceny 37, a confidence obniżam do niskiej.",
+          "key_findings": [
+            {
+              "claim": "Uchwała antys50/A50 dotyczy gminy Zabrodzie, a nie gminy Sobienie-Jeziory, więc nie wnosi informacji o wariancie przez północny pas tej gminy.",
+              "evidence_urls": [
+                "https://samorzad.gov.pl/attachment/d00ee210-cc97-4bc1-90d3-16ccd7a41a2c"
+              ]
+            },
+            {
+              "claim": "Materiały GDDKiA o odcinku DK92–S7 oraz prezentacja programu dotyczą zachodniego fragmentu OAW i nie rozstrzygają przebiegu odcinka wschodnego przez gminę Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8",
+                "https://www.gov.pl/attachment/ac21749d-2b14-494a-a749-85cbe42df69e"
+              ]
+            },
+            {
+              "claim": "Interpelacja poselska w sprawie powiatu otwockiego dotyczy odcinka most na Wiśle – Mińsk Mazowiecki i presji na zmianę przebiegu OAW, ale nie wskazuje strony północnej gminy Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://www.sejm.gov.pl/Sejm9.nsf/InterpelacjaTresc.xsp?key=BZVARM"
+              ]
+            },
+            {
+              "claim": "Komunikat GDDKiA o stanie realizacji autostrad ma charakter ogólny i nie zawiera informacji o wariantach OAW w rejonie gminy Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://www.gov.pl/web/gddkia/autostrady---stan-realizacji2"
+              ]
+            },
+            {
+              "claim": "Wystąpienie do Marszałka Sejmu potwierdza priorytetowy charakter OAW, lecz nie przesądza o przebiegu trasy przez północną część gminy Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://sejm.gov.pl/INT9.nsf/klucz/ATTCV7GYC/%24FILE/i42855-o1.pdf"
+              ]
+            }
+          ],
+          "trend_vs_prev": 0,
+          "score_raw": 37,
+          "evidence_grade": "official",
+          "delta_capped": false,
+          "change_reason": "official: bez zmiany"
+        },
+        "south": {
+          "score": 18,
+          "confidence": "niska",
+          "summary": "Nowe dowody dotyczą zachodniego odcinka OAW, sprzeciwu gminy Zabrodzie oraz ogólnej presji w powiecie otwockim; żaden nie wskazuje wariantu na południe od wsi Sobienie-Jeziory. Brak oficjalnego rozstrzygnięcia wariantowego dla wschodniego odcinka.",
+          "rationale": "Punktem wyjścia jest score bazowy 28% i poprzednia ocena 18%. Nowe materiały GDDKiA dotyczą odcinka DK92–S7 oraz ogólnego stanu realizacji autostrad, a nie wariantów na wschód od S7. Interpelacja nr 22190 sygnalizuje presję w powiecie otwockim na odcinku most na Wiśle–Mińsk Mazowiecki, ale nie lokalizuje trasy po południowej stronie gminy Sobienie-Jeziory ani w rejonie Śniadkowa Dolnego i Górnego. Uchwała Rady Gminy Zabrodzie odnosi się do innej gminy, więc nie zmienia oceny tego scenariusza.",
+          "key_findings": [
+            {
+              "claim": "Dokumentacja GDDKiA dotyczy odcinka DK92–S7, a nie wariantów na wschód od S7.",
+              "evidence_urls": [
+                "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8",
+                "https://www.gov.pl/attachment/ac21749d-2b14-494a-a749-85cbe42df69e"
+              ]
+            },
+            {
+              "claim": "Uchwała Rady Gminy Zabrodzie sprzeciwia się przebiegowi S50/A50 przez Zabrodzie, co nie lokalizuje trasy w gminie Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://samorzad.gov.pl/attachment/d00ee210-cc97-4bc1-90d3-16ccd7a41a2c"
+              ]
+            },
+            {
+              "claim": "Interpelacja nr 22190 sygnalizuje presję mieszkańców powiatu otwockiego na odcinku most na Wiśle–Mińsk Mazowiecki, ale nie wskazuje strony południowej gminy.",
+              "evidence_urls": [
+                "https://www.sejm.gov.pl/Sejm9.nsf/InterpelacjaTresc.xsp?key=BZVARM"
+              ]
+            },
+            {
+              "claim": "Materiał o stanie realizacji autostrad ma charakter ogólny i nie zawiera rozstrzygnięć wariantowych dla OAW.",
+              "evidence_urls": [
+                "https://www.gov.pl/web/gddkia/autostrady---stan-realizacji2"
+              ]
+            }
+          ],
+          "trend_vs_prev": 0,
+          "score_raw": 18,
+          "evidence_grade": "official",
+          "delta_capped": false,
+          "change_reason": "official: bez zmiany"
+        }
+      },
+      "evidence": [
+        {
+          "title": "w sprawie wyrażenia sprzeciwu wobec proponowanego przebiegu drogi ekspresowej S50/ autostrady A50 - Obwodnicy Aglomeracji Warszawskiej przez teren Gminy Zabrodzie",
+          "url": "https://samorzad.gov.pl/attachment/d00ee210-cc97-4bc1-90d3-16ccd7a41a2c",
+          "source": "exa",
+          "published": "",
+          "snippet": "UCHWAŁA NR …….2025 RADY GMINY ZABRODZIE z dnia ………………… r. w sprawie wyrażenia sprzeciwu wobec proponowanego przebiegu drogi ekspresowej S50/ autostrady A50 - Obwodnicy Aglomeracji Warszawskiej przez teren Gminy Zabrodzie Na podstawie art. 7 ust. 1 pkt 1 i art. 18 ust. 1 ustawy z dnia 8 marca 1990 r. o samorządzie gminnym (t.j. Dz. U. z 2025 r. poz. 1153) uchwala się, co następuje: § 1. 1. W związk",
+          "stance": "neutral"
+        },
+        {
+          "title": "Autostrady - stan realizacji - Generalna Dyrekcja Dróg Krajowych i Autostrad - Portal Gov.pl",
+          "url": "https://www.gov.pl/web/gddkia/autostrady---stan-realizacji2",
+          "source": "exa",
+          "published": "",
+          "snippet": "1950 km liczy sieć autostrad w Polsce, a do osiągnięcia jej docelowej długości brakuje jeszcze ok. 150 km. Złożą się na to dwa odcinki A2 na wschód od Białej Podlaskiej do Dobrynia i Terminala Samochodowego w Koroszczynie oraz A50 omijająca od południa Warszawę. Jako pierwsza przeciwległe granice kraju połączyła autostrada A4. W 2016 r. udostępniliśmy do ruchu jej ostatni odcinek, od Rzeszowa do J",
+          "stance": "neutral"
+        },
+        {
+          "title": "A50/S50 Obwodnica Aglomeracji Warszawskiej odcinek DK92 - S7 - Generalna Dyrekcja Dróg Krajowych i Autostrad - Portal Gov.pl",
+          "url": "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8",
+          "source": "exa",
+          "published": "",
+          "snippet": "## A50/S50 Obwodnica Aglomeracji Warszawskiej odcinek DK92 - S7 Podstawowe informacje Nr drogi : A50 / S50 Nazwa odcinka : Obwodnica Aglomeracji Warszawskiej odcinek DK92 - S7 System realizacji : Projektuj i Buduj Program : Rządowy Program Budowy Dróg Krajowych do 2030 r. (z perspektywą do 2033 r.) Oddział GDDKiA : Warszawa ### Aktualnie realizowany etap - #### Przygotowanie Studium techniczno-eko",
+          "stance": "neutral"
+        },
+        {
+          "title": "Szanowna Pani Elżbieta Witek Marszałek Sejmu Rzeczypospolitej Polskiej",
+          "url": "https://sejm.gov.pl/INT9.nsf/klucz/ATTCV7GYC/%24FILE/i42855-o1.pdf",
+          "source": "exa",
+          "published": "",
+          "snippet": "Zaznaczam, że Obwodnica Aglomeracji Warszawskiej (OAW) to niewątpliwie jedna z kluczowych inwestycji transportowych nie tylko w skali regionu, ale i całego kraju, w związku z czym pragnę podkreślić wagę i potrzebę realizacji tej inwestycji. Wykonane analizy w ramach Studium korytarzowego potwierdziły zasadność realizacji OAW oraz pozwoliły wskazać kierunek dalszego uszczegółowiania w ramach kolejn",
+          "stance": "neutral"
+        },
+        {
+          "title": "Prezentacja programu PowerPoint",
+          "url": "https://www.gov.pl/attachment/ac21749d-2b14-494a-a749-85cbe42df69e",
+          "source": "exa",
+          "published": "",
+          "snippet": "## Obwodnica Aglomeracji Warszawskiej zachodni fragment S50/A50 odcinek od DK92 do S7 ## S50 odcinek od S10 do DK92 • Umowa: wykonanie Studium techniczno ekonomiczno-środowiskowego wraz z uzyskaniem decyzji o środowiskowych uwarunkowaniach • Wykonawca: TRANSPROJEKT - WARSZAWA • Wartość (cena oferty): ok. 8,5 mln zł. • Czas trwania umowy: 44 miesiące, koniec I kw. 2026 r. • Długość odcinka: ok. 37",
+          "stance": "neutral"
+        },
+        {
+          "title": "Interpelacja nr 22190 - tekst - Sejm Rzeczypospolitej Polskiej",
+          "url": "https://www.sejm.gov.pl/Sejm9.nsf/InterpelacjaTresc.xsp?key=BZVARM",
+          "source": "exa",
+          "published": "",
+          "snippet": "mieszkańcy powiatu otwockiego zwrócili się do mnie z prośbą o wsparcie ich działań zmierzających do zmiany przebiegu Obwodnicy Aglomeracji Warszawskiej (OAW) na odcinku most na Wiśle – Mińsk Mazowiecki oraz zmiany charakteru tej drogi ze standardu autostrady (A50) na standard drogi ekspresowej (S50). W ramach studium korytarzowego OAW GDDKiA wybrała do dalszych prac tzw. korytarz czerwony, przebie",
+          "stance": "neutral"
+        }
+      ],
+      "sources_found": 6,
+      "source_funnel": {
+        "fetched": {
+          "engine": 0,
+          "feeds": 0,
+          "agent_reach": 27,
+          "facebook": 0,
+          "official": 0
+        },
+        "fresh": {
+          "engine": 0,
+          "feeds": 0,
+          "agent_reach": 9,
+          "facebook": 0,
+          "official": 0
+        },
+        "merged": 9
+      },
+      "engine_status": "ok",
+      "assessment_path": "data/assessments/2026-11-16.json"
     }
   ]
 }
