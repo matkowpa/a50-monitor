@@ -1,0 +1,163 @@
+{
+  "date": "2026-11-17",
+  "scores": {
+    "north": {
+      "score": 37,
+      "confidence": "niska",
+      "summary": "Nowe dowody nie wskazują wariantu dla wschodniego odcinka OAW w rejonie gminy Sobienie-Jeziory; materiał [7] dotyczy jedynie postulatu zmiany przebiegu na odcinku most na Wiśle–Mińsk Mazowiecki, bez wskazania strony północnej. Utrzymuję score 37.",
+      "rationale": "Score pozostaje 37, ponieważ nowe dowody nie rozstrzygają wariantu przebiegu przez północną część gminy Sobienie-Jeziory. [1] potwierdza kierunek A50 do Mińska Mazowieckiego, ale nie przesądza lokalnego korytarza. [6] dotyczy zachodniego odcinka DK92–S7, a [2] i [3] odnoszą się do innych gmin. [7] sygnalizuje presję mieszkańców powiatu otwockiego, lecz nie wskazuje, by trasa miała przejść północą gminy; brak oficjalnego komunikatu GDDKiA o wariantach w tym rejonie uzasadnia ostrożną ocenę.",
+      "key_findings": [
+        {
+          "claim": "A50 ma docelowo łączyć CPK z Mińskiem Mazowieckim, co potwierdza kierunek wschodni, ale nie przesądza przebiegu przez północną część gminy Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://www.autodna.pl/blog/autostrady-w-polsce-podstawowe-informacje/"
+          ]
+        },
+        {
+          "claim": "Interpelacja nr 22190 dotyczy postulatu mieszkańców powiatu otwockiego zmiany przebiegu OAW na odcinku most na Wiśle–Mińsk Mazowiecki, bez wskazania wariantu przez północ gminy.",
+          "evidence_urls": [
+            "https://www.sejm.gov.pl/Sejm9.nsf/InterpelacjaTresc.xsp?key=BZVARM"
+          ]
+        },
+        {
+          "claim": "Pierwsze biuro projektowe wybrano dla odcinka S50/A50 między DK92 i S7, czyli fragmentu zachodniego, a nie wschodniego.",
+          "evidence_urls": [
+            "https://www.gov.pl/web/gddkia-warszawa/wybralismy-pierwsze-biuro-projektowe-dla-obwodnicy-aglomeracji-warszawskiej"
+          ]
+        },
+        {
+          "claim": "Uchwała gminy Zabrodzie wyraża sprzeciw wobec przebiegu S50/A50 przez tę gminę i nie dotyczy Sobienie-Jezior.",
+          "evidence_urls": [
+            "https://samorzad.gov.pl/attachment/d00ee210-cc97-4bc1-90d3-16ccd7a41a2c"
+          ]
+        },
+        {
+          "claim": "Gmina Pniewy zbiera uwagi do przebiegu A50 przez jej teren, co dotyczy innego rejonu niż gmina Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://pniewy.pl/cms/8987/autostrada_a50"
+          ]
+        }
+      ],
+      "trend_vs_prev": 0,
+      "score_raw": 37,
+      "evidence_grade": "official",
+      "delta_capped": false,
+      "change_reason": "official: bez zmiany"
+    },
+    "south": {
+      "score": 18,
+      "confidence": "niska",
+      "summary": "Brak nowych dowodów lokalizujących wariant po południowej stronie gminy Sobienie-Jeziory; score pozostaje na poziomie 18%.",
+      "rationale": "Poprzednia ocena 18% i bazowa 28% opierały się na hipotetycznym korytarzu, a nowe materiały nie zawierają oficjalnego wariantu dla wschodniego odcinka. Wybór biura projektowego dotyczy odcinka DK92–S7, a interpelacja nr 22190 wskazuje jedynie presję w powiecie otwockim na odcinku most na Wiśle–Mińsk Mazowiecki, bez lokalizacji przy Śniadkowie Dolnym i Górnym. Uchwała gminy Zabrodzie oraz materiały dotyczące Pniew odnoszą się do innych gmin. Brak potwierdzenia korytarza przez południową część Sobienie-Jezior uzasadnia utrzymanie score blisko poprzedniego.",
+      "key_findings": [
+        {
+          "claim": "Wybór pierwszego biura projektowego dla OAW dotyczy odcinka S50/A50 między DK92 i S7, a nie wschodniego odcinka przy gminie Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://www.gov.pl/web/gddkia-warszawa/wybralismy-pierwsze-biuro-projektowe-dla-obwodnicy-aglomeracji-warszawskiej"
+          ]
+        },
+        {
+          "claim": "Interpelacja nr 22190 sygnalizuje presję mieszkańców powiatu otwockiego na zmianę przebiegu OAW na odcinku most na Wiśle–Mińsk Mazowiecki, ale nie lokalizuje trasy po południowej stronie gminy Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://www.sejm.gov.pl/Sejm9.nsf/InterpelacjaTresc.xsp?key=BZVARM"
+          ]
+        },
+        {
+          "claim": "Materiał o autostradach wskazuje docelowe połączenie A50 z CPK i Mińskiem Mazowieckim, bez rozstrzygnięcia wariantu przez południową część gminy Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://www.autodna.pl/blog/autostrady-w-polsce-podstawowe-informacje/"
+          ]
+        },
+        {
+          "claim": "Uchwała Rady Gminy Zabrodzie dotyczy sprzeciwu wobec przebiegu S50/A50 przez tę gminę, a nie przez gminę Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://samorzad.gov.pl/attachment/d00ee210-cc97-4bc1-90d3-16ccd7a41a2c"
+          ]
+        }
+      ],
+      "trend_vs_prev": 0,
+      "score_raw": 18,
+      "evidence_grade": "official",
+      "delta_capped": false,
+      "change_reason": "official: bez zmiany"
+    }
+  },
+  "evidence": [
+    {
+      "title": "Autostrady w Polsce – wykaz dróg, opłaty i przepisy 2026",
+      "url": "https://www.autodna.pl/blog/autostrady-w-polsce-podstawowe-informacje/",
+      "source": "grounding",
+      "published": "2026-10-30",
+      "snippet": "A50 – <strong>docelowo autostrada A50 połączyć ma Centralny Port Komunikacyjny i prowadzić aż do Mińska Mazowieckiego</strong>. Zarówno budowa CPK, jak i prowadzącej do niego trasy budzi wiele kontrowersji, przez co na faktyczne rozpoczęcie budowy ...",
+      "stance": "neutral"
+    },
+    {
+      "title": "w sprawie wyrażenia sprzeciwu wobec proponowanego przebiegu drogi ekspresowej S50/ autostrady A50 - Obwodnicy Aglomeracji Warszawskiej przez teren Gminy Zabrodzie",
+      "url": "https://samorzad.gov.pl/attachment/d00ee210-cc97-4bc1-90d3-16ccd7a41a2c",
+      "source": "exa",
+      "published": "",
+      "snippet": "UCHWAŁA NR …….2025 RADY GMINY ZABRODZIE z dnia ………………… r. w sprawie wyrażenia sprzeciwu wobec proponowanego przebiegu drogi ekspresowej S50/ autostrady A50 - Obwodnicy Aglomeracji Warszawskiej przez teren Gminy Zabrodzie Na podstawie art. 7 ust. 1 pkt 1 i art. 18 ust. 1 ustawy z dnia 8 marca 1990 r. o samorządzie gminnym (t.j. Dz. U. z 2025 r. poz. 1153) uchwala się, co następuje: § 1. 1. W związk",
+      "stance": "neutral"
+    },
+    {
+      "title": "Autostrada A50 - Gmina Pniewy",
+      "url": "https://pniewy.pl/cms/8987/autostrada_a50",
+      "source": "exa",
+      "published": "",
+      "snippet": "## Autostrada A50 ### Autostrada A50 Drodzy Mieszkańcy Gminy Pniewy zachęcamy do przesyłania Państwa uwag, sugestii i spostrzeżeń dotyczących przebiegu A50 przez teren naszej gminy na specjalny adres mailowy: a50@pniewy.pl utworzony przez Urząd Gminy Pniewy do zbierania Państwa opinii. Koordynatorem ze ramienia Gminy Pniewy w sprawach związanych z OAW jest Pani Paulina Abramowicz, tel. 048 685 02",
+      "stance": "neutral"
+    },
+    {
+      "title": "Autostrady - stan realizacji - Generalna Dyrekcja Dróg Krajowych i Autostrad - Portal Gov.pl",
+      "url": "https://www.gov.pl/web/gddkia/autostrady---stan-realizacji2",
+      "source": "exa",
+      "published": "",
+      "snippet": "1950 km liczy sieć autostrad w Polsce, a do osiągnięcia jej docelowej długości brakuje jeszcze ok. 150 km. Złożą się na to dwa odcinki A2 na wschód od Białej Podlaskiej do Dobrynia i Terminala Samochodowego w Koroszczynie oraz A50 omijająca od południa Warszawę. Jako pierwsza przeciwległe granice kraju połączyła autostrada A4. W 2016 r. udostępniliśmy do ruchu jej ostatni odcinek, od Rzeszowa do J",
+      "stance": "neutral"
+    },
+    {
+      "title": "Szanowna Pani Elżbieta Witek Marszałek Sejmu Rzeczypospolitej Polskiej",
+      "url": "https://sejm.gov.pl/INT9.nsf/klucz/ATTCV7GYC/%24FILE/i42855-o1.pdf",
+      "source": "exa",
+      "published": "",
+      "snippet": "Zaznaczam, że Obwodnica Aglomeracji Warszawskiej (OAW) to niewątpliwie jedna z kluczowych inwestycji transportowych nie tylko w skali regionu, ale i całego kraju, w związku z czym pragnę podkreślić wagę i potrzebę realizacji tej inwestycji. Wykonane analizy w ramach Studium korytarzowego potwierdziły zasadność realizacji OAW oraz pozwoliły wskazać kierunek dalszego uszczegółowiania w ramach kolejn",
+      "stance": "neutral"
+    },
+    {
+      "title": "Wybraliśmy pierwsze biuro projektowe dla Obwodnicy Aglomeracji Warszawskiej - Generalna Dyrekcja Dróg Krajowych i Autostrad- Oddział Warszawa - Portal Gov.pl",
+      "url": "https://www.gov.pl/web/gddkia-warszawa/wybralismy-pierwsze-biuro-projektowe-dla-obwodnicy-aglomeracji-warszawskiej",
+      "source": "exa",
+      "published": "",
+      "snippet": "Oferta firmy TRAKT została wybrana jako najkorzystniejsza w przetargu na opracowanie Studium techniczno-ekonomiczno-środowiskowego wraz z uzyskaniem decyzji środowiskowej dla S50/A50 pomiędzy DK92 i S7 na południe od Stolicy. To jeden z dwóch odcinków pierwszego, zachodniego fragmentu Obwodnicy Aglomeracji Warszawskiej, które połączą S10 w okolicy Naruszewa pod Płońskiem z S7 na południe od Warsza",
+      "stance": "neutral"
+    },
+    {
+      "title": "Interpelacja nr 22190 - tekst - Sejm Rzeczypospolitej Polskiej",
+      "url": "https://www.sejm.gov.pl/Sejm9.nsf/InterpelacjaTresc.xsp?key=BZVARM",
+      "source": "exa",
+      "published": "",
+      "snippet": "mieszkańcy powiatu otwockiego zwrócili się do mnie z prośbą o wsparcie ich działań zmierzających do zmiany przebiegu Obwodnicy Aglomeracji Warszawskiej (OAW) na odcinku most na Wiśle – Mińsk Mazowiecki oraz zmiany charakteru tej drogi ze standardu autostrady (A50) na standard drogi ekspresowej (S50). W ramach studium korytarzowego OAW GDDKiA wybrała do dalszych prac tzw. korytarz czerwony, przebie",
+      "stance": "neutral"
+    }
+  ],
+  "sources_found": 7,
+  "source_funnel": {
+    "fetched": {
+      "engine": 2,
+      "feeds": 0,
+      "agent_reach": 26,
+      "facebook": 0,
+      "official": 0
+    },
+    "fresh": {
+      "engine": 2,
+      "feeds": 0,
+      "agent_reach": 7,
+      "facebook": 0,
+      "official": 0
+    },
+    "merged": 9
+  },
+  "engine_status": "ok",
+  "assessment_path": "data/assessments/2026-11-17.json"
+}

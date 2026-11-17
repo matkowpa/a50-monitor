@@ -1,0 +1,294 @@
+{
+  "artifacts": {
+    "corpus_in_export": false,
+    "grounding": [
+      {
+        "label": "brave",
+        "resultCount": 5,
+        "webSearchQueries": [
+          "A50 obwodnica autostradowa Warszawy przebieg trasy"
+        ]
+      }
+    ],
+    "hiring_signals_mode": false,
+    "plan_source": "llm",
+    "pre_research_flags_present": false,
+    "resolved": {
+      "context": "",
+      "entity": "obwodnica autostradowa Warszawy A50 przebieg trasy Sobienie-Jeziory",
+      "github_repos": [],
+      "github_user": "",
+      "subreddits": [],
+      "trustpilot_domain": "",
+      "x_handle": ""
+    }
+  },
+  "clusters": [
+    {
+      "candidate_ids": [
+        "https://moto.pl/motopl/7,190330,33130820,obwodnica-aglomeracji-warszawskiej-kiedy-doczekamy-nowej-trasy.html"
+      ],
+      "cluster_id": "cluster-1",
+      "representative_ids": [
+        "https://moto.pl/motopl/7,190330,33130820,obwodnica-aglomeracji-warszawskiej-kiedy-doczekamy-nowej-trasy.html"
+      ],
+      "score": 52.65901639344263,
+      "sources": [
+        "grounding"
+      ],
+      "title": "Obwodnica Aglomeracji Warszawskiej. Kiedy doczekamy nowej trasy? Sprawa si\u0119 op\u00f3\u017ania"
+    },
+    {
+      "candidate_ids": [
+        "https://autodna.pl/blog/autostrady-w-polsce-podstawowe-informacje"
+      ],
+      "cluster_id": "cluster-2",
+      "representative_ids": [
+        "https://autodna.pl/blog/autostrady-w-polsce-podstawowe-informacje"
+      ],
+      "score": 36.61935483870968,
+      "sources": [
+        "grounding"
+      ],
+      "title": "Autostrady w Polsce \u2013 wykaz dr\u00f3g, op\u0142aty i przepisy 2026"
+    }
+  ],
+  "errors_by_source": {
+    "reddit": "HTTP 403: Forbidden"
+  },
+  "freshness_verdicts": [],
+  "generated_at": "2026-11-17T11:46:17.220297+00:00",
+  "items_by_source": {
+    "grounding": [
+      {
+        "body": "Obwodnica Aglomeracji Warszawskiej. Kiedy doczekamy nowej trasy? Sprawa si\u0119 op\u00f3\u017ania\nDokumentacj\u0119 przebiegu nowych tras opracowuj\u0105 dwie firmy. To Transprojekt Warszawa i Trakt. Cz\u0119\u015bci\u0105 OAW b\u0119d\u0105 nowa droga ekspresowa S50 oraz przysz\u0142a autostrada A50. Oto jedna z tras, kt\u00f3ra jest potrzebna niemal od zaraz. To OAW - Obwodnica Aglomeracji Warszawskiej.",
+        "container": "moto.pl",
+        "date_confidence": "high",
+        "engagement": {},
+        "freshness": 82,
+        "item_id": "WB1",
+        "local_rank_score": 0.3675,
+        "local_relevance": 0.25,
+        "metadata": {},
+        "published_at": "2026-11-14",
+        "relevance_hint": 0.8,
+        "snippet": "Dokumentacj\u0119 przebiegu nowych tras opracowuj\u0105 dwie firmy. To Transprojekt Warszawa i Trakt. Cz\u0119\u015bci\u0105 OAW b\u0119d\u0105 nowa droga ekspresowa S50 oraz przysz\u0142a autostrada A50. Oto jedna z tras, kt\u00f3ra jest potrzebna niemal od zaraz. To OAW - Obwodnica Aglomeracji Warszawskiej.",
+        "source": "grounding",
+        "source_quality": 0.6,
+        "title": "Obwodnica Aglomeracji Warszawskiej. Kiedy doczekamy nowej trasy? Sprawa si\u0119 op\u00f3\u017ania",
+        "url": "https://moto.pl/MotoPL/7,190330,33130820,obwodnica-aglomeracji-warszawskiej-kiedy-doczekamy-nowej-trasy.html",
+        "why_relevant": "Brave web search"
+      },
+      {
+        "body": "Autostrady w Polsce \u2013 wykaz dr\u00f3g, op\u0142aty i przepisy 2026\nA50 \u2013 <strong>docelowo autostrada A50 po\u0142\u0105czy\u0107 ma Centralny Port Komunikacyjny i prowadzi\u0107 a\u017c do Mi\u0144ska Mazowieckiego</strong>. Zar\u00f3wno budowa CPK, jak i prowadz\u0105cej do niego trasy budzi wiele kontrowersji, przez co na faktyczne rozpocz\u0119cie budowy ...",
+        "container": "www.autodna.pl",
+        "date_confidence": "high",
+        "engagement": {},
+        "freshness": 42,
+        "item_id": "WB2",
+        "local_rank_score": 0.20900000000000002,
+        "local_relevance": 0.16,
+        "metadata": {},
+        "published_at": "2026-10-30",
+        "relevance_hint": 0.8,
+        "snippet": "A50 \u2013 <strong>docelowo autostrada A50 po\u0142\u0105czy\u0107 ma Centralny Port Komunikacyjny i prowadzi\u0107 a\u017c do Mi\u0144ska Mazowieckiego</strong>. Zar\u00f3wno budowa CPK, jak i prowadz\u0105cej do niego trasy budzi wiele kontrowersji, przez co na faktyczne rozpocz\u0119cie budowy ...",
+        "source": "grounding",
+        "source_quality": 0.6,
+        "title": "Autostrady w Polsce \u2013 wykaz dr\u00f3g, op\u0142aty i przepisy 2026",
+        "url": "https://www.autodna.pl/blog/autostrady-w-polsce-podstawowe-informacje/",
+        "why_relevant": "Brave web search"
+      }
+    ],
+    "reddit": []
+  },
+  "library_context": [],
+  "provider_runtime": {
+    "planner_model": "cline-pass/deepseek-v4.1-flash-1017",
+    "reasoning_provider": "cline",
+    "rerank_model": "cline-pass/deepseek-v4.1-flash-1017"
+  },
+  "query_plan": {
+    "cluster_mode": "none",
+    "freshness_mode": "balanced_recent",
+    "intent": "factual",
+    "notes": [
+      "A50 route planning is factual but may have recent local updates; prioritize official/grounding sources and local discussion."
+    ],
+    "raw_topic": "obwodnica autostradowa Warszawy A50 przebieg trasy Sobienie-Jeziory",
+    "source_weights": {
+      "grounding": 0.6,
+      "hackernews": 0.05,
+      "reddit": 0.2,
+      "youtube": 0.15
+    },
+    "subqueries": [
+      {
+        "label": "A50 route",
+        "ranking_query": "Jaki jest planowany przebieg trasy obwodnicy autostradowej Warszawy A50?",
+        "search_query": "A50 obwodnica autostradowa Warszawy przebieg trasy",
+        "sources": [
+          "grounding",
+          "reddit"
+        ],
+        "weight": 1.0
+      }
+    ]
+  },
+  "range_from": "2026-10-18",
+  "range_to": "2026-11-17",
+  "ranked_candidates": [
+    {
+      "candidate_id": "https://moto.pl/motopl/7,190330,33130820,obwodnica-aglomeracji-warszawskiej-kiedy-doczekamy-nowej-trasy.html",
+      "cluster_id": "cluster-1",
+      "explanation": "Mentions OAW and future A50 route documentation, but lacks specific Sobienie-Jeziory route details.",
+      "final_score": 52.65901639344263,
+      "freshness": 82,
+      "fun_explanation": "Dry infrastructure news; mild irony in 'needed almost immediately' but no real punchline.",
+      "fun_score": 7.0,
+      "item_id": "WB1",
+      "local_relevance": 0.25,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "WB1",
+            "native_rank": 1,
+            "source": "grounding",
+            "subquery_label": "A50 route"
+          }
+        ],
+        "range_from": "2026-10-18",
+        "range_to": "2026-11-17"
+      },
+      "native_ranks": {
+        "A50 route:grounding": 1
+      },
+      "rerank_score": 65.0,
+      "rrf_score": 0.009836065573770491,
+      "snippet": "Dokumentacj\u0119 przebiegu nowych tras opracowuj\u0105 dwie firmy. To Transprojekt Warszawa i Trakt. Cz\u0119\u015bci\u0105 OAW b\u0119d\u0105 nowa droga ekspresowa S50 oraz przysz\u0142a autostrada A50. Oto jedna z tras, kt\u00f3ra jest potrzebna niemal od zaraz. To OAW - Obwodnica Aglomeracji Warszawskiej.",
+      "source": "grounding",
+      "source_items": [
+        {
+          "body": "Obwodnica Aglomeracji Warszawskiej. Kiedy doczekamy nowej trasy? Sprawa si\u0119 op\u00f3\u017ania\nDokumentacj\u0119 przebiegu nowych tras opracowuj\u0105 dwie firmy. To Transprojekt Warszawa i Trakt. Cz\u0119\u015bci\u0105 OAW b\u0119d\u0105 nowa droga ekspresowa S50 oraz przysz\u0142a autostrada A50. Oto jedna z tras, kt\u00f3ra jest potrzebna niemal od zaraz. To OAW - Obwodnica Aglomeracji Warszawskiej.",
+          "container": "moto.pl",
+          "date_confidence": "high",
+          "engagement": {},
+          "freshness": 82,
+          "item_id": "WB1",
+          "local_rank_score": 0.3675,
+          "local_relevance": 0.25,
+          "metadata": {},
+          "published_at": "2026-11-14",
+          "relevance_hint": 0.8,
+          "snippet": "Dokumentacj\u0119 przebiegu nowych tras opracowuj\u0105 dwie firmy. To Transprojekt Warszawa i Trakt. Cz\u0119\u015bci\u0105 OAW b\u0119d\u0105 nowa droga ekspresowa S50 oraz przysz\u0142a autostrada A50. Oto jedna z tras, kt\u00f3ra jest potrzebna niemal od zaraz. To OAW - Obwodnica Aglomeracji Warszawskiej.",
+          "source": "grounding",
+          "source_quality": 0.6,
+          "title": "Obwodnica Aglomeracji Warszawskiej. Kiedy doczekamy nowej trasy? Sprawa si\u0119 op\u00f3\u017ania",
+          "url": "https://moto.pl/MotoPL/7,190330,33130820,obwodnica-aglomeracji-warszawskiej-kiedy-doczekamy-nowej-trasy.html",
+          "why_relevant": "Brave web search"
+        }
+      ],
+      "source_quality": 0.6,
+      "sources": [
+        "grounding"
+      ],
+      "subquery_labels": [
+        "A50 route"
+      ],
+      "title": "Obwodnica Aglomeracji Warszawskiej. Kiedy doczekamy nowej trasy? Sprawa si\u0119 op\u00f3\u017ania",
+      "url": "https://moto.pl/MotoPL/7,190330,33130820,obwodnica-aglomeracji-warszawskiej-kiedy-doczekamy-nowej-trasy.html"
+    },
+    {
+      "candidate_id": "https://autodna.pl/blog/autostrady-w-polsce-podstawowe-informacje",
+      "cluster_id": "cluster-2",
+      "explanation": "General A50 route mention, but no Warsaw bypass or Sobienie-Jeziory context.",
+      "final_score": 36.61935483870968,
+      "freshness": 42,
+      "fun_explanation": "Straight informational highway/CPK explainer; no wit or shareable joke.",
+      "fun_score": 4.0,
+      "item_id": "WB2",
+      "local_relevance": 0.16,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "WB2",
+            "native_rank": 2,
+            "source": "grounding",
+            "subquery_label": "A50 route"
+          }
+        ],
+        "range_from": "2026-10-18",
+        "range_to": "2026-11-17"
+      },
+      "native_ranks": {
+        "A50 route:grounding": 2
+      },
+      "rerank_score": 45.0,
+      "rrf_score": 0.00967741935483871,
+      "snippet": "A50 \u2013 <strong>docelowo autostrada A50 po\u0142\u0105czy\u0107 ma Centralny Port Komunikacyjny i prowadzi\u0107 a\u017c do Mi\u0144ska Mazowieckiego</strong>. Zar\u00f3wno budowa CPK, jak i prowadz\u0105cej do niego trasy budzi wiele kontrowersji, przez co na faktyczne rozpocz\u0119cie budowy ...",
+      "source": "grounding",
+      "source_items": [
+        {
+          "body": "Autostrady w Polsce \u2013 wykaz dr\u00f3g, op\u0142aty i przepisy 2026\nA50 \u2013 <strong>docelowo autostrada A50 po\u0142\u0105czy\u0107 ma Centralny Port Komunikacyjny i prowadzi\u0107 a\u017c do Mi\u0144ska Mazowieckiego</strong>. Zar\u00f3wno budowa CPK, jak i prowadz\u0105cej do niego trasy budzi wiele kontrowersji, przez co na faktyczne rozpocz\u0119cie budowy ...",
+          "container": "www.autodna.pl",
+          "date_confidence": "high",
+          "engagement": {},
+          "freshness": 42,
+          "item_id": "WB2",
+          "local_rank_score": 0.20900000000000002,
+          "local_relevance": 0.16,
+          "metadata": {},
+          "published_at": "2026-10-30",
+          "relevance_hint": 0.8,
+          "snippet": "A50 \u2013 <strong>docelowo autostrada A50 po\u0142\u0105czy\u0107 ma Centralny Port Komunikacyjny i prowadzi\u0107 a\u017c do Mi\u0144ska Mazowieckiego</strong>. Zar\u00f3wno budowa CPK, jak i prowadz\u0105cej do niego trasy budzi wiele kontrowersji, przez co na faktyczne rozpocz\u0119cie budowy ...",
+          "source": "grounding",
+          "source_quality": 0.6,
+          "title": "Autostrady w Polsce \u2013 wykaz dr\u00f3g, op\u0142aty i przepisy 2026",
+          "url": "https://www.autodna.pl/blog/autostrady-w-polsce-podstawowe-informacje/",
+          "why_relevant": "Brave web search"
+        }
+      ],
+      "source_quality": 0.6,
+      "sources": [
+        "grounding"
+      ],
+      "subquery_labels": [
+        "A50 route"
+      ],
+      "title": "Autostrady w Polsce \u2013 wykaz dr\u00f3g, op\u0142aty i przepisy 2026",
+      "url": "https://www.autodna.pl/blog/autostrady-w-polsce-podstawowe-informacje/"
+    }
+  ],
+  "source_status": {
+    "grounding": {
+      "at": "2026-11-17T11:46:09.106322Z",
+      "attempted": true,
+      "items_returned": 2,
+      "source": "grounding",
+      "state": "ok"
+    },
+    "reddit": {
+      "at": "2026-11-17T11:46:08.574672Z",
+      "attempted": true,
+      "detail": "HTTP 403: Forbidden",
+      "fix_hint": "doctor",
+      "items_returned": 0,
+      "source": "reddit",
+      "state": "auth-failed"
+    }
+  },
+  "topic": "obwodnica autostradowa Warszawy A50 przebieg trasy Sobienie-Jeziory",
+  "warnings": [
+    "Evidence is thin for this topic.",
+    "Some sources failed: reddit"
+  ]
+}
+
+--- STDERR ---
+/last30days · researching: obwodnica autostradowa Warszawy A50 przebieg trasy Sobienie-Jeziory
+⏳ [95mProcessing[0m Removing duplicates...
+[Planner] Plan: intent=factual, freshness=balanced_recent, cluster_mode=none, subqueries=1, source=llm
+[Planner]   sq1 label=A50 route search="A50 obwodnica autostradowa Warszawy przebieg trasy" sources=[grounding,reddit]
+[RedditKeyless] Tier 1 (RSS) 0 posts; score-only; 0 scored cards
+✓ Research complete (20.5s) - Reddit: 0 threads, YouTube: 0 videos, HN: 0 stories, Web: 2 results
+[last30days] Saved output to /home/runner/work/a50-monitor/a50-monitor/data/raw/2026-11-17/report.json
+[last30days] Saved output to /home/runner/work/a50-monitor/a50-monitor/data/raw/2026-11-17/obwodnica-autostradowa-warszawy-a50-przebieg-trasy-sobienie-jeziory-raw.json
