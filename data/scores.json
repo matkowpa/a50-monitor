@@ -4978,6 +4978,159 @@
       },
       "engine_status": "ok",
       "assessment_path": "data/assessments/2026-11-17.json"
+    },
+    {
+      "date": "2026-11-18",
+      "scores": {
+        "north": {
+          "score": 37,
+          "confidence": "niska",
+          "summary": "Brak nowych dowodów odnoszących się do wariantu przebiegu przez północną część gminy Sobienie-Jeziory — nowe materiały dotyczą innych gmin, odcinka zachodniego OAW lub ogólnego stanu programu. Score pozostaje na poziomie poprzedniej oceny (37), a jakość dowodów jest niska.",
+          "rationale": "Nowe dowody nie zawierają żadnego oficjalnego dokumentu GDDKiA ani ministerstwa, który wskazywałby korytarz przez pas między wsią Sobienie-Jeziory a doliną Wisły. Uchwała Rady Gminy Zabrodzie [1] jest stanowiskiem samorządu innej gminy i nie przesądza lokalnego przebiegu w powiecie otwockim. Wybór biura TRAKT [4] dotyczy odcinka DK92–S7, czyli zachodniej części OAW, a uzasadnienie ministerialne [3] potwierdza jedynie umocowanie OAW w programie rządowym bez rozstrzygnięcia wariantu. Interpelacja poselska [5] dokumentuje presję samorządów Wiązowny, Kołbieli, Dębe Wielkich i powiatu otwockiego, ale nie wskazuje, by trasa miała przejść północą gminy Sobienie-Jeziory. Wobec braku dowodów różnicujących utrzymuję score blisko poprzedniej oceny, z niską confidence ze względu na szczupłość i pośredniość materiału.",
+          "key_findings": [
+            {
+              "claim": "Rada Gminy Zabrodzie wyraziła sprzeciw wobec proponowanego przebiegu S50/A50, co potwierdza narastającą presję samorządów na korytarz OAW, ale dotyczy innej gminy i nie rozstrzyga przebiegu przez północną część Sobienie-Jezior.",
+              "evidence_urls": [
+                "https://samorzad.gov.pl/attachment/d00ee210-cc97-4bc1-90d3-16ccd7a41a2c"
+              ]
+            },
+            {
+              "claim": "GDDKiA wybrała biuro projektowe TRAKT dla STEŚ S50/A50 między DK92 i S7, czyli dla odcinka zachodniego — dokument nie odnosi się do odcinka wschodniego przez gminę Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://www.gov.pl/web/gddkia-warszawa/wybralismy-pierwsze-biuro-projektowe-dla-obwodnicy-aglomeracji-warszawskiej"
+              ]
+            },
+            {
+              "claim": "Interpelacja poselska wskazuje na sprzeciwy wójtów Wiązowny, Kołbieli i Dębe Wielkich oraz Rady Powiatu Otwockiego, lecz nie zawiera informacji o wariancie prowadzącym przez północny pas gminy Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://www.sejm.gov.pl/Sejm9.nsf/InterpelacjaTresc.xsp?key=BZK9VA"
+              ]
+            },
+            {
+              "claim": "Obwodnica Aglomeracji Warszawskiej jest ujęta w Rządowym Programie Budowy Dróg Krajowych do 2030 r. z perspektywą do 2033 r., co potwierdza realizację inwestycji, ale bez wskazania wariantu w rejonie gminy Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://www.gov.pl/attachment/69caaf63-79a7-4b11-9e92-63537e1c1602"
+              ]
+            },
+            {
+              "claim": "Komunikat GDDKiA o stanie realizacji autostrad ma charakter ogólny i nie zawiera odniesień do wariantów przebiegu OAW w powiecie otwockim.",
+              "evidence_urls": [
+                "https://www.gov.pl/web/gddkia/autostrady---stan-realizacji2"
+              ]
+            }
+          ],
+          "trend_vs_prev": 0,
+          "score_raw": 37,
+          "evidence_grade": "official",
+          "delta_capped": false,
+          "change_reason": "official: bez zmiany"
+        },
+        "south": {
+          "score": 18,
+          "confidence": "niska",
+          "summary": "Brak nowych, istotnych dowodów dla scenariusza południowego przez Śniadków Dolny i Górny; score pozostaje 18%.",
+          "rationale": "Utrzymuję score 18%, ponieważ nowe materiały nie zawierają oficjalnego wariantu wschodniego odcinka OAW ani wskazania korytarza przez południową część gminy Sobienie-Jeziory. Najsilniejszy nowy dokument dotyczy wyboru biura projektowego dla odcinka DK92–S7, a nie odcinka wschodniego. Interpelacja oraz uchwała gminy Zabrodzie pokazują presję i sprzeciwy w innych gminach, bez lokalizacji przy Śniadkowie Dolnym i Górnym. Brak podstaw do odstępstwa od poprzedniej oceny; confidence pozostaje niska.",
+          "key_findings": [
+            {
+              "claim": "Wybór pierwszego biura projektowego dotyczy odcinka S50/A50 między DK92 i S7, a nie wschodniego odcinka przy Sobienie-Jeziorach.",
+              "evidence_urls": [
+                "https://www.gov.pl/web/gddkia-warszawa/wybralismy-pierwsze-biuro-projektowe-dla-obwodnicy-aglomeracji-warszawskiej"
+              ]
+            },
+            {
+              "claim": "Uzasadnienie Ministerstwa Infrastruktury potwierdza OAW w Rządowym Programie Budowy Dróg Krajowych do 2030 r., ale nie precyzuje wariantu przez gminę Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://www.gov.pl/attachment/69caaf63-79a7-4b11-9e92-63537e1c1602"
+              ]
+            },
+            {
+              "claim": "Interpelacja nr 21813 wskazuje presję samorządów i mieszkańców w powiecie otwockim, m.in. Wiązowny, Kołbiela i Dębego Wielkiego, bez lokalizacji przy Śniadkowie Dolnym i Górnym.",
+              "evidence_urls": [
+                "https://www.sejm.gov.pl/Sejm9.nsf/InterpelacjaTresc.xsp?key=BZK9VA"
+              ]
+            },
+            {
+              "claim": "Uchwała Rady Gminy Zabrodzie dotyczy sprzeciwu wobec przebiegu S50/A50 przez tę gminę, więc nie jest dowodem na wariant południowy w Sobienie-Jeziorach.",
+              "evidence_urls": [
+                "https://samorzad.gov.pl/attachment/d00ee210-cc97-4bc1-90d3-16ccd7a41a2c"
+              ]
+            },
+            {
+              "claim": "Materiał GDDKiA o stanie autostrad ma charakter ogólny i nie odnosi się do wariantu OAW w gminie Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://www.gov.pl/web/gddkia/autostrady---stan-realizacji2"
+              ]
+            }
+          ],
+          "trend_vs_prev": 0,
+          "score_raw": 18,
+          "evidence_grade": "official",
+          "delta_capped": false,
+          "change_reason": "official: bez zmiany"
+        }
+      },
+      "evidence": [
+        {
+          "title": "w sprawie wyrażenia sprzeciwu wobec proponowanego przebiegu drogi ekspresowej S50/ autostrady A50 - Obwodnicy Aglomeracji Warszawskiej przez teren Gminy Zabrodzie",
+          "url": "https://samorzad.gov.pl/attachment/d00ee210-cc97-4bc1-90d3-16ccd7a41a2c",
+          "source": "exa",
+          "published": "",
+          "snippet": "UCHWAŁA NR …….2025 RADY GMINY ZABRODZIE z dnia ………………… r. w sprawie wyrażenia sprzeciwu wobec proponowanego przebiegu drogi ekspresowej S50/ autostrady A50 - Obwodnicy Aglomeracji Warszawskiej przez teren Gminy Zabrodzie Na podstawie art. 7 ust. 1 pkt 1 i art. 18 ust. 1 ustawy z dnia 8 marca 1990 r. o samorządzie gminnym (t.j. Dz. U. z 2025 r. poz. 1153) uchwala się, co następuje: § 1. 1. W związk",
+          "stance": "neutral"
+        },
+        {
+          "title": "Autostrady - stan realizacji - Generalna Dyrekcja Dróg Krajowych i Autostrad - Portal Gov.pl",
+          "url": "https://www.gov.pl/web/gddkia/autostrady---stan-realizacji2",
+          "source": "exa",
+          "published": "",
+          "snippet": "1950 km liczy sieć autostrad w Polsce, a do osiągnięcia jej docelowej długości brakuje jeszcze ok. 150 km. Złożą się na to dwa odcinki A2 na wschód od Białej Podlaskiej do Dobrynia i Terminala Samochodowego w Koroszczynie oraz A50 omijająca od południa Warszawę. Na A6 pod Szczecinem, w obrębie węzła Kijewo, stare poniemieckie płyty betonowe zastąpiliśmy nową nawierzchnią. Zniknął też stary beton n",
+          "stance": "neutral"
+        },
+        {
+          "title": "Minister Infrastruktury",
+          "url": "https://www.gov.pl/attachment/69caaf63-79a7-4b11-9e92-63537e1c1602",
+          "source": "exa",
+          "published": "",
+          "snippet": "UZASADNIENIE Obwodnica Aglomeracji Warszawskiej to zadanie ujęte do realizacji w ramach Rządowego Programu Budowy Dróg Krajowych do 2030 r. (z perspektywą do 2033 r.). Budowa Obwodnicy Aglomeracji Warszawskiej (OAW) umożliwi odciążenie aglomeracji warszawskiej od ruchu tranzytowego, poprawę warunków ruchu oraz wzrost bezpieczeństwa ruchu drogowego także w rejonie samej inwestycji. Inwestycja poleg",
+          "stance": "neutral"
+        },
+        {
+          "title": "Wybraliśmy pierwsze biuro projektowe dla Obwodnicy Aglomeracji Warszawskiej - Generalna Dyrekcja Dróg Krajowych i Autostrad- Oddział Warszawa - Portal Gov.pl",
+          "url": "https://www.gov.pl/web/gddkia-warszawa/wybralismy-pierwsze-biuro-projektowe-dla-obwodnicy-aglomeracji-warszawskiej",
+          "source": "exa",
+          "published": "",
+          "snippet": "Oferta firmy TRAKT została wybrana jako najkorzystniejsza w przetargu na opracowanie Studium techniczno-ekonomiczno-środowiskowego wraz z uzyskaniem decyzji środowiskowej dla S50/A50 pomiędzy DK92 i S7 na południe od Stolicy. To jeden z dwóch odcinków pierwszego, zachodniego fragmentu Obwodnicy Aglomeracji Warszawskiej, które połączą S10 w okolicy Naruszewa pod Płońskiem z S7 na południe od Warsza",
+          "stance": "neutral"
+        },
+        {
+          "title": "Interpelacja nr 21813 - tekst - Sejm Rzeczypospolitej Polskiej",
+          "url": "https://www.sejm.gov.pl/Sejm9.nsf/InterpelacjaTresc.xsp?key=BZK9VA",
+          "source": "exa",
+          "published": "",
+          "snippet": "Lokalni włodarze (m.in. wójt gminy Wiązowna, wójt gminy Kołbiel, wójt gminy Dębe Wielkie, jak również Rada Powiatu Otwockiego), ale przede wszystkim lokalne społeczności, mieszkańcy, m.in. zrzeszeni w różnych stowarzyszeniach (jak np. Stowarzyszenie „NIE TĘDY DROGA”), głośno sprzeciwiają się przebiegowi OAW w „czerwonym korytarzu”, kierując nie tylko petycje, ale również oficjalne stanowiska organ",
+          "stance": "neutral"
+        }
+      ],
+      "sources_found": 5,
+      "source_funnel": {
+        "fetched": {
+          "engine": 1,
+          "feeds": 0,
+          "agent_reach": 27,
+          "facebook": 0,
+          "official": 0
+        },
+        "fresh": {
+          "engine": 1,
+          "feeds": 0,
+          "agent_reach": 8,
+          "facebook": 0,
+          "official": 0
+        },
+        "merged": 9
+      },
+      "engine_status": "ok",
+      "assessment_path": "data/assessments/2026-11-18.json"
     }
   ]
 }
