@@ -1,0 +1,171 @@
+{
+  "date": "2026-11-20",
+  "scores": {
+    "north": {
+      "score": 37,
+      "confidence": "niska",
+      "summary": "Nowe dowody nie zawierają żadnego oficjalnego wskazania wariantu OAW w rejonie gminy Sobienie-Jeziory, a tym bardziej pasa północnego między wsią a doliną Wisły. Utrzymuję score blisko poprzedniej oceny (37), bo brak sygnałów rozstrzygających o stronie przecięcia gminy.",
+      "rationale": "Żaden z siedmiu nowych dowodów nie jest komunikatem GDDKiA wskazującym wariant przebiegu wschodniego odcinka OAW, więc kluczowe ogniwo oceny — wybór wariantu — pozostaje nierozstrzygnięte. Wybór biura TRAKT oraz strona GDDKiA dotyczą odcinka DK92–S7, czyli części zachodniej, a nie odcinka wschodniego obejmującego powiat otwocki. Uzasadnienie ministerialne potwierdza jedynie obecność OAW w Rządowym Programie Budowy Dróg Krajowych do 2030 r. bez rozstrzygnięć lokalizacyjnych, a uchwała Rady Gminy Zabrodzie dotyczy innej gminy. Interpelacja nr 22190 potwierdza jedynie, że korytarz most na Wiśle – Mińsk Mazowiecki przebiega przez powiat otwocki i jest przedmiotem nacisków mieszkańców, ale nie wskazuje, po której stronie gminy Sobienie-Jeziory miałby biec. Wobec braku dowodów dotyczących konkretnie pasa północnego (między wsią a terenami zalewowymi i Naturą 2000) score pozostaje na poziomie 37, a jakość dowodów uzasadnia confidence „niska”.",
+      "key_findings": [
+        {
+          "claim": "OAW jest ujęta w Rządowym Programie Budowy Dróg Krajowych do 2030 r., ale dokument nie zawiera rozstrzygnięć lokalizacyjnych dla odcinka wschodniego.",
+          "evidence_urls": [
+            "https://www.gov.pl/attachment/69caaf63-79a7-4b11-9e92-63537e1c1602"
+          ]
+        },
+        {
+          "claim": "Wybrane biuro projektowe TRAKT ma opracować STEŚ dla S50/A50 na odcinku DK92–S7, czyli dla części zachodniej obwodnicy, a nie dla rejonu gminy Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://www.gov.pl/web/gddkia-warszawa/wybralismy-pierwsze-biuro-projektowe-dla-obwodnicy-aglomeracji-warszawskiej",
+            "https://www.gov.pl/web/gddkia/a50s50-odcinku-dk92-do-s8"
+          ]
+        },
+        {
+          "claim": "Uchwała Rady Gminy Zabrodzie wyraża sprzeciw wobec przebiegu S50/A50 przez tę gminę, więc nie dotyczy gminy Sobienie-Jeziory ani strony północnej jej terenu.",
+          "evidence_urls": [
+            "https://samorzad.gov.pl/attachment/d00ee210-cc97-4bc1-90d3-16ccd7a41a2c"
+          ]
+        },
+        {
+          "claim": "Interpelacja nr 22190 potwierdza, że korytarz OAW na odcinku most na Wiśle – Mińsk Mazowiecki przebiega przez powiat otwocki i budzi sprzeciw mieszkańców, lecz nie wskazuje, po której stronie gminy Sobienie-Jeziory miałby zostać poprowadzony.",
+          "evidence_urls": [
+            "https://www.sejm.gov.pl/Sejm9.nsf/InterpelacjaTresc.xsp?key=BZVARM"
+          ]
+        },
+        {
+          "claim": "Media opisują OAW jako zewnętrzny pierścień obejmujący A50 i S50, bez szczegółów lokalizacyjnych pozwalających ocenić przebieg przez północną część gminy.",
+          "evidence_urls": [
+            "https://tematwarszawa.pl/news/trasa-n-s-wola-polczynska-gorczewska/"
+          ]
+        }
+      ],
+      "trend_vs_prev": 0,
+      "score_raw": 37,
+      "evidence_grade": "official",
+      "delta_capped": false,
+      "change_reason": "official: bez zmiany"
+    },
+    "south": {
+      "score": 18,
+      "confidence": "niska",
+      "summary": "Nowe dowody nie zawierają żadnego oficjalnego wskazania wariantu przebiegu OAW w rejonie gminy Sobienie-Jeziory — dotyczą głównie odcinka zachodniego DK92–S7 oraz ogólnych ram programowych. Utrzymuję score na poziomie poprzedniej oceny (18), bo brak sygnałów potwierdzających korytarz po południowej stronie wsi.",
+      "rationale": "Najmocniejszy nowy materiał to komunikat GDDKiA o wyborze biura TRAKT, ale dotyczy on odcinka S50/A50 między DK92 i S7, czyli części zachodniej, a nie wschodniego odcinka obejmującego powiat otwocki. Uzasadnienie Ministerstwa Infrastruktury potwierdza jedynie obecność OAW w Rządowym Programie Budowy Dróg Krajowych do 2030 r. z perspektywą do 2033 r., bez rozstrzygnięcia przebiegu przez gminę. Interpelacja nr 22190 pokazuje presję mieszkańców powiatu otwockiego na zmianę przebiegu odcinka most na Wiśle – Mińsk Mazowiecki, co dowodzi, że korytarz pozostaje przedmiotem nacisków, a nie ustaloną decyzją. Uchwała Rady Gminy Zabrodzie dokumentuje wzorzec sprzeciwów samorządów wobec proponowanego przebiegu, ale dotyczy innej gminy i nie przekłada się na wariant w Sobienie-Jeziorach. Żaden z nowych dowodów nie wskazuje na studium, raport OOŚ, decyzję środowiskową ani przetarg dotyczący południowej części gminy, dlatego brak podstaw do zmiany score.",
+      "key_findings": [
+        {
+          "claim": "Wybór biura projektowego TRAKT dotyczy odcinka S50/A50 między DK92 i S7, czyli części zachodniej OAW, a nie odcinka wschodniego obejmującego gminę Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://www.gov.pl/web/gddkia-warszawa/wybralismy-pierwsze-biuro-projektowe-dla-obwodnicy-aglomeracji-warszawskiej",
+            "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8"
+          ]
+        },
+        {
+          "claim": "OAW jest ujęta w Rządowym Programie Budowy Dróg Krajowych do 2030 r. z perspektywą do 2033 r., ale dokument nie rozstrzyga przebiegu trasy przez gminę Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://www.gov.pl/attachment/69caaf63-79a7-4b11-9e92-63537e1c1602"
+          ]
+        },
+        {
+          "claim": "Interpelacja nr 22190 pokazuje, że mieszkańcy powiatu otwockiego zabiegają o zmianę przebiegu OAW na odcinku most na Wiśle – Mińsk Mazowiecki, co potwierdza, że korytarz w tym rejonie nie jest jeszcze przesądzony.",
+          "evidence_urls": [
+            "https://www.sejm.gov.pl/Sejm9.nsf/InterpelacjaTresc.xsp?key=BZVARM"
+          ]
+        },
+        {
+          "claim": "Uchwała Rady Gminy Zabrodzie wyraża sprzeciw wobec proponowanego przebiegu S50/A50 przez tę gminę, ilustrując skalę oporu samorządów, lecz nie dotyczy terenu gminy Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://samorzad.gov.pl/attachment/d00ee210-cc97-4bc1-90d3-16ccd7a41a2c"
+          ]
+        },
+        {
+          "claim": "Media opisują OAW jako zewnętrzny pierścień drogowy obejmujący A50 i S50, bez wskazania jakiegokolwiek wariantu przebiegu w rejonie gminy Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://tematwarszawa.pl/news/trasa-n-s-wola-polczynska-gorczewska/"
+          ]
+        }
+      ],
+      "trend_vs_prev": 0,
+      "score_raw": 18,
+      "evidence_grade": "official",
+      "delta_capped": false,
+      "change_reason": "official: bez zmiany"
+    }
+  },
+  "evidence": [
+    {
+      "title": "Trasa N-S na Woli bez terminu budowy. Co dalej?",
+      "url": "https://tematwarszawa.pl/news/trasa-n-s-wola-polczynska-gorczewska/",
+      "source": "grounding",
+      "published": "2026-10-26",
+      "snippet": "Osobnym, znacznie większym przedsięwzięciem jest Obwodnica Aglomeracji Warszawskiej (OAW), planowana jako zewnętrzny pierścień drogowy, obejmujący między innymi trasy A50 i S50. Ma ona przebiegać dalej od centrum i przejmować przede wszystkim ruch tranzytowy, którego celem nie jest ...",
+      "stance": "neutral"
+    },
+    {
+      "title": "w sprawie wyrażenia sprzeciwu wobec proponowanego przebiegu drogi ekspresowej S50/ autostrady A50 - Obwodnicy Aglomeracji Warszawskiej przez teren Gminy Zabrodzie",
+      "url": "https://samorzad.gov.pl/attachment/d00ee210-cc97-4bc1-90d3-16ccd7a41a2c",
+      "source": "exa",
+      "published": "",
+      "snippet": "UCHWAŁA NR …….2025 RADY GMINY ZABRODZIE z dnia ………………… r. w sprawie wyrażenia sprzeciwu wobec proponowanego przebiegu drogi ekspresowej S50/ autostrady A50 - Obwodnicy Aglomeracji Warszawskiej przez teren Gminy Zabrodzie Na podstawie art. 7 ust. 1 pkt 1 i art. 18 ust. 1 ustawy z dnia 8 marca 1990 r. o samorządzie gminnym (t.j. Dz. U. z 2025 r. poz. 1153) uchwala się, co następuje: § 1. 1. W związk",
+      "stance": "neutral"
+    },
+    {
+      "title": "Autostrady - stan realizacji - Generalna Dyrekcja Dróg Krajowych i Autostrad - Portal Gov.pl",
+      "url": "https://www.gov.pl/web/gddkia/autostrady---stan-realizacji2",
+      "source": "exa",
+      "published": "",
+      "snippet": "1950 km liczy sieć autostrad w Polsce, a do osiągnięcia jej docelowej długości brakuje jeszcze ok. 150 km. Złożą się na to dwa odcinki A2 na wschód od Białej Podlaskiej do Dobrynia i Terminala Samochodowego w Koroszczynie oraz A50 omijająca od południa Warszawę. Jako pierwsza przeciwległe granice kraju połączyła autostrada A4. W 2016 r. udostępniliśmy do ruchu jej ostatni odcinek, od Rzeszowa do J",
+      "stance": "neutral"
+    },
+    {
+      "title": "A50/S50 Obwodnica Aglomeracji Warszawskiej odcinek DK92 - S7 - Generalna Dyrekcja Dróg Krajowych i Autostrad - Portal Gov.pl",
+      "url": "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8",
+      "source": "exa",
+      "published": "",
+      "snippet": "## A50/S50 Obwodnica Aglomeracji Warszawskiej odcinek DK92 - S7 Podstawowe informacje Nr drogi : A50 / S50 Nazwa odcinka : Obwodnica Aglomeracji Warszawskiej odcinek DK92 - S7 System realizacji : Projektuj i Buduj Program : Rządowy Program Budowy Dróg Krajowych do 2030 r. (z perspektywą do 2033 r.) Oddział GDDKiA : Warszawa ### Aktualnie realizowany etap - #### Przygotowanie Studium techniczno-eko",
+      "stance": "neutral"
+    },
+    {
+      "title": "Minister Infrastruktury",
+      "url": "https://www.gov.pl/attachment/69caaf63-79a7-4b11-9e92-63537e1c1602",
+      "source": "exa",
+      "published": "",
+      "snippet": "UZASADNIENIE Obwodnica Aglomeracji Warszawskiej to zadanie ujęte do realizacji w ramach Rządowego Programu Budowy Dróg Krajowych do 2030 r. (z perspektywą do 2033 r.). Budowa Obwodnicy Aglomeracji Warszawskiej (OAW) umożliwi odciążenie aglomeracji warszawskiej od ruchu tranzytowego, poprawę warunków ruchu oraz wzrost bezpieczeństwa ruchu drogowego także w rejonie samej inwestycji. Inwestycja poleg",
+      "stance": "neutral"
+    },
+    {
+      "title": "Wybraliśmy pierwsze biuro projektowe dla Obwodnicy Aglomeracji Warszawskiej - Generalna Dyrekcja Dróg Krajowych i Autostrad- Oddział Warszawa - Portal Gov.pl",
+      "url": "https://www.gov.pl/web/gddkia-warszawa/wybralismy-pierwsze-biuro-projektowe-dla-obwodnicy-aglomeracji-warszawskiej",
+      "source": "exa",
+      "published": "",
+      "snippet": "Oferta firmy TRAKT została wybrana jako najkorzystniejsza w przetargu na opracowanie Studium techniczno-ekonomiczno-środowiskowego wraz z uzyskaniem decyzji środowiskowej dla S50/A50 pomiędzy DK92 i S7 na południe od Stolicy. To jeden z dwóch odcinków pierwszego, zachodniego fragmentu Obwodnicy Aglomeracji Warszawskiej, które połączą S10 w okolicy Naruszewa pod Płońskiem z S7 na południe od Warsza",
+      "stance": "neutral"
+    },
+    {
+      "title": "Interpelacja nr 22190 - tekst - Sejm Rzeczypospolitej Polskiej",
+      "url": "https://www.sejm.gov.pl/Sejm9.nsf/InterpelacjaTresc.xsp?key=BZVARM",
+      "source": "exa",
+      "published": "",
+      "snippet": "mieszkańcy powiatu otwockiego zwrócili się do mnie z prośbą o wsparcie ich działań zmierzających do zmiany przebiegu Obwodnicy Aglomeracji Warszawskiej (OAW) na odcinku most na Wiśle – Mińsk Mazowiecki oraz zmiany charakteru tej drogi ze standardu autostrady (A50) na standard drogi ekspresowej (S50). W ramach studium korytarzowego OAW GDDKiA wybrała do dalszych prac tzw. korytarz czerwony, przebie",
+      "stance": "neutral"
+    }
+  ],
+  "sources_found": 7,
+  "source_funnel": {
+    "fetched": {
+      "engine": 1,
+      "feeds": 0,
+      "agent_reach": 25,
+      "facebook": 0,
+      "official": 0
+    },
+    "fresh": {
+      "engine": 1,
+      "feeds": 0,
+      "agent_reach": 7,
+      "facebook": 0,
+      "official": 0
+    },
+    "merged": 8
+  },
+  "engine_status": "ok",
+  "assessment_path": "data/assessments/2026-11-20.json"
+}
