@@ -1,0 +1,360 @@
+wie firmy. To Transprojekt Warszawa i Trakt. Cz\u0119\u015bci\u0105 OAW b\u0119d\u0105 nowa droga ekspresowa S50 oraz przysz\u0142a autostrada A50. Oto jedna z tras, kt\u00f3ra jest potrzebna niemal od zaraz. To OAW - Obwodnica Aglomeracji Warszawskiej.",
+        "source": "grounding",
+        "source_quality": 0.6,
+        "title": "Obwodnica Aglomeracji Warszawskiej. Kiedy doczekamy nowej trasy? Sprawa si\u0119 op\u00f3\u017ania",
+        "url": "https://moto.pl/MotoPL/7,190330,33130820,obwodnica-aglomeracji-warszawskiej-kiedy-doczekamy-nowej-trasy.html",
+        "why_relevant": "Brave web search"
+      },
+      {
+        "body": "Wojew\u00f3dztwo mazowieckie \u2013 Wikipedia, wolna encyklopedia\ndroga krajowa nr 79, droga ekspresowa ... w <strong>Warszawie</strong> \u2013 A2 w gminie Raszyn ... droga krajowa nr 12, droga ekspresowa S12 \u2013 Piotrk\u00f3w Trybunalski \u2013 Radom \u2013 Lublin \u2013 Dorohusk \u00b7 droga krajowa nr 19 \u2013 Ku\u017anica \u2013 Bia\u0142ystok \u2013 \u0141osice \u2013 Lublin \u2013 Rzesz\u00f3w \u2013 Barwinek \u00b7 droga krajowa nr 50, droga ekspresowa S50, autostrada <strong>A50</strong> \u2013 Tranzytowa <strong>Obwodnica</strong> ...",
+        "container": "pl.wikipedia.org",
+        "date_confidence": "high",
+        "engagement": {},
+        "freshness": 62,
+        "item_id": "WB4",
+        "local_rank_score": 0.194,
+        "local_relevance": 0.06,
+        "metadata": {},
+        "published_at": "2026-11-11",
+        "relevance_hint": 0.8,
+        "snippet": "droga krajowa nr 79, droga ekspresowa ... w <strong>Warszawie</strong> \u2013 A2 w gminie Raszyn ... droga krajowa nr 12, droga ekspresowa S12 \u2013 Piotrk\u00f3w Trybunalski \u2013 Radom \u2013 Lublin \u2013 Dorohusk \u00b7 droga krajowa nr 19 \u2013 Ku\u017anica \u2013 Bia\u0142ystok \u2013 \u0141osice \u2013 Lublin \u2013 Rzesz\u00f3w \u2013 Barwinek \u00b7 droga krajowa nr 50, droga ekspresowa S50, autostrada <strong>A50</strong> \u2013 Tranzytowa <strong>Obwodnica</strong> ...",
+        "source": "grounding",
+        "source_quality": 0.6,
+        "title": "Wojew\u00f3dztwo mazowieckie \u2013 Wikipedia, wolna encyklopedia",
+        "url": "https://pl.wikipedia.org/wiki/Wojew%C3%B3dztwo_mazowieckie",
+        "why_relevant": "Brave web search"
+      },
+      {
+        "body": "Trasa S50 - decyzj\u0119 o jej przebiegu przez powiat sochaczewski poznamy dopiero w po\u0142owie grudnia - wiadomo\u015bci Sochaczew\n@Moniuszko - chyba Ci si\u0119 co\u015b pomiesza\u0142o w g\u0142owie! obwodnica W-wy z mostem bli\u017cej P\u0142ocka:-) pisa\u0107 bzdury to lepiej ni\u0107 nie pisa\u0107. ... Po obwodnicy jedzia w kierunku B\u0142ona wi\u0119c te samochody pozostan\u0105 a do \u0141\u00f3d\u017a czy Warszawy je\u017adzi si\u0119 A 2 a nie przez P\u0142ock bo trzeba g\u0142upot takich wypisa\u0107 \u017ce do P\u0142ocka si\u0119 b\u0119dzie jezdzilo tylko w jakim celu \u017ceby kilometr\u00f3w nabi\u0107",
+        "container": "e-sochaczew.pl",
+        "date_confidence": "high",
+        "engagement": {},
+        "freshness": 58,
+        "item_id": "WB5",
+        "local_rank_score": 0.145,
+        "local_relevance": 0.0,
+        "metadata": {},
+        "published_at": "2026-11-09",
+        "relevance_hint": 0.8,
+        "snippet": "@Moniuszko - chyba Ci si\u0119 co\u015b pomiesza\u0142o w g\u0142owie! obwodnica W-wy z mostem bli\u017cej P\u0142ocka:-) pisa\u0107 bzdury to lepiej ni\u0107 nie pisa\u0107. ... Po obwodnicy jedzia w kierunku B\u0142ona wi\u0119c te samochody pozostan\u0105 a do \u0141\u00f3d\u017a czy Warszawy je\u017adzi si\u0119 A 2 a nie przez P\u0142ock bo trzeba g\u0142upot takich wypisa\u0107 \u017ce do P\u0142ocka si\u0119 b\u0119dzie jezdzilo tylko w jakim celu \u017ceby kilometr\u00f3w nabi\u0107",
+        "source": "grounding",
+        "source_quality": 0.6,
+        "title": "Trasa S50 - decyzj\u0119 o jej przebiegu przez powiat sochaczewski poznamy dopiero w po\u0142owie grudnia - wiadomo\u015bci Sochaczew",
+        "url": "https://e-sochaczew.pl/artykul/trasa-s50--decyzje-n2572991",
+        "why_relevant": "Brave web search"
+      }
+    ],
+    "reddit": []
+  },
+  "library_context": [],
+  "provider_runtime": {
+    "planner_model": "cline-pass/deepseek-v4.1-flash-1017",
+    "reasoning_provider": "cline",
+    "rerank_model": "cline-pass/deepseek-v4.1-flash-1017"
+  },
+  "query_plan": {
+    "cluster_mode": "none",
+    "freshness_mode": "balanced_recent",
+    "intent": "factual",
+    "notes": [
+      "Factual infrastructure-route query; prioritize official/grounding sources and map-oriented community discussion."
+    ],
+    "raw_topic": "obwodnica autostradowa Warszawy A50 przebieg trasy Sobienie-Jeziory",
+    "source_weights": {
+      "grounding": 0.55,
+      "hackernews": 0.05,
+      "reddit": 0.25,
+      "youtube": 0.15
+    },
+    "subqueries": [
+      {
+        "label": "route alignment",
+        "ranking_query": "What is the planned route alignment of the A50 Warsaw motorway bypass near Sobienie-Jeziory?",
+        "search_query": "A50 obwodnica Warszawy Sobienie-Jeziory przebieg trasy",
+        "sources": [
+          "grounding",
+          "reddit"
+        ],
+        "weight": 1.0
+      }
+    ]
+  },
+  "range_from": "2026-10-22",
+  "range_to": "2026-11-21",
+  "ranked_candidates": [
+    {
+      "candidate_id": "https://moto.pl/motopl/7,190330,33130820,obwodnica-aglomeracji-warszawskiej-kiedy-doczekamy-nowej-trasy.html",
+      "cluster_id": "cluster-1",
+      "explanation": "Mentions A50/OAW and route documentation generally, but not Sobienie-Jeziory or the specific alignment near it.",
+      "final_score": 30.217741935483872,
+      "freshness": 70,
+      "fun_explanation": "Straight infrastructure news with a faint ironic delay angle, but no punchline.",
+      "fun_score": 22.0,
+      "item_id": "WB1",
+      "local_relevance": 0.06,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "WB1",
+            "native_rank": 2,
+            "source": "grounding",
+            "subquery_label": "route alignment"
+          }
+        ],
+        "range_from": "2026-10-22",
+        "range_to": "2026-11-21"
+      },
+      "native_ranks": {
+        "route alignment:grounding": 2
+      },
+      "rerank_score": 30.0,
+      "rrf_score": 0.008870967741935484,
+      "snippet": "Dokumentacj\u0119 przebiegu nowych tras opracowuj\u0105 dwie firmy. To Transprojekt Warszawa i Trakt. Cz\u0119\u015bci\u0105 OAW b\u0119d\u0105 nowa droga ekspresowa S50 oraz przysz\u0142a autostrada A50. Oto jedna z tras, kt\u00f3ra jest potrzebna niemal od zaraz. To OAW - Obwodnica Aglomeracji Warszawskiej.",
+      "source": "grounding",
+      "source_items": [
+        {
+          "body": "Obwodnica Aglomeracji Warszawskiej. Kiedy doczekamy nowej trasy? Sprawa si\u0119 op\u00f3\u017ania\nDokumentacj\u0119 przebiegu nowych tras opracowuj\u0105 dwie firmy. To Transprojekt Warszawa i Trakt. Cz\u0119\u015bci\u0105 OAW b\u0119d\u0105 nowa droga ekspresowa S50 oraz przysz\u0142a autostrada A50. Oto jedna z tras, kt\u00f3ra jest potrzebna niemal od zaraz. To OAW - Obwodnica Aglomeracji Warszawskiej.",
+          "container": "moto.pl",
+          "date_confidence": "high",
+          "engagement": {},
+          "freshness": 70,
+          "item_id": "WB1",
+          "local_rank_score": 0.214,
+          "local_relevance": 0.06,
+          "metadata": {},
+          "published_at": "2026-11-14",
+          "relevance_hint": 0.8,
+          "snippet": "Dokumentacj\u0119 przebiegu nowych tras opracowuj\u0105 dwie firmy. To Transprojekt Warszawa i Trakt. Cz\u0119\u015bci\u0105 OAW b\u0119d\u0105 nowa droga ekspresowa S50 oraz przysz\u0142a autostrada A50. Oto jedna z tras, kt\u00f3ra jest potrzebna niemal od zaraz. To OAW - Obwodnica Aglomeracji Warszawskiej.",
+          "source": "grounding",
+          "source_quality": 0.6,
+          "title": "Obwodnica Aglomeracji Warszawskiej. Kiedy doczekamy nowej trasy? Sprawa si\u0119 op\u00f3\u017ania",
+          "url": "https://moto.pl/MotoPL/7,190330,33130820,obwodnica-aglomeracji-warszawskiej-kiedy-doczekamy-nowej-trasy.html",
+          "why_relevant": "Brave web search"
+        }
+      ],
+      "source_quality": 0.6,
+      "sources": [
+        "grounding"
+      ],
+      "subquery_labels": [
+        "route alignment"
+      ],
+      "title": "Obwodnica Aglomeracji Warszawskiej. Kiedy doczekamy nowej trasy? Sprawa si\u0119 op\u00f3\u017ania",
+      "url": "https://moto.pl/MotoPL/7,190330,33130820,obwodnica-aglomeracji-warszawskiej-kiedy-doczekamy-nowej-trasy.html"
+    },
+    {
+      "candidate_id": "https://pl.wikipedia.org/wiki/wojew%c3%b3dztwo_mazowieckie",
+      "cluster_id": "cluster-2",
+      "explanation": "General mention of A50 and a transit bypass, but no route alignment details or Sobienie-Jeziory reference.",
+      "final_score": 23.382539682539683,
+      "freshness": 62,
+      "fun_explanation": "Dry Wikipedia road list; zero wit or shareable humor.",
+      "fun_score": 5.0,
+      "item_id": "WB4",
+      "local_relevance": 0.06,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "WB4",
+            "native_rank": 3,
+            "source": "grounding",
+            "subquery_label": "route alignment"
+          }
+        ],
+        "range_from": "2026-10-22",
+        "range_to": "2026-11-21"
+      },
+      "native_ranks": {
+        "route alignment:grounding": 3
+      },
+      "rerank_score": 20.0,
+      "rrf_score": 0.00873015873015873,
+      "snippet": "droga krajowa nr 79, droga ekspresowa ... w <strong>Warszawie</strong> \u2013 A2 w gminie Raszyn ... droga krajowa nr 12, droga ekspresowa S12 \u2013 Piotrk\u00f3w Trybunalski \u2013 Radom \u2013 Lublin \u2013 Dorohusk \u00b7 droga krajowa nr 19 \u2013 Ku\u017anica \u2013 Bia\u0142ystok \u2013 \u0141osice \u2013 Lublin \u2013 Rzesz\u00f3w \u2013 Barwinek \u00b7 droga krajowa nr 50, droga ekspresowa S50, autostrada <strong>A50</strong> \u2013 Tranzytowa <strong>Obwodnica</strong> ...",
+      "source": "grounding",
+      "source_items": [
+        {
+          "body": "Wojew\u00f3dztwo mazowieckie \u2013 Wikipedia, wolna encyklopedia\ndroga krajowa nr 79, droga ekspresowa ... w <strong>Warszawie</strong> \u2013 A2 w gminie Raszyn ... droga krajowa nr 12, droga ekspresowa S12 \u2013 Piotrk\u00f3w Trybunalski \u2013 Radom \u2013 Lublin \u2013 Dorohusk \u00b7 droga krajowa nr 19 \u2013 Ku\u017anica \u2013 Bia\u0142ystok \u2013 \u0141osice \u2013 Lublin \u2013 Rzesz\u00f3w \u2013 Barwinek \u00b7 droga krajowa nr 50, droga ekspresowa S50, autostrada <strong>A50</strong> \u2013 Tranzytowa <strong>Obwodnica</strong> ...",
+          "container": "pl.wikipedia.org",
+          "date_confidence": "high",
+          "engagement": {},
+          "freshness": 62,
+          "item_id": "WB4",
+          "local_rank_score": 0.194,
+          "local_relevance": 0.06,
+          "metadata": {},
+          "published_at": "2026-11-11",
+          "relevance_hint": 0.8,
+          "snippet": "droga krajowa nr 79, droga ekspresowa ... w <strong>Warszawie</strong> \u2013 A2 w gminie Raszyn ... droga krajowa nr 12, droga ekspresowa S12 \u2013 Piotrk\u00f3w Trybunalski \u2013 Radom \u2013 Lublin \u2013 Dorohusk \u00b7 droga krajowa nr 19 \u2013 Ku\u017anica \u2013 Bia\u0142ystok \u2013 \u0141osice \u2013 Lublin \u2013 Rzesz\u00f3w \u2013 Barwinek \u00b7 droga krajowa nr 50, droga ekspresowa S50, autostrada <strong>A50</strong> \u2013 Tranzytowa <strong>Obwodnica</strong> ...",
+          "source": "grounding",
+          "source_quality": 0.6,
+          "title": "Wojew\u00f3dztwo mazowieckie \u2013 Wikipedia, wolna encyklopedia",
+          "url": "https://pl.wikipedia.org/wiki/Wojew%C3%B3dztwo_mazowieckie",
+          "why_relevant": "Brave web search"
+        }
+      ],
+      "source_quality": 0.6,
+      "sources": [
+        "grounding"
+      ],
+      "subquery_labels": [
+        "route alignment"
+      ],
+      "title": "Wojew\u00f3dztwo mazowieckie \u2013 Wikipedia, wolna encyklopedia",
+      "url": "https://pl.wikipedia.org/wiki/Wojew%C3%B3dztwo_mazowieckie"
+    },
+    {
+      "candidate_id": "https://e-sochaczew.pl/artykul/trasa-s50--decyzje-n2572991",
+      "cluster_id": "cluster-3",
+      "explanation": "Commentary about S50/Sochaczew area; no A50 route alignment or Sobienie-Jeziory content.",
+      "final_score": 5.08453125,
+      "freshness": 58,
+      "fun_explanation": "Angry forum rant with typos and local road confusion; has personality but is not clever or funny.",
+      "fun_score": 34.0,
+      "item_id": "WB5",
+      "local_relevance": 0.0,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "WB5",
+            "native_rank": 4,
+            "source": "grounding",
+            "subquery_label": "route alignment"
+          }
+        ],
+        "range_from": "2026-10-22",
+        "range_to": "2026-11-21"
+      },
+      "native_ranks": {
+        "route alignment:grounding": 4
+      },
+      "rerank_score": 10.0,
+      "rrf_score": 0.00859375,
+      "snippet": "@Moniuszko - chyba Ci si\u0119 co\u015b pomiesza\u0142o w g\u0142owie! obwodnica W-wy z mostem bli\u017cej P\u0142ocka:-) pisa\u0107 bzdury to lepiej ni\u0107 nie pisa\u0107. ... Po obwodnicy jedzia w kierunku B\u0142ona wi\u0119c te samochody pozostan\u0105 a do \u0141\u00f3d\u017a czy Warszawy je\u017adzi si\u0119 A 2 a nie przez P\u0142ock bo trzeba g\u0142upot takich wypisa\u0107 \u017ce do P\u0142ocka si\u0119 b\u0119dzie jezdzilo tylko w jakim celu \u017ceby kilometr\u00f3w nabi\u0107",
+      "source": "grounding",
+      "source_items": [
+        {
+          "body": "Trasa S50 - decyzj\u0119 o jej przebiegu przez powiat sochaczewski poznamy dopiero w po\u0142owie grudnia - wiadomo\u015bci Sochaczew\n@Moniuszko - chyba Ci si\u0119 co\u015b pomiesza\u0142o w g\u0142owie! obwodnica W-wy z mostem bli\u017cej P\u0142ocka:-) pisa\u0107 bzdury to lepiej ni\u0107 nie pisa\u0107. ... Po obwodnicy jedzia w kierunku B\u0142ona wi\u0119c te samochody pozostan\u0105 a do \u0141\u00f3d\u017a czy Warszawy je\u017adzi si\u0119 A 2 a nie przez P\u0142ock bo trzeba g\u0142upot takich wypisa\u0107 \u017ce do P\u0142ocka si\u0119 b\u0119dzie jezdzilo tylko w jakim celu \u017ceby kilometr\u00f3w nabi\u0107",
+          "container": "e-sochaczew.pl",
+          "date_confidence": "high",
+          "engagement": {},
+          "freshness": 58,
+          "item_id": "WB5",
+          "local_rank_score": 0.145,
+          "local_relevance": 0.0,
+          "metadata": {},
+          "published_at": "2026-11-09",
+          "relevance_hint": 0.8,
+          "snippet": "@Moniuszko - chyba Ci si\u0119 co\u015b pomiesza\u0142o w g\u0142owie! obwodnica W-wy z mostem bli\u017cej P\u0142ocka:-) pisa\u0107 bzdury to lepiej ni\u0107 nie pisa\u0107. ... Po obwodnicy jedzia w kierunku B\u0142ona wi\u0119c te samochody pozostan\u0105 a do \u0141\u00f3d\u017a czy Warszawy je\u017adzi si\u0119 A 2 a nie przez P\u0142ock bo trzeba g\u0142upot takich wypisa\u0107 \u017ce do P\u0142ocka si\u0119 b\u0119dzie jezdzilo tylko w jakim celu \u017ceby kilometr\u00f3w nabi\u0107",
+          "source": "grounding",
+          "source_quality": 0.6,
+          "title": "Trasa S50 - decyzj\u0119 o jej przebiegu przez powiat sochaczewski poznamy dopiero w po\u0142owie grudnia - wiadomo\u015bci Sochaczew",
+          "url": "https://e-sochaczew.pl/artykul/trasa-s50--decyzje-n2572991",
+          "why_relevant": "Brave web search"
+        }
+      ],
+      "source_quality": 0.6,
+      "sources": [
+        "grounding"
+      ],
+      "subquery_labels": [
+        "route alignment"
+      ],
+      "title": "Trasa S50 - decyzj\u0119 o jej przebiegu przez powiat sochaczewski poznamy dopiero w po\u0142owie grudnia - wiadomo\u015bci Sochaczew",
+      "url": "https://e-sochaczew.pl/artykul/trasa-s50--decyzje-n2572991"
+    },
+    {
+      "candidate_id": "https://nka.powiat-otwocki.pl/informacja-o-zmianach-w-komunikacji-dla-linii-s1-aktualizacja",
+      "cluster_id": "cluster-4",
+      "explanation": "Bus schedule update; no mention of A50, Warsaw motorway bypass, or route alignment near Sobienie-Jeziory.",
+      "final_score": 4.996229508196721,
+      "freshness": 84,
+      "fun_explanation": "Official bus-stop change notice; completely dry and procedural.",
+      "fun_score": 3.0,
+      "item_id": "WB2",
+      "local_relevance": 0.06,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "WB2",
+            "native_rank": 1,
+            "source": "grounding",
+            "subquery_label": "route alignment"
+          }
+        ],
+        "range_from": "2026-10-22",
+        "range_to": "2026-11-21"
+      },
+      "native_ranks": {
+        "route alignment:grounding": 1
+      },
+      "rerank_score": 5.0,
+      "rrf_score": 0.009016393442622951,
+      "snippet": "<strong>Stary Zambrzyk\u00f3w \u2013 Osieck \u2013 Pogorzel \u2013 Warsz\u00f3wka, a nast\u0119pnie dotychczasow\u0105 tras\u0105</strong>. Z obs\u0142ugi pasa\u017cerskiej zostan\u0105 wy\u0142\u0105czone nast\u0119puj\u0105ce przystanki: Warszawice Ko\u015bci\u00f3\u0142, Sobienie Biskupie p\u0119tla i posesja 38 \u2013 pasa\u017cerowie proszeni s\u0105 o korzystanie z przystanku Warszawice ...",
+      "source": "grounding",
+      "source_items": [
+        {
+          "body": "INFORMACJA O ZMIANACH W KOMUNIKACJI DLA LINII S1 \u2013 AKTUALIZACJA - Nadwi\u015bla\u0144ska Komunikacja Autobusowa\n<strong>Stary Zambrzyk\u00f3w \u2013 Osieck \u2013 Pogorzel \u2013 Warsz\u00f3wka, a nast\u0119pnie dotychczasow\u0105 tras\u0105</strong>. Z obs\u0142ugi pasa\u017cerskiej zostan\u0105 wy\u0142\u0105czone nast\u0119puj\u0105ce przystanki: Warszawice Ko\u015bci\u00f3\u0142, Sobienie Biskupie p\u0119tla i posesja 38 \u2013 pasa\u017cerowie proszeni s\u0105 o korzystanie z przystanku Warszawice ...",
+          "container": "nka.powiat-otwocki.pl",
+          "date_confidence": "high",
+          "engagement": {},
+          "freshness": 84,
+          "item_id": "WB2",
+          "local_rank_score": 0.249,
+          "local_relevance": 0.06,
+          "metadata": {},
+          "published_at": "2026-11-19",
+          "relevance_hint": 0.8,
+          "snippet": "<strong>Stary Zambrzyk\u00f3w \u2013 Osieck \u2013 Pogorzel \u2013 Warsz\u00f3wka, a nast\u0119pnie dotychczasow\u0105 tras\u0105</strong>. Z obs\u0142ugi pasa\u017cerskiej zostan\u0105 wy\u0142\u0105czone nast\u0119puj\u0105ce przystanki: Warszawice Ko\u015bci\u00f3\u0142, Sobienie Biskupie p\u0119tla i posesja 38 \u2013 pasa\u017cerowie proszeni s\u0105 o korzystanie z przystanku Warszawice ...",
+          "source": "grounding",
+          "source_quality": 0.6,
+          "title": "INFORMACJA O ZMIANACH W KOMUNIKACJI DLA LINII S1 \u2013 AKTUALIZACJA - Nadwi\u015bla\u0144ska Komunikacja Autobusowa",
+          "url": "https://nka.powiat-otwocki.pl/informacja-o-zmianach-w-komunikacji-dla-linii-s1-aktualizacja/",
+          "why_relevant": "Brave web search"
+        }
+      ],
+      "source_quality": 0.6,
+      "sources": [
+        "grounding"
+      ],
+      "subquery_labels": [
+        "route alignment"
+      ],
+      "title": "INFORMACJA O ZMIANACH W KOMUNIKACJI DLA LINII S1 \u2013 AKTUALIZACJA - Nadwi\u015bla\u0144ska Komunikacja Autobusowa",
+      "url": "https://nka.powiat-otwocki.pl/informacja-o-zmianach-w-komunikacji-dla-linii-s1-aktualizacja/"
+    }
+  ],
+  "source_status": {
+    "grounding": {
+      "at": "2026-11-21T10:56:28.441182Z",
+      "attempted": true,
+      "items_returned": 4,
+      "source": "grounding",
+      "state": "ok"
+    },
+    "reddit": {
+      "at": "2026-11-21T10:56:27.964384Z",
+      "attempted": true,
+      "detail": "HTTP 404: Not Found",
+      "fix_hint": "doctor",
+      "items_returned": 0,
+      "source": "reddit",
+      "state": "error"
+    }
+  },
+  "topic": "obwodnica autostradowa Warszawy A50 przebieg trasy Sobienie-Jeziory",
+  "warnings": [
+    "Evidence is thin for this topic.",
+    "Top evidence is highly concentrated in one source.",
+    "Some sources failed: reddit"
+  ]
+}
+
+--- STDERR ---
+/last30days · researching: obwodnica autostradowa Warszawy A50 przebieg trasy Sobienie-Jeziory
+⏳ [95mProcessing[0m Removing duplicates...
+[Planner] Plan: intent=factual, freshness=balanced_recent, cluster_mode=none, subqueries=1, source=llm
+[Planner]   sq1 label=route alignment search="A50 obwodnica Warszawy Sobienie-Jeziory przebieg trasy" sources=[grounding,reddit]
+[RedditKeyless] Tier 1 (RSS) 0 posts; score-only; 0 scored cards
+✓ Research complete (13.1s) - Reddit: 0 threads, YouTube: 0 videos, HN: 0 stories, Web: 4 results
+[last30days] Saved output to /home/runner/work/a50-monitor/a50-monitor/data/raw/2026-11-21/report.json
+[last30days] Saved output to /home/runner/work/a50-monitor/a50-monitor/data/raw/2026-11-21/obwodnica-autostradowa-warszawy-a50-przebieg-trasy-sobienie-jeziory-raw.json

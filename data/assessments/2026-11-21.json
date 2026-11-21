@@ -1,0 +1,113 @@
+{
+  "date": "2026-11-21",
+  "scores": {
+    "north": {
+      "score": 37,
+      "confidence": "niska",
+      "summary": "Nowe dowody nie zawierają żadnego oficjalnego wskazania wariantu wschodniego odcinka OAW, więc kluczowe ogniwo oceny pozostaje nierozstrzygnięte. Utrzymuję score na poziomie poprzedniej oceny (37), z confidence „niska”.",
+      "rationale": "Strona GDDKiA dotyczy wyłącznie odcinka DK92–S7, czyli części zachodniej OAW, a nie odcinka wschodniego obejmującego powiat otwocki, więc nie wnosi informacji o wariancie przez północną część gminy Sobienie-Jeziory. Materiał sobienie.pl jest opracowaniem redakcyjnym zbierającym dokumenty, a nie komunikatem urzędu czy GDDKiA, i nie wskazuje żadnego wariantu. Wpis Wikipedii o województwie mazowieckim ma charakter ogólnego wykazu dróg i nie odnosi się do przebiegu OAW. Brak nowych, istotnych sygnałów każe trzymać score blisko poprzedniej oceny (37), mimo że kotwica ekspercka dla scenariusza północnego wynosiła 45%.",
+      "key_findings": [
+        {
+          "claim": "Oficjalna strona GDDKiA opisuje zadanie A50/S50 OAW tylko na odcinku DK92–S7, czyli część zachodnią, bez wariantów dla odcinka wschodniego w powiecie otwockim.",
+          "evidence_urls": [
+            "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8"
+          ]
+        },
+        {
+          "claim": "Materiał sobienie.pl o A50 jest opracowaniem redakcyjnym zbierającym dokumenty GDDKiA, uchwałę rady gminy i przepisy, a nie oficjalnym wskazaniem wariantu przebiegu.",
+          "evidence_urls": [
+            "https://sobienie.pl/a50"
+          ]
+        },
+        {
+          "claim": "Wpis Wikipedii o województwie mazowieckim to ogólny wykaz dróg krajowych i ekspresowych i nie zawiera informacji o wariancie przebiegu wschodniego odcinka OAW.",
+          "evidence_urls": [
+            "https://pl.wikipedia.org/wiki/Wojew%C3%B3dztwo_mazowieckie"
+          ]
+        }
+      ],
+      "trend_vs_prev": 0,
+      "score_raw": 37,
+      "evidence_grade": "official",
+      "delta_capped": false,
+      "change_reason": "official: bez zmiany"
+    },
+    "south": {
+      "score": 18,
+      "confidence": "niska",
+      "summary": "Nowe dowody nie zawierają żadnego materiału o wschodnim odcinku OAW ani o wariancie obwodnicy wsi Sobienie-Jeziory po stronie południowej — wszystkie trzy pozycje dotyczą innych zagadnień lub są opracowaniami redakcyjnymi bez rozstrzygnięć. Score pozostaje na poziomie poprzedniej oceny (18), a jakość dowodów jest niska.",
+      "rationale": "Jedyne nowe źródło oficjalne (gov.pl/GDDKiA) opisuje zadanie A50/S50 na odcinku DK92 – S7, czyli część zachodnią obwodnicy, i nie odnosi się do odcinka wschodniego obejmującego powiat otwocki ani do gminy Sobienie-Jeziory. Materiał sobienie.pl ma charakter redakcyjnego zestawienia dokumentów, a nie stanowiska urzędu, i nie wskazuje żadnego wariantu przebiegu przez południową część gminy. Wpis Wikipedii o województwie mazowieckim ma charakter ogólny i nie wnosi informacji o korytarzu OAW. Brak potwierdzenia wariantu, studium, raportu OOŚ lub przetargu dla tej strony gminy oznacza, że nie ma podstaw do odstąpienia od poprzedniej oceny 18 — pozostaje ona poniżej kotwicy bazowej 28% z uwagi na utrzymujący się brak jakiegokolwiek oficjalnego procesu wskazującego na południowy bypass wsi.",
+      "key_findings": [
+        {
+          "claim": "Oficjalna dokumentacja GDDKiA dla A50/S50 dotyczy odcinka DK92 – S7, czyli części zachodniej OAW, a nie odcinka wschodniego przez gminę Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8"
+          ]
+        },
+        {
+          "claim": "Materiał sobienie.pl o A50 w gminie jest opracowaniem redakcyjnym zbierającym dokumenty, a nie oficjalnym stanowiskiem urzędu i nie wskazuje wariantu przebiegu.",
+          "evidence_urls": [
+            "https://sobienie.pl/a50"
+          ]
+        },
+        {
+          "claim": "Źródło encyklopedyczne o województwie mazowieckim wymienia jedynie ogólną siatkę dróg krajowych i ekspresowych, bez informacji o przebiegu OAW przez gminę Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://pl.wikipedia.org/wiki/Wojew%C3%B3dztwo_mazowieckie"
+          ]
+        }
+      ],
+      "trend_vs_prev": 0,
+      "score_raw": 18,
+      "evidence_grade": "official",
+      "delta_capped": false,
+      "change_reason": "official: bez zmiany"
+    }
+  },
+  "evidence": [
+    {
+      "title": "Województwo mazowieckie – Wikipedia, wolna encyklopedia",
+      "url": "https://pl.wikipedia.org/wiki/Wojew%C3%B3dztwo_mazowieckie",
+      "source": "grounding",
+      "published": "2026-11-11",
+      "snippet": "droga krajowa nr 79, droga ekspresowa ... w <strong>Warszawie</strong> – A2 w gminie Raszyn ... droga krajowa nr 12, droga ekspresowa S12 – Piotrków Trybunalski – Radom – Lublin – Dorohusk · droga krajowa nr 19 – Kuźnica – Białystok – Łosice – Lublin – Rzeszów – Barwinek · droga krajowa nr 50, droga ekspresowa S50, autostrada <strong>A50</strong> – Tranzytowa <strong>Obwodnica</strong> ...",
+      "stance": "neutral"
+    },
+    {
+      "title": "A50 a gmina Sobienie-Jeziory — co naprawdę wiadomo | Sobienie.pl",
+      "url": "https://sobienie.pl/a50",
+      "source": "exa",
+      "published": "",
+      "snippet": "To opracowanie redakcji, nie pismo urzędu. Zebraliśmy dokumenty GDDKiA, uchwałę rady gminy i przepisy w jedno miejsce. Oficjalne stanowisko gminy znajdziesz na stronie samorządów z powiatów grójeckiego i piaseczyńskiego",
+      "stance": "neutral"
+    },
+    {
+      "title": "A50/S50 Obwodnica Aglomeracji Warszawskiej odcinek DK92 - S7 - Generalna Dyrekcja Dróg Krajowych i Autostrad - Portal Gov.pl",
+      "url": "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8",
+      "source": "exa",
+      "published": "",
+      "snippet": "## A50/S50 Obwodnica Aglomeracji Warszawskiej odcinek DK92 - S7 Podstawowe informacje Nr drogi : A50 / S50 Nazwa odcinka : Obwodnica Aglomeracji Warszawskiej odcinek DK92 - S7 System realizacji : Projektuj i Buduj Program : Rządowy Program Budowy Dróg Krajowych do 2030 r. (z perspektywą do 2033 r.) Oddział GDDKiA : Warszawa ### Aktualnie realizowany etap - #### Przygotowanie Studium techniczno-eko",
+      "stance": "neutral"
+    }
+  ],
+  "sources_found": 3,
+  "source_funnel": {
+    "fetched": {
+      "engine": 2,
+      "feeds": 0,
+      "agent_reach": 27,
+      "facebook": 0,
+      "official": 0
+    },
+    "fresh": {
+      "engine": 2,
+      "feeds": 0,
+      "agent_reach": 4,
+      "facebook": 0,
+      "official": 0
+    },
+    "merged": 6
+  },
+  "engine_status": "ok",
+  "assessment_path": "data/assessments/2026-11-21.json"
+}
