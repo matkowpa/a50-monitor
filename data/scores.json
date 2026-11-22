@@ -5568,6 +5568,139 @@
       },
       "engine_status": "ok",
       "assessment_path": "data/assessments/2026-11-21.json"
+    },
+    {
+      "date": "2026-11-22",
+      "scores": {
+        "north": {
+          "score": 37,
+          "confidence": "niska",
+          "summary": "Brak nowych oficjalnych dowodów na wariant północny; nowe materiały dotyczą sprzeciwu Góry Kalwarii, zachodniego odcinka OAW, ogólnej petycji oraz starego stanowiska powiatu. Utrzymuję score na poziomie poprzedniej oceny.",
+          "rationale": "Nowe dowody nie zawierają komunikatu GDDKiA o wariantach odcinka wschodniego ani wskazania pasa między Sobienie-Jeziorami a doliną Wisły. Strona GDDKiA dotyczy odcinka DK92–S7, więc nie rozstrzyga przebiegu przez powiat otwocki. Sprzeciw Góry Kalwarii i petycja w Sobienie-Jeziorach dotyczą ogólnie przebiegu A50 przez gminę, a nie konkretnie scenariusza północnego; dodatkowo północ jest ograniczona terenami zalewowymi i Naturą 2000. Wobec braku oficjalnego wariantu utrzymuję score 37, a confidence pozostaje niska z powodu szczupłości i pośredniości dowodów.",
+          "key_findings": [
+            {
+              "claim": "Rada Miejska Góry Kalwarii jednogłośnie sprzeciwiła się jakiemukolwiek przebiegowi A50 przez tę gminę, co może wzmacniać presję na przesunięcie korytarza, ale nie wskazuje wariantu północnego w Sobienie-Jeziorach.",
+              "evidence_urls": [
+                "https://gorakalwaria.pl/wiadomosci/temat/242"
+              ]
+            },
+            {
+              "claim": "Strona GDDKiA opisuje odcinek A50/S50 DK92–S7, czyli część zachodnią OAW, i nie podaje wariantów dla odcinka wschodniego obejmującego powiat otwocki.",
+              "evidence_urls": [
+                "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8"
+              ]
+            },
+            {
+              "claim": "Petycja online mówi o potencjalnym wariancie A50 mogącym przechodzić przez gminę Sobienie-Jeziory, bez wskazania pasa północnego przy dolinie Wisły.",
+              "evidence_urls": [
+                "https://www.petycjeonline.com/stanowisko_w_sprawie_planowanego_przebiegu_drogi_a50_obwodnicy_aglomeracji_warszawskiej_potencjalny_wariant_ktory_moe_przechodzi_przez_teren_gminy_sobienie-jeziory"
+              ]
+            },
+            {
+              "claim": "Stanowisko Rady Powiatu Otwockiego z 2020 r. dotyczy Studium CPK/A50 i nie stanowi aktualnego wskazania przebiegu przez północną część gminy.",
+              "evidence_urls": [
+                "https://www.bip.powiat-otwocki.pl/plik,22845,projekt-stanowiska-w-sprawie-strategicznego-studium-lokalizacyjnego-inwestycji-centralnego-portu-komunikacyjnego-wraz-z-prognoza-oddzialywania-na-srodowisko.pdf"
+              ]
+            }
+          ],
+          "trend_vs_prev": 0,
+          "score_raw": 37,
+          "evidence_grade": "official",
+          "delta_capped": false,
+          "change_reason": "official: bez zmiany"
+        },
+        "south": {
+          "score": 18,
+          "confidence": "niska",
+          "summary": "Nowe dowody nie zawierają żadnego oficjalnego wskazania wariantu przebiegu A50 przez południową część gminy Sobienie-Jeziory — dominują materiały o odcinku zachodnim i stanowiska sąsiednich samorządów. Utrzymuję score blisko poprzedniej oceny, z niską confidence z powodu szczupłości i pośredniości sygnałów.",
+          "rationale": "Strona GDDKiA dla zadania A50/S50 dotyczy wyłącznie odcinka DK92 – S7, czyli części zachodniej, i nie odnosi się do odcinka wschodniego ani do gminy Sobienie-Jeziory. Jednomyślne stanowisko Rady Miejskiej Góry Kalwarii jest sprzeciwem wobec jakiegokolwiek przebiegu przez tę gminę i co najwyżej pośrednio może sprzyjać przesunięciu korytarza na wschód, ale nie wskazuje strony południowej wsi Sobienie-Jeziory. Petycja internetowa mówi ogólnie o „potencjalnym wariancie”, który „może przechodzić” przez teren gminy, bez rozróżnienia strony północnej i południowej, a stanowisko Rady Powiatu Otwockiego z 2020 r. dotyczy Studium Lokalizacyjnego CPK, nie konkretnego wariantu. Brak oficjalnego dokumentu GDDKiA, studium czy wniosku o DŚU dla odcinka wschodniego oznacza, że scenariusz południowy pozostaje hipotezą, a nie planem, więc score utrzymuję na poziomie 18.",
+          "key_findings": [
+            {
+              "claim": "Oficjalna strona GDDKiA opisuje zadanie A50/S50 tylko na odcinku DK92 – S7, bez odniesienia do odcinka wschodniego obejmującego powiat otwocki.",
+              "evidence_urls": [
+                "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8"
+              ]
+            },
+            {
+              "claim": "Rada Miejska Góry Kalwarii jednogłośnie sprzeciwiła się jakiemukolwiek przebiegowi obwodnicy przez tę gminę, co nie przesądza o wariancie po południowej stronie Sobienie-Jezior.",
+              "evidence_urls": [
+                "https://gorakalwaria.pl/wiadomosci/temat/242"
+              ]
+            },
+            {
+              "claim": "Petycja dotycząca gminy Sobienie-Jeziory mówi wyłącznie o „potencjalnym wariancie”, który „może przechodzić” przez gminę, bez wskazania strony południowej ani konkretnego korytarza.",
+              "evidence_urls": [
+                "https://www.petycjeonline.com/stanowisko_w_sprawie_planowanego_przebiegu_drogi_a50_obwodnicy_aglomeracji_warszawskiej_potencjalny_wariant_ktory_moe_przechodzi_przez_teren_gminy_sobienie-jeziory"
+              ]
+            },
+            {
+              "claim": "Stanowisko Rady Powiatu Otwockiego dotyczy Strategicznego Studium Lokalizacyjnego CPK i nie zawiera rozstrzygnięć o przebiegu A50 przez południową część gminy Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://www.bip.powiat-otwocki.pl/plik,22845,projekt-stanowiska-w-sprawie-strategicznego-studium-lokalizacyjnego-inwestycji-centralnego-portu-komunikacyjnego-wraz-z-prognoza-oddzialywania-na-srodowisko.pdf"
+              ]
+            }
+          ],
+          "trend_vs_prev": 0,
+          "score_raw": 18,
+          "evidence_grade": "official",
+          "delta_capped": false,
+          "change_reason": "official: bez zmiany"
+        }
+      },
+      "evidence": [
+        {
+          "title": "Gmina Góra Kalwaria",
+          "url": "https://gorakalwaria.pl/wiadomosci/temat/242",
+          "source": "exa",
+          "published": "",
+          "snippet": "Obwodnica A50 Nowe stanowisko Rady Miejskiej - przeciwko jakimkolwiek w... Podczas wczorajszej sesji, Rada Miejska jednogłośnie (przy obecności 19 na 21 radnych) podjęła stanowisko wyrażające sprzeciw wobec jakiegokolwiek poprowadzenia Obwodnicy",
+          "stance": "neutral"
+        },
+        {
+          "title": "A50/S50 Obwodnica Aglomeracji Warszawskiej odcinek DK92 - S7 - Generalna Dyrekcja Dróg Krajowych i Autostrad - Portal Gov.pl",
+          "url": "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8",
+          "source": "exa",
+          "published": "",
+          "snippet": "## A50/S50 Obwodnica Aglomeracji Warszawskiej odcinek DK92 - S7 Podstawowe informacje Nr drogi : A50 / S50 Nazwa odcinka : Obwodnica Aglomeracji Warszawskiej odcinek DK92 - S7 System realizacji : Projektuj i Buduj Program : Rządowy Program Budowy Dróg Krajowych do 2030 r. (z perspektywą do 2033 r.) Oddział GDDKiA : Warszawa ### Aktualnie realizowany etap - #### Przygotowanie Studium techniczno-eko",
+          "stance": "neutral"
+        },
+        {
+          "title": "STANOWISKO w sprawie planowanego przebiegu drogi A50 – Obwodnicy Aglomeracji Warszawskiej (potencjalny wariant, który może przechodzić przez teren Gminy Sobienie-Jeziory) - Petycjeonline.com",
+          "url": "https://www.petycjeonline.com/stanowisko_w_sprawie_planowanego_przebiegu_drogi_a50_obwodnicy_aglomeracji_warszawskiej_potencjalny_wariant_ktory_moe_przechodzi_przez_teren_gminy_sobienie-jeziory",
+          "source": "exa",
+          "published": "",
+          "snippet": "W związku z docierającymi do nas informacjami o inicjatywie niektórych samorządów z terenu powiatów piaseczyńskiego i grójeckiego dotyczącej przebiegu projektowanej Obwodnicy Aglomeracji Warszawskiej przez południową część Gminy Góra Kalwaria i dalej, po drugiej stronie Wisły, przez teren Gminy Sobienie-Jeziory, wyrażamy stanowczy sprzeciw wobec lokalizacji tej trasy na obszarze naszej Gminy. Prze",
+          "stance": "neutral"
+        },
+        {
+          "title": "4.,Projekt stanowiska w sprawie Strategicznegoi Studium Lokalizacyjnego Inwestycji Centralnego Portu Komunikacyjnego - A50 - grudzień 2020",
+          "url": "https://www.bip.powiat-otwocki.pl/plik,22845,projekt-stanowiska-w-sprawie-strategicznego-studium-lokalizacyjnego-inwestycji-centralnego-portu-komunikacyjnego-wraz-z-prognoza-oddzialywania-na-srodowisko.pdf",
+          "source": "exa",
+          "published": "",
+          "snippet": "STANOWISKO NR …./2020 RADY POWIATU OTWOCKIEGO z dnia …………..…. 2020 r. w sprawie Strategicznego Studium Lokalizacyjnego Inwestycji Centralnego Portu Komunikacyjnego wraz z Prognozą oddziaływania na środowisko Pozostając w zgodzie z przepisem art. 9 ust. 1 w związku z art. 4 ust. 1 pkt 6 ustawy z dnia 5 czerwca 1998 r. o samorządzie powiatowym (Dz. U. z 2020 r., poz. 920) oraz na podstawie § 7 ust.",
+          "stance": "neutral"
+        }
+      ],
+      "sources_found": 4,
+      "source_funnel": {
+        "fetched": {
+          "engine": 1,
+          "feeds": 0,
+          "agent_reach": 26,
+          "facebook": 0,
+          "official": 0
+        },
+        "fresh": {
+          "engine": 1,
+          "feeds": 0,
+          "agent_reach": 4,
+          "facebook": 0,
+          "official": 0
+        },
+        "merged": 5
+      },
+      "engine_status": "ok",
+      "assessment_path": "data/assessments/2026-11-22.json"
     }
   ]
 }
