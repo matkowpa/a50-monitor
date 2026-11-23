@@ -5701,6 +5701,106 @@
       },
       "engine_status": "ok",
       "assessment_path": "data/assessments/2026-11-22.json"
+    },
+    {
+      "date": "2026-11-23",
+      "scores": {
+        "north": {
+          "score": 37,
+          "confidence": "niska",
+          "summary": "Brak nowych dowodów dotyczących wariantu północnego przez gminę Sobienie-Jeziory; pozostaję przy ocenie 37%.",
+          "rationale": "Nowe dowody obejmują stronę GDDKiA dla odcinka DK92–S7, czyli zachodni fragment OAW, oraz stanowisko powiatu otwockiego z 2020 r. związane z SSL CPK; żaden z nich nie wskazuje wariantu przez pas między Sobienie-Jeziorami a doliną Wisły. Nie ma oficjalnego komunikatu o wariantach odcinka wschodniego ani dokumentu środowiskowego lub przetargowego rozstrzygającego tę stronę gminy. Wobec braku rozstrzygających sygnałów score pozostaje na poziomie poprzedniej oceny 37, a confidence jest niska.",
+          "key_findings": [
+            {
+              "claim": "Strona GDDKiA dotyczy odcinka A50/S50 DK92–S7, a nie wschodniego odcinka przez powiat otwocki, więc nie rozstrzyga przebiegu przez północną część gminy Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8"
+              ]
+            },
+            {
+              "claim": "Stanowisko Rady Powiatu Otwockiego z 2020 r. odnosi się do Strategicznego Studium Lokalizacyjnego CPK i nie wskazuje aktualnego wariantu północnego przez gminę Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://www.bip.powiat-otwocki.pl/plik,22845,projekt-stanowiska-w-sprawie-strategicznego-studium-lokalizacyjnego-inwestycji-centralnego-portu-komunikacyjnego-wraz-z-prognoza-oddzialywania-na-srodowisko.pdf"
+              ]
+            },
+            {
+              "claim": "Nowe dowody nie zawierają oficjalnego wskazania wariantu, decyzji środowiskowej ani przetargu STEŚ dla odcinka wschodniego, który potwierdzałby pas między wsią a doliną Wisły.",
+              "evidence_urls": [
+                "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8",
+                "https://www.bip.powiat-otwocki.pl/plik,22845,projekt-stanowiska-w-sprawie-strategicznego-studium-lokalizacyjnego-inwestycji-centralnego-portu-komunikacyjnego-wraz-z-prognoza-oddzialywania-na-srodowisko.pdf"
+              ]
+            }
+          ],
+          "trend_vs_prev": 0,
+          "score_raw": 37,
+          "evidence_grade": "official",
+          "delta_capped": false,
+          "change_reason": "official: bez zmiany"
+        },
+        "south": {
+          "score": 18,
+          "confidence": "niska",
+          "summary": "Nowe dowody nie odnoszą się do odcinka wschodniego OAW ani do strony południowej wsi Sobienie-Jeziory — strona GDDKiA dotyczy wyłącznie zadania DK92–S7, a dokument powiatu otwockiego jest stanowiskiem z 2020 r. wobec Studium CPK. Brak podstaw do zmiany oceny, pozostaje 18%.",
+          "rationale": "Jedyny nowy materiał GDDKiA opisuje zadanie A50/S50 na odcinku DK92–S7, czyli część zachodnią obwodnicy, i nie zawiera żadnego odniesienia do odcinka wschodniego, wariantów na wschód od S7 ani do gminy Sobienie-Jeziory. Drugi dowód to projekt stanowiska Rady Powiatu Otwockiego z 2020 r. w sprawie Strategicznego Studium Lokalizacyjnego CPK — dokument odległy czasowo i dotyczący ogólnego korytarza A50, bez wskazania przebiegu po południowej stronie wsi Sobienie-Jeziory. Żaden z dowodów nie potwierdza ani nie wyklucza wariantu obwodnicy wsi po stronie południowej (rejon Śniadkowa Dolnego i Górnego), więc nie ma podstaw do odstąpienia od poprzedniej oceny 18%. Utrzymuję score blisko poprzedniego i bazowego, z confidence „niska” ze względu na brak rozstrzygających, oficjalnych sygnałów o wariantach dla tego terenu.",
+          "key_findings": [
+            {
+              "claim": "Oficjalna strona GDDKiA dla A50/S50 obejmuje wyłącznie odcinek DK92 – S7, czyli część zachodnią obwodnicy, i nie odnosi się do odcinka wschodniego ani do gminy Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8"
+              ]
+            },
+            {
+              "claim": "Dostępny dokument powiatu otwockiego to projekt stanowiska z 2020 r. wobec Strategicznego Studium Lokalizacyjnego CPK — nie wskazuje przebiegu A50 po południowej stronie wsi Sobienie-Jeziory.",
+              "evidence_urls": [
+                "https://www.bip.powiat-otwocki.pl/plik,22845,projekt-stanowiska-w-sprawie-strategicznego-studium-lokalizacyjnego-inwestycji-centralnego-portu-komunikacyjnego-wraz-z-prognoza-oddzialywania-na-srodowisko.pdf"
+              ]
+            }
+          ],
+          "trend_vs_prev": 0,
+          "score_raw": 18,
+          "evidence_grade": "official",
+          "delta_capped": false,
+          "change_reason": "official: bez zmiany"
+        }
+      },
+      "evidence": [
+        {
+          "title": "A50/S50 Obwodnica Aglomeracji Warszawskiej odcinek DK92 - S7 - Generalna Dyrekcja Dróg Krajowych i Autostrad - Portal Gov.pl",
+          "url": "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8",
+          "source": "exa",
+          "published": "",
+          "snippet": "## A50/S50 Obwodnica Aglomeracji Warszawskiej odcinek DK92 - S7 Podstawowe informacje Nr drogi : A50 / S50 Nazwa odcinka : Obwodnica Aglomeracji Warszawskiej odcinek DK92 - S7 System realizacji : Projektuj i Buduj Program : Rządowy Program Budowy Dróg Krajowych do 2030 r. (z perspektywą do 2033 r.) Oddział GDDKiA : Warszawa ### Aktualnie realizowany etap - #### Przygotowanie Studium techniczno-eko",
+          "stance": "neutral"
+        },
+        {
+          "title": "4.,Projekt stanowiska w sprawie Strategicznegoi Studium Lokalizacyjnego Inwestycji Centralnego Portu Komunikacyjnego - A50 - grudzień 2020",
+          "url": "https://www.bip.powiat-otwocki.pl/plik,22845,projekt-stanowiska-w-sprawie-strategicznego-studium-lokalizacyjnego-inwestycji-centralnego-portu-komunikacyjnego-wraz-z-prognoza-oddzialywania-na-srodowisko.pdf",
+          "source": "exa",
+          "published": "",
+          "snippet": "STANOWISKO NR …./2020 RADY POWIATU OTWOCKIEGO z dnia …………..…. 2020 r. w sprawie Strategicznego Studium Lokalizacyjnego Inwestycji Centralnego Portu Komunikacyjnego wraz z Prognozą oddziaływania na środowisko § 1. 1. Mając na uwadze trwające konsultacje społeczne projektu dokumentu pn. „Strategiczne Studium Lokalizacyjne Inwestycji Centralnego Portu Komunikacyjnego wraz z Prognozą oddziaływania na",
+          "stance": "neutral"
+        }
+      ],
+      "sources_found": 2,
+      "source_funnel": {
+        "fetched": {
+          "engine": 0,
+          "feeds": 0,
+          "agent_reach": 26,
+          "facebook": 0,
+          "official": 0
+        },
+        "fresh": {
+          "engine": 0,
+          "feeds": 0,
+          "agent_reach": 4,
+          "facebook": 0,
+          "official": 0
+        },
+        "merged": 4
+      },
+      "engine_status": "ok",
+      "assessment_path": "data/assessments/2026-11-23.json"
     }
   ]
 }

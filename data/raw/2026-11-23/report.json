@@ -1,0 +1,284 @@
+{
+  "artifacts": {
+    "corpus_in_export": false,
+    "grounding": [
+      {
+        "label": "brave",
+        "resultCount": 5,
+        "webSearchQueries": [
+          "obwodnica autostradowa Warszawy A50 przebieg trasy"
+        ]
+      }
+    ],
+    "hiring_signals_mode": false,
+    "plan_source": "llm",
+    "pre_research_flags_present": false,
+    "resolved": {
+      "context": "",
+      "entity": "obwodnica autostradowa Warszawy A50 przebieg trasy Sobienie-Jeziory",
+      "github_repos": [],
+      "github_user": "",
+      "subreddits": [],
+      "trustpilot_domain": "",
+      "x_handle": ""
+    }
+  },
+  "clusters": [
+    {
+      "candidate_ids": [
+        "https://moto.pl/motopl/7,190330,33130820,obwodnica-aglomeracji-warszawskiej-kiedy-doczekamy-nowej-trasy.html"
+      ],
+      "cluster_id": "cluster-1",
+      "representative_ids": [
+        "https://moto.pl/motopl/7,190330,33130820,obwodnica-aglomeracji-warszawskiej-kiedy-doczekamy-nowej-trasy.html"
+      ],
+      "score": 27.059016393442626,
+      "sources": [
+        "grounding"
+      ],
+      "title": "Obwodnica Aglomeracji Warszawskiej. Kiedy doczekamy nowej trasy? Sprawa si\u0119 op\u00f3\u017ania"
+    },
+    {
+      "candidate_ids": [
+        "https://e-sochaczew.pl/artykul/trasa-s50--decyzje-n2572991"
+      ],
+      "cluster_id": "cluster-2",
+      "representative_ids": [
+        "https://e-sochaczew.pl/artykul/trasa-s50--decyzje-n2572991"
+      ],
+      "score": 22.61935483870968,
+      "sources": [
+        "grounding"
+      ],
+      "title": "Trasa S50 - decyzj\u0119 o jej przebiegu przez powiat sochaczewski poznamy dopiero w po\u0142owie grudnia - wiadomo\u015bci Sochaczew"
+    }
+  ],
+  "errors_by_source": {
+    "reddit": "HTTP 404: Not Found"
+  },
+  "freshness_verdicts": [],
+  "generated_at": "2026-11-23T12:27:13.484082+00:00",
+  "items_by_source": {
+    "grounding": [
+      {
+        "body": "Obwodnica Aglomeracji Warszawskiej. Kiedy doczekamy nowej trasy? Sprawa si\u0119 op\u00f3\u017ania\nOp\u00f3\u017ania si\u0119 wskazanie najlepszego wariantu przebiegu zachodniej cz\u0119\u015bci obwodnicy aglomeracji warszawskiej. Nie uda\u0142o si\u0119 doko\u0144czy\u0107 prac we wrze\u015bniu i w pa\u017adzierniku. Wedle najnowszych plan\u00f3w przebieg cz\u0119\u015bci trasy poznamy najwcze\u015bniej na pocz\u0105tku grudnia 2026 r.",
+        "container": "moto.pl",
+        "date_confidence": "high",
+        "engagement": {},
+        "freshness": 66,
+        "item_id": "WB1",
+        "local_rank_score": 0.35350000000000004,
+        "local_relevance": 0.29,
+        "metadata": {},
+        "published_at": "2026-11-14",
+        "relevance_hint": 0.8,
+        "snippet": "Op\u00f3\u017ania si\u0119 wskazanie najlepszego wariantu przebiegu zachodniej cz\u0119\u015bci obwodnicy aglomeracji warszawskiej. Nie uda\u0142o si\u0119 doko\u0144czy\u0107 prac we wrze\u015bniu i w pa\u017adzierniku. Wedle najnowszych plan\u00f3w przebieg cz\u0119\u015bci trasy poznamy najwcze\u015bniej na pocz\u0105tku grudnia 2026 r.",
+        "source": "grounding",
+        "source_quality": 0.6,
+        "title": "Obwodnica Aglomeracji Warszawskiej. Kiedy doczekamy nowej trasy? Sprawa si\u0119 op\u00f3\u017ania",
+        "url": "https://moto.pl/MotoPL/7,190330,33130820,obwodnica-aglomeracji-warszawskiej-kiedy-doczekamy-nowej-trasy.html",
+        "why_relevant": "Brave web search"
+      },
+      {
+        "body": "Trasa S50 - decyzj\u0119 o jej przebiegu przez powiat sochaczewski poznamy dopiero w po\u0142owie grudnia - wiadomo\u015bci Sochaczew\n@Moniuszko - chyba Ci si\u0119 co\u015b pomiesza\u0142o w g\u0142owie! obwodnica W-wy z mostem bli\u017cej P\u0142ocka:-) pisa\u0107 bzdury to lepiej ni\u0107 nie pisa\u0107. ... Po obwodnicy jedzia w kierunku B\u0142ona wi\u0119c te samochody pozostan\u0105 a do \u0141\u00f3d\u017a czy Warszawy je\u017adzi si\u0119 A 2 a nie przez P\u0142ock bo trzeba g\u0142upot takich wypisa\u0107 \u017ce do P\u0142ocka si\u0119 b\u0119dzie jezdzilo tylko w jakim celu \u017ceby kilometr\u00f3w nabi\u0107 ... Czytam te komentarze i nie wiem co macie w g\u0142owach. Dla miasta i okolic jest wariant przebiegaj\u0105cy star\u0105 tras\u0105 50.",
+        "container": "e-sochaczew.pl",
+        "date_confidence": "high",
+        "engagement": {},
+        "freshness": 52,
+        "item_id": "WB3",
+        "local_rank_score": 0.3185,
+        "local_relevance": 0.29,
+        "metadata": {},
+        "published_at": "2026-11-09",
+        "relevance_hint": 0.8,
+        "snippet": "@Moniuszko - chyba Ci si\u0119 co\u015b pomiesza\u0142o w g\u0142owie! obwodnica W-wy z mostem bli\u017cej P\u0142ocka:-) pisa\u0107 bzdury to lepiej ni\u0107 nie pisa\u0107. ... Po obwodnicy jedzia w kierunku B\u0142ona wi\u0119c te samochody pozostan\u0105 a do \u0141\u00f3d\u017a czy Warszawy je\u017adzi si\u0119 A 2 a nie przez P\u0142ock bo trzeba g\u0142upot takich wypisa\u0107 \u017ce do P\u0142ocka si\u0119 b\u0119dzie jezdzilo tylko w jakim celu \u017ceby kilometr\u00f3w nabi\u0107 ... Czytam te komentarze i nie wiem co macie w g\u0142owach. Dla miasta i okolic jest wariant przebiegaj\u0105cy star\u0105 tras\u0105 50.",
+        "source": "grounding",
+        "source_quality": 0.6,
+        "title": "Trasa S50 - decyzj\u0119 o jej przebiegu przez powiat sochaczewski poznamy dopiero w po\u0142owie grudnia - wiadomo\u015bci Sochaczew",
+        "url": "https://e-sochaczew.pl/artykul/trasa-s50--decyzje-n2572991",
+        "why_relevant": "Brave web search"
+      }
+    ],
+    "reddit": []
+  },
+  "library_context": [],
+  "provider_runtime": {
+    "planner_model": "cline-pass/deepseek-v4.1-flash-1017",
+    "reasoning_provider": "cline",
+    "rerank_model": "cline-pass/deepseek-v4.1-flash-1017"
+  },
+  "query_plan": {
+    "cluster_mode": "none",
+    "freshness_mode": "balanced_recent",
+    "intent": "factual",
+    "notes": [
+      "Factual infrastructure query; prioritize grounding sources and use community sources for local discussion or maps."
+    ],
+    "raw_topic": "obwodnica autostradowa Warszawy A50 przebieg trasy Sobienie-Jeziory",
+    "source_weights": {
+      "grounding": 0.6,
+      "hackernews": 0.05,
+      "reddit": 0.2,
+      "youtube": 0.15
+    },
+    "subqueries": [
+      {
+        "label": "A50 route",
+        "ranking_query": "Jaki jest przebieg trasy obwodnicy autostradowej Warszawy A50?",
+        "search_query": "obwodnica autostradowa Warszawy A50 przebieg trasy",
+        "sources": [
+          "grounding",
+          "reddit"
+        ],
+        "weight": 1.0
+      }
+    ]
+  },
+  "range_from": "2026-10-24",
+  "range_to": "2026-11-23",
+  "ranked_candidates": [
+    {
+      "candidate_id": "https://moto.pl/motopl/7,190330,33130820,obwodnica-aglomeracji-warszawskiej-kiedy-doczekamy-nowej-trasy.html",
+      "cluster_id": "cluster-1",
+      "explanation": "Mentions Warsaw agglomeration bypass but not A50 or Sobienie-Jeziory; focuses on western section and delays.",
+      "final_score": 27.059016393442626,
+      "freshness": 66,
+      "fun_explanation": "Dry infrastructure news about delays; no joke or wit.",
+      "fun_score": 5.0,
+      "item_id": "WB1",
+      "local_relevance": 0.29,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "WB1",
+            "native_rank": 1,
+            "source": "grounding",
+            "subquery_label": "A50 route"
+          }
+        ],
+        "range_from": "2026-10-24",
+        "range_to": "2026-11-23"
+      },
+      "native_ranks": {
+        "A50 route:grounding": 1
+      },
+      "rerank_score": 25.0,
+      "rrf_score": 0.009836065573770491,
+      "snippet": "Op\u00f3\u017ania si\u0119 wskazanie najlepszego wariantu przebiegu zachodniej cz\u0119\u015bci obwodnicy aglomeracji warszawskiej. Nie uda\u0142o si\u0119 doko\u0144czy\u0107 prac we wrze\u015bniu i w pa\u017adzierniku. Wedle najnowszych plan\u00f3w przebieg cz\u0119\u015bci trasy poznamy najwcze\u015bniej na pocz\u0105tku grudnia 2026 r.",
+      "source": "grounding",
+      "source_items": [
+        {
+          "body": "Obwodnica Aglomeracji Warszawskiej. Kiedy doczekamy nowej trasy? Sprawa si\u0119 op\u00f3\u017ania\nOp\u00f3\u017ania si\u0119 wskazanie najlepszego wariantu przebiegu zachodniej cz\u0119\u015bci obwodnicy aglomeracji warszawskiej. Nie uda\u0142o si\u0119 doko\u0144czy\u0107 prac we wrze\u015bniu i w pa\u017adzierniku. Wedle najnowszych plan\u00f3w przebieg cz\u0119\u015bci trasy poznamy najwcze\u015bniej na pocz\u0105tku grudnia 2026 r.",
+          "container": "moto.pl",
+          "date_confidence": "high",
+          "engagement": {},
+          "freshness": 66,
+          "item_id": "WB1",
+          "local_rank_score": 0.35350000000000004,
+          "local_relevance": 0.29,
+          "metadata": {},
+          "published_at": "2026-11-14",
+          "relevance_hint": 0.8,
+          "snippet": "Op\u00f3\u017ania si\u0119 wskazanie najlepszego wariantu przebiegu zachodniej cz\u0119\u015bci obwodnicy aglomeracji warszawskiej. Nie uda\u0142o si\u0119 doko\u0144czy\u0107 prac we wrze\u015bniu i w pa\u017adzierniku. Wedle najnowszych plan\u00f3w przebieg cz\u0119\u015bci trasy poznamy najwcze\u015bniej na pocz\u0105tku grudnia 2026 r.",
+          "source": "grounding",
+          "source_quality": 0.6,
+          "title": "Obwodnica Aglomeracji Warszawskiej. Kiedy doczekamy nowej trasy? Sprawa si\u0119 op\u00f3\u017ania",
+          "url": "https://moto.pl/MotoPL/7,190330,33130820,obwodnica-aglomeracji-warszawskiej-kiedy-doczekamy-nowej-trasy.html",
+          "why_relevant": "Brave web search"
+        }
+      ],
+      "source_quality": 0.6,
+      "sources": [
+        "grounding"
+      ],
+      "subquery_labels": [
+        "A50 route"
+      ],
+      "title": "Obwodnica Aglomeracji Warszawskiej. Kiedy doczekamy nowej trasy? Sprawa si\u0119 op\u00f3\u017ania",
+      "url": "https://moto.pl/MotoPL/7,190330,33130820,obwodnica-aglomeracji-warszawskiej-kiedy-doczekamy-nowej-trasy.html"
+    },
+    {
+      "candidate_id": "https://e-sochaczew.pl/artykul/trasa-s50--decyzje-n2572991",
+      "cluster_id": "cluster-2",
+      "explanation": "Mentions S50 and Warsaw bypass generally, but not A50 or Sobienie-Jeziory; concerns Sochaczew and includes low-value comments.",
+      "final_score": 22.61935483870968,
+      "freshness": 52,
+      "fun_explanation": "A grumpy forum rant with typos, but no real punchline or cleverness.",
+      "fun_score": 12.0,
+      "item_id": "WB3",
+      "local_relevance": 0.29,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "WB3",
+            "native_rank": 2,
+            "source": "grounding",
+            "subquery_label": "A50 route"
+          }
+        ],
+        "range_from": "2026-10-24",
+        "range_to": "2026-11-23"
+      },
+      "native_ranks": {
+        "A50 route:grounding": 2
+      },
+      "rerank_score": 20.0,
+      "rrf_score": 0.00967741935483871,
+      "snippet": "@Moniuszko - chyba Ci si\u0119 co\u015b pomiesza\u0142o w g\u0142owie! obwodnica W-wy z mostem bli\u017cej P\u0142ocka:-) pisa\u0107 bzdury to lepiej ni\u0107 nie pisa\u0107. ... Po obwodnicy jedzia w kierunku B\u0142ona wi\u0119c te samochody pozostan\u0105 a do \u0141\u00f3d\u017a czy Warszawy je\u017adzi si\u0119 A 2 a nie przez P\u0142ock bo trzeba g\u0142upot takich wypisa\u0107 \u017ce do P\u0142ocka si\u0119 b\u0119dzie jezdzilo tylko w jakim celu \u017ceby kilometr\u00f3w nabi\u0107 ... Czytam te komentarze i nie wiem co macie w g\u0142owach. Dla miasta i okolic jest wariant przebiegaj\u0105cy star\u0105 tras\u0105 50.",
+      "source": "grounding",
+      "source_items": [
+        {
+          "body": "Trasa S50 - decyzj\u0119 o jej przebiegu przez powiat sochaczewski poznamy dopiero w po\u0142owie grudnia - wiadomo\u015bci Sochaczew\n@Moniuszko - chyba Ci si\u0119 co\u015b pomiesza\u0142o w g\u0142owie! obwodnica W-wy z mostem bli\u017cej P\u0142ocka:-) pisa\u0107 bzdury to lepiej ni\u0107 nie pisa\u0107. ... Po obwodnicy jedzia w kierunku B\u0142ona wi\u0119c te samochody pozostan\u0105 a do \u0141\u00f3d\u017a czy Warszawy je\u017adzi si\u0119 A 2 a nie przez P\u0142ock bo trzeba g\u0142upot takich wypisa\u0107 \u017ce do P\u0142ocka si\u0119 b\u0119dzie jezdzilo tylko w jakim celu \u017ceby kilometr\u00f3w nabi\u0107 ... Czytam te komentarze i nie wiem co macie w g\u0142owach. Dla miasta i okolic jest wariant przebiegaj\u0105cy star\u0105 tras\u0105 50.",
+          "container": "e-sochaczew.pl",
+          "date_confidence": "high",
+          "engagement": {},
+          "freshness": 52,
+          "item_id": "WB3",
+          "local_rank_score": 0.3185,
+          "local_relevance": 0.29,
+          "metadata": {},
+          "published_at": "2026-11-09",
+          "relevance_hint": 0.8,
+          "snippet": "@Moniuszko - chyba Ci si\u0119 co\u015b pomiesza\u0142o w g\u0142owie! obwodnica W-wy z mostem bli\u017cej P\u0142ocka:-) pisa\u0107 bzdury to lepiej ni\u0107 nie pisa\u0107. ... Po obwodnicy jedzia w kierunku B\u0142ona wi\u0119c te samochody pozostan\u0105 a do \u0141\u00f3d\u017a czy Warszawy je\u017adzi si\u0119 A 2 a nie przez P\u0142ock bo trzeba g\u0142upot takich wypisa\u0107 \u017ce do P\u0142ocka si\u0119 b\u0119dzie jezdzilo tylko w jakim celu \u017ceby kilometr\u00f3w nabi\u0107 ... Czytam te komentarze i nie wiem co macie w g\u0142owach. Dla miasta i okolic jest wariant przebiegaj\u0105cy star\u0105 tras\u0105 50.",
+          "source": "grounding",
+          "source_quality": 0.6,
+          "title": "Trasa S50 - decyzj\u0119 o jej przebiegu przez powiat sochaczewski poznamy dopiero w po\u0142owie grudnia - wiadomo\u015bci Sochaczew",
+          "url": "https://e-sochaczew.pl/artykul/trasa-s50--decyzje-n2572991",
+          "why_relevant": "Brave web search"
+        }
+      ],
+      "source_quality": 0.6,
+      "sources": [
+        "grounding"
+      ],
+      "subquery_labels": [
+        "A50 route"
+      ],
+      "title": "Trasa S50 - decyzj\u0119 o jej przebiegu przez powiat sochaczewski poznamy dopiero w po\u0142owie grudnia - wiadomo\u015bci Sochaczew",
+      "url": "https://e-sochaczew.pl/artykul/trasa-s50--decyzje-n2572991"
+    }
+  ],
+  "source_status": {
+    "grounding": {
+      "at": "2026-11-23T12:27:06.963917Z",
+      "attempted": true,
+      "items_returned": 2,
+      "source": "grounding",
+      "state": "ok"
+    },
+    "reddit": {
+      "at": "2026-11-23T12:27:06.145028Z",
+      "attempted": true,
+      "detail": "HTTP 404: Not Found",
+      "fix_hint": "doctor",
+      "items_returned": 0,
+      "source": "reddit",
+      "state": "error"
+    }
+  },
+  "topic": "obwodnica autostradowa Warszawy A50 przebieg trasy Sobienie-Jeziory",
+  "warnings": [
+    "Evidence is thin for this topic.",
+    "Some sources failed: reddit"
+  ]
+}
