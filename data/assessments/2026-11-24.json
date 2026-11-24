@@ -1,0 +1,136 @@
+{
+  "date": "2026-11-24",
+  "scores": {
+    "north": {
+      "score": 37,
+      "confidence": "niska",
+      "summary": "Nowe dowody nie zawierają żadnego oficjalnego wskazania wariantu przez pas między wsią Sobienie-Jeziory a doliną Wisły — dotyczą zachodniego odcinka OAW (DK92–S7) oraz ogólnych informacji o opóźnieniach. Utrzymuję score na poziomie poprzedniej oceny.",
+      "rationale": "Strona GDDKiA dla zadania A50/S50 DK92–S7 opisuje wyłącznie zachodni fragment OAW na etapie Studium techniczno-ekonomiczno-środowiskowego, a jedyna odnotowana zmiana na stronie to przetarg dzierżawy MOP Przybiernów przy S3 — materiał nie odnosi się do wariantów odcinka wschodniego. Publikacja moto.pl potwierdza jedynie, że dokumentację OAW opracowują Transprojekt Warszawa i Trakt oraz że inwestycja się opóźnia, nie wskazując żadnego przebiegu przez północną część gminy Sobienie-Jeziory. Stanowisko Rady Powiatu Otwockiego z 2020 r. dotyczy Strategicznego Studium Lokalizacyjnego CPK i nie rozstrzyga korytarza między wsią a doliną Wisły. Brak nowych, istotnych sygnałów każe trzymać score blisko poprzedniej oceny (37) przy niskiej jakości dowodów.",
+      "key_findings": [
+        {
+          "claim": "Oficjalna strona GDDKiA dla zadania A50/S50 DK92–S7 dotyczy zachodniego fragmentu OAW na etapie STEŚ, a jedyna zmiana na stronie to przetarg dzierżawy MOP Przybiernów przy S3 — brak jakiegokolwiek wskazania wariantu przez północną część gminy Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8#zmiana-88be7d66c4513ccd",
+            "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8"
+          ]
+        },
+        {
+          "claim": "Publikacja moto.pl potwierdza, że dokumentację przebiegu nowych tras opracowują Transprojekt Warszawa i Trakt, a częścią OAW będą S50 i A50, oraz że sprawa się opóźnia — bez wskazania korytarza przez pas między Sobienie-Jeziorami a doliną Wisły.",
+          "evidence_urls": [
+            "https://moto.pl/MotoPL/7,190330,33130820,obwodnica-aglomeracji-warszawskiej-kiedy-doczekamy-nowej-trasy.html"
+          ]
+        },
+        {
+          "claim": "Stanowisko Rady Powiatu Otwockiego dotyczące Strategicznego Studium Lokalizacyjnego CPK wraz z prognozą oddziaływania na środowisko nie zawiera rozstrzygnięcia o wariancie przebiegu przez północną część gminy Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://www.bip.powiat-otwocki.pl/plik,22845,projekt-stanowiska-w-sprawie-strategicznego-studium-lokalizacyjnego-inwestycji-centralnego-portu-komunikacyjnego-wraz-z-prognoza-oddzialywania-na-srodowisko.pdf"
+          ]
+        }
+      ],
+      "trend_vs_prev": 0,
+      "score_raw": 37,
+      "evidence_grade": "official",
+      "delta_capped": false,
+      "change_reason": "official: bez zmiany"
+    },
+    "south": {
+      "score": 18,
+      "confidence": "niska",
+      "summary": "Nowe dowody nie zawierają żadnego oficjalnego wskazania wariantu przebiegu na wschód od S7 ani odniesienia do południowej części gminy Sobienie-Jeziory. Utrzymuję score na poziomie poprzedniej oceny, bo brak nowych sygnałów dotyczących tego scenariusza.",
+      "rationale": "Zmiana na stronie GDDKiA dotyczy zadania A50/S50 na odcinku DK92–S7, czyli części zachodniej obwodnicy, a jej treść odnosi się do przetargu na dzierżawę MOP Przybiernów w ciągu S3 — materiał nie wnosi nic o odcinku wschodnim ani o gminie Sobienie-Jeziory. Materiał moto.pl potwierdza jedynie ogólną strukturę OAW (S50 i przyszła A50) oraz opóźnienia i rolę projektantów Transprojekt Warszawa i Trakt, bez wskazania wariantów na wschód od S7. Stanowisko Rady Powiatu Otwockiego z 2020 r. dotyczy Strategicznego Studium Lokalizacyjnego CPK i ogólnego korytarza, więc nie przesądza o przebiegu przez południową stronę wsi Sobienie-Jeziory (rejon Śniadkowa Dolnego i Górnego). Żaden z nowych dowodów nie jest oficjalnym wskazaniem wariantu, decyzją środowiskową ani przetargiem na STEŚ odcinka południowo-wschodniego, dlatego nie ma podstaw do odstąpienia od poprzedniej wartości 18%.",
+      "key_findings": [
+        {
+          "claim": "Nowy materiał GDDKiA dotyczy wyłącznie zadania A50/S50 na odcinku DK92–S7 (część zachodnia) i nie zawiera odniesień do odcinka wschodniego ani do gminy Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8#zmiana-88be7d66c4513ccd",
+            "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8"
+          ]
+        },
+        {
+          "claim": "Wpis zmiany na stronie GDDKiA odnosi się do przetargu na dzierżawę nieruchomości MOP Przybiernów przy S3, czyli do sprawy niezwiązanej z przebiegiem OAW przez powiat otwocki.",
+          "evidence_urls": [
+            "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8#zmiana-88be7d66c4513ccd"
+          ]
+        },
+        {
+          "claim": "Materiał moto.pl potwierdza jedynie ogólną strukturę OAW (S50 i przyszła A50), opóźnienie prac i rolę projektantów Transprojekt Warszawa oraz Trakt, bez wskazania wariantów na wschód od S7.",
+          "evidence_urls": [
+            "https://moto.pl/MotoPL/7,190330,33130820,obwodnica-aglomeracji-warszawskiej-kiedy-doczekamy-nowej-trasy.html"
+          ]
+        },
+        {
+          "claim": "Stanowisko Rady Powiatu Otwockiego z 2020 r. dotyczy Strategicznego Studium Lokalizacyjnego CPK i ogólnego korytarza, więc nie rozstrzyga o przebiegu przez południową część gminy Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://www.bip.powiat-otwocki.pl/plik,22845,projekt-stanowiska-w-sprawie-strategicznego-studium-lokalizacyjnego-inwestycji-centralnego-portu-komunikacyjnego-wraz-z-prognoza-oddzialywania-na-srodowisko.pdf"
+          ]
+        },
+        {
+          "claim": "Brak w nowych dowodach oficjalnego wskazania wariantu, decyzji środowiskowej lub przetargu na STEŚ odcinka południowo-wschodniego, co uniemożliwia zmianę oceny tego scenariusza.",
+          "evidence_urls": [
+            "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8",
+            "https://moto.pl/MotoPL/7,190330,33130820,obwodnica-aglomeracji-warszawskiej-kiedy-doczekamy-nowej-trasy.html"
+          ]
+        }
+      ],
+      "trend_vs_prev": 0,
+      "score_raw": 18,
+      "evidence_grade": "official",
+      "delta_capped": false,
+      "change_reason": "official: bez zmiany"
+    }
+  },
+  "evidence": [
+    {
+      "title": "GDDKiA — odcinek A50/S50 DK92–S7 — zmiana na stronie (A50/S50 Obwodnica Aglomeracji Warszawskiej odcinek DK92 - S7 - Generalna Dyrekcja Dróg Kra)",
+      "url": "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8#zmiana-88be7d66c4513ccd",
+      "source": "official:gddkia-a50s50",
+      "published": "2026-11-24",
+      "snippet": "Przetarg na dzierżawę Nieruchomości: MOP Przybiernów Zachód, MOP Przybiernów Wschód zlokalizowanych w ciągu drogi ekspresowej S3",
+      "stance": "neutral"
+    },
+    {
+      "title": "Obwodnica Aglomeracji Warszawskiej. Kiedy doczekamy nowej trasy? Sprawa się opóźnia",
+      "url": "https://moto.pl/MotoPL/7,190330,33130820,obwodnica-aglomeracji-warszawskiej-kiedy-doczekamy-nowej-trasy.html",
+      "source": "grounding",
+      "published": "2026-11-14",
+      "snippet": "Dokumentację przebiegu nowych tras opracowują dwie firmy. To Transprojekt Warszawa i Trakt. Częścią OAW będą nowa droga ekspresowa S50 oraz przyszła autostrada A50. Oto jedna z tras, która jest potrzebna niemal od zaraz. To OAW - Obwodnica Aglomeracji Warszawskiej.",
+      "stance": "neutral"
+    },
+    {
+      "title": "A50/S50 Obwodnica Aglomeracji Warszawskiej odcinek DK92 - S7 - Generalna Dyrekcja Dróg Krajowych i Autostrad - Portal Gov.pl",
+      "url": "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8",
+      "source": "exa",
+      "published": "",
+      "snippet": "A50 / S50 Nazwa odcinka : Obwodnica Aglomeracji Warszawskiej odcinek DK92 - S7 System realizacji : z perspektywą do 2033 r.) ### Aktualnie realizowany etap - #### Przygotowanie Studium techniczno-ekonomiczno-środowiskowe",
+      "stance": "neutral"
+    },
+    {
+      "title": "4.,Projekt stanowiska w sprawie Strategicznegoi Studium Lokalizacyjnego Inwestycji Centralnego Portu Komunikacyjnego - A50 - grudzień 2020",
+      "url": "https://www.bip.powiat-otwocki.pl/plik,22845,projekt-stanowiska-w-sprawie-strategicznego-studium-lokalizacyjnego-inwestycji-centralnego-portu-komunikacyjnego-wraz-z-prognoza-oddzialywania-na-srodowisko.pdf",
+      "source": "exa",
+      "published": "",
+      "snippet": "STANOWISKO NR …./2020 RADY POWIATU OTWOCKIEGO z dnia …………..…. 2020 r. w sprawie Strategicznego Studium Lokalizacyjnego Inwestycji Centralnego Portu Komunikacyjnego wraz z Prognozą oddziaływania na środowisko Pozostając w zgodzie z przepisem art. 9 ust. 1 w związku z art. 4 ust. 1 pkt 6 ustawy z dnia 5 czerwca 1998 r. o samorządzie powiatowym (Dz. U. z 2020 r., poz. 920) oraz na podstawie § 7 ust.",
+      "stance": "neutral"
+    }
+  ],
+  "sources_found": 4,
+  "source_funnel": {
+    "fetched": {
+      "engine": 1,
+      "feeds": 0,
+      "agent_reach": 25,
+      "facebook": 0,
+      "official": 1
+    },
+    "fresh": {
+      "engine": 1,
+      "feeds": 0,
+      "agent_reach": 4,
+      "facebook": 0,
+      "official": 1
+    },
+    "merged": 6
+  },
+  "engine_status": "ok",
+  "assessment_path": "data/assessments/2026-11-24.json"
+}

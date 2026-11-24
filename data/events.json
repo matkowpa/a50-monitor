@@ -119,6 +119,30 @@
       "grade": "media",
       "confirmed": false,
       "snippet": "Kluczowe będzie ustalenie ostatecznego przebiegu trasy, od którego zależą kolejne etapy przygotowania inwestycji. Nowa autostrada ma umożliwić ominięcie aglomeracji warszawskiej od południa i odciążyć część dróg wykorzystywanych dziś przez "
+    },
+    {
+      "id": "53298afd31b3",
+      "date": "2026-11-24",
+      "type": "tender",
+      "type_label": "przetarg",
+      "title": "GDDKiA — odcinek A50/S50 DK92–S7 — zmiana na stronie (A50/S50 Obwodnica Aglomeracji Warszawskiej odcinek DK92 - S7 - Generalna Dyrekcja Dróg Kra)",
+      "url": "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8#zmiana-88be7d66c4513ccd",
+      "host": "gov.pl",
+      "grade": "official",
+      "confirmed": true,
+      "snippet": "Przetarg na dzierżawę Nieruchomości: MOP Przybiernów Zachód, MOP Przybiernów Wschód zlokalizowanych w ciągu drogi ekspresowej S3"
+    },
+    {
+      "id": "8d7a8c6086d8",
+      "date": "2026-11-24",
+      "type": "study",
+      "type_label": "STEŚ",
+      "title": "A50/S50 Obwodnica Aglomeracji Warszawskiej odcinek DK92 - S7 - Generalna Dyrekcja Dróg Krajowych i Autostrad - Portal Gov.pl",
+      "url": "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8",
+      "host": "gov.pl",
+      "grade": "official",
+      "confirmed": true,
+      "snippet": "A50 / S50 Nazwa odcinka : Obwodnica Aglomeracji Warszawskiej odcinek DK92 - S7 System realizacji : z perspektywą do 2033 r.) ### Aktualnie realizowany etap - #### Przygotowanie Studium techniczno-ekonomiczno-środowiskowe"
     }
   ]
 }
