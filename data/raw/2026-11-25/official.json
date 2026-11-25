@@ -1,0 +1,50 @@
+{
+  "day": "2026-11-25",
+  "sources": [
+    {
+      "id": "gddkia-oaw",
+      "label": "GDDKiA — projekt OAW (zachodnia część)",
+      "status": "ok",
+      "changed": false,
+      "baseline": null,
+      "error": null,
+      "chars": 7188
+    },
+    {
+      "id": "gddkia-a50s50",
+      "label": "GDDKiA — odcinek A50/S50 DK92–S7",
+      "status": "ok",
+      "changed": true,
+      "baseline": null,
+      "error": null,
+      "chars": 4141
+    },
+    {
+      "id": "gmina-sobienie",
+      "label": "Gmina Sobienie-Jeziory — aktualności",
+      "status": "error",
+      "changed": null,
+      "baseline": null,
+      "error": "HTTP Error 403: Forbidden",
+      "chars": null
+    },
+    {
+      "id": "rdos-warszawa",
+      "label": "RDOŚ Warszawa — komunikaty",
+      "status": "ok",
+      "changed": false,
+      "baseline": null,
+      "error": null,
+      "chars": 4327
+    }
+  ],
+  "items": [
+    {
+      "title": "GDDKiA — odcinek A50/S50 DK92–S7 — zmiana na stronie (A50/S50 Obwodnica Aglomeracji Warszawskiej odcinek DK92 - S7 - Generalna Dyrekcja Dróg Kra)",
+      "url": "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8#zmiana-61fb74167626709f",
+      "source": "official:gddkia-a50s50",
+      "published": "2026-11-25",
+      "snippet": "Treść strony zmieniła się od poprzedniego sprawdzenia."
+    }
+  ]
+}

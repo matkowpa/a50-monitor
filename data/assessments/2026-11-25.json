@@ -1,0 +1,128 @@
+{
+  "date": "2026-11-25",
+  "scores": {
+    "north": {
+      "score": 37,
+      "confidence": "niska",
+      "summary": "Nowe dowody dotyczą wyłącznie zachodniego odcinka OAW (DK92–S7) i nie zawierają żadnych informacji o wariantach odcinka wschodniego ani o północnym pasie gminy Sobienie-Jeziory. Brak nowych sygnałów o kluczowym ogniwie, czyli wariancie przebiegu, więc score pozostaje na poziomie poprzedniej oceny.",
+      "rationale": "Zmiana na stronie GDDKiA dotyczy zadania A50/S50 na odcinku DK92–S7, czyli zachodniego fragmentu OAW, a nie odcinka wschodniego, który obejmowałby gminę Sobienie-Jeziory. Materiał gminy Pniewy oraz podstrona GDDKiA o tym samym odcinku potwierdzają jedynie prowadzenie konsultacji i zbieranie uwag do przebiegu na zachodzie kraju. Stanowisko Rady Powiatu Otwockiego z 2020 r. jest dokumentem archiwalnym, dotyczącym Studium Lokalizacyjnego CPK, a nie aktualnych wariantów OAW. Żaden z nowych dowodów nie wskazuje oficjalnego korytarza przez północny pas gminy (między wsią a doliną Wisły) ani nie wyklucza go, dlatego score utrzymuję na 37, a confidence obniżam do „niska” z powodu braku istotnych, świeżych sygnałów.",
+      "key_findings": [
+        {
+          "claim": "Zmiana na stronie GDDKiA dotyczy zadania A50/S50 na odcinku DK92–S7, czyli zachodniego fragmentu OAW, i nie odnosi się do wariantów odcinka wschodniego obejmującego gminę Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8#zmiana-61fb74167626709f",
+            "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8"
+          ]
+        },
+        {
+          "claim": "Materiał gminy Pniewy dokumentuje zbieranie uwag do przebiegu A50 na terenie tej gminy, czyli na zachodnim odcinku OAW, a nie w powiecie otwockim.",
+          "evidence_urls": [
+            "https://pniewy.pl/cms/8987/autostrada_a50"
+          ]
+        },
+        {
+          "claim": "Stanowisko Rady Powiatu Otwockiego dotyczy Strategicznego Studium Lokalizacyjnego CPK z 2020 r. i nie zawiera aktualnych wariantów przebiegu OAW przez północną część gminy Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://www.bip.powiat-otwocki.pl/plik,22845,projekt-stanowiska-w-sprawie-strategicznego-studium-lokalizacyjnego-inwestycji-centralnego-portu-komunikacyjnego-wraz-z-prognoza-oddzialywania-na-srodowisko.pdf"
+          ]
+        }
+      ],
+      "trend_vs_prev": 0,
+      "score_raw": 37,
+      "evidence_grade": "official",
+      "delta_capped": false,
+      "change_reason": "official: bez zmiany"
+    },
+    "south": {
+      "score": 18,
+      "confidence": "niska",
+      "summary": "Nowe dowody dotyczą wyłącznie zachodniego zadania A50/S50 (DK92–S7) oraz materiałów o charakterze ogólnym lub archiwalnym — żaden nie odnosi się do wariantów odcinka wschodniego ani do południowej części gminy Sobienie-Jeziory. Brak nowych sygnałów, więc score pozostaje na poziomie poprzedniej oceny.",
+      "rationale": "Zmiana treści na stronie GDDKiA dotyczy zadania A50/S50 na odcinku DK92–S7, czyli części zachodniej obwodnicy, a nie odcinka wschodniego, w którym leży gmina Sobienie-Jeziory. Materiał gminy Pniewy potwierdza jedynie, że konsultacje przebiegu A50 toczą się w gminach zachodnich (powiat grójecki), co nie przekłada się na warianty na wschód od S7. Stanowisko Rady Powiatu Otwockiego z 2020 r. dotyczy Strategicznego Studium Lokalizacyjnego CPK i nie wskazuje żadnego wariantu przez południową część gminy. Zgodnie z kontekstem geograficznym DK50 biegnie na północ od gminy, więc scenariusz obwodnicy wsi po stronie południowej pozostaje hipotezą bez oparcia w oficjalnym procesie — brak wariantu, studium czy przetargu dla tego terenu utrzymuje ocenę na 18.",
+      "key_findings": [
+        {
+          "claim": "Zmiana na stronie GDDKiA dotyczy zadania A50/S50 na odcinku DK92–S7, czyli części zachodniej OAW, i nie wnosi informacji o odcinku wschodnim ani o gminie Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8#zmiana-61fb74167626709f"
+          ]
+        },
+        {
+          "claim": "Strona zadania A50/S50 DK92–S7 zawiera wyłącznie podstawowe informacje o odcinku zachodnim; nie ma tam wariantów przebiegu dla terenu na wschód od S7.",
+          "evidence_urls": [
+            "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8"
+          ]
+        },
+        {
+          "claim": "Konsultacje przebiegu A50 prowadzone przez gminę Pniewy dotyczą terenu tej gminy na zachodnim odcinku obwodnicy, a nie Mazowsza wschodniego.",
+          "evidence_urls": [
+            "https://pniewy.pl/cms/8987/autostrada_a50"
+          ]
+        },
+        {
+          "claim": "Stanowisko Rady Powiatu Otwockiego z 2020 r. odnosi się do Strategicznego Studium Lokalizacyjnego CPK i nie wskazuje wariantu przebiegu przez południową część gminy Sobienie-Jeziory.",
+          "evidence_urls": [
+            "https://www.bip.powiat-otwocki.pl/plik,22845,projekt-stanowiska-w-sprawie-strategicznego-studium-lokalizacyjnego-inwestycji-centralnego-portu-komunikacyjnego-wraz-z-prognoza-oddzialywania-na-srodowisko.pdf"
+          ]
+        }
+      ],
+      "trend_vs_prev": 0,
+      "score_raw": 18,
+      "evidence_grade": "official",
+      "delta_capped": false,
+      "change_reason": "official: bez zmiany"
+    }
+  },
+  "evidence": [
+    {
+      "title": "GDDKiA — odcinek A50/S50 DK92–S7 — zmiana na stronie (A50/S50 Obwodnica Aglomeracji Warszawskiej odcinek DK92 - S7 - Generalna Dyrekcja Dróg Kra)",
+      "url": "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8#zmiana-61fb74167626709f",
+      "source": "official:gddkia-a50s50",
+      "published": "2026-11-25",
+      "snippet": "Treść strony zmieniła się od poprzedniego sprawdzenia.",
+      "stance": "neutral"
+    },
+    {
+      "title": "Autostrada A50 - Gmina Pniewy",
+      "url": "https://pniewy.pl/cms/8987/autostrada_a50",
+      "source": "exa",
+      "published": "",
+      "snippet": ", sugestii i spostrzeżeń dotyczących przebiegu A50 przez teren naszej gminy na specjalny adres mailowy: a50@ Stanowisko Wójta Gminy Pniewy w sprawie Obwodnicy Aglomeracji Warszawskiej (pobierz) ) opracowanych przez zespół projektowy TRAKT Sp. z",
+      "stance": "neutral"
+    },
+    {
+      "title": "A50/S50 Obwodnica Aglomeracji Warszawskiej odcinek DK92 - S7 - Generalna Dyrekcja Dróg Krajowych i Autostrad - Portal Gov.pl",
+      "url": "https://www.gov.pl/web/gddkia/a50s50-od-dk92-do-s8",
+      "source": "exa",
+      "published": "",
+      "snippet": "## A50/S50 Obwodnica Aglomeracji Warszawskiej odcinek DK92 - S7 Podstawowe informacje Nr drogi : A50 / S50 Nazwa odcinka : Obwodnica Aglomeracji Warszawskiej odcinek DK92 - S7 System realizacji : Projektuj i Buduj Program : Rządowy Program Budowy Dróg Krajowych do 2030 r. (z perspektywą do 2033 r.) Oddział GDDKiA : Warszawa ### Aktualnie realizowany etap - #### Przygotowanie Studium techniczno-eko",
+      "stance": "neutral"
+    },
+    {
+      "title": "4.,Projekt stanowiska w sprawie Strategicznegoi Studium Lokalizacyjnego Inwestycji Centralnego Portu Komunikacyjnego - A50 - grudzień 2020",
+      "url": "https://www.bip.powiat-otwocki.pl/plik,22845,projekt-stanowiska-w-sprawie-strategicznego-studium-lokalizacyjnego-inwestycji-centralnego-portu-komunikacyjnego-wraz-z-prognoza-oddzialywania-na-srodowisko.pdf",
+      "source": "exa",
+      "published": "",
+      "snippet": "STANOWISKO NR …./2020 RADY POWIATU OTWOCKIEGO z dnia …………..…. 2020 r. w sprawie Strategicznego Studium Lokalizacyjnego Inwestycji Centralnego Portu Komunikacyjnego wraz z Prognozą oddziaływania na środowisko Pozostając w zgodzie z przepisem art. 9 ust. ... 4 ust. ... z 2020 r., poz. ... Urz. Woj. ... z 2020 r., poz. 3657) Rada Powiatu Otwockiego ustala, co następuje: § 1. 1. Mając na uwadze trwają",
+      "stance": "neutral"
+    }
+  ],
+  "sources_found": 4,
+  "source_funnel": {
+    "fetched": {
+      "engine": 1,
+      "feeds": 0,
+      "agent_reach": 27,
+      "facebook": 0,
+      "official": 1
+    },
+    "fresh": {
+      "engine": 1,
+      "feeds": 0,
+      "agent_reach": 4,
+      "facebook": 0,
+      "official": 1
+    },
+    "merged": 6
+  },
+  "engine_status": "ok",
+  "assessment_path": "data/assessments/2026-11-25.json"
+}
