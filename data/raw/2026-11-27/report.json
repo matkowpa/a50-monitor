@@ -1,0 +1,192 @@
+{
+  "artifacts": {
+    "corpus_in_export": false,
+    "grounding": [
+      {
+        "label": "brave",
+        "resultCount": 5,
+        "webSearchQueries": [
+          "A50 obwodnica Warszawy Sobienie-Jeziory przebieg"
+        ]
+      }
+    ],
+    "hiring_signals_mode": false,
+    "plan_source": "llm",
+    "pre_research_flags_present": false,
+    "resolved": {
+      "context": "",
+      "entity": "obwodnica autostradowa Warszawy A50 przebieg trasy Sobienie-Jeziory",
+      "github_repos": [],
+      "github_user": "",
+      "subreddits": [],
+      "trustpilot_domain": "",
+      "x_handle": ""
+    }
+  },
+  "clusters": [
+    {
+      "candidate_ids": [
+        "https://przegladotwocki.pl/artykul/5872,jest-pozwolenie-na-przebudowe-stacji-uzdatniania-wody-w-sobieniach-jeziorach"
+      ],
+      "cluster_id": "cluster-1",
+      "representative_ids": [
+        "https://przegladotwocki.pl/artykul/5872,jest-pozwolenie-na-przebudowe-stacji-uzdatniania-wody-w-sobieniach-jeziorach"
+      ],
+      "score": 4.816229508196721,
+      "sources": [
+        "grounding"
+      ],
+      "title": "Jest pozwolenie na przebudow\u0119 stacji uzdatniania wody w Sobieniach-Jeziorach"
+    }
+  ],
+  "errors_by_source": {
+    "reddit": "HTTP 404: Not Found"
+  },
+  "freshness_verdicts": [],
+  "generated_at": "2026-11-27T12:09:32.152497+00:00",
+  "items_by_source": {
+    "grounding": [
+      {
+        "body": "Jest pozwolenie na przebudow\u0119 stacji uzdatniania wody w Sobieniach-Jeziorach\nGmina Sobienie-Jeziory zrobi\u0142a kolejny krok w kierunku przebudowy stacji uzdatniania wody. Po p\u00f3\u0142tora roku przygotowa\u0144 inwestycja uzyska\u0142a pozwolenie na budow\u0119.",
+        "container": "www.przegladotwocki.pl",
+        "date_confidence": "high",
+        "engagement": {},
+        "freshness": 78,
+        "item_id": "WB4",
+        "local_rank_score": 0.312,
+        "local_relevance": 0.18,
+        "metadata": {},
+        "published_at": "2026-11-23",
+        "relevance_hint": 0.8,
+        "snippet": "Gmina Sobienie-Jeziory zrobi\u0142a kolejny krok w kierunku przebudowy stacji uzdatniania wody. Po p\u00f3\u0142tora roku przygotowa\u0144 inwestycja uzyska\u0142a pozwolenie na budow\u0119.",
+        "source": "grounding",
+        "source_quality": 0.6,
+        "title": "Jest pozwolenie na przebudow\u0119 stacji uzdatniania wody w Sobieniach-Jeziorach",
+        "url": "https://www.przegladotwocki.pl/artykul/5872,jest-pozwolenie-na-przebudowe-stacji-uzdatniania-wody-w-sobieniach-jeziorach",
+        "why_relevant": "Brave web search"
+      }
+    ],
+    "reddit": []
+  },
+  "library_context": [],
+  "provider_runtime": {
+    "planner_model": "cline-pass/deepseek-v4.1-flash-1017",
+    "reasoning_provider": "cline",
+    "rerank_model": "cline-pass/deepseek-v4.1-flash-1017"
+  },
+  "query_plan": {
+    "cluster_mode": "none",
+    "freshness_mode": "balanced_recent",
+    "intent": "factual",
+    "notes": [
+      "Factual infrastructure-route query; prioritize official/grounding sources and local community discussion.",
+      "No temporal phrases included in search queries."
+    ],
+    "raw_topic": "obwodnica autostradowa Warszawy A50 przebieg trasy Sobienie-Jeziory",
+    "source_weights": {
+      "grounding": 0.55,
+      "hackernews": 0.08,
+      "reddit": 0.25,
+      "youtube": 0.12
+    },
+    "subqueries": [
+      {
+        "label": "route alignment",
+        "ranking_query": "Jaki jest planowany przebieg obwodnicy autostradowej Warszawy A50 przez rejon Sobienie-Jeziory?",
+        "search_query": "A50 obwodnica Warszawy Sobienie-Jeziory przebieg",
+        "sources": [
+          "grounding",
+          "reddit"
+        ],
+        "weight": 1.0
+      }
+    ]
+  },
+  "range_from": "2026-10-28",
+  "range_to": "2026-11-27",
+  "ranked_candidates": [
+    {
+      "candidate_id": "https://przegladotwocki.pl/artykul/5872,jest-pozwolenie-na-przebudowe-stacji-uzdatniania-wody-w-sobieniach-jeziorach",
+      "cluster_id": "cluster-1",
+      "explanation": "Off-target: concerns a water treatment station in Sobienie-Jeziory, with no mention of the A50 ring road or its route alignment.",
+      "final_score": 4.816229508196721,
+      "freshness": 78,
+      "fun_explanation": "Dry local infrastructure news; no humor, wit, or A50 angle.",
+      "fun_score": 5.0,
+      "item_id": "WB4",
+      "local_relevance": 0.18,
+      "metadata": {
+        "provenance": [
+          {
+            "item_id": "WB4",
+            "native_rank": 1,
+            "source": "grounding",
+            "subquery_label": "route alignment"
+          }
+        ],
+        "range_from": "2026-10-28",
+        "range_to": "2026-11-27"
+      },
+      "native_ranks": {
+        "route alignment:grounding": 1
+      },
+      "rerank_score": 5.0,
+      "rrf_score": 0.009016393442622951,
+      "snippet": "Gmina Sobienie-Jeziory zrobi\u0142a kolejny krok w kierunku przebudowy stacji uzdatniania wody. Po p\u00f3\u0142tora roku przygotowa\u0144 inwestycja uzyska\u0142a pozwolenie na budow\u0119.",
+      "source": "grounding",
+      "source_items": [
+        {
+          "body": "Jest pozwolenie na przebudow\u0119 stacji uzdatniania wody w Sobieniach-Jeziorach\nGmina Sobienie-Jeziory zrobi\u0142a kolejny krok w kierunku przebudowy stacji uzdatniania wody. Po p\u00f3\u0142tora roku przygotowa\u0144 inwestycja uzyska\u0142a pozwolenie na budow\u0119.",
+          "container": "www.przegladotwocki.pl",
+          "date_confidence": "high",
+          "engagement": {},
+          "freshness": 78,
+          "item_id": "WB4",
+          "local_rank_score": 0.312,
+          "local_relevance": 0.18,
+          "metadata": {},
+          "published_at": "2026-11-23",
+          "relevance_hint": 0.8,
+          "snippet": "Gmina Sobienie-Jeziory zrobi\u0142a kolejny krok w kierunku przebudowy stacji uzdatniania wody. Po p\u00f3\u0142tora roku przygotowa\u0144 inwestycja uzyska\u0142a pozwolenie na budow\u0119.",
+          "source": "grounding",
+          "source_quality": 0.6,
+          "title": "Jest pozwolenie na przebudow\u0119 stacji uzdatniania wody w Sobieniach-Jeziorach",
+          "url": "https://www.przegladotwocki.pl/artykul/5872,jest-pozwolenie-na-przebudowe-stacji-uzdatniania-wody-w-sobieniach-jeziorach",
+          "why_relevant": "Brave web search"
+        }
+      ],
+      "source_quality": 0.6,
+      "sources": [
+        "grounding"
+      ],
+      "subquery_labels": [
+        "route alignment"
+      ],
+      "title": "Jest pozwolenie na przebudow\u0119 stacji uzdatniania wody w Sobieniach-Jeziorach",
+      "url": "https://www.przegladotwocki.pl/artykul/5872,jest-pozwolenie-na-przebudowe-stacji-uzdatniania-wody-w-sobieniach-jeziorach"
+    }
+  ],
+  "source_status": {
+    "grounding": {
+      "at": "2026-11-27T12:09:29.773660Z",
+      "attempted": true,
+      "items_returned": 1,
+      "source": "grounding",
+      "state": "ok"
+    },
+    "reddit": {
+      "at": "2026-11-27T12:09:29.169461Z",
+      "attempted": true,
+      "detail": "HTTP 404: Not Found",
+      "fix_hint": "doctor",
+      "items_returned": 0,
+      "source": "reddit",
+      "state": "error"
+    }
+  },
+  "topic": "obwodnica autostradowa Warszawy A50 przebieg trasy Sobienie-Jeziory",
+  "warnings": [
+    "Evidence is thin for this topic.",
+    "Some sources failed: reddit"
+  ]
+}
